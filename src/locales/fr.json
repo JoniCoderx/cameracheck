@@ -113,7 +113,16 @@
     "spkSorry": "Vérifiez le volume, la sourdine et la sortie audio",
     "noDevices": "Aucun appareil pour l'instant, appuyez sur Démarrer",
     "guides": "Guides",
-    "maxRes": "Maximum possible"
+    "maxRes": "Maximum possible",
+    "moreTests": "Plus de tests",
+    "recTool": "Enregistreur vocal",
+    "recHint": "Appuyez sur Enregistrer, parlez, puis sur Arrêter. Vos enregistrements apparaissent ci-dessous, prêts à écouter ou à télécharger.",
+    "recStart": "Enregistrer",
+    "recStop": "Arrêter",
+    "recDelete": "Supprimer",
+    "recEmpty": "Aucun enregistrement pour l'instant.",
+    "recName": "Enregistrement",
+    "startRec": "Enregistrer ma voix"
   },
   "pages": {
     "home": {
@@ -380,6 +389,395 @@
         {
           "q": "Est-ce que ça marche avec un casque Bluetooth ?",
           "a": "Oui. Connectez-le d'abord pour qu'il devienne la sortie active, puis jouez les sons."
+        }
+      ]
+    },
+    "discord": {
+      "card": {
+        "name": "Test micro Discord",
+        "desc": "Vérifiez votre micro avant le vocal."
+      },
+      "title": "Test micro Discord: Vérifier son micro avant le chat vocal",
+      "description": "Test micro Discord gratuit. Vérifiez le niveau, réécoutez-vous et corrigez les réglages Discord qui empêchent vos amis de vous entendre.",
+      "h1Html": "<span class=\"grad\">Test micro Discord</span>",
+      "lead": "Assurez-vous que votre micro fonctionne avant de rejoindre un salon vocal. Testez-le ici, puis appliquez les mêmes réglages dans Discord.",
+      "article": [
+        {
+          "h": "Comment tester son micro pour Discord",
+          "ol": [
+            "Appuyez sur « Tester le micro » et autorisez l'accès au micro.",
+            "Choisissez dans la liste déroulante le même micro que dans Discord.",
+            "Parlez à volume normal et observez le vumètre.",
+            "Enregistrez 5 secondes et réécoutez pour entendre ce que vos amis entendent."
+          ]
+        },
+        {
+          "h": "Le micro marche ici mais pas sur Discord ?",
+          "p": [
+            "Si le vumètre bouge sur cette page, votre micro et votre système fonctionnent. Le problème vient d'un réglage Discord. Ouvrez les Paramètres utilisateur (la roue dentée à côté de votre nom) → Voix et vidéo et vérifiez ces points, dans l'ordre :"
+          ],
+          "ul": [
+            "Périphérique d'entrée : choisissez votre micro par son nom plutôt que « Par défaut ». Discord reste souvent sur l'ancien périphérique par défaut après le branchement d'un casque.",
+            "Sensibilité d'entrée : désactivez « Déterminer automatiquement la sensibilité d'entrée » et faites glisser le curseur vers la gauche jusqu'à ce que votre voix allume la barre.",
+            "Mode d'entrée : si vous utilisez Appuyer pour parler, vérifiez le raccourci. Maintenir la mauvaise touche ressemble exactement à un micro mort.",
+            "Une icône de micro rouge barrée à côté de votre nom signifie que vous êtes rendu muet sur le serveur. Seul un modérateur peut l'annuler.",
+            "Si votre voix est hachée, réglez un instant la Réduction de bruit sur Aucune et testez à nouveau.",
+            "Toujours rien ? Descendez et appuyez sur « Réinitialiser les paramètres vocaux », puis choisissez à nouveau votre micro."
+          ]
+        },
+        {
+          "h": "Avoir un son propre sur Discord",
+          "p": [
+            "Visez une voix dont les pics se situent entre −20 dB et −10 dB sur le vumètre ici. En dessous, vos amis monteront votre volume et entendront votre ventilateur. Au-dessus, votre son saturera quand vous riez ou criez. Si vous jouez sans casque, laissez l'Annulation d'écho activée dans Discord pour que vos haut-parleurs ne repassent pas dans le micro."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Pourquoi mes amis ne m'entendent-ils pas sur Discord ?",
+          "a": "En général, Discord écoute un autre périphérique, la sensibilité d'entrée est trop élevée ou vous êtes en sourdine. Choisissez votre micro par son nom dans Voix et vidéo, baissez la sensibilité et vérifiez l'icône de micro à côté de votre nom."
+        },
+        {
+          "q": "Comment tester son micro dans Discord ?",
+          "a": "Allez dans Paramètres utilisateur → Voix et vidéo et appuyez sur « Vérifions » sous Test du micro. La barre doit bouger quand vous parlez."
+        },
+        {
+          "q": "Discord fonctionne-t-il avec les micros USB et Bluetooth ?",
+          "a": "Oui. Branchez le micro, puis sélectionnez-le par son nom dans la liste Périphérique d'entrée de Discord. Un casque Bluetooth peut passer en mode de qualité réduite quand le micro est utilisé, c'est normal."
+        },
+        {
+          "q": "Ce test est-il relié à mon compte Discord ?",
+          "a": "Non. Cette page fonctionne dans votre navigateur et ne communique jamais avec Discord. Rien n'est envoyé."
+        }
+      ]
+    },
+    "zoom": {
+      "card": {
+        "name": "Test micro Zoom",
+        "desc": "Soyez prêt pour votre prochaine réunion."
+      },
+      "title": "Test micro Zoom: Vérifier son micro avant une réunion",
+      "description": "Testez votre micro avant un appel Zoom : niveau, enregistrement et réécoute, puis corrigez les réglages audio Zoom qui vous rendent inaudible.",
+      "h1Html": "<span class=\"grad\">Test micro Zoom</span>",
+      "lead": "Trente secondes ici vous évitent le « vous m'entendez ? » au début de chaque réunion. Testez votre micro, puis vérifiez les mêmes réglages dans Zoom.",
+      "article": [
+        {
+          "h": "Comment tester son micro avant un appel Zoom",
+          "ol": [
+            "Appuyez sur « Tester le micro » et autorisez l'accès au micro.",
+            "Choisissez le micro que vous utiliserez pendant la réunion.",
+            "Parlez normalement. Le vumètre doit atteindre la zone verte.",
+            "Enregistrez un court extrait et réécoutez-le avec un casque."
+          ]
+        },
+        {
+          "h": "Les réglages audio Zoom qui comptent",
+          "ul": [
+            "Paramètres → Audio → Microphone : choisissez votre micro par son nom et appuyez sur « Tester le micro ».",
+            "Si votre volume varie sans cesse, décochez « Ajuster automatiquement le volume du microphone » et réglez le curseur vous-même.",
+            "« Supprimer le bruit de fond » sur Auto convient à la plupart des pièces. Passez sur Faible si votre voix est hachée.",
+            "Vous jouez de la musique ou enseignez un instrument ? Activez « Son original pour les musiciens » pour que Zoom arrête de filtrer votre son."
+          ]
+        },
+        {
+          "h": "Personne ne vous entend en réunion ?",
+          "ul": [
+            "Regardez l'icône du micro en bas à gauche. Une barre rouge signifie que vous êtes en sourdine.",
+            "Si vous voyez « Rejoindre l'audio » au lieu d'une icône de micro, cliquez dessus et choisissez « Rejoindre l'audio par ordinateur ».",
+            "L'hôte a peut-être coupé le micro de tout le monde. Demandez dans le chat ou appuyez sur « Lever la main ».",
+            "Fermez les autres applications qui utilisent le micro, comme Teams, Discord ou un autre onglet, puis rejoignez à nouveau."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Comment tester son micro avant une réunion Zoom ?",
+          "a": "Utilisez le test micro de cette page, ou ouvrez Paramètres → Audio → Tester le micro dans Zoom. Zoom propose aussi une réunion test sur zoom.us/test."
+        },
+        {
+          "q": "Pourquoi Zoom dit-il que mon micro n'est pas disponible ?",
+          "a": "Une autre application l'utilise probablement, ou Zoom n'a pas l'autorisation. Fermez les autres applis d'appel et autorisez Zoom dans les réglages de confidentialité du micro de votre système."
+        },
+        {
+          "q": "Pourquoi ma voix est-elle faible sur Zoom ?",
+          "a": "Le volume d'entrée du système est bas ou le réglage automatique de Zoom l'a baissé. Montez le volume d'entrée et décochez l'ajustement automatique dans Zoom."
+        },
+        {
+          "q": "Cette page enregistre-t-elle ou envoie-t-elle mon son ?",
+          "a": "Non. Tout se passe dans votre navigateur et rien n'est envoyé."
+        }
+      ]
+    },
+    "iphone": {
+      "card": {
+        "name": "Test micro iPhone",
+        "desc": "Vérifiez les micros de l'iPhone dans Safari."
+      },
+      "title": "Test micro iPhone: Tester le micro de son iPhone en ligne",
+      "description": "Testez le micro de votre iPhone dans Safari, sans appli. Niveau en direct, enregistrement et lecture, et solutions aux réglages iOS qui bloquent le micro.",
+      "h1Html": "<span class=\"grad\">Test micro iPhone</span>",
+      "lead": "Ouvrez cette page dans Safari ou Chrome sur votre iPhone, autorisez le micro et parlez. Vous saurez en quelques secondes si le micro fonctionne.",
+      "article": [
+        {
+          "h": "Comment tester le micro de son iPhone",
+          "ol": [
+            "Ouvrez cette page dans Safari (ou Chrome) sur votre iPhone.",
+            "Touchez « Tester le micro » et choisissez Autoriser quand iOS le demande.",
+            "Parlez normalement et observez le vumètre.",
+            "Touchez « Enregistrer 5 s », puis réécoutez pour juger la qualité."
+          ]
+        },
+        {
+          "h": "Votre iPhone a plusieurs micros",
+          "p": [
+            "La plupart des iPhone ont un micro en bas à côté du port de charge, un dans l'écouteur en haut et un près de l'appareil photo arrière. Les appels et le Dictaphone utilisent surtout le micro du bas, tandis que la vidéo utilise les autres. Si le vumètre bouge à peine, parlez vers le bord inférieur du téléphone et vérifiez que votre coque ne couvre pas les petits trous du micro."
+          ]
+        },
+        {
+          "h": "Le micro de l'iPhone ne marche pas ?",
+          "ul": [
+            "Autorisation du site : dans Safari, touchez le bouton « aA » dans la barre d'adresse → Réglages du site web → Micro → Autoriser.",
+            "Autorisation de l'app : Réglages → Confidentialité et sécurité → Micro, et vérifiez que votre navigateur ou votre app est activé.",
+            "Bluetooth : des AirPods ou le système de la voiture peuvent prendre le micro. Désactivez le Bluetooth et testez à nouveau.",
+            "Nettoyez délicatement les trous du micro avec une brosse douce et sèche. N'y enfoncez jamais d'objet pointu.",
+            "Redémarrez l'iPhone. Si l'app Dictaphone enregistre aussi du silence, contactez l'assistance Apple."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Peut-on tester le micro de l'iPhone sans appli ?",
+          "a": "Oui. Cette page fonctionne dans Safari et Chrome sur iOS. Autorisez l'accès au micro quand on vous le demande et lancez le test."
+        },
+        {
+          "q": "Pourquoi le micro de mon iPhone sonne-t-il étouffé ?",
+          "a": "Une coque, le bord d'un verre trempé ou des peluches couvrent souvent les trous du micro. Retirez la coque, nettoyez délicatement les trous et testez à nouveau."
+        },
+        {
+          "q": "Pourquoi on ne m'entend pas en appel alors que le test marche ?",
+          "a": "Les appels peuvent passer par un appareil Bluetooth connecté ou par le micro de l'écouteur. Déconnectez le Bluetooth et essayez le haut-parleur pour comparer."
+        },
+        {
+          "q": "Mon enregistrement est-il envoyé en ligne ?",
+          "a": "Non. Les enregistrements restent dans la mémoire de Safari jusqu'à la fermeture de la page, sauf si vous les téléchargez."
+        }
+      ]
+    },
+    "android": {
+      "card": {
+        "name": "Test micro Android",
+        "desc": "Vérifiez le micro du téléphone dans Chrome."
+      },
+      "title": "Test micro Android: Tester le micro de son téléphone",
+      "description": "Testez le micro de votre Android dans Chrome, sans appli : niveau en direct, enregistrement, lecture et solutions si Android bloque le micro.",
+      "h1Html": "<span class=\"grad\">Test micro Android</span>",
+      "lead": "Ouvrez cette page dans Chrome ou Samsung Internet sur votre téléphone, autorisez le micro et parlez. Le vumètre montre tout de suite si le micro vous capte.",
+      "article": [
+        {
+          "h": "Comment tester le micro de son Android",
+          "ol": [
+            "Ouvrez cette page dans Chrome, Samsung Internet ou Firefox.",
+            "Touchez « Tester le micro » et autorisez l'accès au micro.",
+            "Parlez normalement et observez le vumètre.",
+            "Enregistrez 5 secondes et réécoutez pour juger la qualité."
+          ]
+        },
+        {
+          "h": "Le micro Android ne marche pas ?",
+          "ul": [
+            "Réglages rapides : balayez vers le bas et vérifiez que la vignette « Accès au micro » est activée (Android 12 et versions ultérieures).",
+            "Autorisation du navigateur : touchez l'icône à gauche de l'adresse → Autorisations → Micro → Autoriser.",
+            "Autorisation de l'appli : Paramètres → Applications → Chrome → Autorisations → Micro → Autoriser seulement si l'appli est en cours d'utilisation.",
+            "Des écouteurs Bluetooth ou une montre connectée peuvent prendre le micro. Désactivez le Bluetooth et testez à nouveau.",
+            "Retirez la coque et nettoyez délicatement le petit trou du micro en bas avec une brosse douce et sèche.",
+            "Redémarrez le téléphone. Si l'appli Enregistreur intégrée enregistre aussi du silence, le micro a peut-être besoin d'une réparation."
+          ]
+        },
+        {
+          "h": "Pourquoi les appels sonnent différemment de ce test",
+          "p": [
+            "Pendant les appels, Android utilise la réduction de bruit et souvent un second micro en haut du téléphone pour supprimer les bruits de fond. Les enregistrements du navigateur utilisent une version plus légère du même traitement. Si le test est clair mais pas les appels, vérifiez les réglages Appels Wi-Fi ou VoLTE de votre opérateur, ou essayez un appel avec le haut-parleur activé."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Peut-on tester le micro du téléphone sans installer d'appli ?",
+          "a": "Oui. Cette page fonctionne dans Chrome, Samsung Internet et Firefox sur Android. Autorisez l'accès au micro et lancez le test."
+        },
+        {
+          "q": "Pourquoi mon micro Android est-il bloqué dans le navigateur ?",
+          "a": "Soit le navigateur n'a pas l'autorisation micro, soit l'option Accès au micro des Réglages rapides est désactivée. Activez les deux et rechargez la page."
+        },
+        {
+          "q": "Est-ce que ça marche sur les téléphones Samsung ?",
+          "a": "Oui. Utilisez Samsung Internet ou Chrome. Sur les téléphones Samsung, les autorisations des applis se trouvent dans Paramètres → Applications → Autorisations."
+        },
+        {
+          "q": "Mon son est-il envoyé en ligne ?",
+          "a": "Non. Tout se passe sur votre téléphone et rien n'est envoyé à un serveur."
+        }
+      ]
+    },
+    "airpods": {
+      "card": {
+        "name": "Test micro AirPods",
+        "desc": "Vérifiez le micro de vos AirPods."
+      },
+      "title": "Test micro AirPods: Tester le micro de ses AirPods en ligne",
+      "description": "Testez le micro de vos AirPods sur iPhone, Mac ou Windows : choisissez-les en entrée, vérifiez le niveau et corrigez les réglages qui dégradent le son.",
+      "h1Html": "<span class=\"grad\">Test micro AirPods</span>",
+      "lead": "Connectez vos AirPods, sélectionnez-les dans la liste des micros et parlez. Le vumètre et un court enregistrement vous disent si le micro des AirPods fonctionne et comment il sonne.",
+      "article": [
+        {
+          "h": "Comment tester le micro de ses AirPods",
+          "ol": [
+            "Mettez vos AirPods et connectez-les à votre appareil.",
+            "Appuyez sur « Tester le micro » et autorisez l'accès au micro.",
+            "Choisissez vos AirPods dans la liste déroulante des micros.",
+            "Parlez normalement, puis enregistrez 5 secondes et réécoutez."
+          ]
+        },
+        {
+          "h": "Choisir les AirPods comme micro",
+          "ul": [
+            "iPhone : les AirPods sont utilisés automatiquement une fois connectés. Ouvrez cette page dans Safari et autorisez le micro.",
+            "Mac : ouvrez Réglages Système → Son → Entrée et sélectionnez vos AirPods.",
+            "Windows : les AirPods apparaissent deux fois, en « Écouteurs » et en « Casque ». Choisissez l'entrée « Casque » comme entrée audio, sinon le micro ne fonctionnera pas.",
+            "Un seul écouteur ? Sur iPhone, allez dans Réglages → Bluetooth → le ⓘ à côté de vos AirPods → Micro, et choisissez Automatique, Toujours à gauche ou Toujours à droite."
+          ]
+        },
+        {
+          "h": "Pourquoi les AirPods sonnent moins bien en appel",
+          "p": [
+            "Quand le micro est actif, le Bluetooth passe en mode mains libres, qui transporte le son dans les deux sens avec une qualité réduite. C'est pourquoi la musique sonne très bien mais les appels sonnent creux, surtout sous Windows et Android. C'est un comportement normal, pas une panne. Pour la meilleure qualité de voix lors de longs appels sur ordinateur, un micro filaire ou USB reste meilleur que n'importe quels écouteurs Bluetooth."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Pourquoi le micro de mes AirPods ne marche pas sous Windows ?",
+          "a": "Windows affiche les AirPods deux fois. Sélectionnez l'appareil « Casque » comme entrée dans Paramètres → Système → Son, ainsi que dans votre appli d'appel."
+        },
+        {
+          "q": "Pourquoi le micro des AirPods sonne-t-il étouffé ?",
+          "a": "La saleté dans la grille du micro en bas de la tige est la cause la plus fréquente. Nettoyez-la délicatement avec un coton-tige sec."
+        },
+        {
+          "q": "Peut-on utiliser un seul AirPod comme micro ?",
+          "a": "Oui. Sur iPhone, réglez Micro sur Toujours à gauche ou Toujours à droite dans les réglages Bluetooth des AirPods."
+        },
+        {
+          "q": "Mon son est-il envoyé en ligne ?",
+          "a": "Non. Le test fonctionne dans votre navigateur et rien ne quitte votre appareil."
+        }
+      ]
+    },
+    "headphone": {
+      "card": {
+        "name": "Test casque audio",
+        "desc": "Gauche/droite, stéréo et graves."
+      },
+      "title": "Test casque audio en ligne: Gauche/Droite, stéréo et basses",
+      "description": "Test casque audio gratuit en ligne : canaux gauche et droit, balance stéréo et basses avec sons test et balayage. Casque filaire ou Bluetooth.",
+      "h1Html": "<span class=\"grad\">Test casque audio</span> en ligne",
+      "lead": "Vérifiez en quelques secondes si les deux côtés de votre casque fonctionnent, si la gauche et la droite sont dans le bon sens et jusqu'où descendent les basses.",
+      "article": [
+        {
+          "h": "Comment tester son casque",
+          "ol": [
+            "Mettez votre casque et baissez le volume à un niveau confortable.",
+            "Appuyez sur Gauche : le son doit venir uniquement de l'oreille gauche. Puis appuyez sur Droite.",
+            "Appuyez sur Les deux : le son doit paraître centré, au milieu de votre tête.",
+            "Lancez le balayage de fréquences pour entendre toute la plage, des basses profondes aux aigus."
+          ]
+        },
+        {
+          "h": "Un côté plus faible ou muet ?",
+          "ul": [
+            "Vérifiez la balance : Windows : Paramètres → Système → Son → votre appareil → Gauche/Droite, ou sur Mac : Réglages Système → Son → Sortie → Balance.",
+            "Sur iPhone, vérifiez que Audio mono est désactivé : Réglages → Accessibilité → Audiovisuel.",
+            "Casque filaire : débranchez, nettoyez la fiche et enfoncez-la à fond. Une fiche à moitié insérée coupe souvent un côté.",
+            "Le cérumen sur la grille est une cause fréquente d'un écouteur plus faible. Nettoyez-la délicatement avec une brosse sèche."
+          ]
+        },
+        {
+          "h": "Basses, aigus et Bluetooth",
+          "p": [
+            "Un bon casque circum-auriculaire restitue clairement jusqu'à 30 ou 40 Hz au début du balayage. Les petits écouteurs ont besoin d'une bonne étanchéité pour produire des basses : essayez un embout plus grand si le bas du spectre sonne maigre. Le Bluetooth ajoute un léger retard, généralement de 100 à 250 millisecondes, sans importance pour la musique mais perceptible dans les jeux."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Comment savoir si mon casque a la gauche et la droite inversées ?",
+          "a": "Appuyez sur Gauche. Si le son vient de votre oreille droite, le casque est porté à l'envers ou le câble ou l'adaptateur est câblé à l'envers."
+        },
+        {
+          "q": "Pourquoi je n'entends pas le début du balayage ?",
+          "a": "Les notes très graves demandent une bonne étanchéité et de plus grands haut-parleurs. Beaucoup d'écouteurs et de haut-parleurs de portable descendent à peine sous 100 Hz."
+        },
+        {
+          "q": "Le test est-il sans danger pour mes oreilles ?",
+          "a": "Oui, à volume normal. Commencez bas et montez doucement, surtout avec des écouteurs intra-auriculaires."
+        },
+        {
+          "q": "Est-ce que ça marche avec un casque Bluetooth ?",
+          "a": "Oui. Connectez-le d'abord pour qu'il devienne la sortie active, puis jouez les sons."
+        }
+      ]
+    },
+    "recorder": {
+      "card": {
+        "name": "Enregistreur vocal",
+        "desc": "Enregistrez et téléchargez, sans inscription."
+      },
+      "title": "Enregistreur vocal en ligne: Enregistrer gratuitement",
+      "description": "Enregistreur vocal en ligne gratuit : enregistrez votre voix dans le navigateur, réécoutez et téléchargez. Sans limite de durée, sans inscription.",
+      "h1Html": "<span class=\"grad\">Enregistreur vocal</span> en ligne",
+      "lead": "Enregistrez votre voix directement dans le navigateur et téléchargez le fichier. Sans inscription, sans limite de durée, et le son ne quitte jamais votre appareil.",
+      "article": [
+        {
+          "h": "Comment enregistrer sa voix en ligne",
+          "ol": [
+            "Appuyez sur « Enregistrer ma voix » et autorisez l'accès au micro.",
+            "Choisissez votre micro si vous en avez plusieurs.",
+            "Parlez, chantez ou jouez. Le minuteur et le vumètre montrent que ça fonctionne.",
+            "Appuyez sur Arrêter. Votre enregistrement apparaît ci-dessous, prêt à écouter ou à télécharger."
+          ]
+        },
+        {
+          "h": "Quel fichier vais-je obtenir ?",
+          "p": [
+            "Chrome, Edge et Firefox enregistrent de l'audio WebM avec le codec Opus. Safari enregistre un fichier M4A (AAC). Les deux se lisent dans VLC, la plupart des lecteurs multimédias et des éditeurs comme Audacity. S'il vous faut un MP3, n'importe quel convertisseur audio change le format en quelques secondes."
+          ]
+        },
+        {
+          "h": "Conseils pour un meilleur enregistrement",
+          "ul": [
+            "Faites d'abord le test micro et visez des pics entre −20 dB et −10 dB.",
+            "Enregistrez dans une petite pièce avec des meubles rembourrés. Des rideaux et un canapé réduisent l'écho mieux que n'importe quel filtre.",
+            "Placez le micro à environ une largeur de main de votre bouche, légèrement sur le côté.",
+            "Coupez ventilateurs et notifications, et utilisez un casque si vous jouez sur une piste d'accompagnement."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Y a-t-il une limite de durée ?",
+          "a": "Pas de limite fixe. Les enregistrements sont gardés dans la mémoire du navigateur, donc les sessions très longues dépendent de votre appareil. Au-delà d'une heure, téléchargez en plusieurs parties."
+        },
+        {
+          "q": "Où sont enregistrés mes fichiers ?",
+          "a": "Uniquement dans cet onglet du navigateur jusqu'à ce que vous les téléchargiez. Fermer ou recharger la page les supprime."
+        },
+        {
+          "q": "Est-ce que ça marche sur iPhone et Android ?",
+          "a": "Oui. Il fonctionne dans Safari sur iPhone et dans Chrome ou Samsung Internet sur Android."
+        },
+        {
+          "q": "L'enregistreur vocal est-il vraiment gratuit ?",
+          "a": "Oui. Sans inscription, sans filigrane et sans envoi en ligne."
         }
       ]
     }

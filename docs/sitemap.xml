@@ -995,6 +995,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/voice-recorder/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/voice-recorder/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/voice-recorder/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/voice-recorder/"/>
   </url>
   <url>
@@ -1004,6 +1008,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/voice-recorder/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/voice-recorder/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/voice-recorder/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/voice-recorder/"/>
   </url>
   <url>
@@ -1013,6 +1021,62 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/voice-recorder/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/voice-recorder/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/voice-recorder/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/fr/voice-recorder/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/voice-recorder/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/de/voice-recorder/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/voice-recorder/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/it/voice-recorder/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/voice-recorder/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/ru/voice-recorder/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/voice-recorder/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/voice-recorder/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/voice-recorder/"/>
   </url>
   <url>
@@ -1022,6 +1086,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/discord-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/discord-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/discord-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/discord-mic-test/"/>
   </url>
   <url>
@@ -1031,6 +1099,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/discord-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/discord-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/discord-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/discord-mic-test/"/>
   </url>
   <url>
@@ -1040,6 +1112,62 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/discord-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/discord-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/discord-mic-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/fr/discord-mic-test/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/discord-mic-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/de/discord-mic-test/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/discord-mic-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/it/discord-mic-test/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/discord-mic-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/ru/discord-mic-test/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/discord-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/discord-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/discord-mic-test/"/>
   </url>
   <url>
@@ -1049,6 +1177,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/zoom-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/zoom-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/zoom-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/zoom-mic-test/"/>
   </url>
   <url>
@@ -1058,6 +1190,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/zoom-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/zoom-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/zoom-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/zoom-mic-test/"/>
   </url>
   <url>
@@ -1067,6 +1203,62 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/zoom-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/zoom-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/zoom-mic-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/fr/zoom-mic-test/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/zoom-mic-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/de/zoom-mic-test/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/zoom-mic-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/it/zoom-mic-test/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/zoom-mic-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/ru/zoom-mic-test/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/zoom-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/zoom-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/zoom-mic-test/"/>
   </url>
   <url>
@@ -1076,6 +1268,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/iphone-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/iphone-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/iphone-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/iphone-mic-test/"/>
   </url>
   <url>
@@ -1085,6 +1281,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/iphone-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/iphone-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/iphone-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/iphone-mic-test/"/>
   </url>
   <url>
@@ -1094,6 +1294,62 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/iphone-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/iphone-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/iphone-mic-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/fr/iphone-mic-test/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/iphone-mic-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/de/iphone-mic-test/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/iphone-mic-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/it/iphone-mic-test/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/iphone-mic-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/ru/iphone-mic-test/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/iphone-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/iphone-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/iphone-mic-test/"/>
   </url>
   <url>
@@ -1103,6 +1359,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/android-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/android-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/android-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/android-mic-test/"/>
   </url>
   <url>
@@ -1112,6 +1372,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/android-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/android-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/android-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/android-mic-test/"/>
   </url>
   <url>
@@ -1121,6 +1385,62 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/android-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/android-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/android-mic-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/fr/android-mic-test/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/android-mic-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/de/android-mic-test/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/android-mic-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/it/android-mic-test/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/android-mic-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/ru/android-mic-test/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/android-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/android-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/android-mic-test/"/>
   </url>
   <url>
@@ -1130,6 +1450,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/airpods-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/airpods-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/airpods-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/airpods-mic-test/"/>
   </url>
   <url>
@@ -1139,6 +1463,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/airpods-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/airpods-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/airpods-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/airpods-mic-test/"/>
   </url>
   <url>
@@ -1148,6 +1476,62 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/airpods-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/airpods-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/airpods-mic-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/fr/airpods-mic-test/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/airpods-mic-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/de/airpods-mic-test/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/airpods-mic-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/it/airpods-mic-test/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/airpods-mic-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/ru/airpods-mic-test/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/airpods-mic-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/airpods-mic-test/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/airpods-mic-test/"/>
   </url>
   <url>
@@ -1157,6 +1541,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/headphone-test/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/headphone-test/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/headphone-test/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/headphone-test/"/>
   </url>
   <url>
@@ -1166,6 +1554,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/headphone-test/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/headphone-test/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/headphone-test/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/headphone-test/"/>
   </url>
   <url>
@@ -1175,6 +1567,62 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/headphone-test/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/headphone-test/"/>
     <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/headphone-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/fr/headphone-test/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/headphone-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/de/headphone-test/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/headphone-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/it/headphone-test/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/headphone-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/ru/headphone-test/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/headphone-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/headphone-test/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/headphone-test/"/>
   </url>
   <url>

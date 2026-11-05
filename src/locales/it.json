@@ -113,7 +113,16 @@
     "spkSorry": "Controlla volume, muto e dispositivo di uscita",
     "noDevices": "Ancora nessun dispositivo, premi Avvia qui sopra",
     "guides": "Guide",
-    "maxRes": "Massimo supportato"
+    "maxRes": "Massimo supportato",
+    "moreTests": "Altri test",
+    "recTool": "Registratore vocale",
+    "recHint": "Premi Registra, parla e poi premi Ferma. Le registrazioni compaiono qui sotto, pronte da ascoltare o scaricare.",
+    "recStart": "Registra",
+    "recStop": "Ferma",
+    "recDelete": "Elimina",
+    "recEmpty": "Ancora nessuna registrazione.",
+    "recName": "Registrazione",
+    "startRec": "Avvia registrazione"
   },
   "pages": {
     "home": {
@@ -380,6 +389,395 @@
         {
           "q": "Funziona con le cuffie Bluetooth?",
           "a": "Sì. Collegale prima, in modo che diventino l'uscita attiva, poi riproduci i toni."
+        }
+      ]
+    },
+    "discord": {
+      "card": {
+        "name": "Test microfono Discord",
+        "desc": "Prova il microfono prima della chat vocale."
+      },
+      "title": "Test Microfono Discord: Controlla il Microfono Prima di Parlare",
+      "description": "Test microfono Discord gratuito. Controlla il livello, riascoltati e correggi le impostazioni di Discord che impediscono agli amici di sentirti.",
+      "h1Html": "<span class=\"grad\">Test microfono Discord</span>",
+      "lead": "Assicurati che il microfono funzioni prima di entrare in un canale vocale. Provalo qui, poi usa le stesse impostazioni su Discord.",
+      "article": [
+        {
+          "h": "Come testare il microfono per Discord",
+          "ol": [
+            "Premi \"Avvia test microfono\" e consenti l'accesso al microfono.",
+            "Scegli dal menu a tendina lo stesso microfono che usi su Discord.",
+            "Parla al tuo volume normale e guarda l'indicatore di livello.",
+            "Registra 5 secondi e riascoltali per sentire quello che sentono i tuoi amici."
+          ]
+        },
+        {
+          "h": "Il microfono funziona qui ma non su Discord?",
+          "p": [
+            "Se l'indicatore si muove su questa pagina, il microfono e il sistema sono a posto. Il problema è un'impostazione di Discord. Apri Impostazioni utente (l'ingranaggio accanto al tuo nome) → Voce e video e controlla questi punti, in ordine:"
+          ],
+          "ul": [
+            "Dispositivo di input: scegli il microfono per nome invece di \"Predefinito\". Discord spesso resta sul vecchio predefinito dopo che colleghi delle cuffie.",
+            "Sensibilità di input: disattiva \"Determina automaticamente la sensibilità di input\" e trascina il cursore a sinistra finché la tua voce non accende la barra.",
+            "Modalità di input: se usi Push to talk, controlla il tasto assegnato. Tenere premuto il tasto sbagliato sembra proprio un microfono guasto.",
+            "Un'icona del microfono rossa e barrata accanto al tuo nome significa che sei silenziato nel server. Solo un moderatore può annullarlo.",
+            "Se la voce va e viene, imposta per un attimo Soppressione del rumore su Nessuna e prova di nuovo.",
+            "Ancora niente? Scorri in fondo, premi \"Reimposta impostazioni vocali\" e scegli di nuovo il microfono."
+          ]
+        },
+        {
+          "h": "Come avere un audio pulito su Discord",
+          "p": [
+            "Punta a una voce con picchi tra −20 dB e −10 dB sull'indicatore di questa pagina. Più in basso, gli amici alzeranno il tuo volume e sentiranno la ventola. Più in alto, andrai in clipping quando ridi o urli. Se giochi senza cuffie, lascia attiva la Cancellazione dell'eco su Discord così gli altoparlanti non rientrano nel microfono."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Perché i miei amici non mi sentono su Discord?",
+          "a": "Di solito Discord sta ascoltando un altro dispositivo, la sensibilità di input è troppo alta oppure sei silenziato. Scegli il microfono per nome in Voce e video, abbassa la sensibilità e controlla l'icona del microfono accanto al tuo nome."
+        },
+        {
+          "q": "Come provo il microfono dentro Discord?",
+          "a": "Vai su Impostazioni utente → Voce e video e premi \"Facciamo una prova\" sotto Test del microfono. La barra dovrebbe muoversi mentre parli."
+        },
+        {
+          "q": "Discord funziona con microfoni USB e Bluetooth?",
+          "a": "Sì. Collega il microfono, poi selezionalo per nome nell'elenco Dispositivo di input di Discord. Le cuffie Bluetooth possono passare a una modalità di qualità inferiore mentre il microfono è in uso, ed è normale."
+        },
+        {
+          "q": "Questo test è collegato al mio account Discord?",
+          "a": "No. Questa pagina funziona nel browser e non comunica mai con Discord. Non viene caricato nulla."
+        }
+      ]
+    },
+    "zoom": {
+      "card": {
+        "name": "Test microfono Zoom",
+        "desc": "Preparati prima della prossima riunione."
+      },
+      "title": "Test Microfono Zoom: Controlla il Microfono Prima della Riunione",
+      "description": "Testa il microfono prima di una chiamata Zoom. Controlla il livello, registra e riascolta, poi correggi le impostazioni audio di Zoom che ti rendono muto.",
+      "h1Html": "<span class=\"grad\">Test microfono Zoom</span>",
+      "lead": "Trenta secondi qui ti risparmiano il \"mi sentite?\" all'inizio di ogni riunione. Testa il microfono, poi controlla le stesse impostazioni su Zoom.",
+      "article": [
+        {
+          "h": "Come testare il microfono prima di una chiamata Zoom",
+          "ol": [
+            "Premi \"Avvia test microfono\" e consenti l'accesso al microfono.",
+            "Scegli il microfono che userai nella riunione.",
+            "Parla normalmente. L'indicatore dovrebbe arrivare nella zona verde.",
+            "Registra una breve clip e ascoltala con le cuffie."
+          ]
+        },
+        {
+          "h": "Le impostazioni audio di Zoom che contano",
+          "ul": [
+            "Impostazioni → Audio → Microfono: scegli il microfono per nome e premi \"Prova microfono\".",
+            "Se il volume continua a cambiare, deseleziona \"Regola automaticamente il volume del microfono\" e imposta tu il cursore.",
+            "\"Sopprimi rumore di fondo\" su Automatico va bene per quasi tutti gli ambienti. Impostalo su Basso se la voce suona a scatti.",
+            "Suoni musica o insegni uno strumento? Attiva \"Suono originale per musicisti\" così Zoom smette di filtrare l'audio."
+          ]
+        },
+        {
+          "h": "Nessuno ti sente in riunione?",
+          "ul": [
+            "Guarda l'icona del microfono in basso a sinistra. Una linea rossa significa che sei disattivato.",
+            "Se vedi \"Accedi all'audio\" al posto dell'icona del microfono, fai clic e scegli \"Accedi con l'audio del computer\".",
+            "L'organizzatore potrebbe aver disattivato tutti. Chiedi nella chat o premi \"Alza la mano\".",
+            "Chiudi le altre app che usano il microfono, come Teams, Discord o un'altra scheda del browser, poi rientra."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Come provo il microfono prima di una riunione Zoom?",
+          "a": "Usa il test microfono di questa pagina oppure apri in Zoom Impostazioni → Audio → Prova microfono. Zoom offre anche una riunione di prova su zoom.us/test."
+        },
+        {
+          "q": "Perché Zoom dice che il microfono non è disponibile?",
+          "a": "Probabilmente un'altra app lo sta usando o Zoom non ha il permesso. Chiudi le altre app di chiamata e consenti Zoom nelle impostazioni privacy del microfono del sistema."
+        },
+        {
+          "q": "Perché su Zoom la mia voce è bassa?",
+          "a": "Il volume di ingresso del sistema è basso oppure la regolazione automatica di Zoom l'ha abbassato. Alza il volume di ingresso e deseleziona la regolazione automatica in Zoom."
+        },
+        {
+          "q": "Questa pagina registra o invia il mio audio?",
+          "a": "No. Tutto funziona nel browser e non viene caricato nulla."
+        }
+      ]
+    },
+    "iphone": {
+      "card": {
+        "name": "Test microfono iPhone",
+        "desc": "Prova i microfoni dell'iPhone in Safari."
+      },
+      "title": "Test Microfono iPhone: Controlla il Microfono dell'iPhone Online",
+      "description": "Testa il microfono dell'iPhone in Safari, senza app. Guarda il livello dal vivo, registra e riascolta, e sblocca il microfono nelle impostazioni iOS.",
+      "h1Html": "<span class=\"grad\">Test microfono iPhone</span>",
+      "lead": "Apri questa pagina in Safari o Chrome sull'iPhone, consenti il microfono e parla. In pochi secondi saprai se il microfono funziona.",
+      "article": [
+        {
+          "h": "Come testare il microfono dell'iPhone",
+          "ol": [
+            "Apri questa pagina in Safari (o Chrome) sul tuo iPhone.",
+            "Tocca \"Avvia test microfono\" e scegli Consenti quando iOS lo chiede.",
+            "Parla normalmente e guarda l'indicatore di livello.",
+            "Tocca \"Registra 5s\", poi riascolta per sentire la qualità."
+          ]
+        },
+        {
+          "h": "Il tuo iPhone ha più di un microfono",
+          "p": [
+            "La maggior parte degli iPhone ha un microfono in basso accanto alla porta di ricarica, uno nella capsula auricolare in alto e uno vicino alla fotocamera posteriore. Le chiamate e i memo vocali usano soprattutto il microfono in basso, mentre la registrazione video usa gli altri. Se l'indicatore si muove appena, prova a parlare verso il bordo inferiore del telefono e controlla che la custodia non copra i piccoli fori del microfono."
+          ]
+        },
+        {
+          "h": "Il microfono dell'iPhone non funziona?",
+          "ul": [
+            "Permesso del sito: in Safari tocca il pulsante \"aA\" nella barra degli indirizzi → Impostazioni sito web → Microfono → Consenti.",
+            "Permesso dell'app: Impostazioni → Privacy e sicurezza → Microfono, e verifica che il browser o l'app sia attivato.",
+            "Bluetooth: AirPods o il sistema dell'auto possono prendere il controllo del microfono. Disattiva il Bluetooth e riprova.",
+            "Pulisci delicatamente i fori del microfono con uno spazzolino morbido e asciutto. Non infilarci mai nulla di appuntito.",
+            "Riavvia l'iPhone. Se anche l'app Memo Vocali registra silenzio, contatta il Supporto Apple."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Posso testare il microfono dell'iPhone senza app?",
+          "a": "Sì. Questa pagina funziona in Safari e Chrome su iOS. Consenti l'accesso al microfono quando richiesto e avvia il test."
+        },
+        {
+          "q": "Perché il microfono del mio iPhone suona ovattato?",
+          "a": "Spesso una custodia, il bordo della pellicola protettiva o della lanugine coprono i fori del microfono. Togli la custodia, pulisci delicatamente i fori e riprova."
+        },
+        {
+          "q": "Perché in chiamata non mi sentono se il test funziona?",
+          "a": "Le chiamate possono passare da un dispositivo Bluetooth collegato o dal microfono della capsula auricolare. Scollega il Bluetooth e prova in vivavoce per confrontare."
+        },
+        {
+          "q": "La mia registrazione viene caricata?",
+          "a": "No. Le registrazioni restano nella memoria di Safari finché non chiudi la pagina, a meno che tu non le scarichi."
+        }
+      ]
+    },
+    "android": {
+      "card": {
+        "name": "Test microfono Android",
+        "desc": "Prova il microfono del telefono in Chrome."
+      },
+      "title": "Test Microfono Android: Controlla il Microfono del Telefono",
+      "description": "Testa il microfono Android in Chrome, senza app. Guarda il livello dal vivo, registra e riascolta, e sblocca il microfono nelle impostazioni Android.",
+      "h1Html": "<span class=\"grad\">Test microfono Android</span>",
+      "lead": "Apri questa pagina in Chrome o Samsung Internet sul telefono, consenti il microfono e parla. L'indicatore mostra subito se il microfono ti sente.",
+      "article": [
+        {
+          "h": "Come testare il microfono Android",
+          "ol": [
+            "Apri questa pagina in Chrome, Samsung Internet o Firefox.",
+            "Tocca \"Avvia test microfono\" e consenti l'accesso al microfono.",
+            "Parla normalmente e guarda l'indicatore di livello.",
+            "Registra 5 secondi e riascoltali per valutare la qualità."
+          ]
+        },
+        {
+          "h": "Il microfono Android non funziona?",
+          "ul": [
+            "Impostazioni rapide: scorri verso il basso e verifica che il riquadro \"Accesso al microfono\" sia attivo (Android 12 e versioni successive).",
+            "Permesso del browser: tocca l'icona a sinistra dell'indirizzo → Autorizzazioni → Microfono → Consenti.",
+            "Permesso dell'app: Impostazioni → App → Chrome → Autorizzazioni → Microfono → Consenti solo mentre l'app è in uso.",
+            "Auricolari Bluetooth o uno smartwatch possono prendere il controllo del microfono. Disattiva il Bluetooth e riprova.",
+            "Togli la custodia e pulisci delicatamente il piccolo foro del microfono in basso con uno spazzolino morbido e asciutto.",
+            "Riavvia il telefono. Se anche il registratore integrato registra silenzio, il microfono potrebbe dover essere riparato."
+          ]
+        },
+        {
+          "h": "Perché le chiamate suonano diverse da questo test",
+          "p": [
+            "Durante le chiamate Android usa la cancellazione del rumore e spesso un secondo microfono nella parte alta del telefono per eliminare i suoni di fondo. Le registrazioni nel browser usano una versione più leggera della stessa elaborazione. Se il test suona pulito ma le chiamate no, controlla le impostazioni Chiamate Wi-Fi o VoLTE del tuo operatore, oppure prova una chiamata in vivavoce."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Posso testare il microfono del telefono senza installare app?",
+          "a": "Sì. Questa pagina funziona in Chrome, Samsung Internet e Firefox su Android. Consenti l'accesso al microfono e avvia il test."
+        },
+        {
+          "q": "Perché il microfono Android è bloccato nel browser?",
+          "a": "O il browser non ha il permesso del microfono oppure l'interruttore Accesso al microfono nelle Impostazioni rapide è disattivato. Attiva entrambi e ricarica la pagina."
+        },
+        {
+          "q": "Funziona sui telefoni Samsung?",
+          "a": "Sì. Usa Samsung Internet o Chrome. Sui telefoni Samsung trovi i permessi delle app in Impostazioni → Applicazioni → Autorizzazioni."
+        },
+        {
+          "q": "Il mio audio viene caricato?",
+          "a": "No. Tutto avviene sul telefono e nulla viene inviato a un server."
+        }
+      ]
+    },
+    "airpods": {
+      "card": {
+        "name": "Test microfono AirPods",
+        "desc": "Prova il microfono dei tuoi AirPods."
+      },
+      "title": "Test Microfono AirPods: Controlla il Microfono degli AirPods",
+      "description": "Testa il microfono degli AirPods su iPhone, Mac o Windows. Scegli gli AirPods come ingresso, controlla il livello e correggi le impostazioni sbagliate.",
+      "h1Html": "<span class=\"grad\">Test microfono AirPods</span>",
+      "lead": "Collega gli AirPods, selezionali nell'elenco dei microfoni e parla. L'indicatore e una breve registrazione ti dicono se il microfono degli AirPods funziona e come suona.",
+      "article": [
+        {
+          "h": "Come testare il microfono degli AirPods",
+          "ol": [
+            "Indossa gli AirPods e collegali al tuo dispositivo.",
+            "Premi \"Avvia test microfono\" e consenti l'accesso al microfono.",
+            "Scegli i tuoi AirPods nel menu a tendina dei microfoni.",
+            "Parla normalmente, poi registra 5 secondi e riascoltali."
+          ]
+        },
+        {
+          "h": "Scegliere gli AirPods come microfono",
+          "ul": [
+            "iPhone: gli AirPods vengono usati automaticamente appena collegati. Apri questa pagina in Safari e consenti il microfono.",
+            "Mac: apri Impostazioni di Sistema → Suono → Ingresso e seleziona i tuoi AirPods.",
+            "Windows: gli AirPods compaiono due volte, come \"Cuffie\" e \"Auricolare\". Scegli la voce \"Auricolare\" come ingresso, altrimenti il microfono non funziona.",
+            "Solo un auricolare? Su iPhone vai su Impostazioni → Bluetooth → la ⓘ accanto ai tuoi AirPods → Microfono e scegli Automatico, Sempre sinistro o Sempre destro."
+          ]
+        },
+        {
+          "h": "Perché gli AirPods suonano peggio in chiamata",
+          "p": [
+            "Quando il microfono è attivo, il Bluetooth passa a una modalità vivavoce che trasporta l'audio in entrambe le direzioni con una qualità inferiore. Per questo la musica suona benissimo ma le chiamate suonano sottili, soprattutto su Windows e Android. È un comportamento normale, non un guasto. Per la migliore qualità della voce nelle chiamate lunghe al computer, un microfono con cavo o USB batte ancora qualsiasi auricolare Bluetooth."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Perché il microfono degli AirPods non funziona su Windows?",
+          "a": "Windows mostra gli AirPods due volte. Seleziona il dispositivo \"Auricolare\" come ingresso in Impostazioni → Sistema → Audio e nella tua app per le chiamate."
+        },
+        {
+          "q": "Perché il microfono degli AirPods suona ovattato?",
+          "a": "La causa più comune è lo sporco nella griglia del microfono in fondo allo stelo. Puliscila delicatamente con un cotton fioc asciutto."
+        },
+        {
+          "q": "Posso usare un solo AirPod come microfono?",
+          "a": "Sì. Su iPhone imposta Microfono su Sempre sinistro o Sempre destro nelle impostazioni Bluetooth degli AirPods."
+        },
+        {
+          "q": "Il mio audio viene caricato?",
+          "a": "No. Il test funziona nel browser e nulla lascia il tuo dispositivo."
+        }
+      ]
+    },
+    "headphone": {
+      "card": {
+        "name": "Test cuffie",
+        "desc": "Sinistra/destra, stereo e bassi."
+      },
+      "title": "Test Cuffie Online: Sinistra/Destra, Stereo e Bassi",
+      "description": "Test cuffie online gratuito. Controlla i canali sinistro e destro, il bilanciamento stereo e i bassi con toni di prova e uno sweep. Con cavo e Bluetooth.",
+      "h1Html": "<span class=\"grad\">Test cuffie</span> online",
+      "lead": "Scopri in pochi secondi se entrambi i lati delle cuffie funzionano, se sinistra e destra sono al posto giusto e quanto scendono i bassi.",
+      "article": [
+        {
+          "h": "Come testare le cuffie",
+          "ol": [
+            "Indossa le cuffie e abbassa il volume a un livello comodo.",
+            "Premi Sinistra: il tono dovrebbe arrivare solo dall'orecchio sinistro. Poi premi Destra.",
+            "Premi Entrambi: il tono dovrebbe sembrare centrato, in mezzo alla testa.",
+            "Avvia lo sweep di frequenza per sentire la gamma dai bassi profondi agli acuti."
+          ]
+        },
+        {
+          "h": "Un lato più basso o muto?",
+          "ul": [
+            "Controlla il bilanciamento: in Windows Impostazioni → Sistema → Audio → il tuo dispositivo → Sinistra/Destra, su Mac Impostazioni di Sistema → Suono → Uscita → Bilanciamento.",
+            "Su iPhone verifica che Audio mono sia disattivato: Impostazioni → Accessibilità → Audio e elementi visivi.",
+            "Cuffie con cavo: scollegale, pulisci il jack e inseriscilo fino in fondo. Un jack inserito a metà spesso spegne un lato.",
+            "Il cerume sulla retina è una causa comune di un auricolare più basso. Puliscilo delicatamente con uno spazzolino asciutto."
+          ]
+        },
+        {
+          "h": "Bassi, acuti e Bluetooth",
+          "p": [
+            "Delle buone cuffie over-ear riproducono in modo chiaro fino a 30 o 40 Hz all'inizio dello sweep. Gli auricolari piccoli hanno bisogno di una buona tenuta per i bassi, quindi prova un gommino più grande se i bassi suonano deboli. Il Bluetooth aggiunge un breve ritardo, di solito da 100 a 250 millisecondi, che non conta per la musica ma si nota nei giochi."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Come capisco se le cuffie hanno sinistra e destra invertiti?",
+          "a": "Premi Sinistra. Se il suono arriva dall'orecchio destro, le cuffie sono indossate al contrario oppure il cavo o l'adattatore è cablato al contrario."
+        },
+        {
+          "q": "Perché non sento l'inizio dello sweep?",
+          "a": "Le note molto basse richiedono una buona tenuta e driver più grandi. Molti auricolari e altoparlanti dei portatili non riproducono quasi nulla sotto i 100 Hz."
+        },
+        {
+          "q": "Il test è sicuro per le orecchie?",
+          "a": "Sì, a volume normale. Parti basso e alza piano piano, soprattutto con le cuffie in-ear."
+        },
+        {
+          "q": "Funziona con le cuffie Bluetooth?",
+          "a": "Sì. Collegale prima in modo che diventino l'uscita attiva, poi riproduci i toni."
+        }
+      ]
+    },
+    "recorder": {
+      "card": {
+        "name": "Registratore vocale",
+        "desc": "Registra e scarica, senza iscrizione."
+      },
+      "title": "Registratore Vocale Online: Registra Audio Gratis, Senza Account",
+      "description": "Registratore vocale online gratuito. Registra la voce nel browser, riascoltala e scarica il file. Nessun limite di tempo, nessun account, nessun upload.",
+      "h1Html": "<span class=\"grad\">Registratore vocale</span> online",
+      "lead": "Registra la tua voce direttamente nel browser e scarica il file. Nessuna iscrizione, nessun limite di tempo e l'audio non lascia mai il tuo dispositivo.",
+      "article": [
+        {
+          "h": "Come registrare la voce online",
+          "ol": [
+            "Premi \"Avvia registrazione\" e consenti l'accesso al microfono.",
+            "Scegli il microfono se ne hai più di uno.",
+            "Parla, canta o suona. Il timer e l'indicatore di livello mostrano che funziona.",
+            "Premi Ferma. La registrazione compare qui sotto, pronta da ascoltare o scaricare."
+          ]
+        },
+        {
+          "h": "Che file ottengo?",
+          "p": [
+            "Chrome, Edge e Firefox salvano audio WebM con il codec Opus. Safari salva un file M4A (AAC). Entrambi si riproducono in VLC, nella maggior parte dei lettori multimediali e in editor come Audacity. Se ti serve un MP3, qualsiasi convertitore audio cambia il formato in pochi secondi."
+          ]
+        },
+        {
+          "h": "Consigli per una registrazione migliore",
+          "ul": [
+            "Fai prima il test microfono e punta a picchi tra −20 dB e −10 dB.",
+            "Registra in una stanza piccola con mobili morbidi. Tende e un divano riducono l'eco più di qualsiasi filtro.",
+            "Tieni il microfono a circa un palmo dalla bocca e leggermente di lato.",
+            "Spegni ventole e notifiche, e usa le cuffie se suoni sopra una base."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "C'è un limite di tempo?",
+          "a": "Nessun limite fisso. Le registrazioni restano nella memoria del browser, quindi le sessioni molto lunghe dipendono dal tuo dispositivo. Per registrazioni oltre un'ora, scarica a blocchi."
+        },
+        {
+          "q": "Dove vengono salvate le registrazioni?",
+          "a": "Solo in questa scheda del browser finché non le scarichi. Chiudere o ricaricare la pagina le elimina."
+        },
+        {
+          "q": "Funziona su iPhone e Android?",
+          "a": "Sì. Funziona in Safari su iPhone e in Chrome o Samsung Internet su Android."
+        },
+        {
+          "q": "Il registratore vocale è davvero gratuito?",
+          "a": "Sì. Nessuna iscrizione, nessuna filigrana e nessun upload."
         }
       ]
     }
