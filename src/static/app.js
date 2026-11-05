@@ -88,6 +88,9 @@
   async function startMic() {
     if (!hasMedia) return toast(t('errUnsupported'));
     setStatus('mic', 'testing');
+    // Create/resume the AudioContext synchronously inside the tap: iOS Safari keeps it
+    // suspended (frozen meter) if it is first touched after an await.
+    getCtx();
     const id = $('#micSelect').value;
     try {
       const stream = await navigator.mediaDevices.getUserMedia({
@@ -562,6 +565,30 @@
     if ((action === 'all' || action === 'cam') && !cam.stream) await startCam();
     if (action === 'spk') { const btn = $('.spk-btn[data-pan="0"]'); if (btn) btn.click(); }
   });
+
+  /* ---------------- language hint (no auto-redirect: better for SEO and users) ---------------- */
+  (() => {
+    if (!PAGE.alts) return;
+    let dismissed = null;
+    try { dismissed = localStorage.getItem('mtp-lang-hint'); } catch (e) {}
+    if (dismissed) return;
+    const want = (navigator.languages || [navigator.language || '']).map((l) => String(l).slice(0, 2).toLowerCase()).find((l) => PAGE.alts[l]);
+    if (!want || want === PAGE.lang) return;
+    const bar = document.createElement('aside');
+    bar.className = 'lang-hint';
+    bar.setAttribute('aria-label', 'Language');
+    bar.setAttribute('lang', want);
+    const a = document.createElement('a');
+    a.href = PAGE.alts[want]; a.hreflang = want; a.textContent = PAGE.names[want] + ' →';
+    const x = document.createElement('button');
+    x.type = 'button'; x.setAttribute('aria-label', 'Close'); x.textContent = '×';
+    const close = () => { bar.remove(); try { localStorage.setItem('mtp-lang-hint', '1'); } catch (e) {} };
+    x.addEventListener('click', close); a.addEventListener('click', () => { try { localStorage.setItem('mtp-lang-hint', '1'); } catch (e) {} });
+    const wrap = document.createElement('div'); wrap.className = 'wrap lang-hint-inner';
+    wrap.append(a, x); bar.append(wrap);
+    const header = document.querySelector('.topbar');
+    if (header) header.after(bar);
+  })();
 
   // pause camera loops when tab hidden on mobile to save battery
   document.addEventListener('visibilitychange', () => {

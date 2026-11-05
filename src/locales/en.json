@@ -110,7 +110,8 @@
     "snapSaved": "Snapshot saved below. Tap it to download",
     "spkThanks": "Speakers marked as working",
     "spkSorry": "Check volume, mute and output device",
-    "noDevices": "No devices yet. Press Start above"
+    "noDevices": "No devices yet. Press Start above",
+    "guides": "Guides"
   },
   "pages": {
     "home": {

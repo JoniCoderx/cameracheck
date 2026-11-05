@@ -110,7 +110,8 @@
     "snapSaved": "Capture enregistrée ci-dessous, touchez-la pour la télécharger",
     "spkThanks": "Haut-parleurs marqués comme fonctionnels",
     "spkSorry": "Vérifiez le volume, la sourdine et la sortie audio",
-    "noDevices": "Aucun appareil pour l'instant, appuyez sur Démarrer"
+    "noDevices": "Aucun appareil pour l'instant, appuyez sur Démarrer",
+    "guides": "Guides"
   },
   "pages": {
     "home": {

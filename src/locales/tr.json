@@ -110,7 +110,8 @@
     "snapSaved": "Fotoğraf aşağıya kaydedildi, indirmek için dokunun",
     "spkThanks": "Hoparlörler çalışıyor olarak işaretlendi",
     "spkSorry": "Ses düzeyini, sessiz modu ve çıkış cihazını kontrol edin",
-    "noDevices": "Henüz cihaz yok, yukarıdan Başlat'a basın"
+    "noDevices": "Henüz cihaz yok, yukarıdan Başlat'a basın",
+    "guides": "Rehberler"
   },
   "pages": {
     "home": {

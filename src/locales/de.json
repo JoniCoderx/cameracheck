@@ -110,7 +110,8 @@
     "snapSaved": "Foto unten gespeichert, antippen zum Herunterladen",
     "spkThanks": "Lautsprecher als funktionierend markiert",
     "spkSorry": "Prüfen Sie Lautstärke, Stummschaltung und Ausgabegerät",
-    "noDevices": "Noch keine Geräte, oben auf Start drücken"
+    "noDevices": "Noch keine Geräte, oben auf Start drücken",
+    "guides": "Anleitungen"
   },
   "pages": {
     "home": {

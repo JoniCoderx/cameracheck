@@ -38,7 +38,7 @@
     "echoOff": "Berhenti dengar",
     "download": "Unduh",
     "device": "Perangkat",
-    "sampleRate": "Sample rate",
+    "sampleRate": "Laju sampel",
     "channels": "Kanal",
     "peakFreq": "Frek. dominan",
     "echoCancel": "Peredam gema",
@@ -49,7 +49,7 @@
     "snap": "Foto",
     "mirror": "Cermin",
     "flip": "Ganti kamera",
-    "grid": "Grid",
+    "grid": "Kisi",
     "fullscreen": "Layar penuh",
     "recVideo": "Rekam klip",
     "resolution": "Resolusi",
@@ -110,7 +110,8 @@
     "snapSaved": "Foto disimpan di bawah, ketuk untuk mengunduh",
     "spkThanks": "Speaker ditandai berfungsi",
     "spkSorry": "Periksa volume, mode senyap, dan perangkat output",
-    "noDevices": "Belum ada perangkat, tekan Mulai di atas"
+    "noDevices": "Belum ada perangkat, tekan Mulai di atas",
+    "guides": "Panduan"
   },
   "pages": {
     "home": {

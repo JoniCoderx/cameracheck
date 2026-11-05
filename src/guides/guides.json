@@ -1,0 +1,316 @@
+{
+  "hub": {
+    "title": "Mic & Webcam Troubleshooting Guides",
+    "description": "Step-by-step fixes for a microphone or webcam that isn't working on Windows, Mac, Discord, Zoom, Teams and Google Meet. Free and written in plain English.",
+    "h1": "Troubleshooting guides",
+    "lead": "Short, practical fixes for the most common microphone and camera problems. Test first, then follow the guide that matches what you see."
+  },
+  "guides": [
+    {
+      "slug": "microphone-not-working-windows",
+      "title": "Microphone Not Working on Windows 11 or 10? 9 Fixes",
+      "description": "Mic not working on Windows 11 or 10? Check privacy settings, the default input device, input volume, drivers and exclusive mode. Nine fixes, easiest first.",
+      "h1": "Microphone not working on Windows 11 or 10",
+      "lead": "Most Windows mic problems come down to one of three things: a privacy switch, the wrong default device, or input volume set to zero. Work through these in order. Each step takes under a minute.",
+      "tool": "mic",
+      "sections": [
+        {
+          "h": "Step 0: confirm the problem",
+          "p": [
+            "Open the mic test on this site and press Start. If the level meter moves when you talk, your microphone and Windows are fine and the problem is inside one app (see the Discord, Zoom and Teams guide). If the meter stays flat, keep reading."
+          ]
+        },
+        {
+          "h": "1. Turn on microphone access",
+          "p": [
+            "Windows can block every app from the mic with a single switch, and updates sometimes flip it off."
+          ],
+          "ol": [
+            "Open Settings → Privacy & security → Microphone.",
+            "Turn on \"Microphone access\".",
+            "Turn on \"Let apps access your microphone\".",
+            "Scroll down and turn on \"Let desktop apps access your microphone\". Chrome, Edge, Firefox, Discord and Zoom all count as desktop apps."
+          ]
+        },
+        {
+          "h": "2. Pick the right input device",
+          "p": [
+            "If you have a webcam, a headset and a laptop mic, Windows may be listening to the wrong one."
+          ],
+          "ol": [
+            "Open Settings → System → Sound.",
+            "Under Input, choose the microphone you actually speak into.",
+            "Talk and watch the small blue bar under \"Input volume\". If it moves, Windows hears you."
+          ]
+        },
+        {
+          "h": "3. Raise the input volume",
+          "p": [
+            "In the same Sound page, click your microphone and set Input volume to 80 or higher. A level of 0 to 10 looks exactly like a dead mic. If you have the option, leave \"Enhance audio\" off while you test, since some enhancement drivers mute quiet speech."
+          ]
+        },
+        {
+          "h": "4. Check that the mic isn't disabled",
+          "p": [
+            "Go to Settings → System → Sound → More sound settings → Recording tab. Right-click an empty area and tick \"Show disabled devices\". If your mic appears greyed out, right-click it and choose Enable."
+          ]
+        },
+        {
+          "h": "5. Look for a hardware mute",
+          "ul": [
+            "Laptops often have a mic-mute key (F4, F8 or a key with a crossed-out microphone). Its LED is usually lit when muted.",
+            "Headsets usually have a mute switch on the cable or a flip-to-mute boom arm.",
+            "USB mics like the Blue Yeti or HyperX QuadCast have their own mute button, which often glows red."
+          ]
+        },
+        {
+          "h": "6. Plug it into the right port",
+          "p": [
+            "On desktops, the pink 3.5 mm jack is the mic input. Headsets with a single 4-pole plug need a combo jack or a splitter. For USB mics, plug straight into the computer instead of a hub, then try a different port."
+          ]
+        },
+        {
+          "h": "7. Turn off exclusive mode",
+          "p": [
+            "If the mic works in one app but goes silent in others, an app may have taken exclusive control. In More sound settings → Recording, open your mic's Properties → Advanced and untick both \"Allow applications to take exclusive control\" options."
+          ]
+        },
+        {
+          "h": "8. Run the troubleshooter and update the driver",
+          "ol": [
+            "Settings → System → Troubleshoot → Other troubleshooters → Recording Audio → Run.",
+            "Right-click Start → Device Manager → Audio inputs and outputs.",
+            "Right-click your microphone → Update driver. If that doesn't help, choose Uninstall device and restart. Windows reinstalls the driver on boot."
+          ]
+        },
+        {
+          "h": "9. Restart, then test again",
+          "p": [
+            "A full restart (not sleep) releases any app that's holding the mic. Afterwards, open the mic test again. If the meter still doesn't move with a known-good headset plugged in, the problem is likely the audio hardware or the port itself."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why does my mic work in Windows but not in my browser?",
+          "a": "The browser itself needs permission. Click the lock icon next to the address bar, set Microphone to Allow, and reload the page."
+        },
+        {
+          "q": "Why is my mic so quiet on Windows?",
+          "a": "Input volume is usually set too low. Open Settings → System → Sound, click your input device and raise Input volume to 80 or more."
+        },
+        {
+          "q": "My mic stopped working after a Windows update. What changed?",
+          "a": "Updates sometimes reset the privacy switches or the default device. Check steps 1 and 2 first."
+        }
+      ]
+    },
+    {
+      "slug": "mic-camera-not-working-mac",
+      "title": "Mic or Camera Not Working on Mac? How to Fix It",
+      "description": "Mac microphone or camera not working? Fix privacy permissions, input device, input level and stuck camera processes on macOS Sonoma, Sequoia and later.",
+      "h1": "Microphone or camera not working on a Mac",
+      "lead": "On a Mac, almost every mic and camera problem is a permission that was never granted, or another app that is already using the camera. Here's how to sort it out.",
+      "tool": "webcam",
+      "sections": [
+        {
+          "h": "Step 0: test in the browser",
+          "p": [
+            "Open the mic or webcam test on this site. If the browser can't see the device either, the fix is in System Settings below. If the test works but one app doesn't, the fix is in that app's own permissions."
+          ]
+        },
+        {
+          "h": "1. Allow the app in Privacy & Security",
+          "ol": [
+            "Open Apple menu → System Settings → Privacy & Security.",
+            "Click Microphone and turn on the switch next to your browser and any call app (Zoom, Teams, Discord).",
+            "Go back and do the same under Camera.",
+            "Quit and reopen the app. macOS only applies new permissions after a restart of the app."
+          ],
+          "p": [
+            "If the app isn't listed at all, open it and try to use the mic once. macOS adds it to the list the first time it asks."
+          ]
+        },
+        {
+          "h": "2. Choose the right input and raise the level",
+          "p": [
+            "Open System Settings → Sound → Input. Select the microphone you use, then speak and watch the input level meter. Drag Input volume to around three quarters. AirPods and other Bluetooth headsets appear here too, and they often take over automatically when they connect."
+          ]
+        },
+        {
+          "h": "3. Camera says it's in use, or shows black",
+          "ul": [
+            "Close every app that might use the camera: FaceTime, Photo Booth, Zoom, Teams, OBS and other browser tabs.",
+            "The green light next to the camera turns on whenever something is using it. If it stays on with everything closed, restart the Mac.",
+            "If a restart isn't convenient, open Terminal and run sudo killall VDCAssistant, then try again. On newer macOS versions, sudo killall appleh13camerad does the same job on Apple silicon Macs."
+          ]
+        },
+        {
+          "h": "4. Using an external webcam or USB mic",
+          "p": [
+            "Plug it directly into the Mac rather than through a hub. Some USB-C hubs don't supply enough power for cameras. In call apps, pick the device by name in the app's video or audio settings. Many apps keep using the built-in camera until you change it."
+          ]
+        },
+        {
+          "h": "5. Screen Time or a work profile is blocking it",
+          "p": [
+            "Managed work Macs and Macs with Screen Time content restrictions can disable the camera. Check System Settings → Screen Time → Content & Privacy, or ask your IT team whether a profile is blocking it."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why doesn't Safari ask for camera permission?",
+          "a": "Open Safari → Settings → Websites → Camera (and Microphone) and set the site to Ask or Allow."
+        },
+        {
+          "q": "How do I know which app is using my Mac's camera?",
+          "a": "Click the Control Center icon in the menu bar. When the camera or mic is in use, the app's name is shown at the top."
+        }
+      ]
+    },
+    {
+      "slug": "webcam-not-working",
+      "title": "Webcam Not Working? Fix a Black Screen or Missing Camera",
+      "description": "Webcam not working or showing a black screen? Fix privacy settings, the camera shutter, apps holding the camera, drivers and USB problems.",
+      "h1": "Webcam not working or showing a black screen",
+      "lead": "A webcam that shows nothing is usually blocked, busy or covered. Go through these checks in order. Most people are fixed by step 3.",
+      "tool": "webcam",
+      "sections": [
+        {
+          "h": "Step 0: run the webcam test",
+          "p": [
+            "Start the webcam test on this site. You'll get a clear result: no camera found, permission blocked, camera busy, or a working picture with its real resolution and frame rate. Use that result to jump to the right fix below."
+          ]
+        },
+        {
+          "h": "1. Open the privacy shutter",
+          "p": [
+            "Many laptops (Lenovo, HP, Dell) have a small sliding cover above the screen, and some have a camera kill switch on the side or a function key with a camera icon. A shutter gives you a black or grey image while the camera reports that it works fine."
+          ]
+        },
+        {
+          "h": "2. Close other apps using the camera",
+          "p": [
+            "On Windows, most webcams can only be used by one app at a time. Close Zoom, Teams, Skype, OBS, the Camera app and any other browser tab with a video call. Then reload the test."
+          ]
+        },
+        {
+          "h": "3. Allow camera access",
+          "ol": [
+            "Windows: Settings → Privacy & security → Camera. Turn on \"Camera access\", \"Let apps access your camera\" and \"Let desktop apps access your camera\".",
+            "Mac: System Settings → Privacy & Security → Camera, then turn on your browser and call apps.",
+            "In the browser: click the lock icon next to the address bar, set Camera to Allow and reload."
+          ]
+        },
+        {
+          "h": "4. Check the cable and port (USB webcams)",
+          "p": [
+            "Plug the camera directly into the computer, not a hub or a monitor's USB port, and try another port. A 1080p webcam on a busy USB port can connect but deliver no frames."
+          ]
+        },
+        {
+          "h": "5. Lower the resolution",
+          "p": [
+            "If the picture freezes or stays black only at 1080p or 4K, switch to 720p in the test. If that works, the camera or the USB connection can't keep up at the higher setting."
+          ]
+        },
+        {
+          "h": "6. Reinstall the camera driver (Windows)",
+          "ol": [
+            "Right-click Start → Device Manager.",
+            "Open Cameras (or Imaging devices).",
+            "Right-click your webcam → Uninstall device, then restart. Windows installs a fresh driver on boot.",
+            "If the camera isn't listed at all, choose Action → Scan for hardware changes."
+          ]
+        },
+        {
+          "h": "Low FPS or a dark, grainy picture",
+          "p": [
+            "Webcams slow their frame rate in dim light so each frame gets more exposure. Turn on a lamp in front of you, not behind you, and the FPS usually jumps back to 30. Also clean the lens. A smudge is the most common reason a picture looks soft."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why does my webcam work in one app but not another?",
+          "a": "Each app picks its own camera. Open that app's video settings and select your webcam by name. Also make sure no other app is holding it."
+        },
+        {
+          "q": "Why is my webcam image mirrored?",
+          "a": "Preview images are mirrored so they feel like a mirror. Other people on the call see you the right way round."
+        }
+      ]
+    },
+    {
+      "slug": "mic-not-working-discord-zoom-teams",
+      "title": "Mic Not Working in Discord, Zoom, Teams or Google Meet",
+      "description": "Others can't hear you on Discord, Zoom, Microsoft Teams or Google Meet? Pick the right input device, fix sensitivity and permissions. Fixes for each app.",
+      "h1": "Mic not working in Discord, Zoom, Teams or Google Meet",
+      "lead": "If your microphone passes the mic test here but nobody can hear you in a call, the problem is in the app. Each app keeps its own input setting, and it doesn't always follow Windows or macOS.",
+      "tool": "mic",
+      "sections": [
+        {
+          "h": "First: test your mic outside the app",
+          "p": [
+            "Run the mic test on this site with the same headset or microphone. If the meter moves, your hardware and system settings are fine. That narrows the fix down to the app settings below."
+          ]
+        },
+        {
+          "h": "Discord",
+          "ol": [
+            "Open User Settings (the gear next to your name) → Voice & Video.",
+            "Under Input Device, choose your microphone by name rather than \"Default\".",
+            "Use \"Let's Check\" to watch the level bar while you talk.",
+            "If you use Voice Activity, turn off \"Automatically determine input sensitivity\" and drag the slider left until your voice lights up the bar.",
+            "If nothing works, click \"Reset Voice Settings\" at the bottom of the page."
+          ]
+        },
+        {
+          "h": "Zoom",
+          "ol": [
+            "Open Settings → Audio.",
+            "Under Microphone, pick your device and press \"Test Mic\".",
+            "Untick \"Automatically adjust microphone volume\" if your level keeps dropping.",
+            "In a meeting, check that the mic icon at the bottom left isn't crossed out, and that the host hasn't muted everyone."
+          ]
+        },
+        {
+          "h": "Microsoft Teams",
+          "ol": [
+            "Click the three dots next to your profile picture → Settings → Devices.",
+            "Choose your microphone under Audio settings, then use \"Make a test call\" to record and hear yourself.",
+            "In the browser version, allow microphone access when the address bar asks."
+          ]
+        },
+        {
+          "h": "Google Meet",
+          "ol": [
+            "In a meeting, click the three dots → Settings → Audio.",
+            "Pick your microphone and talk. The small dots next to its name should move.",
+            "If Meet says the mic is blocked, click the lock icon next to the address bar, set Microphone to Allow, and reload."
+          ]
+        },
+        {
+          "h": "Still silent? Common causes",
+          "ul": [
+            "Another app is holding the mic. Close OBS, other call apps and browser tabs, then rejoin.",
+            "You joined with \"Computer audio\" off or by phone. Rejoin with computer audio.",
+            "A Bluetooth headset switched to the wrong profile. Disconnect and reconnect it, then pick its \"Headset\" or \"Hands-free\" input.",
+            "Noise suppression is too aggressive. Lower it to Low or Auto and test again."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why can't people hear me on Discord when my mic works?",
+          "a": "Discord is probably using a different input device or the sensitivity threshold is too high. Choose your mic by name in Voice & Video and lower the input sensitivity."
+        },
+        {
+          "q": "How do I test my mic before a Zoom call?",
+          "a": "Open the mic test on this site, or in Zoom go to Settings → Audio → Test Mic. Both take about five seconds."
+        }
+      ]
+    }
+  ]
+}

@@ -69,6 +69,19 @@ const asset = (f) => `/${f}?v=${ver[f]}`;
 const minCss = (c) => c.replace(/\/\*[\s\S]*?\*\//g, '').replace(/\s+/g, ' ').replace(/\s*([{};,>])\s*/g, '$1').replace(/:\s+/g, ':').replace(/;}/g, '}').trim();
 const CSS_INLINE = minCss(fs.readFileSync(path.join(SRC, 'static/styles.css'), 'utf8'));
 
+/* ---------- inline + minified JS (no extra request, no cache-lifetime penalty) ---------- */
+let JS_INLINE = fs.readFileSync(path.join(SRC, 'static/app.js'), 'utf8');
+try {
+  const esb = await import('esbuild');
+  JS_INLINE = (await esb.transform(JS_INLINE, { minify: true, target: 'es2019' })).code.trim();
+} catch (e) { console.warn('! esbuild not installed (npm i): app.js inlined without minification'); }
+JS_INLINE = JS_INLINE.replace(/<\/script/gi, '<\\/script');
+const LOGO_SVG = fs.readFileSync(path.join(SRC, 'static/favicon.svg'), 'utf8').replace(/\s*\n\s*/g, '').replace('<svg ', '<svg aria-hidden="true" ');
+
+/* ---------- guides (English) ---------- */
+const GUIDES = JSON.parse(fs.readFileSync(path.join(SRC, 'guides/guides.json'), 'utf8'));
+const TODAY = new Date().toISOString().slice(0, 10);
+
 /* ---------- icons (inline SVG, no emoji) ---------- */
 const ICONS = {
   mic: '<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M8.5 21h7"/>',
@@ -84,7 +97,7 @@ const ICONS = {
   moon: '<path d="M20.5 13.2A8.5 8.5 0 1 1 10.8 3.5a6.5 6.5 0 0 0 9.7 9.7z"/>'
 };
 const ic = (n) => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${ICONS[n]}</svg>`;
-const wordmark = (size) => `<img src="/favicon.svg" alt="" width="${size}" height="${size}"><span>MicTest<span class="plus">+</span></span>`;
+const wordmark = (size) => `<span class="logo" style="width:${size}px;height:${size}px">${LOGO_SVG}</span><span>MicTest<span class="plus">+</span></span>`;
 
 /* ---------- shared blocks ---------- */
 function adSlot(name, label) {
@@ -142,7 +155,7 @@ ${extraLd.map(jsonLd).join('\n')}
 
 function header(lang, page) {
   const u = locales[lang].ui;
-  const opts = LANGS.map((l) => `<option value="${page ? urlFor(l, page) : prefix(l)}"${l === lang ? ' selected' : ''}>${esc(locales[l].meta.langName)}</option>`).join('');
+  const opts = LANGS.map((l) => `<option value="${PAGES[page] ? urlFor(l, page) : prefix(l)}"${l === lang ? ' selected' : ''}>${esc(locales[l].meta.langName)}</option>`).join('');
   return `<a class="skip" href="#main">${esc(u.skip)}</a>
 <header class="topbar">
   <div class="wrap topbar-inner">
@@ -153,6 +166,7 @@ function header(lang, page) {
       <a href="${urlFor(lang, 'mic')}"${page === 'mic' ? ' aria-current="page"' : ''}>${esc(u.navMic)}</a>
       <a href="${urlFor(lang, 'webcam')}"${page === 'webcam' ? ' aria-current="page"' : ''}>${esc(u.navCam)}</a>
       <a href="${urlFor(lang, 'speaker')}"${page === 'speaker' ? ' aria-current="page"' : ''}>${esc(u.navSpk)}</a>
+      <a href="/guides/"${page === 'guides' ? ' aria-current="page"' : ''}>${esc(u.guides)}</a>
     </nav>
     <div class="top-actions">
       <label class="lang-pick"><span class="sr">${esc(u.language)}</span>
@@ -173,7 +187,7 @@ function footer(lang) {
     <div class="brand small">${wordmark(24)}</div>
     <p class="muted">${esc(u.footer)}</p>
     <nav class="foot-links" aria-label="Tests">
-      <a href="${urlFor(lang, 'mic')}">${esc(u.navMic)}</a> · <a href="${urlFor(lang, 'webcam')}">${esc(u.navCam)}</a> · <a href="${urlFor(lang, 'speaker')}">${esc(u.navSpk)}</a>
+      <a href="${urlFor(lang, 'mic')}">${esc(u.navMic)}</a> · <a href="${urlFor(lang, 'webcam')}">${esc(u.navCam)}</a> · <a href="${urlFor(lang, 'speaker')}">${esc(u.navSpk)}</a> · <a href="/guides/">${esc(u.guides)}</a>
     </nav>
     <p class="foot-langs muted">${langLinks}</p>
     <p class="muted"><a href="/privacy/">${esc(u.privacy)}</a> · <a href="/about/">${esc(u.about)}</a> · <a href="mailto:${esc(cfg.contactEmail)}">${esc(u.contact)}</a> · © <span id="year">${new Date().getFullYear()}</span> ${DOMAIN.replace(/^https?:\/\//, '')}</p>
@@ -395,13 +409,21 @@ function renderPage(lang, page) {
   </div>
 </section>`;
 
-  const runtime = { lang, page, tools: def.tools };
+  const toolKey = { mic: 'mic', webcam: 'webcam', speaker: null, home: 'any' }[page];
+  const rel = GUIDES.guides.filter((g) => toolKey === 'any' || g.tool === toolKey).slice(0, 3);
+  const related = rel.length ? `
+<section class="wrap others" aria-labelledby="guidesTitle">
+  <h2 id="guidesTitle">${esc(u.guides)}</h2>
+  <div class="other-grid">${rel.map((g) => `<a class="other-card" href="/guides/${g.slug}/" hreflang="en"><span class="other-ico">${ic(g.tool === 'mic' ? 'mic' : 'cam')}</span><span><b>${esc(g.h1)}</b><small>${esc(g.description.split('. ')[0])}.</small></span></a>`).join('')}</div>
+</section>` : '';
+  const runtime = { lang, page, tools: def.tools, alts: Object.fromEntries(LANGS.map((l) => [l, urlFor(l, page)])), names: Object.fromEntries(LANGS.map((l) => [l, locales[l].meta.langName])) };
 
   return `${head({ lang, title: P.title, description: P.description, canonical: url, alternates, extraLd: ld })}
 <body class="page-${page}">
 ${header(lang, page)}
 <main id="main">
   <section class="hero" id="top">
+    <div class="hero-eq" aria-hidden="true">${'<i></i>'.repeat(28)}</div>
     <div class="wrap">
       <span class="pill">${esc(u.heroPill)}</span>
       <h1>${P.h1Html}</h1>
@@ -418,6 +440,7 @@ ${header(lang, page)}
   <article class="wrap article">
     ${article(P.article, u)}
   </article>
+  ${related}
   <section class="wrap faq" id="faq">
     <h2>${esc(u.faqTitle)}</h2>
     ${P.faq.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('\n    ')}
@@ -426,7 +449,93 @@ ${header(lang, page)}
 </main>
 ${footer(lang)}
 <script>window.I18N=${JSON.stringify(u).replace(/</g, '\\u003c')};window.PAGE=${JSON.stringify(runtime)};</script>
-<script src="${asset('app.js')}" defer></script>
+<script>${JS_INLINE}</script>
+</body>
+</html>
+`;
+}
+
+/* ---------- guide pages (English) ---------- */
+const TOOL_URL = { mic: '/mic-test/', webcam: '/webcam-test/', speaker: '/speaker-test/' };
+function crumbs(items) {
+  return `<nav class="crumbs" aria-label="Breadcrumb">${items.map(([name, u], i) => i < items.length - 1 ? `<a href="${u}">${esc(name)}</a><span aria-hidden="true">/</span>` : `<span aria-current="page">${esc(name)}</span>`).join('')}</nav>`;
+}
+function guidePage(g) {
+  const u = en.ui;
+  const url = `/guides/${g.slug}/`;
+  const text = [g.lead, ...g.sections.flatMap((x) => [x.h, ...(x.p || []), ...(x.ol || []), ...(x.ul || [])]), ...g.faq.flatMap((f) => [f.q, f.a])].join(' ');
+  const mins = Math.max(2, Math.round(text.split(/\s+/).length / 220));
+  const ld = [{
+    '@context': 'https://schema.org', '@type': 'Article', headline: g.title, description: g.description, inLanguage: 'en',
+    mainEntityOfPage: abs(url), datePublished: '2026-11-05', dateModified: TODAY, image: DOMAIN + '/og.png',
+    author: { '@type': 'Organization', name: BRAND, url: DOMAIN + '/' },
+    publisher: { '@type': 'Organization', name: BRAND, logo: { '@type': 'ImageObject', url: DOMAIN + '/icon-512.png' } }
+  }, {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: BRAND, item: abs('/') },
+      { '@type': 'ListItem', position: 2, name: 'Guides', item: abs('/guides/') },
+      { '@type': 'ListItem', position: 3, name: g.h1, item: abs(url) }]
+  }, {
+    '@context': 'https://schema.org', '@type': 'FAQPage',
+    mainEntity: g.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } }))
+  }];
+  const toolName = { mic: u.navMic, webcam: u.navCam, speaker: u.navSpk }[g.tool];
+  const cta = `<div class="cta-box"><div><b>${esc(toolName)}</b><span>Check it in 5 seconds, free and private.</span></div><a class="btn btn-primary" href="${TOOL_URL[g.tool]}">${ic(g.tool === 'mic' ? 'mic' : 'cam')}<span>Run the ${esc(toolName.toLowerCase())}</span></a></div>`;
+  const others = GUIDES.guides.filter((x) => x.slug !== g.slug);
+  return `${head({ lang: 'en', title: g.title, description: g.description, canonical: url, ogType: 'article', extraLd: ld })}
+<body class="page-guide">
+${header('en', 'guides')}
+<main id="main">
+  <article class="wrap article guide">
+    ${crumbs([[BRAND, '/'], ['Guides', '/guides/'], [g.h1, url]])}
+    <h1>${esc(g.h1)}</h1>
+    <p class="guide-meta">Updated <time datetime="${TODAY}">${new Date(TODAY).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time> · ${mins} min read</p>
+    <p class="lead">${esc(g.lead)}</p>
+    ${cta}
+    ${article(g.sections, u)}
+    <section class="faq guide-faq">
+      <h2>${esc(u.faqTitle)}</h2>
+      ${g.faq.map((f) => `<details><summary>${esc(f.q)}</summary><p>${esc(f.a)}</p></details>`).join('\n      ')}
+    </section>
+    ${cta}
+  </article>
+  <section class="wrap others" aria-labelledby="moreGuides">
+    <h2 id="moreGuides">More guides</h2>
+    <div class="other-grid">${others.map((x) => `<a class="other-card" href="/guides/${x.slug}/"><span class="other-ico">${ic(x.tool === 'mic' ? 'mic' : 'cam')}</span><span><b>${esc(x.h1)}</b></span></a>`).join('')}</div>
+  </section>
+</main>
+${footer('en')}
+<script>window.I18N=${JSON.stringify(u).replace(/</g, '\\u003c')};window.PAGE={"lang":"en","page":"guide","tools":[]};</script>
+<script>${JS_INLINE}</script>
+</body>
+</html>
+`;
+}
+function guidesHub() {
+  const u = en.ui, H = GUIDES.hub;
+  const ld = [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: H.title, description: H.description, url: abs('/guides/'), inLanguage: 'en',
+    hasPart: GUIDES.guides.map((g) => ({ '@type': 'Article', headline: g.title, url: abs(`/guides/${g.slug}/`) })) },
+    { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: BRAND, item: abs('/') }, { '@type': 'ListItem', position: 2, name: 'Guides', item: abs('/guides/') }] }];
+  return `${head({ lang: 'en', title: H.title, description: H.description, canonical: '/guides/', extraLd: ld })}
+<body class="page-guides">
+${header('en', 'guides')}
+<main id="main" class="wrap">
+  <div class="guides-head">
+    ${crumbs([[BRAND, '/'], ['Guides', '/guides/']])}
+    <h1>${esc(H.h1)}</h1>
+    <p class="lead">${esc(H.lead)}</p>
+  </div>
+  <div class="guide-list">${GUIDES.guides.map((g) => `<a class="guide-card" href="/guides/${g.slug}/"><span class="other-ico">${ic(g.tool === 'mic' ? 'mic' : 'cam')}</span><span><b>${esc(g.h1)}</b><small>${esc(g.description)}</small></span></a>`).join('')}</div>
+  <section class="others"><h2>${esc(u.otherTests)}</h2><div class="other-grid">
+    <a class="other-card" href="/mic-test/"><span class="other-ico">${ic('mic')}</span><span><b>${esc(u.navMic)}</b><small>${esc(u.cardMicDesc)}</small></span></a>
+    <a class="other-card" href="/webcam-test/"><span class="other-ico">${ic('cam')}</span><span><b>${esc(u.navCam)}</b><small>${esc(u.cardCamDesc)}</small></span></a>
+    <a class="other-card" href="/speaker-test/"><span class="other-ico">${ic('spk')}</span><span><b>${esc(u.navSpk)}</b><small>${esc(u.cardSpkDesc)}</small></span></a>
+  </div></section>
+</main>
+${footer('en')}
+<script>window.I18N=${JSON.stringify(u).replace(/</g, '\\u003c')};window.PAGE={"lang":"en","page":"guides","tools":[]};</script>
+<script>${JS_INLINE}</script>
 </body>
 </html>
 `;
@@ -443,7 +552,7 @@ ${header('en', null)}
 </main>
 ${footer('en')}
 <script>window.I18N=${JSON.stringify(en.ui)};window.PAGE={"lang":"en","page":"${slug}","tools":[]};</script>
-<script src="${asset('app.js')}" defer></script>
+<script>${JS_INLINE}</script>
 </body>
 </html>
 `;
@@ -491,6 +600,8 @@ for (const lang of LANGS) {
   }
 }
 write('privacy/index.html', infoPage('privacy', 'Privacy Policy', `${BRAND} privacy policy: your audio and video never leave your device.`, privacyHtml));
+write('guides/index.html', guidesHub());
+for (const g of GUIDES.guides) write(`guides/${g.slug}/index.html`, guidePage(g));
 write('about/index.html', infoPage('about', `About ${BRAND}`, `About ${BRAND}: the free, private online mic test, webcam test and speaker test. No sign-up.`, aboutHtml));
 
 // sitemap with hreflang alternates
@@ -503,11 +614,14 @@ for (const page of PAGE_ORDER) {
     smUrls.push(`  <url>\n    <loc>${abs(urlFor(lang, page))}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>${page === 'home' ? '1.0' : '0.9'}</priority>\n${alts}\n  </url>`);
   }
 }
+smUrls.push(`  <url>\n    <loc>${abs('/guides/')}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>0.6</priority>\n  </url>`);
+for (const g of GUIDES.guides) smUrls.push(`  <url>\n    <loc>${abs(`/guides/${g.slug}/`)}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>0.7</priority>\n  </url>`);
 for (const s of ['privacy', 'about']) smUrls.push(`  <url>\n    <loc>${abs(`/${s}/`)}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>0.3</priority>\n  </url>`);
 write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${smUrls.join('\n')}\n</urlset>\n`);
 write('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${DOMAIN}/sitemap.xml\n`);
 if (adsOn) write('ads.txt', `google.com, ${AD.client.replace(/^ca-/, '')}, DIRECT, f08c47fec0942fa0\n`);
 write('CNAME', DOMAIN.replace(/^https?:\/\//, '') + '\n');
 write('.nojekyll', '');
+if (/^[a-f0-9]{32}$/.test(cfg.indexNowKey || '')) write(`${cfg.indexNowKey}.txt`, cfg.indexNowKey);
 
-console.log(`✓ built ${count} pages in ${LANGS.length} languages (${LANGS.join(', ')}) → docs/  ads: ${adsOn ? 'ON' : 'off'}`);
+console.log(`✓ built ${count} tool pages + ${GUIDES.guides.length + 1} guide pages, in ${LANGS.length} languages (${LANGS.join(', ')}) → docs/  ads: ${adsOn ? 'ON' : 'off'}`);

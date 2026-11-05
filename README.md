@@ -5,6 +5,7 @@ Live site: **[mictestplus.com](https://mictestplus.com)**. Everything runs in th
 ## What's inside
 - **4 landing pages per language**, one for each search intent:
   `/` (all-in-one), `/mic-test/`, `/webcam-test/`, `/speaker-test/`
+- **Troubleshooting guides** (English) under `/guides/`, edited in `src/guides/guides.json`
 - **13 languages:** en, es, pt, fr, de, it, ru, tr, id, ja, ar, he, hi (`/es/mic-test/`, `/de/webcam-test/`…)
 - **SEO:** text rendered on the server (no JS needed to index), unique long-form content and FAQ per page, `FAQPage` / `WebApplication` / `BreadcrumbList` structured data, `hreflang` on every page and in the sitemap, canonical URLs, Open Graph and Twitter cards, PNG share image, fast static HTML
 - **Tools:** mic (dB meter, waveform, spectrum, recording, monitoring), webcam (live preview, measured FPS, resolution, snapshots, clips, front/back switch), speakers (L/R, frequency, sweep), device list
@@ -26,6 +27,14 @@ node build.mjs          # writes docs/
 npm run serve           # build + preview at http://localhost:8080
 ```
 Edit text in `src/locales/`, then rebuild and commit `docs/`.
+
+## Speed
+Each page is a single HTML request: CSS and JavaScript are minified and inlined at build time (`npm install` once so esbuild is available). No fonts, no third-party scripts.
+
+## Search engines
+- Google Search Console: verified via DNS TXT, sitemap submitted.
+- Bing: `BingSiteAuth.xml` is published at the site root.
+- IndexNow (Bing, Yandex, Seznam, Naver): key file is generated from `indexNowKey` in `site.config.json`.
 
 ## Deploy (GitHub Pages)
 1. Repo → Settings → Pages → *Deploy from a branch* → choose the branch → folder **`/docs`**.
