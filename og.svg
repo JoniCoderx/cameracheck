@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c5cff"/><stop offset="1" stop-color="#00d4a6"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="#0d0d14"/>
+  <circle cx="300" cy="200" r="320" fill="#7c5cff" opacity=".18"/><circle cx="950" cy="450" r="300" fill="#00d4a6" opacity=".14"/>
+  <rect x="120" y="215" width="200" height="200" rx="48" fill="url(#g)"/>
+  <rect x="160" y="270" width="80" height="90" rx="18" fill="#fff"/><path d="M240 300l40-24v78l-40-24z" fill="#fff"/>
+  <text x="370" y="320" font-family="Arial, sans-serif" font-size="110" font-weight="800" fill="#fff">MicNCam</text>
+  <text x="374" y="395" font-family="Arial, sans-serif" font-size="40" fill="#9a9ab2">Free camera &amp; microphone test</text>
+</svg>
