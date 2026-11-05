@@ -20,7 +20,7 @@
     {
       "slug": "microphone-not-working-windows",
       "title": "Mikrofon Çalışmıyor Windows 11 ve 10: 9 Çözüm",
-      "description": "Windows 11 veya 10'da mikrofon çalışmıyor mu? Gizlilik ayarları, varsayılan giriş cihazı, ses düzeyi, sürücü ve özel mod için 9 çözüm, en kolayından başlayarak.",
+      "description": "Windows 11 veya 10'da mikrofon çalışmıyor mu? Gizlilik ayarları, varsayılan giriş cihazı, ses düzeyi, sürücü ve özel mod için en kolayından 9 çözüm.",
       "h1": "Mikrofon çalışmıyor: Windows 11 ve 10 için çözümler",
       "lead": "Windows'taki mikrofon sorunlarının çoğu üç şeyden birine dayanır: bir gizlilik anahtarı, yanlış varsayılan cihaz ya da sıfıra çekilmiş giriş ses düzeyi. Adımları sırayla izleyin. Her biri bir dakikadan kısa sürer.",
       "tool": "mic",
@@ -119,7 +119,7 @@
     {
       "slug": "mic-camera-not-working-mac",
       "title": "Mac'te Mikrofon veya Kamera Çalışmıyor mu? Çözümü Burada",
-      "description": "Mac'te mikrofon veya kamera çalışmıyor mu? macOS Sonoma, Sequoia ve sonrasında gizlilik izinlerini, giriş cihazını, ses düzeyini ve takılan kamerayı düzeltin.",
+      "description": "Mac'te mikrofon veya kamera çalışmıyor mu? macOS Sonoma ve Sequoia'da gizlilik izinlerini, giriş cihazını, ses düzeyini ve takılan kamerayı düzeltin.",
       "h1": "Mac'te mikrofon veya kamera çalışmıyor",
       "lead": "Mac'te mikrofon ve kamera sorunlarının neredeyse hepsi ya hiç verilmemiş bir izinden ya da kamerayı zaten kullanan başka bir uygulamadan kaynaklanır. Şöyle çözebilirsiniz.",
       "tool": "webcam",
@@ -183,7 +183,7 @@
     {
       "slug": "webcam-not-working",
       "title": "Kamera Çalışmıyor mu? Siyah Ekran ve Görünmeyen Kamera Çözümü",
-      "description": "Web kamerası çalışmıyor veya siyah ekran mı veriyor? Gizlilik ayarlarını, kamera kapağını, kamerayı tutan uygulamaları, sürücüleri ve USB sorunlarını düzeltin.",
+      "description": "Kamera çalışmıyor veya siyah ekran mı veriyor? Gizlilik ayarlarını, kamera kapağını, kamerayı tutan uygulamaları, sürücüleri ve USB sorunlarını düzeltin.",
       "h1": "Kamera çalışmıyor veya siyah ekran veriyor",
       "lead": "Hiçbir şey göstermeyen bir web kamerası genellikle engellenmiş, meşgul ya da kapalıdır. Bu kontrolleri sırayla yapın. Çoğu kişinin sorunu 3. adımda çözülür.",
       "tool": "webcam",
@@ -256,7 +256,7 @@
     {
       "slug": "mic-not-working-discord-zoom-teams",
       "title": "Discord, Zoom, Teams veya Google Meet'te Mikrofon Çalışmıyor",
-      "description": "Discord, Zoom, Microsoft Teams veya Google Meet'te sesiniz gitmiyor mu? Doğru giriş cihazını seçin, hassasiyeti ve izinleri düzeltin. Her uygulama için çözüm.",
+      "description": "Discord, Zoom, Microsoft Teams veya Google Meet'te mikrofon çalışmıyor mu? Giriş cihazını, hassasiyeti ve izinleri düzeltin. Her uygulama için ayrı çözüm.",
       "h1": "Discord, Zoom, Teams veya Google Meet'te mikrofon çalışmıyor",
       "lead": "Mikrofonunuz buradaki testi geçiyor ama görüşmede kimse sizi duymuyorsa sorun uygulamadadır. Her uygulama kendi giriş ayarını tutar ve bu ayar her zaman Windows veya macOS'u takip etmez.",
       "tool": "mic",

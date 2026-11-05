@@ -1,0 +1,327 @@
+{
+  "ui": {
+    "guides": "Panduan",
+    "updated": "Diperbarui",
+    "minRead": "menit baca",
+    "ctaSub": "Cek dalam 5 detik, gratis dan privat.",
+    "titleMic": "Tes mic",
+    "titleWebcam": "Tes webcam",
+    "runMic": "Mulai tes mic",
+    "runWebcam": "Mulai tes webcam",
+    "moreGuides": "Panduan lainnya"
+  },
+  "hub": {
+    "title": "Panduan Mengatasi Mic dan Webcam Tidak Berfungsi",
+    "description": "Cara mengatasi mic atau webcam tidak berfungsi di Windows, Mac, Discord, Zoom, Teams dan Google Meet. Langkah demi langkah, gratis dan mudah dipahami.",
+    "h1": "Panduan mengatasi masalah",
+    "lead": "Solusi singkat dan praktis untuk masalah mikrofon dan kamera yang paling sering terjadi. Tes dulu, lalu ikuti panduan yang sesuai dengan masalah Anda."
+  },
+  "guides": [
+    {
+      "slug": "microphone-not-working-windows",
+      "title": "Mic Tidak Berfungsi di Windows 11 atau 10? 9 Cara Mengatasinya",
+      "description": "Mic tidak berfungsi di Windows 11 atau 10? Cek izin privasi, perangkat input, volume input, driver dan mode eksklusif. 9 cara, dari yang termudah.",
+      "h1": "Mic tidak berfungsi di Windows 11 atau 10",
+      "lead": "Sebagian besar masalah mic di Windows disebabkan oleh salah satu dari tiga hal: sakelar privasi, perangkat default yang salah, atau volume input di angka nol. Ikuti langkah berikut secara berurutan. Tiap langkah butuh kurang dari satu menit.",
+      "tool": "mic",
+      "sections": [
+        {
+          "h": "Langkah 0: pastikan masalahnya",
+          "p": [
+            "Buka tes mic di situs ini lalu tekan Mulai. Jika indikator level bergerak saat Anda berbicara, mikrofon dan Windows Anda baik-baik saja, dan masalahnya ada di satu aplikasi (lihat panduan Discord, Zoom dan Teams). Jika indikatornya diam saja, lanjutkan membaca."
+          ]
+        },
+        {
+          "h": "1. Aktifkan akses mikrofon",
+          "p": [
+            "Windows bisa memblokir mic untuk semua aplikasi hanya dengan satu sakelar, dan pembaruan kadang mematikannya."
+          ],
+          "ol": [
+            "Buka Pengaturan → Privasi & keamanan → Mikrofon.",
+            "Aktifkan \"Akses mikrofon\".",
+            "Aktifkan \"Izinkan aplikasi mengakses mikrofon Anda\".",
+            "Gulir ke bawah dan aktifkan \"Izinkan aplikasi desktop mengakses mikrofon Anda\". Chrome, Edge, Firefox, Discord dan Zoom termasuk aplikasi desktop."
+          ]
+        },
+        {
+          "h": "2. Pilih perangkat input yang benar",
+          "p": [
+            "Jika Anda punya webcam, headset dan mic bawaan laptop, Windows mungkin mendengarkan yang salah."
+          ],
+          "ol": [
+            "Buka Pengaturan → Sistem → Suara.",
+            "Di bagian Input, pilih mikrofon yang benar-benar Anda pakai untuk berbicara.",
+            "Bicaralah dan perhatikan bar biru kecil di bawah \"Volume input\". Jika bergerak, berarti Windows mendengar suara Anda."
+          ]
+        },
+        {
+          "h": "3. Naikkan volume input",
+          "p": [
+            "Di halaman Suara yang sama, klik mikrofon Anda dan atur Volume input ke 80 atau lebih. Level 0 sampai 10 terlihat persis seperti mic yang mati. Jika ada pilihannya, matikan \"Tingkatkan audio\" selama pengujian, karena beberapa driver peningkat audio meredam suara pelan."
+          ]
+        },
+        {
+          "h": "4. Pastikan mic tidak dinonaktifkan",
+          "p": [
+            "Buka Pengaturan → Sistem → Suara → Pengaturan suara lainnya → tab Perekaman. Klik kanan area kosong dan centang \"Tampilkan Perangkat yang Dinonaktifkan\". Jika mic Anda tampak abu-abu, klik kanan lalu pilih Aktifkan."
+          ]
+        },
+        {
+          "h": "5. Cek tombol mute fisik",
+          "ul": [
+            "Laptop sering punya tombol mute mic (F4, F8 atau tombol bergambar mikrofon dicoret). Lampunya biasanya menyala saat mic dimatikan.",
+            "Headset biasanya punya sakelar mute di kabel atau lengan mic yang otomatis mute saat diangkat.",
+            "Mic USB seperti Blue Yeti atau HyperX QuadCast punya tombol mute sendiri, yang sering menyala merah."
+          ]
+        },
+        {
+          "h": "6. Colokkan ke port yang benar",
+          "p": [
+            "Di PC desktop, jack 3,5 mm berwarna pink adalah input mic. Headset dengan satu colokan 4 kutub memerlukan jack combo atau splitter. Untuk mic USB, colokkan langsung ke komputer, bukan lewat hub, lalu coba port lain."
+          ]
+        },
+        {
+          "h": "7. Matikan mode eksklusif",
+          "p": [
+            "Jika mic berfungsi di satu aplikasi tapi diam di aplikasi lain, mungkin ada aplikasi yang mengambil kontrol eksklusif. Di Pengaturan suara lainnya → Perekaman, buka Properti mic Anda → Tingkat Lanjut, lalu hapus centang kedua opsi \"Izinkan aplikasi untuk mengambil kontrol eksklusif\"."
+          ]
+        },
+        {
+          "h": "8. Jalankan pemecah masalah dan perbarui driver",
+          "ol": [
+            "Pengaturan → Sistem → Pemecahan masalah → Pemecah masalah lainnya → Merekam Audio → Jalankan.",
+            "Klik kanan Mulai → Pengelola Perangkat → Input dan output audio.",
+            "Klik kanan mikrofon Anda → Perbarui driver. Jika tidak membantu, pilih Hapus instalan perangkat lalu restart. Windows akan memasang ulang driver saat menyala."
+          ]
+        },
+        {
+          "h": "9. Restart, lalu tes lagi",
+          "p": [
+            "Restart penuh (bukan sleep) akan melepas aplikasi yang sedang menahan mic. Setelah itu, buka lagi tes mic. Jika indikator tetap tidak bergerak walau sudah memakai headset yang pasti normal, kemungkinan masalahnya ada di hardware audio atau port itu sendiri."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Kenapa mic saya berfungsi di Windows tapi tidak di browser?",
+          "a": "Browser juga memerlukan izin. Klik ikon gembok di samping bilah alamat, atur Mikrofon ke Izinkan, lalu muat ulang halaman."
+        },
+        {
+          "q": "Kenapa suara mic saya sangat pelan di Windows?",
+          "a": "Biasanya volume input terlalu rendah. Buka Pengaturan → Sistem → Suara, klik perangkat input Anda dan naikkan Volume input ke 80 atau lebih."
+        },
+        {
+          "q": "Mic saya tidak berfungsi setelah update Windows. Apa yang berubah?",
+          "a": "Pembaruan kadang mereset sakelar privasi atau perangkat default. Cek langkah 1 dan 2 terlebih dahulu."
+        }
+      ]
+    },
+    {
+      "slug": "mic-camera-not-working-mac",
+      "title": "Mic atau Kamera Tidak Berfungsi di Mac? Ini Cara Mengatasinya",
+      "description": "Mic atau kamera Mac tidak berfungsi? Atasi izin privasi, perangkat input, level input dan proses kamera yang macet di macOS Sonoma dan Sequoia.",
+      "h1": "Mic atau kamera tidak berfungsi di Mac",
+      "lead": "Di Mac, hampir semua masalah mic dan kamera disebabkan izin yang belum pernah diberikan, atau aplikasi lain yang sedang memakai kamera. Begini cara mengatasinya.",
+      "tool": "webcam",
+      "sections": [
+        {
+          "h": "Langkah 0: tes di browser",
+          "p": [
+            "Buka tes mic atau tes webcam di situs ini. Jika browser juga tidak bisa mendeteksi perangkat, solusinya ada di Pengaturan Sistem di bawah. Jika tes berhasil tapi satu aplikasi tidak, solusinya ada di izin aplikasi tersebut."
+          ]
+        },
+        {
+          "h": "1. Izinkan aplikasi di Privasi & Keamanan",
+          "ol": [
+            "Buka menu Apple → Pengaturan Sistem → Privasi & Keamanan.",
+            "Klik Mikrofon dan aktifkan sakelar di samping browser serta aplikasi panggilan Anda (Zoom, Teams, Discord).",
+            "Kembali, lalu lakukan hal yang sama di Kamera.",
+            "Tutup sepenuhnya lalu buka lagi aplikasinya. macOS baru menerapkan izin baru setelah aplikasi dibuka ulang."
+          ],
+          "p": [
+            "Jika aplikasinya tidak ada di daftar, buka aplikasi itu dan coba gunakan mic sekali. macOS akan menambahkannya ke daftar saat aplikasi pertama kali meminta izin."
+          ]
+        },
+        {
+          "h": "2. Pilih input yang benar dan naikkan levelnya",
+          "p": [
+            "Buka Pengaturan Sistem → Suara → Input. Pilih mikrofon yang Anda pakai, lalu bicaralah sambil melihat indikator level input. Geser Volume input ke sekitar tiga perempat. AirPods dan headset Bluetooth lain juga muncul di sini, dan sering otomatis mengambil alih saat tersambung."
+          ]
+        },
+        {
+          "h": "3. Kamera dibilang sedang dipakai, atau layarnya hitam",
+          "ul": [
+            "Tutup semua aplikasi yang mungkin memakai kamera: FaceTime, Photo Booth, Zoom, Teams, OBS dan tab browser lain.",
+            "Lampu hijau di samping kamera menyala setiap kali ada yang memakainya. Jika tetap menyala padahal semua sudah ditutup, restart Mac Anda.",
+            "Jika tidak sempat restart, buka Terminal dan jalankan sudo killall VDCAssistant, lalu coba lagi. Di macOS versi baru pada Mac Apple silicon, sudo killall appleh13camerad melakukan hal yang sama."
+          ]
+        },
+        {
+          "h": "4. Memakai webcam eksternal atau mic USB",
+          "p": [
+            "Colokkan langsung ke Mac, bukan lewat hub. Beberapa hub USB-C tidak memberi daya yang cukup untuk kamera. Di aplikasi panggilan, pilih perangkat berdasarkan namanya di pengaturan video atau audio aplikasi. Banyak aplikasi tetap memakai kamera bawaan sampai Anda menggantinya."
+          ]
+        },
+        {
+          "h": "5. Diblokir oleh Durasi Layar atau profil kantor",
+          "p": [
+            "Mac kantor yang dikelola dan Mac dengan pembatasan konten Durasi Layar bisa menonaktifkan kamera. Cek Pengaturan Sistem → Durasi Layar → Konten & Privasi, atau tanyakan ke tim IT apakah ada profil yang memblokirnya."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Kenapa Safari tidak meminta izin kamera?",
+          "a": "Buka Safari → Pengaturan → Situs Web → Kamera (dan Mikrofon), lalu atur situs ke Tanya atau Izinkan."
+        },
+        {
+          "q": "Bagaimana cara tahu aplikasi mana yang memakai kamera Mac saya?",
+          "a": "Klik ikon Pusat Kontrol di bar menu. Saat kamera atau mic sedang dipakai, nama aplikasinya tampil di bagian atas."
+        }
+      ]
+    },
+    {
+      "slug": "webcam-not-working",
+      "title": "Kamera Laptop Tidak Berfungsi? Cara Atasi Layar Hitam",
+      "description": "Kamera laptop atau webcam tidak berfungsi dan layarnya hitam? Atasi izin privasi, penutup kamera, aplikasi yang memakai kamera, driver dan masalah USB.",
+      "h1": "Kamera laptop atau webcam tidak berfungsi, layar hitam",
+      "lead": "Webcam yang tidak menampilkan apa pun biasanya sedang diblokir, dipakai aplikasi lain, atau tertutup. Lakukan pengecekan berikut secara berurutan. Kebanyakan orang sudah beres di langkah 3.",
+      "tool": "webcam",
+      "sections": [
+        {
+          "h": "Langkah 0: jalankan tes webcam",
+          "p": [
+            "Mulai tes webcam di situs ini. Anda akan mendapat hasil yang jelas: kamera tidak ditemukan, izin diblokir, kamera sedang dipakai, atau gambar berfungsi lengkap dengan resolusi dan frame rate aslinya. Gunakan hasil itu untuk langsung ke solusi yang tepat di bawah."
+          ]
+        },
+        {
+          "h": "1. Buka penutup privasi kamera",
+          "p": [
+            "Banyak laptop (Lenovo, HP, Dell) punya penutup geser kecil di atas layar, dan sebagian punya sakelar pemati kamera di samping atau tombol fungsi bergambar kamera. Saat tertutup, gambarnya hitam atau abu-abu padahal kamera melaporkan semuanya normal."
+          ]
+        },
+        {
+          "h": "2. Tutup aplikasi lain yang memakai kamera",
+          "p": [
+            "Di Windows, sebagian besar webcam hanya bisa dipakai satu aplikasi dalam satu waktu. Tutup Zoom, Teams, Skype, OBS, aplikasi Kamera dan tab browser lain yang sedang video call. Lalu muat ulang tesnya."
+          ]
+        },
+        {
+          "h": "3. Izinkan akses kamera",
+          "ol": [
+            "Windows: Pengaturan → Privasi & keamanan → Kamera. Aktifkan \"Akses kamera\", \"Izinkan aplikasi mengakses kamera Anda\" dan \"Izinkan aplikasi desktop mengakses kamera Anda\".",
+            "Mac: Pengaturan Sistem → Privasi & Keamanan → Kamera, lalu aktifkan browser dan aplikasi panggilan Anda.",
+            "Di browser: klik ikon gembok di samping bilah alamat, atur Kamera ke Izinkan, lalu muat ulang."
+          ]
+        },
+        {
+          "h": "4. Cek kabel dan port (webcam USB)",
+          "p": [
+            "Colokkan kamera langsung ke komputer, bukan ke hub atau port USB monitor, dan coba port lain. Webcam 1080p di port USB yang sibuk bisa terdeteksi tapi tidak mengirim gambar sama sekali."
+          ]
+        },
+        {
+          "h": "5. Turunkan resolusi",
+          "p": [
+            "Jika gambar membeku atau tetap hitam hanya di 1080p atau 4K, ganti ke 720p di tes. Jika berhasil, berarti kamera atau koneksi USB tidak sanggup di pengaturan yang lebih tinggi."
+          ]
+        },
+        {
+          "h": "6. Instal ulang driver kamera (Windows)",
+          "ol": [
+            "Klik kanan Mulai → Pengelola Perangkat.",
+            "Buka Kamera (atau Perangkat pencitraan).",
+            "Klik kanan webcam Anda → Hapus instalan perangkat, lalu restart. Windows akan memasang driver baru saat menyala.",
+            "Jika kamera tidak ada di daftar sama sekali, pilih Tindakan → Pindai perubahan perangkat keras."
+          ]
+        },
+        {
+          "h": "FPS rendah atau gambar gelap dan berbintik",
+          "p": [
+            "Webcam menurunkan frame rate di cahaya redup agar tiap frame mendapat eksposur lebih banyak. Nyalakan lampu di depan Anda, bukan di belakang, dan FPS biasanya kembali naik ke 30. Bersihkan juga lensanya. Noda di lensa adalah penyebab paling umum gambar terlihat buram."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Kenapa webcam saya berfungsi di satu aplikasi tapi tidak di aplikasi lain?",
+          "a": "Setiap aplikasi memilih kameranya sendiri. Buka pengaturan video aplikasi itu dan pilih webcam Anda berdasarkan namanya. Pastikan juga tidak ada aplikasi lain yang sedang memakainya."
+        },
+        {
+          "q": "Kenapa gambar webcam saya terbalik seperti cermin?",
+          "a": "Gambar pratinjau sengaja dicerminkan agar terasa seperti melihat cermin. Orang lain di panggilan melihat Anda dengan arah yang benar."
+        }
+      ]
+    },
+    {
+      "slug": "mic-not-working-discord-zoom-teams",
+      "title": "Mic Tidak Berfungsi di Discord, Zoom, Teams atau Google Meet",
+      "description": "Mic tidak berfungsi di Discord, Zoom, Teams atau Google Meet? Pilih perangkat input yang benar, atur sensitivitas dan izin. Solusi untuk tiap aplikasi.",
+      "h1": "Mic tidak berfungsi di Discord, Zoom, Teams atau Google Meet",
+      "lead": "Jika mikrofon Anda lolos tes mic di sini tapi tidak ada yang bisa mendengar Anda saat panggilan, masalahnya ada di aplikasi. Setiap aplikasi punya pengaturan input sendiri, dan tidak selalu mengikuti Windows atau macOS.",
+      "tool": "mic",
+      "sections": [
+        {
+          "h": "Pertama: tes mic di luar aplikasi",
+          "p": [
+            "Jalankan tes mic di situs ini dengan headset atau mikrofon yang sama. Jika indikatornya bergerak, hardware dan pengaturan sistem Anda baik-baik saja. Berarti solusinya ada di pengaturan aplikasi di bawah."
+          ]
+        },
+        {
+          "h": "Discord",
+          "ol": [
+            "Buka Pengaturan Pengguna (ikon roda gigi di samping nama Anda) → Suara & Video.",
+            "Di Perangkat Input, pilih mikrofon Anda berdasarkan namanya, bukan \"Default\".",
+            "Gunakan \"Ayo Periksa\" untuk melihat bar level saat Anda berbicara.",
+            "Jika memakai Aktivitas Suara, matikan \"Tentukan sensitivitas input secara otomatis\" dan geser slider ke kiri sampai suara Anda membuat bar menyala.",
+            "Jika semua tidak berhasil, klik \"Atur Ulang Pengaturan Suara\" di bagian bawah halaman."
+          ]
+        },
+        {
+          "h": "Zoom",
+          "ol": [
+            "Buka Pengaturan → Audio.",
+            "Di Mikrofon, pilih perangkat Anda lalu tekan \"Uji Mikrofon\".",
+            "Hapus centang \"Sesuaikan volume mikrofon secara otomatis\" jika level suara Anda terus turun.",
+            "Saat rapat, pastikan ikon mic di kiri bawah tidak dicoret, dan host tidak membisukan semua peserta."
+          ]
+        },
+        {
+          "h": "Microsoft Teams",
+          "ol": [
+            "Klik tiga titik di samping foto profil Anda → Pengaturan → Perangkat.",
+            "Pilih mikrofon Anda di Pengaturan audio, lalu gunakan \"Lakukan panggilan pengujian\" untuk merekam dan mendengar suara Anda sendiri.",
+            "Di versi browser, izinkan akses mikrofon saat bilah alamat memintanya."
+          ]
+        },
+        {
+          "h": "Google Meet",
+          "ol": [
+            "Saat rapat, klik tiga titik → Setelan → Audio.",
+            "Pilih mikrofon Anda dan bicaralah. Titik-titik kecil di samping namanya seharusnya bergerak.",
+            "Jika Meet menyebut mic diblokir, klik ikon gembok di samping bilah alamat, atur Mikrofon ke Izinkan, lalu muat ulang."
+          ]
+        },
+        {
+          "h": "Masih tidak ada suara? Penyebab umum",
+          "ul": [
+            "Ada aplikasi lain yang menahan mic. Tutup OBS, aplikasi panggilan lain dan tab browser, lalu gabung lagi.",
+            "Anda bergabung dengan \"Audio Komputer\" nonaktif atau lewat telepon. Gabung ulang dengan audio komputer.",
+            "Headset Bluetooth beralih ke profil yang salah. Putuskan lalu sambungkan lagi, kemudian pilih input \"Headset\" atau \"Hands-free\".",
+            "Peredam bising terlalu agresif. Turunkan ke Rendah atau Otomatis lalu tes lagi."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Kenapa orang tidak bisa mendengar saya di Discord padahal mic saya berfungsi?",
+          "a": "Kemungkinan Discord memakai perangkat input lain atau ambang sensitivitasnya terlalu tinggi. Pilih mic Anda berdasarkan nama di Suara & Video dan turunkan sensitivitas input."
+        },
+        {
+          "q": "Bagaimana cara tes mic sebelum panggilan Zoom?",
+          "a": "Buka tes mic di situs ini, atau di Zoom buka Pengaturan → Audio → Uji Mikrofon. Keduanya hanya butuh sekitar lima detik."
+        }
+      ]
+    }
+  ]
+}

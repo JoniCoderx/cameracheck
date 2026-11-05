@@ -1,0 +1,327 @@
+{
+  "ui": {
+    "guides": "Guide",
+    "updated": "Aggiornato",
+    "minRead": "min di lettura",
+    "ctaSub": "Verifica in 5 secondi, gratis e in privato.",
+    "titleMic": "Test del microfono",
+    "titleWebcam": "Test della webcam",
+    "runMic": "Avvia il test del microfono",
+    "runWebcam": "Avvia il test della webcam",
+    "moreGuides": "Altre guide"
+  },
+  "hub": {
+    "title": "Guide per risolvere i problemi di microfono e webcam",
+    "description": "Soluzioni passo passo se microfono o webcam non funziona su Windows, Mac, Discord, Zoom, Teams e Google Meet. Gratis e spiegate in modo semplice.",
+    "h1": "Guide alla risoluzione dei problemi",
+    "lead": "Soluzioni brevi e pratiche per i problemi più comuni di microfono e fotocamera. Prima fai il test, poi segui la guida che corrisponde a quello che vedi."
+  },
+  "guides": [
+    {
+      "slug": "microphone-not-working-windows",
+      "title": "Microfono non funziona su Windows 11 o 10? 9 soluzioni",
+      "description": "Il microfono non funziona su Windows 11 o 10? Controlla privacy, dispositivo di input, volume, driver e modalità esclusiva. 9 soluzioni, dalla più facile.",
+      "h1": "Microfono non funziona su Windows 11 o 10",
+      "lead": "Quasi tutti i problemi del microfono su Windows dipendono da una di tre cose: un interruttore della privacy, il dispositivo predefinito sbagliato o il volume di input a zero. Segui questi passaggi in ordine. Ognuno richiede meno di un minuto.",
+      "tool": "mic",
+      "sections": [
+        {
+          "h": "Passaggio 0: conferma il problema",
+          "p": [
+            "Apri il test del microfono su questo sito e premi Avvia. Se l'indicatore di livello si muove quando parli, il microfono e Windows funzionano e il problema è dentro un'app (vedi la guida per Discord, Zoom e Teams). Se l'indicatore resta fermo, continua a leggere."
+          ]
+        },
+        {
+          "h": "1. Attiva l'accesso al microfono",
+          "p": [
+            "Windows può bloccare il microfono per tutte le app con un solo interruttore, e a volte gli aggiornamenti lo disattivano."
+          ],
+          "ol": [
+            "Apri Impostazioni → Privacy e sicurezza → Microfono.",
+            "Attiva «Accesso al microfono».",
+            "Attiva «Consenti alle app di accedere al microfono».",
+            "Scorri in basso e attiva «Consenti alle app desktop di accedere al microfono». Chrome, Edge, Firefox, Discord e Zoom contano tutte come app desktop."
+          ]
+        },
+        {
+          "h": "2. Scegli il dispositivo di input giusto",
+          "p": [
+            "Se hai una webcam, delle cuffie con microfono e il microfono del portatile, Windows potrebbe ascoltare quello sbagliato."
+          ],
+          "ol": [
+            "Apri Impostazioni → Sistema → Audio.",
+            "In Input, scegli il microfono in cui parli davvero.",
+            "Parla e guarda la barretta blu sotto «Volume di input». Se si muove, Windows ti sente."
+          ]
+        },
+        {
+          "h": "3. Alza il volume di input",
+          "p": [
+            "Nella stessa pagina Audio, fai clic sul microfono e porta il volume di input a 80 o più. Un livello tra 0 e 10 sembra proprio un microfono rotto. Se c'è l'opzione, lascia disattivato «Miglioramento audio» durante il test, perché alcuni driver di miglioramento silenziano la voce bassa."
+          ]
+        },
+        {
+          "h": "4. Controlla che il microfono non sia disattivato",
+          "p": [
+            "Vai su Impostazioni → Sistema → Audio → Altre impostazioni audio → scheda Registrazione. Fai clic destro in un'area vuota e spunta «Mostra dispositivi disattivati». Se il microfono appare in grigio, fai clic destro su di esso e scegli Attiva."
+          ]
+        },
+        {
+          "h": "5. Cerca un tasto di silenziamento fisico",
+          "ul": [
+            "I portatili spesso hanno un tasto per disattivare il microfono (F4, F8 o un tasto con un microfono barrato). Di solito la sua spia è accesa quando è silenziato.",
+            "Le cuffie hanno spesso un interruttore di silenziamento sul cavo o un'asta del microfono che si silenzia alzandola.",
+            "I microfoni USB come Blue Yeti o HyperX QuadCast hanno un proprio tasto mute, che spesso si illumina di rosso."
+          ]
+        },
+        {
+          "h": "6. Collegalo alla porta giusta",
+          "p": [
+            "Sui PC fissi, l'ingresso del microfono è il jack rosa da 3,5 mm. Le cuffie con un solo spinotto a 4 poli hanno bisogno di un jack combinato o di uno sdoppiatore. I microfoni USB vanno collegati direttamente al computer e non a un hub. Poi prova un'altra porta."
+          ]
+        },
+        {
+          "h": "7. Disattiva la modalità esclusiva",
+          "p": [
+            "Se il microfono funziona in un'app ma resta muto nelle altre, un'app potrebbe averne preso il controllo esclusivo. In Altre impostazioni audio → Registrazione, apri Proprietà del microfono → Avanzate e togli la spunta da entrambe le opzioni «Consenti alle applicazioni di assumere il controllo esclusivo del dispositivo»."
+          ]
+        },
+        {
+          "h": "8. Avvia lo strumento di risoluzione dei problemi e aggiorna il driver",
+          "ol": [
+            "Impostazioni → Sistema → Risoluzione problemi → Altri strumenti di risoluzione dei problemi → Registrazione audio → Esegui.",
+            "Fai clic destro su Start → Gestione dispositivi → Ingressi e uscite audio.",
+            "Fai clic destro sul microfono → Aggiorna driver. Se non basta, scegli Disinstalla dispositivo e riavvia. Windows reinstalla il driver all'avvio."
+          ]
+        },
+        {
+          "h": "9. Riavvia e prova di nuovo",
+          "p": [
+            "Un riavvio completo (non la sospensione) libera qualsiasi app che sta tenendo occupato il microfono. Poi apri di nuovo il test del microfono. Se l'indicatore resta fermo anche con delle cuffie che sai funzionanti, il problema è probabilmente l'hardware audio o la porta stessa."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Perché il microfono funziona su Windows ma non nel browser?",
+          "a": "Anche il browser ha bisogno dell'autorizzazione. Fai clic sull'icona del lucchetto accanto alla barra degli indirizzi, imposta Microfono su Consenti e ricarica la pagina."
+        },
+        {
+          "q": "Perché il microfono è così basso su Windows?",
+          "a": "Di solito il volume di input è troppo basso. Apri Impostazioni → Sistema → Audio, fai clic sul dispositivo di input e alza il volume di input a 80 o più."
+        },
+        {
+          "q": "Il microfono ha smesso di funzionare dopo un aggiornamento di Windows. Cosa è cambiato?",
+          "a": "A volte gli aggiornamenti reimpostano gli interruttori della privacy o il dispositivo predefinito. Controlla prima i passaggi 1 e 2."
+        }
+      ]
+    },
+    {
+      "slug": "mic-camera-not-working-mac",
+      "title": "Microfono o fotocamera non funziona su Mac? Come risolvere",
+      "description": "Microfono o fotocamera del Mac non funziona? Sistema permessi della privacy, dispositivo di ingresso, volume e processi della fotocamera bloccati su macOS.",
+      "h1": "Microfono o fotocamera non funziona su Mac",
+      "lead": "Su Mac, quasi tutti i problemi di microfono e fotocamera sono un permesso mai concesso oppure un'altra app che sta già usando la fotocamera. Ecco come risolvere.",
+      "tool": "webcam",
+      "sections": [
+        {
+          "h": "Passaggio 0: prova nel browser",
+          "p": [
+            "Apri il test del microfono o della webcam su questo sito. Se anche il browser non vede il dispositivo, la soluzione è nelle Impostazioni di Sistema qui sotto. Se il test funziona ma un'app no, la soluzione è nei permessi di quell'app."
+          ]
+        },
+        {
+          "h": "1. Consenti l'app in Privacy e sicurezza",
+          "ol": [
+            "Apri menu Apple → Impostazioni di Sistema → Privacy e sicurezza.",
+            "Fai clic su Microfono e attiva l'interruttore accanto al browser e a ogni app per chiamate (Zoom, Teams, Discord).",
+            "Torna indietro e fai lo stesso in Fotocamera.",
+            "Chiudi del tutto l'app e riaprila. macOS applica i nuovi permessi solo dopo il riavvio dell'app."
+          ],
+          "p": [
+            "Se l'app non compare proprio nell'elenco, aprila e prova a usare il microfono una volta. macOS la aggiunge all'elenco la prima volta che chiede l'accesso."
+          ]
+        },
+        {
+          "h": "2. Scegli l'ingresso giusto e alza il livello",
+          "p": [
+            "Apri Impostazioni di Sistema → Suono → Ingresso. Seleziona il microfono che usi, poi parla e guarda l'indicatore del livello di ingresso. Porta il volume di ingresso a circa tre quarti. Anche gli AirPods e le altre cuffie Bluetooth compaiono qui, e spesso diventano l'ingresso in automatico quando si connettono."
+          ]
+        },
+        {
+          "h": "3. La fotocamera risulta in uso o è nera",
+          "ul": [
+            "Chiudi tutte le app che potrebbero usare la fotocamera: FaceTime, Photo Booth, Zoom, Teams, OBS e altre schede del browser.",
+            "La luce verde accanto alla fotocamera si accende ogni volta che qualcosa la sta usando. Se resta accesa con tutto chiuso, riavvia il Mac.",
+            "Se riavviare non è comodo, apri Terminale ed esegui sudo killall VDCAssistant, poi riprova. Nelle versioni più recenti di macOS, sudo killall appleh13camerad fa la stessa cosa sui Mac con Apple silicon."
+          ]
+        },
+        {
+          "h": "4. Se usi una webcam esterna o un microfono USB",
+          "p": [
+            "Collegalo direttamente al Mac invece che tramite un hub. Alcuni hub USB-C non forniscono abbastanza energia alle fotocamere. Nelle app per chiamate, scegli il dispositivo per nome nelle impostazioni video o audio dell'app. Molte app continuano a usare la fotocamera integrata finché non la cambi."
+          ]
+        },
+        {
+          "h": "5. Tempo di utilizzo o un profilo aziendale la blocca",
+          "p": [
+            "I Mac aziendali gestiti e i Mac con restrizioni dei contenuti in Tempo di utilizzo possono disattivare la fotocamera. Controlla Impostazioni di Sistema → Tempo di utilizzo → Contenuti e privacy, oppure chiedi al reparto IT se un profilo la sta bloccando."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Perché Safari non chiede il permesso per la fotocamera?",
+          "a": "Apri Safari → Impostazioni → Siti web → Fotocamera (e Microfono) e imposta il sito su Chiedi o Consenti."
+        },
+        {
+          "q": "Come faccio a sapere quale app sta usando la fotocamera del Mac?",
+          "a": "Fai clic sull'icona di Centro di Controllo nella barra dei menu. Quando la fotocamera o il microfono sono in uso, il nome dell'app compare in alto."
+        }
+      ]
+    },
+    {
+      "slug": "webcam-not-working",
+      "title": "Webcam non funziona? Risolvi schermo nero o non rilevata",
+      "description": "La webcam non funziona o mostra uno schermo nero? Controlla privacy, copri webcam, app che la usano, driver e problemi USB.",
+      "h1": "Webcam non funziona o mostra uno schermo nero",
+      "lead": "Una webcam che non mostra nulla di solito è bloccata, occupata o coperta. Fai questi controlli in ordine. Alla maggior parte delle persone basta arrivare al passaggio 3.",
+      "tool": "webcam",
+      "sections": [
+        {
+          "h": "Passaggio 0: avvia il test della webcam",
+          "p": [
+            "Avvia il test della webcam su questo sito. Otterrai un risultato chiaro: nessuna fotocamera trovata, permesso bloccato, fotocamera occupata oppure un'immagine funzionante con la risoluzione e la frequenza dei fotogrammi reali. Usa quel risultato per passare subito alla soluzione giusta qui sotto."
+          ]
+        },
+        {
+          "h": "1. Apri la copertura per la privacy",
+          "p": [
+            "Molti portatili (Lenovo, HP, Dell) hanno un piccolo copri webcam scorrevole sopra lo schermo, e alcuni hanno un interruttore della fotocamera sul lato o un tasto funzione con l'icona di una fotocamera. Con la copertura chiusa vedi un'immagine nera o grigia, anche se la fotocamera risulta funzionante."
+          ]
+        },
+        {
+          "h": "2. Chiudi le altre app che usano la fotocamera",
+          "p": [
+            "Su Windows, la maggior parte delle webcam può essere usata da una sola app alla volta. Chiudi Zoom, Teams, Skype, OBS, l'app Fotocamera e qualsiasi altra scheda del browser con una videochiamata. Poi ricarica il test."
+          ]
+        },
+        {
+          "h": "3. Consenti l'accesso alla fotocamera",
+          "ol": [
+            "Windows: Impostazioni → Privacy e sicurezza → Fotocamera. Attiva «Accesso alla fotocamera», «Consenti alle app di accedere alla fotocamera» e «Consenti alle app desktop di accedere alla fotocamera».",
+            "Mac: Impostazioni di Sistema → Privacy e sicurezza → Fotocamera, poi attiva il browser e le app per chiamate.",
+            "Nel browser: fai clic sull'icona del lucchetto accanto alla barra degli indirizzi, imposta Fotocamera su Consenti e ricarica."
+          ]
+        },
+        {
+          "h": "4. Controlla cavo e porta (webcam USB)",
+          "p": [
+            "Collega la fotocamera direttamente al computer, non a un hub o alla porta USB del monitor, e prova un'altra porta. Una webcam 1080p su una porta USB sovraccarica può connettersi ma non inviare immagini."
+          ]
+        },
+        {
+          "h": "5. Abbassa la risoluzione",
+          "p": [
+            "Se l'immagine si blocca o resta nera solo a 1080p o 4K, passa a 720p nel test. Se così funziona, la fotocamera o la connessione USB non regge l'impostazione più alta."
+          ]
+        },
+        {
+          "h": "6. Reinstalla il driver della fotocamera (Windows)",
+          "ol": [
+            "Fai clic destro su Start → Gestione dispositivi.",
+            "Apri Fotocamere (o Dispositivi di acquisizione immagini).",
+            "Fai clic destro sulla webcam → Disinstalla dispositivo, poi riavvia. Windows installa un driver nuovo all'avvio.",
+            "Se la fotocamera non compare affatto, scegli Azione → Rileva modifiche hardware."
+          ]
+        },
+        {
+          "h": "FPS bassi o immagine scura e sgranata",
+          "p": [
+            "Con poca luce le webcam riducono la frequenza dei fotogrammi per dare più esposizione a ogni fotogramma. Accendi una lampada davanti a te, non dietro, e di solito gli FPS tornano a 30. Pulisci anche l'obiettivo. Un'impronta è il motivo più comune di un'immagine poco nitida."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Perché la webcam funziona in un'app ma non in un'altra?",
+          "a": "Ogni app sceglie la propria fotocamera. Apri le impostazioni video di quell'app e seleziona la webcam per nome. Controlla anche che nessun'altra app la stia usando."
+        },
+        {
+          "q": "Perché l'immagine della webcam è a specchio?",
+          "a": "L'anteprima viene mostrata a specchio così sembra naturale, come guardarsi allo specchio. Gli altri partecipanti alla chiamata ti vedono nel verso giusto."
+        }
+      ]
+    },
+    {
+      "slug": "mic-not-working-discord-zoom-teams",
+      "title": "Microfono non funziona su Discord, Zoom, Teams o Meet",
+      "description": "Non ti sentono su Discord, Zoom, Microsoft Teams o Google Meet? Scegli il dispositivo di input giusto, sistema sensibilità e permessi in ogni app.",
+      "h1": "Microfono non funziona su Discord, Zoom, Teams o Google Meet",
+      "lead": "Se il microfono supera il test del microfono qui ma in chiamata nessuno ti sente, il problema è nell'app. Ogni app ha la propria impostazione di input, e non sempre segue quella di Windows o macOS.",
+      "tool": "mic",
+      "sections": [
+        {
+          "h": "Prima di tutto: prova il microfono fuori dall'app",
+          "p": [
+            "Fai il test del microfono su questo sito con le stesse cuffie o lo stesso microfono. Se l'indicatore si muove, hardware e impostazioni di sistema sono a posto. Quindi la soluzione è nelle impostazioni dell'app qui sotto."
+          ]
+        },
+        {
+          "h": "Discord",
+          "ol": [
+            "Apri Impostazioni utente (l'ingranaggio accanto al tuo nome) → Voce e video.",
+            "In Dispositivo di input, scegli il microfono per nome invece di «Predefinito».",
+            "Usa «Facciamo una prova» per guardare la barra del livello mentre parli.",
+            "Se usi Attività vocale, disattiva «Determina automaticamente la sensibilità di input» e trascina il cursore a sinistra finché la tua voce non accende la barra.",
+            "Se non funziona niente, fai clic su «Ripristina impostazioni vocali» in fondo alla pagina."
+          ]
+        },
+        {
+          "h": "Zoom",
+          "ol": [
+            "Apri Impostazioni → Audio.",
+            "In Microfono, scegli il dispositivo e premi «Prova microfono».",
+            "Togli la spunta da «Regola automaticamente il volume del microfono» se il livello continua a calare.",
+            "In riunione, controlla che l'icona del microfono in basso a sinistra non sia barrata e che l'organizzatore non abbia silenziato tutti."
+          ]
+        },
+        {
+          "h": "Microsoft Teams",
+          "ol": [
+            "Fai clic sui tre puntini accanto alla foto del profilo → Impostazioni → Dispositivi.",
+            "Scegli il microfono in Impostazioni audio, poi usa «Esegui una chiamata di prova» per registrarti e riascoltarti.",
+            "Nella versione browser, consenti l'accesso al microfono quando la barra degli indirizzi lo chiede."
+          ]
+        },
+        {
+          "h": "Google Meet",
+          "ol": [
+            "In riunione, fai clic sui tre puntini → Impostazioni → Audio.",
+            "Scegli il microfono e parla. I pallini accanto al suo nome dovrebbero muoversi.",
+            "Se Meet dice che il microfono è bloccato, fai clic sull'icona del lucchetto accanto alla barra degli indirizzi, imposta Microfono su Consenti e ricarica."
+          ]
+        },
+        {
+          "h": "Ancora muto? Le cause più comuni",
+          "ul": [
+            "Un'altra app sta tenendo occupato il microfono. Chiudi OBS, le altre app per chiamate e le schede del browser, poi rientra.",
+            "Sei entrato con «Audio del computer» disattivato o da telefono. Rientra usando l'audio del computer.",
+            "Le cuffie Bluetooth sono passate al profilo sbagliato. Scollegale e ricollegale, poi scegli il loro ingresso «Auricolare» o «Vivavoce».",
+            "La riduzione del rumore è troppo aggressiva. Abbassala su Bassa o Automatica e riprova."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Perché su Discord non mi sentono se il microfono funziona?",
+          "a": "Probabilmente Discord usa un altro dispositivo di input o la soglia di sensibilità è troppo alta. Scegli il microfono per nome in Voce e video e abbassa la sensibilità di input."
+        },
+        {
+          "q": "Come provo il microfono prima di una chiamata Zoom?",
+          "a": "Apri il test del microfono su questo sito, oppure in Zoom vai su Impostazioni → Audio → Prova microfono. Entrambi richiedono circa cinque secondi."
+        }
+      ]
+    }
+  ]
+}
