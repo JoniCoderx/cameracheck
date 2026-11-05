@@ -111,7 +111,8 @@
     "spkThanks": "Hoparlörler çalışıyor olarak işaretlendi",
     "spkSorry": "Ses düzeyini, sessiz modu ve çıkış cihazını kontrol edin",
     "noDevices": "Henüz cihaz yok, yukarıdan Başlat'a basın",
-    "guides": "Rehberler"
+    "guides": "Rehberler",
+    "maxRes": "En yüksek desteklenen"
   },
   "pages": {
     "home": {

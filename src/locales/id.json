@@ -111,7 +111,8 @@
     "spkThanks": "Speaker ditandai berfungsi",
     "spkSorry": "Periksa volume, mode senyap, dan perangkat output",
     "noDevices": "Belum ada perangkat, tekan Mulai di atas",
-    "guides": "Panduan"
+    "guides": "Panduan",
+    "maxRes": "Maksimum didukung"
   },
   "pages": {
     "home": {

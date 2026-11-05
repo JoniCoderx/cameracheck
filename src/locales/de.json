@@ -111,7 +111,8 @@
     "spkThanks": "Lautsprecher als funktionierend markiert",
     "spkSorry": "Prüfen Sie Lautstärke, Stummschaltung und Ausgabegerät",
     "noDevices": "Noch keine Geräte, oben auf Start drücken",
-    "guides": "Anleitungen"
+    "guides": "Anleitungen",
+    "maxRes": "Maximal möglich"
   },
   "pages": {
     "home": {

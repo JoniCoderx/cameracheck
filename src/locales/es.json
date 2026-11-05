@@ -111,7 +111,8 @@
     "spkThanks": "Altavoces marcados como funcionando",
     "spkSorry": "Revisa el volumen, el silencio y el dispositivo de salida",
     "noDevices": "Aún no hay dispositivos, pulsa Iniciar arriba",
-    "guides": "Guías"
+    "guides": "Guías",
+    "maxRes": "Máximo admitido"
   },
   "pages": {
     "home": {

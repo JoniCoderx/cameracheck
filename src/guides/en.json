@@ -1,4 +1,15 @@
 {
+  "ui": {
+    "guides": "Guides",
+    "updated": "Updated",
+    "minRead": "min read",
+    "ctaSub": "Check it in 5 seconds, free and private.",
+    "titleMic": "Mic test",
+    "titleWebcam": "Webcam test",
+    "runMic": "Run the mic test",
+    "runWebcam": "Run the webcam test",
+    "moreGuides": "More guides"
+  },
   "hub": {
     "title": "Mic & Webcam Troubleshooting Guides",
     "description": "Step-by-step fixes for a microphone or webcam that isn't working on Windows, Mac, Discord, Zoom, Teams and Google Meet. Free and written in plain English.",

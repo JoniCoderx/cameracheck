@@ -111,7 +111,8 @@
     "spkThanks": "Altoparlanti segnati come funzionanti",
     "spkSorry": "Controlla volume, muto e dispositivo di uscita",
     "noDevices": "Ancora nessun dispositivo, premi Avvia qui sopra",
-    "guides": "Guide"
+    "guides": "Guide",
+    "maxRes": "Massimo supportato"
   },
   "pages": {
     "home": {

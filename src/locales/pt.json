@@ -111,7 +111,8 @@
     "spkThanks": "Alto-falantes marcados como funcionando",
     "spkSorry": "Verifique o volume, o mudo e o dispositivo de saída",
     "noDevices": "Nenhum dispositivo ainda, clique em Iniciar acima",
-    "guides": "Guias"
+    "guides": "Guias",
+    "maxRes": "Máximo suportado"
   },
   "pages": {
     "home": {

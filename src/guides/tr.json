@@ -1,0 +1,327 @@
+{
+  "ui": {
+    "guides": "Rehberler",
+    "updated": "Güncellendi",
+    "minRead": "dk okuma",
+    "ctaSub": "5 saniyede kontrol edin, ücretsiz ve gizli.",
+    "titleMic": "Mikrofon testi",
+    "titleWebcam": "Kamera testi",
+    "runMic": "Mikrofon testini başlat",
+    "runWebcam": "Kamera testini başlat",
+    "moreGuides": "Diğer rehberler"
+  },
+  "hub": {
+    "title": "Mikrofon ve Kamera Sorun Giderme Rehberleri",
+    "description": "Windows, Mac, Discord, Zoom, Teams ve Google Meet'te mikrofon veya kamera çalışmıyorsa adım adım çözümler. Ücretsiz ve anlaşılır Türkçe rehberler.",
+    "h1": "Sorun giderme rehberleri",
+    "lead": "En sık görülen mikrofon ve kamera sorunları için kısa, pratik çözümler. Önce test edin, sonra gördüğünüz soruna uyan rehberi izleyin."
+  },
+  "guides": [
+    {
+      "slug": "microphone-not-working-windows",
+      "title": "Mikrofon Çalışmıyor Windows 11 ve 10: 9 Çözüm",
+      "description": "Windows 11 veya 10'da mikrofon çalışmıyor mu? Gizlilik ayarları, varsayılan giriş cihazı, ses düzeyi, sürücü ve özel mod için 9 çözüm, en kolayından başlayarak.",
+      "h1": "Mikrofon çalışmıyor: Windows 11 ve 10 için çözümler",
+      "lead": "Windows'taki mikrofon sorunlarının çoğu üç şeyden birine dayanır: bir gizlilik anahtarı, yanlış varsayılan cihaz ya da sıfıra çekilmiş giriş ses düzeyi. Adımları sırayla izleyin. Her biri bir dakikadan kısa sürer.",
+      "tool": "mic",
+      "sections": [
+        {
+          "h": "Adım 0: Sorunu doğrulayın",
+          "p": [
+            "Bu sitedeki mikrofon testini açın ve Başlat'a basın. Konuşurken seviye göstergesi hareket ediyorsa mikrofonunuz ve Windows sorunsuzdur, sorun tek bir uygulamadadır (Discord, Zoom ve Teams rehberine bakın). Gösterge hiç kıpırdamıyorsa okumaya devam edin."
+          ]
+        },
+        {
+          "h": "1. Mikrofon erişimini açın",
+          "p": [
+            "Windows tek bir anahtarla tüm uygulamaların mikrofona erişimini engelleyebilir ve güncellemeler bazen bu anahtarı kapatır."
+          ],
+          "ol": [
+            "Ayarlar → Gizlilik ve güvenlik → Mikrofon yolunu açın.",
+            "\"Mikrofon erişimi\" seçeneğini açın.",
+            "\"Uygulamaların mikrofonunuza erişmesine izin verin\" seçeneğini açın.",
+            "Aşağı kaydırın ve \"Masaüstü uygulamalarının mikrofonunuza erişmesine izin verin\" seçeneğini açın. Chrome, Edge, Firefox, Discord ve Zoom masaüstü uygulaması sayılır."
+          ]
+        },
+        {
+          "h": "2. Doğru giriş cihazını seçin",
+          "p": [
+            "Bir web kameranız, kulaklığınız ve dizüstü mikrofonunuz varsa Windows yanlış olanı dinliyor olabilir."
+          ],
+          "ol": [
+            "Ayarlar → Sistem → Ses yolunu açın.",
+            "Giriş bölümünde gerçekten konuştuğunuz mikrofonu seçin.",
+            "Konuşun ve \"Giriş ses düzeyi\" altındaki küçük mavi çubuğa bakın. Hareket ediyorsa Windows sizi duyuyordur."
+          ]
+        },
+        {
+          "h": "3. Giriş ses düzeyini yükseltin",
+          "p": [
+            "Aynı Ses sayfasında mikrofonunuza tıklayın ve Giriş ses düzeyini 80 veya üzerine getirin. 0 ile 10 arası bir değer, tamamen bozuk bir mikrofonla aynı görünür. Seçenek varsa test sırasında \"Sesi geliştir\" özelliğini kapalı tutun, çünkü bazı iyileştirme sürücüleri sessiz konuşmayı kısar."
+          ]
+        },
+        {
+          "h": "4. Mikrofonun devre dışı olmadığını kontrol edin",
+          "p": [
+            "Ayarlar → Sistem → Ses → Diğer ses ayarları → Kayıt sekmesine gidin. Boş bir alana sağ tıklayın ve \"Devre Dışı Cihazları Göster\" seçeneğini işaretleyin. Mikrofonunuz gri görünüyorsa sağ tıklayıp Etkinleştir'i seçin."
+          ]
+        },
+        {
+          "h": "5. Donanımsal sessize almayı kontrol edin",
+          "ul": [
+            "Dizüstü bilgisayarlarda genellikle bir mikrofon kapatma tuşu bulunur (F4, F8 veya üzeri çizili mikrofon simgeli bir tuş). Sessizdeyken ışığı genelde yanar.",
+            "Kulaklıkların kablosunda çoğunlukla bir sessiz düğmesi ya da yukarı kaldırınca susan bir mikrofon kolu bulunur.",
+            "Blue Yeti veya HyperX QuadCast gibi USB mikrofonların kendi sessiz düğmesi vardır ve bu düğme çoğu zaman kırmızı yanar."
+          ]
+        },
+        {
+          "h": "6. Doğru girişe takın",
+          "p": [
+            "Masaüstü bilgisayarlarda pembe 3,5 mm giriş mikrofon girişidir. Tek 4 kutuplu fişe sahip kulaklıklar için kombo giriş veya ayırıcı (splitter) gerekir. USB mikrofonları hub yerine doğrudan bilgisayara takın, ardından farklı bir bağlantı noktası deneyin."
+          ]
+        },
+        {
+          "h": "7. Özel modu kapatın",
+          "p": [
+            "Mikrofon bir uygulamada çalışıp diğerlerinde susuyorsa bir uygulama özel denetimi almış olabilir. Diğer ses ayarları → Kayıt bölümünde mikrofonunuzun Özellikler → Gelişmiş sekmesini açın ve \"Uygulamaların bu cihazın özel denetimini almasına izin ver\" seçeneklerinin ikisinin de işaretini kaldırın."
+          ]
+        },
+        {
+          "h": "8. Sorun gidericiyi çalıştırın ve sürücüyü güncelleyin",
+          "ol": [
+            "Ayarlar → Sistem → Sorun giderme → Diğer sorun gidericiler → Ses Kaydetme → Çalıştır.",
+            "Başlat'a sağ tıklayın → Aygıt Yöneticisi → Ses girişleri ve çıkışları.",
+            "Mikrofonunuza sağ tıklayın → Sürücüyü güncelleştir. İşe yaramazsa Cihazı kaldır'ı seçip yeniden başlatın. Windows açılışta sürücüyü yeniden yükler."
+          ]
+        },
+        {
+          "h": "9. Yeniden başlatın ve tekrar test edin",
+          "p": [
+            "Tam bir yeniden başlatma (uyku değil), mikrofonu tutan uygulamaları serbest bırakır. Ardından mikrofon testini yeniden açın. Sağlam olduğunu bildiğiniz bir kulaklık takılıyken bile gösterge hareket etmiyorsa sorun büyük olasılıkla ses donanımında veya girişin kendisindedir."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Mikrofonum Windows'ta çalışıyor ama tarayıcıda neden çalışmıyor?",
+          "a": "Tarayıcının da izne ihtiyacı vardır. Adres çubuğunun yanındaki kilit simgesine tıklayın, Mikrofon'u İzin ver olarak ayarlayın ve sayfayı yenileyin."
+        },
+        {
+          "q": "Windows'ta mikrofonumun sesi neden bu kadar kısık?",
+          "a": "Giriş ses düzeyi genellikle çok düşüktür. Ayarlar → Sistem → Ses yolunu açın, giriş cihazınıza tıklayın ve Giriş ses düzeyini 80 veya üzerine çıkarın."
+        },
+        {
+          "q": "Windows güncellemesinden sonra mikrofonum çalışmıyor. Ne değişti?",
+          "a": "Güncellemeler bazen gizlilik anahtarlarını veya varsayılan cihazı sıfırlar. Önce 1. ve 2. adımlara bakın."
+        }
+      ]
+    },
+    {
+      "slug": "mic-camera-not-working-mac",
+      "title": "Mac'te Mikrofon veya Kamera Çalışmıyor mu? Çözümü Burada",
+      "description": "Mac'te mikrofon veya kamera çalışmıyor mu? macOS Sonoma, Sequoia ve sonrasında gizlilik izinlerini, giriş cihazını, ses düzeyini ve takılan kamerayı düzeltin.",
+      "h1": "Mac'te mikrofon veya kamera çalışmıyor",
+      "lead": "Mac'te mikrofon ve kamera sorunlarının neredeyse hepsi ya hiç verilmemiş bir izinden ya da kamerayı zaten kullanan başka bir uygulamadan kaynaklanır. Şöyle çözebilirsiniz.",
+      "tool": "webcam",
+      "sections": [
+        {
+          "h": "Adım 0: Tarayıcıda test edin",
+          "p": [
+            "Bu sitedeki mikrofon veya kamera testini açın. Tarayıcı da cihazı göremiyorsa çözüm aşağıdaki Sistem Ayarları'ndadır. Test çalışıyor ama bir uygulama çalışmıyorsa çözüm o uygulamanın kendi izinlerindedir."
+          ]
+        },
+        {
+          "h": "1. Gizlilik ve Güvenlik bölümünde uygulamaya izin verin",
+          "ol": [
+            "Apple menüsü → Sistem Ayarları → Gizlilik ve Güvenlik yolunu açın.",
+            "Mikrofon'a tıklayın ve tarayıcınızın ve görüşme uygulamalarınızın (Zoom, Teams, Discord) yanındaki anahtarı açın.",
+            "Geri dönün ve aynısını Kamera altında yapın.",
+            "Uygulamadan tamamen çıkıp yeniden açın. macOS yeni izinleri ancak uygulama yeniden başlatıldıktan sonra uygular."
+          ],
+          "p": [
+            "Uygulama listede hiç yoksa uygulamayı açın ve mikrofonu bir kez kullanmayı deneyin. macOS, uygulama ilk kez izin istediğinde onu listeye ekler."
+          ]
+        },
+        {
+          "h": "2. Doğru girişi seçin ve seviyeyi yükseltin",
+          "p": [
+            "Sistem Ayarları → Ses → Giriş yolunu açın. Kullandığınız mikrofonu seçin, konuşun ve giriş seviyesi göstergesini izleyin. Giriş ses düzeyini yaklaşık dörtte üçe getirin. AirPods ve diğer Bluetooth kulaklıklar da burada görünür ve bağlandıklarında çoğu zaman otomatik olarak devreye girerler."
+          ]
+        },
+        {
+          "h": "3. Kamera kullanımda diyor veya siyah görünüyor",
+          "ul": [
+            "Kamerayı kullanabilecek tüm uygulamaları kapatın: FaceTime, Photo Booth, Zoom, Teams, OBS ve diğer tarayıcı sekmeleri.",
+            "Kameranın yanındaki yeşil ışık, bir şey kamerayı kullandığında yanar. Her şey kapalıyken bile yanık kalıyorsa Mac'i yeniden başlatın.",
+            "Yeniden başlatmak uygun değilse Terminal'i açıp sudo killall VDCAssistant komutunu çalıştırın ve tekrar deneyin. Apple silikon Mac'lerde yeni macOS sürümlerinde sudo killall appleh13camerad aynı işi görür."
+          ]
+        },
+        {
+          "h": "4. Harici kamera veya USB mikrofon kullanıyorsanız",
+          "p": [
+            "Cihazı hub üzerinden değil, doğrudan Mac'e takın. Bazı USB-C hub'lar kameralar için yeterli güç vermez. Görüşme uygulamalarında cihazı, uygulamanın video veya ses ayarlarından adıyla seçin. Birçok uygulama siz değiştirene kadar dahili kamerayı kullanmaya devam eder."
+          ]
+        },
+        {
+          "h": "5. Ekran Süresi veya iş profili engelliyor",
+          "p": [
+            "Şirket tarafından yönetilen Mac'ler ve Ekran Süresi içerik kısıtlamaları olan Mac'ler kamerayı devre dışı bırakabilir. Sistem Ayarları → Ekran Süresi → İçerik ve Gizlilik bölümünü kontrol edin ya da BT ekibinize bir profilin engelleyip engellemediğini sorun."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Safari neden kamera izni istemiyor?",
+          "a": "Safari → Ayarlar → Web Siteleri → Kamera (ve Mikrofon) bölümünü açın ve siteyi Sor veya İzin Ver olarak ayarlayın."
+        },
+        {
+          "q": "Mac'imin kamerasını hangi uygulamanın kullandığını nasıl anlarım?",
+          "a": "Menü çubuğundaki Denetim Merkezi simgesine tıklayın. Kamera veya mikrofon kullanımdayken uygulamanın adı en üstte görünür."
+        }
+      ]
+    },
+    {
+      "slug": "webcam-not-working",
+      "title": "Kamera Çalışmıyor mu? Siyah Ekran ve Görünmeyen Kamera Çözümü",
+      "description": "Web kamerası çalışmıyor veya siyah ekran mı veriyor? Gizlilik ayarlarını, kamera kapağını, kamerayı tutan uygulamaları, sürücüleri ve USB sorunlarını düzeltin.",
+      "h1": "Kamera çalışmıyor veya siyah ekran veriyor",
+      "lead": "Hiçbir şey göstermeyen bir web kamerası genellikle engellenmiş, meşgul ya da kapalıdır. Bu kontrolleri sırayla yapın. Çoğu kişinin sorunu 3. adımda çözülür.",
+      "tool": "webcam",
+      "sections": [
+        {
+          "h": "Adım 0: Kamera testini çalıştırın",
+          "p": [
+            "Bu sitedeki kamera testini başlatın. Net bir sonuç alırsınız: kamera bulunamadı, izin engellendi, kamera meşgul ya da gerçek çözünürlüğü ve kare hızıyla çalışan bir görüntü. Bu sonuca göre aşağıdaki doğru çözüme geçin."
+          ]
+        },
+        {
+          "h": "1. Gizlilik kapağını açın",
+          "p": [
+            "Birçok dizüstü bilgisayarda (Lenovo, HP, Dell) ekranın üstünde küçük bir sürgülü kapak bulunur. Bazılarında yan tarafta bir kamera kapatma anahtarı ya da kamera simgeli bir işlev tuşu vardır. Kapak kapalıyken kamera sorunsuz çalıştığını bildirir ama siyah veya gri bir görüntü verir."
+          ]
+        },
+        {
+          "h": "2. Kamerayı kullanan diğer uygulamaları kapatın",
+          "p": [
+            "Windows'ta çoğu web kamerası aynı anda yalnızca bir uygulama tarafından kullanılabilir. Zoom, Teams, Skype, OBS, Kamera uygulaması ve görüntülü görüşme açık olan diğer tarayıcı sekmelerini kapatın. Ardından testi yenileyin."
+          ]
+        },
+        {
+          "h": "3. Kamera erişimine izin verin",
+          "ol": [
+            "Windows: Ayarlar → Gizlilik ve güvenlik → Kamera. \"Kamera erişimi\", \"Uygulamaların kameranıza erişmesine izin verin\" ve \"Masaüstü uygulamalarının kameranıza erişmesine izin verin\" seçeneklerini açın.",
+            "Mac: Sistem Ayarları → Gizlilik ve Güvenlik → Kamera, ardından tarayıcınızı ve görüşme uygulamalarınızı açın.",
+            "Tarayıcıda: adres çubuğunun yanındaki kilit simgesine tıklayın, Kamera'yı İzin ver olarak ayarlayın ve sayfayı yenileyin."
+          ]
+        },
+        {
+          "h": "4. Kabloyu ve bağlantı noktasını kontrol edin (USB kameralar)",
+          "p": [
+            "Kamerayı hub'a veya monitörün USB girişine değil, doğrudan bilgisayara takın ve başka bir bağlantı noktası deneyin. Yoğun bir USB girişindeki 1080p kamera bağlanabilir ama hiç görüntü vermeyebilir."
+          ]
+        },
+        {
+          "h": "5. Çözünürlüğü düşürün",
+          "p": [
+            "Görüntü yalnızca 1080p veya 4K'da donuyor ya da siyah kalıyorsa testte 720p'ye geçin. Bu çalışırsa kamera ya da USB bağlantısı yüksek ayara yetişemiyordur."
+          ]
+        },
+        {
+          "h": "6. Kamera sürücüsünü yeniden yükleyin (Windows)",
+          "ol": [
+            "Başlat'a sağ tıklayın → Aygıt Yöneticisi.",
+            "Kameralar (veya Görüntüleme aygıtları) bölümünü açın.",
+            "Web kameranıza sağ tıklayın → Cihazı kaldır, ardından yeniden başlatın. Windows açılışta yeni bir sürücü yükler.",
+            "Kamera listede hiç yoksa Eylem → Donanım değişikliklerini tara'yı seçin."
+          ]
+        },
+        {
+          "h": "Düşük FPS veya karanlık, karıncalı görüntü",
+          "p": [
+            "Web kameraları loş ışıkta her kareye daha fazla pozlama vermek için kare hızını düşürür. Arkanıza değil, önünüze bir lamba yakın. FPS genellikle yeniden 30'a çıkar. Lensi de temizleyin. Görüntünün bulanık görünmesinin en yaygın nedeni lens üzerindeki bir lekedir."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Kameram neden bir uygulamada çalışıp diğerinde çalışmıyor?",
+          "a": "Her uygulama kendi kamerasını seçer. O uygulamanın video ayarlarını açın ve web kameranızı adıyla seçin. Ayrıca başka bir uygulamanın kamerayı tutmadığından emin olun."
+        },
+        {
+          "q": "Kamera görüntüm neden ters (ayna gibi) görünüyor?",
+          "a": "Önizleme görüntüleri ayna hissi versin diye yansıtılır. Görüşmedeki diğer kişiler sizi doğru yönde görür."
+        }
+      ]
+    },
+    {
+      "slug": "mic-not-working-discord-zoom-teams",
+      "title": "Discord, Zoom, Teams veya Google Meet'te Mikrofon Çalışmıyor",
+      "description": "Discord, Zoom, Microsoft Teams veya Google Meet'te sesiniz gitmiyor mu? Doğru giriş cihazını seçin, hassasiyeti ve izinleri düzeltin. Her uygulama için çözüm.",
+      "h1": "Discord, Zoom, Teams veya Google Meet'te mikrofon çalışmıyor",
+      "lead": "Mikrofonunuz buradaki testi geçiyor ama görüşmede kimse sizi duymuyorsa sorun uygulamadadır. Her uygulama kendi giriş ayarını tutar ve bu ayar her zaman Windows veya macOS'u takip etmez.",
+      "tool": "mic",
+      "sections": [
+        {
+          "h": "Önce: Mikrofonunuzu uygulama dışında test edin",
+          "p": [
+            "Aynı kulaklık veya mikrofonla bu sitedeki mikrofon testini çalıştırın. Gösterge hareket ediyorsa donanımınız ve sistem ayarlarınız sorunsuzdur. Bu durumda çözüm aşağıdaki uygulama ayarlarındadır."
+          ]
+        },
+        {
+          "h": "Discord",
+          "ol": [
+            "Kullanıcı Ayarları'nı (adınızın yanındaki dişli simgesi) açın → Ses ve Görüntü.",
+            "Giriş Cihazı altında \"Varsayılan\" yerine mikrofonunuzu adıyla seçin.",
+            "Konuşurken seviye çubuğunu izlemek için \"Hadi Kontrol Edelim\" düğmesini kullanın.",
+            "Ses Etkinliği kullanıyorsanız \"Giriş hassasiyetini otomatik olarak belirle\" seçeneğini kapatın ve sesiniz çubuğu yakana kadar kaydırıcıyı sola çekin.",
+            "Hiçbiri işe yaramazsa sayfanın altındaki \"Ses Ayarlarını Sıfırla\" düğmesine tıklayın."
+          ]
+        },
+        {
+          "h": "Zoom",
+          "ol": [
+            "Ayarlar → Ses bölümünü açın.",
+            "Mikrofon altında cihazınızı seçin ve \"Mikrofonu Test Et\" düğmesine basın.",
+            "Ses seviyeniz sürekli düşüyorsa \"Mikrofon ses seviyesini otomatik olarak ayarla\" seçeneğinin işaretini kaldırın.",
+            "Toplantıda sol alttaki mikrofon simgesinin üzerinin çizili olmadığından ve toplantı sahibinin herkesi sessize almadığından emin olun."
+          ]
+        },
+        {
+          "h": "Microsoft Teams",
+          "ol": [
+            "Profil resminizin yanındaki üç noktaya tıklayın → Ayarlar → Cihazlar.",
+            "Ses ayarları altında mikrofonunuzu seçin, ardından kendinizi kaydedip dinlemek için \"Test araması yap\" seçeneğini kullanın.",
+            "Tarayıcı sürümünde adres çubuğu sorduğunda mikrofon erişimine izin verin."
+          ]
+        },
+        {
+          "h": "Google Meet",
+          "ol": [
+            "Toplantıda üç noktaya tıklayın → Ayarlar → Ses.",
+            "Mikrofonunuzu seçin ve konuşun. Adının yanındaki küçük noktalar hareket etmelidir.",
+            "Meet mikrofonun engellendiğini söylüyorsa adres çubuğunun yanındaki kilit simgesine tıklayın, Mikrofon'u İzin ver olarak ayarlayın ve sayfayı yenileyin."
+          ]
+        },
+        {
+          "h": "Hâlâ ses yok mu? Yaygın nedenler",
+          "ul": [
+            "Mikrofonu başka bir uygulama tutuyor. OBS'yi, diğer görüşme uygulamalarını ve tarayıcı sekmelerini kapatıp yeniden katılın.",
+            "Toplantıya \"Bilgisayar sesi\" kapalıyken ya da telefonla katıldınız. Bilgisayar sesiyle yeniden katılın.",
+            "Bluetooth kulaklık yanlış profile geçti. Bağlantıyı kesip yeniden bağlayın, ardından \"Headset\" veya \"Hands-free\" girişini seçin.",
+            "Gürültü engelleme çok agresif. Düşük veya Otomatik seviyesine indirip tekrar test edin."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Mikrofonum çalışıyor ama Discord'da neden beni duymuyorlar?",
+          "a": "Discord büyük olasılıkla farklı bir giriş cihazı kullanıyor ya da hassasiyet eşiği çok yüksek. Ses ve Görüntü bölümünde mikrofonunuzu adıyla seçin ve giriş hassasiyetini düşürün."
+        },
+        {
+          "q": "Zoom görüşmesinden önce mikrofonumu nasıl test ederim?",
+          "a": "Bu sitedeki mikrofon testini açın ya da Zoom'da Ayarlar → Ses → Mikrofonu Test Et yolunu izleyin. İkisi de yaklaşık beş saniye sürer."
+        }
+      ]
+    }
+  ]
+}

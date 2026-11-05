@@ -275,6 +275,17 @@
       ['#snapBtn', '#mirrorBtn', '#flipBtn', '#gridBtn', '#fsBtn', '#vrecBtn'].forEach((s) => ($(s).disabled = false));
       const track = stream.getVideoTracks()[0];
       const st = track.getSettings ? track.getSettings() : {};
+      // What the camera can do at most (Chrome, Edge, Safari; Firefox has no getCapabilities)
+      try {
+        const caps = track.getCapabilities ? track.getCapabilities() : null;
+        if (caps && caps.width && caps.width.max && caps.height && caps.height.max) {
+          const fpsMax = caps.frameRate && caps.frameRate.max ? Math.round(caps.frameRate.max) : 0;
+          setText('#cMax', caps.width.max + ' × ' + caps.height.max + (fpsMax ? ' · ' + fpsMax + ' fps' : ''));
+          const mw = $('#cMaxWrap'); if (mw) mw.hidden = false;
+          // grey out resolutions the camera can't deliver
+          $$('#resSelect option').forEach((o) => { const m = /^(\d+)x(\d+)$/.exec(o.value); if (m) o.disabled = +m[1] > caps.width.max || +m[2] > caps.height.max; });
+        }
+      } catch (e) {}
       if (st.facingMode) cam.facing = st.facingMode;
       cam.mirror = cam.facing !== 'environment';
       wrap.classList.toggle('mirror', cam.mirror);

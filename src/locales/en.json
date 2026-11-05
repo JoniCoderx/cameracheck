@@ -111,7 +111,8 @@
     "spkThanks": "Speakers marked as working",
     "spkSorry": "Check volume, mute and output device",
     "noDevices": "No devices yet. Press Start above",
-    "guides": "Guides"
+    "guides": "Guides",
+    "maxRes": "Max supported"
   },
   "pages": {
     "home": {

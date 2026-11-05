@@ -111,7 +111,8 @@
     "spkThanks": "Haut-parleurs marqués comme fonctionnels",
     "spkSorry": "Vérifiez le volume, la sourdine et la sortie audio",
     "noDevices": "Aucun appareil pour l'instant, appuyez sur Démarrer",
-    "guides": "Guides"
+    "guides": "Guides",
+    "maxRes": "Maximum possible"
   },
   "pages": {
     "home": {
