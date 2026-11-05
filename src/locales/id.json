@@ -1,0 +1,324 @@
+{
+  "meta": {
+    "langName": "Bahasa Indonesia",
+    "dir": "ltr",
+    "ogLocale": "id_ID"
+  },
+  "ui": {
+    "skip": "Langsung ke konten",
+    "navMic": "Tes mic",
+    "navCam": "Tes webcam",
+    "navSpk": "Tes speaker",
+    "navFaq": "FAQ",
+    "language": "Bahasa",
+    "heroPill": "100% privat · berjalan di browser Anda",
+    "testAll": "Tes semuanya",
+    "justMic": "Mic saja",
+    "startMic": "Mulai tes mic",
+    "startCam": "Mulai tes webcam",
+    "startSpk": "Putar suara tes",
+    "mic": "Mikrofon",
+    "cam": "Kamera",
+    "spk": "Speaker",
+    "notTested": "belum dites",
+    "working": "berfungsi",
+    "failed": "bermasalah",
+    "testing": "mengetes…",
+    "micTest": "Tes mikrofon",
+    "micHint": "Klik mulai lalu ucapkan sesuatu. Bar akan bergerak saat Anda berbicara.",
+    "defaultMic": "Mikrofon default",
+    "defaultCam": "Kamera default",
+    "autoRes": "Otomatis",
+    "start": "Mulai",
+    "stop": "Berhenti",
+    "waiting": "Menunggu…",
+    "record": "Rekam 5 dtk",
+    "recording": "Merekam… ",
+    "echoOn": "Dengar suara saya",
+    "echoOff": "Berhenti dengar",
+    "download": "Unduh",
+    "device": "Perangkat",
+    "sampleRate": "Sample rate",
+    "channels": "Kanal",
+    "peakFreq": "Frek. dominan",
+    "echoCancel": "Peredam gema",
+    "noiseSup": "Peredam bising",
+    "camTest": "Tes webcam",
+    "camHint": "Izinkan akses kamera untuk melihat diri Anda. Periksa gambar, resolusi, dan frame rate.",
+    "camOff": "Kamera mati",
+    "snap": "📸 Foto",
+    "mirror": "⇋ Cermin",
+    "flip": "🔄 Ganti kamera",
+    "grid": "# Grid",
+    "fullscreen": "⛶ Layar penuh",
+    "recVideo": "Rekam klip",
+    "resolution": "Resolusi",
+    "fps": "Frame rate",
+    "aspect": "Rasio aspek",
+    "megapixels": "Megapiksel",
+    "brightness": "Kecerahan",
+    "spkTest": "Tes speaker & headphone",
+    "spkHint": "Putar nada di kanal kiri, kanan, atau keduanya untuk memastikan output audio Anda berfungsi.",
+    "left": "Kiri",
+    "both": "Keduanya",
+    "right": "Kanan",
+    "toneFreq": "Frekuensi nada",
+    "sweep": "Sweep frekuensi",
+    "spkAsk": "Apakah terdengar?",
+    "yes": "Ya 👍",
+    "no": "Tidak 👎",
+    "devTitle": "Perangkat terdeteksi",
+    "devHint": "Nama perangkat muncul setelah Anda mengizinkan akses.",
+    "refresh": "Muat ulang",
+    "browser": "Browser",
+    "os": "Sistem",
+    "secure": "Koneksi aman",
+    "permMic": "Izin mikrofon",
+    "permCam": "Izin kamera",
+    "faqTitle": "Pertanyaan yang sering diajukan",
+    "otherTests": "Tes gratis lainnya",
+    "cardMicDesc": "Meter level, gelombang suara, rekam dan putar ulang.",
+    "cardCamDesc": "Pratinjau langsung, resolusi, FPS, dan foto.",
+    "cardSpkDesc": "Kanal kiri/kanan dan sweep frekuensi penuh.",
+    "footer": "Tes mikrofon, webcam, dan speaker online gratis. Audio dan video Anda tidak pernah keluar dari perangkat Anda.",
+    "privacy": "Privasi",
+    "about": "Tentang",
+    "contact": "Kontak",
+    "ad": "Iklan",
+    "vSilent": "Tidak ada suara — bicara lebih keras",
+    "vLow": "Sangat pelan — mendekatlah",
+    "vGood": "Suara bagus ✓",
+    "vLoud": "Terlalu keras — bisa pecah",
+    "vDetected": "Mikrofon berfungsi ✓",
+    "on": "Aktif",
+    "off": "Mati",
+    "yesW": "Ya",
+    "noW": "Tidak",
+    "granted": "Diizinkan",
+    "denied": "Diblokir",
+    "prompt": "Tanya",
+    "unknown": "Tidak diketahui",
+    "mono": "Mono",
+    "stereo": "Stereo",
+    "errDenied": "Izin ditolak. Klik ikon gembok di bilah alamat dan izinkan akses.",
+    "errNotFound": "Perangkat tidak ditemukan. Sudah tercolok?",
+    "errBusy": "Perangkat sedang dipakai aplikasi lain, atau diblokir oleh sistem.",
+    "errGeneric": "Tidak dapat dimulai: ",
+    "errInsecure": "Kamera dan mikrofon hanya berfungsi melalui HTTPS. Buka halaman ini lewat https:// atau localhost.",
+    "errUnsupported": "Browser Anda tidak mendukung akses kamera/mikrofon.",
+    "echoWarn": "Gunakan headphone agar tidak terjadi feedback",
+    "snapSaved": "Foto disimpan di bawah — ketuk untuk mengunduh",
+    "spkThanks": "Speaker ditandai berfungsi",
+    "spkSorry": "Periksa volume, mode senyap, dan perangkat output",
+    "noDevices": "Belum ada perangkat — tekan Mulai di atas"
+  },
+  "pages": {
+    "home": {
+      "title": "Tes Mic & Webcam — Tes Mikrofon dan Kamera Online Gratis",
+      "description": "Tes mic, tes kamera, dan tes speaker online dengan sekali klik. Meter level mic langsung, rekam dan putar ulang, cek resolusi dan FPS kamera. Gratis dan privat.",
+      "h1Html": "Apakah <span class=\"grad\">mic &amp; kamera</span> Anda berfungsi?",
+      "lead": "Tes mikrofon, webcam, dan speaker Anda dalam hitungan detik. Tanpa daftar, tanpa unduhan, tidak ada data yang keluar dari perangkat Anda.",
+      "article": [
+        {
+          "h": "Cara tes mikrofon dan webcam secara online",
+          "p": [
+            "MicNCam memeriksa mikrofon, webcam, dan speaker Anda langsung di browser. Tekan tombol di bawah judul dan izinkan akses saat browser meminta. Selesai: tidak perlu memasang aplikasi dan tidak perlu membuat akun."
+          ],
+          "ol": [
+            "Klik \"Tes semuanya\" (atau mulai tes mic atau kamera secara terpisah).",
+            "Saat browser meminta izin, pilih \"Izinkan\".",
+            "Bicaralah seperti biasa. Meter level dan gelombang suara akan bergerak mengikuti suara Anda.",
+            "Lihat pratinjau kamera. Periksa gambar, resolusi, dan frame rate.",
+            "Putar nada kiri/kanan untuk memastikan speaker atau headphone Anda berfungsi."
+          ]
+        },
+        {
+          "h": "Arti hasil tes",
+          "p": [
+            "Meter mikrofon menunjukkan kerasnya input Anda dalam desibel (dB) relatif terhadap batas maksimum yang dapat ditangkap perangkat. Hening biasanya di bawah −60 dB, suara bicara normal dari jarak satu lengan berada di antara −35 dan −15 dB, dan suara yang menyentuh 0 dB akan clipping dan terdengar pecah.",
+            "Untuk kamera, resolusi (misalnya 1280 × 720 atau 1920 × 1080) menunjukkan seberapa detail gambar Anda. Frame rate (FPS) menunjukkan seberapa mulus gerakannya. 30 FPS adalah standar untuk video call. Banyak webcam turun ke 15 FPS di tempat redup, jadi tambahkan cahaya jika FPS Anda rendah."
+          ]
+        },
+        {
+          "h": "Tes sebelum Zoom, Teams, Google Meet, atau Discord",
+          "p": [
+            "Cek singkat sebelum rapat penting, wawancara, kelas online, atau streaming menyelamatkan Anda dari momen klasik \"suaraku kedengaran nggak?\". Pilih mikrofon dan kamera yang sama di sini dengan yang akan Anda pakai di Zoom, Microsoft Teams, Google Meet, Skype, Discord, atau OBS. Jika berfungsi di MicNCam, berarti berfungsi di browser, jadi masalah yang tersisa ada di pengaturan audio atau video aplikasi tersebut."
+          ]
+        },
+        {
+          "h": "Mikrofon atau kamera tidak berfungsi? Solusi cepat",
+          "ul": [
+            "Izinkan akses: klik ikon gembok atau kamera di samping bilah alamat dan setel Kamera dan Mikrofon ke \"Izinkan\", lalu muat ulang halaman.",
+            "Tutup aplikasi lain: Zoom, Teams, OBS, atau tab browser lain bisa mengunci kamera sehingga tidak bisa dipakai aplikasi lain.",
+            "Pilih perangkat yang benar: gunakan menu drop-down untuk berpindah antara perangkat bawaan, USB, dan Bluetooth.",
+            "Periksa pengaturan privasi sistem: di Windows buka Pengaturan → Privasi & keamanan → Kamera / Mikrofon; di macOS buka Pengaturan Sistem → Privasi & Keamanan.",
+            "Cek tombol fisik: banyak laptop punya penutup kamera atau tombol mute, dan headset sering punya sakelar mute di kabelnya.",
+            "Perbarui driver atau restart: restart sederhana mengatasi banyak sekali error \"perangkat tidak ditemukan\"."
+          ]
+        },
+        {
+          "h": "Apakah privat?",
+          "p": [
+            "Ya. Semuanya berjalan secara lokal menggunakan teknologi browser standar (WebRTC getUserMedia dan Web Audio API). Suara dan video Anda tidak pernah dikirim ke server, tidak pernah disimpan, dan tidak dilihat siapa pun. Rekaman dan foto hanya ada di browser Anda sampai Anda menutup tab atau memilih untuk mengunduhnya."
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Apakah tes mic dan webcam ini gratis?", "a": "Ya, sepenuhnya gratis tanpa daftar, tanpa batasan, dan tanpa perlu memasang apa pun." },
+        { "q": "Apakah audio atau video saya direkam atau diunggah?", "a": "Tidak. Semuanya terjadi di dalam browser Anda. Tidak ada yang diunggah atau disimpan di server mana pun." },
+        { "q": "Browser saya tidak meminta izin. Apa yang harus dilakukan?", "a": "Klik ikon kamera atau gembok di bilah alamat, setel Kamera dan Mikrofon ke \"Izinkan\", lalu muat ulang halaman. Di iPhone buka Pengaturan → Safari → Kamera / Mikrofon dan pilih \"Tanya\" atau \"Izinkan\"." },
+        { "q": "Kenapa kamera saya menampilkan layar hitam?", "a": "Mungkin kamera sedang dipakai aplikasi lain, penutup privasi tertutup, atau resolusi yang dipilih tidak didukung. Tutup aplikasi lain, buka penutupnya, coba resolusi lain, atau pilih kamera lain dari daftar." },
+        { "q": "Apakah bisa di iPhone dan Android?", "a": "Bisa. Berfungsi di Safari, Chrome, Firefox, Edge, dan Samsung Internet di iOS dan Android. Gunakan \"Ganti kamera\" untuk mengetes kamera depan dan belakang." },
+        { "q": "Browser apa saja yang didukung?", "a": "Semua browser modern: Chrome, Edge, Firefox, Safari, Opera, Brave, dan Samsung Internet. Halaman harus dibuka melalui HTTPS agar bisa mengakses kamera dan mic." }
+      ]
+    },
+    "mic": {
+      "title": "Tes Mic — Tes Mikrofon Online Gratis (Cepat & Privat)",
+      "description": "Tes mic online sekali klik. Lihat meter level dB, gelombang suara, dan spektrum frekuensi langsung, lalu rekam dan dengarkan suara Anda. Untuk mic apa pun.",
+      "h1Html": "<span class=\"grad\">Tes mic</span> online",
+      "lead": "Cek apakah mikrofon Anda berfungsi dalam hitungan detik. Bicaralah dan perhatikan meter level, lalu rekam dan dengarkan kembali suara Anda.",
+      "article": [
+        {
+          "h": "Cara tes mikrofon",
+          "ol": [
+            "Klik \"Mulai tes mic\" dan izinkan akses mikrofon.",
+            "Pilih mikrofon Anda dari menu drop-down jika ada lebih dari satu.",
+            "Bicaralah dengan volume normal dan perhatikan meter serta gelombang suaranya.",
+            "Tekan \"Rekam 5 dtk\", lalu putar ulang klipnya untuk mendengar persis apa yang didengar orang lain."
+          ]
+        },
+        {
+          "h": "Berapa level mikrofon yang bagus?",
+          "p": [
+            "Usahakan puncaknya berada di antara −20 dB dan −10 dB saat berbicara normal. Di bawah −45 dB lawan bicara akan sulit mendengar Anda: mendekatlah atau naikkan gain input. Jika meter terus menyentuh zona merah dekat 0 dB, suara Anda akan clipping dan terdengar kasar, jadi turunkan gain atau jauhkan mic sedikit.",
+            "Nilai \"Frekuensi dominan\" menunjukkan nada terkuat yang ditangkap mic. Kebanyakan suara manusia berada di antara 85 Hz dan 255 Hz. Angka tetap di 50 Hz atau 60 Hz saat tidak ada yang berbicara biasanya menandakan dengung listrik dari kabel atau adaptor daya."
+          ]
+        },
+        {
+          "h": "Mikrofon tidak berfungsi? Coba ini",
+          "ul": [
+            "Izin browser: klik ikon gembok di bilah alamat → Mikrofon → Izinkan, lalu muat ulang.",
+            "Windows 10/11: Pengaturan → Sistem → Suara → Input. Pilih mic Anda dan periksa \"Volume input\". Buka juga Pengaturan → Privasi & keamanan → Mikrofon dan aktifkan akses untuk aplikasi desktop dan browser Anda.",
+            "macOS: Pengaturan Sistem → Privasi & Keamanan → Mikrofon → aktifkan browser Anda. Lalu Pengaturan Sistem → Suara → Input untuk memilih perangkat dan level input.",
+            "iPhone / iPad: Pengaturan → Safari (atau Chrome) → Mikrofon → Izinkan.",
+            "Android: tekan lama ikon browser → Info aplikasi → Izin → Mikrofon → Izinkan.",
+            "Headset: periksa sakelar mute di kabel, dan pastikan colokan masuk ke jack mic (merah muda) atau Anda memakai konektor TRRS 4-pole.",
+            "Headset Bluetooth: beberapa beralih ke mode \"hands-free\" berkualitas rendah saat mic aktif. Itu perilaku normal, bukan kerusakan."
+          ]
+        },
+        {
+          "h": "Tips suara lebih jernih saat panggilan",
+          "ul": [
+            "Jaga jarak mic 10–20 cm dari mulut dan sedikit menyamping untuk menghindari suara letupan.",
+            "Gunakan \"Dengar suara saya\" dengan headphone untuk memantau bising latar secara real-time.",
+            "Barang lembut seperti gorden, karpet, dan sofa mengurangi gema jauh lebih baik daripada filter software apa pun.",
+            "Biarkan peredam gema dan peredam bising aktif saat panggilan; matikan hanya untuk merekam musik."
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Bagaimana cara tahu mikrofon saya berfungsi?", "a": "Mulai tes dan berbicaralah. Jika meter level dan gelombang suara bergerak mengikuti suara Anda dan status berubah hijau, mic Anda berfungsi. Rekam klip 5 detik dan putar ulang untuk memastikan kualitasnya." },
+        { "q": "Kenapa suara mic saya pelan sekali?", "a": "Gain input kemungkinan rendah. Naikkan volume input di pengaturan suara sistem operasi Anda, dekatkan diri ke mic, dan pastikan Anda memilih perangkat yang benar di menu drop-down." },
+        { "q": "Kenapa mikrofon saya menangkap gema?", "a": "Biasanya suara dari speaker masuk kembali ke mic. Gunakan headphone, kecilkan volume speaker, dan biarkan peredam gema aktif di aplikasi panggilan Anda." },
+        { "q": "Bisakah saya mengetes mikrofon USB atau Bluetooth?", "a": "Bisa. Sambungkan, tekan Muat ulang di daftar perangkat jika perlu, lalu pilih dari menu drop-down mikrofon." },
+        { "q": "Bisakah saya mengunduh rekaman tes saya?", "a": "Bisa. Setelah merekam, tekan Unduh untuk menyimpan klipnya. Klip dibuat di browser Anda dan tidak pernah diunggah." }
+      ]
+    },
+    "webcam": {
+      "title": "Tes Webcam — Cek Kamera Online (Resolusi & FPS)",
+      "description": "Tes webcam online gratis. Cek kamera langsung, resolusi asli, FPS, rasio aspek, dan kecerahan. Ambil foto dan rekam klip. Untuk kamera laptop, USB, dan HP.",
+      "h1Html": "<span class=\"grad\">Tes webcam</span> online",
+      "lead": "Pastikan kamera Anda berfungsi dan terlihat bagus. Lihat gambar langsung, resolusi dan FPS sebenarnya, dan ambil foto dengan sekali klik.",
+      "article": [
+        {
+          "h": "Cara tes webcam",
+          "ol": [
+            "Klik \"Mulai tes webcam\" dan izinkan akses kamera.",
+            "Pilih kamera dan resolusi yang ingin Anda cek.",
+            "Lihat label di pojok untuk resolusi dan FPS secara langsung.",
+            "Ambil foto atau rekam klip singkat untuk memeriksa ketajaman dan warna."
+          ]
+        },
+        {
+          "h": "Memahami resolusi dan FPS",
+          "p": [
+            "Resolusi adalah jumlah piksel di setiap frame: 640 × 480 (480p), 1280 × 720 (720p HD), 1920 × 1080 (1080p Full HD), atau 3840 × 2160 (4K). Tes ini meminta resolusi yang Anda pilih dan menampilkan apa yang benar-benar diberikan kamera. Banyak webcam diiklankan 1080p tetapi turun ke 720p di beberapa browser atau karena batas bandwidth USB.",
+            "FPS (frame per detik) mengukur kehalusan gerakan. 30 FPS adalah standar untuk video call dan 60 FPS terlihat jauh lebih mulus. FPS yang ditampilkan di sini diukur dari frame nyata, bukan sekadar laporan driver, jadi benar-benar menggambarkan apa yang akan dilihat orang lain."
+          ]
+        },
+        {
+          "h": "Kamera tidak berfungsi atau layar hitam?",
+          "ul": [
+            "Tutup Zoom, Teams, Skype, OBS, dan tab lain yang memakai kamera. Kebanyakan kamera hanya bisa dipakai satu aplikasi dalam satu waktu.",
+            "Buka penutup privasi fisik, atau tekan tombol kamera (sering F8, F10, atau Fn+tombol F) di laptop.",
+            "Windows 10/11: Pengaturan → Privasi & keamanan → Kamera → aktifkan \"Akses kamera\" dan \"Izinkan aplikasi mengakses kamera Anda\".",
+            "macOS: Pengaturan Sistem → Privasi & Keamanan → Kamera → aktifkan browser Anda.",
+            "iPhone / iPad: Pengaturan → Safari → Kamera → Izinkan. Android: Info aplikasi → Izin → Kamera.",
+            "Pilih resolusi lebih rendah jika gambar macet, dan colokkan kamera USB langsung ke komputer, bukan ke hub."
+          ]
+        },
+        {
+          "h": "Tampil lebih baik di video call",
+          "ul": [
+            "Menghadaplah ke jendela atau lampu yang lembut. Cahaya dari belakang membuat Anda terlihat seperti siluet.",
+            "Naikkan kamera sejajar mata dan gunakan grid untuk menempatkan mata Anda di garis sepertiga atas.",
+            "FPS rendah di malam hari? Tambahkan cahaya. Webcam memperpanjang eksposur saat gelap, sehingga frame rate turun.",
+            "Bersihkan lensa: sidik jari adalah penyebab paling umum gambar yang \"lembek\" atau buram."
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Bagaimana cara cek webcam saya berfungsi?", "a": "Klik \"Mulai tes webcam\" dan izinkan akses. Jika Anda melihat diri sendiri dan status berubah hijau, kamera berfungsi. Label menampilkan resolusi dan FPS sebenarnya." },
+        { "q": "Kenapa gambarnya terbalik seperti cermin?", "a": "Kamera depan dicerminkan secara default karena terasa alami, seperti bercermin. Orang lain di panggilan melihat Anda tidak terbalik. Gunakan tombol Cermin untuk mengubahnya." },
+        { "q": "Kenapa FPS webcam saya rendah?", "a": "Biasanya karena cahaya kurang, port USB yang sibuk, atau resolusi tinggi. Tambahkan cahaya, pilih 720p, atau sambungkan kamera langsung ke komputer." },
+        { "q": "Bisakah saya mengetes kamera depan dan belakang HP?", "a": "Bisa. Buka halaman ini di HP Anda dan ketuk \"Ganti kamera\" untuk berpindah antara kamera depan dan belakang." },
+        { "q": "Apakah foto saya diunggah?", "a": "Tidak. Foto dan klip dibuat di browser Anda dan hanya tersimpan jika Anda mengunduhnya." }
+      ]
+    },
+    "speaker": {
+      "title": "Tes Speaker — Tes Audio Kiri/Kanan & Headphone Online",
+      "description": "Tes speaker dan headphone online. Putar nada kiri, kanan, dan tengah, atur frekuensi, dan jalankan sweep 40 Hz–16 kHz untuk cek bass, treble, dan kanal stereo.",
+      "h1Html": "<span class=\"grad\">Tes speaker</span> online",
+      "lead": "Pastikan speaker dan headphone Anda berfungsi, kiri dan kanan tidak tertukar, dan cek sejauh mana jangkauan pendengaran serta perangkat Anda.",
+      "article": [
+        {
+          "h": "Cara tes speaker atau headphone",
+          "ol": [
+            "Atur volume sistem ke level yang nyaman dan rendah.",
+            "Tekan Kiri, lalu Kanan. Setiap suara hanya boleh keluar dari sisi tersebut.",
+            "Tekan Keduanya untuk mengecek suara di tengah.",
+            "Jalankan sweep frekuensi untuk mendengar rentang dari bass dalam hingga treble tinggi."
+          ]
+        },
+        {
+          "h": "Kiri dan kanan tertukar atau tidak bunyi?",
+          "p": [
+            "Jika nada kiri terdengar di kanan, headphone Anda terpasang terbalik atau kabel atau adaptornya tersambung terbalik. Jika satu sisi tidak bunyi, periksa slider balance di pengaturan suara (Windows: Pengaturan → Sistem → Suara → perangkat Anda → Kiri/Kanan; macOS: Pengaturan Sistem → Suara → Output → Keseimbangan), lalu coba kabel atau port lain.",
+            "Beberapa HP dan laptop hanya memakai satu speaker mono. Dalam hal ini Kiri dan Kanan keluar dari tempat yang sama, dan itu wajar."
+          ]
+        },
+        {
+          "h": "Sweep frekuensi dan pendengaran Anda",
+          "p": [
+            "Anak muda biasanya bisa mendengar dari sekitar 20 Hz hingga 20 kHz. Batas atasnya menurun seiring usia, dan banyak orang dewasa tidak lagi mendengar nada di atas 14–16 kHz. Speaker kecil di laptop dan HP sering tidak mampu memutar suara di bawah 100–150 Hz, jadi awal sweep bisa tidak terdengar meskipun pendengaran Anda baik-baik saja. Jaga volume tetap rendah: nada frekuensi tinggi bisa terasa tidak nyaman."
+          ]
+        },
+        {
+          "h": "Tidak ada suara sama sekali?",
+          "ul": [
+            "Pastikan sistem dan tab browser tidak di-mute. Cari ikon speaker yang dicoret di tab.",
+            "Pastikan perangkat output yang benar dipilih (headphone Bluetooth sering mengambil alih secara otomatis).",
+            "Cabut dan colokkan kembali headphone kabel, atau pasangkan ulang headphone Bluetooth.",
+            "Di iPhone, matikan mode Senyap. Di Android, naikkan volume media, bukan volume dering."
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Bagaimana cara tes speaker kiri dan kanan?", "a": "Tekan tombol Kiri. Nada hanya boleh terdengar dari sisi kiri. Lalu tekan Kanan. Jika terbalik, tukar posisi headphone Anda atau periksa kabel dan pengaturan balance." },
+        { "q": "Kenapa saya tidak bisa mendengar frekuensi tinggi?", "a": "Kemampuan mendengar di atas 15 kHz secara alami menurun seiring usia, dan banyak speaker kecil tidak bisa memutar frekuensi yang sangat tinggi atau sangat rendah. Keduanya normal." },
+        { "q": "Apakah nada tes aman untuk telinga?", "a": "Ya, pada volume normal. Mulailah dengan volume sistem rendah dan naikkan perlahan, terutama saat memakai headphone." },
+        { "q": "Apakah bisa dengan headphone Bluetooth?", "a": "Bisa. Sambungkan dulu agar menjadi output aktif, lalu putar nadanya." }
+      ]
+    }
+  }
+}

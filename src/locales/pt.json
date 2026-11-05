@@ -1,0 +1,324 @@
+{
+  "meta": {
+    "langName": "Português",
+    "dir": "ltr",
+    "ogLocale": "pt_BR"
+  },
+  "ui": {
+    "skip": "Pular para o conteúdo",
+    "navMic": "Microfone",
+    "navCam": "Webcam",
+    "navSpk": "Alto-falantes",
+    "navFaq": "Dúvidas",
+    "language": "Idioma",
+    "heroPill": "100% privado · roda no seu navegador",
+    "testAll": "Testar tudo",
+    "justMic": "Só o microfone",
+    "startMic": "Testar microfone",
+    "startCam": "Testar webcam",
+    "startSpk": "Tocar som de teste",
+    "mic": "Microfone",
+    "cam": "Câmera",
+    "spk": "Alto-falantes",
+    "notTested": "não testado",
+    "working": "funcionando",
+    "failed": "problema",
+    "testing": "testando…",
+    "micTest": "Teste de microfone",
+    "micHint": "Clique em Iniciar e fale algo. As barras devem se mexer quando você fala.",
+    "defaultMic": "Microfone padrão",
+    "defaultCam": "Câmera padrão",
+    "autoRes": "Auto",
+    "start": "Iniciar",
+    "stop": "Parar",
+    "waiting": "Aguardando…",
+    "record": "Gravar 5s",
+    "recording": "Gravando… ",
+    "echoOn": "Ouvir minha voz",
+    "echoOff": "Parar de ouvir",
+    "download": "Baixar",
+    "device": "Dispositivo",
+    "sampleRate": "Taxa de amostragem",
+    "channels": "Canais",
+    "peakFreq": "Freq. dominante",
+    "echoCancel": "Cancelamento de eco",
+    "noiseSup": "Supressão de ruído",
+    "camTest": "Teste de webcam",
+    "camHint": "Permita o acesso à câmera para se ver. Confira a imagem, a resolução e a taxa de quadros.",
+    "camOff": "A câmera está desligada",
+    "snap": "📸 Foto",
+    "mirror": "⇋ Espelhar",
+    "flip": "🔄 Trocar câmera",
+    "grid": "# Grade",
+    "fullscreen": "⛶ Tela cheia",
+    "recVideo": "Gravar vídeo",
+    "resolution": "Resolução",
+    "fps": "Taxa de quadros",
+    "aspect": "Proporção",
+    "megapixels": "Megapixels",
+    "brightness": "Brilho",
+    "spkTest": "Teste de alto-falante e fone de ouvido",
+    "spkHint": "Toque um tom no canal esquerdo, direito ou em ambos para confirmar que a saída de áudio funciona.",
+    "left": "Esquerdo",
+    "both": "Ambos",
+    "right": "Direito",
+    "toneFreq": "Frequência do tom",
+    "sweep": "Varredura de frequência",
+    "spkAsk": "Você ouviu?",
+    "yes": "Sim 👍",
+    "no": "Não 👎",
+    "devTitle": "Dispositivos detectados",
+    "devHint": "Os nomes dos dispositivos aparecem depois que você permite o acesso.",
+    "refresh": "Atualizar",
+    "browser": "Navegador",
+    "os": "Sistema",
+    "secure": "Conexão segura",
+    "permMic": "Permissão do microfone",
+    "permCam": "Permissão da câmera",
+    "faqTitle": "Perguntas frequentes",
+    "otherTests": "Mais testes grátis",
+    "cardMicDesc": "Medidor de nível, forma de onda, gravação e reprodução.",
+    "cardCamDesc": "Visualização ao vivo, resolução, FPS e fotos.",
+    "cardSpkDesc": "Canais esquerdo/direito e varredura completa de frequência.",
+    "footer": "Teste de microfone, webcam e alto-falantes online e grátis. Seu áudio e seu vídeo nunca saem do seu dispositivo.",
+    "privacy": "Privacidade",
+    "about": "Sobre",
+    "contact": "Contato",
+    "ad": "Publicidade",
+    "vSilent": "Nenhum som detectado — fale mais alto",
+    "vLow": "Muito baixo — chegue mais perto",
+    "vGood": "Som ótimo ✓",
+    "vLoud": "Alto demais — pode distorcer",
+    "vDetected": "O microfone está funcionando ✓",
+    "on": "Ligado",
+    "off": "Desligado",
+    "yesW": "Sim",
+    "noW": "Não",
+    "granted": "Permitido",
+    "denied": "Bloqueado",
+    "prompt": "Perguntar",
+    "unknown": "Desconhecido",
+    "mono": "Mono",
+    "stereo": "Estéreo",
+    "errDenied": "Permissão negada. Clique no ícone de cadeado na barra de endereço e permita o acesso.",
+    "errNotFound": "Nenhum dispositivo encontrado. Ele está conectado?",
+    "errBusy": "O dispositivo está sendo usado por outro app ou foi bloqueado pelo sistema.",
+    "errGeneric": "Não foi possível iniciar: ",
+    "errInsecure": "A câmera e o microfone só funcionam via HTTPS. Abra esta página por https:// ou localhost.",
+    "errUnsupported": "Seu navegador não permite acesso à câmera/microfone.",
+    "echoWarn": "Use fones de ouvido para evitar microfonia",
+    "snapSaved": "Foto salva abaixo — toque nela para baixar",
+    "spkThanks": "Alto-falantes marcados como funcionando",
+    "spkSorry": "Verifique o volume, o mudo e o dispositivo de saída",
+    "noDevices": "Nenhum dispositivo ainda — clique em Iniciar acima"
+  },
+  "pages": {
+    "home": {
+      "title": "Teste de Microfone e Webcam Online Grátis | MicNCam",
+      "description": "Faça o teste de microfone, webcam e alto-falantes online com um clique. Medidor de nível, gravação, resolução e FPS da câmera. Grátis e privado.",
+      "h1Html": "Seu <span class=\"grad\">microfone e câmera</span> estão funcionando?",
+      "lead": "Teste seu microfone, sua webcam e seus alto-falantes em segundos. Sem cadastro, sem downloads e nada sai do seu dispositivo.",
+      "article": [
+        {
+          "h": "Como testar o microfone e a webcam online",
+          "p": [
+            "O MicNCam verifica seu microfone, sua webcam e seus alto-falantes direto no navegador. Clique no botão abaixo do título e permita o acesso quando o navegador pedir. Só isso: nenhum app para instalar e nenhuma conta para criar."
+          ],
+          "ol": [
+            "Clique em \"Testar tudo\" (ou inicie só o teste de microfone ou de câmera).",
+            "Quando o navegador pedir permissão, escolha \"Permitir\".",
+            "Fale normalmente. O medidor de nível e a forma de onda devem se mexer com a sua voz.",
+            "Olhe a visualização da câmera. Confira a imagem, a resolução e a taxa de quadros.",
+            "Toque os tons esquerdo e direito para confirmar que seus alto-falantes ou fones funcionam."
+          ]
+        },
+        {
+          "h": "O que os resultados significam",
+          "p": [
+            "O medidor do microfone mostra o volume da entrada em decibéis (dB) em relação ao máximo que o dispositivo consegue captar. O silêncio costuma ficar abaixo de −60 dB, a fala normal a um braço de distância fica entre −35 e −15 dB, e qualquer coisa que chegue a 0 dB vai clipar e soar distorcida.",
+            "Na câmera, a resolução (por exemplo, 1280 × 720 ou 1920 × 1080) indica quanto detalhe você tem. A taxa de quadros (FPS) indica o quão fluido é o movimento. 30 FPS é o padrão para chamadas de vídeo. Muitas webcams caem para 15 FPS com pouca luz, então aumente a iluminação se o seu FPS estiver baixo."
+          ]
+        },
+        {
+          "h": "Teste antes do Zoom, Teams, Google Meet ou Discord",
+          "p": [
+            "Uma verificação rápida antes de uma reunião importante, entrevista, aula online ou live evita o clássico \"vocês estão me ouvindo?\". Escolha aqui o mesmo microfone e a mesma câmera que você vai usar no Zoom, Microsoft Teams, Google Meet, Skype, Discord ou OBS. Se funcionam no MicNCam, funcionam no navegador, então qualquer problema restante está nas configurações de áudio ou vídeo do próprio app."
+          ]
+        },
+        {
+          "h": "Microfone ou câmera não funciona? Soluções rápidas",
+          "ul": [
+            "Permita o acesso: clique no ícone de cadeado ou de câmera ao lado da barra de endereço, defina Câmera e Microfone como \"Permitir\" e recarregue a página.",
+            "Feche outros apps: Zoom, Teams, OBS ou outra aba do navegador podem travar a câmera para que nada mais consiga usá-la.",
+            "Escolha o dispositivo certo: use o menu suspenso para alternar entre dispositivos integrados, USB e Bluetooth.",
+            "Confira a privacidade do sistema: no Windows, abra Configurações → Privacidade e segurança → Câmera / Microfone; no macOS, abra Ajustes do Sistema → Privacidade e Segurança.",
+            "Procure botões físicos: muitos notebooks têm uma tampa na câmera ou uma tecla de mudo, e headsets costumam ter um botão de mudo no fio.",
+            "Atualize os drivers ou reinicie: uma simples reinicialização resolve um número surpreendente de erros de \"dispositivo não encontrado\"."
+          ]
+        },
+        {
+          "h": "É privado?",
+          "p": [
+            "Sim. Tudo roda localmente usando tecnologia padrão do navegador (WebRTC getUserMedia e Web Audio API). Sua voz e seu vídeo nunca são enviados a um servidor, nunca são armazenados e ninguém os vê. Gravações e fotos existem só no seu navegador até você fechar a aba ou decidir baixá-las."
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Este teste de microfone e webcam é grátis?", "a": "Sim, é totalmente grátis, sem cadastro, sem limites e sem nada para instalar." },
+        { "q": "Meu áudio ou vídeo é gravado ou enviado?", "a": "Não. Tudo acontece dentro do seu navegador. Nada é enviado ou armazenado em nenhum servidor." },
+        { "q": "Meu navegador não pediu permissão. O que eu faço?", "a": "Clique no ícone de câmera ou de cadeado na barra de endereço, defina Câmera e Microfone como \"Permitir\" e recarregue a página. No iPhone, vá em Ajustes → Safari → Câmera / Microfone e escolha \"Perguntar\" ou \"Permitir\"." },
+        { "q": "Por que minha câmera mostra uma tela preta?", "a": "Outro app pode estar usando a câmera, a tampa de privacidade pode estar fechada ou a resolução escolhida não é suportada. Feche outros apps, abra a tampa, tente outra resolução ou escolha outra câmera na lista." },
+        { "q": "Funciona no iPhone e no Android?", "a": "Sim. Funciona no Safari, Chrome, Firefox, Edge e Samsung Internet no iOS e no Android. Use \"Trocar câmera\" para testar a câmera frontal e a traseira." },
+        { "q": "Quais navegadores são compatíveis?", "a": "Qualquer navegador moderno: Chrome, Edge, Firefox, Safari, Opera, Brave e Samsung Internet. A página precisa ser aberta via HTTPS para acessar a câmera e o microfone." }
+      ]
+    },
+    "mic": {
+      "title": "Teste de Microfone Online Grátis — Rápido e Privado",
+      "description": "Faça o teste de microfone online com um clique. Medidor de nível em dB, forma de onda e espectro; grave e ouça sua voz. Funciona com qualquer mic ou headset.",
+      "h1Html": "<span class=\"grad\">Teste de microfone</span> online",
+      "lead": "Veja se o seu microfone funciona em segundos. Fale e observe o medidor de nível; depois grave e ouça como a sua voz soa.",
+      "article": [
+        {
+          "h": "Como testar seu microfone",
+          "ol": [
+            "Clique em \"Testar microfone\" e permita o acesso ao microfone.",
+            "Escolha seu microfone no menu suspenso se você tiver mais de um.",
+            "Fale no seu volume normal e observe o medidor e a forma de onda.",
+            "Clique em \"Gravar 5s\" e depois reproduza o clipe para ouvir exatamente o que os outros ouvem."
+          ]
+        },
+        {
+          "h": "Qual é um bom nível de microfone?",
+          "p": [
+            "O ideal é que os picos fiquem entre −20 dB e −10 dB ao falar normalmente. Abaixo de −45 dB, quem está do outro lado vai ter dificuldade para ouvir você: chegue mais perto ou aumente o ganho de entrada. Se o medidor bate o tempo todo na zona vermelha perto de 0 dB, sua voz vai clipar e soar áspera, então diminua o ganho ou afaste um pouco o microfone.",
+            "O valor \"Freq. dominante\" mostra o tom mais forte que o microfone capta. A maioria das vozes fica entre 85 Hz e 255 Hz. Uma leitura constante em 50 Hz ou 60 Hz sem ninguém falando geralmente indica um zumbido elétrico vindo de um cabo ou da fonte de alimentação."
+          ]
+        },
+        {
+          "h": "Microfone não funciona? Tente isto",
+          "ul": [
+            "Permissão do navegador: clique no ícone de cadeado na barra de endereço → Microfone → Permitir e recarregue a página.",
+            "Windows 10/11: Configurações → Sistema → Som → Entrada. Selecione seu microfone e confira o \"Volume de entrada\". Abra também Configurações → Privacidade e segurança → Microfone e ative o acesso para aplicativos da área de trabalho e para o seu navegador.",
+            "macOS: Ajustes do Sistema → Privacidade e Segurança → Microfone → ative o seu navegador. Depois, Ajustes do Sistema → Som → Entrada para escolher o dispositivo e o nível de entrada.",
+            "iPhone / iPad: Ajustes → Safari (ou Chrome) → Microfone → Permitir.",
+            "Android: toque e segure o ícone do navegador → Informações do app → Permissões → Microfone → Permitir.",
+            "Headsets: confira o botão de mudo no fio e verifique se o plugue está na entrada de microfone (rosa) ou se você está usando um conector TRRS de 4 polos.",
+            "Headsets Bluetooth: alguns mudam para um modo \"viva-voz\" de baixa qualidade quando o microfone está ativo. Isso é normal, não é defeito."
+          ]
+        },
+        {
+          "h": "Dicas para um som mais claro nas chamadas",
+          "ul": [
+            "Mantenha o microfone a 10–20 cm da boca e levemente de lado para evitar os estalos da respiração.",
+            "Use \"Ouvir minha voz\" com fones de ouvido para monitorar o ruído de fundo em tempo real.",
+            "Itens macios como cortinas, tapetes e um sofá reduzem o eco muito mais do que qualquer filtro de software.",
+            "Deixe o cancelamento de eco e a supressão de ruído ligados nas chamadas; desligue-os só para gravar música."
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Como saber se meu microfone está funcionando?", "a": "Inicie o teste e fale. Se o medidor de nível e a forma de onda se mexem com a sua voz e o status fica verde, seu microfone funciona. Grave um clipe de 5 segundos e reproduza para confirmar a qualidade." },
+        { "q": "Por que meu microfone está tão baixo?", "a": "Provavelmente o ganho de entrada está baixo. Aumente o volume de entrada nas configurações de som do sistema, chegue mais perto do microfone e confira se escolheu o dispositivo certo no menu suspenso." },
+        { "q": "Por que meu microfone capta eco?", "a": "Geralmente o som dos alto-falantes está voltando para o microfone. Use fones de ouvido, diminua o volume dos alto-falantes e mantenha o cancelamento de eco ativado no app de chamadas." },
+        { "q": "Posso testar um microfone USB ou Bluetooth?", "a": "Sim. Conecte-o, clique em Atualizar na lista de dispositivos se necessário e escolha-o no menu suspenso de microfone." },
+        { "q": "Posso baixar minha gravação de teste?", "a": "Sim. Depois de gravar, clique em Baixar para salvar o clipe. Ele é criado no seu navegador e nunca é enviado." }
+      ]
+    },
+    "webcam": {
+      "title": "Teste de Webcam Online — Teste sua Câmera (Resolução e FPS)",
+      "description": "Teste de webcam online grátis. Veja sua câmera ao vivo, a resolução real, o FPS, a proporção e o brilho. Tire fotos e grave vídeos. Notebook, USB ou celular.",
+      "h1Html": "<span class=\"grad\">Teste de webcam</span> online",
+      "lead": "Garanta que sua câmera funciona e tem uma boa imagem. Veja a imagem ao vivo, a resolução e o FPS reais, e tire uma foto com um clique.",
+      "article": [
+        {
+          "h": "Como testar sua webcam",
+          "ol": [
+            "Clique em \"Testar webcam\" e permita o acesso à câmera.",
+            "Escolha sua câmera e a resolução que você quer verificar.",
+            "Olhe as etiquetas no canto para ver a resolução e o FPS ao vivo.",
+            "Tire uma foto ou grave um clipe curto para avaliar a nitidez e as cores."
+          ]
+        },
+        {
+          "h": "Entendendo resolução e FPS",
+          "p": [
+            "A resolução é o número de pixels em cada quadro: 640 × 480 (480p), 1280 × 720 (720p HD), 1920 × 1080 (1080p Full HD) ou 3840 × 2160 (4K). O teste pede a resolução que você escolher e mostra o que a câmera realmente entrega. Muitas webcams anunciam 1080p, mas caem para 720p em alguns navegadores ou por limites de banda da USB.",
+            "O FPS (quadros por segundo) mede a fluidez. 30 FPS é o padrão para chamadas de vídeo e 60 FPS fica ainda mais fluido. O FPS mostrado aqui é medido a partir dos quadros reais, não apenas informado pelo driver, então é um retrato fiel do que os outros vão ver."
+          ]
+        },
+        {
+          "h": "Câmera não funciona ou tela preta?",
+          "ul": [
+            "Feche o Zoom, Teams, Skype, OBS e qualquer outra aba que use a câmera. A maioria das câmeras só pode ser usada por um app de cada vez.",
+            "Abra a tampa física de privacidade ou pressione a tecla da câmera (geralmente F8, F10 ou Fn + tecla F) nos notebooks.",
+            "Windows 10/11: Configurações → Privacidade e segurança → Câmera → ative \"Acesso à câmera\" e \"Permitir que os aplicativos acessem sua câmera\".",
+            "macOS: Ajustes do Sistema → Privacidade e Segurança → Câmera → ative o seu navegador.",
+            "iPhone / iPad: Ajustes → Safari → Câmera → Permitir. Android: Informações do app → Permissões → Câmera.",
+            "Escolha uma resolução menor se a imagem travar e conecte câmeras USB direto no computador, e não em um hub."
+          ]
+        },
+        {
+          "h": "Fique melhor nas chamadas de vídeo",
+          "ul": [
+            "Fique de frente para uma janela ou uma luminária suave. Luz por trás transforma você em uma silhueta.",
+            "Coloque a câmera na altura dos olhos e use a grade para alinhar os olhos na linha do terço superior.",
+            "FPS baixo à noite? Aumente a luz. As webcams aumentam a exposição no escuro, o que reduz a taxa de quadros.",
+            "Limpe a lente: uma marca de dedo é a causa mais comum de uma imagem \"lavada\" ou embaçada."
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Como verificar se minha webcam funciona?", "a": "Clique em \"Testar webcam\" e permita o acesso. Se você se vê e o status fica verde, a câmera funciona. As etiquetas mostram a resolução e o FPS reais." },
+        { "q": "Por que a imagem está espelhada?", "a": "As câmeras frontais são espelhadas por padrão porque parece mais natural, como um espelho. Os outros na chamada veem você sem espelhamento. Use o botão Espelhar para alternar." },
+        { "q": "Por que o FPS da minha webcam está baixo?", "a": "Geralmente por pouca luz, uma porta USB sobrecarregada ou uma resolução alta. Aumente a luz, escolha 720p ou conecte a câmera direto no computador." },
+        { "q": "Posso testar a câmera frontal e a traseira do celular?", "a": "Sim. Abra esta página no celular e toque em \"Trocar câmera\" para alternar entre a câmera frontal e a traseira." },
+        { "q": "Minhas fotos são enviadas?", "a": "Não. Fotos e clipes são criados no seu navegador e só são salvos se você baixá-los." }
+      ]
+    },
+    "speaker": {
+      "title": "Teste de Alto-falante Online — Áudio Esquerdo/Direito e Fone",
+      "description": "Teste seus alto-falantes e fones de ouvido online. Toque tons esquerdo, direito e central, ajuste a frequência e faça uma varredura de 40 Hz–16 kHz.",
+      "h1Html": "<span class=\"grad\">Teste de alto-falante</span> online",
+      "lead": "Confira se seus alto-falantes e fones funcionam, se esquerdo e direito não estão trocados e até onde vão a sua audição e o seu equipamento.",
+      "article": [
+        {
+          "h": "Como testar seus alto-falantes ou fones de ouvido",
+          "ol": [
+            "Deixe o volume do sistema em um nível baixo e confortável.",
+            "Clique em Esquerdo e depois em Direito. Cada som deve sair só daquele lado.",
+            "Clique em Ambos para verificar o som central.",
+            "Faça a varredura de frequência para ouvir a faixa do grave profundo ao agudo."
+          ]
+        },
+        {
+          "h": "Esquerdo e direito trocados ou sem som de um lado?",
+          "p": [
+            "Se o tom esquerdo toca no lado direito, seus fones estão ao contrário ou um cabo ou adaptador está ligado invertido. Se um lado está mudo, confira o controle de balanço nas configurações de som (Windows: Configurações → Sistema → Som → seu dispositivo → Esquerdo/Direito; macOS: Ajustes do Sistema → Som → Saída → Equilíbrio) e depois tente outro cabo ou outra porta.",
+            "Alguns celulares e notebooks usam um único alto-falante mono. Nesse caso, Esquerdo e Direito saem do mesmo lugar, e isso é esperado."
+          ]
+        },
+        {
+          "h": "A varredura de frequência e a sua audição",
+          "p": [
+            "Pessoas jovens normalmente ouvem de cerca de 20 Hz a 20 kHz. O limite superior cai com a idade, e muitos adultos deixam de ouvir tons acima de 14–16 kHz. Alto-falantes pequenos de notebooks e celulares muitas vezes não reproduzem muito abaixo de 100–150 Hz, então o início da varredura pode ficar mudo neles, mesmo que sua audição esteja ótima. Mantenha o volume baixo: tons agudos podem incomodar."
+          ]
+        },
+        {
+          "h": "Nenhum som?",
+          "ul": [
+            "Verifique se o sistema e a aba do navegador não estão no mudo. Procure um ícone de alto-falante riscado na aba.",
+            "Confira se o dispositivo de saída certo está selecionado (fones Bluetooth costumam assumir automaticamente).",
+            "Desconecte e reconecte fones com fio, ou pareie de novo os fones Bluetooth.",
+            "No iPhone, desative o modo Silencioso. No Android, aumente o volume de mídia, e não o do toque."
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Como testar os alto-falantes esquerdo e direito?", "a": "Clique no botão Esquerdo. O tom deve tocar só do lado esquerdo. Depois clique em Direito. Se estiverem invertidos, inverta os fones ou confira o cabo e as configurações de balanço." },
+        { "q": "Por que não consigo ouvir as frequências altas?", "a": "A audição acima de 15 kHz diminui naturalmente com a idade, e muitos alto-falantes pequenos não conseguem tocar frequências muito altas ou muito baixas. As duas coisas são normais." },
+        { "q": "O tom de teste é seguro para os meus ouvidos?", "a": "Sim, em volume normal. Comece com o volume do sistema baixo e aumente aos poucos, principalmente com fones de ouvido." },
+        { "q": "Funciona com fones Bluetooth?", "a": "Sim. Conecte-os primeiro para que virem a saída ativa e depois toque os tons." }
+      ]
+    }
+  }
+}

@@ -1,0 +1,324 @@
+{
+  "meta": {
+    "langName": "Deutsch",
+    "dir": "ltr",
+    "ogLocale": "de_DE"
+  },
+  "ui": {
+    "skip": "Zum Inhalt springen",
+    "navMic": "Mikrofon-Test",
+    "navCam": "Webcam-Test",
+    "navSpk": "Lautsprecher-Test",
+    "navFaq": "FAQ",
+    "language": "Sprache",
+    "heroPill": "100 % privat · läuft in Ihrem Browser",
+    "testAll": "Alles testen",
+    "justMic": "Nur Mikrofon",
+    "startMic": "Mikro testen",
+    "startCam": "Webcam testen",
+    "startSpk": "Testton abspielen",
+    "mic": "Mikrofon",
+    "cam": "Kamera",
+    "spk": "Lautsprecher",
+    "notTested": "nicht getestet",
+    "working": "funktioniert",
+    "failed": "Problem",
+    "testing": "teste…",
+    "micTest": "Mikrofon-Test",
+    "micHint": "Klicken Sie auf Start und sprechen Sie. Die Balken sollten sich bewegen, wenn Sie reden.",
+    "defaultMic": "Standardmikrofon",
+    "defaultCam": "Standardkamera",
+    "autoRes": "Auto",
+    "start": "Start",
+    "stop": "Stopp",
+    "waiting": "Warte…",
+    "record": "5 s aufnehmen",
+    "recording": "Aufnahme… ",
+    "echoOn": "Mich hören",
+    "echoOff": "Nicht hören",
+    "download": "Download",
+    "device": "Gerät",
+    "sampleRate": "Abtastrate",
+    "channels": "Kanäle",
+    "peakFreq": "Dominante Freq.",
+    "echoCancel": "Echounterdrückung",
+    "noiseSup": "Rauschunterdrückung",
+    "camTest": "Webcam-Test",
+    "camHint": "Erlauben Sie den Kamerazugriff, um sich zu sehen. Prüfen Sie Bild, Auflösung und Bildrate.",
+    "camOff": "Kamera ist aus",
+    "snap": "📸 Foto",
+    "mirror": "⇋ Spiegeln",
+    "flip": "🔄 Kamera wechseln",
+    "grid": "# Raster",
+    "fullscreen": "⛶ Vollbild",
+    "recVideo": "Clip aufnehmen",
+    "resolution": "Auflösung",
+    "fps": "Bildrate",
+    "aspect": "Seitenverhältnis",
+    "megapixels": "Megapixel",
+    "brightness": "Helligkeit",
+    "spkTest": "Lautsprecher- & Kopfhörer-Test",
+    "spkHint": "Spielen Sie einen Ton links, rechts oder auf beiden Kanälen ab, um Ihre Audioausgabe zu prüfen.",
+    "left": "Links",
+    "both": "Beide",
+    "right": "Rechts",
+    "toneFreq": "Tonfrequenz",
+    "sweep": "Frequenz-Sweep",
+    "spkAsk": "Haben Sie es gehört?",
+    "yes": "Ja 👍",
+    "no": "Nein 👎",
+    "devTitle": "Erkannte Geräte",
+    "devHint": "Gerätenamen erscheinen, nachdem Sie den Zugriff erlaubt haben.",
+    "refresh": "Aktualisieren",
+    "browser": "Browser",
+    "os": "System",
+    "secure": "Sichere Verbindung",
+    "permMic": "Mikrofon-Berechtigung",
+    "permCam": "Kamera-Berechtigung",
+    "faqTitle": "Häufige Fragen",
+    "otherTests": "Weitere kostenlose Tests",
+    "cardMicDesc": "Pegelanzeige, Wellenform, Aufnahme und Wiedergabe.",
+    "cardCamDesc": "Live-Vorschau, Auflösung, FPS und Fotos.",
+    "cardSpkDesc": "Linker/rechter Kanal und kompletter Frequenz-Sweep.",
+    "footer": "Kostenloser Online-Test für Mikrofon, Webcam und Lautsprecher. Ihr Ton und Ihr Video verlassen nie Ihr Gerät.",
+    "privacy": "Datenschutz",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "ad": "Anzeige",
+    "vSilent": "Kein Ton erkannt — sprechen Sie lauter",
+    "vLow": "Sehr leise — gehen Sie näher ran",
+    "vGood": "Klingt super ✓",
+    "vLoud": "Zu laut — kann verzerren",
+    "vDetected": "Mikrofon funktioniert ✓",
+    "on": "An",
+    "off": "Aus",
+    "yesW": "Ja",
+    "noW": "Nein",
+    "granted": "Erlaubt",
+    "denied": "Blockiert",
+    "prompt": "Fragen",
+    "unknown": "Unbekannt",
+    "mono": "Mono",
+    "stereo": "Stereo",
+    "errDenied": "Zugriff verweigert. Klicken Sie auf das Schloss-Symbol in der Adressleiste und erlauben Sie den Zugriff.",
+    "errNotFound": "Kein Gerät gefunden. Ist es angeschlossen?",
+    "errBusy": "Das Gerät wird von einer anderen App verwendet oder vom System blockiert.",
+    "errGeneric": "Start fehlgeschlagen: ",
+    "errInsecure": "Kamera und Mikrofon funktionieren nur über HTTPS. Öffnen Sie diese Seite über https:// oder localhost.",
+    "errUnsupported": "Ihr Browser unterstützt keinen Kamera-/Mikrofonzugriff.",
+    "echoWarn": "Kopfhörer verwenden, um Rückkopplung zu vermeiden",
+    "snapSaved": "Foto unten gespeichert — antippen zum Herunterladen",
+    "spkThanks": "Lautsprecher als funktionierend markiert",
+    "spkSorry": "Prüfen Sie Lautstärke, Stummschaltung und Ausgabegerät",
+    "noDevices": "Noch keine Geräte — oben auf Start drücken"
+  },
+  "pages": {
+    "home": {
+      "title": "Mikrofon & Webcam Test — Mikro und Kamera online testen",
+      "description": "Mikrofon, Webcam und Lautsprecher online mit einem Klick testen. Live-Pegelanzeige, Aufnahme, Auflösung und FPS. Kostenlos, privat, nichts wird hochgeladen.",
+      "h1Html": "Funktionieren <span class=\"grad\">Mikrofon &amp; Kamera</span>?",
+      "lead": "Testen Sie Mikrofon, Webcam und Lautsprecher in Sekunden. Ohne Anmeldung, ohne Download, nichts verlässt Ihr Gerät.",
+      "article": [
+        {
+          "h": "So testen Sie Mikrofon und Webcam online",
+          "p": [
+            "MicNCam prüft Ihr Mikrofon, Ihre Webcam und Ihre Lautsprecher direkt im Browser. Drücken Sie den Button unter der Überschrift und erlauben Sie den Zugriff, wenn der Browser fragt. Das war's: keine App zu installieren und kein Konto nötig."
+          ],
+          "ol": [
+            "Klicken Sie auf „Alles testen“ (oder starten Sie nur den Mikrofon- oder Kameratest).",
+            "Wenn der Browser um Erlaubnis bittet, wählen Sie „Zulassen“.",
+            "Sprechen Sie ganz normal. Pegelanzeige und Wellenform sollten sich mit Ihrer Stimme bewegen.",
+            "Sehen Sie sich die Kameravorschau an. Prüfen Sie Bild, Auflösung und Bildrate.",
+            "Spielen Sie die Töne links/rechts ab, um Lautsprecher oder Kopfhörer zu prüfen."
+          ]
+        },
+        {
+          "h": "Was die Ergebnisse bedeuten",
+          "p": [
+            "Die Mikrofonanzeige zeigt die Lautstärke Ihres Eingangssignals in Dezibel (dB) im Verhältnis zum Maximum, das das Gerät aufnehmen kann. Stille liegt meist unter −60 dB, normale Sprache auf Armlänge zwischen −35 und −15 dB, und alles, was 0 dB erreicht, übersteuert und klingt verzerrt.",
+            "Bei der Kamera zeigt die Auflösung (zum Beispiel 1280 × 720 oder 1920 × 1080), wie viele Details Sie bekommen. Die Bildrate (FPS) zeigt, wie flüssig Bewegungen sind. 30 FPS sind Standard für Videoanrufe. Viele Webcams fallen bei wenig Licht auf 15 FPS, also sorgen Sie für mehr Licht, wenn die FPS niedrig sind."
+          ]
+        },
+        {
+          "h": "Vor Zoom, Teams, Google Meet oder Discord testen",
+          "p": [
+            "Ein kurzer Check vor einem wichtigen Meeting, Vorstellungsgespräch, Online-Unterricht oder Stream erspart Ihnen das klassische „Hört ihr mich?“. Wählen Sie hier dasselbe Mikrofon und dieselbe Kamera, die Sie in Zoom, Microsoft Teams, Google Meet, Skype, Discord oder OBS nutzen wollen. Funktionieren sie bei MicNCam, funktionieren sie im Browser — ein verbleibendes Problem liegt dann in den Audio- oder Videoeinstellungen der jeweiligen App."
+          ]
+        },
+        {
+          "h": "Mikrofon oder Kamera funktioniert nicht? Schnelle Lösungen",
+          "ul": [
+            "Zugriff erlauben: Klicken Sie auf das Schloss- oder Kamerasymbol neben der Adressleiste, stellen Sie Kamera und Mikrofon auf „Zulassen“ und laden Sie die Seite neu.",
+            "Andere Apps schließen: Zoom, Teams, OBS oder ein anderer Browser-Tab können die Kamera blockieren, sodass nichts anderes darauf zugreifen kann.",
+            "Richtiges Gerät wählen: Wechseln Sie im Drop-down zwischen integrierten, USB- und Bluetooth-Geräten.",
+            "Datenschutzeinstellungen prüfen: Unter Windows Einstellungen → Datenschutz und Sicherheit → Kamera / Mikrofon öffnen; unter macOS Systemeinstellungen → Datenschutz & Sicherheit.",
+            "Auf Hardware-Schalter achten: Viele Laptops haben eine Kameraabdeckung oder eine Stummtaste, und Headsets oft einen Stummschalter am Kabel.",
+            "Treiber aktualisieren oder neu starten: Ein einfacher Neustart behebt erstaunlich viele „Kein Gerät gefunden“-Fehler."
+          ]
+        },
+        {
+          "h": "Ist das privat?",
+          "p": [
+            "Ja. Alles läuft lokal mit Standard-Browsertechnik (WebRTC getUserMedia und die Web Audio API). Ihre Stimme und Ihr Video werden nie an einen Server gesendet, nie gespeichert und von niemandem gesehen. Aufnahmen und Fotos existieren nur in Ihrem Browser, bis Sie den Tab schließen oder sie herunterladen."
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Ist dieser Mikrofon- und Webcam-Test kostenlos?", "a": "Ja, er ist komplett kostenlos — ohne Anmeldung, ohne Limits und ohne Installation." },
+        { "q": "Wird mein Ton oder Video aufgezeichnet oder hochgeladen?", "a": "Nein. Alles passiert in Ihrem Browser. Nichts wird hochgeladen oder auf einem Server gespeichert." },
+        { "q": "Mein Browser hat nicht um Erlaubnis gefragt. Was tun?", "a": "Klicken Sie auf das Kamera- oder Schloss-Symbol in der Adressleiste, stellen Sie Kamera und Mikrofon auf „Zulassen“ und laden Sie die Seite neu. Auf dem iPhone unter Einstellungen → Safari → Kamera / Mikrofon „Fragen“ oder „Erlauben“ wählen." },
+        { "q": "Warum zeigt meine Kamera ein schwarzes Bild?", "a": "Eventuell nutzt eine andere App die Kamera, die Abdeckung ist geschlossen oder die gewählte Auflösung wird nicht unterstützt. Schließen Sie andere Apps, öffnen Sie die Abdeckung, probieren Sie eine andere Auflösung oder wählen Sie eine andere Kamera aus der Liste." },
+        { "q": "Funktioniert es auf iPhone und Android?", "a": "Ja. Es funktioniert in Safari, Chrome, Firefox, Edge und Samsung Internet auf iOS und Android. Mit „Kamera wechseln“ testen Sie Front- und Rückkamera." },
+        { "q": "Welche Browser werden unterstützt?", "a": "Jeder moderne Browser: Chrome, Edge, Firefox, Safari, Opera, Brave und Samsung Internet. Für Kamera- und Mikrofonzugriff muss die Seite über HTTPS geöffnet werden." }
+      ]
+    },
+    "mic": {
+      "title": "Mikrofon Test — Mikro online testen (kostenlos & privat)",
+      "description": "Mikrofon online testen mit einem Klick: Live-Pegel in dB, Wellenform und Frequenzspektrum, dann Stimme aufnehmen und anhören. Für Mikro, Headset und Handy.",
+      "h1Html": "Online <span class=\"grad\">Mikrofon Test</span>",
+      "lead": "Prüfen Sie in Sekunden, ob Ihr Mikrofon funktioniert. Sprechen Sie, beobachten Sie die Pegelanzeige und hören Sie sich dann selbst in einer Aufnahme an.",
+      "article": [
+        {
+          "h": "So testen Sie Ihr Mikrofon",
+          "ol": [
+            "Klicken Sie auf „Mikro testen“ und erlauben Sie den Mikrofonzugriff.",
+            "Wählen Sie Ihr Mikrofon im Drop-down, falls Sie mehrere haben.",
+            "Sprechen Sie in normaler Lautstärke und beobachten Sie Pegel und Wellenform.",
+            "Drücken Sie „5 s aufnehmen“ und spielen Sie den Clip ab, um genau zu hören, was andere hören."
+          ]
+        },
+        {
+          "h": "Was ist ein guter Mikrofonpegel?",
+          "p": [
+            "Zielen Sie beim normalen Sprechen auf Spitzen zwischen −20 dB und −10 dB. Unter −45 dB versteht Sie die Gegenseite kaum: Gehen Sie näher ran oder erhöhen Sie die Eingangsverstärkung. Erreicht die Anzeige ständig den roten Bereich nahe 0 dB, übersteuert Ihre Stimme und klingt scharf — senken Sie dann die Verstärkung oder rücken Sie das Mikro etwas weg.",
+            "Der Wert „Dominante Frequenz“ zeigt die stärkste Tonhöhe, die das Mikro aufnimmt. Die meisten Stimmen liegen zwischen 85 Hz und 255 Hz. Ein konstanter Wert bei 50 Hz oder 60 Hz, obwohl niemand spricht, deutet meist auf elektrisches Brummen von einem Kabel oder Netzteil hin."
+          ]
+        },
+        {
+          "h": "Mikrofon funktioniert nicht? Probieren Sie das",
+          "ul": [
+            "Browser-Berechtigung: Klicken Sie auf das Schloss-Symbol in der Adressleiste → Mikrofon → Zulassen und laden Sie neu.",
+            "Windows 10/11: Einstellungen → System → Sound → Eingabe. Wählen Sie Ihr Mikrofon und prüfen Sie die „Eingabelautstärke“. Öffnen Sie außerdem Einstellungen → Datenschutz und Sicherheit → Mikrofon und erlauben Sie den Zugriff für Desktop-Apps und Ihren Browser.",
+            "macOS: Systemeinstellungen → Datenschutz & Sicherheit → Mikrofon → Browser aktivieren. Dann unter Systemeinstellungen → Ton → Eingang Gerät und Eingangspegel wählen.",
+            "iPhone / iPad: Einstellungen → Safari (oder Chrome) → Mikrofon → Erlauben.",
+            "Android: Browser-Symbol lange drücken → App-Info → Berechtigungen → Mikrofon → Zulassen.",
+            "Headsets: Prüfen Sie den Stummschalter am Kabel und ob der Stecker in der Mikrofonbuchse (rosa) steckt oder ob Sie einen 4-poligen TRRS-Stecker verwenden.",
+            "Bluetooth-Headsets: Manche wechseln bei aktivem Mikrofon in einen „Freisprech“-Modus mit geringerer Qualität. Das ist normal und kein Defekt."
+          ]
+        },
+        {
+          "h": "Tipps für klaren Klang bei Anrufen",
+          "ul": [
+            "Halten Sie das Mikro 10–20 cm vom Mund entfernt und leicht seitlich, um Plopp-Laute zu vermeiden.",
+            "Nutzen Sie „Mich hören“ mit Kopfhörern, um Hintergrundgeräusche in Echtzeit zu kontrollieren.",
+            "Vorhänge, Teppiche und ein Sofa reduzieren Hall viel stärker als jeder Softwarefilter.",
+            "Lassen Sie Echo- und Rauschunterdrückung bei Anrufen an; schalten Sie sie nur für Musikaufnahmen aus."
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Wie erkenne ich, ob mein Mikrofon funktioniert?", "a": "Starten Sie den Test und sprechen Sie. Bewegen sich Pegelanzeige und Wellenform mit Ihrer Stimme und wird der Status grün, funktioniert Ihr Mikro. Nehmen Sie einen 5-Sekunden-Clip auf und hören Sie ihn an, um die Qualität zu prüfen." },
+        { "q": "Warum ist mein Mikro so leise?", "a": "Wahrscheinlich ist die Eingangsverstärkung zu niedrig. Erhöhen Sie die Eingabelautstärke in den Soundeinstellungen Ihres Systems, gehen Sie näher ans Mikro und prüfen Sie, ob im Drop-down das richtige Gerät gewählt ist." },
+        { "q": "Warum nimmt mein Mikrofon ein Echo auf?", "a": "Meist gelangt der Ton Ihrer Lautsprecher zurück ins Mikro. Nutzen Sie Kopfhörer, senken Sie die Lautstärke und lassen Sie die Echounterdrückung in Ihrer Anruf-App aktiviert." },
+        { "q": "Kann ich ein USB- oder Bluetooth-Mikrofon testen?", "a": "Ja. Schließen Sie es an, drücken Sie bei Bedarf in der Geräteliste auf Aktualisieren und wählen Sie es im Mikrofon-Drop-down aus." },
+        { "q": "Kann ich meine Testaufnahme herunterladen?", "a": "Ja. Drücken Sie nach der Aufnahme auf Download, um den Clip zu speichern. Er wird in Ihrem Browser erstellt und nie hochgeladen." }
+      ]
+    },
+    "webcam": {
+      "title": "Webcam Test — Kamera online testen (Auflösung & FPS)",
+      "description": "Kostenloser Webcam Test online: Live-Bild, echte Auflösung, Bildrate (FPS), Seitenverhältnis und Helligkeit. Fotos und Clips. Für Laptop-, USB- und Handykameras.",
+      "h1Html": "Online <span class=\"grad\">Webcam Test</span>",
+      "lead": "Stellen Sie sicher, dass Ihre Kamera funktioniert und gut aussieht. Sehen Sie das Live-Bild, die echte Auflösung und FPS und machen Sie mit einem Klick ein Foto.",
+      "article": [
+        {
+          "h": "So testen Sie Ihre Webcam",
+          "ol": [
+            "Klicken Sie auf „Webcam testen“ und erlauben Sie den Kamerazugriff.",
+            "Wählen Sie Ihre Kamera und die Auflösung, die Sie prüfen möchten.",
+            "Achten Sie auf die Anzeigen in der Ecke für Live-Auflösung und FPS.",
+            "Machen Sie ein Foto oder nehmen Sie einen kurzen Clip auf, um Schärfe und Farben zu beurteilen."
+          ]
+        },
+        {
+          "h": "Auflösung und FPS verstehen",
+          "p": [
+            "Die Auflösung ist die Anzahl der Pixel pro Bild: 640 × 480 (480p), 1280 × 720 (720p HD), 1920 × 1080 (1080p Full HD) oder 3840 × 2160 (4K). Der Test fordert die gewählte Auflösung an und zeigt, was die Kamera tatsächlich liefert. Viele Webcams werben mit 1080p, fallen aber in manchen Browsern oder wegen begrenzter USB-Bandbreite auf 720p zurück.",
+            "FPS (Bilder pro Sekunde) messen die Flüssigkeit. 30 FPS sind Standard für Videoanrufe, 60 FPS wirken besonders flüssig. Die hier angezeigten FPS werden an echten Bildern gemessen und nicht nur vom Treiber gemeldet — so sehen Sie, was andere wirklich sehen."
+          ]
+        },
+        {
+          "h": "Kamera funktioniert nicht oder schwarzes Bild?",
+          "ul": [
+            "Schließen Sie Zoom, Teams, Skype, OBS und alle anderen Tabs, die die Kamera nutzen. Die meisten Kameras können nur von einer App gleichzeitig verwendet werden.",
+            "Öffnen Sie die Kameraabdeckung oder drücken Sie am Laptop die Kamerataste (oft F8, F10 oder Fn+F-Taste).",
+            "Windows 10/11: Einstellungen → Datenschutz und Sicherheit → Kamera → „Kamerazugriff“ und „Apps den Zugriff auf Ihre Kamera erlauben“ einschalten.",
+            "macOS: Systemeinstellungen → Datenschutz & Sicherheit → Kamera → Browser aktivieren.",
+            "iPhone / iPad: Einstellungen → Safari → Kamera → Erlauben. Android: App-Info → Berechtigungen → Kamera.",
+            "Wählen Sie eine niedrigere Auflösung, wenn das Bild einfriert, und schließen Sie USB-Kameras direkt am Computer statt an einem Hub an."
+          ]
+        },
+        {
+          "h": "Besser aussehen in Videocalls",
+          "ul": [
+            "Setzen Sie sich mit dem Gesicht zu einem Fenster oder einer weichen Lampe. Licht von hinten macht Sie zur Silhouette.",
+            "Bringen Sie die Kamera auf Augenhöhe und nutzen Sie das Raster, um Ihre Augen auf die obere Drittellinie zu setzen.",
+            "Abends niedrige FPS? Mehr Licht! Webcams verlängern im Dunkeln die Belichtung, was die Bildrate senkt.",
+            "Reinigen Sie die Linse: Ein Fingerabdruck ist die häufigste Ursache für ein weiches oder trübes Bild."
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Wie prüfe ich, ob meine Webcam funktioniert?", "a": "Klicken Sie auf „Webcam testen“ und erlauben Sie den Zugriff. Wenn Sie sich sehen und der Status grün wird, funktioniert die Kamera. Die Anzeigen zeigen die echte Auflösung und FPS." },
+        { "q": "Warum ist das Bild gespiegelt?", "a": "Frontkameras werden standardmäßig gespiegelt, weil sich das wie ein Spiegel natürlich anfühlt. Andere im Call sehen Sie ungespiegelt. Mit dem Button Spiegeln schalten Sie um." },
+        { "q": "Warum hat meine Webcam so wenig FPS?", "a": "Meist wegen wenig Licht, eines ausgelasteten USB-Ports oder einer hohen Auflösung. Sorgen Sie für mehr Licht, wählen Sie 720p oder schließen Sie die Kamera direkt am Computer an." },
+        { "q": "Kann ich Front- und Rückkamera meines Handys testen?", "a": "Ja. Öffnen Sie diese Seite auf dem Handy und tippen Sie auf „Kamera wechseln“, um zwischen Front- und Rückkamera umzuschalten." },
+        { "q": "Werden meine Fotos hochgeladen?", "a": "Nein. Fotos und Clips werden in Ihrem Browser erstellt und nur gespeichert, wenn Sie sie herunterladen." }
+      ]
+    },
+    "speaker": {
+      "title": "Lautsprecher Test — Links/Rechts & Kopfhörer Test online",
+      "description": "Lautsprecher und Kopfhörer online testen: Töne links, rechts und Mitte, Frequenz einstellen und Sweep von 40 Hz–16 kHz für Bass, Höhen und Stereokanäle.",
+      "h1Html": "Online <span class=\"grad\">Lautsprecher Test</span>",
+      "lead": "Prüfen Sie, ob Lautsprecher und Kopfhörer funktionieren, ob links und rechts vertauscht sind und wie weit Ihr Gehör und Ihre Technik reichen.",
+      "article": [
+        {
+          "h": "So testen Sie Lautsprecher oder Kopfhörer",
+          "ol": [
+            "Stellen Sie die Systemlautstärke auf ein angenehm niedriges Niveau.",
+            "Drücken Sie Links, dann Rechts. Jeder Ton sollte nur von dieser Seite kommen.",
+            "Drücken Sie Beide, um die Mitte zu prüfen.",
+            "Starten Sie den Frequenz-Sweep, um den Bereich vom tiefen Bass bis zu hohen Höhen zu hören."
+          ]
+        },
+        {
+          "h": "Links und rechts vertauscht oder fehlt eine Seite?",
+          "p": [
+            "Kommt der linke Ton von rechts, tragen Sie die Kopfhörer verkehrt herum oder ein Kabel bzw. Adapter ist vertauscht verdrahtet. Bleibt eine Seite stumm, prüfen Sie den Balance-Regler in den Soundeinstellungen (Windows: Einstellungen → System → Sound → Ihr Gerät → Links/Rechts; macOS: Systemeinstellungen → Ton → Ausgang → Balance) und probieren Sie dann ein anderes Kabel oder einen anderen Anschluss.",
+            "Manche Handys und Laptops haben nur einen Mono-Lautsprecher. Dann kommen Links und Rechts aus derselben Stelle — das ist normal."
+          ]
+        },
+        {
+          "h": "Der Frequenz-Sweep und Ihr Gehör",
+          "p": [
+            "Junge Menschen hören typischerweise von etwa 20 Hz bis 20 kHz. Die obere Grenze sinkt mit dem Alter, und viele Erwachsene hören Töne über 14–16 kHz nicht mehr. Kleine Laptop- und Handylautsprecher geben unter 100–150 Hz oft kaum etwas wieder, daher kann der Anfang des Sweeps stumm sein, obwohl Ihr Gehör in Ordnung ist. Halten Sie die Lautstärke niedrig: Hohe Töne können unangenehm sein."
+          ]
+        },
+        {
+          "h": "Gar kein Ton?",
+          "ul": [
+            "Prüfen Sie, ob System und Browser-Tab nicht stummgeschaltet sind. Achten Sie auf ein durchgestrichenes Lautsprechersymbol im Tab.",
+            "Stellen Sie sicher, dass das richtige Ausgabegerät gewählt ist (Bluetooth-Kopfhörer übernehmen oft automatisch).",
+            "Ziehen Sie kabelgebundene Kopfhörer ab und stecken Sie sie wieder ein, oder koppeln Sie Bluetooth-Kopfhörer neu.",
+            "Schalten Sie am iPhone den Stummmodus aus. Erhöhen Sie unter Android die Medienlautstärke statt der Klingeltonlautstärke."
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Wie teste ich den linken und rechten Lautsprecher?", "a": "Drücken Sie den Button Links. Der Ton sollte nur von links kommen. Drücken Sie dann Rechts. Sind sie vertauscht, drehen Sie die Kopfhörer um oder prüfen Sie Kabel und Balance-Einstellungen." },
+        { "q": "Warum höre ich die hohen Frequenzen nicht?", "a": "Das Gehör über 15 kHz nimmt mit dem Alter natürlich ab, und viele kleine Lautsprecher können sehr hohe oder sehr tiefe Frequenzen nicht wiedergeben. Beides ist normal." },
+        { "q": "Ist der Testton sicher für meine Ohren?", "a": "Ja, bei normaler Lautstärke. Beginnen Sie mit niedriger Systemlautstärke und drehen Sie langsam auf, besonders mit Kopfhörern." },
+        { "q": "Funktioniert es mit Bluetooth-Kopfhörern?", "a": "Ja. Verbinden Sie sie zuerst, damit sie zur aktiven Ausgabe werden, und spielen Sie dann die Töne ab." }
+      ]
+    }
+  }
+}

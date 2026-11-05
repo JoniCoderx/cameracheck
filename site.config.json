@@ -1,0 +1,17 @@
+{
+  "siteName": "MicNCam",
+  "domain": "https://micncam.com",
+  "contactEmail": "hello@micncam.com",
+  "googleSiteVerification": "",
+  "bingSiteVerification": "",
+  "ga4Id": "",
+  "adsense": {
+    "client": "",
+    "slots": {
+      "afterTool": "",
+      "inArticle": "",
+      "beforeFooter": ""
+    }
+  },
+  "languages": ["en", "es", "pt", "fr", "de", "it", "ru", "tr", "id", "ja", "ar", "he", "hi"]
+}

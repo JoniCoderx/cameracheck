@@ -1,0 +1,324 @@
+{
+  "meta": {
+    "langName": "Français",
+    "dir": "ltr",
+    "ogLocale": "fr_FR"
+  },
+  "ui": {
+    "skip": "Aller au contenu",
+    "navMic": "Test micro",
+    "navCam": "Test webcam",
+    "navSpk": "Test haut-parleurs",
+    "navFaq": "FAQ",
+    "language": "Langue",
+    "heroPill": "100 % privé · tout se passe dans votre navigateur",
+    "testAll": "Tout tester",
+    "justMic": "Micro seul",
+    "startMic": "Tester le micro",
+    "startCam": "Tester la webcam",
+    "startSpk": "Jouer le son test",
+    "mic": "Micro",
+    "cam": "Caméra",
+    "spk": "Haut-parleurs",
+    "notTested": "non testé",
+    "working": "fonctionne",
+    "failed": "problème",
+    "testing": "test en cours…",
+    "micTest": "Test du micro",
+    "micHint": "Cliquez sur Démarrer et dites quelque chose. Les barres doivent bouger quand vous parlez.",
+    "defaultMic": "Micro par défaut",
+    "defaultCam": "Caméra par défaut",
+    "autoRes": "Auto",
+    "start": "Démarrer",
+    "stop": "Arrêter",
+    "waiting": "En attente…",
+    "record": "Enregistrer 5 s",
+    "recording": "Enregistrement… ",
+    "echoOn": "M'écouter",
+    "echoOff": "Ne plus écouter",
+    "download": "Télécharger",
+    "device": "Appareil",
+    "sampleRate": "Fréq. d'échantillonnage",
+    "channels": "Canaux",
+    "peakFreq": "Fréq. dominante",
+    "echoCancel": "Annulation d'écho",
+    "noiseSup": "Réduction du bruit",
+    "camTest": "Test webcam",
+    "camHint": "Autorisez l'accès à la caméra pour vous voir. Vérifiez l'image, la résolution et la fréquence d'images.",
+    "camOff": "Caméra éteinte",
+    "snap": "📸 Capture",
+    "mirror": "⇋ Miroir",
+    "flip": "🔄 Changer de caméra",
+    "grid": "# Grille",
+    "fullscreen": "⛶ Plein écran",
+    "recVideo": "Filmer un clip",
+    "resolution": "Résolution",
+    "fps": "Images/s",
+    "aspect": "Format",
+    "megapixels": "Mégapixels",
+    "brightness": "Luminosité",
+    "spkTest": "Test haut-parleurs et casque",
+    "spkHint": "Jouez un son à gauche, à droite ou des deux côtés pour vérifier que votre sortie audio fonctionne.",
+    "left": "Gauche",
+    "both": "Les deux",
+    "right": "Droite",
+    "toneFreq": "Fréquence du son",
+    "sweep": "Balayage de fréquences",
+    "spkAsk": "Vous l'avez entendu ?",
+    "yes": "Oui 👍",
+    "no": "Non 👎",
+    "devTitle": "Appareils détectés",
+    "devHint": "Les noms des appareils s'affichent une fois l'accès autorisé.",
+    "refresh": "Actualiser",
+    "browser": "Navigateur",
+    "os": "Système",
+    "secure": "Connexion sécurisée",
+    "permMic": "Autorisation micro",
+    "permCam": "Autorisation caméra",
+    "faqTitle": "Questions fréquentes",
+    "otherTests": "Autres tests gratuits",
+    "cardMicDesc": "Vumètre, forme d'onde, enregistrement et lecture.",
+    "cardCamDesc": "Aperçu en direct, résolution, FPS et captures.",
+    "cardSpkDesc": "Canaux gauche/droite et balayage complet des fréquences.",
+    "footer": "Test micro, webcam et haut-parleurs gratuit en ligne. Votre son et votre vidéo ne quittent jamais votre appareil.",
+    "privacy": "Confidentialité",
+    "about": "À propos",
+    "contact": "Contact",
+    "ad": "Publicité",
+    "vSilent": "Aucun son détecté — parlez plus fort",
+    "vLow": "Très faible — rapprochez-vous",
+    "vGood": "Le son est parfait ✓",
+    "vLoud": "Trop fort — risque de saturation",
+    "vDetected": "Le micro fonctionne ✓",
+    "on": "Activé",
+    "off": "Désactivé",
+    "yesW": "Oui",
+    "noW": "Non",
+    "granted": "Autorisé",
+    "denied": "Bloqué",
+    "prompt": "Demander",
+    "unknown": "Inconnu",
+    "mono": "Mono",
+    "stereo": "Stéréo",
+    "errDenied": "Autorisation refusée. Cliquez sur l'icône du cadenas dans la barre d'adresse et autorisez l'accès.",
+    "errNotFound": "Aucun appareil trouvé. Est-il bien branché ?",
+    "errBusy": "L'appareil est utilisé par une autre application ou bloqué par le système.",
+    "errGeneric": "Impossible de démarrer : ",
+    "errInsecure": "La caméra et le micro ne fonctionnent qu'en HTTPS. Ouvrez cette page via https:// ou localhost.",
+    "errUnsupported": "Votre navigateur ne permet pas l'accès à la caméra ou au micro.",
+    "echoWarn": "Utilisez un casque pour éviter l'effet Larsen",
+    "snapSaved": "Capture enregistrée ci-dessous — touchez-la pour la télécharger",
+    "spkThanks": "Haut-parleurs marqués comme fonctionnels",
+    "spkSorry": "Vérifiez le volume, la sourdine et la sortie audio",
+    "noDevices": "Aucun appareil pour l'instant — appuyez sur Démarrer"
+  },
+  "pages": {
+    "home": {
+      "title": "Test micro et webcam en ligne — Tester son micro et sa caméra",
+      "description": "Testez votre micro, votre webcam et vos haut-parleurs en ligne en un clic. Vumètre en direct, enregistrement, résolution et FPS. Gratuit, privé, sans envoi.",
+      "h1Html": "Votre <span class=\"grad\">micro &amp; webcam</span> fonctionnent-ils ?",
+      "lead": "Testez votre micro, votre webcam et vos haut-parleurs en quelques secondes. Sans inscription, sans téléchargement, rien ne quitte votre appareil.",
+      "article": [
+        {
+          "h": "Comment tester son micro et sa webcam en ligne",
+          "p": [
+            "MicNCam vérifie votre micro, votre webcam et vos haut-parleurs directement dans votre navigateur. Appuyez sur le bouton sous le titre et autorisez l'accès lorsque le navigateur le demande. C'est tout : aucune application à installer, aucun compte à créer."
+          ],
+          "ol": [
+            "Cliquez sur « Tout tester » (ou lancez uniquement le test du micro ou de la caméra).",
+            "Quand le navigateur demande l'autorisation, choisissez « Autoriser ».",
+            "Parlez normalement. Le vumètre et la forme d'onde doivent suivre votre voix.",
+            "Regardez l'aperçu de la caméra. Vérifiez l'image, la résolution et la fréquence d'images.",
+            "Jouez les sons gauche/droite pour vérifier que vos haut-parleurs ou votre casque fonctionnent."
+          ]
+        },
+        {
+          "h": "Comment lire les résultats",
+          "p": [
+            "Le vumètre du micro indique le niveau de votre signal en décibels (dB) par rapport au maximum que l'appareil peut capter. Le silence se situe généralement sous −60 dB, une voix normale à un bras de distance entre −35 et −15 dB, et tout ce qui atteint 0 dB sature et sonne distordu.",
+            "Pour la caméra, la résolution (par exemple 1280 × 720 ou 1920 × 1080) indique le niveau de détail. La fréquence d'images (FPS) indique la fluidité du mouvement. 30 FPS est la norme pour les appels vidéo. Beaucoup de webcams descendent à 15 FPS dans la pénombre : ajoutez de la lumière si vos FPS sont faibles."
+          ]
+        },
+        {
+          "h": "Testez avant Zoom, Teams, Google Meet ou Discord",
+          "p": [
+            "Une vérification rapide avant une réunion importante, un entretien, un cours en ligne ou un stream vous évite le fameux « vous m'entendez ? ». Choisissez ici le même micro et la même caméra que dans Zoom, Microsoft Teams, Google Meet, Skype, Discord ou OBS. S'ils fonctionnent sur MicNCam, ils fonctionnent dans le navigateur : un éventuel problème vient alors des réglages audio ou vidéo de l'application."
+          ]
+        },
+        {
+          "h": "Micro ou caméra qui ne marche pas ? Solutions rapides",
+          "ul": [
+            "Autorisez l'accès : cliquez sur l'icône du cadenas ou de la caméra à côté de la barre d'adresse, réglez Caméra et Micro sur « Autoriser », puis rechargez la page.",
+            "Fermez les autres applications : Zoom, Teams, OBS ou un autre onglet peuvent bloquer la caméra pour tout le reste.",
+            "Choisissez le bon appareil : utilisez la liste déroulante pour passer d'un appareil intégré à un appareil USB ou Bluetooth.",
+            "Vérifiez la confidentialité du système : sous Windows, ouvrez Paramètres → Confidentialité et sécurité → Caméra / Microphone ; sous macOS, ouvrez Réglages Système → Confidentialité et sécurité.",
+            "Cherchez un interrupteur physique : beaucoup de portables ont un cache de caméra ou une touche de sourdine, et les casques ont souvent un bouton de coupure sur le câble.",
+            "Mettez à jour les pilotes ou redémarrez : un simple redémarrage résout étonnamment souvent les erreurs « aucun appareil trouvé »."
+          ]
+        },
+        {
+          "h": "Est-ce privé ?",
+          "p": [
+            "Oui. Tout fonctionne en local grâce aux technologies standard du navigateur (WebRTC getUserMedia et Web Audio API). Votre voix et votre vidéo ne sont jamais envoyées à un serveur, jamais stockées et jamais vues par qui que ce soit. Les enregistrements et captures restent dans votre navigateur jusqu'à ce que vous fermiez l'onglet ou choisissiez de les télécharger."
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Ce test micro et webcam est-il gratuit ?", "a": "Oui, il est entièrement gratuit, sans inscription, sans limite et sans rien à installer." },
+        { "q": "Mon son ou ma vidéo sont-ils enregistrés ou envoyés ?", "a": "Non. Tout se passe dans votre navigateur. Rien n'est envoyé ni stocké sur un serveur." },
+        { "q": "Mon navigateur ne m'a pas demandé l'autorisation. Que faire ?", "a": "Cliquez sur l'icône de la caméra ou du cadenas dans la barre d'adresse, réglez Caméra et Micro sur « Autoriser » et rechargez la page. Sur iPhone, allez dans Réglages → Safari → Caméra / Micro et choisissez « Demander » ou « Autoriser »." },
+        { "q": "Pourquoi ma caméra affiche-t-elle un écran noir ?", "a": "Une autre application utilise peut-être la caméra, le cache est peut-être fermé, ou la résolution choisie n'est pas prise en charge. Fermez les autres applications, ouvrez le cache, essayez une autre résolution ou choisissez une autre caméra dans la liste." },
+        { "q": "Est-ce que ça marche sur iPhone et Android ?", "a": "Oui. Le test fonctionne dans Safari, Chrome, Firefox, Edge et Samsung Internet sur iOS et Android. Utilisez « Changer de caméra » pour tester la caméra avant et arrière." },
+        { "q": "Quels navigateurs sont compatibles ?", "a": "Tous les navigateurs récents : Chrome, Edge, Firefox, Safari, Opera, Brave et Samsung Internet. La page doit être ouverte en HTTPS pour accéder à la caméra et au micro." }
+      ]
+    },
+    "mic": {
+      "title": "Test micro en ligne — Tester son micro gratuitement",
+      "description": "Testez votre micro en ligne en un clic : vumètre en dB, forme d'onde et spectre en direct, puis enregistrez et réécoutez votre voix. Micro, casque ou mobile.",
+      "h1Html": "<span class=\"grad\">Test micro</span> en ligne",
+      "lead": "Vérifiez en quelques secondes si votre micro fonctionne. Parlez et regardez le vumètre, puis enregistrez-vous et réécoutez votre voix.",
+      "article": [
+        {
+          "h": "Comment tester son micro",
+          "ol": [
+            "Cliquez sur « Tester le micro » et autorisez l'accès au micro.",
+            "Choisissez votre micro dans la liste déroulante si vous en avez plusieurs.",
+            "Parlez à volume normal et observez le vumètre et la forme d'onde.",
+            "Appuyez sur « Enregistrer 5 s », puis réécoutez le clip pour entendre exactement ce que les autres entendent."
+          ]
+        },
+        {
+          "h": "Quel est un bon niveau de micro ?",
+          "p": [
+            "Visez des pics entre −20 dB et −10 dB en parlant normalement. En dessous de −45 dB, vos interlocuteurs auront du mal à vous entendre : rapprochez-vous ou augmentez le gain d'entrée. Si le vumètre touche sans cesse la zone rouge proche de 0 dB, votre voix sature et sonne agressive : baissez le gain ou éloignez un peu le micro.",
+            "La valeur « Fréquence dominante » indique la hauteur la plus forte captée par le micro. La plupart des voix se situent entre 85 Hz et 255 Hz. Une valeur constante à 50 Hz ou 60 Hz alors que personne ne parle signale généralement un ronflement électrique dû à un câble ou une alimentation."
+          ]
+        },
+        {
+          "h": "Le micro ne marche pas ? Essayez ceci",
+          "ul": [
+            "Autorisation du navigateur : cliquez sur l'icône du cadenas dans la barre d'adresse → Micro → Autoriser, puis rechargez.",
+            "Windows 10/11 : Paramètres → Système → Son → Entrée. Sélectionnez votre micro et vérifiez le « Volume d'entrée ». Ouvrez aussi Paramètres → Confidentialité et sécurité → Microphone et activez l'accès pour les applications de bureau et votre navigateur.",
+            "macOS : Réglages Système → Confidentialité et sécurité → Micro → activez votre navigateur. Puis Réglages Système → Son → Entrée pour choisir l'appareil et le niveau d'entrée.",
+            "iPhone / iPad : Réglages → Safari (ou Chrome) → Micro → Autoriser.",
+            "Android : appui long sur l'icône du navigateur → Infos sur l'appli → Autorisations → Micro → Autoriser.",
+            "Casques : vérifiez le bouton de sourdine sur le câble et assurez-vous que la fiche est dans la prise micro (rose) ou que vous utilisez un connecteur jack TRRS à 4 pôles.",
+            "Casques Bluetooth : certains passent en mode « mains libres » de moindre qualité quand le micro est actif. C'est un comportement normal, pas une panne."
+          ]
+        },
+        {
+          "h": "Conseils pour un son plus clair en appel",
+          "ul": [
+            "Placez le micro à 10–20 cm de votre bouche, légèrement de côté pour éviter les plosives.",
+            "Utilisez « M'écouter » avec un casque pour surveiller le bruit de fond en temps réel.",
+            "Rideaux, tapis et canapé réduisent l'écho bien mieux que n'importe quel filtre logiciel.",
+            "Laissez l'annulation d'écho et la réduction du bruit activées pour les appels ; désactivez-les seulement pour enregistrer de la musique."
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Comment savoir si mon micro fonctionne ?", "a": "Lancez le test et parlez. Si le vumètre et la forme d'onde suivent votre voix et que le statut passe au vert, votre micro fonctionne. Enregistrez un clip de 5 secondes et réécoutez-le pour vérifier la qualité." },
+        { "q": "Pourquoi mon micro est-il si faible ?", "a": "Le gain d'entrée est probablement trop bas. Augmentez le volume d'entrée dans les paramètres son de votre système, rapprochez-vous du micro et vérifiez que le bon appareil est sélectionné dans la liste." },
+        { "q": "Pourquoi mon micro capte-t-il de l'écho ?", "a": "En général, vos haut-parleurs repassent dans le micro. Utilisez un casque, baissez le volume des haut-parleurs et laissez l'annulation d'écho activée dans votre application d'appel." },
+        { "q": "Puis-je tester un micro USB ou Bluetooth ?", "a": "Oui. Branchez-le, appuyez sur Actualiser dans la liste des appareils si besoin, puis choisissez-le dans la liste des micros." },
+        { "q": "Puis-je télécharger mon enregistrement de test ?", "a": "Oui. Après l'enregistrement, appuyez sur Télécharger pour sauvegarder le clip. Il est créé dans votre navigateur et n'est jamais envoyé." }
+      ]
+    },
+    "webcam": {
+      "title": "Test webcam en ligne — Tester sa caméra (résolution et FPS)",
+      "description": "Test webcam gratuit en ligne : image en direct, résolution réelle, FPS, format et luminosité. Captures et clips vidéo. Webcam PC, USB ou mobile.",
+      "h1Html": "<span class=\"grad\">Test webcam</span> en ligne",
+      "lead": "Vérifiez que votre caméra fonctionne et donne une belle image. Voyez l'image en direct, la résolution et les FPS réels, et prenez une capture en un clic.",
+      "article": [
+        {
+          "h": "Comment tester sa webcam",
+          "ol": [
+            "Cliquez sur « Tester la webcam » et autorisez l'accès à la caméra.",
+            "Choisissez votre caméra et la résolution à vérifier.",
+            "Regardez les badges dans le coin pour la résolution et les FPS en direct.",
+            "Prenez une capture ou filmez un court clip pour juger la netteté et les couleurs."
+          ]
+        },
+        {
+          "h": "Comprendre la résolution et les FPS",
+          "p": [
+            "La résolution est le nombre de pixels de chaque image : 640 × 480 (480p), 1280 × 720 (720p HD), 1920 × 1080 (1080p Full HD) ou 3840 × 2160 (4K). Le test demande la résolution choisie et affiche ce que la caméra fournit réellement. Beaucoup de webcams annoncent du 1080p mais repassent en 720p dans certains navigateurs ou à cause de la bande passante USB.",
+            "Les FPS (images par seconde) mesurent la fluidité. 30 FPS est la norme pour les appels vidéo et 60 FPS est encore plus fluide. Les FPS affichés ici sont mesurés sur les images réelles, pas simplement annoncés par le pilote : c'est donc ce que les autres verront vraiment."
+          ]
+        },
+        {
+          "h": "Caméra qui ne marche pas ou écran noir ?",
+          "ul": [
+            "Fermez Zoom, Teams, Skype, OBS et tout autre onglet qui utilise la caméra. La plupart des caméras ne peuvent servir qu'à une seule application à la fois.",
+            "Ouvrez le cache de confidentialité, ou appuyez sur la touche caméra (souvent F8, F10 ou Fn+touche F) sur les portables.",
+            "Windows 10/11 : Paramètres → Confidentialité et sécurité → Caméra → activez « Accès à la caméra » et « Autoriser les applications à accéder à votre caméra ».",
+            "macOS : Réglages Système → Confidentialité et sécurité → Caméra → activez votre navigateur.",
+            "iPhone / iPad : Réglages → Safari → Caméra → Autoriser. Android : Infos sur l'appli → Autorisations → Appareil photo.",
+            "Choisissez une résolution plus basse si l'image se fige, et branchez les caméras USB directement sur l'ordinateur plutôt que sur un hub."
+          ]
+        },
+        {
+          "h": "Soignez votre image en visio",
+          "ul": [
+            "Placez-vous face à une fenêtre ou une lampe douce. Une lumière dans le dos vous transforme en silhouette.",
+            "Montez la caméra à hauteur des yeux et utilisez la grille pour placer vos yeux sur la ligne du tiers supérieur.",
+            "FPS faibles le soir ? Ajoutez de la lumière. Les webcams allongent leur temps d'exposition dans le noir, ce qui réduit la fréquence d'images.",
+            "Nettoyez l'objectif : une trace de doigt est la cause la plus fréquente d'une image floue ou voilée."
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Comment vérifier si ma webcam fonctionne ?", "a": "Cliquez sur « Tester la webcam » et autorisez l'accès. Si vous vous voyez et que le statut passe au vert, la caméra fonctionne. Les badges affichent la résolution et les FPS réels." },
+        { "q": "Pourquoi l'image est-elle inversée ?", "a": "Les caméras avant sont affichées en miroir par défaut, car c'est plus naturel. Vos interlocuteurs vous voient à l'endroit. Utilisez le bouton Miroir pour basculer." },
+        { "q": "Pourquoi ma webcam a-t-elle peu de FPS ?", "a": "En général à cause d'un manque de lumière, d'un port USB chargé ou d'une résolution élevée. Ajoutez de la lumière, choisissez 720p ou branchez la caméra directement sur l'ordinateur." },
+        { "q": "Puis-je tester la caméra avant et arrière de mon téléphone ?", "a": "Oui. Ouvrez cette page sur votre téléphone et touchez « Changer de caméra » pour passer de la caméra avant à la caméra arrière." },
+        { "q": "Mes captures sont-elles envoyées en ligne ?", "a": "Non. Les captures et les clips sont créés dans votre navigateur et ne sont sauvegardés que si vous les téléchargez." }
+      ]
+    },
+    "speaker": {
+      "title": "Test haut-parleurs et casque en ligne — Son gauche/droite",
+      "description": "Testez vos haut-parleurs et votre casque en ligne : sons gauche, droite et centre, fréquence réglable, balayage 40 Hz–16 kHz : graves, aigus et stéréo.",
+      "h1Html": "<span class=\"grad\">Test haut-parleurs</span> en ligne",
+      "lead": "Vérifiez que vos haut-parleurs et votre casque fonctionnent, que la gauche et la droite ne sont pas inversées, et jusqu'où vont votre ouïe et votre matériel.",
+      "article": [
+        {
+          "h": "Comment tester ses haut-parleurs ou son casque",
+          "ol": [
+            "Réglez le volume du système à un niveau bas et confortable.",
+            "Appuyez sur Gauche, puis sur Droite. Chaque son doit venir uniquement de ce côté.",
+            "Appuyez sur Les deux pour vérifier l'image centrale.",
+            "Lancez le balayage de fréquences pour entendre toute la plage, des graves profonds aux aigus."
+          ]
+        },
+        {
+          "h": "Gauche et droite inversées ou absentes ?",
+          "p": [
+            "Si le son gauche sort à droite, votre casque est porté à l'envers ou un câble ou adaptateur est câblé à l'envers. Si un côté reste muet, vérifiez la balance dans vos paramètres son (Windows : Paramètres → Système → Son → votre appareil → Gauche/Droite ; macOS : Réglages Système → Son → Sortie → Balance), puis essayez un autre câble ou port.",
+            "Certains téléphones et portables n'ont qu'un seul haut-parleur mono. Dans ce cas, Gauche et Droite sortent au même endroit, et c'est normal."
+          ]
+        },
+        {
+          "h": "Le balayage de fréquences et votre audition",
+          "p": [
+            "Les jeunes entendent généralement d'environ 20 Hz à 20 kHz. La limite haute baisse avec l'âge, et beaucoup d'adultes n'entendent plus les sons au-dessus de 14–16 kHz. Les petits haut-parleurs de portable et de téléphone reproduisent rarement en dessous de 100–150 Hz : le début du balayage peut donc être silencieux, même si votre audition est bonne. Gardez le volume bas : les sons aigus peuvent être désagréables."
+          ]
+        },
+        {
+          "h": "Aucun son ?",
+          "ul": [
+            "Vérifiez que le système et l'onglet du navigateur ne sont pas en sourdine. Cherchez une icône de haut-parleur barré sur l'onglet.",
+            "Assurez-vous que la bonne sortie audio est sélectionnée (les casques Bluetooth prennent souvent le relais automatiquement).",
+            "Débranchez et rebranchez votre casque filaire, ou réappairez votre casque Bluetooth.",
+            "Sur iPhone, désactivez le mode silencieux. Sur Android, augmentez le volume multimédia plutôt que celui de la sonnerie."
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Comment tester les haut-parleurs gauche et droit ?", "a": "Appuyez sur le bouton Gauche. Le son doit sortir uniquement à gauche. Appuyez ensuite sur Droite. S'ils sont inversés, retournez votre casque ou vérifiez le câble et la balance." },
+        { "q": "Pourquoi je n'entends pas les hautes fréquences ?", "a": "L'audition au-dessus de 15 kHz diminue naturellement avec l'âge, et beaucoup de petits haut-parleurs ne restituent pas les fréquences très hautes ou très basses. Les deux sont normaux." },
+        { "q": "Le son de test est-il sans danger pour les oreilles ?", "a": "Oui, à volume normal. Commencez avec un volume système bas et montez-le progressivement, surtout avec un casque." },
+        { "q": "Est-ce que ça marche avec un casque Bluetooth ?", "a": "Oui. Connectez-le d'abord pour qu'il devienne la sortie active, puis jouez les sons." }
+      ]
+    }
+  }
+}

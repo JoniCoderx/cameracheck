@@ -1,0 +1,324 @@
+{
+  "meta": {
+    "langName": "Türkçe",
+    "dir": "ltr",
+    "ogLocale": "tr_TR"
+  },
+  "ui": {
+    "skip": "İçeriğe geç",
+    "navMic": "Mikrofon testi",
+    "navCam": "Kamera testi",
+    "navSpk": "Hoparlör testi",
+    "navFaq": "SSS",
+    "language": "Dil",
+    "heroPill": "%100 gizli · tarayıcınızda çalışır",
+    "testAll": "Hepsini test et",
+    "justMic": "Sadece mikrofon",
+    "startMic": "Mikrofonu test et",
+    "startCam": "Kamerayı test et",
+    "startSpk": "Test sesi çal",
+    "mic": "Mikrofon",
+    "cam": "Kamera",
+    "spk": "Hoparlör",
+    "notTested": "test edilmedi",
+    "working": "çalışıyor",
+    "failed": "sorun var",
+    "testing": "test ediliyor…",
+    "micTest": "Mikrofon testi",
+    "micHint": "Başlat'a tıklayın ve bir şey söyleyin. Konuştuğunuzda çubuklar hareket etmeli.",
+    "defaultMic": "Varsayılan mikrofon",
+    "defaultCam": "Varsayılan kamera",
+    "autoRes": "Otomatik",
+    "start": "Başlat",
+    "stop": "Durdur",
+    "waiting": "Bekleniyor…",
+    "record": "5 sn kaydet",
+    "recording": "Kaydediliyor… ",
+    "echoOn": "Kendimi duy",
+    "echoOff": "Dinlemeyi kapat",
+    "download": "İndir",
+    "device": "Cihaz",
+    "sampleRate": "Örnekleme hızı",
+    "channels": "Kanallar",
+    "peakFreq": "Baskın frekans",
+    "echoCancel": "Yankı engelleme",
+    "noiseSup": "Gürültü bastırma",
+    "camTest": "Kamera testi",
+    "camHint": "Kendinizi görmek için kamera erişimine izin verin. Görüntüyü, çözünürlüğü ve kare hızını kontrol edin.",
+    "camOff": "Kamera kapalı",
+    "snap": "📸 Fotoğraf çek",
+    "mirror": "⇋ Ayna",
+    "flip": "🔄 Kamera değiştir",
+    "grid": "# Izgara",
+    "fullscreen": "⛶ Tam ekran",
+    "recVideo": "Video kaydet",
+    "resolution": "Çözünürlük",
+    "fps": "Kare hızı",
+    "aspect": "En-boy oranı",
+    "megapixels": "Megapiksel",
+    "brightness": "Parlaklık",
+    "spkTest": "Hoparlör ve kulaklık testi",
+    "spkHint": "Ses çıkışınızın çalıştığından emin olmak için sol, sağ veya her iki kanalda bir ton çalın.",
+    "left": "Sol",
+    "both": "İkisi",
+    "right": "Sağ",
+    "toneFreq": "Ton frekansı",
+    "sweep": "Frekans taraması",
+    "spkAsk": "Sesi duydunuz mu?",
+    "yes": "Evet 👍",
+    "no": "Hayır 👎",
+    "devTitle": "Algılanan cihazlar",
+    "devHint": "Cihaz adları erişime izin verdikten sonra görünür.",
+    "refresh": "Yenile",
+    "browser": "Tarayıcı",
+    "os": "Sistem",
+    "secure": "Güvenli bağlantı",
+    "permMic": "Mikrofon izni",
+    "permCam": "Kamera izni",
+    "faqTitle": "Sıkça sorulan sorular",
+    "otherTests": "Diğer ücretsiz testler",
+    "cardMicDesc": "Seviye göstergesi, dalga formu, kayıt ve dinleme.",
+    "cardCamDesc": "Canlı önizleme, çözünürlük, FPS ve fotoğraf.",
+    "cardSpkDesc": "Sol/sağ kanallar ve tam frekans taraması.",
+    "footer": "Ücretsiz online mikrofon, kamera ve hoparlör testi. Sesiniz ve görüntünüz cihazınızdan asla çıkmaz.",
+    "privacy": "Gizlilik",
+    "about": "Hakkında",
+    "contact": "İletişim",
+    "ad": "Reklam",
+    "vSilent": "Ses algılanmadı — daha yüksek sesle konuşun",
+    "vLow": "Çok kısık — biraz yaklaşın",
+    "vGood": "Ses harika ✓",
+    "vLoud": "Çok yüksek — bozulabilir",
+    "vDetected": "Mikrofon çalışıyor ✓",
+    "on": "Açık",
+    "off": "Kapalı",
+    "yesW": "Evet",
+    "noW": "Hayır",
+    "granted": "İzin verildi",
+    "denied": "Engellendi",
+    "prompt": "Sor",
+    "unknown": "Bilinmiyor",
+    "mono": "Mono",
+    "stereo": "Stereo",
+    "errDenied": "İzin reddedildi. Adres çubuğundaki kilit simgesine tıklayın ve erişime izin verin.",
+    "errNotFound": "Cihaz bulunamadı. Takılı olduğundan emin misiniz?",
+    "errBusy": "Cihaz başka bir uygulama tarafından kullanılıyor veya sistem tarafından engellendi.",
+    "errGeneric": "Başlatılamadı: ",
+    "errInsecure": "Kamera ve mikrofon yalnızca HTTPS üzerinden çalışır. Bu sayfayı https:// veya localhost ile açın.",
+    "errUnsupported": "Tarayıcınız kamera/mikrofon erişimini desteklemiyor.",
+    "echoWarn": "Geri beslemeyi önlemek için kulaklık kullanın",
+    "snapSaved": "Fotoğraf aşağıya kaydedildi — indirmek için dokunun",
+    "spkThanks": "Hoparlörler çalışıyor olarak işaretlendi",
+    "spkSorry": "Ses düzeyini, sessiz modu ve çıkış cihazını kontrol edin",
+    "noDevices": "Henüz cihaz yok — yukarıdan Başlat'a basın"
+  },
+  "pages": {
+    "home": {
+      "title": "Mikrofon ve Kamera Testi — Ücretsiz Online Mic & Webcam Test",
+      "description": "Mikrofon testi, kamera testi ve hoparlör testi tek tıkla. Canlı ses seviyesi, kayıt ve dinleme, kamera çözünürlüğü ve FPS kontrolü. Ücretsiz ve gizli.",
+      "h1Html": "<span class=\"grad\">Mikrofon &amp; kameranız</span> çalışıyor mu?",
+      "lead": "Mikrofonunuzu, kameranızı ve hoparlörlerinizi saniyeler içinde test edin. Kayıt yok, indirme yok, hiçbir şey cihazınızdan çıkmaz.",
+      "article": [
+        {
+          "h": "Online mikrofon ve kamera testi nasıl yapılır?",
+          "p": [
+            "MicNCam mikrofonunuzu, web kameranızı ve hoparlörlerinizi doğrudan tarayıcınızda kontrol eder. Başlığın altındaki düğmeye basın ve tarayıcınız sorduğunda erişime izin verin. Hepsi bu: kurulacak uygulama yok, açılacak hesap yok."
+          ],
+          "ol": [
+            "\"Hepsini test et\"e tıklayın (veya yalnızca mikrofon ya da kamera testini başlatın).",
+            "Tarayıcı izin istediğinde \"İzin ver\"i seçin.",
+            "Normal şekilde konuşun. Seviye göstergesi ve dalga formu sesinizle birlikte hareket etmeli.",
+            "Kamera önizlemesine bakın. Görüntüyü, çözünürlüğü ve kare hızını kontrol edin.",
+            "Hoparlörlerinizin veya kulaklığınızın çalıştığını doğrulamak için sol/sağ tonları çalın."
+          ]
+        },
+        {
+          "h": "Sonuçlar ne anlama geliyor?",
+          "p": [
+            "Mikrofon göstergesi, girişinizin ses yüksekliğini cihazın yakalayabileceği maksimuma göre desibel (dB) cinsinden gösterir. Sessizlik genellikle −60 dB'nin altındadır, kol mesafesinden normal konuşma −35 ile −15 dB arasında kalır ve 0 dB'ye ulaşan her ses kırpılır ve bozuk duyulur.",
+            "Kamerada çözünürlük (örneğin 1280 × 720 veya 1920 × 1080) ne kadar ayrıntı elde ettiğinizi gösterir. Kare hızı (FPS) hareketin ne kadar akıcı olduğunu belirtir. Görüntülü görüşmeler için 30 FPS standarttır. Birçok web kamerası loş ışıkta 15 FPS'ye düşer; FPS düşükse ortamı aydınlatın."
+          ]
+        },
+        {
+          "h": "Zoom, Teams, Google Meet veya Discord öncesi test edin",
+          "p": [
+            "Önemli bir toplantı, mülakat, online ders veya yayın öncesi hızlı bir kontrol, sizi klasik \"sesim geliyor mu?\" anından kurtarır. Burada Zoom, Microsoft Teams, Google Meet, Skype, Discord veya OBS'de kullanacağınız mikrofon ve kamerayı seçin. MicNCam'de çalışıyorlarsa tarayıcıda da çalışıyorlardır; kalan sorun o uygulamanın kendi ses veya görüntü ayarlarındadır."
+          ]
+        },
+        {
+          "h": "Mikrofon veya kamera çalışmıyor mu? Hızlı çözümler",
+          "ul": [
+            "Erişime izin verin: adres çubuğunun yanındaki kilit veya kamera simgesine tıklayın, Kamera ve Mikrofon'u \"İzin ver\" olarak ayarlayın, ardından sayfayı yenileyin.",
+            "Diğer uygulamaları kapatın: Zoom, Teams, OBS veya başka bir tarayıcı sekmesi kamerayı kilitleyerek başka bir şeyin kullanmasını engelleyebilir.",
+            "Doğru cihazı seçin: dahili, USB ve Bluetooth cihazlar arasında geçiş yapmak için açılır listeyi kullanın.",
+            "Sistem gizlilik ayarlarını kontrol edin: Windows'ta Ayarlar → Gizlilik ve güvenlik → Kamera / Mikrofon'u açın; macOS'ta Sistem Ayarları → Gizlilik ve Güvenlik'i açın.",
+            "Donanım anahtarlarını kontrol edin: birçok dizüstü bilgisayarda kamera kapağı veya sessiz tuşu bulunur, kulaklıklarda da genellikle kablo üzerinde sessize alma düğmesi olur.",
+            "Sürücüleri güncelleyin veya yeniden başlatın: basit bir yeniden başlatma, şaşırtıcı sayıda \"cihaz bulunamadı\" hatasını çözer."
+          ]
+        },
+        {
+          "h": "Gizli mi?",
+          "p": [
+            "Evet. Her şey standart tarayıcı teknolojisi (WebRTC getUserMedia ve Web Audio API) kullanılarak yerel olarak çalışır. Sesiniz ve görüntünüz hiçbir zaman bir sunucuya gönderilmez, saklanmaz ve kimse tarafından görülmez. Kayıtlar ve fotoğraflar siz sekmeyi kapatana veya indirmeyi seçene kadar yalnızca tarayıcınızda bulunur."
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Bu mikrofon ve kamera testi ücretsiz mi?", "a": "Evet, tamamen ücretsizdir. Kayıt, sınır veya kurulum gerekmez." },
+        { "q": "Sesim veya görüntüm kaydediliyor ya da yükleniyor mu?", "a": "Hayır. Her şey tarayıcınızın içinde gerçekleşir. Hiçbir şey herhangi bir sunucuya yüklenmez veya saklanmaz." },
+        { "q": "Tarayıcım izin istemedi. Ne yapmalıyım?", "a": "Adres çubuğundaki kamera veya kilit simgesine tıklayın, Kamera ve Mikrofon'u \"İzin ver\" olarak ayarlayın ve sayfayı yenileyin. iPhone'da Ayarlar → Safari → Kamera / Mikrofon'a gidin ve \"Sor\" veya \"İzin Ver\"i seçin." },
+        { "q": "Kameram neden siyah ekran gösteriyor?", "a": "Kamerayı başka bir uygulama kullanıyor, gizlilik kapağı kapalı veya seçilen çözünürlük desteklenmiyor olabilir. Diğer uygulamaları kapatın, kapağı açın, başka bir çözünürlük deneyin veya listeden başka bir kamera seçin." },
+        { "q": "iPhone ve Android'de çalışıyor mu?", "a": "Evet. iOS ve Android'de Safari, Chrome, Firefox, Edge ve Samsung Internet'te çalışır. Ön ve arka kameraları test etmek için \"Kamera değiştir\"i kullanın." },
+        { "q": "Hangi tarayıcılar destekleniyor?", "a": "Tüm modern tarayıcılar: Chrome, Edge, Firefox, Safari, Opera, Brave ve Samsung Internet. Kamera ve mikrofon erişimi için sayfanın HTTPS üzerinden açılması gerekir." }
+      ]
+    },
+    "mic": {
+      "title": "Mikrofon Testi — Ücretsiz Online Mic Test (Hızlı ve Gizli)",
+      "description": "Online mikrofon testi tek tıkla. Canlı dB seviye göstergesi, dalga formu ve frekans spektrumu; sesinizi kaydedip dinleyin. Her mikrofon ve kulaklıkla.",
+      "h1Html": "Online <span class=\"grad\">mikrofon testi</span>",
+      "lead": "Mikrofonunuzun çalışıp çalışmadığını saniyeler içinde kontrol edin. Konuşun ve seviye göstergesini izleyin, ardından kaydedip sesinizin nasıl duyulduğunu dinleyin.",
+      "article": [
+        {
+          "h": "Mikrofon nasıl test edilir?",
+          "ol": [
+            "\"Mikrofonu test et\"e tıklayın ve mikrofon erişimine izin verin.",
+            "Birden fazla mikrofonunuz varsa açılır listeden seçin.",
+            "Normal ses düzeyinizde konuşun ve göstergeyi ve dalga formunu izleyin.",
+            "\"5 sn kaydet\"e basın, ardından karşı tarafın tam olarak ne duyduğunu dinlemek için kaydı oynatın."
+          ]
+        },
+        {
+          "h": "İyi bir mikrofon seviyesi nedir?",
+          "p": [
+            "Normal konuşurken tepe değerlerin −20 dB ile −10 dB arasında olmasını hedefleyin. −45 dB'nin altında karşı taraf sizi duymakta zorlanır: yaklaşın veya giriş kazancını artırın. Gösterge 0 dB yakınındaki kırmızı bölgeye sürekli ulaşıyorsa sesiniz kırpılır ve sert duyulur; kazancı düşürün veya mikrofonu biraz uzaklaştırın.",
+            "\"Baskın frekans\" değeri, mikrofonun algıladığı en güçlü perdeyi gösterir. Çoğu insan sesi 85 Hz ile 255 Hz arasındadır. Kimse konuşmazken 50 Hz veya 60 Hz'de sabit bir değer, genellikle bir kablo veya güç kaynağından gelen elektrik uğultusuna işaret eder."
+          ]
+        },
+        {
+          "h": "Mikrofon çalışmıyor mu? Bunları deneyin",
+          "ul": [
+            "Tarayıcı izni: adres çubuğundaki kilit simgesine tıklayın → Mikrofon → İzin ver, ardından sayfayı yenileyin.",
+            "Windows 10/11: Ayarlar → Sistem → Ses → Giriş. Mikrofonunuzu seçin ve \"Giriş ses düzeyi\"ni kontrol edin. Ayrıca Ayarlar → Gizlilik ve güvenlik → Mikrofon'u açın ve masaüstü uygulamaları ile tarayıcınız için erişimi açın.",
+            "macOS: Sistem Ayarları → Gizlilik ve Güvenlik → Mikrofon → tarayıcınızı etkinleştirin. Ardından cihazı ve giriş seviyesini seçmek için Sistem Ayarları → Ses → Giriş.",
+            "iPhone / iPad: Ayarlar → Safari (veya Chrome) → Mikrofon → İzin Ver.",
+            "Android: tarayıcı simgesine uzun basın → Uygulama bilgileri → İzinler → Mikrofon → İzin ver.",
+            "Kulaklıklar: kablo üzerindeki sessize alma düğmesini kontrol edin ve fişin mikrofon (pembe) girişine takılı olduğundan veya 4 kutuplu TRRS konnektör kullandığınızdan emin olun.",
+            "Bluetooth kulaklıklar: bazıları mikrofon etkinken düşük kaliteli \"eller serbest\" moduna geçer. Bu normal bir davranıştır, arıza değildir."
+          ]
+        },
+        {
+          "h": "Görüşmelerde daha net ses için ipuçları",
+          "ul": [
+            "Patlama seslerini önlemek için mikrofonu ağzınızdan 10–20 cm uzakta ve hafifçe yana açılı tutun.",
+            "Arka plan gürültüsünü gerçek zamanlı izlemek için kulaklıkla \"Kendimi duy\" özelliğini kullanın.",
+            "Perde, halı ve kanepe gibi yumuşak eşyalar yankıyı herhangi bir yazılım filtresinden çok daha fazla azaltır.",
+            "Görüşmelerde yankı engelleme ve gürültü bastırmayı açık bırakın; yalnızca müzik kaydı için kapatın."
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Mikrofonumun çalışıp çalışmadığını nasıl anlarım?", "a": "Testi başlatın ve konuşun. Seviye göstergesi ve dalga formu sesinizle hareket ediyor ve durum yeşile dönüyorsa mikrofonunuz çalışıyordur. Kaliteyi doğrulamak için 5 saniyelik bir kayıt yapıp dinleyin." },
+        { "q": "Mikrofonum neden bu kadar kısık?", "a": "Giriş kazancı muhtemelen düşüktür. İşletim sisteminizin ses ayarlarından giriş ses düzeyini artırın, mikrofona yaklaşın ve açılır listeden doğru cihazı seçtiğinizi kontrol edin." },
+        { "q": "Mikrofonum neden yankı yapıyor?", "a": "Genellikle hoparlörlerinizden çıkan ses mikrofona geri döner. Kulaklık kullanın, hoparlör sesini kısın ve görüşme uygulamanızda yankı engellemeyi açık tutun." },
+        { "q": "USB veya Bluetooth mikrofonu test edebilir miyim?", "a": "Evet. Mikrofonu bağlayın, gerekirse cihaz listesinde Yenile'ye basın ve mikrofon açılır listesinden seçin." },
+        { "q": "Test kaydımı indirebilir miyim?", "a": "Evet. Kayıttan sonra kaydı saklamak için İndir'e basın. Kayıt tarayıcınızda oluşturulur ve asla yüklenmez." }
+      ]
+    },
+    "webcam": {
+      "title": "Kamera Testi — Online Webcam Test (Çözünürlük ve FPS)",
+      "description": "Ücretsiz online kamera testi: canlı görüntü, gerçek çözünürlük, FPS, en-boy oranı ve parlaklık. Fotoğraf çekin, video kaydedin. Laptop, USB ve telefon.",
+      "h1Html": "Online <span class=\"grad\">kamera testi</span>",
+      "lead": "Kameranızın çalıştığından ve iyi göründüğünden emin olun. Canlı görüntüyü, gerçek çözünürlüğü ve FPS'yi görün, tek tıkla fotoğraf çekin.",
+      "article": [
+        {
+          "h": "Web kamerası nasıl test edilir?",
+          "ol": [
+            "\"Kamerayı test et\"e tıklayın ve kamera erişimine izin verin.",
+            "Kameranızı ve kontrol etmek istediğiniz çözünürlüğü seçin.",
+            "Canlı çözünürlük ve FPS için köşedeki etiketlere bakın.",
+            "Netliği ve renkleri incelemek için bir fotoğraf çekin veya kısa bir video kaydedin."
+          ]
+        },
+        {
+          "h": "Çözünürlük ve FPS'yi anlamak",
+          "p": [
+            "Çözünürlük, her karedeki piksel sayısıdır: 640 × 480 (480p), 1280 × 720 (720p HD), 1920 × 1080 (1080p Full HD) veya 3840 × 2160 (4K). Test, seçtiğiniz çözünürlüğü ister ve kameranın gerçekte ne verdiğini gösterir. Birçok web kamerası 1080p olarak tanıtılır ancak bazı tarayıcılarda veya USB bant genişliği sınırları nedeniyle 720p'ye düşer.",
+            "FPS (saniyedeki kare sayısı) akıcılığı ölçer. Görüntülü görüşmeler için 30 FPS standarttır, 60 FPS ise çok daha akıcı görünür. Burada gösterilen FPS yalnızca sürücünün bildirdiği değer değil, gerçek karelerden ölçülür; yani karşı tarafın göreceğinin gerçek bir resmidir."
+          ]
+        },
+        {
+          "h": "Kamera çalışmıyor veya siyah ekran mı?",
+          "ul": [
+            "Zoom, Teams, Skype, OBS ve kamerayı kullanan diğer sekmeleri kapatın. Çoğu kamera aynı anda yalnızca bir uygulama tarafından kullanılabilir.",
+            "Fiziksel gizlilik kapağını açın veya dizüstü bilgisayarlarda kamera tuşuna (genellikle F8, F10 veya Fn+F tuşu) basın.",
+            "Windows 10/11: Ayarlar → Gizlilik ve güvenlik → Kamera → \"Kamera erişimi\" ve \"Uygulamaların kameranıza erişmesine izin ver\" seçeneklerini açın.",
+            "macOS: Sistem Ayarları → Gizlilik ve Güvenlik → Kamera → tarayıcınızı etkinleştirin.",
+            "iPhone / iPad: Ayarlar → Safari → Kamera → İzin Ver. Android: Uygulama bilgileri → İzinler → Kamera.",
+            "Görüntü donuyorsa daha düşük bir çözünürlük seçin ve USB kameraları hub yerine doğrudan bilgisayara takın."
+          ]
+        },
+        {
+          "h": "Görüntülü görüşmelerde daha iyi görünün",
+          "ul": [
+            "Yüzünüzü bir pencereye veya yumuşak bir lambaya dönün. Arkadan gelen ışık sizi bir siluete dönüştürür.",
+            "Kamerayı göz hizasına kaldırın ve gözlerinizi üst üçte bir çizgisine hizalamak için ızgarayı kullanın.",
+            "Akşamları FPS düşük mü? Işığı artırın. Web kameraları karanlıkta pozlama süresini uzatır ve bu da kare hızını düşürür.",
+            "Lensi temizleyin: parmak izi, \"yumuşak\" veya puslu görüntünün en yaygın nedenidir."
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Web kameramın çalışıp çalışmadığını nasıl kontrol ederim?", "a": "\"Kamerayı test et\"e tıklayın ve erişime izin verin. Kendinizi görüyorsanız ve durum yeşile dönüyorsa kamera çalışıyordur. Etiketler gerçek çözünürlüğü ve FPS'yi gösterir." },
+        { "q": "Görüntü neden ayna gibi ters?", "a": "Ön kameralar varsayılan olarak aynalanır, çünkü bu tıpkı bir ayna gibi doğal hissettirir. Görüşmedeki diğer kişiler sizi aynalanmamış görür. Değiştirmek için Ayna düğmesini kullanın." },
+        { "q": "Web kameramın FPS'si neden düşük?", "a": "Genellikle düşük ışık, yoğun bir USB portu veya yüksek çözünürlük nedeniyle. Işığı artırın, 720p seçin veya kamerayı doğrudan bilgisayara bağlayın." },
+        { "q": "Telefonumun ön ve arka kameralarını test edebilir miyim?", "a": "Evet. Bu sayfayı telefonunuzda açın ve ön ve arka kameralar arasında geçiş yapmak için \"Kamera değiştir\"e dokunun." },
+        { "q": "Fotoğraflarım yükleniyor mu?", "a": "Hayır. Fotoğraflar ve videolar tarayıcınızda oluşturulur ve yalnızca siz indirirseniz kaydedilir." }
+      ]
+    },
+    "speaker": {
+      "title": "Hoparlör Testi — Online Sol/Sağ Ses ve Kulaklık Testi",
+      "description": "Online hoparlör ve kulaklık testi. Sol, sağ ve orta tonları çalın, frekansı ayarlayın ve bas, tiz ve stereo kanalları 40 Hz–16 kHz taramayla kontrol edin.",
+      "h1Html": "Online <span class=\"grad\">hoparlör testi</span>",
+      "lead": "Hoparlörlerinizin ve kulaklığınızın çalıştığını, sol ve sağın ters olmadığını ve duyma aralığınızla ekipmanınızın nereye kadar ulaştığını kontrol edin.",
+      "article": [
+        {
+          "h": "Hoparlör veya kulaklık nasıl test edilir?",
+          "ol": [
+            "Sistem ses düzeyini rahat ve düşük bir seviyeye ayarlayın.",
+            "Önce Sol'a, sonra Sağ'a basın. Her ses yalnızca o taraftan gelmelidir.",
+            "Orta sesi kontrol etmek için İkisi'ne basın.",
+            "Derin bastan yüksek tize kadar aralığı duymak için frekans taramasını çalıştırın."
+          ]
+        },
+        {
+          "h": "Sol ve sağ ters mi veya biri hiç çalmıyor mu?",
+          "p": [
+            "Sol ton sağdan geliyorsa kulaklığınızı ters takmışsınızdır ya da bir kablo veya adaptör ters bağlanmıştır. Bir taraf sessizse ses ayarlarınızdaki balans ayarını kontrol edin (Windows: Ayarlar → Sistem → Ses → cihazınız → Sol/Sağ; macOS: Sistem Ayarları → Ses → Çıkış → Balans), ardından başka bir kablo veya port deneyin.",
+            "Bazı telefon ve dizüstü bilgisayarlarda tek bir mono hoparlör bulunur. Bu durumda Sol ve Sağ aynı yerden gelir ve bu beklenen bir durumdur."
+          ]
+        },
+        {
+          "h": "Frekans taraması ve duyma aralığınız",
+          "p": [
+            "Gençler genellikle yaklaşık 20 Hz ile 20 kHz arasını duyabilir. Üst sınır yaşla birlikte düşer ve birçok yetişkin 14–16 kHz üzerindeki tonları duymaz. Küçük laptop ve telefon hoparlörleri çoğu zaman 100–150 Hz'in altını pek veremez; bu yüzden işitmeniz yerinde olsa bile taramanın başı bu cihazlarda sessiz olabilir. Ses düzeyini düşük tutun: yüksek frekanslı tonlar rahatsız edici olabilir."
+          ]
+        },
+        {
+          "h": "Hiç ses yok mu?",
+          "ul": [
+            "Sistemin ve tarayıcı sekmesinin sessize alınmadığından emin olun. Sekmede üstü çizili hoparlör simgesi olup olmadığına bakın.",
+            "Doğru çıkış cihazının seçili olduğundan emin olun (Bluetooth kulaklıklar çoğu zaman otomatik olarak devreye girer).",
+            "Kablolu kulaklığı çıkarıp yeniden takın veya Bluetooth kulaklığı yeniden eşleştirin.",
+            "iPhone'da Sessiz modu kapatın. Android'de zil sesini değil medya ses düzeyini artırın."
+          ]
+        }
+      ],
+      "faq": [
+        { "q": "Sol ve sağ hoparlörleri nasıl test ederim?", "a": "Sol düğmesine basın. Ton yalnızca sol taraftan gelmelidir. Ardından Sağ'a basın. Ters ise kulaklığınızı ters çevirin veya kabloyu ve balans ayarlarını kontrol edin." },
+        { "q": "Yüksek frekansları neden duyamıyorum?", "a": "15 kHz üzerindeki sesleri duyma yeteneği yaşla doğal olarak azalır ve birçok küçük hoparlör çok yüksek veya çok düşük frekansları çalamaz. İkisi de normaldir." },
+        { "q": "Test tonu kulaklarım için güvenli mi?", "a": "Normal ses düzeyinde evet. Özellikle kulaklıkla, düşük sistem ses düzeyiyle başlayın ve yavaş yavaş artırın." },
+        { "q": "Bluetooth kulaklıklarla çalışıyor mu?", "a": "Evet. Önce bağlayın ki etkin ses çıkışı olsunlar, ardından tonları çalın." }
+      ]
+    }
+  }
+}
