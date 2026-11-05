@@ -61,7 +61,7 @@ img { max-width: 100%; }
 .top-actions { display: flex; gap: 8px; }
 .icon-btn {
   width: 40px; height: 40px; border-radius: 12px; border: 1px solid var(--line);
-  background: var(--bg2); color: var(--text); font-weight: 700; cursor: pointer; font-size: 14px;
+  background: var(--bg2); color: var(--text); font-weight: 700; cursor: pointer; font-size: 14px; display: inline-flex; align-items: center; justify-content: center;
 }
 
 /* hero */
@@ -282,4 +282,7 @@ select {
   .lang-pick select { max-width: 96px; }
   .article p, .article li { font-size: 16px; }
   .ad-slot { min-height: 260px; }
+}
+@media (max-width: 760px) {
+  .row-actions .btn { white-space: nowrap; font-size: 14px; padding-inline: 12px; }
 }

@@ -136,7 +136,7 @@ function header(lang, page) {
         <span aria-hidden="true">🌐</span>
         <select id="langSelect" aria-label="${esc(u.language)}">${opts}</select>
       </label>
-      <button class="icon-btn" id="themeBtn" type="button" aria-label="Theme">◐</button>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Theme"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
     </div>
   </div>
 </header>`;
@@ -348,7 +348,7 @@ function renderPage(lang, page) {
 
   const statuses = def.tools.map((k) => {
     const id = { mic: 'stMic', cam: 'stCam', spk: 'stSpk' }[k];
-    return `<div class="status" id="${id}"><span class="dot"></span><span>${esc(u[k])}</span>: <b>${esc(u.notTested)}</b></div>`;
+    return `<div class="status" id="${id}"><span class="dot"></span><span>${esc(u[k])}:</span> <b>${esc(u.notTested)}</b></div>`;
   }).join('');
 
   const cta = isHome
