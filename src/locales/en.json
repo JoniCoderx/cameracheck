@@ -46,11 +46,11 @@
     "camTest": "Webcam test",
     "camHint": "Allow camera access to see yourself. Check the image, resolution and frame rate.",
     "camOff": "Camera is off",
-    "snap": "📸 Snapshot",
-    "mirror": "⇋ Mirror",
-    "flip": "🔄 Switch camera",
-    "grid": "# Grid",
-    "fullscreen": "⛶ Fullscreen",
+    "snap": "Snapshot",
+    "mirror": "Mirror",
+    "flip": "Switch camera",
+    "grid": "Grid",
+    "fullscreen": "Fullscreen",
     "recVideo": "Record clip",
     "resolution": "Resolution",
     "fps": "Frame rate",
@@ -65,8 +65,8 @@
     "toneFreq": "Tone frequency",
     "sweep": "Frequency sweep",
     "spkAsk": "Did you hear it?",
-    "yes": "Yes 👍",
-    "no": "No 👎",
+    "yes": "Yes",
+    "no": "No",
     "devTitle": "Detected devices",
     "devHint": "Device names appear after you allow access.",
     "refresh": "Refresh",
@@ -85,10 +85,10 @@
     "about": "About",
     "contact": "Contact",
     "ad": "Advertisement",
-    "vSilent": "No sound detected — speak up",
-    "vLow": "Very quiet — move closer",
+    "vSilent": "No sound detected. Speak up",
+    "vLow": "Very quiet. Move closer",
     "vGood": "Sounds great ✓",
-    "vLoud": "Too loud — may distort",
+    "vLoud": "Too loud, may distort",
     "vDetected": "Microphone is working ✓",
     "on": "On",
     "off": "Off",
@@ -107,22 +107,22 @@
     "errInsecure": "Camera and microphone only work over HTTPS. Open this page via https:// or localhost.",
     "errUnsupported": "Your browser does not support camera/microphone access.",
     "echoWarn": "Use headphones to avoid feedback",
-    "snapSaved": "Snapshot saved below — tap it to download",
+    "snapSaved": "Snapshot saved below. Tap it to download",
     "spkThanks": "Speakers marked as working",
     "spkSorry": "Check volume, mute and output device",
-    "noDevices": "No devices yet — press Start above"
+    "noDevices": "No devices yet. Press Start above"
   },
   "pages": {
     "home": {
-      "title": "Mic & Webcam Test — Free Online Microphone and Camera Check",
-      "description": "Test your microphone, webcam and speakers online in one click. Live mic level meter, recording and playback, camera resolution and FPS check. Free, private, nothing is uploaded.",
+      "title": "Mic & Webcam Test: Free Online Microphone and Camera Check",
+      "description": "Mic test and webcam test in one click. Live mic level meter, recording and playback, camera resolution and FPS check. Free, private, nothing is uploaded.",
       "h1Html": "Is your <span class=\"grad\">mic &amp; camera</span> working?",
       "lead": "Test your microphone, webcam and speakers in seconds. No sign-up, no downloads, nothing leaves your device.",
       "article": [
         {
           "h": "How to test your microphone and webcam online",
           "p": [
-            "MicNCam checks your microphone, webcam and speakers directly in your browser. Press the button below the headline and allow access when your browser asks. That's it: no app to install and no account to create."
+            "MicTest+ checks your microphone, webcam and speakers right in your browser. Press the button under the headline and allow access when your browser asks. No app to install, no account to create."
           ],
           "ol": [
             "Click \"Test everything\" (or start the mic or camera test on its own).",
@@ -142,7 +142,7 @@
         {
           "h": "Test before Zoom, Teams, Google Meet or Discord",
           "p": [
-            "A quick check before an important meeting, interview, online class or stream saves you from the classic \"can you hear me?\" moment. Choose the same microphone and camera here that you plan to use in Zoom, Microsoft Teams, Google Meet, Skype, Discord or OBS. If they work on MicNCam, they work in the browser, so any remaining problem is in that app's own audio or video settings."
+            "A quick check before an important meeting, interview, online class or stream saves you from the classic \"can you hear me?\" moment. Choose the same microphone and camera here that you plan to use in Zoom, Microsoft Teams, Google Meet, Skype, Discord or OBS. If they work on MicTest+, they work in the browser, so any remaining problem is in that app's own audio or video settings."
           ]
         },
         {
@@ -153,7 +153,7 @@
             "Pick the right device: use the drop-down to switch between built-in, USB and Bluetooth devices.",
             "Check system privacy settings: on Windows open Settings → Privacy & security → Camera / Microphone; on macOS open System Settings → Privacy & Security.",
             "Look for hardware switches: many laptops have a camera shutter or a mute key, and headsets often have an inline mute switch.",
-            "Update drivers or restart: a simple restart fixes a surprising number of \"device not found\" errors."
+            "Update drivers or restart: a reboot clears most \"device not found\" errors."
           ]
         },
         {
@@ -164,17 +164,35 @@
         }
       ],
       "faq": [
-        { "q": "Is this mic and webcam test free?", "a": "Yes, it is completely free with no sign-up, no limits and nothing to install." },
-        { "q": "Is my audio or video recorded or uploaded?", "a": "No. Everything happens inside your browser. Nothing is uploaded or stored on any server." },
-        { "q": "My browser didn't ask for permission. What do I do?", "a": "Click the camera or lock icon in the address bar, set Camera and Microphone to \"Allow\", and reload the page. On iPhone go to Settings → Safari → Camera / Microphone and choose \"Ask\" or \"Allow\"." },
-        { "q": "Why does my camera show a black screen?", "a": "Another app may be using the camera, a privacy shutter may be closed, or the selected resolution isn't supported. Close other apps, open the shutter, try another resolution, or pick another camera from the list." },
-        { "q": "Does it work on iPhone and Android?", "a": "Yes. It works in Safari, Chrome, Firefox, Edge and Samsung Internet on iOS and Android. Use \"Switch camera\" to test both the front and back cameras." },
-        { "q": "Which browsers are supported?", "a": "Any modern browser: Chrome, Edge, Firefox, Safari, Opera, Brave and Samsung Internet. The page has to be opened over HTTPS for camera and mic access." }
+        {
+          "q": "Is this mic and webcam test free?",
+          "a": "Yes, it is completely free with no sign-up, no limits and nothing to install."
+        },
+        {
+          "q": "Is my audio or video recorded or uploaded?",
+          "a": "No. Everything happens inside your browser. Nothing is uploaded or stored on any server."
+        },
+        {
+          "q": "My browser didn't ask for permission. What do I do?",
+          "a": "Click the camera or lock icon in the address bar, set Camera and Microphone to \"Allow\", and reload the page. On iPhone go to Settings → Safari → Camera / Microphone and choose \"Ask\" or \"Allow\"."
+        },
+        {
+          "q": "Why does my camera show a black screen?",
+          "a": "Another app may be using the camera, a privacy shutter may be closed, or the selected resolution isn't supported. Close other apps, open the shutter, try another resolution, or pick another camera from the list."
+        },
+        {
+          "q": "Does it work on iPhone and Android?",
+          "a": "Yes. It works in Safari, Chrome, Firefox, Edge and Samsung Internet on iOS and Android. Use \"Switch camera\" to test both the front and back cameras."
+        },
+        {
+          "q": "Which browsers are supported?",
+          "a": "Any modern browser: Chrome, Edge, Firefox, Safari, Opera, Brave and Samsung Internet. The page has to be opened over HTTPS for camera and mic access."
+        }
       ]
     },
     "mic": {
-      "title": "Mic Test — Free Online Microphone Test (Instant & Private)",
-      "description": "Test your microphone online in one click. See a live level meter in dB, waveform and frequency spectrum, then record and play back your voice. Works with any mic, headset or phone.",
+      "title": "Mic Test: Free Online Microphone Test (Instant & Private)",
+      "description": "Free online mic test and mic check. See a live level meter in dB, waveform and spectrum, then record and play back your voice. Works with any mic or headset.",
       "h1Html": "Online <span class=\"grad\">mic test</span>",
       "lead": "Check if your microphone works in seconds. Speak and watch the level meter, then record and listen back to how you sound.",
       "article": [
@@ -217,16 +235,35 @@
         }
       ],
       "faq": [
-        { "q": "How do I know if my microphone is working?", "a": "Start the test and speak. If the level meter and waveform move with your voice and the status turns green, your mic works. Record a 5-second clip and play it back to confirm the quality." },
-        { "q": "Why is my mic so quiet?", "a": "The input gain is probably low. Raise the input volume in your operating system's sound settings, move closer to the mic, and check that you selected the right device in the drop-down." },
-        { "q": "Why does my microphone pick up an echo?", "a": "Usually your speakers are feeding back into the mic. Use headphones, lower the speaker volume, and keep echo cancellation enabled in your calling app." },
-        { "q": "Can I test a USB or Bluetooth microphone?", "a": "Yes. Connect it, press Refresh in the device list if needed, and choose it from the microphone drop-down." },
-        { "q": "Can I download my test recording?", "a": "Yes. After recording, press Download to save the clip. It is created in your browser and never uploaded." }
+        {
+          "q": "How do I know if my microphone is working?",
+          "a": "Start the test and speak. If the level meter and waveform move with your voice and the status turns green, your mic works. Record a 5-second clip and play it back to confirm the quality."
+        },
+        {
+          "q": "Can I use this as a quick mic check before a call?",
+          "a": "Yes. Open the page, press Start and say a few words. If the meter moves and the status turns green, your mic check is done. It takes about five seconds."
+        },
+        {
+          "q": "Why is my mic so quiet?",
+          "a": "The input gain is probably low. Raise the input volume in your operating system's sound settings, move closer to the mic, and check that you selected the right device in the drop-down."
+        },
+        {
+          "q": "Why does my microphone pick up an echo?",
+          "a": "Usually your speakers are feeding back into the mic. Use headphones, lower the speaker volume, and keep echo cancellation enabled in your calling app."
+        },
+        {
+          "q": "Can I test a USB or Bluetooth microphone?",
+          "a": "Yes. Connect it, press Refresh in the device list if needed, and choose it from the microphone drop-down."
+        },
+        {
+          "q": "Can I download my test recording?",
+          "a": "Yes. After recording, press Download to save the clip. It is created in your browser and never uploaded."
+        }
       ]
     },
     "webcam": {
-      "title": "Webcam Test — Check Your Camera Online (Resolution & FPS)",
-      "description": "Free online webcam test. See your live camera, real resolution, frame rate (FPS), aspect ratio and brightness. Take snapshots and record clips. Works with laptop, USB and phone cameras.",
+      "title": "Webcam Test: Check Your Camera Online (Resolution & FPS)",
+      "description": "Free online webcam test and cam test. See your live camera, real resolution, FPS, aspect ratio and brightness. Take snapshots and record clips.",
       "h1Html": "Online <span class=\"grad\">webcam test</span>",
       "lead": "Make sure your camera works and looks good. See the live picture, the real resolution and FPS, and take a snapshot in one click.",
       "article": [
@@ -268,16 +305,35 @@
         }
       ],
       "faq": [
-        { "q": "How do I check if my webcam works?", "a": "Click \"Start webcam test\" and allow access. If you see yourself and the status turns green, the camera works. The badges show the real resolution and FPS." },
-        { "q": "Why is the picture mirrored?", "a": "Front cameras are mirrored by default because that feels natural, like a mirror. Others on a call see you unmirrored. Use the Mirror button to switch." },
-        { "q": "Why is my webcam FPS low?", "a": "Usually low light, a busy USB port or a high resolution. Add light, choose 720p, or connect the camera directly to the computer." },
-        { "q": "Can I test my phone's front and back cameras?", "a": "Yes. Open this page on your phone and tap \"Switch camera\" to toggle between the front and rear cameras." },
-        { "q": "Are my snapshots uploaded?", "a": "No. Snapshots and clips are created in your browser and only saved if you download them." }
+        {
+          "q": "How do I check if my webcam works?",
+          "a": "Click \"Start webcam test\" and allow access. If you see yourself and the status turns green, the camera works. The badges show the real resolution and FPS."
+        },
+        {
+          "q": "Is a webcam test the same as a camera test or cam test?",
+          "a": "Yes. Webcam test, camera test and cam test all mean the same thing here: checking that your camera turns on, how sharp the picture is and how smooth the video runs."
+        },
+        {
+          "q": "Why is the picture mirrored?",
+          "a": "Front cameras are mirrored by default because that feels natural, like a mirror. Others on a call see you unmirrored. Use the Mirror button to switch."
+        },
+        {
+          "q": "Why is my webcam FPS low?",
+          "a": "Usually low light, a busy USB port or a high resolution. Add light, choose 720p, or connect the camera directly to the computer."
+        },
+        {
+          "q": "Can I test my phone's front and back cameras?",
+          "a": "Yes. Open this page on your phone and tap \"Switch camera\" to toggle between the front and rear cameras."
+        },
+        {
+          "q": "Are my snapshots uploaded?",
+          "a": "No. Snapshots and clips are created in your browser and only saved if you download them."
+        }
       ]
     },
     "speaker": {
-      "title": "Speaker Test — Left/Right Audio & Headphone Test Online",
-      "description": "Test your speakers and headphones online. Play left, right and center tones, adjust the frequency and run a 40 Hz–16 kHz sweep to check bass, treble and stereo channels.",
+      "title": "Speaker Test: Left/Right Audio & Headphone Test Online",
+      "description": "Speaker test and headphone test online. Play left, right and center tones, adjust the frequency and run a 40 Hz to 16 kHz sweep for bass and treble.",
       "h1Html": "Online <span class=\"grad\">speaker test</span>",
       "lead": "Check that your speakers and headphones work, that left and right aren't swapped, and how far your hearing and gear reach.",
       "article": [
@@ -314,10 +370,22 @@
         }
       ],
       "faq": [
-        { "q": "How do I test left and right speakers?", "a": "Press the Left button. The tone should play only from the left side. Then press Right. If they're reversed, swap your headphones or check the cable and balance settings." },
-        { "q": "Why can't I hear the high frequencies?", "a": "Hearing above 15 kHz naturally decreases with age, and many small speakers can't play very high or very low frequencies. Both are normal." },
-        { "q": "Is the test tone safe for my ears?", "a": "Yes at normal volume. Start with low system volume and turn it up gradually, especially with headphones." },
-        { "q": "Does it work with Bluetooth headphones?", "a": "Yes. Connect them first so they become the active output, then play the tones." }
+        {
+          "q": "How do I test left and right speakers?",
+          "a": "Press the Left button. The tone should play only from the left side. Then press Right. If they're reversed, swap your headphones or check the cable and balance settings."
+        },
+        {
+          "q": "Why can't I hear the high frequencies?",
+          "a": "Hearing above 15 kHz naturally decreases with age, and many small speakers can't play very high or very low frequencies. Both are normal."
+        },
+        {
+          "q": "Is the test tone safe for my ears?",
+          "a": "Yes at normal volume. Start with low system volume and turn it up gradually, especially with headphones."
+        },
+        {
+          "q": "Does it work with Bluetooth headphones?",
+          "a": "Yes. Connect them first so they become the active output, then play the tones."
+        }
       ]
     }
   }

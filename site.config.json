@@ -1,8 +1,8 @@
 {
-  "siteName": "MicNCam",
-  "domain": "https://micncam.com",
-  "contactEmail": "hello@micncam.com",
-  "googleSiteVerification": "",
+  "siteName": "MicTest+",
+  "domain": "https://mictestplus.com",
+  "contactEmail": "hello@mictestplus.com",
+  "googleSiteVerification": "jyrNmexLOA1UCxo8Ec0iNP6RGUKcgb4gUAKu1PQSSi0",
   "bingSiteVerification": "",
   "ga4Id": "",
   "adsense": {
@@ -13,5 +13,19 @@
       "beforeFooter": ""
     }
   },
-  "languages": ["en", "es", "pt", "fr", "de", "it", "ru", "tr", "id", "ja", "ar", "he", "hi"]
+  "languages": [
+    "en",
+    "es",
+    "pt",
+    "fr",
+    "de",
+    "it",
+    "ru",
+    "tr",
+    "id",
+    "ja",
+    "ar",
+    "he",
+    "hi"
+  ]
 }

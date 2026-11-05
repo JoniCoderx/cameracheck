@@ -46,11 +46,11 @@
     "camTest": "Tes webcam",
     "camHint": "Izinkan akses kamera untuk melihat diri Anda. Periksa gambar, resolusi, dan frame rate.",
     "camOff": "Kamera mati",
-    "snap": "📸 Foto",
-    "mirror": "⇋ Cermin",
-    "flip": "🔄 Ganti kamera",
-    "grid": "# Grid",
-    "fullscreen": "⛶ Layar penuh",
+    "snap": "Foto",
+    "mirror": "Cermin",
+    "flip": "Ganti kamera",
+    "grid": "Grid",
+    "fullscreen": "Layar penuh",
     "recVideo": "Rekam klip",
     "resolution": "Resolusi",
     "fps": "Frame rate",
@@ -65,8 +65,8 @@
     "toneFreq": "Frekuensi nada",
     "sweep": "Sweep frekuensi",
     "spkAsk": "Apakah terdengar?",
-    "yes": "Ya 👍",
-    "no": "Tidak 👎",
+    "yes": "Ya",
+    "no": "Tidak",
     "devTitle": "Perangkat terdeteksi",
     "devHint": "Nama perangkat muncul setelah Anda mengizinkan akses.",
     "refresh": "Muat ulang",
@@ -85,10 +85,10 @@
     "about": "Tentang",
     "contact": "Kontak",
     "ad": "Iklan",
-    "vSilent": "Tidak ada suara — bicara lebih keras",
-    "vLow": "Sangat pelan — mendekatlah",
+    "vSilent": "Tidak ada suara, bicara lebih keras",
+    "vLow": "Sangat pelan, mendekatlah",
     "vGood": "Suara bagus ✓",
-    "vLoud": "Terlalu keras — bisa pecah",
+    "vLoud": "Terlalu keras, bisa pecah",
     "vDetected": "Mikrofon berfungsi ✓",
     "on": "Aktif",
     "off": "Mati",
@@ -107,14 +107,14 @@
     "errInsecure": "Kamera dan mikrofon hanya berfungsi melalui HTTPS. Buka halaman ini lewat https:// atau localhost.",
     "errUnsupported": "Browser Anda tidak mendukung akses kamera/mikrofon.",
     "echoWarn": "Gunakan headphone agar tidak terjadi feedback",
-    "snapSaved": "Foto disimpan di bawah — ketuk untuk mengunduh",
+    "snapSaved": "Foto disimpan di bawah, ketuk untuk mengunduh",
     "spkThanks": "Speaker ditandai berfungsi",
     "spkSorry": "Periksa volume, mode senyap, dan perangkat output",
-    "noDevices": "Belum ada perangkat — tekan Mulai di atas"
+    "noDevices": "Belum ada perangkat, tekan Mulai di atas"
   },
   "pages": {
     "home": {
-      "title": "Tes Mic & Webcam — Tes Mikrofon dan Kamera Online Gratis",
+      "title": "Tes Mic & Webcam: Tes Mikrofon dan Kamera Online Gratis",
       "description": "Tes mic, tes kamera, dan tes speaker online dengan sekali klik. Meter level mic langsung, rekam dan putar ulang, cek resolusi dan FPS kamera. Gratis dan privat.",
       "h1Html": "Apakah <span class=\"grad\">mic &amp; kamera</span> Anda berfungsi?",
       "lead": "Tes mikrofon, webcam, dan speaker Anda dalam hitungan detik. Tanpa daftar, tanpa unduhan, tidak ada data yang keluar dari perangkat Anda.",
@@ -122,7 +122,7 @@
         {
           "h": "Cara tes mikrofon dan webcam secara online",
           "p": [
-            "MicNCam memeriksa mikrofon, webcam, dan speaker Anda langsung di browser. Tekan tombol di bawah judul dan izinkan akses saat browser meminta. Selesai: tidak perlu memasang aplikasi dan tidak perlu membuat akun."
+            "MicTest+ memeriksa mikrofon, webcam, dan speaker Anda langsung di browser. Tekan tombol di bawah judul dan izinkan akses saat browser meminta. Selesai: tidak perlu memasang aplikasi dan tidak perlu membuat akun."
           ],
           "ol": [
             "Klik \"Tes semuanya\" (atau mulai tes mic atau kamera secara terpisah).",
@@ -142,7 +142,7 @@
         {
           "h": "Tes sebelum Zoom, Teams, Google Meet, atau Discord",
           "p": [
-            "Cek singkat sebelum rapat penting, wawancara, kelas online, atau streaming menyelamatkan Anda dari momen klasik \"suaraku kedengaran nggak?\". Pilih mikrofon dan kamera yang sama di sini dengan yang akan Anda pakai di Zoom, Microsoft Teams, Google Meet, Skype, Discord, atau OBS. Jika berfungsi di MicNCam, berarti berfungsi di browser, jadi masalah yang tersisa ada di pengaturan audio atau video aplikasi tersebut."
+            "Cek singkat sebelum rapat penting, wawancara, kelas online, atau streaming menyelamatkan Anda dari momen klasik \"suaraku kedengaran nggak?\". Pilih mikrofon dan kamera yang sama di sini dengan yang akan Anda pakai di Zoom, Microsoft Teams, Google Meet, Skype, Discord, atau OBS. Jika berfungsi di MicTest+, berarti berfungsi di browser, jadi masalah yang tersisa ada di pengaturan audio atau video aplikasi tersebut."
           ]
         },
         {
@@ -164,16 +164,34 @@
         }
       ],
       "faq": [
-        { "q": "Apakah tes mic dan webcam ini gratis?", "a": "Ya, sepenuhnya gratis tanpa daftar, tanpa batasan, dan tanpa perlu memasang apa pun." },
-        { "q": "Apakah audio atau video saya direkam atau diunggah?", "a": "Tidak. Semuanya terjadi di dalam browser Anda. Tidak ada yang diunggah atau disimpan di server mana pun." },
-        { "q": "Browser saya tidak meminta izin. Apa yang harus dilakukan?", "a": "Klik ikon kamera atau gembok di bilah alamat, setel Kamera dan Mikrofon ke \"Izinkan\", lalu muat ulang halaman. Di iPhone buka Pengaturan → Safari → Kamera / Mikrofon dan pilih \"Tanya\" atau \"Izinkan\"." },
-        { "q": "Kenapa kamera saya menampilkan layar hitam?", "a": "Mungkin kamera sedang dipakai aplikasi lain, penutup privasi tertutup, atau resolusi yang dipilih tidak didukung. Tutup aplikasi lain, buka penutupnya, coba resolusi lain, atau pilih kamera lain dari daftar." },
-        { "q": "Apakah bisa di iPhone dan Android?", "a": "Bisa. Berfungsi di Safari, Chrome, Firefox, Edge, dan Samsung Internet di iOS dan Android. Gunakan \"Ganti kamera\" untuk mengetes kamera depan dan belakang." },
-        { "q": "Browser apa saja yang didukung?", "a": "Semua browser modern: Chrome, Edge, Firefox, Safari, Opera, Brave, dan Samsung Internet. Halaman harus dibuka melalui HTTPS agar bisa mengakses kamera dan mic." }
+        {
+          "q": "Apakah tes mic dan webcam ini gratis?",
+          "a": "Ya, sepenuhnya gratis tanpa daftar, tanpa batasan, dan tanpa perlu memasang apa pun."
+        },
+        {
+          "q": "Apakah audio atau video saya direkam atau diunggah?",
+          "a": "Tidak. Semuanya terjadi di dalam browser Anda. Tidak ada yang diunggah atau disimpan di server mana pun."
+        },
+        {
+          "q": "Browser saya tidak meminta izin. Apa yang harus dilakukan?",
+          "a": "Klik ikon kamera atau gembok di bilah alamat, setel Kamera dan Mikrofon ke \"Izinkan\", lalu muat ulang halaman. Di iPhone buka Pengaturan → Safari → Kamera / Mikrofon dan pilih \"Tanya\" atau \"Izinkan\"."
+        },
+        {
+          "q": "Kenapa kamera saya menampilkan layar hitam?",
+          "a": "Mungkin kamera sedang dipakai aplikasi lain, penutup privasi tertutup, atau resolusi yang dipilih tidak didukung. Tutup aplikasi lain, buka penutupnya, coba resolusi lain, atau pilih kamera lain dari daftar."
+        },
+        {
+          "q": "Apakah bisa di iPhone dan Android?",
+          "a": "Bisa. Berfungsi di Safari, Chrome, Firefox, Edge, dan Samsung Internet di iOS dan Android. Gunakan \"Ganti kamera\" untuk mengetes kamera depan dan belakang."
+        },
+        {
+          "q": "Browser apa saja yang didukung?",
+          "a": "Semua browser modern: Chrome, Edge, Firefox, Safari, Opera, Brave, dan Samsung Internet. Halaman harus dibuka melalui HTTPS agar bisa mengakses kamera dan mic."
+        }
       ]
     },
     "mic": {
-      "title": "Tes Mic — Tes Mikrofon Online Gratis (Cepat & Privat)",
+      "title": "Tes Mic: Tes Mikrofon Online Gratis (Cepat & Privat)",
       "description": "Tes mic online sekali klik. Lihat meter level dB, gelombang suara, dan spektrum frekuensi langsung, lalu rekam dan dengarkan suara Anda. Untuk mic apa pun.",
       "h1Html": "<span class=\"grad\">Tes mic</span> online",
       "lead": "Cek apakah mikrofon Anda berfungsi dalam hitungan detik. Bicaralah dan perhatikan meter level, lalu rekam dan dengarkan kembali suara Anda.",
@@ -217,15 +235,30 @@
         }
       ],
       "faq": [
-        { "q": "Bagaimana cara tahu mikrofon saya berfungsi?", "a": "Mulai tes dan berbicaralah. Jika meter level dan gelombang suara bergerak mengikuti suara Anda dan status berubah hijau, mic Anda berfungsi. Rekam klip 5 detik dan putar ulang untuk memastikan kualitasnya." },
-        { "q": "Kenapa suara mic saya pelan sekali?", "a": "Gain input kemungkinan rendah. Naikkan volume input di pengaturan suara sistem operasi Anda, dekatkan diri ke mic, dan pastikan Anda memilih perangkat yang benar di menu drop-down." },
-        { "q": "Kenapa mikrofon saya menangkap gema?", "a": "Biasanya suara dari speaker masuk kembali ke mic. Gunakan headphone, kecilkan volume speaker, dan biarkan peredam gema aktif di aplikasi panggilan Anda." },
-        { "q": "Bisakah saya mengetes mikrofon USB atau Bluetooth?", "a": "Bisa. Sambungkan, tekan Muat ulang di daftar perangkat jika perlu, lalu pilih dari menu drop-down mikrofon." },
-        { "q": "Bisakah saya mengunduh rekaman tes saya?", "a": "Bisa. Setelah merekam, tekan Unduh untuk menyimpan klipnya. Klip dibuat di browser Anda dan tidak pernah diunggah." }
+        {
+          "q": "Bagaimana cara tahu mikrofon saya berfungsi?",
+          "a": "Mulai tes dan berbicaralah. Jika meter level dan gelombang suara bergerak mengikuti suara Anda dan status berubah hijau, mic Anda berfungsi. Rekam klip 5 detik dan putar ulang untuk memastikan kualitasnya."
+        },
+        {
+          "q": "Kenapa suara mic saya pelan sekali?",
+          "a": "Gain input kemungkinan rendah. Naikkan volume input di pengaturan suara sistem operasi Anda, dekatkan diri ke mic, dan pastikan Anda memilih perangkat yang benar di menu drop-down."
+        },
+        {
+          "q": "Kenapa mikrofon saya menangkap gema?",
+          "a": "Biasanya suara dari speaker masuk kembali ke mic. Gunakan headphone, kecilkan volume speaker, dan biarkan peredam gema aktif di aplikasi panggilan Anda."
+        },
+        {
+          "q": "Bisakah saya mengetes mikrofon USB atau Bluetooth?",
+          "a": "Bisa. Sambungkan, tekan Muat ulang di daftar perangkat jika perlu, lalu pilih dari menu drop-down mikrofon."
+        },
+        {
+          "q": "Bisakah saya mengunduh rekaman tes saya?",
+          "a": "Bisa. Setelah merekam, tekan Unduh untuk menyimpan klipnya. Klip dibuat di browser Anda dan tidak pernah diunggah."
+        }
       ]
     },
     "webcam": {
-      "title": "Tes Webcam — Cek Kamera Online (Resolusi & FPS)",
+      "title": "Tes Webcam: Cek Kamera Online (Resolusi & FPS)",
       "description": "Tes webcam online gratis. Cek kamera langsung, resolusi asli, FPS, rasio aspek, dan kecerahan. Ambil foto dan rekam klip. Untuk kamera laptop, USB, dan HP.",
       "h1Html": "<span class=\"grad\">Tes webcam</span> online",
       "lead": "Pastikan kamera Anda berfungsi dan terlihat bagus. Lihat gambar langsung, resolusi dan FPS sebenarnya, dan ambil foto dengan sekali klik.",
@@ -268,15 +301,30 @@
         }
       ],
       "faq": [
-        { "q": "Bagaimana cara cek webcam saya berfungsi?", "a": "Klik \"Mulai tes webcam\" dan izinkan akses. Jika Anda melihat diri sendiri dan status berubah hijau, kamera berfungsi. Label menampilkan resolusi dan FPS sebenarnya." },
-        { "q": "Kenapa gambarnya terbalik seperti cermin?", "a": "Kamera depan dicerminkan secara default karena terasa alami, seperti bercermin. Orang lain di panggilan melihat Anda tidak terbalik. Gunakan tombol Cermin untuk mengubahnya." },
-        { "q": "Kenapa FPS webcam saya rendah?", "a": "Biasanya karena cahaya kurang, port USB yang sibuk, atau resolusi tinggi. Tambahkan cahaya, pilih 720p, atau sambungkan kamera langsung ke komputer." },
-        { "q": "Bisakah saya mengetes kamera depan dan belakang HP?", "a": "Bisa. Buka halaman ini di HP Anda dan ketuk \"Ganti kamera\" untuk berpindah antara kamera depan dan belakang." },
-        { "q": "Apakah foto saya diunggah?", "a": "Tidak. Foto dan klip dibuat di browser Anda dan hanya tersimpan jika Anda mengunduhnya." }
+        {
+          "q": "Bagaimana cara cek webcam saya berfungsi?",
+          "a": "Klik \"Mulai tes webcam\" dan izinkan akses. Jika Anda melihat diri sendiri dan status berubah hijau, kamera berfungsi. Label menampilkan resolusi dan FPS sebenarnya."
+        },
+        {
+          "q": "Kenapa gambarnya terbalik seperti cermin?",
+          "a": "Kamera depan dicerminkan secara default karena terasa alami, seperti bercermin. Orang lain di panggilan melihat Anda tidak terbalik. Gunakan tombol Cermin untuk mengubahnya."
+        },
+        {
+          "q": "Kenapa FPS webcam saya rendah?",
+          "a": "Biasanya karena cahaya kurang, port USB yang sibuk, atau resolusi tinggi. Tambahkan cahaya, pilih 720p, atau sambungkan kamera langsung ke komputer."
+        },
+        {
+          "q": "Bisakah saya mengetes kamera depan dan belakang HP?",
+          "a": "Bisa. Buka halaman ini di HP Anda dan ketuk \"Ganti kamera\" untuk berpindah antara kamera depan dan belakang."
+        },
+        {
+          "q": "Apakah foto saya diunggah?",
+          "a": "Tidak. Foto dan klip dibuat di browser Anda dan hanya tersimpan jika Anda mengunduhnya."
+        }
       ]
     },
     "speaker": {
-      "title": "Tes Speaker — Tes Audio Kiri/Kanan & Headphone Online",
+      "title": "Tes Speaker: Tes Audio Kiri/Kanan & Headphone Online",
       "description": "Tes speaker dan headphone online. Putar nada kiri, kanan, dan tengah, atur frekuensi, dan jalankan sweep 40 Hz–16 kHz untuk cek bass, treble, dan kanal stereo.",
       "h1Html": "<span class=\"grad\">Tes speaker</span> online",
       "lead": "Pastikan speaker dan headphone Anda berfungsi, kiri dan kanan tidak tertukar, dan cek sejauh mana jangkauan pendengaran serta perangkat Anda.",
@@ -314,10 +362,22 @@
         }
       ],
       "faq": [
-        { "q": "Bagaimana cara tes speaker kiri dan kanan?", "a": "Tekan tombol Kiri. Nada hanya boleh terdengar dari sisi kiri. Lalu tekan Kanan. Jika terbalik, tukar posisi headphone Anda atau periksa kabel dan pengaturan balance." },
-        { "q": "Kenapa saya tidak bisa mendengar frekuensi tinggi?", "a": "Kemampuan mendengar di atas 15 kHz secara alami menurun seiring usia, dan banyak speaker kecil tidak bisa memutar frekuensi yang sangat tinggi atau sangat rendah. Keduanya normal." },
-        { "q": "Apakah nada tes aman untuk telinga?", "a": "Ya, pada volume normal. Mulailah dengan volume sistem rendah dan naikkan perlahan, terutama saat memakai headphone." },
-        { "q": "Apakah bisa dengan headphone Bluetooth?", "a": "Bisa. Sambungkan dulu agar menjadi output aktif, lalu putar nadanya." }
+        {
+          "q": "Bagaimana cara tes speaker kiri dan kanan?",
+          "a": "Tekan tombol Kiri. Nada hanya boleh terdengar dari sisi kiri. Lalu tekan Kanan. Jika terbalik, tukar posisi headphone Anda atau periksa kabel dan pengaturan balance."
+        },
+        {
+          "q": "Kenapa saya tidak bisa mendengar frekuensi tinggi?",
+          "a": "Kemampuan mendengar di atas 15 kHz secara alami menurun seiring usia, dan banyak speaker kecil tidak bisa memutar frekuensi yang sangat tinggi atau sangat rendah. Keduanya normal."
+        },
+        {
+          "q": "Apakah nada tes aman untuk telinga?",
+          "a": "Ya, pada volume normal. Mulailah dengan volume sistem rendah dan naikkan perlahan, terutama saat memakai headphone."
+        },
+        {
+          "q": "Apakah bisa dengan headphone Bluetooth?",
+          "a": "Bisa. Sambungkan dulu agar menjadi output aktif, lalu putar nadanya."
+        }
       ]
     }
   }

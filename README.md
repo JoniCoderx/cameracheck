@@ -1,6 +1,6 @@
-# MicNCam: free online mic, webcam and speaker test
+# MicTest+: free online mic, webcam and speaker test
 
-Live site: **[micncam.com](https://micncam.com)**. Everything runs in the browser, and no audio or video ever leaves the device.
+Live site: **[mictestplus.com](https://mictestplus.com)**. Everything runs in the browser, and no audio or video ever leaves the device.
 
 ## What's inside
 - **4 landing pages per language**, one for each search intent:
@@ -32,12 +32,12 @@ Edit text in `src/locales/`, then rebuild and commit `docs/`.
 2. At your domain registrar:
    - `A` @ → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
    - `CNAME` www → `jonicoderx.github.io`
-3. Custom domain `micncam.com` → tick **Enforce HTTPS** (camera and mic require HTTPS).
+3. Custom domain `mictestplus.com` → tick **Enforce HTTPS** (camera and mic require HTTPS).
 
 Netlify, Vercel and Cloudflare Pages also work: set the build command to `node build.mjs` and the publish directory to `docs`.
 
 ## Turning on ads (Google AdSense)
-1. Apply at <https://adsense.google.com> with `micncam.com`. The site needs to be live and indexed with real content first.
+1. Apply at <https://adsense.google.com> with `mictestplus.com`. The site needs to be live and indexed with real content first.
 2. Put your publisher ID in `site.config.json` → `adsense.client` (format `ca-pub-1234567890123456`).
 3. Optional: create three display ad units in AdSense and paste their slot IDs into `afterTool`, `inArticle` and `beforeFooter`. Without slot IDs you can still use **Auto ads** from the AdSense dashboard.
 4. `node build.mjs`, commit and push. `ads.txt` is generated automatically.
@@ -47,7 +47,7 @@ Ad placement is deliberately **below the tool**, never between the user and the 
 
 ## Getting to the top of Google: checklist
 The site side is done. These steps are yours and they matter most:
-1. **Google Search Console:** add the domain, paste the verification code into `googleSiteVerification`, rebuild, then submit `https://micncam.com/sitemap.xml`.
+1. **Google Search Console:** add the domain, paste the verification code into `googleSiteVerification`, rebuild, then submit `https://mictestplus.com/sitemap.xml`.
 2. **Bing Webmaster Tools:** same (`bingSiteVerification`). Bing also feeds DuckDuckGo, Yahoo and ChatGPT search.
 3. **Backlinks** are the #1 ranking factor here. Post the tool where people ask "is my mic working": Reddit (r/techsupport, r/discordapp, r/Twitch), Quora, Stack Exchange, Product Hunt, AlternativeTo, and "free tools" directories.
 4. Ask YouTubers or bloggers who write "how to fix your mic on Zoom/Discord" guides to link to it.

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://micncam.com/sitemap.xml
+Sitemap: https://mictestplus.com/sitemap.xml

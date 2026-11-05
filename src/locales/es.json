@@ -46,11 +46,11 @@
     "camTest": "Prueba de cámara web",
     "camHint": "Permite el acceso a la cámara para verte. Comprueba la imagen, la resolución y los FPS.",
     "camOff": "La cámara está apagada",
-    "snap": "📸 Captura",
-    "mirror": "⇋ Espejo",
-    "flip": "🔄 Cambiar cámara",
-    "grid": "# Cuadrícula",
-    "fullscreen": "⛶ Pantalla completa",
+    "snap": "Captura",
+    "mirror": "Espejo",
+    "flip": "Cambiar cámara",
+    "grid": "Cuadrícula",
+    "fullscreen": "Pantalla completa",
     "recVideo": "Grabar vídeo",
     "resolution": "Resolución",
     "fps": "Fotogramas/s",
@@ -65,8 +65,8 @@
     "toneFreq": "Frecuencia del tono",
     "sweep": "Barrido de frecuencias",
     "spkAsk": "¿Lo has oído?",
-    "yes": "Sí 👍",
-    "no": "No 👎",
+    "yes": "Sí",
+    "no": "No",
     "devTitle": "Dispositivos detectados",
     "devHint": "Los nombres de los dispositivos aparecen cuando permites el acceso.",
     "refresh": "Actualizar",
@@ -85,10 +85,10 @@
     "about": "Acerca de",
     "contact": "Contacto",
     "ad": "Publicidad",
-    "vSilent": "No se detecta sonido — habla más alto",
-    "vLow": "Muy bajo — acércate más",
+    "vSilent": "No se detecta sonido, habla más alto",
+    "vLow": "Muy bajo, acércate más",
     "vGood": "Suena genial ✓",
-    "vLoud": "Demasiado alto — puede distorsionar",
+    "vLoud": "Demasiado alto, puede distorsionar",
     "vDetected": "El micrófono funciona ✓",
     "on": "Activado",
     "off": "Desactivado",
@@ -107,14 +107,14 @@
     "errInsecure": "La cámara y el micrófono solo funcionan con HTTPS. Abre esta página mediante https:// o localhost.",
     "errUnsupported": "Tu navegador no permite acceder a la cámara o al micrófono.",
     "echoWarn": "Usa auriculares para evitar acoples",
-    "snapSaved": "Captura guardada abajo — tócala para descargarla",
+    "snapSaved": "Captura guardada abajo, tócala para descargarla",
     "spkThanks": "Altavoces marcados como funcionando",
     "spkSorry": "Revisa el volumen, el silencio y el dispositivo de salida",
-    "noDevices": "Aún no hay dispositivos — pulsa Iniciar arriba"
+    "noDevices": "Aún no hay dispositivos, pulsa Iniciar arriba"
   },
   "pages": {
     "home": {
-      "title": "Prueba de micrófono y cámara web online gratis | MicNCam",
+      "title": "Prueba de micrófono y cámara web online gratis | MicTest+",
       "description": "Haz una prueba de micrófono, cámara web y altavoces online con un clic. Medidor de nivel, grabación, resolución y FPS de la cámara. Gratis y privado.",
       "h1Html": "¿Funcionan tu <span class=\"grad\">micrófono y cámara</span>?",
       "lead": "Prueba tu micrófono, tu cámara web y tus altavoces en segundos. Sin registro, sin descargas y sin que nada salga de tu dispositivo.",
@@ -122,7 +122,7 @@
         {
           "h": "Cómo probar el micrófono y la cámara web online",
           "p": [
-            "MicNCam comprueba tu micrófono, tu cámara web y tus altavoces directamente en el navegador. Pulsa el botón que hay bajo el título y permite el acceso cuando el navegador lo pida. Eso es todo: no hay que instalar ninguna aplicación ni crear una cuenta."
+            "MicTest+ comprueba tu micrófono, tu cámara web y tus altavoces directamente en el navegador. Pulsa el botón que hay bajo el título y permite el acceso cuando el navegador lo pida. Eso es todo: no hay que instalar ninguna aplicación ni crear una cuenta."
           ],
           "ol": [
             "Haz clic en \"Probar todo\" (o inicia solo la prueba del micrófono o de la cámara).",
@@ -142,7 +142,7 @@
         {
           "h": "Haz la prueba antes de Zoom, Teams, Google Meet o Discord",
           "p": [
-            "Una comprobación rápida antes de una reunión importante, una entrevista, una clase online o un directo te ahorra el clásico \"¿me oís?\". Elige aquí el mismo micrófono y la misma cámara que vayas a usar en Zoom, Microsoft Teams, Google Meet, Skype, Discord u OBS. Si funcionan en MicNCam, funcionan en el navegador, así que cualquier problema que quede estará en los ajustes de audio o vídeo de esa aplicación."
+            "Una comprobación rápida antes de una reunión importante, una entrevista, una clase online o un directo te ahorra el clásico \"¿me oís?\". Elige aquí el mismo micrófono y la misma cámara que vayas a usar en Zoom, Microsoft Teams, Google Meet, Skype, Discord u OBS. Si funcionan en MicTest+, funcionan en el navegador, así que cualquier problema que quede estará en los ajustes de audio o vídeo de esa aplicación."
           ]
         },
         {
@@ -164,16 +164,34 @@
         }
       ],
       "faq": [
-        { "q": "¿Esta prueba de micrófono y cámara web es gratis?", "a": "Sí, es totalmente gratuita, sin registro, sin límites y sin nada que instalar." },
-        { "q": "¿Se graba o se sube mi audio o mi vídeo?", "a": "No. Todo ocurre dentro de tu navegador. No se sube ni se guarda nada en ningún servidor." },
-        { "q": "Mi navegador no me ha pedido permiso. ¿Qué hago?", "a": "Haz clic en el icono de la cámara o del candado de la barra de direcciones, pon Cámara y Micrófono en \"Permitir\" y recarga la página. En el iPhone ve a Ajustes → Safari → Cámara / Micrófono y elige \"Preguntar\" o \"Permitir\"." },
-        { "q": "¿Por qué mi cámara muestra una pantalla negra?", "a": "Puede que otra aplicación esté usando la cámara, que la tapa de privacidad esté cerrada o que la resolución elegida no sea compatible. Cierra otras aplicaciones, abre la tapa, prueba otra resolución o elige otra cámara de la lista." },
-        { "q": "¿Funciona en iPhone y Android?", "a": "Sí. Funciona en Safari, Chrome, Firefox, Edge y Samsung Internet en iOS y Android. Usa \"Cambiar cámara\" para probar la cámara frontal y la trasera." },
-        { "q": "¿Qué navegadores son compatibles?", "a": "Cualquier navegador moderno: Chrome, Edge, Firefox, Safari, Opera, Brave y Samsung Internet. La página debe abrirse con HTTPS para acceder a la cámara y al micrófono." }
+        {
+          "q": "¿Esta prueba de micrófono y cámara web es gratis?",
+          "a": "Sí, es totalmente gratuita, sin registro, sin límites y sin nada que instalar."
+        },
+        {
+          "q": "¿Se graba o se sube mi audio o mi vídeo?",
+          "a": "No. Todo ocurre dentro de tu navegador. No se sube ni se guarda nada en ningún servidor."
+        },
+        {
+          "q": "Mi navegador no me ha pedido permiso. ¿Qué hago?",
+          "a": "Haz clic en el icono de la cámara o del candado de la barra de direcciones, pon Cámara y Micrófono en \"Permitir\" y recarga la página. En el iPhone ve a Ajustes → Safari → Cámara / Micrófono y elige \"Preguntar\" o \"Permitir\"."
+        },
+        {
+          "q": "¿Por qué mi cámara muestra una pantalla negra?",
+          "a": "Puede que otra aplicación esté usando la cámara, que la tapa de privacidad esté cerrada o que la resolución elegida no sea compatible. Cierra otras aplicaciones, abre la tapa, prueba otra resolución o elige otra cámara de la lista."
+        },
+        {
+          "q": "¿Funciona en iPhone y Android?",
+          "a": "Sí. Funciona en Safari, Chrome, Firefox, Edge y Samsung Internet en iOS y Android. Usa \"Cambiar cámara\" para probar la cámara frontal y la trasera."
+        },
+        {
+          "q": "¿Qué navegadores son compatibles?",
+          "a": "Cualquier navegador moderno: Chrome, Edge, Firefox, Safari, Opera, Brave y Samsung Internet. La página debe abrirse con HTTPS para acceder a la cámara y al micrófono."
+        }
       ]
     },
     "mic": {
-      "title": "Prueba de micrófono online gratis — Test de micro al instante",
+      "title": "Prueba de micrófono online gratis: Test de micro al instante",
       "description": "Haz un test de micrófono online con un clic. Medidor de nivel en dB, forma de onda y espectro, y graba y escucha tu voz. Funciona con cualquier micro o headset.",
       "h1Html": "<span class=\"grad\">Prueba de micrófono</span> online",
       "lead": "Comprueba si tu micrófono funciona en segundos. Habla y mira el medidor de nivel; después graba y escucha cómo suenas.",
@@ -217,15 +235,30 @@
         }
       ],
       "faq": [
-        { "q": "¿Cómo sé si mi micrófono funciona?", "a": "Inicia la prueba y habla. Si el medidor de nivel y la forma de onda se mueven con tu voz y el estado se pone en verde, tu micro funciona. Graba un clip de 5 segundos y reprodúcelo para confirmar la calidad." },
-        { "q": "¿Por qué mi micro se oye tan bajo?", "a": "Probablemente la ganancia de entrada está baja. Sube el volumen de entrada en los ajustes de sonido del sistema operativo, acércate al micro y comprueba que has elegido el dispositivo correcto en el menú desplegable." },
-        { "q": "¿Por qué mi micrófono capta eco?", "a": "Normalmente los altavoces se están colando en el micro. Usa auriculares, baja el volumen de los altavoces y mantén activada la cancelación de eco en tu aplicación de llamadas." },
-        { "q": "¿Puedo probar un micrófono USB o Bluetooth?", "a": "Sí. Conéctalo, pulsa Actualizar en la lista de dispositivos si hace falta y elígelo en el menú desplegable del micrófono." },
-        { "q": "¿Puedo descargar mi grabación de prueba?", "a": "Sí. Después de grabar, pulsa Descargar para guardar el clip. Se crea en tu navegador y nunca se sube." }
+        {
+          "q": "¿Cómo sé si mi micrófono funciona?",
+          "a": "Inicia la prueba y habla. Si el medidor de nivel y la forma de onda se mueven con tu voz y el estado se pone en verde, tu micro funciona. Graba un clip de 5 segundos y reprodúcelo para confirmar la calidad."
+        },
+        {
+          "q": "¿Por qué mi micro se oye tan bajo?",
+          "a": "Probablemente la ganancia de entrada está baja. Sube el volumen de entrada en los ajustes de sonido del sistema operativo, acércate al micro y comprueba que has elegido el dispositivo correcto en el menú desplegable."
+        },
+        {
+          "q": "¿Por qué mi micrófono capta eco?",
+          "a": "Normalmente los altavoces se están colando en el micro. Usa auriculares, baja el volumen de los altavoces y mantén activada la cancelación de eco en tu aplicación de llamadas."
+        },
+        {
+          "q": "¿Puedo probar un micrófono USB o Bluetooth?",
+          "a": "Sí. Conéctalo, pulsa Actualizar en la lista de dispositivos si hace falta y elígelo en el menú desplegable del micrófono."
+        },
+        {
+          "q": "¿Puedo descargar mi grabación de prueba?",
+          "a": "Sí. Después de grabar, pulsa Descargar para guardar el clip. Se crea en tu navegador y nunca se sube."
+        }
       ]
     },
     "webcam": {
-      "title": "Prueba de cámara web online — Test de webcam (resolución y FPS)",
+      "title": "Prueba de cámara web online: Test de webcam (resolución y FPS)",
       "description": "Test de webcam online gratis. Ve tu cámara en directo, la resolución real, los FPS, la relación de aspecto y el brillo. Haz capturas y graba vídeos.",
       "h1Html": "<span class=\"grad\">Prueba de cámara web</span> online",
       "lead": "Asegúrate de que tu cámara funciona y se ve bien. Mira la imagen en directo, la resolución y los FPS reales, y haz una captura con un clic.",
@@ -268,15 +301,30 @@
         }
       ],
       "faq": [
-        { "q": "¿Cómo compruebo si mi webcam funciona?", "a": "Haz clic en \"Probar cámara\" y permite el acceso. Si te ves y el estado se pone en verde, la cámara funciona. Las etiquetas muestran la resolución y los FPS reales." },
-        { "q": "¿Por qué la imagen sale en espejo?", "a": "Las cámaras frontales se muestran en espejo por defecto porque resulta natural, como un espejo. Los demás en una llamada te ven sin invertir. Usa el botón Espejo para cambiarlo." },
-        { "q": "¿Por qué mi webcam tiene pocos FPS?", "a": "Normalmente por poca luz, un puerto USB saturado o una resolución alta. Añade luz, elige 720p o conecta la cámara directamente al ordenador." },
-        { "q": "¿Puedo probar la cámara frontal y la trasera del móvil?", "a": "Sí. Abre esta página en tu móvil y toca \"Cambiar cámara\" para alternar entre la cámara frontal y la trasera." },
-        { "q": "¿Se suben mis capturas?", "a": "No. Las capturas y los clips se crean en tu navegador y solo se guardan si los descargas." }
+        {
+          "q": "¿Cómo compruebo si mi webcam funciona?",
+          "a": "Haz clic en \"Probar cámara\" y permite el acceso. Si te ves y el estado se pone en verde, la cámara funciona. Las etiquetas muestran la resolución y los FPS reales."
+        },
+        {
+          "q": "¿Por qué la imagen sale en espejo?",
+          "a": "Las cámaras frontales se muestran en espejo por defecto porque resulta natural, como un espejo. Los demás en una llamada te ven sin invertir. Usa el botón Espejo para cambiarlo."
+        },
+        {
+          "q": "¿Por qué mi webcam tiene pocos FPS?",
+          "a": "Normalmente por poca luz, un puerto USB saturado o una resolución alta. Añade luz, elige 720p o conecta la cámara directamente al ordenador."
+        },
+        {
+          "q": "¿Puedo probar la cámara frontal y la trasera del móvil?",
+          "a": "Sí. Abre esta página en tu móvil y toca \"Cambiar cámara\" para alternar entre la cámara frontal y la trasera."
+        },
+        {
+          "q": "¿Se suben mis capturas?",
+          "a": "No. Las capturas y los clips se crean en tu navegador y solo se guardan si los descargas."
+        }
       ]
     },
     "speaker": {
-      "title": "Prueba de altavoces online — Test de sonido izquierda/derecha",
+      "title": "Prueba de altavoces online: Test de sonido izquierda/derecha",
       "description": "Prueba tus altavoces y auriculares online. Reproduce tonos izquierdo, derecho y central, ajusta la frecuencia y haz un barrido de 40 Hz–16 kHz.",
       "h1Html": "<span class=\"grad\">Prueba de altavoces</span> online",
       "lead": "Comprueba que tus altavoces y auriculares funcionan, que izquierda y derecha no están invertidos y hasta dónde llegan tu oído y tu equipo.",
@@ -314,10 +362,22 @@
         }
       ],
       "faq": [
-        { "q": "¿Cómo pruebo los altavoces izquierdo y derecho?", "a": "Pulsa el botón Izquierda. El tono debería sonar solo por el lado izquierdo. Después pulsa Derecha. Si están invertidos, gira los auriculares o revisa el cable y los ajustes de balance." },
-        { "q": "¿Por qué no oigo las frecuencias agudas?", "a": "La audición por encima de 15 kHz disminuye de forma natural con la edad, y muchos altavoces pequeños no pueden reproducir frecuencias muy altas ni muy bajas. Ambas cosas son normales." },
-        { "q": "¿El tono de prueba es seguro para mis oídos?", "a": "Sí, a un volumen normal. Empieza con el volumen del sistema bajo y súbelo poco a poco, sobre todo con auriculares." },
-        { "q": "¿Funciona con auriculares Bluetooth?", "a": "Sí. Conéctalos primero para que sean la salida activa y después reproduce los tonos." }
+        {
+          "q": "¿Cómo pruebo los altavoces izquierdo y derecho?",
+          "a": "Pulsa el botón Izquierda. El tono debería sonar solo por el lado izquierdo. Después pulsa Derecha. Si están invertidos, gira los auriculares o revisa el cable y los ajustes de balance."
+        },
+        {
+          "q": "¿Por qué no oigo las frecuencias agudas?",
+          "a": "La audición por encima de 15 kHz disminuye de forma natural con la edad, y muchos altavoces pequeños no pueden reproducir frecuencias muy altas ni muy bajas. Ambas cosas son normales."
+        },
+        {
+          "q": "¿El tono de prueba es seguro para mis oídos?",
+          "a": "Sí, a un volumen normal. Empieza con el volumen del sistema bajo y súbelo poco a poco, sobre todo con auriculares."
+        },
+        {
+          "q": "¿Funciona con auriculares Bluetooth?",
+          "a": "Sí. Conéctalos primero para que sean la salida activa y después reproduce los tonos."
+        }
       ]
     }
   }

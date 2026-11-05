@@ -14,13 +14,13 @@
 
   /* ---------------- theme ---------------- */
   let theme = null;
-  try { theme = localStorage.getItem('mnc-theme'); } catch (e) {}
+  try { theme = localStorage.getItem('mtp-theme'); } catch (e) {}
   if (theme) document.documentElement.dataset.theme = theme;
   on('#themeBtn', 'click', () => {
     const cur = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
     document.documentElement.dataset.theme = cur;
-    $('meta[name=theme-color]').setAttribute('content', cur === 'light' ? '#f6f6fb' : '#0d0d14');
-    try { localStorage.setItem('mnc-theme', cur); } catch (e) {}
+    $('meta[name=theme-color]').setAttribute('content', cur === 'light' ? '#f4f4ef' : '#0b0b0d');
+    try { localStorage.setItem('mtp-theme', cur); } catch (e) {}
   });
 
   /* ---------------- helpers ---------------- */
@@ -178,7 +178,7 @@
         // dominant frequency
         let maxI = 0, maxV = 0;
         for (let i = 2; i < freq.length; i++) if (freq[i] > maxV) { maxV = freq[i]; maxI = i; }
-        fEl.textContent = maxV > 60 ? Math.round((maxI * ctx.sampleRate) / an.fftSize) + ' Hz' : '—';
+        fEl.textContent = maxV > 60 ? Math.round((maxI * ctx.sampleRate) / an.fftSize) + ' Hz' : '–';
       }
 
       // waveform
@@ -243,7 +243,7 @@
       const blob = new Blob(chunks, { type: rec.mimeType || mime || 'audio/webm' });
       const url = URL.createObjectURL(blob);
       const a = $('#recAudio'); a.src = url; a.hidden = false; a.play().catch(() => {});
-      const dl = $('#recDl'); dl.href = url; dl.download = 'micncam-recording.' + extFor(blob.type); dl.hidden = false;
+      const dl = $('#recDl'); dl.href = url; dl.download = 'mictestplus-recording.' + extFor(blob.type); dl.hidden = false;
     };
     mic.recorder = rec; btn.classList.add('recording'); rec.start();
   });
@@ -324,7 +324,7 @@
       let fps = (cam.frames * 1000) / (now - lastT);
       cam.frames = 0; lastT = now;
       if (!fps && nominal) fps = nominal;
-      const txt = fps ? Math.round(fps) + ' fps' : '—';
+      const txt = fps ? Math.round(fps) + ' fps' : '–';
       $('#bFps').textContent = txt;
       $('#cFps').textContent = txt + (nominal ? ' / ' + Math.round(nominal) : '');
     }, 1000);
@@ -338,7 +338,7 @@
     const d = g.getImageData(0, 0, 32, 18).data; let s = 0;
     for (let i = 0; i < d.length; i += 4) s += 0.2126 * d[i] + 0.7152 * d[i + 1] + 0.0722 * d[i + 2];
     const pct = Math.round((s / (d.length / 4) / 255) * 100);
-    $('#cBri').textContent = pct + '%' + (pct < 18 ? ' 🌑' : pct > 85 ? ' ☀️' : '');
+    $('#cBri').textContent = pct + '%';
   }
 
   function stopCam(silent) {
@@ -402,7 +402,7 @@
     const f = $('#flash'); f.classList.add('go'); requestAnimationFrame(() => requestAnimationFrame(() => f.classList.remove('go')));
     c.toBlob((blob) => {
       const url = URL.createObjectURL(blob);
-      const a = document.createElement('a'); a.href = url; a.download = 'micncam-' + Date.now() + '.png';
+      const a = document.createElement('a'); a.href = url; a.download = 'mictestplus-' + Date.now() + '.png';
       const img = document.createElement('img'); img.src = url; img.alt = 'snapshot'; a.appendChild(img);
       $('#shots').prepend(a); toast(t('snapSaved'));
     }, 'image/png');
@@ -512,7 +512,7 @@
     if (!named.length) {
       const li = document.createElement('li'); li.className = 'muted'; li.textContent = t('noDevices'); ul.appendChild(li); return;
     }
-    const kinds = { audioinput: '🎙️ ' + t('mic'), videoinput: '📷 ' + t('cam'), audiooutput: '🔊 ' + t('spk') };
+    const kinds = { audioinput: t('mic'), videoinput: t('cam'), audiooutput: t('spk') };
     named.forEach((d) => {
       const li = document.createElement('li');
       const k = document.createElement('span'); k.className = 'kind'; k.textContent = kinds[d.kind] || d.kind;
@@ -538,7 +538,7 @@
   function fillInfo() {
     const { b, o } = detect();
     setText('#iBrowser', b); setText('#iOs', o);
-    setText('#iSecure', window.isSecureContext ? t('yesW') + ' 🔒' : t('noW'));
+    setText('#iSecure', window.isSecureContext ? t('yesW') : t('noW'));
     fillPerms();
   }
   async function fillPerms() {

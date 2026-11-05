@@ -1,4 +1,4 @@
-// Static site generator for MicNCam. No dependencies: `node build.mjs`
+// Static site generator for MicTest+. No dependencies: `node build.mjs`
 // Reads src/locales/*.json + site.config.json and writes the deployable site to docs/.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -65,6 +65,27 @@ for (const f of fs.readdirSync(path.join(SRC, 'static'))) {
 }
 const asset = (f) => `/${f}?v=${ver[f]}`;
 
+/* ---------- inline CSS (one less render-blocking request) ---------- */
+const minCss = (c) => c.replace(/\/\*[\s\S]*?\*\//g, '').replace(/\s+/g, ' ').replace(/\s*([{};,>])\s*/g, '$1').replace(/:\s+/g, ':').replace(/;}/g, '}').trim();
+const CSS_INLINE = minCss(fs.readFileSync(path.join(SRC, 'static/styles.css'), 'utf8'));
+
+/* ---------- icons (inline SVG, no emoji) ---------- */
+const ICONS = {
+  mic: '<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M8.5 21h7"/>',
+  cam: '<rect x="3" y="6" width="13" height="12" rx="2.5"/><path d="M16 10.5l5-3v9l-5-3z"/>',
+  spk: '<path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5z"/><path d="M15.5 9.5a3.5 3.5 0 0 1 0 5M18.5 6.5a8 8 0 0 1 0 11"/>',
+  devices: '<rect x="2.5" y="4" width="14" height="10" rx="2"/><path d="M6.5 20h6M9.5 14v6"/><rect x="18.5" y="8" width="3.5" height="12" rx="1"/>',
+  snap: '<path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/>',
+  mirror: '<path d="M12 3v18"/><path d="M8.5 7.5L4 12l4.5 4.5M15.5 7.5L20 12l-4.5 4.5"/>',
+  flip: '<path d="M20 11a8 8 0 0 0-14.5-4.5L4 8M4 3.5V8h4.5"/><path d="M4 13a8 8 0 0 0 14.5 4.5L20 16M20 20.5V16h-4.5"/>',
+  grid: '<rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M9.2 3.5v17M14.8 3.5v17M3.5 9.2h17M3.5 14.8h17"/>',
+  fullscreen: '<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/>',
+  globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9M12 3C9.5 5.6 8.2 8.6 8.2 12s1.3 6.4 3.8 9"/>',
+  moon: '<path d="M20.5 13.2A8.5 8.5 0 1 1 10.8 3.5a6.5 6.5 0 0 0 9.7 9.7z"/>'
+};
+const ic = (n) => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${ICONS[n]}</svg>`;
+const wordmark = (size) => `<img src="/favicon.svg" alt="" width="${size}" height="${size}"><span>MicTest<span class="plus">+</span></span>`;
+
 /* ---------- shared blocks ---------- */
 function adSlot(name, label) {
   if (!adsOn) return '';
@@ -87,7 +108,9 @@ function head({ lang, title, description, canonical, alternates, ogType = 'websi
 <link rel="canonical" href="${abs(canonical)}">
 ${(alternates || []).map(([hl, u]) => `<link rel="alternate" hreflang="${hl}" href="${abs(u)}">`).join('\n')}
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#0d0d14">
+<meta name="theme-color" content="#0b0b0d">
+<meta name="application-name" content="${BRAND}">
+<meta name="apple-mobile-web-app-title" content="${BRAND}">
 <meta name="color-scheme" content="dark light">
 ${cfg.googleSiteVerification ? `<meta name="google-site-verification" content="${esc(cfg.googleSiteVerification)}">` : ''}
 ${cfg.bingSiteVerification ? `<meta name="msvalidate.01" content="${esc(cfg.bingSiteVerification)}">` : ''}
@@ -99,6 +122,7 @@ ${cfg.bingSiteVerification ? `<meta name="msvalidate.01" content="${esc(cfg.bing
 <meta property="og:image" content="${DOMAIN}/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="${BRAND}: free mic, webcam and speaker test">
 <meta property="og:locale" content="${L.meta.ogLocale}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(title)}">
@@ -108,7 +132,7 @@ ${cfg.bingSiteVerification ? `<meta name="msvalidate.01" content="${esc(cfg.bing
 <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.webmanifest">
-<link rel="stylesheet" href="${asset('styles.css')}">
+<style>${CSS_INLINE}</style>
 ${adsOn ? `<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>\n<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(AD.client)}" crossorigin="anonymous"></script>` : ''}
 ${cfg.ga4Id ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(cfg.ga4Id)}"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${esc(cfg.ga4Id)}');</script>` : ''}
@@ -123,8 +147,7 @@ function header(lang, page) {
 <header class="topbar">
   <div class="wrap topbar-inner">
     <a class="brand" href="${prefix(lang)}" aria-label="${BRAND}">
-      <img src="/favicon.svg" alt="" width="32" height="32">
-      <span>Mic<b>N</b>Cam</span>
+      ${wordmark(30)}
     </a>
     <nav class="nav" aria-label="Main">
       <a href="${urlFor(lang, 'mic')}"${page === 'mic' ? ' aria-current="page"' : ''}>${esc(u.navMic)}</a>
@@ -133,10 +156,10 @@ function header(lang, page) {
     </nav>
     <div class="top-actions">
       <label class="lang-pick"><span class="sr">${esc(u.language)}</span>
-        <span aria-hidden="true">🌐</span>
+        ${ic('globe')}
         <select id="langSelect" aria-label="${esc(u.language)}">${opts}</select>
       </label>
-      <button class="icon-btn" id="themeBtn" type="button" aria-label="Theme"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Theme">${ic('moon')}</button>
     </div>
   </div>
 </header>`;
@@ -147,7 +170,7 @@ function footer(lang) {
   const langLinks = LANGS.map((l) => `<a href="${prefix(l)}" hreflang="${l}" lang="${l}">${esc(locales[l].meta.langName)}</a>`).join(' · ');
   return `<footer class="footer">
   <div class="wrap footer-inner">
-    <div class="brand small"><img src="/favicon.svg" alt="" width="22" height="22"><span>Mic<b>N</b>Cam</span></div>
+    <div class="brand small">${wordmark(24)}</div>
     <p class="muted">${esc(u.footer)}</p>
     <nav class="foot-links" aria-label="Tests">
       <a href="${urlFor(lang, 'mic')}">${esc(u.navMic)}</a> · <a href="${urlFor(lang, 'webcam')}">${esc(u.navCam)}</a> · <a href="${urlFor(lang, 'speaker')}">${esc(u.navSpk)}</a>
@@ -165,7 +188,7 @@ const micTool = (u, headTag) => `
   <div class="card">
     <div class="card-head">
       <div>
-        <${headTag} id="micTitle" class="tool-title"><span class="ico">🎙️</span> ${esc(u.micTest)}</${headTag}>
+        <${headTag} id="micTitle" class="tool-title"><span class="ico">${ic('mic')}</span> ${esc(u.micTest)}</${headTag}>
         <p class="muted">${esc(u.micHint)}</p>
       </div>
       <div class="controls">
@@ -180,23 +203,23 @@ const micTool = (u, headTag) => `
         <div class="verdict" id="micVerdict">${esc(u.waiting)}</div>
       </div>
       <div class="viz">
-        <canvas id="waveCanvas" aria-label="Waveform"></canvas>
-        <canvas id="specCanvas" aria-label="Spectrum"></canvas>
+        <canvas id="waveCanvas" role="img" aria-label="Waveform"></canvas>
+        <canvas id="specCanvas" role="img" aria-label="Spectrum"></canvas>
       </div>
     </div>
     <div class="row-actions">
       <button class="btn" id="recBtn" type="button" disabled><span class="rec-dot"></span> <span>${esc(u.record)}</span></button>
       <button class="btn" id="echoBtn" type="button" disabled>${esc(u.echoOn)}</button>
       <audio id="recAudio" controls hidden></audio>
-      <a class="btn btn-ghost" id="recDl" hidden download="micncam-recording.webm">${esc(u.download)}</a>
+      <a class="btn btn-ghost" id="recDl" hidden href="#mic">${esc(u.download)}</a>
     </div>
     <dl class="specs">
-      <div><dt>${esc(u.device)}</dt><dd id="mDev">—</dd></div>
-      <div><dt>${esc(u.sampleRate)}</dt><dd id="mRate">—</dd></div>
-      <div><dt>${esc(u.channels)}</dt><dd id="mCh">—</dd></div>
-      <div><dt>${esc(u.peakFreq)}</dt><dd id="mFreq">—</dd></div>
-      <div><dt>${esc(u.echoCancel)}</dt><dd id="mEc">—</dd></div>
-      <div><dt>${esc(u.noiseSup)}</dt><dd id="mNs">—</dd></div>
+      <div><dt>${esc(u.device)}</dt><dd id="mDev">–</dd></div>
+      <div><dt>${esc(u.sampleRate)}</dt><dd id="mRate">–</dd></div>
+      <div><dt>${esc(u.channels)}</dt><dd id="mCh">–</dd></div>
+      <div><dt>${esc(u.peakFreq)}</dt><dd id="mFreq">–</dd></div>
+      <div><dt>${esc(u.echoCancel)}</dt><dd id="mEc">–</dd></div>
+      <div><dt>${esc(u.noiseSup)}</dt><dd id="mNs">–</dd></div>
     </dl>
   </div>
 </section>`;
@@ -206,7 +229,7 @@ const camTool = (u, headTag) => `
   <div class="card">
     <div class="card-head">
       <div>
-        <${headTag} id="camTitle" class="tool-title"><span class="ico">📷</span> ${esc(u.camTest)}</${headTag}>
+        <${headTag} id="camTitle" class="tool-title"><span class="ico">${ic('cam')}</span> ${esc(u.camTest)}</${headTag}>
         <p class="muted">${esc(u.camHint)}</p>
       </div>
       <div class="controls">
@@ -222,29 +245,29 @@ const camTool = (u, headTag) => `
       </div>
     </div>
     <div class="video-wrap" id="videoWrap">
-      <video id="video" playsinline muted autoplay></video>
+      <video id="video" playsinline muted></video>
       <canvas id="gridOverlay" class="grid-overlay" hidden></canvas>
-      <div class="video-empty" id="videoEmpty"><div class="big-ico">📷</div><p>${esc(u.camOff)}</p></div>
-      <div class="video-badges" id="videoBadges" hidden><span class="badge" id="bRes">—</span><span class="badge" id="bFps">— fps</span></div>
+      <div class="video-empty" id="videoEmpty">${ic('cam')}<p>${esc(u.camOff)}</p></div>
+      <div class="video-badges" id="videoBadges" hidden><span class="badge" id="bRes">–</span><span class="badge" id="bFps">– fps</span></div>
       <div class="flash" id="flash"></div>
     </div>
     <div class="row-actions">
-      <button class="btn" id="snapBtn" type="button" disabled>${esc(u.snap)}</button>
-      <button class="btn" id="mirrorBtn" type="button" disabled>${esc(u.mirror)}</button>
-      <button class="btn" id="flipBtn" type="button" disabled>${esc(u.flip)}</button>
-      <button class="btn" id="gridBtn" type="button" disabled>${esc(u.grid)}</button>
-      <button class="btn" id="fsBtn" type="button" disabled>${esc(u.fullscreen)}</button>
+      <button class="btn" id="snapBtn" type="button" disabled>${ic('snap')}<span>${esc(u.snap)}</span></button>
+      <button class="btn" id="mirrorBtn" type="button" disabled>${ic('mirror')}<span>${esc(u.mirror)}</span></button>
+      <button class="btn" id="flipBtn" type="button" disabled>${ic('flip')}<span>${esc(u.flip)}</span></button>
+      <button class="btn" id="gridBtn" type="button" disabled>${ic('grid')}<span>${esc(u.grid)}</span></button>
+      <button class="btn" id="fsBtn" type="button" disabled>${ic('fullscreen')}<span>${esc(u.fullscreen)}</span></button>
       <button class="btn" id="vrecBtn" type="button" disabled><span class="rec-dot"></span> <span>${esc(u.recVideo)}</span></button>
     </div>
     <div class="shots" id="shots"></div>
     <video id="clipVideo" class="clip" controls playsinline hidden></video>
     <dl class="specs">
-      <div><dt>${esc(u.device)}</dt><dd id="cDev">—</dd></div>
-      <div><dt>${esc(u.resolution)}</dt><dd id="cRes">—</dd></div>
-      <div><dt>${esc(u.fps)}</dt><dd id="cFps">—</dd></div>
-      <div><dt>${esc(u.aspect)}</dt><dd id="cAsp">—</dd></div>
-      <div><dt>${esc(u.megapixels)}</dt><dd id="cMp">—</dd></div>
-      <div><dt>${esc(u.brightness)}</dt><dd id="cBri">—</dd></div>
+      <div><dt>${esc(u.device)}</dt><dd id="cDev">–</dd></div>
+      <div><dt>${esc(u.resolution)}</dt><dd id="cRes">–</dd></div>
+      <div><dt>${esc(u.fps)}</dt><dd id="cFps">–</dd></div>
+      <div><dt>${esc(u.aspect)}</dt><dd id="cAsp">–</dd></div>
+      <div><dt>${esc(u.megapixels)}</dt><dd id="cMp">–</dd></div>
+      <div><dt>${esc(u.brightness)}</dt><dd id="cBri">–</dd></div>
     </dl>
   </div>
 </section>`;
@@ -254,14 +277,14 @@ const spkTool = (u, headTag) => `
   <div class="card">
     <div class="card-head">
       <div>
-        <${headTag} id="spkTitle" class="tool-title"><span class="ico">🔊</span> ${esc(u.spkTest)}</${headTag}>
+        <${headTag} id="spkTitle" class="tool-title"><span class="ico">${ic('spk')}</span> ${esc(u.spkTest)}</${headTag}>
         <p class="muted">${esc(u.spkHint)}</p>
       </div>
     </div>
     <div class="spk-grid">
-      <button class="spk-btn" data-pan="-1" type="button"><span class="spk-ico">◀</span><span>${esc(u.left)}</span></button>
-      <button class="spk-btn" data-pan="0" type="button"><span class="spk-ico">●</span><span>${esc(u.both)}</span></button>
-      <button class="spk-btn" data-pan="1" type="button"><span class="spk-ico">▶</span><span>${esc(u.right)}</span></button>
+      <button class="spk-btn" data-pan="-1" type="button"><span class="spk-ico">L</span><span>${esc(u.left)}</span></button>
+      <button class="spk-btn" data-pan="0" type="button"><span class="spk-ico">L R</span><span>${esc(u.both)}</span></button>
+      <button class="spk-btn" data-pan="1" type="button"><span class="spk-ico">R</span><span>${esc(u.right)}</span></button>
     </div>
     <div class="freq-row">
       <label for="freqRange">${esc(u.toneFreq)}: <b id="freqVal">440 Hz</b></label>
@@ -281,18 +304,18 @@ const devicesTool = (u) => `
   <div class="card">
     <div class="card-head">
       <div>
-        <h2 id="devTitle" class="tool-title"><span class="ico">🧩</span> ${esc(u.devTitle)}</h2>
+        <h2 id="devTitle" class="tool-title"><span class="ico">${ic('devices')}</span> ${esc(u.devTitle)}</h2>
         <p class="muted">${esc(u.devHint)}</p>
       </div>
       <div class="controls"><button class="btn" id="refreshDev" type="button">${esc(u.refresh)}</button></div>
     </div>
     <ul class="dev-list" id="devList"></ul>
     <dl class="specs">
-      <div><dt>${esc(u.browser)}</dt><dd id="iBrowser">—</dd></div>
-      <div><dt>${esc(u.os)}</dt><dd id="iOs">—</dd></div>
-      <div><dt>${esc(u.secure)}</dt><dd id="iSecure">—</dd></div>
-      <div><dt>${esc(u.permMic)}</dt><dd id="iPermMic">—</dd></div>
-      <div><dt>${esc(u.permCam)}</dt><dd id="iPermCam">—</dd></div>
+      <div><dt>${esc(u.browser)}</dt><dd id="iBrowser">–</dd></div>
+      <div><dt>${esc(u.os)}</dt><dd id="iOs">–</dd></div>
+      <div><dt>${esc(u.secure)}</dt><dd id="iSecure">–</dd></div>
+      <div><dt>${esc(u.permMic)}</dt><dd id="iPermMic">–</dd></div>
+      <div><dt>${esc(u.permCam)}</dt><dd id="iPermCam">–</dd></div>
     </dl>
   </div>
 </section>`;
@@ -335,7 +358,8 @@ function renderPage(lang, page) {
     mainEntity: P.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } }))
   }];
   if (isHome) {
-    ld.push({ '@context': 'https://schema.org', '@type': 'WebSite', name: BRAND, url: abs(prefix(lang)), inLanguage: lang });
+    ld.push({ '@context': 'https://schema.org', '@type': 'WebSite', name: BRAND, alternateName: ['MicTest Plus', 'mictestplus'], url: abs(prefix(lang)), inLanguage: lang });
+    ld.push({ '@context': 'https://schema.org', '@type': 'Organization', name: BRAND, url: DOMAIN + '/', logo: DOMAIN + '/icon-512.png', email: cfg.contactEmail });
   } else {
     ld.push({
       '@context': 'https://schema.org', '@type': 'BreadcrumbList',
@@ -363,7 +387,7 @@ function renderPage(lang, page) {
   <h2 id="othersTitle">${esc(u.otherTests)}</h2>
   <div class="other-grid">
     ${PAGE_ORDER.filter((p) => p !== 'home' && p !== page).map((p) => {
-      const ico = { mic: '🎙️', webcam: '📷', speaker: '🔊' }[p];
+      const ico = ic({ mic: 'mic', webcam: 'cam', speaker: 'spk' }[p]);
       const name = { mic: u.navMic, webcam: u.navCam, speaker: u.navSpk }[p];
       const desc = { mic: u.cardMicDesc, webcam: u.cardCamDesc, speaker: u.cardSpkDesc }[p];
       return `<a class="other-card" href="${urlFor(lang, p)}"><span class="other-ico">${ico}</span><span><b>${esc(name)}</b><small>${esc(desc)}</small></span></a>`;
@@ -467,7 +491,7 @@ for (const lang of LANGS) {
   }
 }
 write('privacy/index.html', infoPage('privacy', 'Privacy Policy', `${BRAND} privacy policy: your audio and video never leave your device.`, privacyHtml));
-write('about/index.html', infoPage('about', `About ${BRAND}`, `About ${BRAND}, the free private online mic, webcam and speaker test.`, aboutHtml));
+write('about/index.html', infoPage('about', `About ${BRAND}`, `About ${BRAND}: the free, private online mic test, webcam test and speaker test. No sign-up.`, aboutHtml));
 
 // sitemap with hreflang alternates
 const today = new Date().toISOString().slice(0, 10);
