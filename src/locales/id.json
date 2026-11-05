@@ -113,7 +113,16 @@
     "spkSorry": "Periksa volume, mode senyap, dan perangkat output",
     "noDevices": "Belum ada perangkat, tekan Mulai di atas",
     "guides": "Panduan",
-    "maxRes": "Maksimum didukung"
+    "maxRes": "Maksimum didukung",
+    "moreTests": "Tes lainnya",
+    "recTool": "Perekam suara",
+    "recHint": "Tekan Rekam, bicaralah, lalu tekan Berhenti. Rekaman Anda muncul di bawah, siap diputar atau diunduh.",
+    "recStart": "Rekam",
+    "recStop": "Berhenti",
+    "recDelete": "Hapus",
+    "recEmpty": "Belum ada rekaman.",
+    "recName": "Rekaman",
+    "startRec": "Mulai merekam"
   },
   "pages": {
     "home": {
@@ -380,6 +389,395 @@
         {
           "q": "Apakah bisa dengan headphone Bluetooth?",
           "a": "Bisa. Sambungkan dulu agar menjadi output aktif, lalu putar nadanya."
+        }
+      ]
+    },
+    "discord": {
+      "card": {
+        "name": "Tes mic Discord",
+        "desc": "Cek mic sebelum masuk voice chat."
+      },
+      "title": "Tes Mic Discord: Cek Mikrofon Sebelum Voice Chat",
+      "description": "Tes mic Discord gratis. Cek level mic, dengarkan suara Anda sendiri, dan perbaiki pengaturan Discord yang membuat teman tidak bisa mendengar Anda.",
+      "h1Html": "<span class=\"grad\">Tes mic Discord</span>",
+      "lead": "Pastikan mic Anda berfungsi sebelum masuk ke voice channel. Tes di sini, lalu samakan pengaturannya di Discord.",
+      "article": [
+        {
+          "h": "Cara tes mic untuk Discord",
+          "ol": [
+            "Tekan \"Mulai tes mic\" dan izinkan akses mikrofon.",
+            "Pilih mikrofon yang sama dengan yang Anda pakai di Discord dari menu drop-down.",
+            "Bicaralah dengan volume normal dan perhatikan meter level.",
+            "Rekam 5 detik lalu putar ulang untuk mendengar apa yang didengar teman Anda."
+          ]
+        },
+        {
+          "h": "Mic berfungsi di sini tapi tidak di Discord?",
+          "p": [
+            "Jika meter bergerak di halaman ini, mikrofon dan sistem Anda baik-baik saja. Masalahnya ada di pengaturan Discord. Buka Pengaturan Pengguna (ikon roda gigi di samping nama Anda) → Suara & Video dan periksa hal berikut secara berurutan:"
+          ],
+          "ul": [
+            "Perangkat Input: pilih mikrofon Anda berdasarkan namanya, bukan \"Default\". Discord sering tetap memakai perangkat default lama setelah Anda mencolokkan headset.",
+            "Sensitivitas Input: matikan \"Tentukan sensitivitas input secara otomatis\" dan geser slider ke kiri sampai suara Anda menyalakan bar.",
+            "Mode Input: jika memakai Tekan untuk Bicara, periksa tombol pintasannya. Menahan tombol yang salah terlihat persis seperti mic mati.",
+            "Ikon mic merah dicoret di samping nama Anda berarti Anda dibisukan oleh server. Hanya moderator yang bisa membatalkannya.",
+            "Jika suara Anda putus-putus, atur Peredam Bising ke Tidak Ada sebentar lalu tes lagi.",
+            "Masih tidak ada suara? Gulir ke bawah dan tekan \"Atur Ulang Pengaturan Suara\", lalu pilih mic Anda lagi."
+          ]
+        },
+        {
+          "h": "Mendapatkan suara yang jernih di Discord",
+          "p": [
+            "Usahakan puncak suara Anda berada di antara −20 dB dan −10 dB pada meter di sini. Lebih rendah dari itu, teman akan menaikkan volume Anda dan mendengar suara kipas. Lebih tinggi dari itu, suara akan pecah saat Anda tertawa atau berteriak. Jika bermain tanpa headphone, biarkan Peniadaan Gema tetap aktif di Discord agar suara speaker tidak masuk kembali ke mic."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Kenapa teman tidak bisa mendengar saya di Discord?",
+          "a": "Biasanya Discord mendengarkan perangkat lain, sensitivitas input terlalu tinggi, atau Anda sedang dibisukan. Pilih mic berdasarkan namanya di Suara & Video, turunkan sensitivitas, dan periksa ikon mic di samping nama Anda."
+        },
+        {
+          "q": "Bagaimana cara tes mic di dalam Discord?",
+          "a": "Buka Pengaturan Pengguna → Suara & Video lalu tekan \"Ayo Periksa\" di bawah Tes Mik. Bar harus bergerak saat Anda berbicara."
+        },
+        {
+          "q": "Apakah Discord bisa dipakai dengan mic USB dan Bluetooth?",
+          "a": "Bisa. Sambungkan mic, lalu pilih berdasarkan namanya di daftar Perangkat Input Discord. Headset Bluetooth bisa beralih ke mode kualitas lebih rendah saat mic dipakai, dan itu normal."
+        },
+        {
+          "q": "Apakah tes ini terhubung ke akun Discord saya?",
+          "a": "Tidak. Halaman ini berjalan di browser Anda dan tidak pernah berkomunikasi dengan Discord. Tidak ada yang diunggah."
+        }
+      ]
+    },
+    "zoom": {
+      "card": {
+        "name": "Tes mic Zoom",
+        "desc": "Siap sebelum rapat berikutnya."
+      },
+      "title": "Tes Mic Zoom: Cek Mikrofon Sebelum Rapat",
+      "description": "Tes mic sebelum panggilan Zoom. Cek level, rekam dan dengarkan ulang, lalu perbaiki pengaturan audio Zoom yang membuat suara Anda pelan atau tak terdengar.",
+      "h1Html": "<span class=\"grad\">Tes mic Zoom</span>",
+      "lead": "Tiga puluh detik di sini menghemat \"suara saya terdengar?\" di awal setiap rapat. Tes mic Anda, lalu periksa pengaturan yang sama di Zoom.",
+      "article": [
+        {
+          "h": "Cara tes mic sebelum panggilan Zoom",
+          "ol": [
+            "Tekan \"Mulai tes mic\" dan izinkan akses mikrofon.",
+            "Pilih mikrofon yang akan Anda pakai di rapat.",
+            "Bicaralah seperti biasa. Meter harus mencapai zona hijau.",
+            "Rekam klip singkat dan dengarkan dengan headphone."
+          ]
+        },
+        {
+          "h": "Pengaturan audio Zoom yang penting",
+          "ul": [
+            "Pengaturan → Audio → Mikrofon: pilih mic Anda berdasarkan namanya lalu tekan \"Tes Mikrofon\".",
+            "Jika volume Anda terus berubah, hapus centang \"Sesuaikan volume mikrofon secara otomatis\" dan atur slider sendiri.",
+            "\"Redam kebisingan latar belakang\" dengan setelan Otomatis cocok untuk sebagian besar ruangan. Atur ke Rendah jika suara Anda terdengar putus-putus.",
+            "Memainkan musik atau mengajar alat musik? Aktifkan \"Suara asli untuk musisi\" agar Zoom berhenti menyaring audio Anda."
+          ]
+        },
+        {
+          "h": "Tidak ada yang bisa mendengar Anda di rapat?",
+          "ul": [
+            "Periksa ikon mikrofon di kiri bawah. Garis merah berarti Anda sedang dibisukan.",
+            "Jika Anda melihat \"Gabung Audio\" alih-alih ikon mic, klik lalu pilih \"Gabung dengan Audio Komputer\".",
+            "Host mungkin membisukan semua peserta. Tanyakan di chat atau tekan \"Angkat Tangan\".",
+            "Tutup aplikasi lain yang memakai mic, seperti Teams, Discord, atau tab browser lain, lalu gabung lagi."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Bagaimana cara tes mic sebelum rapat Zoom?",
+          "a": "Gunakan tes mic di halaman ini, atau buka Pengaturan → Audio → Tes Mikrofon di Zoom. Zoom juga menyediakan rapat uji di zoom.us/test."
+        },
+        {
+          "q": "Kenapa Zoom bilang mikrofon saya tidak tersedia?",
+          "a": "Kemungkinan aplikasi lain sedang memakainya, atau Zoom tidak punya izin. Tutup aplikasi panggilan lain dan izinkan Zoom di pengaturan privasi mikrofon sistem Anda."
+        },
+        {
+          "q": "Kenapa suara saya pelan di Zoom?",
+          "a": "Volume input sistem rendah atau volume otomatis Zoom menurunkannya. Naikkan volume input dan hapus centang penyesuaian otomatis di Zoom."
+        },
+        {
+          "q": "Apakah halaman ini merekam atau mengirim audio saya?",
+          "a": "Tidak. Semuanya berjalan di browser Anda dan tidak ada yang diunggah."
+        }
+      ]
+    },
+    "iphone": {
+      "card": {
+        "name": "Tes mic iPhone",
+        "desc": "Cek mikrofon iPhone di Safari."
+      },
+      "title": "Tes Mic iPhone: Cek Mikrofon iPhone Online",
+      "description": "Tes mikrofon iPhone di Safari tanpa aplikasi. Lihat level langsung, rekam dan putar ulang, lalu perbaiki pengaturan iOS yang memblokir mic.",
+      "h1Html": "<span class=\"grad\">Tes mic iPhone</span>",
+      "lead": "Buka halaman ini di Safari atau Chrome di iPhone Anda, izinkan mikrofon, lalu bicaralah. Dalam hitungan detik Anda akan tahu apakah mic berfungsi.",
+      "article": [
+        {
+          "h": "Cara tes mikrofon iPhone",
+          "ol": [
+            "Buka halaman ini di Safari (atau Chrome) di iPhone Anda.",
+            "Ketuk \"Mulai tes mic\" dan pilih Izinkan saat iOS bertanya.",
+            "Bicaralah seperti biasa dan perhatikan meter level.",
+            "Ketuk \"Rekam 5 dtk\", lalu putar ulang untuk mendengar kualitasnya."
+          ]
+        },
+        {
+          "h": "iPhone Anda punya lebih dari satu mikrofon",
+          "p": [
+            "Sebagian besar iPhone memiliki mikrofon di bagian bawah dekat port pengisian daya, satu di speaker telinga bagian atas, dan satu di dekat kamera belakang. Panggilan dan memo suara kebanyakan memakai mic bawah, sedangkan perekaman video memakai yang lain. Jika meter hampir tidak bergerak, coba bicara ke arah tepi bawah ponsel dan pastikan casing tidak menutupi lubang mic yang kecil."
+          ]
+        },
+        {
+          "h": "Mikrofon iPhone tidak berfungsi?",
+          "ul": [
+            "Izin situs web: di Safari, ketuk tombol \"aA\" di bilah alamat → Pengaturan Situs Web → Mikrofon → Izinkan.",
+            "Izin aplikasi: Pengaturan → Privasi & Keamanan → Mikrofon, dan pastikan browser atau aplikasi Anda diaktifkan.",
+            "Bluetooth: AirPods atau sistem mobil bisa mengambil alih mic. Matikan Bluetooth dan tes lagi.",
+            "Bersihkan lubang mic dengan lembut memakai sikat kering yang halus. Jangan pernah menusukkan benda tajam ke dalamnya.",
+            "Mulai ulang iPhone. Jika aplikasi Memo Suara juga hanya merekam keheningan, hubungi Dukungan Apple."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Bisakah saya tes mic iPhone tanpa aplikasi?",
+          "a": "Bisa. Halaman ini berfungsi di Safari dan Chrome di iOS. Izinkan akses mikrofon saat diminta lalu mulai tes."
+        },
+        {
+          "q": "Kenapa suara mic iPhone saya teredam?",
+          "a": "Casing, tepi pelindung layar, atau debu sering menutupi lubang mic. Lepas casing dan bersihkan lubangnya dengan lembut, lalu tes lagi."
+        },
+        {
+          "q": "Kenapa orang tidak bisa mendengar saya saat telepon padahal tesnya berhasil?",
+          "a": "Panggilan mungkin dialihkan lewat perangkat Bluetooth yang terhubung atau mic speaker telinga. Putuskan Bluetooth dan coba speaker ponsel untuk membandingkan."
+        },
+        {
+          "q": "Apakah rekaman saya diunggah?",
+          "a": "Tidak. Rekaman tetap berada di memori Safari sampai Anda menutup halaman, kecuali Anda mengunduhnya."
+        }
+      ]
+    },
+    "android": {
+      "card": {
+        "name": "Tes mic Android",
+        "desc": "Cek mic ponsel Anda di Chrome."
+      },
+      "title": "Tes Mic Android: Cek Mikrofon HP Online",
+      "description": "Tes mikrofon Android di Chrome tanpa aplikasi. Lihat level langsung, rekam dan putar ulang, lalu perbaiki pengaturan Android yang memblokir mic.",
+      "h1Html": "<span class=\"grad\">Tes mic Android</span>",
+      "lead": "Buka halaman ini di Chrome atau Samsung Internet di ponsel Anda, izinkan mikrofon, lalu bicaralah. Meter langsung menunjukkan apakah mic menangkap suara Anda.",
+      "article": [
+        {
+          "h": "Cara tes mikrofon Android",
+          "ol": [
+            "Buka halaman ini di Chrome, Samsung Internet, atau Firefox.",
+            "Ketuk \"Mulai tes mic\" dan izinkan akses mikrofon.",
+            "Bicaralah seperti biasa dan perhatikan meter level.",
+            "Rekam 5 detik lalu putar ulang untuk menilai kualitasnya."
+          ]
+        },
+        {
+          "h": "Mikrofon Android tidak berfungsi?",
+          "ul": [
+            "Setelan Cepat: geser ke bawah dan pastikan kotak \"Akses mikrofon\" aktif (Android 12 ke atas).",
+            "Izin browser: ketuk ikon di kiri alamat → Izin → Mikrofon → Izinkan.",
+            "Izin aplikasi: Setelan → Aplikasi → Chrome → Izin → Mikrofon → Izinkan hanya saat aplikasi digunakan.",
+            "Earbud Bluetooth atau smartwatch bisa mengambil alih mic. Matikan Bluetooth dan tes lagi.",
+            "Lepas casing dan bersihkan lubang mic kecil di bagian bawah dengan lembut memakai sikat kering yang halus.",
+            "Mulai ulang ponsel. Jika aplikasi perekam bawaan juga hanya merekam keheningan, hardware mic mungkin perlu diperbaiki."
+          ]
+        },
+        {
+          "h": "Kenapa suara telepon berbeda dari tes ini",
+          "p": [
+            "Saat menelepon, Android memakai peredam bising dan sering juga mic kedua di bagian atas ponsel untuk menghilangkan suara latar. Rekaman browser memakai versi pemrosesan yang sama tetapi lebih ringan. Jika tes terdengar jernih tetapi telepon tidak, periksa pengaturan Panggilan Wi-Fi atau VoLTE dari operator Anda, atau coba menelepon dengan speaker aktif."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Bisakah saya tes mic HP tanpa memasang aplikasi?",
+          "a": "Bisa. Halaman ini berfungsi di Chrome, Samsung Internet, dan Firefox di Android. Izinkan akses mikrofon lalu mulai tes."
+        },
+        {
+          "q": "Kenapa mic Android saya diblokir di browser?",
+          "a": "Bisa jadi browser tidak punya izin mikrofon, atau tombol Akses mikrofon di Setelan Cepat mati. Aktifkan keduanya lalu muat ulang halaman."
+        },
+        {
+          "q": "Apakah bisa di HP Samsung?",
+          "a": "Bisa. Gunakan Samsung Internet atau Chrome. Di HP Samsung, izin aplikasi ada di Pengaturan → Aplikasi → Izin."
+        },
+        {
+          "q": "Apakah audio saya diunggah?",
+          "a": "Tidak. Semuanya terjadi di ponsel Anda dan tidak ada yang dikirim ke server."
+        }
+      ]
+    },
+    "airpods": {
+      "card": {
+        "name": "Tes mic AirPods",
+        "desc": "Cek mikrofon di AirPods Anda."
+      },
+      "title": "Tes Mic AirPods: Cek Mikrofon AirPods Online",
+      "description": "Tes mikrofon AirPods di iPhone, Mac, atau Windows. Pilih AirPods sebagai input, cek levelnya, dan perbaiki pengaturan yang membuat suaranya buruk.",
+      "h1Html": "<span class=\"grad\">Tes mic AirPods</span>",
+      "lead": "Sambungkan AirPods, pilih di daftar mikrofon, lalu bicaralah. Meter dan rekaman singkat memberi tahu apakah mic AirPods berfungsi dan bagaimana suaranya.",
+      "article": [
+        {
+          "h": "Cara tes mikrofon AirPods",
+          "ol": [
+            "Pasang AirPods di telinga dan sambungkan ke perangkat Anda.",
+            "Tekan \"Mulai tes mic\" dan izinkan akses mikrofon.",
+            "Pilih AirPods Anda di menu drop-down mikrofon.",
+            "Bicaralah seperti biasa, lalu rekam 5 detik dan putar ulang."
+          ]
+        },
+        {
+          "h": "Memilih AirPods sebagai mikrofon",
+          "ul": [
+            "iPhone: AirPods otomatis dipakai setelah terhubung. Buka halaman ini di Safari dan izinkan mikrofon.",
+            "Mac: buka Pengaturan Sistem → Suara → Input lalu pilih AirPods Anda.",
+            "Windows: AirPods muncul dua kali, sebagai \"Headphone\" dan \"Headset\". Pilih entri \"Headset\" sebagai input, kalau tidak mic tidak akan berfungsi.",
+            "Hanya satu telinga? Di iPhone buka Pengaturan → Bluetooth → ⓘ di samping AirPods Anda → Mikrofon, lalu pilih Otomatis, Selalu Kiri, atau Selalu Kanan."
+          ]
+        },
+        {
+          "h": "Kenapa AirPods terdengar lebih buruk saat telepon",
+          "p": [
+            "Saat mikrofon aktif, Bluetooth beralih ke mode hands-free yang membawa audio dua arah dengan kualitas lebih rendah. Itulah sebabnya musik terdengar bagus tetapi suara telepon terdengar tipis, terutama di Windows dan Android. Ini perilaku normal, bukan kerusakan. Untuk kualitas suara terbaik saat panggilan panjang di komputer, mikrofon kabel atau USB tetap lebih unggul daripada earbud Bluetooth mana pun."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Kenapa mic AirPods saya tidak berfungsi di Windows?",
+          "a": "Windows menampilkan AirPods dua kali. Pilih perangkat \"Headset\" sebagai input di Pengaturan → Sistem → Suara, dan juga di aplikasi panggilan Anda."
+        },
+        {
+          "q": "Kenapa mic AirPods terdengar teredam?",
+          "a": "Kotoran di kisi mic di ujung bawah batang adalah penyebab paling umum. Bersihkan dengan lembut memakai cotton bud kering."
+        },
+        {
+          "q": "Bisakah saya memakai satu AirPod saja sebagai mic?",
+          "a": "Bisa. Di iPhone, atur Mikrofon ke Selalu Kiri atau Selalu Kanan di pengaturan Bluetooth AirPods."
+        },
+        {
+          "q": "Apakah audio saya diunggah?",
+          "a": "Tidak. Tes berjalan di browser Anda dan tidak ada yang keluar dari perangkat Anda."
+        }
+      ]
+    },
+    "headphone": {
+      "card": {
+        "name": "Tes headset",
+        "desc": "Cek kiri/kanan, stereo, dan bass."
+      },
+      "title": "Tes Headset Online: Cek Kiri/Kanan, Stereo & Bass Headphone",
+      "description": "Tes headset online gratis. Cek channel kiri dan kanan, keseimbangan stereo, dan bass dengan nada tes dan sweep frekuensi. Kabel atau Bluetooth.",
+      "h1Html": "<span class=\"grad\">Tes headset</span> online",
+      "lead": "Dalam hitungan detik, ketahui apakah kedua sisi headphone Anda berfungsi, apakah kiri dan kanan tidak tertukar, dan seberapa dalam bass-nya.",
+      "article": [
+        {
+          "h": "Cara tes headphone",
+          "ol": [
+            "Pakai headphone Anda dan kecilkan volume ke tingkat yang nyaman.",
+            "Tekan Kiri: nada hanya boleh terdengar dari telinga kiri. Lalu tekan Kanan.",
+            "Tekan Keduanya: nada harus terdengar di tengah, seperti di dalam kepala Anda.",
+            "Jalankan sweep frekuensi untuk mendengar rentang dari bass dalam hingga treble tinggi."
+          ]
+        },
+        {
+          "h": "Satu sisi lebih pelan atau tidak bersuara?",
+          "ul": [
+            "Periksa slider keseimbangan: di Windows Pengaturan → Sistem → Suara → perangkat Anda → Kiri/Kanan, atau di Mac Pengaturan Sistem → Suara → Output → Keseimbangan.",
+            "Di iPhone, pastikan Audio Mono mati: Pengaturan → Aksesibilitas → Audio & Visual.",
+            "Headphone kabel: cabut, bersihkan colokannya, lalu tancapkan sampai penuh. Colokan yang setengah masuk sering membuat satu sisi mati.",
+            "Kotoran telinga di jaring earbud adalah penyebab umum satu sisi terdengar pelan. Bersihkan dengan lembut memakai sikat kering."
+          ]
+        },
+        {
+          "h": "Bass, treble, dan Bluetooth",
+          "p": [
+            "Headphone over-ear yang bagus memutar suara dengan jelas hingga 30 atau 40 Hz di awal sweep. Earbud kecil butuh segel yang rapat untuk menghasilkan bass, jadi coba ear tip yang lebih besar jika nada rendah terdengar tipis. Bluetooth menambah sedikit jeda, biasanya 100 sampai 250 milidetik, yang tidak masalah untuk musik tetapi terasa saat bermain game."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Bagaimana tahu apakah headphone saya tertukar kiri/kanan?",
+          "a": "Tekan Kiri. Jika suara terdengar dari telinga kanan, headphone terpasang terbalik atau kabel maupun adaptornya terbalik."
+        },
+        {
+          "q": "Kenapa saya tidak bisa mendengar awal sweep?",
+          "a": "Nada yang sangat rendah butuh segel yang baik dan driver yang lebih besar. Banyak earbud dan speaker laptop tidak bisa memutar nada jauh di bawah 100 Hz."
+        },
+        {
+          "q": "Apakah tes ini aman untuk telinga?",
+          "a": "Aman pada volume normal. Mulai dari volume kecil dan naikkan perlahan, terutama dengan headphone in-ear."
+        },
+        {
+          "q": "Apakah bisa dengan headphone Bluetooth?",
+          "a": "Bisa. Sambungkan dulu agar menjadi output aktif, lalu putar nadanya."
+        }
+      ]
+    },
+    "recorder": {
+      "card": {
+        "name": "Perekam suara",
+        "desc": "Rekam dan unduh, tanpa daftar."
+      },
+      "title": "Perekam Suara Online: Rekam Audio Gratis Tanpa Daftar",
+      "description": "Perekam suara online gratis. Rekam suara Anda di browser, putar ulang, dan unduh filenya. Tanpa batas waktu, tanpa daftar, tidak ada yang diunggah.",
+      "h1Html": "<span class=\"grad\">Perekam suara</span> online",
+      "lead": "Rekam suara Anda langsung di browser dan unduh filenya. Tanpa daftar, tanpa batas waktu, dan audio tidak pernah keluar dari perangkat Anda.",
+      "article": [
+        {
+          "h": "Cara merekam suara online",
+          "ol": [
+            "Tekan \"Mulai merekam\" dan izinkan akses mikrofon.",
+            "Pilih mikrofon Anda jika punya lebih dari satu.",
+            "Bicara, bernyanyi, atau mainkan musik. Timer dan meter level menunjukkan bahwa perekaman berjalan.",
+            "Tekan Berhenti. Rekaman Anda muncul di bawah, siap diputar atau diunduh."
+          ]
+        },
+        {
+          "h": "File apa yang saya dapatkan?",
+          "p": [
+            "Chrome, Edge, dan Firefox menyimpan audio WebM dengan codec Opus. Safari menyimpan file M4A (AAC). Keduanya bisa diputar di VLC, sebagian besar pemutar media, dan editor seperti Audacity. Jika butuh MP3, konverter audio apa pun bisa mengubah formatnya dalam beberapa detik."
+          ]
+        },
+        {
+          "h": "Tips agar rekaman lebih bagus",
+          "ul": [
+            "Jalankan tes mic dulu dan usahakan puncaknya di antara −20 dB dan −10 dB.",
+            "Rekam di ruangan kecil dengan perabot empuk. Gorden dan sofa meredam gema lebih baik daripada filter apa pun.",
+            "Jaga mikrofon kira-kira selebar telapak tangan dari mulut dan sedikit ke samping.",
+            "Matikan kipas dan notifikasi, dan pakai headphone jika Anda memutar musik pengiring."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Apakah ada batas waktu?",
+          "a": "Tidak ada batas tetap. Rekaman disimpan di memori browser, jadi sesi yang sangat panjang bergantung pada perangkat Anda. Untuk rekaman lebih dari satu jam, unduh per bagian."
+        },
+        {
+          "q": "Di mana rekaman saya disimpan?",
+          "a": "Hanya di tab browser ini sampai Anda mengunduhnya. Menutup atau memuat ulang halaman akan menghapusnya."
+        },
+        {
+          "q": "Apakah bisa di iPhone dan Android?",
+          "a": "Bisa. Berfungsi di Safari di iPhone dan di Chrome atau Samsung Internet di Android."
+        },
+        {
+          "q": "Apakah perekam suara ini benar-benar gratis?",
+          "a": "Ya. Tanpa daftar, tanpa watermark, dan tanpa unggahan."
         }
       ]
     }

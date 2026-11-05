@@ -113,7 +113,16 @@
     "spkSorry": "Ses düzeyini, sessiz modu ve çıkış cihazını kontrol edin",
     "noDevices": "Henüz cihaz yok, yukarıdan Başlat'a basın",
     "guides": "Rehberler",
-    "maxRes": "En yüksek desteklenen"
+    "maxRes": "En yüksek desteklenen",
+    "moreTests": "Daha fazla test",
+    "recTool": "Ses kaydedici",
+    "recHint": "Kaydet'e basın, konuşun, ardından Durdur'a basın. Kayıtlarınız aşağıda dinlemeye veya indirmeye hazır olarak görünür.",
+    "recStart": "Kaydet",
+    "recStop": "Durdur",
+    "recDelete": "Sil",
+    "recEmpty": "Henüz kayıt yok.",
+    "recName": "Kayıt",
+    "startRec": "Kaydı başlat"
   },
   "pages": {
     "home": {
@@ -380,6 +389,395 @@
         {
           "q": "Bluetooth kulaklıklarla çalışıyor mu?",
           "a": "Evet. Önce bağlayın ki etkin ses çıkışı olsunlar, ardından tonları çalın."
+        }
+      ]
+    },
+    "discord": {
+      "card": {
+        "name": "Discord mikrofon testi",
+        "desc": "Sesli kanala girmeden önce mikrofonu deneyin."
+      },
+      "title": "Discord Mikrofon Testi: Sesli Sohbet Öncesi Mikrofon Kontrolü",
+      "description": "Ücretsiz Discord mikrofon testi. Seviyeyi kontrol edin, kendinizi dinleyin ve sizi duyulmaz yapan Discord ayarlarını düzeltin. Tarayıcıda çalışır.",
+      "h1Html": "<span class=\"grad\">Discord mikrofon testi</span>",
+      "lead": "Sesli kanala girmeden önce mikrofonunuzun çalıştığından emin olun. Burada test edin, ardından aynı ayarları Discord'da yapın.",
+      "article": [
+        {
+          "h": "Discord için mikrofon nasıl test edilir",
+          "ol": [
+            "\"Mikrofonu test et\"e basın ve mikrofon erişimine izin verin.",
+            "Açılır listeden Discord'da kullandığınız mikrofonun aynısını seçin.",
+            "Normal ses tonunuzla konuşun ve seviye göstergesini izleyin.",
+            "5 saniye kaydedin ve arkadaşlarınızın ne duyduğunu duymak için dinleyin."
+          ]
+        },
+        {
+          "h": "Mikrofon burada çalışıyor ama Discord'da çalışmıyor mu?",
+          "p": [
+            "Bu sayfada gösterge hareket ediyorsa mikrofonunuz ve sisteminiz sorunsuzdur. Sorun bir Discord ayarındadır. Kullanıcı Ayarları'nı (adınızın yanındaki dişli) açın → Ses ve Görüntü bölümüne gidin ve şunları sırayla kontrol edin:"
+          ],
+          "ul": [
+            "Giriş Cihazı: \"Varsayılan\" yerine mikrofonunuzu adıyla seçin. Kulaklık taktıktan sonra Discord çoğu zaman eski varsayılan cihazda kalır.",
+            "Giriş Hassasiyeti: \"Giriş hassasiyetini otomatik olarak belirle\" seçeneğini kapatın ve sesiniz çubuğu yakana kadar kaydırıcıyı sola çekin.",
+            "Giriş Modu: Bas Konuş kullanıyorsanız tuş atamasını kontrol edin. Yanlış tuşa basılı tutmak tam olarak bozuk bir mikrofon gibi görünür.",
+            "Adınızın yanındaki üstü çizili kırmızı mikrofon simgesi, sunucuda susturulduğunuz anlamına gelir. Bunu yalnızca bir moderatör kaldırabilir.",
+            "Sesiniz kesilip geliyorsa Gürültü Azaltma'yı bir süreliğine Yok olarak ayarlayın ve tekrar test edin.",
+            "Hâlâ ses yok mu? Aşağı kaydırıp \"Ses Ayarlarını Sıfırla\"ya basın, ardından mikrofonunuzu yeniden seçin."
+          ]
+        },
+        {
+          "h": "Discord'da temiz bir ses elde etmek",
+          "p": [
+            "Buradaki göstergede konuşmanızın −20 dB ile −10 dB arasında tepe yapmasını hedefleyin. Daha düşükse arkadaşlarınız sesinizi açar ve fan sesinizi duyar. Daha yüksekse gülerken veya bağırırken ses bozulur. Kulaklıksız oynuyorsanız hoparlörünüzün sesi mikrofona geri dönmesin diye Discord'da Yankı Engelleme'yi açık tutun."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Arkadaşlarım beni Discord'da neden duyamıyor?",
+          "a": "Genellikle Discord başka bir cihazı dinliyordur, giriş hassasiyeti çok yüksek ayarlanmıştır ya da susturulmuşsunuzdur. Ses ve Görüntü'de mikrofonunuzu adıyla seçin, hassasiyeti düşürün ve adınızın yanındaki mikrofon simgesini kontrol edin."
+        },
+        {
+          "q": "Mikrofonumu Discord içinde nasıl test ederim?",
+          "a": "Kullanıcı Ayarları → Ses ve Görüntü'ye gidin ve Mikrofon Testi altındaki \"Hadi Kontrol Edelim\"e basın. Konuşurken çubuk hareket etmelidir."
+        },
+        {
+          "q": "Discord USB ve Bluetooth mikrofonlarla çalışır mı?",
+          "a": "Evet. Mikrofonu bağlayın, ardından Discord'un Giriş Cihazı listesinden adıyla seçin. Bluetooth kulaklıklar mikrofon kullanılırken daha düşük kaliteli bir moda geçebilir, bu normaldir."
+        },
+        {
+          "q": "Bu test Discord hesabıma bağlı mı?",
+          "a": "Hayır. Bu sayfa tarayıcınızda çalışır ve Discord ile hiçbir şekilde iletişim kurmaz. Hiçbir şey yüklenmez."
+        }
+      ]
+    },
+    "zoom": {
+      "card": {
+        "name": "Zoom mikrofon testi",
+        "desc": "Bir sonraki toplantıya hazır olun."
+      },
+      "title": "Zoom Mikrofon Testi: Toplantı Öncesi Mikrofonunuzu Kontrol Edin",
+      "description": "Zoom görüşmesinden önce mikrofonunuzu test edin. Seviyeyi kontrol edin, kaydedip dinleyin ve sesinizi kısık ya da sessiz yapan Zoom ayarlarını düzeltin.",
+      "h1Html": "<span class=\"grad\">Zoom mikrofon testi</span>",
+      "lead": "Burada geçireceğiniz otuz saniye, her toplantının başındaki \"beni duyabiliyor musunuz?\" sorusunu ortadan kaldırır. Mikrofonunuzu test edin, ardından aynı ayarları Zoom'da kontrol edin.",
+      "article": [
+        {
+          "h": "Zoom görüşmesinden önce mikrofon nasıl test edilir",
+          "ol": [
+            "\"Mikrofonu test et\"e basın ve mikrofon erişimine izin verin.",
+            "Toplantıda kullanacağınız mikrofonu seçin.",
+            "Normal konuşun. Gösterge yeşil bölgeye ulaşmalıdır.",
+            "Kısa bir kayıt alın ve kulaklıkla dinleyin."
+          ]
+        },
+        {
+          "h": "Önemli Zoom ses ayarları",
+          "ul": [
+            "Ayarlar → Ses → Mikrofon: mikrofonunuzu adıyla seçin ve \"Mikrofonu Test Et\"e basın.",
+            "Ses seviyeniz sürekli değişiyorsa \"Mikrofon ses düzeyini otomatik olarak ayarla\" işaretini kaldırın ve kaydırıcıyı kendiniz ayarlayın.",
+            "\"Arka plan gürültüsünü bastır\" Otomatik ayarında çoğu oda için yeterlidir. Sesiniz kesik kesik geliyorsa Düşük'e alın.",
+            "Müzik mi çalıyorsunuz ya da enstrüman dersi mi veriyorsunuz? Zoom'un sesinizi filtrelemeyi bırakması için \"Müzisyenler için orijinal ses\"i açın."
+          ]
+        },
+        {
+          "h": "Toplantıda kimse sizi duymuyor mu?",
+          "ul": [
+            "Sol alttaki mikrofon simgesini kontrol edin. Kırmızı çizgi sessize alındığınız anlamına gelir.",
+            "Mikrofon simgesi yerine \"Sese Katıl\" görüyorsanız tıklayın ve \"Bilgisayar Sesiyle Katıl\"ı seçin.",
+            "Toplantı sahibi herkesi sessize almış olabilir. Sohbette sorun veya \"El Kaldır\"a basın.",
+            "Teams, Discord veya başka bir tarayıcı sekmesi gibi mikrofonu kullanan diğer uygulamaları kapatın, ardından toplantıya yeniden katılın."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Zoom toplantısından önce mikrofonumu nasıl test ederim?",
+          "a": "Bu sayfadaki mikrofon testini kullanın veya Zoom'da Ayarlar → Ses → Mikrofonu Test Et'i açın. Zoom ayrıca zoom.us/test adresinde bir test toplantısı sunar."
+        },
+        {
+          "q": "Zoom neden mikrofonumun kullanılamadığını söylüyor?",
+          "a": "Büyük olasılıkla mikrofonu başka bir uygulama kullanıyor ya da Zoom'un izni yok. Diğer görüşme uygulamalarını kapatın ve sisteminizin mikrofon gizlilik ayarlarında Zoom'a izin verin."
+        },
+        {
+          "q": "Zoom'da sesim neden kısık çıkıyor?",
+          "a": "Sistem giriş ses düzeyi düşüktür ya da Zoom'un otomatik ses ayarı onu kısmıştır. Giriş ses düzeyini artırın ve Zoom'da otomatik ayarlamanın işaretini kaldırın."
+        },
+        {
+          "q": "Bu sayfa sesimi kaydediyor veya gönderiyor mu?",
+          "a": "Hayır. Her şey tarayıcınızda çalışır ve hiçbir şey yüklenmez."
+        }
+      ]
+    },
+    "iphone": {
+      "card": {
+        "name": "iPhone mikrofon testi",
+        "desc": "iPhone mikrofonlarını Safari'de test edin."
+      },
+      "title": "iPhone Mikrofon Testi: iPhone Mikrofonunu Online Kontrol Edin",
+      "description": "iPhone mikrofonunuzu uygulama olmadan Safari'de test edin. Canlı seviyeyi görün, kaydedip dinleyin ve mikrofonu engelleyen iOS ayarlarını düzeltin.",
+      "h1Html": "<span class=\"grad\">iPhone mikrofon testi</span>",
+      "lead": "Bu sayfayı iPhone'unuzda Safari veya Chrome ile açın, mikrofona izin verin ve konuşun. Mikrofonun çalışıp çalışmadığını saniyeler içinde öğrenirsiniz.",
+      "article": [
+        {
+          "h": "iPhone mikrofonu nasıl test edilir",
+          "ol": [
+            "Bu sayfayı iPhone'unuzda Safari (veya Chrome) ile açın.",
+            "\"Mikrofonu test et\"e dokunun ve iOS sorduğunda İzin Ver'i seçin.",
+            "Normal konuşun ve seviye göstergesini izleyin.",
+            "\"5 sn kaydet\"e dokunun, ardından kaliteyi duymak için kaydı dinleyin."
+          ]
+        },
+        {
+          "h": "iPhone'unuzda birden fazla mikrofon var",
+          "p": [
+            "Çoğu iPhone'da şarj girişinin yanında altta bir mikrofon, üstte ahize içinde bir mikrofon ve arka kameranın yakınında bir mikrofon bulunur. Aramalar ve sesli notlar çoğunlukla alttaki mikrofonu kullanırken video kaydı diğerlerini kullanır. Gösterge neredeyse hiç hareket etmiyorsa telefonun alt kenarına doğru konuşmayı deneyin ve kılıfınızın küçük mikrofon deliklerini kapatmadığından emin olun."
+          ]
+        },
+        {
+          "h": "iPhone mikrofonu çalışmıyor mu?",
+          "ul": [
+            "Web sitesi izni: Safari'de adres çubuğundaki \"aA\" düğmesine dokunun → Web Sitesi Ayarları → Mikrofon → İzin Ver.",
+            "Uygulama izni: Ayarlar → Gizlilik ve Güvenlik → Mikrofon bölümünde tarayıcınızın veya uygulamanızın açık olduğundan emin olun.",
+            "Bluetooth: AirPods veya araç sistemi mikrofonu devralabilir. Bluetooth'u kapatın ve tekrar test edin.",
+            "Mikrofon deliklerini yumuşak, kuru bir fırçayla nazikçe temizleyin. İçlerine asla sivri bir şey sokmayın.",
+            "iPhone'u yeniden başlatın. Ses Kayıtları uygulaması da sessizlik kaydediyorsa Apple Destek ile iletişime geçin."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "iPhone mikrofonumu uygulama olmadan test edebilir miyim?",
+          "a": "Evet. Bu sayfa iOS'ta Safari ve Chrome'da çalışır. Sorulduğunda mikrofon erişimine izin verin ve testi başlatın."
+        },
+        {
+          "q": "iPhone mikrofonum neden boğuk geliyor?",
+          "a": "Kılıf, ekran koruyucunun kenarı veya toz çoğu zaman mikrofon deliklerini kapatır. Kılıfı çıkarın, delikleri nazikçe temizleyin ve tekrar test edin."
+        },
+        {
+          "q": "Test çalışıyor ama aramalarda neden beni duymuyorlar?",
+          "a": "Aramalar bağlı bir Bluetooth cihazı veya ahize mikrofonu üzerinden yönlendirilebilir. Karşılaştırmak için Bluetooth bağlantısını kesin ve hoparlörü deneyin."
+        },
+        {
+          "q": "Kaydım yükleniyor mu?",
+          "a": "Hayır. Kayıtlar, siz indirmediğiniz sürece sayfayı kapatana kadar Safari'nin belleğinde kalır."
+        }
+      ]
+    },
+    "android": {
+      "card": {
+        "name": "Android mikrofon testi",
+        "desc": "Telefon mikrofonunu Chrome'da test edin."
+      },
+      "title": "Android Mikrofon Testi: Telefon Mikrofonunu Online Kontrol Edin",
+      "description": "Android mikrofonunuzu uygulama olmadan Chrome'da test edin. Canlı seviyeyi görün, kaydedip dinleyin ve mikrofonu engelleyen Android ayarlarını düzeltin.",
+      "h1Html": "<span class=\"grad\">Android mikrofon testi</span>",
+      "lead": "Bu sayfayı telefonunuzda Chrome veya Samsung Internet ile açın, mikrofona izin verin ve konuşun. Gösterge, mikrofonun sesinizi alıp almadığını hemen gösterir.",
+      "article": [
+        {
+          "h": "Android mikrofonu nasıl test edilir",
+          "ol": [
+            "Bu sayfayı Chrome, Samsung Internet veya Firefox ile açın.",
+            "\"Mikrofonu test et\"e dokunun ve mikrofon erişimine izin verin.",
+            "Normal konuşun ve seviye göstergesini izleyin.",
+            "Kaliteyi değerlendirmek için 5 saniye kaydedin ve dinleyin."
+          ]
+        },
+        {
+          "h": "Android mikrofonu çalışmıyor mu?",
+          "ul": [
+            "Hızlı Ayarlar: aşağı kaydırın ve \"Mikrofon erişimi\" kutucuğunun açık olduğundan emin olun (Android 12 ve sonrası).",
+            "Tarayıcı izni: adresin solundaki simgeye dokunun → İzinler → Mikrofon → İzin ver.",
+            "Uygulama izni: Ayarlar → Uygulamalar → Chrome → İzinler → Mikrofon → Yalnızca uygulama kullanılırken izin ver.",
+            "Bluetooth kulaklıklar veya akıllı saat mikrofonu devralabilir. Bluetooth'u kapatın ve tekrar test edin.",
+            "Kılıfı çıkarın ve alttaki küçük mikrofon deliğini yumuşak, kuru bir fırçayla nazikçe temizleyin.",
+            "Telefonu yeniden başlatın. Dahili ses kaydedici uygulaması da sessizlik kaydediyorsa mikrofon donanımının onarılması gerekebilir."
+          ]
+        },
+        {
+          "h": "Aramalar neden bu testten farklı duyulur",
+          "p": [
+            "Aramalar sırasında Android, arka plan sesini temizlemek için gürültü engelleme ve çoğu zaman telefonun üst kısmındaki ikinci bir mikrofonu kullanır. Tarayıcı kayıtları aynı işlemenin daha hafif bir sürümünü kullanır. Test net duyuluyor ama aramalar duyulmuyorsa operatörünüzün Wi-Fi Arama veya VoLTE ayarlarını kontrol edin ya da hoparlör açıkken bir arama deneyin."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Uygulama yüklemeden telefon mikrofonumu test edebilir miyim?",
+          "a": "Evet. Bu sayfa Android'de Chrome, Samsung Internet ve Firefox'ta çalışır. Mikrofon erişimine izin verin ve testi başlatın."
+        },
+        {
+          "q": "Android mikrofonum tarayıcıda neden engelleniyor?",
+          "a": "Ya tarayıcının mikrofon izni yoktur ya da Hızlı Ayarlar'daki Mikrofon erişimi düğmesi kapalıdır. İkisini de açın ve sayfayı yenileyin."
+        },
+        {
+          "q": "Samsung telefonlarda çalışır mı?",
+          "a": "Evet. Samsung Internet veya Chrome kullanın. Samsung telefonlarda uygulama izinlerini Ayarlar → Uygulamalar → İzinler altında bulabilirsiniz."
+        },
+        {
+          "q": "Sesim yükleniyor mu?",
+          "a": "Hayır. Her şey telefonunuzda gerçekleşir ve hiçbir şey sunucuya gönderilmez."
+        }
+      ]
+    },
+    "airpods": {
+      "card": {
+        "name": "AirPods mikrofon testi",
+        "desc": "AirPods mikrofonunu kontrol edin."
+      },
+      "title": "AirPods Mikrofon Testi: AirPods Mikrofonunu Online Kontrol Edin",
+      "description": "AirPods mikrofonunuzu iPhone, Mac veya Windows'ta test edin. AirPods'u giriş olarak seçin, seviyeyi kontrol edin ve sesi kötüleştiren ayarları düzeltin.",
+      "h1Html": "<span class=\"grad\">AirPods mikrofon testi</span>",
+      "lead": "AirPods'unuzu bağlayın, mikrofon listesinden seçin ve konuşun. Gösterge ve kısa bir kayıt, AirPods mikrofonunun çalışıp çalışmadığını ve sesinin nasıl olduğunu söyler.",
+      "article": [
+        {
+          "h": "AirPods mikrofonu nasıl test edilir",
+          "ol": [
+            "AirPods'unuzu takın ve cihazınıza bağlayın.",
+            "\"Mikrofonu test et\"e basın ve mikrofon erişimine izin verin.",
+            "Mikrofon açılır listesinden AirPods'unuzu seçin.",
+            "Normal konuşun, ardından 5 saniye kaydedip dinleyin."
+          ]
+        },
+        {
+          "h": "AirPods'u mikrofon olarak seçmek",
+          "ul": [
+            "iPhone: AirPods bağlandığında otomatik olarak kullanılır. Bu sayfayı Safari'de açın ve mikrofona izin verin.",
+            "Mac: Sistem Ayarları → Ses → Giriş'i açın ve AirPods'unuzu seçin.",
+            "Windows: AirPods iki kez görünür: \"Kulaklık\" ve \"Mikrofonlu Kulaklık\". Giriş olarak \"Mikrofonlu Kulaklık\" girişini seçin, aksi halde mikrofon çalışmaz.",
+            "Yalnızca bir kulak mı? iPhone'da Ayarlar → Bluetooth → AirPods'unuzun yanındaki ⓘ → Mikrofon'a gidin ve Otomatik, Her Zaman Sol veya Her Zaman Sağ'ı seçin."
+          ]
+        },
+        {
+          "h": "AirPods aramalarda neden daha kötü duyulur",
+          "p": [
+            "Mikrofon etkinken Bluetooth, sesi iki yönde daha düşük kalitede taşıyan bir eller serbest moduna geçer. Bu yüzden müzik harika duyulurken aramalar cılız duyulur, özellikle Windows ve Android'de. Bu normal bir davranıştır, arıza değildir. Bilgisayarda uzun görüşmelerde en iyi ses kalitesi için kablolu veya USB bir mikrofon hâlâ her Bluetooth kulaklıktan daha iyidir."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "AirPods mikrofonum Windows'ta neden çalışmıyor?",
+          "a": "Windows AirPods'u iki kez listeler. Ayarlar → Sistem → Ses'te ve görüşme uygulamanızda giriş olarak \"Mikrofonlu Kulaklık\" cihazını seçin."
+        },
+        {
+          "q": "AirPods mikrofonu neden boğuk geliyor?",
+          "a": "En yaygın neden, sapın altındaki mikrofon ızgarasındaki kirdir. Kuru bir kulak çubuğuyla nazikçe temizleyin."
+        },
+        {
+          "q": "Mikrofon olarak tek bir AirPod kullanabilir miyim?",
+          "a": "Evet. iPhone'da AirPods Bluetooth ayarlarında Mikrofon'u Her Zaman Sol veya Her Zaman Sağ olarak ayarlayın."
+        },
+        {
+          "q": "Sesim yükleniyor mu?",
+          "a": "Hayır. Test tarayıcınızda çalışır ve hiçbir şey cihazınızdan çıkmaz."
+        }
+      ]
+    },
+    "headphone": {
+      "card": {
+        "name": "Kulaklık testi",
+        "desc": "Sol/sağ, stereo ve bas kontrolü."
+      },
+      "title": "Kulaklık Testi: Online Sol/Sağ, Stereo ve Bas Kontrolü",
+      "description": "Ücretsiz online kulaklık testi. Test tonları ve frekans taramasıyla sol ve sağ kanalları, stereo dengeyi ve bası kontrol edin. Kablolu ve Bluetooth için.",
+      "h1Html": "Online <span class=\"grad\">kulaklık testi</span>",
+      "lead": "Kulaklığınızın iki tarafının da çalışıp çalışmadığını, sol ve sağın doğru yerde olup olmadığını ve basın ne kadar derine indiğini saniyeler içinde öğrenin.",
+      "article": [
+        {
+          "h": "Kulaklık nasıl test edilir",
+          "ol": [
+            "Kulaklığınızı takın ve sesi rahat bir seviyeye indirin.",
+            "Sol'a basın: ton yalnızca sol kulağınızdan gelmelidir. Ardından Sağ'a basın.",
+            "İkisi'ne basın: ton ortada, başınızın tam içinde duyulmalıdır.",
+            "Derin bastan yüksek tize kadar aralığı duymak için frekans taramasını çalıştırın."
+          ]
+        },
+        {
+          "h": "Bir taraf daha kısık mı ya da sessiz mi?",
+          "ul": [
+            "Denge kaydırıcısını kontrol edin: Windows'ta Ayarlar → Sistem → Ses → cihazınız → Sol/Sağ, Mac'te Sistem Ayarları → Ses → Çıkış → Denge.",
+            "iPhone'da Mono Ses'in kapalı olduğundan emin olun: Ayarlar → Erişilebilirlik → Ses ve Görsel.",
+            "Kablolu kulaklık: fişi çıkarın, temizleyin ve sonuna kadar takın. Yarım takılı bir fiş çoğu zaman bir tarafı susturur.",
+            "Filedeki kulak kiri, kulak içi kulaklığın bir tarafının kısık olmasının yaygın bir nedenidir. Kuru bir fırçayla nazikçe temizleyin."
+          ]
+        },
+        {
+          "h": "Bas, tiz ve Bluetooth",
+          "p": [
+            "İyi kulak üstü kulaklıklar, taramanın başında 30 veya 40 Hz'e kadar net çalar. Küçük kulak içi kulaklıkların bas üretebilmesi için kulağı iyi kapatması gerekir; alt frekanslar cılız geliyorsa daha büyük bir kulak ucu deneyin. Bluetooth genellikle 100 ila 250 milisaniyelik kısa bir gecikme ekler; bu müzikte önemli değildir ama oyunlarda fark edilir."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Kulaklığımın sol/sağ ters olduğunu nasıl anlarım?",
+          "a": "Sol'a basın. Ses sağ kulağınızdan geliyorsa kulaklığı ters takmışsınızdır ya da kablo veya adaptör ters bağlanmıştır."
+        },
+        {
+          "q": "Taramanın başını neden duyamıyorum?",
+          "a": "Çok düşük notalar iyi bir yalıtım ve daha büyük sürücüler gerektirir. Birçok kulak içi kulaklık ve dizüstü hoparlörü 100 Hz'in çok altını çalamaz."
+        },
+        {
+          "q": "Test kulaklarım için güvenli mi?",
+          "a": "Normal ses seviyesinde evet. Özellikle kulak içi kulaklıklarda düşük başlayın ve sesi yavaşça artırın."
+        },
+        {
+          "q": "Bluetooth kulaklıklarla çalışır mı?",
+          "a": "Evet. Önce bağlayın ki etkin çıkış olsunlar, ardından tonları çalın."
+        }
+      ]
+    },
+    "recorder": {
+      "card": {
+        "name": "Ses kaydedici",
+        "desc": "Kaydedin ve indirin, üyelik gerekmez."
+      },
+      "title": "Online Ses Kaydedici: Ücretsiz Ses Kaydı, Üyelik Yok",
+      "description": "Ücretsiz online ses kaydedici. Sesinizi tarayıcıda kaydedin, dinleyin ve dosyayı indirin. Süre sınırı yok, üyelik yok, hiçbir şey yüklenmez.",
+      "h1Html": "Online <span class=\"grad\">ses kaydedici</span>",
+      "lead": "Sesinizi doğrudan tarayıcıda kaydedin ve dosyayı indirin. Üyelik yok, süre sınırı yok ve ses cihazınızdan asla çıkmaz.",
+      "article": [
+        {
+          "h": "Online ses kaydı nasıl yapılır",
+          "ol": [
+            "\"Kaydı başlat\"a basın ve mikrofon erişimine izin verin.",
+            "Birden fazla mikrofonunuz varsa kullanacağınızı seçin.",
+            "Konuşun, şarkı söyleyin veya çalın. Zamanlayıcı ve seviye göstergesi kaydın çalıştığını gösterir.",
+            "Durdur'a basın. Kaydınız aşağıda dinlemeye veya indirmeye hazır olarak görünür."
+          ]
+        },
+        {
+          "h": "Hangi dosyayı alırım?",
+          "p": [
+            "Chrome, Edge ve Firefox, Opus codec'li WebM ses dosyası kaydeder. Safari ise M4A (AAC) dosyası kaydeder. İkisi de VLC'de, çoğu medya oynatıcıda ve Audacity gibi düzenleyicilerde çalar. MP3 gerekiyorsa herhangi bir ses dönüştürücü formatı birkaç saniyede değiştirebilir."
+          ]
+        },
+        {
+          "h": "Daha iyi bir kayıt için ipuçları",
+          "ul": [
+            "Önce mikrofon testini yapın ve −20 dB ile −10 dB arasında tepe değerleri hedefleyin.",
+            "Yumuşak mobilyaların olduğu küçük bir odada kaydedin. Perdeler ve bir kanepe yankıyı her filtreden daha iyi azaltır.",
+            "Mikrofonu ağzınızdan yaklaşık bir el genişliği uzakta ve biraz yanda tutun.",
+            "Vantilatörleri ve bildirimleri kapatın, altyapı müziği çalıyorsanız kulaklık kullanın."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Süre sınırı var mı?",
+          "a": "Sabit bir sınır yok. Kayıtlar tarayıcınızın belleğinde tutulur, bu yüzden çok uzun kayıtlar cihazınıza bağlıdır. Bir saati aşan kayıtları parça parça indirin."
+        },
+        {
+          "q": "Kayıtlarım nereye kaydediliyor?",
+          "a": "İndirene kadar yalnızca bu tarayıcı sekmesinde. Sayfayı kapatmak veya yenilemek onları siler."
+        },
+        {
+          "q": "iPhone ve Android'de çalışır mı?",
+          "a": "Evet. iPhone'da Safari'de, Android'de Chrome veya Samsung Internet'te çalışır."
+        },
+        {
+          "q": "Ses kaydedici gerçekten ücretsiz mi?",
+          "a": "Evet. Üyelik yok, filigran yok ve yükleme yok."
         }
       ]
     }
