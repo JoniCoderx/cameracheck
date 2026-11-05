@@ -19,7 +19,17 @@ const PAGES = {
   webcam: { slug: 'webcam-test/', tools: ['cam'], devices: true },
   speaker: { slug: 'speaker-test/', tools: ['spk'], devices: false }
 };
-const PAGE_ORDER = ['home', 'mic', 'webcam', 'speaker'];
+Object.assign(PAGES, {
+  discord: { slug: 'discord-mic-test/', tools: ['mic'], devices: false, variant: true, icon: 'mic' },
+  zoom: { slug: 'zoom-mic-test/', tools: ['mic'], devices: false, variant: true, icon: 'mic' },
+  iphone: { slug: 'iphone-mic-test/', tools: ['mic'], devices: false, variant: true, icon: 'mic' },
+  android: { slug: 'android-mic-test/', tools: ['mic'], devices: false, variant: true, icon: 'mic' },
+  airpods: { slug: 'airpods-mic-test/', tools: ['mic'], devices: true, variant: true, icon: 'mic' },
+  headphone: { slug: 'headphone-test/', tools: ['spk'], devices: false, variant: true, icon: 'spk' },
+  recorder: { slug: 'voice-recorder/', tools: ['rec'], devices: false, variant: true, icon: 'rec' }
+});
+const PAGE_ORDER = ['home', 'mic', 'webcam', 'speaker', 'recorder', 'discord', 'zoom', 'iphone', 'android', 'airpods', 'headphone'];
+const VARIANTS = PAGE_ORDER.filter((p) => PAGES[p].variant);
 
 /* ---------- load locales ---------- */
 const en = JSON.parse(fs.readFileSync(path.join(SRC, 'locales/en.json'), 'utf8'));
@@ -27,6 +37,7 @@ const keysOf = (o, p = '') => Object.entries(o).flatMap(([k, v]) =>
   v && typeof v === 'object' && !Array.isArray(v) ? keysOf(v, p + k + '.') : [p + k]);
 const enKeys = keysOf(en);
 const locales = {};
+const HAS_PAGE = {};
 for (const lang of cfg.languages) {
   const f = path.join(SRC, `locales/${lang}.json`);
   if (!fs.existsSync(f)) { console.warn(`! skipping ${lang}: no locale file`); continue; }
@@ -40,8 +51,11 @@ for (const lang of cfg.languages) {
     const o = {}; for (const k of Object.keys(base)) o[k] = merge(base[k], over ? over[k] : undefined); return o;
   };
   locales[lang] = merge(en, data);
+  HAS_PAGE[lang] = new Set(Object.keys(data.pages || {}));
 }
 const LANGS = Object.keys(locales);
+// a page exists in a language only if that language has its own translation of it
+const pageLangs = (page) => LANGS.filter((l) => l === 'en' || HAS_PAGE[l].has(page));
 
 /* ---------- helpers ---------- */
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -95,6 +109,7 @@ const TODAY = new Date().toISOString().slice(0, 10);
 
 /* ---------- icons (inline SVG, no emoji) ---------- */
 const ICONS = {
+  rec: '<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.6" fill="currentColor" stroke="none"/>',
   mic: '<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M8.5 21h7"/>',
   cam: '<rect x="3" y="6" width="13" height="12" rx="2.5"/><path d="M16 10.5l5-3v9l-5-3z"/>',
   spk: '<path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5z"/><path d="M15.5 9.5a3.5 3.5 0 0 1 0 5M18.5 6.5a8 8 0 0 1 0 11"/>',
@@ -176,7 +191,7 @@ ${extraLd.map(jsonLd).join('\n')}
 
 function header(lang, page, altMap) {
   const u = locales[lang].ui;
-  const opts = LANGS.map((l) => `<option value="${altMap ? (altMap[l] || prefix(l)) : PAGES[page] ? urlFor(l, page) : prefix(l)}"${l === lang ? ' selected' : ''}>${esc(locales[l].meta.shortName || locales[l].meta.langName)}</option>`).join('');
+  const opts = LANGS.map((l) => `<option value="${altMap ? (altMap[l] || prefix(l)) : PAGES[page] && pageLangs(page).includes(l) ? urlFor(l, page) : prefix(l)}"${l === lang ? ' selected' : ''}>${esc(locales[l].meta.shortName || locales[l].meta.langName)}</option>`).join('');
   return `<a class="skip" href="#main">${esc(u.skip)}</a>
 <header class="topbar">
   <div class="wrap topbar-inner">
@@ -210,6 +225,9 @@ function footer(lang) {
     <nav class="foot-links" aria-label="Tests">
       <a href="${urlFor(lang, 'mic')}">${esc(u.navMic)}</a> · <a href="${urlFor(lang, 'webcam')}">${esc(u.navCam)}</a> · <a href="${urlFor(lang, 'speaker')}">${esc(u.navSpk)}</a> · <a href="${guidesHref(lang)}">${esc(u.guides)}</a>
     </nav>
+    ${VARIANTS.some((v) => pageLangs(v).includes(lang)) ? `<nav class="foot-links foot-more" aria-label="${esc(u.moreTests)}">
+      ${VARIANTS.filter((v) => pageLangs(v).includes(lang)).map((v) => `<a href="${urlFor(lang, v)}">${esc(locales[lang].pages[v].card.name)}</a>`).join(' · ')}
+    </nav>` : ''}
     <ul class="foot-langs">${langLinks}</ul>
     <p class="muted"><a href="/privacy/">${esc(u.privacy)}</a> · <a href="/about/">${esc(u.about)}</a> · <a href="mailto:${esc(cfg.contactEmail)}">${esc(u.contact)}</a> · © <span id="year">${new Date().getFullYear()}</span> ${DOMAIN.replace(/^https?:\/\//, '')}</p>
   </div>
@@ -335,6 +353,27 @@ const spkTool = (u, headTag) => `
   </div>
 </section>`;
 
+const recTool = (u, headTag) => `
+<section class="wrap tool" id="recorder" aria-labelledby="recTitle">
+  <div class="card">
+    <div class="card-head">
+      <div>
+        <${headTag} id="recTitle" class="tool-title"><span class="ico">${ic('rec')}</span> ${esc(u.recTool)}</${headTag}>
+        <p class="muted">${esc(u.recHint)}</p>
+      </div>
+      <div class="controls">
+        <select id="recMic" aria-label="${esc(u.mic)}"><option value="">${esc(u.defaultMic)}</option></select>
+      </div>
+    </div>
+    <div class="rec-panel">
+      <button class="rec-big" id="recToggle" type="button"><span class="rec-dot"></span><span>${esc(u.recStart)}</span></button>
+      <div class="rec-time" id="recTime">00:00</div>
+      <div class="rec-meter" aria-hidden="true"><div class="rec-fill" id="recFill"></div></div>
+    </div>
+    <ul class="rec-list" id="recList"><li class="rec-empty muted">${esc(u.recEmpty)}</li></ul>
+  </div>
+</section>`;
+
 const devicesTool = (u) => `
 <section class="wrap tool" id="devices" aria-labelledby="devTitle">
   <div class="card">
@@ -372,7 +411,7 @@ function article(sections, u) {
 function renderPage(lang, page) {
   const L = locales[lang], u = L.ui, P = L.pages[page], def = PAGES[page];
   const url = urlFor(lang, page);
-  const alternates = LANGS.map((l) => [l, urlFor(l, page)]).concat([['x-default', urlFor('en', page)]]);
+  const alternates = pageLangs(page).map((l) => [l, urlFor(l, page)]).concat([['x-default', urlFor('en', page)]]);
   const isHome = page === 'home';
   const toolHead = isHome ? 'h2' : 'h2';
 
@@ -406,7 +445,7 @@ function renderPage(lang, page) {
     });
   }
 
-  const statuses = def.tools.map((k) => {
+  const statuses = def.tools.filter((k) => k !== 'rec').map((k) => {
     const id = { mic: 'stMic', cam: 'stCam', spk: 'stSpk' }[k];
     return `<div class="status" id="${id}"><span class="dot"></span><span>${esc(u[k])}:</span> <b>${esc(u.notTested)}</b></div>`;
   }).join('');
@@ -414,31 +453,31 @@ function renderPage(lang, page) {
   const cta = isHome
     ? `<button class="btn btn-primary btn-lg" id="heroStart" data-action="all" type="button">${esc(u.testAll)}</button>
        <a class="btn btn-ghost btn-lg" href="${urlFor(lang, 'mic')}">${esc(u.justMic)}</a>`
-    : `<button class="btn btn-primary btn-lg" id="heroStart" data-action="${def.tools[0]}" type="button">${esc(u[{ mic: 'startMic', cam: 'startCam', spk: 'startSpk' }[def.tools[0]]])}</button>`;
+    : `<button class="btn btn-primary btn-lg" id="heroStart" data-action="${def.tools[0]}" type="button">${esc(u[{ mic: 'startMic', cam: 'startCam', spk: 'startSpk', rec: 'startRec' }[def.tools[0]]])}</button>`;
 
-  const tools = def.tools.map((k) => ({ mic: micTool, cam: camTool, spk: spkTool }[k](u, toolHead))).join('\n');
+  const tools = def.tools.map((k) => ({ mic: micTool, cam: camTool, spk: spkTool, rec: recTool }[k](u, toolHead))).join('\n');
 
-  const others = isHome ? '' : `
+  const cardList = ['mic', 'webcam', 'speaker', ...VARIANTS].filter((p) => p !== page && pageLangs(p).includes(lang) && (!isHome || PAGES[p].variant));
+  const others = !cardList.length ? '' : `
 <section class="wrap others" aria-labelledby="othersTitle">
-  <h2 id="othersTitle">${esc(u.otherTests)}</h2>
+  <h2 id="othersTitle">${esc(isHome ? u.moreTests : u.otherTests)}</h2>
   <div class="other-grid">
-    ${PAGE_ORDER.filter((p) => p !== 'home' && p !== page).map((p) => {
-      const ico = ic({ mic: 'mic', webcam: 'cam', speaker: 'spk' }[p]);
-      const name = { mic: u.navMic, webcam: u.navCam, speaker: u.navSpk }[p];
-      const desc = { mic: u.cardMicDesc, webcam: u.cardCamDesc, speaker: u.cardSpkDesc }[p];
-      return `<a class="other-card" href="${urlFor(lang, p)}"><span class="other-ico">${ico}</span><span><b>${esc(name)}</b><small>${esc(desc)}</small></span></a>`;
+    ${cardList.map((p) => {
+      const main = { mic: [u.navMic, u.cardMicDesc, 'mic'], webcam: [u.navCam, u.cardCamDesc, 'cam'], speaker: [u.navSpk, u.cardSpkDesc, 'spk'] }[p];
+      const [name, desc, icon] = main || [L.pages[p].card.name, L.pages[p].card.desc, PAGES[p].icon];
+      return `<a class="other-card" href="${urlFor(lang, p)}"><span class="other-ico">${ic(icon)}</span><span><b>${esc(name)}</b><small>${esc(desc)}</small></span></a>`;
     }).join('')}
   </div>
 </section>`;
 
-  const toolKey = { mic: 'mic', webcam: 'webcam', speaker: null, home: 'any' }[page];
+  const toolKey = { mic: 'mic', webcam: 'webcam', speaker: null, home: 'any', headphone: null }[page] ?? (PAGES[page].tools[0] === 'mic' || PAGES[page].tools[0] === 'rec' ? 'mic' : null);
   const GL = GUIDES_BY_LANG[lang] ? lang : 'en'; const rel = GUIDES_BY_LANG[GL].guides.filter((g) => toolKey === 'any' || g.tool === toolKey).slice(0, 3);
   const related = rel.length ? `
 <section class="wrap others" aria-labelledby="guidesTitle">
   <h2 id="guidesTitle">${esc(u.guides)}</h2>
   <div class="other-grid">${rel.map((g) => `<a class="other-card" href="${guideUrl(GL, g.slug)}" hreflang="${GL}"><span class="other-ico">${ic(g.tool === 'mic' ? 'mic' : 'cam')}</span><span lang="${GL}" dir="${locales[GL].meta.dir}"><b>${esc(g.h1)}</b><small>${esc(g.description.split('. ')[0].replace(/\.+$/, ''))}.</small></span></a>`).join('')}</div>
 </section>` : '';
-  const runtime = { lang, page, tools: def.tools, alts: Object.fromEntries(LANGS.map((l) => [l, urlFor(l, page)])), names: Object.fromEntries(LANGS.map((l) => [l, locales[l].meta.langName])) };
+  const runtime = { lang, page, tools: def.tools, alts: Object.fromEntries(pageLangs(page).map((l) => [l, urlFor(l, page)])), names: Object.fromEntries(LANGS.map((l) => [l, locales[l].meta.langName])) };
 
   return `${head({ lang, title: P.title, description: P.description, canonical: url, alternates, extraLd: ld })}
 <body class="page-${page}">
@@ -626,6 +665,7 @@ const aboutHtml = `
 let count = 0;
 for (const lang of LANGS) {
   for (const page of PAGE_ORDER) {
+    if (!pageLangs(page).includes(lang)) continue;
     write(path.join(urlFor(lang, page).slice(1), 'index.html'), renderPage(lang, page));
     count++;
   }
@@ -642,10 +682,10 @@ write('about/index.html', infoPage('about', `About ${BRAND}`, `About ${BRAND}: t
 const today = new Date().toISOString().slice(0, 10);
 const smUrls = [];
 for (const page of PAGE_ORDER) {
-  for (const lang of LANGS) {
-    const alts = LANGS.map((l) => `    <xhtml:link rel="alternate" hreflang="${l}" href="${abs(urlFor(l, page))}"/>`).join('\n') +
+  for (const lang of pageLangs(page)) {
+    const alts = pageLangs(page).map((l) => `    <xhtml:link rel="alternate" hreflang="${l}" href="${abs(urlFor(l, page))}"/>`).join('\n') +
       `\n    <xhtml:link rel="alternate" hreflang="x-default" href="${abs(urlFor('en', page))}"/>`;
-    smUrls.push(`  <url>\n    <loc>${abs(urlFor(lang, page))}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>${page === 'home' ? '1.0' : '0.9'}</priority>\n${alts}\n  </url>`);
+    smUrls.push(`  <url>\n    <loc>${abs(urlFor(lang, page))}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>${page === 'home' ? '1.0' : PAGES[page].variant ? '0.8' : '0.9'}</priority>\n${alts}\n  </url>`);
   }
 }
 for (const slug of ['', ...GUIDES.guides.map((g) => g.slug)]) {

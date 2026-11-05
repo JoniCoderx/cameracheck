@@ -501,6 +501,7 @@
     try { devices = await navigator.mediaDevices.enumerateDevices(); } catch (e) { devices = []; }
     fillSelect('#micSelect', 'audioinput', 'defaultMic');
     fillSelect('#camSelect', 'videoinput', 'defaultCam');
+    fillSelect('#recMic', 'audioinput', 'defaultMic');
     renderDeviceList();
     fillPerms();
   }
@@ -570,12 +571,82 @@
   on('#heroStart', 'click', async (e) => {
     getCtx();
     const action = e.currentTarget.dataset.action;
-    const target = { all: '#mic', mic: '#mic', cam: '#cam', spk: '#speaker' }[action];
+    const target = { all: '#mic', mic: '#mic', cam: '#cam', spk: '#speaker', rec: '#recorder' }[action];
     if ($(target)) $(target).scrollIntoView({ behavior: 'smooth' });
     if ((action === 'all' || action === 'mic') && !mic.stream) await startMic();
     if ((action === 'all' || action === 'cam') && !cam.stream) await startCam();
+    if (action === 'rec') { const rb = $('#recToggle'); if (rb && !rb.classList.contains('on')) rb.click(); }
     if (action === 'spk') { const btn = $('.spk-btn[data-pan="0"]'); if (btn) btn.click(); }
   });
+
+  /* ---------------- VOICE RECORDER ---------------- */
+  if ($('#recorder')) {
+    const R = { stream: null, rec: null, chunks: [], t0: 0, timer: 0, raf: 0, an: null, src: null, n: 0, mime: '' };
+    const btn = $('#recToggle'), label = btn.querySelector('span:last-child'), time = $('#recTime'), fill = $('#recFill'), list = $('#recList');
+    const fmt = (ms) => { const s = Math.floor(ms / 1000); return String(Math.floor(s / 60)).padStart(2, '0') + ':' + String(s % 60).padStart(2, '0'); };
+    const kb = (b) => (b > 1048576 ? (b / 1048576).toFixed(1) + ' MB' : Math.max(1, Math.round(b / 1024)) + ' KB');
+    async function startRec() {
+      getCtx(); // inside the tap, for iOS
+      if (!hasMedia || !window.MediaRecorder) return toast(t('errUnsupported'));
+      const id = $('#recMic') ? $('#recMic').value : '';
+      try { R.stream = await navigator.mediaDevices.getUserMedia({ audio: id ? { deviceId: { exact: id } } : true }); }
+      catch (e) { toast(errMsg(e)); return; }
+      refreshDevices();
+      R.mime = pickMime(['audio/webm;codecs=opus', 'audio/mp4', 'audio/ogg;codecs=opus', 'audio/webm']);
+      R.rec = new MediaRecorder(R.stream, R.mime ? { mimeType: R.mime } : undefined);
+      R.chunks = [];
+      R.rec.ondataavailable = (e) => { if (e.data && e.data.size) R.chunks.push(e.data); };
+      R.rec.onstop = finish;
+      R.rec.start(1000);
+      R.t0 = performance.now(); time.textContent = '00:00';
+      R.timer = setInterval(() => { time.textContent = fmt(performance.now() - R.t0); }, 250);
+      const ctx = getCtx(); R.src = ctx.createMediaStreamSource(R.stream); R.an = ctx.createAnalyser(); R.an.fftSize = 1024; R.src.connect(R.an);
+      const buf = new Float32Array(R.an.fftSize);
+      const loop = () => {
+        if (!R.an) return;
+        R.an.getFloatTimeDomainData(buf); let s = 0; for (let i = 0; i < buf.length; i++) s += buf[i] * buf[i];
+        const db = 20 * Math.log10(Math.sqrt(s / buf.length) || 1e-8);
+        fill.style.setProperty('--lvl', Math.max(0, Math.min(100, ((db + 60) / 60) * 100)).toFixed(1) + '%');
+        R.raf = requestAnimationFrame(loop);
+      };
+      loop();
+      btn.classList.add('on'); label.textContent = t('recStop');
+    }
+    function finish() {
+      clearInterval(R.timer); cancelAnimationFrame(R.raf);
+      const dur = performance.now() - R.t0;
+      try { R.src.disconnect(); } catch (e) {}
+      R.an = null;
+      if (R.stream) R.stream.getTracks().forEach((tr) => tr.stop());
+      R.stream = null;
+      fill.style.setProperty('--lvl', '0%');
+      btn.classList.remove('on'); label.textContent = t('recStart');
+      const type = (R.rec && R.rec.mimeType) || R.mime || 'audio/webm';
+      const blob = new Blob(R.chunks, { type });
+      if (!blob.size) return;
+      const url = URL.createObjectURL(blob);
+      R.n++;
+      const name = t('recName') + ' ' + R.n;
+      const empty = list.querySelector('.rec-empty'); if (empty) empty.remove();
+      const li = document.createElement('li'); li.className = 'rec-item';
+      const meta = document.createElement('div'); meta.className = 'rec-meta';
+      const b = document.createElement('b'); b.textContent = name;
+      const info = document.createElement('span'); info.className = 'muted'; info.textContent = fmt(dur) + ' · ' + kb(blob.size);
+      meta.append(b, info);
+      const audio = document.createElement('audio'); audio.controls = true; audio.src = url; audio.preload = 'metadata';
+      const actions = document.createElement('div'); actions.className = 'rec-actions';
+      const dl = document.createElement('a'); dl.className = 'btn'; dl.href = url; dl.download = 'mictestplus-' + R.n + '.' + extFor(type); dl.textContent = t('download');
+      const del = document.createElement('button'); del.type = 'button'; del.className = 'btn btn-bad'; del.textContent = t('recDelete');
+      del.addEventListener('click', () => {
+        URL.revokeObjectURL(url); li.remove();
+        if (!list.children.length) { const e = document.createElement('li'); e.className = 'rec-empty muted'; e.textContent = t('recEmpty'); list.append(e); }
+      });
+      actions.append(dl, del);
+      li.append(meta, audio, actions);
+      list.prepend(li);
+    }
+    on('#recToggle', 'click', () => { if (R.rec && R.rec.state === 'recording') R.rec.stop(); else startRec(); });
+  }
 
   /* ---------------- language hint (no auto-redirect: better for SEO and users) ---------------- */
   (() => {

@@ -113,7 +113,16 @@
     "spkSorry": "Check volume, mute and output device",
     "noDevices": "No devices yet. Press Start above",
     "guides": "Guides",
-    "maxRes": "Max supported"
+    "maxRes": "Max supported",
+    "moreTests": "More tests",
+    "recTool": "Voice recorder",
+    "recHint": "Press Record, speak, then press Stop. Your recordings appear below, ready to play or download.",
+    "recStart": "Record",
+    "recStop": "Stop",
+    "recDelete": "Delete",
+    "recEmpty": "No recordings yet.",
+    "recName": "Recording",
+    "startRec": "Start recording"
   },
   "pages": {
     "home": {
@@ -388,6 +397,395 @@
         {
           "q": "Does it work with Bluetooth headphones?",
           "a": "Yes. Connect them first so they become the active output, then play the tones."
+        }
+      ]
+    },
+    "discord": {
+      "card": {
+        "name": "Discord mic test",
+        "desc": "Check your mic before you join voice."
+      },
+      "title": "Discord Mic Test: Check Your Microphone Before Voice Chat",
+      "description": "Free Discord mic test. Check your mic level, hear yourself back and fix the Discord settings that stop friends from hearing you. Runs in your browser.",
+      "h1Html": "<span class=\"grad\">Discord mic test</span>",
+      "lead": "Make sure your mic works before you hop into a voice channel. Test it here, then match the same settings in Discord.",
+      "article": [
+        {
+          "h": "How to test your mic for Discord",
+          "ol": [
+            "Press \"Start mic test\" and allow microphone access.",
+            "Pick the same microphone you use in Discord from the drop-down.",
+            "Talk at your normal volume and watch the level meter.",
+            "Record 5 seconds and play it back to hear what your friends hear."
+          ]
+        },
+        {
+          "h": "Mic works here but not in Discord?",
+          "p": [
+            "If the meter moves on this page, your microphone and your system are fine. The problem is a Discord setting. Open User Settings (the gear next to your name) → Voice & Video and check these, in order:"
+          ],
+          "ul": [
+            "Input Device: choose your microphone by name instead of \"Default\". Discord often stays on an old default after you plug in a headset.",
+            "Input Sensitivity: turn off \"Automatically determine input sensitivity\" and drag the slider left until your voice lights up the bar.",
+            "Input Mode: if you use Push to Talk, check the keybind. Holding the wrong key looks exactly like a dead mic.",
+            "A red mic icon with a slash next to your name means you are server muted. Only a moderator can undo that.",
+            "If your voice cuts in and out, set Noise Suppression to None for a moment and test again.",
+            "Still nothing? Scroll down and press \"Reset Voice Settings\", then pick your mic again."
+          ]
+        },
+        {
+          "h": "Getting a clean sound on Discord",
+          "p": [
+            "Aim for speech that peaks between −20 dB and −10 dB on the meter here. Lower than that and friends will turn you up and hear your fan. Higher than that and you will clip when you laugh or shout. If you play without headphones, keep Echo Cancellation on in Discord so your speakers don't feed back into the mic."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why can't my friends hear me on Discord?",
+          "a": "Usually Discord is listening to a different device, the input sensitivity is set too high, or you are muted. Pick your mic by name in Voice & Video, lower the sensitivity and check the mic icon next to your name."
+        },
+        {
+          "q": "How do I test my mic inside Discord?",
+          "a": "Go to User Settings → Voice & Video and press \"Let's Check\" under Mic Test. The bar should move while you talk."
+        },
+        {
+          "q": "Does Discord work with USB and Bluetooth mics?",
+          "a": "Yes. Connect the mic, then select it by name in Discord's Input Device list. Bluetooth headsets may switch to a lower quality mode while the mic is in use, which is normal."
+        },
+        {
+          "q": "Is this test connected to my Discord account?",
+          "a": "No. This page runs in your browser and never talks to Discord. Nothing is uploaded."
+        }
+      ]
+    },
+    "zoom": {
+      "card": {
+        "name": "Zoom mic test",
+        "desc": "Be ready before your next meeting."
+      },
+      "title": "Zoom Mic Test: Check Your Microphone Before a Meeting",
+      "description": "Test your microphone before a Zoom call. Check the level, record and listen back, then fix the Zoom audio settings that make you sound quiet or silent.",
+      "h1Html": "<span class=\"grad\">Zoom mic test</span>",
+      "lead": "Thirty seconds here saves the \"can you hear me?\" at the start of every meeting. Test your mic, then check the same settings in Zoom.",
+      "article": [
+        {
+          "h": "How to test your mic before a Zoom call",
+          "ol": [
+            "Press \"Start mic test\" and allow microphone access.",
+            "Choose the microphone you will use in the meeting.",
+            "Speak normally. The meter should reach the green zone.",
+            "Record a short clip and listen to it with headphones."
+          ]
+        },
+        {
+          "h": "Zoom audio settings that matter",
+          "ul": [
+            "Settings → Audio → Microphone: pick your mic by name and press \"Test Mic\".",
+            "If your volume keeps drifting, untick \"Automatically adjust microphone volume\" and set the slider yourself.",
+            "\"Suppress background noise\" on Auto works for most rooms. Set it to Low if your voice sounds choppy.",
+            "Playing music or teaching an instrument? Turn on \"Original sound for musicians\" so Zoom stops filtering your audio."
+          ]
+        },
+        {
+          "h": "Nobody can hear you in the meeting?",
+          "ul": [
+            "Check the microphone icon at the bottom left. A red line means you are muted.",
+            "If you see \"Join Audio\" instead of a mic icon, click it and choose \"Join with Computer Audio\".",
+            "The host may have muted everyone. Ask in the chat or press \"Raise Hand\".",
+            "Close other apps that use the mic, such as Teams, Discord or another browser tab, then rejoin."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do I test my mic before a Zoom meeting?",
+          "a": "Use the mic test on this page, or open Zoom's Settings → Audio → Test Mic. Zoom also offers a test meeting at zoom.us/test."
+        },
+        {
+          "q": "Why does Zoom say my microphone is not available?",
+          "a": "Another app is probably using it, or Zoom has no permission. Close other call apps and allow Zoom in your system's microphone privacy settings."
+        },
+        {
+          "q": "Why do I sound quiet on Zoom?",
+          "a": "The system input volume is low or Zoom's automatic volume pulled it down. Raise the input volume and untick automatic adjustment in Zoom."
+        },
+        {
+          "q": "Does this page record or send my audio?",
+          "a": "No. Everything runs in your browser and nothing is uploaded."
+        }
+      ]
+    },
+    "iphone": {
+      "card": {
+        "name": "iPhone mic test",
+        "desc": "Check your iPhone microphones in Safari."
+      },
+      "title": "iPhone Mic Test: Check Your iPhone Microphone Online",
+      "description": "Test your iPhone microphone in Safari, no app needed. See the live level, record and play back, and fix the iOS settings that block the mic.",
+      "h1Html": "<span class=\"grad\">iPhone mic test</span>",
+      "lead": "Open this page in Safari or Chrome on your iPhone, allow the microphone and speak. You'll know in seconds whether the mic works.",
+      "article": [
+        {
+          "h": "How to test your iPhone microphone",
+          "ol": [
+            "Open this page in Safari (or Chrome) on your iPhone.",
+            "Tap \"Start mic test\" and choose Allow when iOS asks.",
+            "Speak normally and watch the level meter.",
+            "Tap \"Record 5s\", then play it back to hear the quality."
+          ]
+        },
+        {
+          "h": "Your iPhone has more than one microphone",
+          "p": [
+            "Most iPhones have a microphone at the bottom next to the charging port, one in the earpiece at the top and one near the rear camera. Calls and voice memos mostly use the bottom mic, while video recording uses the others. If the meter barely moves, try speaking toward the bottom edge of the phone, and check that your case doesn't cover the small mic holes."
+          ]
+        },
+        {
+          "h": "iPhone microphone not working?",
+          "ul": [
+            "Website permission: in Safari, tap the \"aA\" button in the address bar → Website Settings → Microphone → Allow.",
+            "App permission: Settings → Privacy & Security → Microphone, and make sure your browser or app is switched on.",
+            "Bluetooth: AirPods or a car system can take over the mic. Turn Bluetooth off and test again.",
+            "Clean the mic holes gently with a soft dry brush. Never push anything sharp into them.",
+            "Restart the iPhone. If the Voice Memos app also records silence, contact Apple Support."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can I test my iPhone mic without an app?",
+          "a": "Yes. This page works in Safari and Chrome on iOS. Allow microphone access when asked and start the test."
+        },
+        {
+          "q": "Why does my iPhone mic sound muffled?",
+          "a": "A case, screen protector edge or lint often covers the mic holes. Remove the case and gently clean the holes, then test again."
+        },
+        {
+          "q": "Why can't people hear me on calls but the test works?",
+          "a": "Calls may route through a connected Bluetooth device or the earpiece mic. Disconnect Bluetooth and try speakerphone to compare."
+        },
+        {
+          "q": "Is my recording uploaded?",
+          "a": "No. Recordings stay in Safari's memory until you close the page, unless you download them."
+        }
+      ]
+    },
+    "android": {
+      "card": {
+        "name": "Android mic test",
+        "desc": "Check your phone's mic in Chrome."
+      },
+      "title": "Android Mic Test: Check Your Phone Microphone Online",
+      "description": "Test your Android microphone in Chrome, no app needed. See the live level, record and play back, and fix the Android settings that block the mic.",
+      "h1Html": "<span class=\"grad\">Android mic test</span>",
+      "lead": "Open this page in Chrome or Samsung Internet on your phone, allow the microphone and speak. The meter shows right away whether the mic picks you up.",
+      "article": [
+        {
+          "h": "How to test your Android microphone",
+          "ol": [
+            "Open this page in Chrome, Samsung Internet or Firefox.",
+            "Tap \"Start mic test\" and allow microphone access.",
+            "Speak normally and watch the level meter.",
+            "Record 5 seconds and play it back to judge the quality."
+          ]
+        },
+        {
+          "h": "Android microphone not working?",
+          "ul": [
+            "Quick Settings: swipe down and make sure the \"Microphone access\" tile is on (Android 12 and later).",
+            "Browser permission: tap the icon left of the address → Permissions → Microphone → Allow.",
+            "App permission: Settings → Apps → Chrome → Permissions → Microphone → Allow only while using the app.",
+            "Bluetooth earbuds or a smartwatch can take over the mic. Turn Bluetooth off and test again.",
+            "Remove the case and clean the small mic hole at the bottom gently with a soft dry brush.",
+            "Restart the phone. If the built-in recorder app also records silence, the mic hardware may need repair."
+          ]
+        },
+        {
+          "h": "Why calls sound different from this test",
+          "p": [
+            "During calls, Android uses noise cancellation and often a second mic at the top of the phone to remove background sound. Browser recordings use a lighter version of the same processing. If the test sounds clear but calls don't, check your carrier's Wi-Fi Calling or VoLTE settings, or try a call with speakerphone on."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Can I test my phone mic without installing an app?",
+          "a": "Yes. This page works in Chrome, Samsung Internet and Firefox on Android. Allow microphone access and start the test."
+        },
+        {
+          "q": "Why is my Android mic blocked in the browser?",
+          "a": "Either the browser has no microphone permission or the Microphone access toggle in Quick Settings is off. Turn both on and reload the page."
+        },
+        {
+          "q": "Does it work on Samsung phones?",
+          "a": "Yes. Use Samsung Internet or Chrome. On Samsung phones you'll find app permissions under Settings → Apps → Permissions."
+        },
+        {
+          "q": "Is my audio uploaded?",
+          "a": "No. Everything happens on your phone and nothing is sent to a server."
+        }
+      ]
+    },
+    "airpods": {
+      "card": {
+        "name": "AirPods mic test",
+        "desc": "Check the mic in your AirPods."
+      },
+      "title": "AirPods Mic Test: Check Your AirPods Microphone Online",
+      "description": "Test the microphone in your AirPods on iPhone, Mac or Windows. Pick AirPods as input, check the level and fix the settings that make them sound bad.",
+      "h1Html": "<span class=\"grad\">AirPods mic test</span>",
+      "lead": "Connect your AirPods, select them in the microphone list and speak. The meter and a quick recording tell you if the AirPods mic works and how it sounds.",
+      "article": [
+        {
+          "h": "How to test your AirPods microphone",
+          "ol": [
+            "Put your AirPods in and connect them to your device.",
+            "Press \"Start mic test\" and allow microphone access.",
+            "Choose your AirPods in the microphone drop-down.",
+            "Talk normally, then record 5 seconds and play it back."
+          ]
+        },
+        {
+          "h": "Choosing AirPods as the microphone",
+          "ul": [
+            "iPhone: AirPods are used automatically once connected. Open this page in Safari and allow the microphone.",
+            "Mac: open System Settings → Sound → Input and select your AirPods.",
+            "Windows: AirPods appear twice, as \"Headphones\" and \"Headset\". Pick the \"Headset\" entry as your input, or the mic won't work.",
+            "Only one ear? On iPhone go to Settings → Bluetooth → the ⓘ next to your AirPods → Microphone, and choose Automatic, Always Left or Always Right."
+          ]
+        },
+        {
+          "h": "Why AirPods sound worse on calls",
+          "p": [
+            "When the microphone is active, Bluetooth switches to a hands-free mode that carries audio in both directions at a lower quality. That's why music sounds great but calls sound thin, especially on Windows and Android. It's normal behavior, not a fault. For the best voice quality in long calls on a computer, a wired or USB microphone still beats any Bluetooth earbuds."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why doesn't my AirPods mic work on Windows?",
+          "a": "Windows lists AirPods twice. Select the \"Headset\" device as your input in Settings → System → Sound, and in your call app."
+        },
+        {
+          "q": "Why does the AirPods mic sound muffled?",
+          "a": "Dirt in the mic grille at the bottom of the stem is the most common cause. Clean it gently with a dry cotton swab."
+        },
+        {
+          "q": "Can I use only one AirPod as a mic?",
+          "a": "Yes. On iPhone, set Microphone to Always Left or Always Right in the AirPods Bluetooth settings."
+        },
+        {
+          "q": "Is my audio uploaded?",
+          "a": "No. The test runs in your browser and nothing leaves your device."
+        }
+      ]
+    },
+    "headphone": {
+      "card": {
+        "name": "Headphone test",
+        "desc": "Left/right, stereo and bass check."
+      },
+      "title": "Headphone Test: Left/Right, Stereo and Bass Check Online",
+      "description": "Free online headphone test. Check left and right channels, stereo balance and bass with test tones and a frequency sweep. Works with wired and Bluetooth.",
+      "h1Html": "Online <span class=\"grad\">headphone test</span>",
+      "lead": "Find out in seconds if both sides of your headphones work, if left and right are the right way round, and how deep the bass goes.",
+      "article": [
+        {
+          "h": "How to test your headphones",
+          "ol": [
+            "Put your headphones on and turn the volume down to a comfortable level.",
+            "Press Left: the tone should come only from your left ear. Then press Right.",
+            "Press Both: the tone should sound centered, in the middle of your head.",
+            "Run the frequency sweep to hear the range from deep bass to high treble."
+          ]
+        },
+        {
+          "h": "One side quieter or silent?",
+          "ul": [
+            "Check the balance slider: Windows Settings → System → Sound → your device → Left/Right, or on a Mac System Settings → Sound → Output → Balance.",
+            "On iPhone, make sure Mono Audio is off: Settings → Accessibility → Audio & Visual.",
+            "Wired headphones: unplug, clean the plug and push it in fully. A half-inserted plug often kills one side.",
+            "Earwax on the mesh is a common cause of one quiet earbud. Clean it gently with a dry brush."
+          ]
+        },
+        {
+          "h": "Bass, treble and Bluetooth",
+          "p": [
+            "Good over-ear headphones play clearly down to 30 or 40 Hz at the start of the sweep. Small earbuds need a tight seal to produce bass, so try a larger ear tip if the low end sounds thin. Bluetooth adds a short delay, usually 100 to 250 milliseconds, which doesn't matter for music but is noticeable in games."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do I know if my headphones are left/right reversed?",
+          "a": "Press Left. If the sound comes from your right ear, the headphones are on backwards or the cable or adapter is wired in reverse."
+        },
+        {
+          "q": "Why can't I hear the start of the sweep?",
+          "a": "Very low notes need a good seal and bigger drivers. Many earbuds and laptop speakers can't play much below 100 Hz."
+        },
+        {
+          "q": "Is the test safe for my ears?",
+          "a": "Yes at a normal volume. Start low and turn it up slowly, especially with in-ear headphones."
+        },
+        {
+          "q": "Does it work with Bluetooth headphones?",
+          "a": "Yes. Connect them first so they become the active output, then play the tones."
+        }
+      ]
+    },
+    "recorder": {
+      "card": {
+        "name": "Voice recorder",
+        "desc": "Record and download, no sign-up."
+      },
+      "title": "Online Voice Recorder: Record Audio Free, No Sign-up",
+      "description": "Free online voice recorder. Record your voice in the browser, play it back and download the file. No time limit, no sign-up, nothing is uploaded.",
+      "h1Html": "Online <span class=\"grad\">voice recorder</span>",
+      "lead": "Record your voice right in the browser and download the file. No sign-up, no time limit, and the audio never leaves your device.",
+      "article": [
+        {
+          "h": "How to record your voice online",
+          "ol": [
+            "Press \"Start recording\" and allow microphone access.",
+            "Choose your microphone if you have more than one.",
+            "Speak, sing or play. The timer and level meter show that it's working.",
+            "Press Stop. Your recording appears below, ready to play or download."
+          ]
+        },
+        {
+          "h": "What file do I get?",
+          "p": [
+            "Chrome, Edge and Firefox save WebM audio with the Opus codec. Safari saves an M4A (AAC) file. Both play in VLC, most media players and editors like Audacity. If you need an MP3, any audio converter can change the format in a few seconds."
+          ]
+        },
+        {
+          "h": "Tips for a better recording",
+          "ul": [
+            "Run the mic test first and aim for peaks between −20 dB and −10 dB.",
+            "Record in a small room with soft furniture. Curtains and a sofa cut echo more than any filter.",
+            "Keep the microphone about a hand's width from your mouth and slightly to the side.",
+            "Turn off fans and notifications, and use headphones if you play a backing track."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is there a time limit?",
+          "a": "No fixed limit. Recordings are kept in your browser's memory, so very long sessions depend on your device. For recordings over an hour, download in parts."
+        },
+        {
+          "q": "Where are my recordings saved?",
+          "a": "Only in this browser tab until you download them. Closing or reloading the page deletes them."
+        },
+        {
+          "q": "Does it work on iPhone and Android?",
+          "a": "Yes. It works in Safari on iPhone and in Chrome or Samsung Internet on Android."
+        },
+        {
+          "q": "Is the voice recorder really free?",
+          "a": "Yes. No sign-up, no watermark and no upload."
         }
       ]
     }

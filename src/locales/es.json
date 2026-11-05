@@ -113,7 +113,16 @@
     "spkSorry": "Revisa el volumen, el silencio y el dispositivo de salida",
     "noDevices": "Aún no hay dispositivos, pulsa Iniciar arriba",
     "guides": "Guías",
-    "maxRes": "Máximo admitido"
+    "maxRes": "Máximo admitido",
+    "moreTests": "Más pruebas",
+    "recTool": "Grabadora de voz",
+    "recHint": "Pulsa Grabar, habla y luego pulsa Detener. Tus grabaciones aparecen abajo, listas para reproducir o descargar.",
+    "recStart": "Grabar",
+    "recStop": "Detener",
+    "recDelete": "Eliminar",
+    "recEmpty": "Aún no hay grabaciones.",
+    "recName": "Grabación",
+    "startRec": "Empezar a grabar"
   },
   "pages": {
     "home": {
@@ -380,6 +389,395 @@
         {
           "q": "¿Funciona con auriculares Bluetooth?",
           "a": "Sí. Conéctalos primero para que sean la salida activa y después reproduce los tonos."
+        }
+      ]
+    },
+    "discord": {
+      "card": {
+        "name": "Prueba de micro Discord",
+        "desc": "Comprueba tu micro antes de entrar a voz."
+      },
+      "title": "Prueba de micrófono Discord: comprueba tu micro antes de hablar",
+      "description": "Prueba de micrófono para Discord gratis. Mira el nivel, escúchate y corrige los ajustes de Discord que impiden que te oigan. Funciona en tu navegador.",
+      "h1Html": "<span class=\"grad\">Prueba de micrófono Discord</span>",
+      "lead": "Asegúrate de que tu micrófono funciona antes de entrar en un canal de voz. Pruébalo aquí y luego usa los mismos ajustes en Discord.",
+      "article": [
+        {
+          "h": "Cómo probar tu micrófono para Discord",
+          "ol": [
+            "Pulsa \"Probar micrófono\" y permite el acceso al micrófono.",
+            "Elige en la lista desplegable el mismo micrófono que usas en Discord.",
+            "Habla a tu volumen normal y observa el medidor de nivel.",
+            "Graba 5 segundos y reprodúcelos para oír lo que oyen tus amigos."
+          ]
+        },
+        {
+          "h": "¿El micro funciona aquí pero no en Discord?",
+          "p": [
+            "Si el medidor se mueve en esta página, tu micrófono y tu sistema están bien. El problema es un ajuste de Discord. Abre Ajustes de usuario (el engranaje junto a tu nombre) → Voz y vídeo y revisa esto, en orden:"
+          ],
+          "ul": [
+            "Dispositivo de entrada: elige tu micrófono por su nombre en lugar de \"Predeterminado\". Discord suele quedarse con el antiguo predeterminado al conectar unos auriculares.",
+            "Sensibilidad de entrada: desactiva \"Determinar automáticamente la sensibilidad de entrada\" y mueve el control a la izquierda hasta que tu voz ilumine la barra.",
+            "Modo de entrada: si usas Pulsar para hablar, revisa la tecla asignada. Pulsar la tecla equivocada parece exactamente un micro muerto.",
+            "Un icono de micrófono rojo y tachado junto a tu nombre significa que te han silenciado en el servidor. Solo un moderador puede quitarlo.",
+            "Si tu voz se corta, pon Supresión de ruido en Ninguna un momento y vuelve a probar.",
+            "¿Sigue sin funcionar? Baja hasta el final, pulsa \"Restablecer ajustes de voz\" y vuelve a elegir tu micro."
+          ]
+        },
+        {
+          "h": "Cómo conseguir un sonido limpio en Discord",
+          "p": [
+            "Intenta que tu voz tenga picos entre −20 dB y −10 dB en el medidor de esta página. Por debajo, tus amigos te subirán el volumen y oirán tu ventilador. Por encima, saturarás al reír o gritar. Si juegas sin auriculares, deja activada la Cancelación de eco en Discord para que tus altavoces no se cuelen en el micro."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Por qué mis amigos no me oyen en Discord?",
+          "a": "Normalmente Discord está escuchando otro dispositivo, la sensibilidad de entrada es demasiado alta o estás silenciado. Elige tu micro por su nombre en Voz y vídeo, baja la sensibilidad y revisa el icono del micro junto a tu nombre."
+        },
+        {
+          "q": "¿Cómo pruebo mi micro dentro de Discord?",
+          "a": "Ve a Ajustes de usuario → Voz y vídeo y pulsa \"Vamos a comprobarlo\" en Prueba de micrófono. La barra debería moverse mientras hablas."
+        },
+        {
+          "q": "¿Discord funciona con micrófonos USB y Bluetooth?",
+          "a": "Sí. Conecta el micro y selecciónalo por su nombre en la lista Dispositivo de entrada de Discord. Los auriculares Bluetooth pueden pasar a un modo de menor calidad mientras se usa el micro, y es normal."
+        },
+        {
+          "q": "¿Esta prueba está conectada a mi cuenta de Discord?",
+          "a": "No. Esta página funciona en tu navegador y nunca se comunica con Discord. No se sube nada."
+        }
+      ]
+    },
+    "zoom": {
+      "card": {
+        "name": "Prueba de micro Zoom",
+        "desc": "Prepárate antes de tu próxima reunión."
+      },
+      "title": "Prueba de micrófono Zoom: comprueba tu micro antes de la reunión",
+      "description": "Prueba tu micrófono antes de una llamada de Zoom. Mira el nivel, graba y escúchate, y corrige los ajustes de audio de Zoom que hacen que no se te oiga.",
+      "h1Html": "<span class=\"grad\">Prueba de micrófono Zoom</span>",
+      "lead": "Treinta segundos aquí te ahorran el \"¿me oís?\" al principio de cada reunión. Prueba tu micro y luego revisa los mismos ajustes en Zoom.",
+      "article": [
+        {
+          "h": "Cómo probar tu micro antes de una llamada de Zoom",
+          "ol": [
+            "Pulsa \"Probar micrófono\" y permite el acceso al micrófono.",
+            "Elige el micrófono que vas a usar en la reunión.",
+            "Habla con normalidad. El medidor debería llegar a la zona verde.",
+            "Graba un clip corto y escúchalo con auriculares."
+          ]
+        },
+        {
+          "h": "Los ajustes de audio de Zoom que importan",
+          "ul": [
+            "Configuración → Audio → Micrófono: elige tu micro por su nombre y pulsa \"Probar micrófono\".",
+            "Si tu volumen no deja de cambiar, desmarca \"Ajustar automáticamente el volumen del micrófono\" y coloca tú el control.",
+            "\"Suprimir ruido de fondo\" en Automático sirve para la mayoría de salas. Ponlo en Bajo si tu voz suena entrecortada.",
+            "¿Tocas música o das clases de un instrumento? Activa \"Sonido original para músicos\" para que Zoom deje de filtrar tu audio."
+          ]
+        },
+        {
+          "h": "¿Nadie te oye en la reunión?",
+          "ul": [
+            "Mira el icono del micrófono abajo a la izquierda. Una línea roja significa que estás silenciado.",
+            "Si ves \"Entrar al audio\" en lugar del icono del micro, haz clic y elige \"Entrar al audio por computadora\".",
+            "Puede que el anfitrión haya silenciado a todos. Pregunta en el chat o pulsa \"Levantar la mano\".",
+            "Cierra otras aplicaciones que usen el micro, como Teams, Discord u otra pestaña del navegador, y vuelve a entrar."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Cómo pruebo mi micro antes de una reunión de Zoom?",
+          "a": "Usa la prueba de micrófono de esta página o abre en Zoom Configuración → Audio → Probar micrófono. Zoom también ofrece una reunión de prueba en zoom.us/test."
+        },
+        {
+          "q": "¿Por qué Zoom dice que mi micrófono no está disponible?",
+          "a": "Seguramente otra aplicación lo está usando o Zoom no tiene permiso. Cierra otras apps de llamadas y permite Zoom en los ajustes de privacidad del micrófono de tu sistema."
+        },
+        {
+          "q": "¿Por qué se me oye bajo en Zoom?",
+          "a": "El volumen de entrada del sistema está bajo o el ajuste automático de Zoom lo ha reducido. Sube el volumen de entrada y desmarca el ajuste automático en Zoom."
+        },
+        {
+          "q": "¿Esta página graba o envía mi audio?",
+          "a": "No. Todo funciona en tu navegador y no se sube nada."
+        }
+      ]
+    },
+    "iphone": {
+      "card": {
+        "name": "Prueba de micro iPhone",
+        "desc": "Comprueba los micros del iPhone en Safari."
+      },
+      "title": "Prueba de micrófono iPhone: comprueba el micro de tu iPhone",
+      "description": "Prueba el micrófono de tu iPhone en Safari, sin apps. Mira el nivel en directo, graba y reproduce, y corrige los ajustes de iOS que bloquean el micro.",
+      "h1Html": "<span class=\"grad\">Prueba de micrófono iPhone</span>",
+      "lead": "Abre esta página en Safari o Chrome en tu iPhone, permite el micrófono y habla. En segundos sabrás si el micro funciona.",
+      "article": [
+        {
+          "h": "Cómo probar el micrófono de tu iPhone",
+          "ol": [
+            "Abre esta página en Safari (o Chrome) en tu iPhone.",
+            "Toca \"Probar micrófono\" y elige Permitir cuando iOS lo pregunte.",
+            "Habla con normalidad y observa el medidor de nivel.",
+            "Toca \"Grabar 5 s\" y luego reprodúcelo para oír la calidad."
+          ]
+        },
+        {
+          "h": "Tu iPhone tiene más de un micrófono",
+          "p": [
+            "La mayoría de los iPhone tienen un micrófono abajo junto al puerto de carga, otro en el auricular de arriba y otro cerca de la cámara trasera. Las llamadas y las notas de voz usan sobre todo el micro inferior, mientras que la grabación de vídeo usa los demás. Si el medidor apenas se mueve, prueba a hablar hacia el borde inferior del teléfono y comprueba que la funda no tapa los pequeños orificios del micro."
+          ]
+        },
+        {
+          "h": "¿El micrófono del iPhone no funciona?",
+          "ul": [
+            "Permiso del sitio web: en Safari, toca el botón \"aA\" de la barra de direcciones → Ajustes del sitio web → Micrófono → Permitir.",
+            "Permiso de la app: Ajustes → Privacidad y seguridad → Micrófono, y asegúrate de que tu navegador o app está activado.",
+            "Bluetooth: unos AirPods o el sistema del coche pueden quedarse con el micro. Desactiva el Bluetooth y vuelve a probar.",
+            "Limpia los orificios del micro con suavidad con un cepillo blando y seco. Nunca metas nada punzante.",
+            "Reinicia el iPhone. Si la app Notas de voz también graba silencio, contacta con el soporte de Apple."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Puedo probar el micro del iPhone sin una app?",
+          "a": "Sí. Esta página funciona en Safari y Chrome en iOS. Permite el acceso al micrófono cuando se te pida e inicia la prueba."
+        },
+        {
+          "q": "¿Por qué el micro de mi iPhone suena apagado?",
+          "a": "A menudo una funda, el borde de un protector de pantalla o pelusa tapan los orificios del micro. Quita la funda, limpia los orificios con cuidado y vuelve a probar."
+        },
+        {
+          "q": "¿Por qué no me oyen en las llamadas si la prueba funciona?",
+          "a": "Las llamadas pueden pasar por un dispositivo Bluetooth conectado o por el micro del auricular. Desconecta el Bluetooth y prueba con el altavoz para comparar."
+        },
+        {
+          "q": "¿Se sube mi grabación?",
+          "a": "No. Las grabaciones se quedan en la memoria de Safari hasta que cierras la página, salvo que las descargues."
+        }
+      ]
+    },
+    "android": {
+      "card": {
+        "name": "Prueba de micro Android",
+        "desc": "Comprueba el micro del móvil en Chrome."
+      },
+      "title": "Prueba de micrófono Android: comprueba el micro de tu móvil",
+      "description": "Prueba el micrófono de tu Android en Chrome, sin apps. Mira el nivel en directo, graba y reproduce, y corrige los ajustes de Android que bloquean el micro.",
+      "h1Html": "<span class=\"grad\">Prueba de micrófono Android</span>",
+      "lead": "Abre esta página en Chrome o Samsung Internet en tu móvil, permite el micrófono y habla. El medidor muestra al instante si el micro te capta.",
+      "article": [
+        {
+          "h": "Cómo probar el micrófono de tu Android",
+          "ol": [
+            "Abre esta página en Chrome, Samsung Internet o Firefox.",
+            "Toca \"Probar micrófono\" y permite el acceso al micrófono.",
+            "Habla con normalidad y observa el medidor de nivel.",
+            "Graba 5 segundos y reprodúcelos para valorar la calidad."
+          ]
+        },
+        {
+          "h": "¿El micrófono de Android no funciona?",
+          "ul": [
+            "Ajustes rápidos: desliza hacia abajo y asegúrate de que el icono \"Acceso al micrófono\" está activado (Android 12 y posteriores).",
+            "Permiso del navegador: toca el icono a la izquierda de la dirección → Permisos → Micrófono → Permitir.",
+            "Permiso de la app: Ajustes → Aplicaciones → Chrome → Permisos → Micrófono → Permitir solo mientras se usa la aplicación.",
+            "Unos auriculares Bluetooth o un reloj inteligente pueden quedarse con el micro. Desactiva el Bluetooth y vuelve a probar.",
+            "Quita la funda y limpia con suavidad el pequeño orificio del micro de la parte inferior con un cepillo blando y seco.",
+            "Reinicia el teléfono. Si la grabadora integrada también graba silencio, puede que el micro necesite reparación."
+          ]
+        },
+        {
+          "h": "Por qué las llamadas suenan distinto que esta prueba",
+          "p": [
+            "Durante las llamadas, Android usa cancelación de ruido y a menudo un segundo micro en la parte superior del teléfono para eliminar el sonido de fondo. Las grabaciones del navegador usan una versión más ligera del mismo procesado. Si la prueba suena clara pero las llamadas no, revisa los ajustes de Llamadas por Wi-Fi o VoLTE de tu operador, o prueba una llamada con el altavoz activado."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Puedo probar el micro del móvil sin instalar una app?",
+          "a": "Sí. Esta página funciona en Chrome, Samsung Internet y Firefox en Android. Permite el acceso al micrófono e inicia la prueba."
+        },
+        {
+          "q": "¿Por qué el micro de mi Android está bloqueado en el navegador?",
+          "a": "O el navegador no tiene permiso de micrófono o el interruptor Acceso al micrófono de los Ajustes rápidos está desactivado. Activa ambos y recarga la página."
+        },
+        {
+          "q": "¿Funciona en móviles Samsung?",
+          "a": "Sí. Usa Samsung Internet o Chrome. En los Samsung encontrarás los permisos de las apps en Ajustes → Aplicaciones → Permisos."
+        },
+        {
+          "q": "¿Se sube mi audio?",
+          "a": "No. Todo ocurre en tu móvil y no se envía nada a ningún servidor."
+        }
+      ]
+    },
+    "airpods": {
+      "card": {
+        "name": "Prueba de micro AirPods",
+        "desc": "Comprueba el micro de tus AirPods."
+      },
+      "title": "Prueba de micrófono AirPods: comprueba el micro de tus AirPods",
+      "description": "Prueba el micrófono de tus AirPods en iPhone, Mac o Windows. Elige los AirPods como entrada, mira el nivel y corrige los ajustes que empeoran el sonido.",
+      "h1Html": "<span class=\"grad\">Prueba de micrófono AirPods</span>",
+      "lead": "Conecta tus AirPods, selecciónalos en la lista de micrófonos y habla. El medidor y una grabación rápida te dicen si el micro de los AirPods funciona y cómo suena.",
+      "article": [
+        {
+          "h": "Cómo probar el micrófono de tus AirPods",
+          "ol": [
+            "Ponte los AirPods y conéctalos a tu dispositivo.",
+            "Pulsa \"Probar micrófono\" y permite el acceso al micrófono.",
+            "Elige tus AirPods en la lista desplegable de micrófonos.",
+            "Habla con normalidad, graba 5 segundos y reprodúcelos."
+          ]
+        },
+        {
+          "h": "Cómo elegir los AirPods como micrófono",
+          "ul": [
+            "iPhone: los AirPods se usan automáticamente al conectarlos. Abre esta página en Safari y permite el micrófono.",
+            "Mac: abre Ajustes del Sistema → Sonido → Entrada y selecciona tus AirPods.",
+            "Windows: los AirPods aparecen dos veces, como \"Auriculares\" y \"Auriculares con micrófono\". Elige \"Auriculares con micrófono\" como entrada o el micro no funcionará.",
+            "¿Solo un auricular? En el iPhone ve a Ajustes → Bluetooth → la ⓘ junto a tus AirPods → Micrófono y elige Automático, Siempre el izquierdo o Siempre el derecho."
+          ]
+        },
+        {
+          "h": "Por qué los AirPods suenan peor en las llamadas",
+          "p": [
+            "Cuando el micrófono está activo, el Bluetooth cambia a un modo manos libres que lleva el audio en ambas direcciones con menor calidad. Por eso la música suena genial pero las llamadas suenan pobres, sobre todo en Windows y Android. Es un comportamiento normal, no una avería. Para la mejor calidad de voz en llamadas largas desde un ordenador, un micrófono con cable o USB sigue superando a cualquier auricular Bluetooth."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Por qué el micro de mis AirPods no funciona en Windows?",
+          "a": "Windows muestra los AirPods dos veces. Selecciona el dispositivo \"Auriculares con micrófono\" como entrada en Configuración → Sistema → Sonido y en tu app de llamadas."
+        },
+        {
+          "q": "¿Por qué el micro de los AirPods suena apagado?",
+          "a": "La causa más común es suciedad en la rejilla del micro, en la parte inferior de la varilla. Límpiala con cuidado con un bastoncillo de algodón seco."
+        },
+        {
+          "q": "¿Puedo usar un solo AirPod como micro?",
+          "a": "Sí. En el iPhone, pon Micrófono en Siempre el izquierdo o Siempre el derecho en los ajustes Bluetooth de los AirPods."
+        },
+        {
+          "q": "¿Se sube mi audio?",
+          "a": "No. La prueba funciona en tu navegador y nada sale de tu dispositivo."
+        }
+      ]
+    },
+    "headphone": {
+      "card": {
+        "name": "Test de auriculares",
+        "desc": "Izquierda/derecha, estéreo y graves."
+      },
+      "title": "Test de auriculares online: izquierda/derecha, estéreo y graves",
+      "description": "Test de auriculares online gratis. Prueba los canales izquierdo y derecho, el balance estéreo y los graves con tonos y un barrido. Con cable y Bluetooth.",
+      "h1Html": "<span class=\"grad\">Test de auriculares</span> online",
+      "lead": "Descubre en segundos si funcionan los dos lados de tus auriculares, si izquierda y derecha están bien colocados y hasta dónde llegan los graves.",
+      "article": [
+        {
+          "h": "Cómo probar tus auriculares",
+          "ol": [
+            "Ponte los auriculares y baja el volumen a un nivel cómodo.",
+            "Pulsa Izquierda: el tono debería sonar solo en tu oído izquierdo. Luego pulsa Derecha.",
+            "Pulsa Ambos: el tono debería sonar centrado, en medio de tu cabeza.",
+            "Haz el barrido de frecuencias para oír el rango desde los graves profundos hasta los agudos."
+          ]
+        },
+        {
+          "h": "¿Un lado suena más bajo o no suena?",
+          "ul": [
+            "Revisa el control de balance: en Windows, Configuración → Sistema → Sonido → tu dispositivo → Izquierda/Derecha; en un Mac, Ajustes del Sistema → Sonido → Salida → Balance.",
+            "En el iPhone, asegúrate de que Audio mono está desactivado: Ajustes → Accesibilidad → Audio y elementos visuales.",
+            "Auriculares con cable: desconéctalos, limpia el conector y mételo hasta el fondo. Un conector a medio meter suele dejar mudo un lado.",
+            "La cera en la rejilla es una causa habitual de que un auricular suene bajo. Límpiala con cuidado con un cepillo seco."
+          ]
+        },
+        {
+          "h": "Graves, agudos y Bluetooth",
+          "p": [
+            "Unos buenos auriculares de diadema reproducen con claridad hasta 30 o 40 Hz al principio del barrido. Los auriculares pequeños necesitan un buen sellado para dar graves, así que prueba una almohadilla más grande si los graves suenan pobres. El Bluetooth añade un pequeño retardo, normalmente de 100 a 250 milisegundos, que no importa con la música pero se nota en los juegos."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Cómo sé si mis auriculares tienen izquierda y derecha invertidos?",
+          "a": "Pulsa Izquierda. Si el sonido sale por tu oído derecho, llevas los auriculares al revés o el cable o adaptador está cableado al revés."
+        },
+        {
+          "q": "¿Por qué no oigo el principio del barrido?",
+          "a": "Las notas muy graves necesitan un buen sellado y altavoces más grandes. Muchos auriculares pequeños y altavoces de portátil apenas reproducen por debajo de 100 Hz."
+        },
+        {
+          "q": "¿El test es seguro para mis oídos?",
+          "a": "Sí, a un volumen normal. Empieza bajo y súbelo poco a poco, sobre todo con auriculares intraurales."
+        },
+        {
+          "q": "¿Funciona con auriculares Bluetooth?",
+          "a": "Sí. Conéctalos primero para que sean la salida activa y luego reproduce los tonos."
+        }
+      ]
+    },
+    "recorder": {
+      "card": {
+        "name": "Grabadora de voz",
+        "desc": "Graba y descarga, sin registro."
+      },
+      "title": "Grabadora de voz online: graba audio gratis y sin registro",
+      "description": "Grabadora de voz online gratis. Graba tu voz en el navegador, reprodúcela y descarga el archivo. Sin límite de tiempo, sin registro y sin subir nada.",
+      "h1Html": "<span class=\"grad\">Grabadora de voz</span> online",
+      "lead": "Graba tu voz directamente en el navegador y descarga el archivo. Sin registro, sin límite de tiempo y sin que el audio salga de tu dispositivo.",
+      "article": [
+        {
+          "h": "Cómo grabar tu voz online",
+          "ol": [
+            "Pulsa \"Empezar a grabar\" y permite el acceso al micrófono.",
+            "Elige tu micrófono si tienes más de uno.",
+            "Habla, canta o toca. El temporizador y el medidor de nivel muestran que funciona.",
+            "Pulsa Detener. Tu grabación aparece abajo, lista para reproducir o descargar."
+          ]
+        },
+        {
+          "h": "¿Qué archivo obtengo?",
+          "p": [
+            "Chrome, Edge y Firefox guardan audio WebM con el códec Opus. Safari guarda un archivo M4A (AAC). Ambos se reproducen en VLC, en la mayoría de reproductores y en editores como Audacity. Si necesitas un MP3, cualquier conversor de audio cambia el formato en unos segundos."
+          ]
+        },
+        {
+          "h": "Consejos para grabar mejor",
+          "ul": [
+            "Haz antes la prueba de micrófono y busca picos entre −20 dB y −10 dB.",
+            "Graba en una habitación pequeña con muebles blandos. Las cortinas y un sofá reducen el eco más que cualquier filtro.",
+            "Mantén el micrófono a un palmo de la boca y un poco hacia un lado.",
+            "Apaga ventiladores y notificaciones, y usa auriculares si suena una pista de acompañamiento."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Hay límite de tiempo?",
+          "a": "No hay un límite fijo. Las grabaciones se guardan en la memoria del navegador, así que las sesiones muy largas dependen de tu dispositivo. Para grabaciones de más de una hora, descarga por partes."
+        },
+        {
+          "q": "¿Dónde se guardan mis grabaciones?",
+          "a": "Solo en esta pestaña del navegador hasta que las descargues. Si cierras o recargas la página, se borran."
+        },
+        {
+          "q": "¿Funciona en iPhone y Android?",
+          "a": "Sí. Funciona en Safari en el iPhone y en Chrome o Samsung Internet en Android."
+        },
+        {
+          "q": "¿La grabadora de voz es gratis de verdad?",
+          "a": "Sí. Sin registro, sin marca de agua y sin subir nada."
         }
       ]
     }

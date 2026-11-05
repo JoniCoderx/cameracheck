@@ -415,3 +415,29 @@ p, li, summary { text-wrap: pretty; }
 /* breadcrumb: the current page title is already the h1 right below, don't repeat it */
 .guide .crumbs > span[aria-current], .guide .crumbs > span[aria-hidden="true"]:nth-last-child(2) { display: none; }
 @media (max-width: 760px) and (min-width: 381px) { .lang-pick .i { display: none; } .lang-pick { padding-inline-start: 6px; } .lang-pick select { max-width: 136px; } }
+
+/* ---------- voice recorder ---------- */
+.rec-panel { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; padding: 18px; background: var(--bg2); border: 1px solid var(--line); border-radius: 12px; }
+.rec-big {
+  display: inline-flex; align-items: center; gap: 10px; min-height: 56px; padding: 0 26px; border-radius: 28px; border: 0;
+  background: var(--brand); color: var(--brand-ink); font: inherit; font-size: 17px; font-weight: 750; cursor: pointer;
+}
+.rec-big .rec-dot { width: 12px; height: 12px; background: #c9271d; }
+.rec-big.on { background: #c9271d; color: #fff; }
+.rec-big.on .rec-dot { background: #fff; animation: pulse .8s infinite; border-radius: 3px; }
+.rec-time { font-size: 34px; font-weight: 800; letter-spacing: -.02em; font-variant-numeric: tabular-nums; direction: ltr; min-width: 4.2ch; }
+.rec-meter { flex: 1 1 180px; height: 12px; border-radius: 6px; background: var(--bg); border: 1px solid var(--line); position: relative; overflow: hidden; direction: ltr; }
+.rec-fill { position: absolute; inset: 0; background: linear-gradient(to right, var(--ok) 0%, var(--ok) 62%, var(--warn) 82%, var(--bad) 100%); clip-path: inset(0 calc(100% - var(--lvl, 0%)) 0 0); }
+.rec-list { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 8px; }
+.rec-empty { padding: 12px 14px; border: 1px dashed var(--line2); border-radius: 11px; font-size: 14px; }
+.rec-item { display: grid; grid-template-columns: 160px 1fr auto; align-items: center; gap: 14px; padding: 12px 14px; background: var(--bg2); border: 1px solid var(--line); border-radius: 11px; }
+.rec-meta { display: flex; flex-direction: column; min-width: 0; }
+.rec-meta span { font-size: 13px; direction: ltr; text-align: start; }
+.rec-item audio { width: 100%; height: 40px; }
+.rec-actions { display: flex; gap: 8px; }
+@media (max-width: 760px) {
+  .rec-item { grid-template-columns: 1fr; }
+  .rec-actions .btn { flex: 1 1 0; }
+  .rec-big { flex: 1 1 100%; justify-content: center; }
+}
+.foot-more { font-size: 13px; max-width: 760px; }
