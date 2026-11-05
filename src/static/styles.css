@@ -441,3 +441,4 @@ p, li, summary { text-wrap: pretty; }
   .rec-big { flex: 1 1 100%; justify-content: center; }
 }
 .foot-more { font-size: 13px; max-width: 760px; }
+[dir="rtl"] .rec-meta span { text-align: right; }
