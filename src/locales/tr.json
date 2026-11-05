@@ -2,7 +2,8 @@
   "meta": {
     "langName": "Türkçe",
     "dir": "ltr",
-    "ogLocale": "tr_TR"
+    "ogLocale": "tr_TR",
+    "shortName": "Türkçe"
   },
   "ui": {
     "skip": "İçeriğe geç",

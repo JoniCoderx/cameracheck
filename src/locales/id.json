@@ -2,7 +2,8 @@
   "meta": {
     "langName": "Bahasa Indonesia",
     "dir": "ltr",
-    "ogLocale": "id_ID"
+    "ogLocale": "id_ID",
+    "shortName": "Indonesia"
   },
   "ui": {
     "skip": "Langsung ke konten",

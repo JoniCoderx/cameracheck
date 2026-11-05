@@ -412,3 +412,6 @@ p, li, summary { text-wrap: pretty; }
 /* Left/Right speaker buttons always match physical sides, also in Hebrew/Arabic */
 .spk-grid { direction: ltr; }
 [dir="rtl"] .spk-btn > span:last-child { direction: rtl; }
+/* breadcrumb: the current page title is already the h1 right below, don't repeat it */
+.guide .crumbs > span[aria-current], .guide .crumbs > span[aria-hidden="true"]:nth-last-child(2) { display: none; }
+@media (max-width: 760px) and (min-width: 381px) { .lang-pick .i { display: none; } .lang-pick { padding-inline-start: 6px; } .lang-pick select { max-width: 136px; } }

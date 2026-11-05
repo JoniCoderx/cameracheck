@@ -2,7 +2,8 @@
   "meta": {
     "langName": "Français",
     "dir": "ltr",
-    "ogLocale": "fr_FR"
+    "ogLocale": "fr_FR",
+    "shortName": "Français"
   },
   "ui": {
     "skip": "Aller au contenu",

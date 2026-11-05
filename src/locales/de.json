@@ -2,7 +2,8 @@
   "meta": {
     "langName": "Deutsch",
     "dir": "ltr",
-    "ogLocale": "de_DE"
+    "ogLocale": "de_DE",
+    "shortName": "Deutsch"
   },
   "ui": {
     "skip": "Zum Inhalt springen",

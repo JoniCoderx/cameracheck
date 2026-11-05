@@ -176,7 +176,7 @@ ${extraLd.map(jsonLd).join('\n')}
 
 function header(lang, page, altMap) {
   const u = locales[lang].ui;
-  const opts = LANGS.map((l) => `<option value="${altMap ? (altMap[l] || prefix(l)) : PAGES[page] ? urlFor(l, page) : prefix(l)}"${l === lang ? ' selected' : ''}>${esc(locales[l].meta.langName)}</option>`).join('');
+  const opts = LANGS.map((l) => `<option value="${altMap ? (altMap[l] || prefix(l)) : PAGES[page] ? urlFor(l, page) : prefix(l)}"${l === lang ? ' selected' : ''}>${esc(locales[l].meta.shortName || locales[l].meta.langName)}</option>`).join('');
   return `<a class="skip" href="#main">${esc(u.skip)}</a>
 <header class="topbar">
   <div class="wrap topbar-inner">

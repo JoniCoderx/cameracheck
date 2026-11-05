@@ -2,7 +2,8 @@
   "meta": {
     "langName": "עברית",
     "dir": "rtl",
-    "ogLocale": "he_IL"
+    "ogLocale": "he_IL",
+    "shortName": "עברית"
   },
   "ui": {
     "skip": "דילוג לתוכן",

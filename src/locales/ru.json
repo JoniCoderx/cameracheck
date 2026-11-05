@@ -2,7 +2,8 @@
   "meta": {
     "langName": "Русский",
     "dir": "ltr",
-    "ogLocale": "ru_RU"
+    "ogLocale": "ru_RU",
+    "shortName": "Русский"
   },
   "ui": {
     "skip": "Перейти к содержимому",

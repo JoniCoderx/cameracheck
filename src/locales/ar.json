@@ -2,7 +2,8 @@
   "meta": {
     "langName": "العربية",
     "dir": "rtl",
-    "ogLocale": "ar_AR"
+    "ogLocale": "ar_AR",
+    "shortName": "العربية"
   },
   "ui": {
     "skip": "انتقل إلى المحتوى",

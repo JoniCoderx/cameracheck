@@ -2,7 +2,8 @@
   "meta": {
     "langName": "हिन्दी",
     "dir": "ltr",
-    "ogLocale": "hi_IN"
+    "ogLocale": "hi_IN",
+    "shortName": "हिन्दी"
   },
   "ui": {
     "skip": "सामग्री पर जाएं",

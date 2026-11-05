@@ -2,7 +2,8 @@
   "meta": {
     "langName": "日本語",
     "dir": "ltr",
-    "ogLocale": "ja_JP"
+    "ogLocale": "ja_JP",
+    "shortName": "日本語"
   },
   "ui": {
     "skip": "本文へスキップ",
