@@ -66,7 +66,8 @@ img, svg { max-width: 100%; }
 .topbar-inner { display: flex; align-items: center; gap: 16px; height: 60px; }
 .brand { display: inline-flex; align-items: center; gap: 9px; color: var(--text); text-decoration: none; font-weight: 800; font-size: 20px; letter-spacing: -.035em; }
 .brand img { border-radius: 8px; }
-.brand .plus { color: var(--brand-text); margin-inline-start: 1px; }
+.brand > span { direction: ltr; unicode-bidi: isolate; }
+.brand .plus { color: var(--brand-text); margin-left: 1px; }
 .brand.small { font-size: 17px; }
 .nav { display: flex; gap: 2px; margin-inline-start: auto; }
 .nav a { color: var(--muted); text-decoration: none; padding: 8px 12px; border-radius: 9px; font-weight: 600; font-size: 14px; }
@@ -124,7 +125,7 @@ h1 { font-size: clamp(34px, 6.4vw, 66px); line-height: 1.04; letter-spacing: -.0
 .btn.recording .rec-dot { animation: pulse .8s infinite; }
 select {
   min-height: 44px; padding: 8px 12px; border-radius: 11px; border: 1px solid var(--line);
-  background: var(--bg2); color: var(--text); font: inherit; font-size: 14px; max-width: 250px;
+  background: var(--bg2); color: var(--text); font: inherit; font-size: 14px; max-width: 250px; min-width: 0; text-overflow: ellipsis;
 }
 
 /* ---------- tool cards ---------- */
@@ -135,7 +136,7 @@ select {
 .tool-title { display: flex; align-items: center; gap: 10px; margin: 0 0 4px; font-size: 22px; letter-spacing: -.02em; }
 .tool-title .ico { width: 34px; height: 34px; border-radius: 9px; background: var(--brand); color: var(--brand-ink); display: inline-flex; align-items: center; justify-content: center; }
 .tool-title .ico .i { width: 19px; height: 19px; stroke-width: 2.2; }
-.controls { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.controls { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; min-width: 0; max-width: 100%; }
 
 /* mic */
 .mic-grid { display: grid; grid-template-columns: 200px 1fr; gap: 16px; }
@@ -274,7 +275,7 @@ select {
   .card { padding: 16px; }
   .card-head { flex-direction: column; margin-bottom: 16px; }
   .controls { width: 100%; }
-  .controls select { flex: 1 1 140px; max-width: none; }
+  .controls select { flex: 1 1 140px; width: 100%; max-width: 100%; }
   .controls .btn { flex: 1 1 100px; }
   .mic-grid { grid-template-columns: 1fr; }
   .meter-box { flex-direction: row; justify-content: space-between; flex-wrap: wrap; }
