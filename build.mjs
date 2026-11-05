@@ -129,7 +129,7 @@ function adSlot(name, label) {
 
 function head({ lang, title, description, canonical, alternates, ogType = 'website', extraLd = [] }) {
   const L = locales[lang] || en;
-  const fullTitle = title.length + BRAND.length + 3 <= 70 ? `${title} | ${BRAND}` : title;
+  const fullTitle = title.length + BRAND.length + 3 <= (lang === "ja" ? 40 : 70) ? `${title} | ${BRAND}` : title;
   return `<!doctype html>
 <html lang="${lang}" dir="${L.meta.dir}">
 <head>
@@ -482,7 +482,7 @@ const GUIDE_LANGS = LANGS.filter((l) => GUIDES_BY_LANG[l]);
 const guideUrl = (lang, slug) => prefix(lang) + 'guides/' + (slug ? slug + '/' : '');
 const guidesHref = (lang) => guideUrl(GUIDES_BY_LANG[lang] ? lang : 'en');
 function crumbs(items) {
-  return `<nav class="crumbs" aria-label="Breadcrumb">${items.map(([name, u], i) => i < items.length - 1 ? `<a href="${u}">${esc(name)}</a><span aria-hidden="true">/</span>` : `<span aria-current="page">${esc(name)}</span>`).join('')}</nav>`;
+  return `<nav class="crumbs" aria-label="Breadcrumb">${items.map(([name, u], i) => i < items.length - 1 ? `<a href="${u}"><bdi>${esc(name)}</bdi></a><span aria-hidden="true">/</span>` : `<span aria-current="page"><bdi>${esc(name)}</bdi></span>`).join('')}</nav>`;
 }
 const guideAlts = (slug) => GUIDE_LANGS.map((l) => [l, guideUrl(l, slug)]).concat([['x-default', guideUrl('en', slug)]]);
 const guideAltMap = (slug) => Object.fromEntries(GUIDE_LANGS.map((l) => [l, guideUrl(l, slug)]));
