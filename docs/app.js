@@ -579,7 +579,7 @@
     bar.setAttribute('aria-label', 'Language');
     bar.setAttribute('lang', want);
     const a = document.createElement('a');
-    a.href = PAGE.alts[want]; a.hreflang = want; a.textContent = PAGE.names[want] + ' →';
+    a.href = PAGE.alts[want]; a.hreflang = want; a.dir = PAGE.names[want] && /^(ar|he)$/.test(want) ? 'rtl' : 'ltr'; a.textContent = PAGE.names[want] + (/^(ar|he)$/.test(want) ? ' ←' : ' →');
     const x = document.createElement('button');
     x.type = 'button'; x.setAttribute('aria-label', 'Close'); x.textContent = '×';
     const close = () => { bar.remove(); try { localStorage.setItem('mtp-lang-hint', '1'); } catch (e) {} };

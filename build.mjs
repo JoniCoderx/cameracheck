@@ -141,7 +141,9 @@ ${cfg.bingSiteVerification ? `<meta name="msvalidate.01" content="${esc(cfg.bing
 <meta name="twitter:title" content="${esc(title)}">
 <meta name="twitter:description" content="${esc(description)}">
 <meta name="twitter:image" content="${DOMAIN}/og.png">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-96.png" type="image/png" sizes="96x96">
 <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/manifest.webmanifest">
@@ -181,7 +183,7 @@ function header(lang, page) {
 
 function footer(lang) {
   const u = locales[lang].ui;
-  const langLinks = LANGS.map((l) => `<a href="${prefix(l)}" hreflang="${l}" lang="${l}">${esc(locales[l].meta.langName)}</a>`).join(' · ');
+  const langLinks = LANGS.map((l) => `<li><a href="${prefix(l)}" hreflang="${l}" lang="${l}" dir="${locales[l].meta.dir}"${l === lang ? ' aria-current="true"' : ''}>${esc(locales[l].meta.langName)}</a></li>`).join('');
   return `<footer class="footer">
   <div class="wrap footer-inner">
     <div class="brand small">${wordmark(24)}</div>
@@ -189,7 +191,7 @@ function footer(lang) {
     <nav class="foot-links" aria-label="Tests">
       <a href="${urlFor(lang, 'mic')}">${esc(u.navMic)}</a> · <a href="${urlFor(lang, 'webcam')}">${esc(u.navCam)}</a> · <a href="${urlFor(lang, 'speaker')}">${esc(u.navSpk)}</a> · <a href="/guides/">${esc(u.guides)}</a>
     </nav>
-    <p class="foot-langs muted">${langLinks}</p>
+    <ul class="foot-langs">${langLinks}</ul>
     <p class="muted"><a href="/privacy/">${esc(u.privacy)}</a> · <a href="/about/">${esc(u.about)}</a> · <a href="mailto:${esc(cfg.contactEmail)}">${esc(u.contact)}</a> · © <span id="year">${new Date().getFullYear()}</span> ${DOMAIN.replace(/^https?:\/\//, '')}</p>
   </div>
 </footer>
@@ -306,7 +308,7 @@ const spkTool = (u, headTag) => `
       <button class="btn" id="sweepBtn" type="button">${esc(u.sweep)}</button>
     </div>
     <div class="row-actions">
-      <span class="muted">${esc(u.spkAsk)}</span>
+      <span class="muted spk-ask">${esc(u.spkAsk)}</span>
       <button class="btn btn-ok" id="spkYes" type="button">${esc(u.yes)}</button>
       <button class="btn btn-bad" id="spkNo" type="button">${esc(u.no)}</button>
     </div>
@@ -414,7 +416,7 @@ function renderPage(lang, page) {
   const related = rel.length ? `
 <section class="wrap others" aria-labelledby="guidesTitle">
   <h2 id="guidesTitle">${esc(u.guides)}</h2>
-  <div class="other-grid">${rel.map((g) => `<a class="other-card" href="/guides/${g.slug}/" hreflang="en"><span class="other-ico">${ic(g.tool === 'mic' ? 'mic' : 'cam')}</span><span><b>${esc(g.h1)}</b><small>${esc(g.description.split('. ')[0])}.</small></span></a>`).join('')}</div>
+  <div class="other-grid">${rel.map((g) => `<a class="other-card" href="/guides/${g.slug}/" hreflang="en"><span class="other-ico">${ic(g.tool === 'mic' ? 'mic' : 'cam')}</span><span lang="en" dir="ltr"><b>${esc(g.h1)}</b><small>${esc(g.description.split('. ')[0].replace(/\.+$/, ''))}.</small></span></a>`).join('')}</div>
 </section>` : '';
   const runtime = { lang, page, tools: def.tools, alts: Object.fromEntries(LANGS.map((l) => [l, urlFor(l, page)])), names: Object.fromEntries(LANGS.map((l) => [l, locales[l].meta.langName])) };
 
@@ -587,7 +589,7 @@ const aboutHtml = `
 <h2>How it works</h2>
 <p>Everything runs in your browser with standard web technology: WebRTC for camera and mic access, the Web Audio API for the level meter, waveform, spectrum and test tones, and MediaRecorder for local recordings. Nothing is uploaded.</p>
 <h2>Available in ${LANGS.length} languages</h2>
-<p>${LANGS.map((l) => `<a href="${prefix(l)}" hreflang="${l}" lang="${l}">${esc(locales[l].meta.langName)}</a>`).join(' · ')}</p>
+<ul class="foot-langs about-langs">${LANGS.map((l) => `<li><a href="${prefix(l)}" hreflang="${l}" lang="${l}" dir="${locales[l].meta.dir}">${esc(locales[l].meta.langName)}</a></li>`).join('')}</ul>
 <h2>Contact</h2>
 <p>Feedback, bug reports and partnership requests: <a href="mailto:${email}">${email}</a></p>`;
 
