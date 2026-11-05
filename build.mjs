@@ -99,6 +99,14 @@ const ICONS = {
 const ic = (n) => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${ICONS[n]}</svg>`;
 const wordmark = (size) => `<span class="logo" style="width:${size}px;height:${size}px">${LOGO_SVG}</span><span>MicTest<span class="plus">+</span></span>`;
 
+/* ---------- headline typography: no dangling short words or lone punctuation ---------- */
+function tidyHeadline(h) {
+  return h
+    .replace(/ (&amp;|[a-zа-яё]) (?=\S)/giu, ' $1\u00a0')       // "&", "y", "e", "и" stay with the next word
+    .replace(/ ([?!:;»])/g, '\u00a0$1')                          // French "fonctionnent-ils ?"
+    .replace(/ ([^\s<>]{1,4})$/u, '\u00a0$1');                   // short last word never alone ("है?", "mu?")
+}
+
 /* ---------- shared blocks ---------- */
 function adSlot(name, label) {
   if (!adsOn) return '';
@@ -428,7 +436,7 @@ ${header(lang, page)}
     <div class="hero-eq" aria-hidden="true">${'<i></i>'.repeat(28)}</div>
     <div class="wrap">
       <span class="pill">${esc(u.heroPill)}</span>
-      <h1>${P.h1Html}</h1>
+      <h1>${tidyHeadline(P.h1Html)}</h1>
       <p class="lead">${esc(P.lead)}</p>
       <div class="hero-cta">${cta}</div>
       <div class="status-row" aria-live="polite">${statuses}</div>
