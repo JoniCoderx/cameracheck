@@ -669,6 +669,52 @@ const aboutHtml = `
 <h2>Contact</h2>
 <p>Feedback, bug reports and partnership requests: <a href="mailto:${email}">${email}</a></p>`;
 
+/* ---------- private admin dashboard (/admin/, noindex, not linked, not in sitemap) ---------- */
+function adminPage() {
+  const he = locales.he || en;
+  const nameOf = (lang, page) => {
+    if (page === 'home') return he.ui.navMic ? 'דף הבית' : 'Home';
+    const main = { mic: he.ui.navMic, webcam: he.ui.navCam, speaker: he.ui.navSpk }[page];
+    return main || (he.pages[page] && he.pages[page].card ? he.pages[page].card.name : page);
+  };
+  const pages = {};
+  for (const l of LANGS) for (const p of PAGE_ORDER) if (pageLangs(p).includes(l)) pages[urlFor(l, p)] = `${nameOf(l, p)} · ${locales[l].meta.langName}`;
+  for (const l of GUIDE_LANGS) {
+    pages[guideUrl(l)] = `${(GUIDES_BY_LANG.he || GUIDES).ui.guides} · ${locales[l].meta.langName}`;
+    GUIDES_BY_LANG[l].guides.forEach((g, i) => { pages[guideUrl(l, g.slug)] = `${((GUIDES_BY_LANG.he || GUIDES).guides[i] || g).h1} · ${locales[l].meta.langName}`; });
+  }
+  pages['/privacy/'] = 'פרטיות'; pages['/about/'] = 'אודות';
+  const A = cfg.admin || {};
+  const data = { clientId: A.clientId || '', propertyId: A.propertyId || '', login: A.login || null, pages, langs: Object.fromEntries(LANGS.map((l) => [l, locales[l].meta.langName])) };
+  const css = CSS_INLINE + minCss(fs.readFileSync(path.join(SRC, 'admin/admin.css'), 'utf8'));
+  let js = fs.readFileSync(path.join(SRC, 'admin/admin.js'), 'utf8');
+  return { css, js, data };
+}
+async function writeAdmin() {
+  const { css, data } = adminPage(); let { js } = adminPage();
+  try { const esb = await import('esbuild'); js = (await esb.transform(js, { minify: true, target: 'es2019' })).code.trim(); } catch (e) {}
+  js = js.replace(/<\/script/gi, '<\\/script');
+  write('admin/index.html', `<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#0b0b0d">
+<title>ניהול | ${BRAND}</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>${css}</style>
+</head>
+<body class="admin">
+<div id="app"></div>
+<script>window.ADMIN=${JSON.stringify(data).replace(/</g, '\\u003c')};</script>
+<script>${js}</script>
+</body>
+</html>
+`);
+}
+
 /* ---------- write everything ---------- */
 let count = 0;
 for (const lang of LANGS) {
@@ -702,7 +748,8 @@ for (const slug of ['', ...GUIDES.guides.map((g) => g.slug)]) {
 }
 for (const s of ['privacy', 'about']) smUrls.push(`  <url>\n    <loc>${abs(`/${s}/`)}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>0.3</priority>\n  </url>`);
 write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${smUrls.join('\n')}\n</urlset>\n`);
-write('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${DOMAIN}/sitemap.xml\n`);
+write('robots.txt', `User-agent: *\nAllow: /\nDisallow: /admin/\n\nSitemap: ${DOMAIN}/sitemap.xml\n`);
+await writeAdmin();
 if (adsOn) write('ads.txt', `google.com, ${AD.client.replace(/^ca-/, '')}, DIRECT, f08c47fec0942fa0\n`);
 write('CNAME', DOMAIN.replace(/^https?:\/\//, '') + '\n');
 write('.nojekyll', '');

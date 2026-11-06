@@ -2,6 +2,7 @@
   'use strict';
   const $ = (s) => document.querySelector(s);
   const $$ = (s) => document.querySelectorAll(s);
+  const logEvent = (name, params) => { try { if (window.gtag) window.gtag('event', name, params || {}); } catch (e) {} };
   const on = (sel, ev, fn) => { const el = $(sel); if (el) el.addEventListener(ev, fn); };
   const setText = (sel, v) => { const el = $(sel); if (el) el.textContent = v; };
 
@@ -116,6 +117,7 @@
       $('#mEc').textContent = st.echoCancellation === undefined ? t('unknown') : st.echoCancellation ? t('on') : t('off');
       $('#mNs').textContent = st.noiseSuppression === undefined ? t('unknown') : st.noiseSuppression ? t('on') : t('off');
       track.addEventListener('ended', () => stopMic());
+      logEvent('mic_test');
       await refreshDevices();
       if (st.deviceId) $('#micSelect').value = st.deviceId;
       loopMic();
@@ -248,7 +250,7 @@
       const a = $('#recAudio'); a.src = url; a.hidden = false; a.play().catch(() => {});
       const dl = $('#recDl'); dl.href = url; dl.download = 'mictestplus-recording.' + extFor(blob.type); dl.hidden = false;
     };
-    mic.recorder = rec; btn.classList.add('recording'); rec.start();
+    mic.recorder = rec; btn.classList.add('recording'); rec.start(); logEvent('mic_recording');
   });
 
   /* ---------------- CAMERA ---------------- */
@@ -292,6 +294,7 @@
       $('#mirrorBtn').classList.toggle('active', cam.mirror);
       $('#cDev').textContent = track.label || t('unknown'); $('#cDev').title = track.label || '';
       track.addEventListener('ended', () => stopCam());
+      logEvent('webcam_test');
       setStatus('cam', 'working');
       await refreshDevices();
       if (st.deviceId) $('#camSelect').value = st.deviceId;
@@ -418,7 +421,7 @@
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a'); a.href = url; a.download = 'mictestplus-' + Date.now() + '.png';
       const img = document.createElement('img'); img.src = url; img.alt = 'snapshot'; a.appendChild(img);
-      $('#shots').prepend(a); toast(t('snapSaved'));
+      $('#shots').prepend(a); toast(t('snapSaved')); logEvent('webcam_snapshot');
     }, 'image/png');
   });
 
@@ -482,6 +485,7 @@
   $$('.spk-btn').forEach((b) => b.addEventListener('click', () => {
     if (activeBtn === b) return stopTone();
     playTone(Number(b.dataset.pan), b, false);
+    if (!window.__mtpSpk) { window.__mtpSpk = 1; logEvent('speaker_test'); }
   }));
   on('#sweepBtn', 'click', () => {
     if (sweepOn) return stopTone();
@@ -644,6 +648,7 @@
       actions.append(dl, del);
       li.append(meta, audio, actions);
       list.prepend(li);
+      logEvent('voice_recording', { seconds: Math.round(dur / 1000) });
     }
     on('#recToggle', 'click', () => { if (R.rec && R.rec.state === 'recording') R.rec.stop(); else startRec(); });
   }

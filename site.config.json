@@ -28,5 +28,14 @@
     "he",
     "hi"
   ],
-  "indexNowKey": "94b08c5dfbc1d8f61db5dd1610c4c75f"
+  "indexNowKey": "94b08c5dfbc1d8f61db5dd1610c4c75f",
+  "admin": {
+    "clientId": "",
+    "propertyId": "",
+    "login": {
+      "salt": "dcd5cfbf36a4c50698fe7efe8ea3e4e0",
+      "iter": 310000,
+      "hash": "5570fed131568046855197216d3c7620a7d651e9b67a4b36db2cd3e42705cdc6"
+    }
+  }
 }
