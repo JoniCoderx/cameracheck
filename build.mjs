@@ -543,7 +543,7 @@ function guidePage(lang, g) {
   const words = /^(ja)$/.test(lang) ? text.length / 2.5 : text.split(/\s+/).length;
   const mins = Math.max(2, Math.round(words / 220));
   const ld = [{
-    '@context': 'https://schema.org', '@type': 'Article', headline: g.title, description: g.description, inLanguage: lang,
+    '@context': 'https://schema.org', '@type': 'Article', headline: g.h1, description: g.description, inLanguage: lang,
     mainEntityOfPage: abs(url), datePublished: '2026-11-05', dateModified: TODAY, image: DOMAIN + '/og.png',
     author: { '@type': 'Organization', name: BRAND, url: DOMAIN + '/' },
     publisher: { '@type': 'Organization', name: BRAND, logo: { '@type': 'ImageObject', url: DOMAIN + '/icon-512.png' } }
@@ -560,7 +560,8 @@ function guidePage(lang, g) {
   const toolHref = urlFor(lang, isMic ? 'mic' : 'webcam');
   const cta = `<div class="cta-box"><div><b>${esc(isMic ? gu.titleMic : gu.titleWebcam)}</b><span>${esc(gu.ctaSub)}</span></div><a class="btn btn-primary" href="${toolHref}">${ic(isMic ? 'mic' : 'cam')}<span>${esc(isMic ? gu.runMic : gu.runWebcam)}</span></a></div>`;
   const others = G.guides.filter((x) => x.slug !== g.slug);
-  return `${head({ lang, title: g.title, description: g.description, canonical: url, alternates: guideAlts(g.slug), ogType: 'article', extraLd: ld })}
+  const yr = TODAY.slice(0, 4); const limit = lang === 'ja' ? 40 : 65; const gTitle = (g.title + ' (' + yr + ')').length <= limit ? g.title + ' (' + yr + ')' : g.title;
+  return `${head({ lang, title: gTitle, description: g.description, canonical: url, alternates: guideAlts(g.slug), ogType: 'article', extraLd: ld })}
 <body class="page-guide">
 ${header(lang, 'guides', guideAltMap(g.slug))}
 <main id="main">
