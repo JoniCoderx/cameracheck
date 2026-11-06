@@ -51,13 +51,13 @@
 
 <script>
 /* Google Analytics 4. Consent Mode: no analytics/ad cookies in the EEA, UK and Switzerland
-   (cookieless pings only) until a consent banner grants them. The library loads after the page
-   is ready so it never slows the first paint. */
+   (cookieless pings only) until a consent banner grants them. The library loads on the first interaction
+   (or 8 s after load) so it never competes with the page itself. */
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']});
 gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
 gtag('js',new Date());gtag('config','G-HPVRGFJ0ZQ');
-addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)},1500)});
+(function(){var done=0,ev=['pointerdown','keydown','scroll','touchstart'];function go(){if(done)return;done=1;ev.forEach(function(e){removeEventListener(e,go,true)});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)}ev.forEach(function(e){addEventListener(e,go,{capture:true,passive:true,once:true})});addEventListener('load',function(){setTimeout(go,8000)})})();
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"オンラインWebカメラテスト — MicTest+","url":"https://mictestplus.com/ja/webcam-test/","inLanguage":"ja","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, ChromeOS, Android, iOS","browserRequirements":"Requires a modern browser with WebRTC support","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"無料のWebカメラテスト。ライブ映像、実際の解像度、フレームレート（FPS）、アスペクト比、明るさを確認。撮影・録画もOK。"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Webカメラが使えるか確認するには？","acceptedAnswer":{"@type":"Answer","text":"「カメラテスト開始」をクリックしてアクセスを許可します。自分が映り、ステータスが緑になればカメラは正常です。バッジに実際の解像度とFPSが表示されます。"}},{"@type":"Question","name":"映像が左右反転しているのはなぜ？","acceptedAnswer":{"@type":"Answer","text":"前面カメラは鏡のように自然に感じられるよう、標準で左右反転して表示されます。通話相手には反転していない映像が見えています。「反転」ボタンで切り替えられます。"}},{"@type":"Question","name":"WebカメラのFPSが低いのはなぜ？","acceptedAnswer":{"@type":"Answer","text":"主な原因は暗さ、USBポートの混雑、高すぎる解像度です。照明を足す、720pを選ぶ、カメラをパソコンに直接つなぐなどを試してください。"}},{"@type":"Question","name":"スマホの前面・背面カメラもテストできますか？","acceptedAnswer":{"@type":"Answer","text":"はい。スマホでこのページを開き、「カメラ切替」をタップすると前面と背面のカメラを切り替えられます。"}},{"@type":"Question","name":"撮影した画像はアップロードされますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。スナップショットや動画はブラウザ内で作成され、ダウンロードしない限り保存されません。"}}]}</script>

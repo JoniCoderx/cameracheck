@@ -51,13 +51,13 @@
 
 <script>
 /* Google Analytics 4. Consent Mode: no analytics/ad cookies in the EEA, UK and Switzerland
-   (cookieless pings only) until a consent banner grants them. The library loads after the page
-   is ready so it never slows the first paint. */
+   (cookieless pings only) until a consent banner grants them. The library loads on the first interaction
+   (or 8 s after load) so it never competes with the page itself. */
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']});
 gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
 gtag('js',new Date());gtag('config','G-HPVRGFJ0ZQ');
-addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)},1500)});
+(function(){var done=0,ev=['pointerdown','keydown','scroll','touchstart'];function go(){if(done)return;done=1;ev.forEach(function(e){removeEventListener(e,go,true)});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)}ev.forEach(function(e){addEventListener(e,go,{capture:true,passive:true,once:true})});addEventListener('load',function(){setTimeout(go,8000)})})();
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Tes mic AirPods — MicTest+","url":"https://mictestplus.com/id/airpods-mic-test/","inLanguage":"id","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, ChromeOS, Android, iOS","browserRequirements":"Requires a modern browser with WebRTC support","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Tes mikrofon AirPods di iPhone, Mac, atau Windows. Pilih AirPods sebagai input, cek levelnya, dan perbaiki pengaturan yang membuat suaranya buruk."}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Kenapa mic AirPods saya tidak berfungsi di Windows?","acceptedAnswer":{"@type":"Answer","text":"Windows menampilkan AirPods dua kali. Pilih perangkat \"Headset\" sebagai input di Pengaturan → Sistem → Suara, dan juga di aplikasi panggilan Anda."}},{"@type":"Question","name":"Kenapa mic AirPods terdengar teredam?","acceptedAnswer":{"@type":"Answer","text":"Kotoran di kisi mic di ujung bawah batang adalah penyebab paling umum. Bersihkan dengan lembut memakai cotton bud kering."}},{"@type":"Question","name":"Bisakah saya memakai satu AirPod saja sebagai mic?","acceptedAnswer":{"@type":"Answer","text":"Bisa. Di iPhone, atur Mikrofon ke Selalu Kiri atau Selalu Kanan di pengaturan Bluetooth AirPods."}},{"@type":"Question","name":"Apakah audio saya diunggah?","acceptedAnswer":{"@type":"Answer","text":"Tidak. Tes berjalan di browser Anda dan tidak ada yang keluar dari perangkat Anda."}}]}</script>

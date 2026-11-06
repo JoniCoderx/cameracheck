@@ -51,13 +51,13 @@
 
 <script>
 /* Google Analytics 4. Consent Mode: no analytics/ad cookies in the EEA, UK and Switzerland
-   (cookieless pings only) until a consent banner grants them. The library loads after the page
-   is ready so it never slows the first paint. */
+   (cookieless pings only) until a consent banner grants them. The library loads on the first interaction
+   (or 8 s after load) so it never competes with the page itself. */
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']});
 gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
 gtag('js',new Date());gtag('config','G-HPVRGFJ0ZQ');
-addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)},1500)});
+(function(){var done=0,ev=['pointerdown','keydown','scroll','touchstart'];function go(){if(done)return;done=1;ev.forEach(function(e){removeEventListener(e,go,true)});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)}ev.forEach(function(e){addEventListener(e,go,{capture:true,passive:true,once:true})});addEventListener('load',function(){setTimeout(go,8000)})})();
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"オンラインイヤホン・ヘッドホンテスト — MicTest+","url":"https://mictestplus.com/ja/headphone-test/","inLanguage":"ja","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, ChromeOS, Android, iOS","browserRequirements":"Requires a modern browser with WebRTC support","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"無料のオンライン イヤホンテスト・ヘッドホンテスト。テスト音と周波数スイープで、左右のチャンネル、ステレオバランス、低音を確認。有線も Bluetooth も対応。"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"イヤホンやヘッドホンの左右が逆かどうか確かめるには？","acceptedAnswer":{"@type":"Answer","text":"「左」を押してください。右耳から音が聞こえたら、左右を逆に装着しているか、ケーブルやアダプターの配線が逆になっています。"}},{"@type":"Question","name":"スイープの最初が聞こえないのはなぜ？","acceptedAnswer":{"@type":"Answer","text":"とても低い音を再生するには、しっかりした密着と大きなドライバーが必要です。多くのイヤホンやノートPCのスピーカーは 100 Hz を大きく下回る音をあまり再生できません。"}},{"@type":"Question","name":"このテストは耳に安全ですか？","acceptedAnswer":{"@type":"Answer","text":"普通の音量なら安全です。特にカナル型イヤホンでは、小さな音量から始めて少しずつ上げてください。"}},{"@type":"Question","name":"Bluetooth のイヤホンやヘッドホンでも使えますか？","acceptedAnswer":{"@type":"Answer","text":"はい。先に接続して出力デバイスにしてから、テスト音を再生してください。"}}]}</script>

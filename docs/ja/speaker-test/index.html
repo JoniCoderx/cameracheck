@@ -51,13 +51,13 @@
 
 <script>
 /* Google Analytics 4. Consent Mode: no analytics/ad cookies in the EEA, UK and Switzerland
-   (cookieless pings only) until a consent banner grants them. The library loads after the page
-   is ready so it never slows the first paint. */
+   (cookieless pings only) until a consent banner grants them. The library loads on the first interaction
+   (or 8 s after load) so it never competes with the page itself. */
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']});
 gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
 gtag('js',new Date());gtag('config','G-HPVRGFJ0ZQ');
-addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)},1500)});
+(function(){var done=0,ev=['pointerdown','keydown','scroll','touchstart'];function go(){if(done)return;done=1;ev.forEach(function(e){removeEventListener(e,go,true)});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)}ev.forEach(function(e){addEventListener(e,go,{capture:true,passive:true,once:true})});addEventListener('load',function(){setTimeout(go,8000)})})();
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"オンラインスピーカーテスト — MicTest+","url":"https://mictestplus.com/ja/speaker-test/","inLanguage":"ja","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, ChromeOS, Android, iOS","browserRequirements":"Requires a modern browser with WebRTC support","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"オンラインのスピーカーテスト。左・右・中央のトーン再生や40 Hz–16 kHzの周波数スイープで、低音・高音・ステレオを確認できます。"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"左右のスピーカーをテストするには？","acceptedAnswer":{"@type":"Answer","text":"「左」ボタンを押すと、左側だけからトーンが鳴るはずです。次に「右」を押します。逆になっている場合はヘッドホンを付け直すか、ケーブルやバランス設定を確認してください。"}},{"@type":"Question","name":"高い周波数が聞こえないのはなぜ？","acceptedAnswer":{"@type":"Answer","text":"15 kHz を超える音の聴力は年齢とともに自然に低下します。また小型スピーカーの多くは非常に高い音や低い音を再生できません。どちらも正常です。"}},{"@type":"Question","name":"テスト音は耳に安全ですか？","acceptedAnswer":{"@type":"Answer","text":"通常の音量なら安全です。特にヘッドホンでは、システム音量を小さめにして始め、少しずつ上げてください。"}},{"@type":"Question","name":"Bluetoothヘッドホンでも使えますか？","acceptedAnswer":{"@type":"Answer","text":"はい。先に接続して出力デバイスにしてから、トーンを再生してください。"}}]}</script>

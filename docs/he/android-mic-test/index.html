@@ -51,13 +51,13 @@
 
 <script>
 /* Google Analytics 4. Consent Mode: no analytics/ad cookies in the EEA, UK and Switzerland
-   (cookieless pings only) until a consent banner grants them. The library loads after the page
-   is ready so it never slows the first paint. */
+   (cookieless pings only) until a consent banner grants them. The library loads on the first interaction
+   (or 8 s after load) so it never competes with the page itself. */
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']});
 gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
 gtag('js',new Date());gtag('config','G-HPVRGFJ0ZQ');
-addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)},1500)});
+(function(){var done=0,ev=['pointerdown','keydown','scroll','touchstart'];function go(){if(done)return;done=1;ev.forEach(function(e){removeEventListener(e,go,true)});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)}ev.forEach(function(e){addEventListener(e,go,{capture:true,passive:true,once:true})});addEventListener('load',function(){setTimeout(go,8000)})})();
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"בדיקת מיקרופון Android — MicTest+","url":"https://mictestplus.com/he/android-mic-test/","inLanguage":"he","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, ChromeOS, Android, iOS","browserRequirements":"Requires a modern browser with WebRTC support","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"בדקו את המיקרופון של Android ב‑Chrome, בלי אפליקציה. צפו בעוצמה בזמן אמת, הקליטו והשמיעו, ותקנו את הגדרות Android שחוסמות את המיקרופון."}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"אפשר לבדוק את מיקרופון הטלפון בלי להתקין אפליקציה?","acceptedAnswer":{"@type":"Answer","text":"כן. הדף עובד ב‑Chrome, ב‑Samsung Internet וב‑Firefox ב‑Android. אשרו גישה למיקרופון והתחילו את הבדיקה."}},{"@type":"Question","name":"למה המיקרופון חסום בדפדפן ב‑Android?","acceptedAnswer":{"@type":"Answer","text":"או שלדפדפן אין הרשאת מיקרופון, או שהמתג \"גישה למיקרופון\" בהגדרות המהירות כבוי. הפעילו את שניהם ורעננו את הדף."}},{"@type":"Question","name":"זה עובד בטלפונים של Samsung?","acceptedAnswer":{"@type":"Answer","text":"כן. השתמשו ב‑Samsung Internet או ב‑Chrome. בטלפונים של Samsung הרשאות האפליקציות נמצאות תחת הגדרות ← אפליקציות ← הרשאות."}},{"@type":"Question","name":"השמע שלי מועלה?","acceptedAnswer":{"@type":"Answer","text":"לא. הכול קורה בטלפון שלכם ושום דבר לא נשלח לשרת."}}]}</script>

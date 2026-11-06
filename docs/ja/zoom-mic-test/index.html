@@ -51,13 +51,13 @@
 
 <script>
 /* Google Analytics 4. Consent Mode: no analytics/ad cookies in the EEA, UK and Switzerland
-   (cookieless pings only) until a consent banner grants them. The library loads after the page
-   is ready so it never slows the first paint. */
+   (cookieless pings only) until a consent banner grants them. The library loads on the first interaction
+   (or 8 s after load) so it never competes with the page itself. */
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']});
 gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
 gtag('js',new Date());gtag('config','G-HPVRGFJ0ZQ');
-addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)},1500)});
+(function(){var done=0,ev=['pointerdown','keydown','scroll','touchstart'];function go(){if(done)return;done=1;ev.forEach(function(e){removeEventListener(e,go,true)});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)}ev.forEach(function(e){addEventListener(e,go,{capture:true,passive:true,once:true})});addEventListener('load',function(){setTimeout(go,8000)})})();
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Zoom マイクテスト — MicTest+","url":"https://mictestplus.com/ja/zoom-mic-test/","inLanguage":"ja","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, ChromeOS, Android, iOS","browserRequirements":"Requires a modern browser with WebRTC support","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Zoom 会議の前にマイクをテスト。レベルを確認し、録音して聞き返し、声が小さい・聞こえない原因となる Zoom のオーディオ設定を直せます。"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Zoom 会議の前にマイクをテストするには？","acceptedAnswer":{"@type":"Answer","text":"このページのマイクテストを使うか、Zoom の 設定 → オーディオ →「マイクのテスト」を開きます。zoom.us/test ではテストミーティングも利用できます。"}},{"@type":"Question","name":"Zoom で「マイクが利用できません」と表示されるのはなぜ？","acceptedAnswer":{"@type":"Answer","text":"他のアプリがマイクを使っているか、Zoom に権限がない可能性が高いです。他の通話アプリを閉じ、OSのマイクのプライバシー設定で Zoom を許可してください。"}},{"@type":"Question","name":"Zoom で声が小さくなるのはなぜ？","acceptedAnswer":{"@type":"Answer","text":"OSの入力音量が低いか、Zoom の自動調整で音量が下げられています。入力音量を上げ、Zoom の自動調整のチェックを外してください。"}},{"@type":"Question","name":"このページは音声を録音・送信しますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。すべてブラウザ内で動作し、何もアップロードされません。"}}]}</script>

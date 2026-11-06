@@ -51,13 +51,13 @@
 
 <script>
 /* Google Analytics 4. Consent Mode: no analytics/ad cookies in the EEA, UK and Switzerland
-   (cookieless pings only) until a consent banner grants them. The library loads after the page
-   is ready so it never slows the first paint. */
+   (cookieless pings only) until a consent banner grants them. The library loads on the first interaction
+   (or 8 s after load) so it never competes with the page itself. */
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']});
 gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
 gtag('js',new Date());gtag('config','G-HPVRGFJ0ZQ');
-addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)},1500)});
+(function(){var done=0,ev=['pointerdown','keydown','scroll','touchstart'];function go(){if(done)return;done=1;ev.forEach(function(e){removeEventListener(e,go,true)});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)}ev.forEach(function(e){addEventListener(e,go,{capture:true,passive:true,once:true})});addEventListener('load',function(){setTimeout(go,8000)})})();
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Teste de fone de ouvido online — MicTest+","url":"https://mictestplus.com/pt/headphone-test/","inLanguage":"pt","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, ChromeOS, Android, iOS","browserRequirements":"Requires a modern browser with WebRTC support","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Teste de fone de ouvido online grátis. Confira os canais esquerdo e direito, o balanço estéreo e os graves com tons e varredura. Com fio ou Bluetooth."}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Como sei se meu fone está com esquerdo e direito invertidos?","acceptedAnswer":{"@type":"Answer","text":"Clique em Esquerdo. Se o som sair no ouvido direito, o fone está colocado ao contrário ou o cabo ou adaptador está ligado invertido."}},{"@type":"Question","name":"Por que não ouço o começo da varredura?","acceptedAnswer":{"@type":"Answer","text":"Notas muito graves precisam de boa vedação e drivers maiores. Muitos fones pequenos e alto-falantes de notebook não tocam bem abaixo de 100 Hz."}},{"@type":"Question","name":"O teste é seguro para os ouvidos?","acceptedAnswer":{"@type":"Answer","text":"Sim, em volume normal. Comece baixo e aumente aos poucos, principalmente com fones intra-auriculares."}},{"@type":"Question","name":"Funciona com fones Bluetooth?","acceptedAnswer":{"@type":"Answer","text":"Sim. Conecte o fone antes para ele virar a saída ativa e depois toque os tons."}}]}</script>

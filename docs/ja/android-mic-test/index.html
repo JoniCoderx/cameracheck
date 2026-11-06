@@ -51,13 +51,13 @@
 
 <script>
 /* Google Analytics 4. Consent Mode: no analytics/ad cookies in the EEA, UK and Switzerland
-   (cookieless pings only) until a consent banner grants them. The library loads after the page
-   is ready so it never slows the first paint. */
+   (cookieless pings only) until a consent banner grants them. The library loads on the first interaction
+   (or 8 s after load) so it never competes with the page itself. */
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']});
 gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
 gtag('js',new Date());gtag('config','G-HPVRGFJ0ZQ');
-addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)},1500)});
+(function(){var done=0,ev=['pointerdown','keydown','scroll','touchstart'];function go(){if(done)return;done=1;ev.forEach(function(e){removeEventListener(e,go,true)});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)}ev.forEach(function(e){addEventListener(e,go,{capture:true,passive:true,once:true})});addEventListener('load',function(){setTimeout(go,8000)})})();
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Android マイクテスト — MicTest+","url":"https://mictestplus.com/ja/android-mic-test/","inLanguage":"ja","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, ChromeOS, Android, iOS","browserRequirements":"Requires a modern browser with WebRTC support","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"アプリ不要、Chrome で Android のマイクをテスト。レベルをリアルタイム表示し、録音・再生して、マイクをブロックする Android の設定も直せます。"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"アプリを入れずにスマホのマイクをテストできますか？","acceptedAnswer":{"@type":"Answer","text":"はい。このページは Android の Chrome、Samsung Internet、Firefox で動作します。マイクへのアクセスを許可してテストを開始してください。"}},{"@type":"Question","name":"ブラウザで Android のマイクがブロックされるのはなぜ？","acceptedAnswer":{"@type":"Answer","text":"ブラウザにマイクの権限がないか、クイック設定の「マイクへのアクセス」がオフになっています。両方をオンにしてページを再読み込みしてください。"}},{"@type":"Question","name":"Samsung のスマホでも使えますか？","acceptedAnswer":{"@type":"Answer","text":"はい。Samsung Internet か Chrome を使ってください。Samsung のスマホでは、アプリの権限は 設定 → アプリ → 権限 にあります。"}},{"@type":"Question","name":"音声はアップロードされますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。すべてスマホの中で処理され、サーバーには何も送信されません。"}}]}</script>

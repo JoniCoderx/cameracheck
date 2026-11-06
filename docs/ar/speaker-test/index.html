@@ -51,13 +51,13 @@
 
 <script>
 /* Google Analytics 4. Consent Mode: no analytics/ad cookies in the EEA, UK and Switzerland
-   (cookieless pings only) until a consent banner grants them. The library loads after the page
-   is ready so it never slows the first paint. */
+   (cookieless pings only) until a consent banner grants them. The library loads on the first interaction
+   (or 8 s after load) so it never competes with the page itself. */
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']});
 gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
 gtag('js',new Date());gtag('config','G-HPVRGFJ0ZQ');
-addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)},1500)});
+(function(){var done=0,ev=['pointerdown','keydown','scroll','touchstart'];function go(){if(done)return;done=1;ev.forEach(function(e){removeEventListener(e,go,true)});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)}ev.forEach(function(e){addEventListener(e,go,{capture:true,passive:true,once:true})});addEventListener('load',function(){setTimeout(go,8000)})})();
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"اختبار السماعات أونلاين — MicTest+","url":"https://mictestplus.com/ar/speaker-test/","inLanguage":"ar","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, ChromeOS, Android, iOS","browserRequirements":"Requires a modern browser with WebRTC support","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"اختبر السماعات وسماعات الرأس أونلاين. شغّل نغمات يسار ويمين ووسط، واضبط التردد، وشغّل مسحًا من 40 Hz إلى 16 kHz لفحص الجهير والحدّة وقنوات الستيريو."}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"كيف أختبر السماعة اليسرى واليمنى؟","acceptedAnswer":{"@type":"Answer","text":"اضغط زر «يسار». يجب أن تخرج النغمة من الجهة اليسرى فقط. ثم اضغط «يمين». إذا كانتا معكوستين، فاقلب سماعات الرأس أو تحقّق من الكابل وإعدادات التوازن."}},{"@type":"Question","name":"لماذا لا أسمع الترددات العالية؟","acceptedAnswer":{"@type":"Answer","text":"السمع فوق 15 kHz يضعف طبيعيًا مع التقدم في العمر، وكثير من السماعات الصغيرة لا تستطيع تشغيل الترددات العالية جدًا أو المنخفضة جدًا. كلا الأمرين طبيعي."}},{"@type":"Question","name":"هل نغمة الاختبار آمنة على أذني؟","acceptedAnswer":{"@type":"Answer","text":"نعم بمستوى صوت عادي. ابدأ بمستوى صوت منخفض للنظام وارفعه تدريجيًا، خاصةً مع سماعات الرأس."}},{"@type":"Question","name":"هل يعمل مع سماعات البلوتوث؟","acceptedAnswer":{"@type":"Answer","text":"نعم. وصّلها أولًا لتصبح جهاز الإخراج النشط، ثم شغّل النغمات."}}]}</script>

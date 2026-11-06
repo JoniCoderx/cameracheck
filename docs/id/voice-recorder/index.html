@@ -51,13 +51,13 @@
 
 <script>
 /* Google Analytics 4. Consent Mode: no analytics/ad cookies in the EEA, UK and Switzerland
-   (cookieless pings only) until a consent banner grants them. The library loads after the page
-   is ready so it never slows the first paint. */
+   (cookieless pings only) until a consent banner grants them. The library loads on the first interaction
+   (or 8 s after load) so it never competes with the page itself. */
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']});
 gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
 gtag('js',new Date());gtag('config','G-HPVRGFJ0ZQ');
-addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)},1500)});
+(function(){var done=0,ev=['pointerdown','keydown','scroll','touchstart'];function go(){if(done)return;done=1;ev.forEach(function(e){removeEventListener(e,go,true)});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)}ev.forEach(function(e){addEventListener(e,go,{capture:true,passive:true,once:true})});addEventListener('load',function(){setTimeout(go,8000)})})();
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Perekam suara online — MicTest+","url":"https://mictestplus.com/id/voice-recorder/","inLanguage":"id","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, ChromeOS, Android, iOS","browserRequirements":"Requires a modern browser with WebRTC support","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Perekam suara online gratis. Rekam suara Anda di browser, putar ulang, dan unduh filenya. Tanpa batas waktu, tanpa daftar, tidak ada yang diunggah."}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Apakah ada batas waktu?","acceptedAnswer":{"@type":"Answer","text":"Tidak ada batas tetap. Rekaman disimpan di memori browser, jadi sesi yang sangat panjang bergantung pada perangkat Anda. Untuk rekaman lebih dari satu jam, unduh per bagian."}},{"@type":"Question","name":"Di mana rekaman saya disimpan?","acceptedAnswer":{"@type":"Answer","text":"Hanya di tab browser ini sampai Anda mengunduhnya. Menutup atau memuat ulang halaman akan menghapusnya."}},{"@type":"Question","name":"Apakah bisa di iPhone dan Android?","acceptedAnswer":{"@type":"Answer","text":"Bisa. Berfungsi di Safari di iPhone dan di Chrome atau Samsung Internet di Android."}},{"@type":"Question","name":"Apakah perekam suara ini benar-benar gratis?","acceptedAnswer":{"@type":"Answer","text":"Ya. Tanpa daftar, tanpa watermark, dan tanpa unggahan."}}]}</script>

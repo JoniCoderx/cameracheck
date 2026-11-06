@@ -51,13 +51,13 @@
 
 <script>
 /* Google Analytics 4. Consent Mode: no analytics/ad cookies in the EEA, UK and Switzerland
-   (cookieless pings only) until a consent banner grants them. The library loads after the page
-   is ready so it never slows the first paint. */
+   (cookieless pings only) until a consent banner grants them. The library loads on the first interaction
+   (or 8 s after load) so it never competes with the page itself. */
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']});
 gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
 gtag('js',new Date());gtag('config','G-HPVRGFJ0ZQ');
-addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)},1500)});
+(function(){var done=0,ev=['pointerdown','keydown','scroll','touchstart'];function go(){if(done)return;done=1;ev.forEach(function(e){removeEventListener(e,go,true)});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)}ev.forEach(function(e){addEventListener(e,go,{capture:true,passive:true,once:true})});addEventListener('load',function(){setTimeout(go,8000)})})();
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"בדיקת מיקרופון AirPods — MicTest+","url":"https://mictestplus.com/he/airpods-mic-test/","inLanguage":"he","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, ChromeOS, Android, iOS","browserRequirements":"Requires a modern browser with WebRTC support","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"בדקו את המיקרופון של AirPods ב‑iPhone, ב‑Mac או ב‑Windows. בחרו AirPods כקלט, בדקו את העוצמה ותקנו את ההגדרות שגורמות להן להישמע רע."}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"למה המיקרופון של AirPods לא עובד ב‑Windows?","acceptedAnswer":{"@type":"Answer","text":"Windows מציג את ה‑AirPods פעמיים. בחרו בהתקן \"Headset\" כקלט בהגדרות ← מערכת ← קול, וגם באפליקציית השיחות."}},{"@type":"Question","name":"למה המיקרופון של AirPods נשמע עמום?","acceptedAnswer":{"@type":"Answer","text":"לכלוך ברשת המיקרופון בתחתית הגבעול הוא הסיבה הנפוצה ביותר. נקו אותו בעדינות במקלון צמר גפן יבש."}},{"@type":"Question","name":"אפשר להשתמש רק באוזנייה אחת של AirPods כמיקרופון?","acceptedAnswer":{"@type":"Answer","text":"כן. ב‑iPhone הגדירו את המיקרופון ל\"תמיד שמאל\" או ל\"תמיד ימין\" בהגדרות ה‑Bluetooth של ה‑AirPods."}},{"@type":"Question","name":"השמע שלי מועלה?","acceptedAnswer":{"@type":"Answer","text":"לא. הבדיקה פועלת בדפדפן שלכם ושום דבר לא יוצא מהמכשיר."}}]}</script>

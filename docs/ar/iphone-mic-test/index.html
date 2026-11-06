@@ -51,13 +51,13 @@
 
 <script>
 /* Google Analytics 4. Consent Mode: no analytics/ad cookies in the EEA, UK and Switzerland
-   (cookieless pings only) until a consent banner grants them. The library loads after the page
-   is ready so it never slows the first paint. */
+   (cookieless pings only) until a consent banner grants them. The library loads on the first interaction
+   (or 8 s after load) so it never competes with the page itself. */
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']});
 gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
 gtag('js',new Date());gtag('config','G-HPVRGFJ0ZQ');
-addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)},1500)});
+(function(){var done=0,ev=['pointerdown','keydown','scroll','touchstart'];function go(){if(done)return;done=1;ev.forEach(function(e){removeEventListener(e,go,true)});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)}ev.forEach(function(e){addEventListener(e,go,{capture:true,passive:true,once:true})});addEventListener('load',function(){setTimeout(go,8000)})})();
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"اختبار مايك iPhone — MicTest+","url":"https://mictestplus.com/ar/iphone-mic-test/","inLanguage":"ar","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, ChromeOS, Android, iOS","browserRequirements":"Requires a modern browser with WebRTC support","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"اختبر ميكروفون iPhone في Safari بدون تطبيق. شاهد المستوى المباشر، وسجّل واستمع، وأصلح إعدادات iOS التي تحظر المايك."}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"هل يمكنني اختبار مايك iPhone بدون تطبيق؟","acceptedAnswer":{"@type":"Answer","text":"نعم. تعمل هذه الصفحة في Safari وChrome على iOS. اسمح بالوصول إلى الميكروفون عند الطلب وابدأ الاختبار."}},{"@type":"Question","name":"لماذا يبدو صوت مايك iPhone مكتومًا؟","acceptedAnswer":{"@type":"Answer","text":"غالبًا يغطي الغطاء أو حافة واقي الشاشة أو الغبار فتحات المايك. انزع الغطاء ونظّف الفتحات برفق، ثم اختبر مجددًا."}},{"@type":"Question","name":"لماذا لا يسمعني الناس في المكالمات رغم أن الاختبار يعمل؟","acceptedAnswer":{"@type":"Answer","text":"قد تمر المكالمات عبر جهاز بلوتوث متصل أو عبر مايك سماعة الأذن. افصل البلوتوث وجرّب مكبر الصوت للمقارنة."}},{"@type":"Question","name":"هل يُرفع تسجيلي؟","acceptedAnswer":{"@type":"Answer","text":"لا. تبقى التسجيلات في ذاكرة Safari حتى تغلق الصفحة، إلا إذا نزّلتها."}}]}</script>

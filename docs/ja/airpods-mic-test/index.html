@@ -51,13 +51,13 @@
 
 <script>
 /* Google Analytics 4. Consent Mode: no analytics/ad cookies in the EEA, UK and Switzerland
-   (cookieless pings only) until a consent banner grants them. The library loads after the page
-   is ready so it never slows the first paint. */
+   (cookieless pings only) until a consent banner grants them. The library loads on the first interaction
+   (or 8 s after load) so it never competes with the page itself. */
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']});
 gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
 gtag('js',new Date());gtag('config','G-HPVRGFJ0ZQ');
-addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)},1500)});
+(function(){var done=0,ev=['pointerdown','keydown','scroll','touchstart'];function go(){if(done)return;done=1;ev.forEach(function(e){removeEventListener(e,go,true)});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)}ev.forEach(function(e){addEventListener(e,go,{capture:true,passive:true,once:true})});addEventListener('load',function(){setTimeout(go,8000)})})();
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"AirPods マイクテスト — MicTest+","url":"https://mictestplus.com/ja/airpods-mic-test/","inLanguage":"ja","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, ChromeOS, Android, iOS","browserRequirements":"Requires a modern browser with WebRTC support","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"iPhone、Mac、Windows で AirPods のマイクをテスト。入力に AirPods を選んでレベルを確認し、音質が悪くなる設定を直せます。"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Windows で AirPods のマイクが使えないのはなぜ？","acceptedAnswer":{"@type":"Answer","text":"Windows では AirPods が2つ表示されます。設定 → システム → サウンド と通話アプリの両方で、入力に「ヘッドセット」を選んでください。"}},{"@type":"Question","name":"AirPods のマイクの音がこもるのはなぜ？","acceptedAnswer":{"@type":"Answer","text":"最も多い原因は、軸の下部にあるマイクの網の汚れです。乾いた綿棒でやさしく掃除してください。"}},{"@type":"Question","name":"AirPods を片方だけマイクとして使えますか？","acceptedAnswer":{"@type":"Answer","text":"はい。iPhone の AirPods の Bluetooth 設定で、マイクを「常に左」または「常に右」に設定します。"}},{"@type":"Question","name":"音声はアップロードされますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。テストはブラウザ内で動作し、デバイスの外には何も送信されません。"}}]}</script>

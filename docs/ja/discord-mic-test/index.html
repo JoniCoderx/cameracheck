@@ -51,13 +51,13 @@
 
 <script>
 /* Google Analytics 4. Consent Mode: no analytics/ad cookies in the EEA, UK and Switzerland
-   (cookieless pings only) until a consent banner grants them. The library loads after the page
-   is ready so it never slows the first paint. */
+   (cookieless pings only) until a consent banner grants them. The library loads on the first interaction
+   (or 8 s after load) so it never competes with the page itself. */
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']});
 gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
 gtag('js',new Date());gtag('config','G-HPVRGFJ0ZQ');
-addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)},1500)});
+(function(){var done=0,ev=['pointerdown','keydown','scroll','touchstart'];function go(){if(done)return;done=1;ev.forEach(function(e){removeEventListener(e,go,true)});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)}ev.forEach(function(e){addEventListener(e,go,{capture:true,passive:true,once:true})});addEventListener('load',function(){setTimeout(go,8000)})})();
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Discord マイクテスト — MicTest+","url":"https://mictestplus.com/ja/discord-mic-test/","inLanguage":"ja","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, ChromeOS, Android, iOS","browserRequirements":"Requires a modern browser with WebRTC support","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"無料の Discord マイクテスト。入力レベルを確認し、自分の声を聞き返して、相手に声が届かない原因となる Discord の設定を直せます。ブラウザだけで動作。"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Discord でフレンドに声が聞こえないのはなぜ？","acceptedAnswer":{"@type":"Answer","text":"多くの場合、Discord が別のデバイスを使っている、入力感度が高すぎる、またはミュートされているのが原因です。音声・ビデオでマイクを名前で選び、感度を下げ、名前の横のマイクアイコンを確認してください。"}},{"@type":"Question","name":"Discord の中でマイクをテストするには？","acceptedAnswer":{"@type":"Answer","text":"ユーザー設定 → 音声・ビデオ を開き、マイクテストの「チェックしてみよう」を押します。話している間にバーが動けば正常です。"}},{"@type":"Question","name":"Discord で USB や Bluetooth のマイクは使えますか？","acceptedAnswer":{"@type":"Answer","text":"はい。マイクを接続し、Discord の入力デバイス一覧から名前で選びます。Bluetooth ヘッドセットはマイク使用中に低音質のモードに切り替わることがありますが、これは正常です。"}},{"@type":"Question","name":"このテストは Discord アカウントと連携していますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。このページはブラウザ内で動作し、Discord とは一切通信しません。何もアップロードされません。"}}]}</script>

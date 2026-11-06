@@ -51,13 +51,13 @@
 
 <script>
 /* Google Analytics 4. Consent Mode: no analytics/ad cookies in the EEA, UK and Switzerland
-   (cookieless pings only) until a consent banner grants them. The library loads after the page
-   is ready so it never slows the first paint. */
+   (cookieless pings only) until a consent banner grants them. The library loads on the first interaction
+   (or 8 s after load) so it never competes with the page itself. */
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']});
 gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
 gtag('js',new Date());gtag('config','G-HPVRGFJ0ZQ');
-addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)},1500)});
+(function(){var done=0,ev=['pointerdown','keydown','scroll','touchstart'];function go(){if(done)return;done=1;ev.forEach(function(e){removeEventListener(e,go,true)});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)}ev.forEach(function(e){addEventListener(e,go,{capture:true,passive:true,once:true})});addEventListener('load',function(){setTimeout(go,8000)})})();
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"オンラインマイクテスト — MicTest+","url":"https://mictestplus.com/ja/mic-test/","inLanguage":"ja","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, ChromeOS, Android, iOS","browserRequirements":"Requires a modern browser with WebRTC support","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"ワンクリックでできるオンラインのマイクテスト。dBレベルメーター、波形、周波数スペクトルをリアルタイム表示し、声を録音・再生して確認できます。"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"マイクが正常に動作しているか確認するには？","acceptedAnswer":{"@type":"Answer","text":"テストを開始して話してください。レベルメーターと波形が声に合わせて動き、ステータスが緑になればマイクは正常です。5秒間録音して再生すれば音質も確認できます。"}},{"@type":"Question","name":"マイクの音が小さいのはなぜ？","acceptedAnswer":{"@type":"Answer","text":"入力ゲインが低い可能性があります。OSのサウンド設定で入力音量を上げ、マイクに近づき、プルダウンで正しいデバイスを選んでいるか確認してください。"}},{"@type":"Question","name":"マイクがエコーを拾うのはなぜ？","acceptedAnswer":{"@type":"Answer","text":"多くの場合、スピーカーの音がマイクに回り込んでいます。ヘッドホンを使い、スピーカー音量を下げ、通話アプリのエコーキャンセルをオンにしておきましょう。"}},{"@type":"Question","name":"USBやBluetoothのマイクもテストできますか？","acceptedAnswer":{"@type":"Answer","text":"はい。接続したら必要に応じてデバイス一覧の「更新」を押し、マイクのプルダウンから選んでください。"}},{"@type":"Question","name":"テスト録音はダウンロードできますか？","acceptedAnswer":{"@type":"Answer","text":"はい。録音後に「ダウンロード」を押すと保存できます。音声はブラウザ内で作成され、アップロードされることはありません。"}}]}</script>

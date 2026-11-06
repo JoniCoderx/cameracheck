@@ -51,13 +51,13 @@
 
 <script>
 /* Google Analytics 4. Consent Mode: no analytics/ad cookies in the EEA, UK and Switzerland
-   (cookieless pings only) until a consent banner grants them. The library loads after the page
-   is ready so it never slows the first paint. */
+   (cookieless pings only) until a consent banner grants them. The library loads on the first interaction
+   (or 8 s after load) so it never competes with the page itself. */
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']});
 gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
 gtag('js',new Date());gtag('config','G-HPVRGFJ0ZQ');
-addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)},1500)});
+(function(){var done=0,ev=['pointerdown','keydown','scroll','touchstart'];function go(){if(done)return;done=1;ev.forEach(function(e){removeEventListener(e,go,true)});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)}ev.forEach(function(e){addEventListener(e,go,{capture:true,passive:true,once:true})});addEventListener('load',function(){setTimeout(go,8000)})})();
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"ऑनलाइन हेडफ़ोन टेस्ट — MicTest+","url":"https://mictestplus.com/hi/headphone-test/","inLanguage":"hi","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, ChromeOS, Android, iOS","browserRequirements":"Requires a modern browser with WebRTC support","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"मुफ़्त ऑनलाइन हेडफ़ोन टेस्ट। टेस्ट टोन और फ़्रीक्वेंसी स्वीप से बायां-दायां चैनल, स्टीरियो बैलेंस और बेस जांचें। वायर्ड और ब्लूटूथ दोनों पर।"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"कैसे पता करूं कि मेरे हेडफ़ोन के बायां/दायां उलटे हैं?","acceptedAnswer":{"@type":"Answer","text":"बायां दबाएं। अगर आवाज़ दाएं कान से आती है, तो आपने हेडफ़ोन उलटे पहने हैं या केबल या एडैप्टर उलटा वायर्ड है।"}},{"@type":"Question","name":"मुझे स्वीप की शुरुआत क्यों नहीं सुनाई देती?","acceptedAnswer":{"@type":"Answer","text":"बहुत नीचे के सुरों के लिए अच्छी सील और बड़े ड्राइवर चाहिए। कई ईयरबड और लैपटॉप स्पीकर 100 Hz से नीचे ज़्यादा कुछ नहीं बजा पाते।"}},{"@type":"Question","name":"क्या यह टेस्ट मेरे कानों के लिए सुरक्षित है?","acceptedAnswer":{"@type":"Answer","text":"हां, सामान्य वॉल्यूम पर। कम वॉल्यूम से शुरू करें और धीरे-धीरे बढ़ाएं, ख़ासकर इन-ईयर हेडफ़ोन के साथ।"}},{"@type":"Question","name":"क्या यह ब्लूटूथ हेडफ़ोन के साथ काम करता है?","acceptedAnswer":{"@type":"Answer","text":"हां। पहले उन्हें कनेक्ट करें ताकि वे एक्टिव आउटपुट बन जाएं, फिर टोन चलाएं।"}}]}</script>

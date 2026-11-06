@@ -51,13 +51,13 @@
 
 <script>
 /* Google Analytics 4. Consent Mode: no analytics/ad cookies in the EEA, UK and Switzerland
-   (cookieless pings only) until a consent banner grants them. The library loads after the page
-   is ready so it never slows the first paint. */
+   (cookieless pings only) until a consent banner grants them. The library loads on the first interaction
+   (or 8 s after load) so it never competes with the page itself. */
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']});
 gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
 gtag('js',new Date());gtag('config','G-HPVRGFJ0ZQ');
-addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)},1500)});
+(function(){var done=0,ev=['pointerdown','keydown','scroll','touchstart'];function go(){if(done)return;done=1;ev.forEach(function(e){removeEventListener(e,go,true)});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)}ev.forEach(function(e){addEventListener(e,go,{capture:true,passive:true,once:true})});addEventListener('load',function(){setTimeout(go,8000)})})();
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"オンラインボイスレコーダー — MicTest+","url":"https://mictestplus.com/ja/voice-recorder/","inLanguage":"ja","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, ChromeOS, Android, iOS","browserRequirements":"Requires a modern browser with WebRTC support","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"無料のオンライン ボイスレコーダー。ブラウザで声を録音し、再生してファイルをダウンロード。時間制限なし、登録不要、アップロードもされません。"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"録音時間に制限はありますか？","acceptedAnswer":{"@type":"Answer","text":"決まった制限はありません。録音はブラウザのメモリに保存されるため、非常に長い録音はデバイスの性能によります。1時間を超える録音は、分けてダウンロードしてください。"}},{"@type":"Question","name":"録音はどこに保存されますか？","acceptedAnswer":{"@type":"Answer","text":"ダウンロードするまでは、このブラウザタブの中だけです。ページを閉じたり再読み込みしたりすると削除されます。"}},{"@type":"Question","name":"iPhone や Android でも使えますか？","acceptedAnswer":{"@type":"Answer","text":"はい。iPhone の Safari、Android の Chrome や Samsung Internet で使えます。"}},{"@type":"Question","name":"このボイスレコーダーは本当に無料ですか？","acceptedAnswer":{"@type":"Answer","text":"はい。登録不要、透かしなし、アップロードもありません。"}}]}</script>

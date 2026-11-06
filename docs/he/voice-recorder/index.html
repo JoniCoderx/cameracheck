@@ -51,13 +51,13 @@
 
 <script>
 /* Google Analytics 4. Consent Mode: no analytics/ad cookies in the EEA, UK and Switzerland
-   (cookieless pings only) until a consent banner grants them. The library loads after the page
-   is ready so it never slows the first paint. */
+   (cookieless pings only) until a consent banner grants them. The library loads on the first interaction
+   (or 8 s after load) so it never competes with the page itself. */
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']});
 gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
 gtag('js',new Date());gtag('config','G-HPVRGFJ0ZQ');
-addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)},1500)});
+(function(){var done=0,ev=['pointerdown','keydown','scroll','touchstart'];function go(){if(done)return;done=1;ev.forEach(function(e){removeEventListener(e,go,true)});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)}ev.forEach(function(e){addEventListener(e,go,{capture:true,passive:true,once:true})});addEventListener('load',function(){setTimeout(go,8000)})})();
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"מקליט קול אונליין — MicTest+","url":"https://mictestplus.com/he/voice-recorder/","inLanguage":"he","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, ChromeOS, Android, iOS","browserRequirements":"Requires a modern browser with WebRTC support","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"מקליט קול אונליין בחינם. הקליטו את הקול שלכם בדפדפן, השמיעו והורידו את הקובץ. בלי הגבלת זמן, בלי הרשמה, ושום דבר לא מועלה."}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"יש הגבלת זמן?","acceptedAnswer":{"@type":"Answer","text":"אין הגבלה קבועה. ההקלטות נשמרות בזיכרון הדפדפן, כך שהקלטות ארוכות מאוד תלויות במכשיר שלכם. בהקלטות של יותר משעה, הורידו בחלקים."}},{"@type":"Question","name":"איפה נשמרות ההקלטות שלי?","acceptedAnswer":{"@type":"Answer","text":"רק בלשונית הדפדפן הזו עד שתורידו אותן. סגירה או רענון של הדף מוחקים אותן."}},{"@type":"Question","name":"זה עובד ב‑iPhone וב‑Android?","acceptedAnswer":{"@type":"Answer","text":"כן. זה עובד ב‑Safari ב‑iPhone וב‑Chrome או ב‑Samsung Internet ב‑Android."}},{"@type":"Question","name":"מקליט הקול באמת בחינם?","acceptedAnswer":{"@type":"Answer","text":"כן. בלי הרשמה, בלי סימן מים ובלי העלאה."}}]}</script>

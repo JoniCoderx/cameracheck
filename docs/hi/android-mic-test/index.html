@@ -51,13 +51,13 @@
 
 <script>
 /* Google Analytics 4. Consent Mode: no analytics/ad cookies in the EEA, UK and Switzerland
-   (cookieless pings only) until a consent banner grants them. The library loads after the page
-   is ready so it never slows the first paint. */
+   (cookieless pings only) until a consent banner grants them. The library loads on the first interaction
+   (or 8 s after load) so it never competes with the page itself. */
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']});
 gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
 gtag('js',new Date());gtag('config','G-HPVRGFJ0ZQ');
-addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)},1500)});
+(function(){var done=0,ev=['pointerdown','keydown','scroll','touchstart'];function go(){if(done)return;done=1;ev.forEach(function(e){removeEventListener(e,go,true)});var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-HPVRGFJ0ZQ';document.head.appendChild(s)}ev.forEach(function(e){addEventListener(e,go,{capture:true,passive:true,once:true})});addEventListener('load',function(){setTimeout(go,8000)})})();
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Android माइक टेस्ट — MicTest+","url":"https://mictestplus.com/hi/android-mic-test/","inLanguage":"hi","applicationCategory":"UtilitiesApplication","operatingSystem":"Windows, macOS, Linux, ChromeOS, Android, iOS","browserRequirements":"Requires a modern browser with WebRTC support","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"बिना ऐप के Chrome में अपना Android माइक्रोफ़ोन टेस्ट करें। लाइव लेवल देखें, रिकॉर्ड करके सुनें, और माइक रोकने वाली Android सेटिंग्स ठीक करें।"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"क्या मैं बिना ऐप इंस्टॉल किए फ़ोन का माइक टेस्ट कर सकता हूं?","acceptedAnswer":{"@type":"Answer","text":"हां। यह पेज Android पर Chrome, Samsung Internet और Firefox में काम करता है। माइक्रोफ़ोन एक्सेस की अनुमति दें और टेस्ट शुरू करें।"}},{"@type":"Question","name":"ब्राउज़र में मेरा Android माइक ब्लॉक क्यों है?","acceptedAnswer":{"@type":"Answer","text":"या तो ब्राउज़र के पास माइक्रोफ़ोन की अनुमति नहीं है, या क्विक सेटिंग्स में माइक्रोफ़ोन ऐक्सेस का टॉगल बंद है। दोनों चालू करें और पेज रीलोड करें।"}},{"@type":"Question","name":"क्या यह Samsung फ़ोन पर काम करता है?","acceptedAnswer":{"@type":"Answer","text":"हां। Samsung Internet या Chrome इस्तेमाल करें। Samsung फ़ोन पर ऐप अनुमतियां सेटिंग्स → ऐप्स → अनुमतियां में मिलती हैं।"}},{"@type":"Question","name":"क्या मेरा ऑडियो अपलोड होता है?","acceptedAnswer":{"@type":"Answer","text":"नहीं। सब कुछ आपके फ़ोन पर होता है और कुछ भी सर्वर पर नहीं भेजा जाता।"}}]}</script>
