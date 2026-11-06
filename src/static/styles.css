@@ -442,3 +442,9 @@ p, li, summary { text-wrap: pretty; }
 }
 .foot-more { font-size: 13px; max-width: 760px; }
 [dir="rtl"] .rec-meta span { text-align: right; }
+
+/* ---------- widget page ---------- */
+.w-preview { background: var(--bg2); border: 1px solid var(--line); border-radius: 12px; padding: 18px; display: flex; justify-content: center; }
+.w-preview iframe { width: 100%; max-width: 560px; height: 180px; border: 0; display: block; }
+.w-code-label { display: block; font-weight: 700; font-size: 14px; margin: 18px 0 8px; }
+.w-code { width: 100%; min-height: 120px; resize: vertical; border-radius: 11px; border: 1px solid var(--line); background: var(--bg2); color: var(--text); font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; padding: 12px 14px; }

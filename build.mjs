@@ -231,7 +231,7 @@ function footer(lang) {
     <div class="brand small">${wordmark(24)}</div>
     <p class="muted">${esc(u.footer)}</p>
     <nav class="foot-links" aria-label="Tests">
-      <a href="${urlFor(lang, 'mic')}">${esc(u.navMic)}</a> · <a href="${urlFor(lang, 'webcam')}">${esc(u.navCam)}</a> · <a href="${urlFor(lang, 'speaker')}">${esc(u.navSpk)}</a> · <a href="${guidesHref(lang)}">${esc(u.guides)}</a>
+      <a href="${urlFor(lang, 'mic')}">${esc(u.navMic)}</a> · <a href="${urlFor(lang, 'webcam')}">${esc(u.navCam)}</a> · <a href="${urlFor(lang, 'speaker')}">${esc(u.navSpk)}</a> · <a href="${guidesHref(lang)}">${esc(u.guides)}</a> · <a href="/widget/">${esc(u.widget)}</a>
     </nav>
     ${VARIANTS.some((v) => pageLangs(v).includes(lang)) ? `<nav class="foot-links foot-more" aria-label="${esc(u.moreTests)}">
       ${VARIANTS.filter((v) => pageLangs(v).includes(lang)).map((v) => `<a href="${urlFor(lang, v)}">${esc(locales[lang].pages[v].card.name)}</a>`).join(' · ')}
@@ -716,6 +716,103 @@ async function writeAdmin() {
 `);
 }
 
+/* ---------- embeddable widget (iframe page) + its promotion page ---------- */
+const LOGO_INLINE = fs.readFileSync(path.join(SRC, 'static/favicon.svg'), 'utf8').replace(/\s*\n\s*/g, '');
+function embedPage() {
+  const i18n = Object.fromEntries(LANGS.map((l) => { const u = locales[l].ui; return [l, { dir: locales[l].meta.dir, micTest: u.micTest, startMic: u.startMic, stop: u.stop, hint: u.waiting, fullTest: u.fullTest, fullUrl: DOMAIN + urlFor(l, 'mic'), vSilent: u.vSilent, vLow: u.vLow, vGood: u.vGood, vLoud: u.vLoud, vDetected: u.vDetected, errDenied: u.errDenied, errNotFound: u.errNotFound, errBusy: u.errBusy, errGeneric: u.errGeneric, errInsecure: u.errInsecure }]; }));
+  const css = minCss(fs.readFileSync(path.join(SRC, 'embed/embed.css'), 'utf8'));
+  const js = fs.readFileSync(path.join(SRC, 'embed/embed.js'), 'utf8').replace(/<\/script/gi, '<\\/script');
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, follow">
+<title>Mic test | ${BRAND}</title>
+<link rel="canonical" href="${DOMAIN}/mic-test/">
+<style>${css}</style>
+</head>
+<body>
+<div class="w">
+  <div class="top">${LOGO_INLINE.replace('<svg ', '<svg aria-hidden="true" ')}<span id="title">Mic test</span></div>
+  <div class="mid"><button id="go" type="button"><span>Start</span></button><div class="meter" aria-hidden="true"><div id="fill"></div></div><div class="dbv"><span id="db">-∞</span><small>dB</small></div></div>
+  <div class="bot"><span id="verdict" class="v" role="status" aria-live="polite"></span><a id="full" href="${DOMAIN}/mic-test/" target="_blank" rel="noopener"><span>Full test</span> ↗ <b dir="ltr">MicTest+</b></a></div>
+</div>
+<script>window.EMBED_I18N=${JSON.stringify(i18n).replace(/</g, '\\u003c')};</script>
+<script>${js}</script>
+</body>
+</html>
+`;
+}
+
+function widgetPage() {
+  const u = en.ui;
+  const title = 'Free Mic Test Widget for Your Website';
+  const description = 'Add a free, private mic test to your website or blog in 30 seconds. Copy one line of code. 13 languages, light and dark themes, works on phones.';
+  const faq = [
+    ['Is the widget free?', 'Yes. Free for any website, personal or commercial, with no account and no limits.'],
+    ['Does it upload my visitors\' audio?', 'No. The test runs entirely in the visitor\'s browser. Nothing is recorded or sent anywhere.'],
+    ['Does it work on WordPress, Wix and Squarespace?', 'Yes. Paste the code into a Custom HTML block (WordPress), an Embed / HTML element (Wix, Squarespace) or any page that accepts HTML.'],
+    ['Why does the iframe need allow="microphone"?', 'Browsers only let an embedded page use the microphone when the host page allows it. The attribute is already in the code.'],
+    ['Can I remove the "by MicTest+" line?', 'Please keep it. That small credit link is what keeps the widget free.']
+  ];
+  const ld = [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }];
+  const langOpts = LANGS.map((l) => `<option value="${l}"${l === 'en' ? ' selected' : ''}>${esc(locales[l].meta.langName)}</option>`).join('');
+  const meta = Object.fromEntries(LANGS.map((l) => [l, { url: DOMAIN + urlFor(l, 'mic'), name: locales[l].ui.micTest }]));
+  return `${head({ lang: 'en', title, description, canonical: '/widget/', extraLd: ld })}
+<body class="page-widget">
+${header('en', null)}
+<main id="main">
+  <section class="hero"><div class="wrap">
+    <span class="pill">Free for any website</span>
+    <h1>Add a <span class="grad">mic test</span> to your site</h1>
+    <p class="lead">One line of code gives your visitors a private, working microphone test. Perfect for support pages, online classes, podcasts and gaming communities.</p>
+  </div></section>
+  <section class="wrap tool"><div class="card">
+    <div class="card-head"><div><h2 class="tool-title"><span class="ico">${ic('mic')}</span> Live preview</h2><p class="muted">Pick a theme and language. The code below updates automatically.</p></div>
+      <div class="controls">
+        <select id="wTheme" aria-label="Theme"><option value="dark">Dark</option><option value="light">Light</option></select>
+        <select id="wLang" aria-label="Language">${langOpts}</select>
+      </div></div>
+    <div class="w-preview"><iframe id="wFrame" src="/embed/mic/?lang=en&amp;theme=dark" title="Mic test widget preview" allow="microphone" loading="lazy"></iframe></div>
+    <label class="w-code-label" for="wCode">Your embed code</label>
+    <textarea id="wCode" class="w-code" readonly rows="5" dir="ltr" spellcheck="false"></textarea>
+    <div class="row-actions"><button class="btn btn-primary" id="wCopy" type="button">Copy code</button><span class="muted" id="wCopied" role="status" aria-live="polite"></span></div>
+  </div></section>
+  <article class="wrap article">
+    <section class="art-sec"><h2>How to add it</h2><ol>
+      <li><b>WordPress:</b> edit the page, add a <b>Custom HTML</b> block, paste the code, update.</li>
+      <li><b>Wix:</b> Add → Embed Code → <b>Embed HTML</b>, paste the code, then make the box at least 180 px tall.</li>
+      <li><b>Squarespace:</b> add a <b>Code</b> block and paste the code.</li>
+      <li><b>Any other site:</b> paste it into the page's HTML where you want the test to appear.</li>
+    </ol></section>
+    <section class="art-sec"><h2>What your visitors get</h2><ul>
+      <li>A live level meter in dB with a plain-language verdict: too quiet, sounds great, or too loud.</li>
+      <li>Works on phones and computers in all modern browsers.</li>
+      <li>13 languages and a light or dark theme to match your site.</li>
+      <li>Nothing is recorded or uploaded, so there's nothing to add to your privacy policy.</li>
+    </ul></section>
+  </article>
+  <section class="wrap faq"><h2>${esc(u.faqTitle)}</h2>
+    ${faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('\n    ')}
+  </section>
+</main>
+${footer('en')}
+<script>window.I18N=${JSON.stringify(u).replace(/</g, '\\u003c')};window.PAGE={"lang":"en","page":"widget","tools":[]};window.WIDGET=${JSON.stringify({ domain: DOMAIN, meta })};</script>
+<script>${JS_INLINE}</script>
+<script>
+(function(){var W=window.WIDGET,t=document.getElementById('wTheme'),l=document.getElementById('wLang'),f=document.getElementById('wFrame'),c=document.getElementById('wCode'),b=document.getElementById('wCopy'),ok=document.getElementById('wCopied');
+function code(){var lang=l.value,th=t.value,src=W.domain+'/embed/mic/?lang='+lang+'&theme='+th,m=W.meta[lang];
+f.src='/embed/mic/?lang='+lang+'&theme='+th;
+c.value='<iframe src="'+src.replace(/&/g,'&amp;')+'" title="'+m.name+'" width="100%" height="180" style="max-width:560px;border:0" allow="microphone" loading="lazy"></iframe>\\n<p style="margin:6px 0 0;font:13px/1.4 system-ui,sans-serif"><a href="'+m.url+'">'+m.name+'</a> by MicTest+</p>';}
+t.addEventListener('change',code);l.addEventListener('change',code);code();
+b.addEventListener('click',function(){c.select();var done=function(){ok.textContent='Copied!';setTimeout(function(){ok.textContent='';},2500);};if(navigator.clipboard){navigator.clipboard.writeText(c.value).then(done,function(){document.execCommand('copy');done();});}else{document.execCommand('copy');done();}});})();
+</script>
+</body>
+</html>
+`;
+}
+
 /* ---------- write everything ---------- */
 let count = 0;
 for (const lang of LANGS) {
@@ -747,8 +844,11 @@ for (const slug of ['', ...GUIDES.guides.map((g) => g.slug)]) {
   const alts = guideAlts(slug).map(([hl, u]) => `    <xhtml:link rel="alternate" hreflang="${hl}" href="${abs(u)}"/>`).join('\n');
   for (const l of GUIDE_LANGS) smUrls.push(`  <url>\n    <loc>${abs(guideUrl(l, slug))}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>${slug ? '0.7' : '0.6'}</priority>\n${alts}\n  </url>`);
 }
+smUrls.push(`  <url>\n    <loc>${abs('/widget/')}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>0.5</priority>\n  </url>`);
 for (const s of ['privacy', 'about']) smUrls.push(`  <url>\n    <loc>${abs(`/${s}/`)}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>0.3</priority>\n  </url>`);
 write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${smUrls.join('\n')}\n</urlset>\n`);
+write('embed/mic/index.html', embedPage());
+write('widget/index.html', widgetPage());
 write('robots.txt', `User-agent: *\nAllow: /\nDisallow: /admin/\n\nSitemap: ${DOMAIN}/sitemap.xml\n`);
 await writeAdmin();
 if (adsOn) write('ads.txt', `google.com, ${AD.client.replace(/^ca-/, '')}, DIRECT, f08c47fec0942fa0\n`);

@@ -122,7 +122,9 @@
     "recDelete": "Delete",
     "recEmpty": "No recordings yet.",
     "recName": "Recording",
-    "startRec": "Start recording"
+    "startRec": "Start recording",
+    "fullTest": "Full test",
+    "widget": "Free widget"
   },
   "pages": {
     "home": {

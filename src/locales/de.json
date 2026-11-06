@@ -122,7 +122,9 @@
     "recDelete": "Löschen",
     "recEmpty": "Noch keine Aufnahmen.",
     "recName": "Aufnahme",
-    "startRec": "Aufnahme starten"
+    "startRec": "Aufnahme starten",
+    "fullTest": "Vollständiger Test",
+    "widget": "Kostenloses Widget"
   },
   "pages": {
     "home": {

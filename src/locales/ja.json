@@ -122,7 +122,9 @@
     "recDelete": "削除",
     "recEmpty": "録音はまだありません。",
     "recName": "録音",
-    "startRec": "録音開始"
+    "startRec": "録音開始",
+    "fullTest": "詳しいテスト",
+    "widget": "無料ウィジェット"
   },
   "pages": {
     "home": {

@@ -122,7 +122,9 @@
     "recDelete": "Excluir",
     "recEmpty": "Nenhuma gravação ainda.",
     "recName": "Gravação",
-    "startRec": "Iniciar gravação"
+    "startRec": "Iniciar gravação",
+    "fullTest": "Teste completo",
+    "widget": "Widget grátis"
   },
   "pages": {
     "home": {

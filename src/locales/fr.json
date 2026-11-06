@@ -122,7 +122,9 @@
     "recDelete": "Supprimer",
     "recEmpty": "Aucun enregistrement pour l'instant.",
     "recName": "Enregistrement",
-    "startRec": "Enregistrer ma voix"
+    "startRec": "Enregistrer ma voix",
+    "fullTest": "Test complet",
+    "widget": "Widget gratuit"
   },
   "pages": {
     "home": {

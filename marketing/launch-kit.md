@@ -125,3 +125,30 @@ Find articles/videos titled "how to fix microphone not working" and email the au
 > מראה עוצמת קול בזמן אמת, מקליט ומשמיע, בודק רזולוציה ו-FPS של מצלמה, ויש גם מקליט קול להורדה.
 > עובד בטלפון ובמחשב, ובעברית: https://mictestplus.com/he/
 > אשמח לשמוע מה חסר לכם 🙏
+
+---
+
+## 8. The free widget (the best way to earn links)
+
+Page: **https://mictestplus.com/widget/**. Site owners copy one snippet and get a working mic test. The snippet includes a credit link back to MicTest+, so **every site that embeds it gives you a backlink**.
+
+**Who to offer it to** (search Google for these and email the site owner):
+- "how to fix microphone" / "mic not working" articles on tech blogs
+- support / help-center pages of online schools, tutoring sites, podcast hosts, Discord bot sites, telehealth and job-interview platforms
+- gaming community sites and forums (many have a "setup" or "help" page)
+
+**Email template:**
+
+**Subject:** A free mic test you can embed on "[their page title]"
+
+> Hi [name],
+>
+> Your page "[title]" helps a lot of people fix their microphone. I made a small free widget that lets readers test their mic right on your page, without leaving it: https://mictestplus.com/widget/
+>
+> It's one line of code (works in WordPress, Wix and Squarespace), runs in the browser, uploads nothing, and comes in 13 languages with a light or dark theme. Totally free. If it's useful, feel free to add it.
+>
+> Thanks,
+> [your name]
+
+**Reddit / forum reply when someone runs a community or support site:**
+> If you want your members to check their mic before joining voice, there's a free embeddable mic test you can drop on a help page: https://mictestplus.com/widget/ (I built it; it runs in the browser, nothing is uploaded).

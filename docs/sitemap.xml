@@ -3953,6 +3953,11 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/guides/mic-not-working-discord-zoom-teams/"/>
   </url>
   <url>
+    <loc>https://mictestplus.com/widget/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://mictestplus.com/privacy/</loc>
     <lastmod>2026-11-06</lastmod>
     <priority>0.3</priority>

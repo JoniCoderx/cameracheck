@@ -122,7 +122,9 @@
     "recDelete": "Sil",
     "recEmpty": "Henüz kayıt yok.",
     "recName": "Kayıt",
-    "startRec": "Kaydı başlat"
+    "startRec": "Kaydı başlat",
+    "fullTest": "Tam test",
+    "widget": "Ücretsiz widget"
   },
   "pages": {
     "home": {

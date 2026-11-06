@@ -122,7 +122,9 @@
     "recDelete": "מחיקה",
     "recEmpty": "אין עדיין הקלטות.",
     "recName": "הקלטה",
-    "startRec": "התחלת הקלטה"
+    "startRec": "התחלת הקלטה",
+    "fullTest": "בדיקה מלאה",
+    "widget": "וידג׳ט חינמי"
   },
   "pages": {
     "home": {

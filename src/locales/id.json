@@ -122,7 +122,9 @@
     "recDelete": "Hapus",
     "recEmpty": "Belum ada rekaman.",
     "recName": "Rekaman",
-    "startRec": "Mulai merekam"
+    "startRec": "Mulai merekam",
+    "fullTest": "Tes lengkap",
+    "widget": "Widget gratis"
   },
   "pages": {
     "home": {

@@ -122,7 +122,9 @@
     "recDelete": "Elimina",
     "recEmpty": "Ancora nessuna registrazione.",
     "recName": "Registrazione",
-    "startRec": "Avvia registrazione"
+    "startRec": "Avvia registrazione",
+    "fullTest": "Test completo",
+    "widget": "Widget gratuito"
   },
   "pages": {
     "home": {
