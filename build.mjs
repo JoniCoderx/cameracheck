@@ -183,8 +183,16 @@ ${cfg.bingSiteVerification ? `<meta name="msvalidate.01" content="${esc(cfg.bing
 <link rel="manifest" href="/manifest.webmanifest">
 <style>${CSS_INLINE}</style>
 ${adsOn ? `<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin>\n<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(AD.client)}" crossorigin="anonymous"></script>` : ''}
-${cfg.ga4Id ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${esc(cfg.ga4Id)}"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${esc(cfg.ga4Id)}');</script>` : ''}
+${cfg.ga4Id ? `<script>
+/* Google Analytics 4. Consent Mode: no analytics/ad cookies in the EEA, UK and Switzerland
+   (cookieless pings only) until a consent banner grants them. The library loads after the page
+   is ready so it never slows the first paint. */
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',region:['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IS','IE','IT','LV','LI','LT','LU','MT','NL','NO','PL','PT','RO','SK','SI','ES','SE','GB','CH']});
+gtag('consent','default',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
+gtag('js',new Date());gtag('config','${esc(cfg.ga4Id)}');
+addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=${esc(cfg.ga4Id)}';document.head.appendChild(s)},1500)});
+</script>` : ''}
 ${extraLd.map(jsonLd).join('\n')}
 </head>`;
 }
