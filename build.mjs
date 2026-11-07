@@ -3,6 +3,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import { execSync } from 'node:child_process';
 
 const ROOT = path.dirname(new URL(import.meta.url).pathname);
 const OUT = path.join(ROOT, 'docs');
@@ -63,9 +64,27 @@ const prefix = (lang) => (lang === 'en' ? '/' : `/${lang}/`);
 const urlFor = (lang, page) => prefix(lang) + PAGES[page].slug;
 const abs = (u) => DOMAIN + u;
 const stripTags = (h) => h.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&');
+const LM_FILE = path.join(ROOT, 'src/lastmod.json');
+const LM = fs.existsSync(LM_FILE) ? JSON.parse(fs.readFileSync(LM_FILE, 'utf8')) : {};
+const BUILD_DAY = new Date().toISOString().slice(0, 10);
+const gitDay = (rel) => { try { return execSync(`git log -1 --format=%cs -- "docs/${rel}"`, { cwd: ROOT, stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim() || null; } catch (e) { return null; } };
 const write = (rel, content) => {
+  if (/(^|\/)index\.html$/.test(rel) && !/^(admin|embed)\//.test(rel)) {
+    const url = '/' + rel.replace(/index\.html$/, '');
+    const norm = content.split(BUILD_DAY).join('').replace(/<time [^>]*>[^<]*<\/time>/g, '');
+    const hash = crypto.createHash('md5').update(norm).digest('hex');
+    const prev = LM[url];
+    const day = prev && prev.hash === hash ? prev.date : prev ? BUILD_DAY : (gitDay(rel) || BUILD_DAY);
+    LM[url] = { hash, date: day };
+    if (day !== BUILD_DAY) {
+      const lang = (content.match(/<html lang="([^"]+)"/) || [, 'en'])[1];
+      const fmt = (d) => { try { return new Date(d).toLocaleDateString(lang, { year: 'numeric', month: 'long', day: 'numeric' }); } catch (e) { return d; } };
+      content = content.split(fmt(BUILD_DAY)).join(fmt(day)).split(BUILD_DAY).join(day);
+    }
+  }
   const f = path.join(OUT, rel); fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, content);
 };
+const lastmodOf = (u) => (LM[u] && LM[u].date) || BUILD_DAY;
 const jsonLd = (o) => `<script type="application/ld+json">${JSON.stringify(o).replace(/</g, '\\u003c')}</script>`;
 
 /* ---------- copy static assets with cache-busting hashes ---------- */
@@ -837,15 +856,15 @@ for (const page of PAGE_ORDER) {
   for (const lang of pageLangs(page)) {
     const alts = pageLangs(page).map((l) => `    <xhtml:link rel="alternate" hreflang="${l}" href="${abs(urlFor(l, page))}"/>`).join('\n') +
       `\n    <xhtml:link rel="alternate" hreflang="x-default" href="${abs(urlFor('en', page))}"/>`;
-    smUrls.push(`  <url>\n    <loc>${abs(urlFor(lang, page))}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>${page === 'home' ? '1.0' : PAGES[page].variant ? '0.8' : '0.9'}</priority>\n${alts}\n  </url>`);
+    smUrls.push(`  <url>\n    <loc>${abs(urlFor(lang, page))}</loc>\n    <lastmod>${lastmodOf(urlFor(lang, page))}</lastmod>\n    <priority>${page === 'home' ? '1.0' : PAGES[page].variant ? '0.8' : '0.9'}</priority>\n${alts}\n  </url>`);
   }
 }
 for (const slug of ['', ...GUIDES.guides.map((g) => g.slug)]) {
   const alts = guideAlts(slug).map(([hl, u]) => `    <xhtml:link rel="alternate" hreflang="${hl}" href="${abs(u)}"/>`).join('\n');
-  for (const l of GUIDE_LANGS) smUrls.push(`  <url>\n    <loc>${abs(guideUrl(l, slug))}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>${slug ? '0.7' : '0.6'}</priority>\n${alts}\n  </url>`);
+  for (const l of GUIDE_LANGS) smUrls.push(`  <url>\n    <loc>${abs(guideUrl(l, slug))}</loc>\n    <lastmod>${lastmodOf(guideUrl(l, slug))}</lastmod>\n    <priority>${slug ? '0.7' : '0.6'}</priority>\n${alts}\n  </url>`);
 }
-smUrls.push(`  <url>\n    <loc>${abs('/widget/')}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>0.5</priority>\n  </url>`);
-for (const s of ['privacy', 'about']) smUrls.push(`  <url>\n    <loc>${abs(`/${s}/`)}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>0.3</priority>\n  </url>`);
+smUrls.push(`  <url>\n    <loc>${abs('/widget/')}</loc>\n    <lastmod>${lastmodOf('/widget/')}</lastmod>\n    <priority>0.5</priority>\n  </url>`);
+for (const s of ['privacy', 'about']) smUrls.push(`  <url>\n    <loc>${abs(`/${s}/`)}</loc>\n    <lastmod>${lastmodOf(`/${s}/`)}</lastmod>\n    <priority>0.3</priority>\n  </url>`);
 write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${smUrls.join('\n')}\n</urlset>\n`);
 write('embed/mic/index.html', embedPage());
 write('widget/index.html', widgetPage());
@@ -856,4 +875,5 @@ write('CNAME', DOMAIN.replace(/^https?:\/\//, '') + '\n');
 write('.nojekyll', '');
 if (/^[a-f0-9]{32}$/.test(cfg.indexNowKey || '')) write(`${cfg.indexNowKey}.txt`, cfg.indexNowKey);
 
+fs.writeFileSync(LM_FILE, JSON.stringify(Object.fromEntries(Object.entries(LM).sort()), null, 1) + '\n');
 console.log(`✓ built ${count} tool pages + ${guideCount} guide pages (${GUIDE_LANGS.length} languages), in ${LANGS.length} languages (${LANGS.join(', ')}) → docs/  ads: ${adsOn ? 'ON' : 'off'}`);
