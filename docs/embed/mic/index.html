@@ -32,17 +32,20 @@
   lbl.textContent = S.startMic;
   verdict.textContent = S.hint;
   const full = $('#full'); full.href = S.fullUrl; full.querySelector('span').textContent = S.fullTest;
-  let stream = null, ctx = null, an = null, raf = 0, heard = false;
+  let stream = null, ctx = null, an = null, raf = 0, heard = false, busy = false;
   const err = (e) => {
     const n = e && e.name;
     return n === 'NotAllowedError' || n === 'SecurityError' ? S.errDenied : n === 'NotFoundError' || n === 'OverconstrainedError' ? S.errNotFound : n === 'NotReadableError' ? S.errBusy : S.errGeneric + ((e && e.message) || '');
   };
   async function start() {
+    if (busy) return;
+    busy = true;
     try {
       ctx = ctx || new (window.AudioContext || window.webkitAudioContext)();
       if (ctx.state === 'suspended') ctx.resume();
       stream = await navigator.mediaDevices.getUserMedia({ audio: true });
     } catch (e) { verdict.textContent = err(e); verdict.className = 'v bad'; return; }
+    finally { busy = false; }
     const src = ctx.createMediaStreamSource(stream); an = ctx.createAnalyser(); an.fftSize = 1024; src.connect(an);
     btn.classList.add('on'); lbl.textContent = S.stop; heard = false;
     const buf = new Float32Array(an.fftSize); let last = 0;

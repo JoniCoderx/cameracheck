@@ -175,6 +175,7 @@ function head({ lang, title, description, canonical, alternates, ogType = 'websi
 ${(alternates || []).map(([hl, u]) => `<link rel="alternate" hreflang="${hl}" href="${abs(u)}">`).join('\n')}
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#0b0b0d">
+<script>try{if(localStorage.getItem('mtp-theme')==='light'){document.documentElement.dataset.theme='light';document.querySelector('meta[name=theme-color]').content='#f4f4ef'}}catch(e){}</script>
 <meta name="application-name" content="${BRAND}">
 <meta name="apple-mobile-web-app-title" content="${BRAND}">
 <meta name="color-scheme" content="dark light">

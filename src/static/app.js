@@ -17,6 +17,7 @@
   let theme = null;
   try { theme = localStorage.getItem('mtp-theme'); } catch (e) {}
   if (theme) document.documentElement.dataset.theme = theme;
+  if (theme === 'light') { const tc = $('meta[name=theme-color]'); if (tc) tc.setAttribute('content', '#f4f4ef'); }
   on('#themeBtn', 'click', () => {
     const cur = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
     document.documentElement.dataset.theme = cur;
@@ -247,7 +248,7 @@
       btn.classList.remove('recording'); label.textContent = t('record');
       const blob = new Blob(chunks, { type: rec.mimeType || mime || 'audio/webm' });
       const url = URL.createObjectURL(blob);
-      const a = $('#recAudio'); a.src = url; a.hidden = false; a.play().catch(() => {});
+      const a = $('#recAudio'); if (a.src.startsWith('blob:')) URL.revokeObjectURL(a.src); a.src = url; a.hidden = false; a.play().catch(() => {});
       const dl = $('#recDl'); dl.href = url; dl.download = 'mictestplus-recording.' + extFor(blob.type); dl.hidden = false;
     };
     mic.recorder = rec; btn.classList.add('recording'); rec.start(); logEvent('mic_recording');
@@ -440,7 +441,7 @@
     rec.onstop = () => {
       clearInterval(iv); clearTimeout(to); btn.classList.remove('recording'); label.textContent = t('recVideo');
       const blob = new Blob(chunks, { type: rec.mimeType || mime || 'video/webm' });
-      const v = $('#clipVideo'); v.src = URL.createObjectURL(blob); v.hidden = false;
+      const v = $('#clipVideo'); if (v.src.startsWith('blob:')) URL.revokeObjectURL(v.src); v.src = URL.createObjectURL(blob); v.hidden = false;
     };
     cam.recorder = rec; btn.classList.add('recording'); rec.start();
   });
@@ -584,17 +585,22 @@
   });
 
   /* ---------------- VOICE RECORDER ---------------- */
+  let recActive = false;
   if ($('#recorder')) {
     const R = { stream: null, rec: null, chunks: [], t0: 0, timer: 0, raf: 0, an: null, src: null, n: 0, mime: '' };
     const btn = $('#recToggle'), label = btn.querySelector('span:last-child'), time = $('#recTime'), fill = $('#recFill'), list = $('#recList');
     const fmt = (ms) => { const s = Math.floor(ms / 1000); return String(Math.floor(s / 60)).padStart(2, '0') + ':' + String(s % 60).padStart(2, '0'); };
     const kb = (b) => (b > 1048576 ? (b / 1048576).toFixed(1) + ' MB' : Math.max(1, Math.round(b / 1024)) + ' KB');
     async function startRec() {
+      if (R.busy) return;
       getCtx(); // inside the tap, for iOS
       if (!hasMedia || !window.MediaRecorder) return toast(t('errUnsupported'));
       const id = $('#recMic') ? $('#recMic').value : '';
+      R.busy = true;
       try { R.stream = await navigator.mediaDevices.getUserMedia({ audio: id ? { deviceId: { exact: id } } : true }); }
       catch (e) { toast(errMsg(e)); return; }
+      finally { R.busy = false; }
+      recActive = true;
       refreshDevices();
       R.mime = pickMime(['audio/webm;codecs=opus', 'audio/mp4', 'audio/ogg;codecs=opus', 'audio/webm']);
       R.rec = new MediaRecorder(R.stream, R.mime ? { mimeType: R.mime } : undefined);
@@ -622,7 +628,7 @@
       try { R.src.disconnect(); } catch (e) {}
       R.an = null;
       if (R.stream) R.stream.getTracks().forEach((tr) => tr.stop());
-      R.stream = null;
+      R.stream = null; recActive = false;
       fill.style.setProperty('--lvl', '0%');
       btn.classList.remove('on'); label.textContent = t('recStart');
       const type = (R.rec && R.rec.mimeType) || R.mime || 'audio/webm';
@@ -679,7 +685,9 @@
 
   // pause camera loops when tab hidden on mobile to save battery
   document.addEventListener('visibilitychange', () => {
-    if (document.hidden && audioCtx && !mic.stream && !osc) audioCtx.suspend();
+    if (!audioCtx) return;
+    if (document.hidden) { if (!mic.stream && !osc && !recActive) audioCtx.suspend(); }
+    else if ((mic.stream || recActive) && audioCtx.state !== 'running') audioCtx.resume().catch(() => {});
   });
 
   setText('#year', new Date().getFullYear());
