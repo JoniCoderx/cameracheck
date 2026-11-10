@@ -144,7 +144,27 @@
     "copyResults": "Ergebnisse kopieren",
     "share": "Teilen",
     "copied": "Kopiert",
-    "shareText": "Testen Sie Ihres kostenlos:"
+    "shareText": "Testen Sie Ihres kostenlos:",
+    "dbTool": "Dezibel-Messer",
+    "dbHint": "Drücken Sie Start und sehen Sie live, wie laut es um Sie herum ist.",
+    "startDb": "Dezibel-Messer starten",
+    "dbMin": "Min.",
+    "dbAvg": "Mittelwert",
+    "dbMax": "Max.",
+    "dbReset": "Zurücksetzen",
+    "dbCal": "Kalibrierung",
+    "dbNote": "Geschätzter Pegel. Handy- und Laptop-Mikrofone sind unterschiedlich: Wenn Sie ein echtes Schallpegelmessgerät haben, passen Sie die Kalibrierung daran an.",
+    "dbHistory": "Letzte 60 Sekunden",
+    "lvQuiet": "Leise",
+    "lvModerate": "Mäßig",
+    "lvLoud": "Laut",
+    "lvVeryLoud": "Sehr laut",
+    "lvDanger": "Schädlich bei längerer Belastung",
+    "refWhisper": "Flüstern",
+    "refTalk": "Gespräch",
+    "refTraffic": "Straßenverkehr",
+    "refConcert": "Konzert",
+    "saveImage": "Bild speichern"
   },
   "pages": {
     "home": {
@@ -800,6 +820,58 @@
         {
           "q": "Ist der Sprachrekorder wirklich kostenlos?",
           "a": "Ja. Keine Anmeldung, kein Wasserzeichen und kein Upload."
+        }
+      ]
+    },
+    "decibel": {
+      "card": {
+        "name": "Dezibel-Messer",
+        "desc": "Lärm in dB messen."
+      },
+      "title": "Dezibel-Messer online: Lautstärke messen kostenlos (dB)",
+      "description": "Kostenloser Dezibel-Messer online. Messen Sie Lärm in Echtzeit mit dem Mikrofon von Handy oder Laptop: dB live, Minimum, Maximum und Mittelwert.",
+      "h1Html": "Online <span class=\"grad\">Dezibel-Messer</span>",
+      "lead": "Sehen Sie sofort, wie laut es um Sie herum ist. Live-Dezibelwert, Minimum, Maximum und Mittelwert, mit dem Mikrofon, das Sie schon haben.",
+      "article": [
+        {
+          "h": "So messen Sie Lärm mit Handy oder Computer",
+          "ol": [
+            "Drücken Sie „Dezibel-Messer starten“ und erlauben Sie den Mikrofonzugriff.",
+            "Halten Sie Handy oder Laptop dorthin, wo Sie messen wollen, ohne das Mikrofon zu verdecken.",
+            "Beobachten Sie den Live-Wert. Minimum, Maximum und Mittelwert aktualisieren sich laufend.",
+            "Mit Zurücksetzen starten Sie eine neue Messung."
+          ]
+        },
+        {
+          "h": "Ab wann ist es zu laut?",
+          "p": [
+            "Etwa 30 dB entsprechen einem ruhigen Schlafzimmer, 60 dB einem normalen Gespräch, 80 dB dichtem Stadtverkehr und 100 dB oder mehr einem Konzert oder Club. Gesundheitsbehörden raten, lange Belastungen über 85 dB zu begrenzen, weil Stunden auf diesem Pegel das Gehör auf Dauer schädigen können."
+          ]
+        },
+        {
+          "h": "Wie genau ist ein Online-Dezibel-Messer?",
+          "p": [
+            "Mikrofone in Handys und Laptops sind für Stimmen gebaut, nicht für Labormessungen. Der Wert ist daher eine Schätzung. Ideal, um Räume zu vergleichen, zu prüfen, ob die Nachbarn lauter sind als gestern, oder das lauteste Gerät zu finden. Für rechtliche oder berufliche Messungen nutzen Sie ein geeichtes Schallpegelmessgerät.",
+            "Wenn Sie ein echtes Messgerät haben, stellen Sie die Kalibrierung so ein, dass beide denselben Wert zeigen. Das Tool schaltet Echounterdrückung, Rauschunterdrückung und automatische Verstärkung ab, wo der Browser es erlaubt."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ist dieser Dezibel-Messer kostenlos?",
+          "a": "Ja. Keine App, keine Anmeldung, und der Ton verlässt nie Ihr Gerät."
+        },
+        {
+          "q": "Funktioniert er auf iPhone und Android?",
+          "a": "Ja. Öffnen Sie die Seite in Safari auf dem iPhone oder in Chrome auf Android und erlauben Sie das Mikrofon."
+        },
+        {
+          "q": "Warum zeigt ein anderes Handy einen anderen Wert?",
+          "a": "Jedes Mikrofon ist unterschiedlich empfindlich. Gleichen Sie mit der Kalibrierung an ein Referenzgerät an oder vergleichen Sie immer auf demselben Gerät."
+        },
+        {
+          "q": "Wird mein Ton aufgenommen?",
+          "a": "Nein. Der Ton wird nur in Ihrem Browser ausgewertet, um den Pegel zu berechnen. Nichts wird gespeichert oder hochgeladen."
         }
       ]
     }

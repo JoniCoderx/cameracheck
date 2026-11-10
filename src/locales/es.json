@@ -144,7 +144,27 @@
     "copyResults": "Copiar resultados",
     "share": "Compartir",
     "copied": "Copiado",
-    "shareText": "Prueba el tuyo gratis:"
+    "shareText": "Prueba el tuyo gratis:",
+    "dbTool": "Medidor de decibelios",
+    "dbHint": "Pulsa Iniciar y mira en directo cuánto ruido hay a tu alrededor.",
+    "startDb": "Iniciar medidor de decibelios",
+    "dbMin": "Mín.",
+    "dbAvg": "Promedio",
+    "dbMax": "Máx.",
+    "dbReset": "Reiniciar",
+    "dbCal": "Calibración",
+    "dbNote": "Nivel estimado. Los micrófonos de móviles y portátiles varían: si tienes un sonómetro real, ajusta la calibración para que coincida.",
+    "dbHistory": "Últimos 60 segundos",
+    "lvQuiet": "Silencioso",
+    "lvModerate": "Moderado",
+    "lvLoud": "Fuerte",
+    "lvVeryLoud": "Muy fuerte",
+    "lvDanger": "Dañino con exposición prolongada",
+    "refWhisper": "Susurro",
+    "refTalk": "Conversación",
+    "refTraffic": "Tráfico",
+    "refConcert": "Concierto",
+    "saveImage": "Guardar imagen"
   },
   "pages": {
     "home": {
@@ -800,6 +820,58 @@
         {
           "q": "¿La grabadora de voz es gratis de verdad?",
           "a": "Sí. Sin registro, sin marca de agua y sin subir nada."
+        }
+      ]
+    },
+    "decibel": {
+      "card": {
+        "name": "Medidor de decibelios",
+        "desc": "Mide el ruido en dB."
+      },
+      "title": "Medidor de decibelios online: sonómetro gratis (dB)",
+      "description": "Medidor de decibelios online gratis. Mide el ruido a tu alrededor en tiempo real con el micrófono del móvil o portátil: dB en vivo, mínimo, máximo y promedio.",
+      "h1Html": "<span class=\"grad\">Medidor de decibelios</span> online",
+      "lead": "Mira cuánto ruido hay a tu alrededor ahora mismo. Lectura en decibelios en directo, mínimo, máximo y promedio, con el micrófono que ya tienes.",
+      "article": [
+        {
+          "h": "Cómo medir el ruido con el móvil o el ordenador",
+          "ol": [
+            "Pulsa \"Iniciar medidor de decibelios\" y permite el acceso al micrófono.",
+            "Coloca el móvil o el portátil donde quieras medir, sin tapar el micrófono.",
+            "Mira la lectura en directo. El mínimo, el máximo y el promedio se actualizan solos.",
+            "Pulsa Reiniciar para empezar una medición nueva."
+          ]
+        },
+        {
+          "h": "¿Cuánto ruido es demasiado?",
+          "p": [
+            "Unos 30 dB son un dormitorio tranquilo, 60 dB una conversación normal, 80 dB el tráfico de una ciudad y 100 dB o más un concierto o una discoteca. Las autoridades sanitarias recomiendan limitar la exposición prolongada por encima de 85 dB, porque horas a ese nivel pueden dañar el oído con el tiempo."
+          ]
+        },
+        {
+          "h": "¿Qué tan preciso es un medidor de decibelios online?",
+          "p": [
+            "Los micrófonos de móviles y portátiles están hechos para la voz, no para mediciones de laboratorio, así que la lectura es una estimación. Sirve muy bien para comparar habitaciones, ver si los vecinos hacen más ruido que ayer o encontrar el electrodoméstico más ruidoso. Para mediciones legales o laborales, usa un sonómetro certificado.",
+            "Si tienes un sonómetro real, ajusta la calibración para que los dos marquen lo mismo. El medidor desactiva la cancelación de eco, la supresión de ruido y la ganancia automática cuando el navegador lo permite."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Este medidor de decibelios es gratis?",
+          "a": "Sí. Sin app, sin registro, y el audio nunca sale de tu dispositivo."
+        },
+        {
+          "q": "¿Funciona en iPhone y Android?",
+          "a": "Sí. Abre la página en Safari en iPhone o en Chrome en Android y permite el micrófono."
+        },
+        {
+          "q": "¿Por qué la lectura es distinta a la de otro móvil?",
+          "a": "Cada micrófono tiene una sensibilidad diferente. Usa la calibración para igualar un sonómetro de referencia o compara siempre en el mismo dispositivo."
+        },
+        {
+          "q": "¿Se graba mi audio?",
+          "a": "No. El sonido solo se analiza en tu navegador para calcular el nivel. No se graba ni se sube nada."
         }
       ]
     }

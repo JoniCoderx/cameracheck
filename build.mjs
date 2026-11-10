@@ -27,9 +27,10 @@ Object.assign(PAGES, {
   android: { slug: 'android-mic-test/', tools: ['mic'], devices: false, variant: true, icon: 'mic' },
   airpods: { slug: 'airpods-mic-test/', tools: ['mic'], devices: true, variant: true, icon: 'mic' },
   headphone: { slug: 'headphone-test/', tools: ['spk'], devices: false, variant: true, icon: 'spk' },
-  recorder: { slug: 'voice-recorder/', tools: ['rec'], devices: false, variant: true, icon: 'rec' }
+  recorder: { slug: 'voice-recorder/', tools: ['rec'], devices: false, variant: true, icon: 'rec' },
+  decibel: { slug: 'decibel-meter/', tools: ['db'], devices: false, variant: true, icon: 'gauge' }
 });
-const PAGE_ORDER = ['home', 'mic', 'webcam', 'speaker', 'recorder', 'discord', 'zoom', 'iphone', 'android', 'airpods', 'headphone'];
+const PAGE_ORDER = ['home', 'mic', 'webcam', 'speaker', 'decibel', 'recorder', 'discord', 'zoom', 'iphone', 'android', 'airpods', 'headphone'];
 const VARIANTS = PAGE_ORDER.filter((p) => PAGES[p].variant);
 
 /* ---------- load locales ---------- */
@@ -140,6 +141,7 @@ const ICONS = {
   fullscreen: '<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/>',
   globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9M12 3C9.5 5.6 8.2 8.6 8.2 12s1.3 6.4 3.8 9"/>',
   moon: '<path d="M20.5 13.2A8.5 8.5 0 1 1 10.8 3.5a6.5 6.5 0 0 0 9.7 9.7z"/>',
+  gauge: '<path d="M4.2 17.5a9 9 0 1 1 15.6 0"/><path d="M12 13.5l4-5"/><circle cx="12" cy="14" r="1.6" fill="currentColor" stroke="none"/>',
   badge: '<path d="M12 2.8l2.4 1.7 2.9-.1.9 2.8 2.4 1.7-.9 2.8.9 2.8-2.4 1.7-.9 2.8-2.9-.1L12 21.2l-2.4-1.7-2.9.1-.9-2.8-2.4-1.7.9-2.8-.9-2.8 2.4-1.7.9-2.8 2.9.1z"/><path d="M8.6 12.2l2.3 2.3 4.6-4.8"/>',
   share: '<circle cx="18" cy="5.5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="18.5" r="2.5"/><path d="M8.2 10.8l7.6-4.1M8.2 13.2l7.6 4.1"/>',
   copy: '<rect x="8.5" y="8.5" width="12" height="12" rx="2.5"/><path d="M15.5 8.5V6a2.5 2.5 0 0 0-2.5-2.5H6A2.5 2.5 0 0 0 3.5 6v7A2.5 2.5 0 0 0 6 15.5h2.5"/>'
@@ -415,6 +417,48 @@ const recTool = (u, headTag) => `
   </div>
 </section>`;
 
+const dbRefs = [[30, 'refWhisper'], [60, 'refTalk'], [80, 'refTraffic'], [105, 'refConcert']];
+const dbTool = (u, headTag) => `
+<section class="wrap tool" id="dbm" aria-labelledby="dbTitle">
+  <div class="card">
+    <div class="card-head">
+      <div>
+        <${headTag} id="dbTitle" class="tool-title"><span class="ico">${ic('gauge')}</span> ${esc(u.dbTool)}</${headTag}>
+        <p class="muted">${esc(u.dbHint)}</p>
+      </div>
+      <div class="controls">
+        <select id="dbMic" aria-label="${esc(u.mic)}"><option value="">${esc(u.defaultMic)}</option></select>
+        <button class="btn btn-primary" id="dbBtn" type="button">${esc(u.start)}</button>
+      </div>
+    </div>
+    <div class="db-top">
+      <div class="db-read" aria-live="off">
+        <div class="db-num"><span id="dbBig">--</span><small>dB</small></div>
+        <div class="db-level" id="dbLevel">${esc(u.waiting)}</div>
+      </div>
+      <dl class="db-stats">
+        <div><dt>${esc(u.dbMin)}</dt><dd id="dbMin">–</dd></div>
+        <div><dt>${esc(u.dbAvg)}</dt><dd id="dbAvg">–</dd></div>
+        <div><dt>${esc(u.dbMax)}</dt><dd id="dbMax">–</dd></div>
+      </dl>
+    </div>
+    <div class="db-scale" aria-hidden="true">
+      <div class="db-bar"><i id="dbMark"></i></div>
+      <div class="db-refs">${dbRefs.map(([v, k]) => `<span style="left:${v - 20}%"><b>${v}</b>${esc(u[k])}</span>`).join('')}</div>
+    </div>
+    <div class="viz db-viz">
+      <div class="viz-cell"><canvas id="dbChart" role="img" aria-label="${esc(u.dbHistory)}"></canvas><span class="viz-tag">${esc(u.dbHistory)}</span></div>
+      <button class="viz-go" id="dbGo" type="button"><span class="go-ico">${ic('gauge')}</span><span>${esc(u.startDb)}</span></button>
+    </div>
+    <div class="row-actions db-actions">
+      <button class="btn" id="dbReset" type="button">${esc(u.dbReset)}</button>
+      <label class="db-cal" for="dbCal">${esc(u.dbCal)} <b id="dbCalVal" dir="ltr">0 dB</b></label>
+      <input type="range" id="dbCal" min="-20" max="20" step="1" value="0">
+    </div>
+    <p class="muted db-note">${esc(u.dbNote)}</p>
+  </div>
+</section>`;
+
 const devicesTool = (u) => `
 <section class="wrap tool" id="devices" aria-labelledby="devTitle">
   <div class="card">
@@ -445,6 +489,7 @@ const resultsCard = (u) => `
         <p class="muted" id="resHint">${esc(u.resultsHint)}</p>
       </div>
       <div class="controls">
+        <button class="btn" id="resImg" type="button" disabled>${ic('snap')}<span>${esc(u.saveImage)}</span></button>
         <button class="btn" id="resCopy" type="button" disabled>${ic('copy')}<span>${esc(u.copyResults)}</span></button>
         <button class="btn btn-primary" id="resShare" type="button" disabled>${ic('share')}<span>${esc(u.share)}</span></button>
       </div>
@@ -503,7 +548,7 @@ function renderPage(lang, page) {
     });
   }
 
-  const statuses = def.tools.filter((k) => k !== 'rec').map((k) => {
+  const statuses = def.tools.filter((k) => k !== 'rec' && k !== 'db').map((k) => {
     const id = { mic: 'stMic', cam: 'stCam', spk: 'stSpk' }[k];
     return `<div class="status" id="${id}"><span class="dot"></span><span>${esc(u[k])}<span class="colon">:</span></span> <b>${esc(u.notTested)}</b></div>`;
   }).join('');
@@ -511,9 +556,9 @@ function renderPage(lang, page) {
   const cta = isHome
     ? `<button class="btn btn-primary btn-lg" id="heroStart" data-action="all" type="button">${esc(u.testAll)}</button>
        <a class="btn btn-ghost btn-lg" href="${urlFor(lang, 'mic')}">${esc(u.justMic)}</a>`
-    : `<button class="btn btn-primary btn-lg" id="heroStart" data-action="${def.tools[0]}" type="button">${esc(u[{ mic: 'startMic', cam: 'startCam', spk: 'startSpk', rec: 'startRec' }[def.tools[0]]])}</button>`;
+    : `<button class="btn btn-primary btn-lg" id="heroStart" data-action="${def.tools[0]}" type="button">${esc(u[{ mic: 'startMic', cam: 'startCam', spk: 'startSpk', rec: 'startRec', db: 'startDb' }[def.tools[0]]])}</button>`;
 
-  const tools = def.tools.map((k) => ({ mic: micTool, cam: camTool, spk: spkTool, rec: recTool }[k](u, toolHead))).join('\n');
+  const tools = def.tools.map((k) => ({ mic: micTool, cam: camTool, spk: spkTool, rec: recTool, db: dbTool }[k](u, toolHead))).join('\n');
 
   const cardList = ['mic', 'webcam', 'speaker', ...VARIANTS].filter((p) => p !== page && pageLangs(p).includes(lang) && (!isHome || PAGES[p].variant));
   const others = !cardList.length ? '' : `
@@ -528,7 +573,7 @@ function renderPage(lang, page) {
   </div>
 </section>`;
 
-  const toolKey = { mic: 'mic', webcam: 'webcam', speaker: null, home: 'any', headphone: null }[page] ?? (PAGES[page].tools[0] === 'mic' || PAGES[page].tools[0] === 'rec' ? 'mic' : null);
+  const toolKey = { mic: 'mic', webcam: 'webcam', speaker: null, home: 'any', headphone: null }[page] ?? (PAGES[page].tools[0] === 'mic' || PAGES[page].tools[0] === 'rec' || PAGES[page].tools[0] === 'db' ? 'mic' : null);
   const GL = GUIDES_BY_LANG[lang] ? lang : 'en'; const rel = GUIDES_BY_LANG[GL].guides.filter((g) => toolKey === 'any' || g.tool === toolKey).slice(0, 3);
   const related = rel.length ? `
 <section class="wrap others" aria-labelledby="guidesTitle">
@@ -554,7 +599,7 @@ ${header(lang, page)}
   <div class="alert wrap" id="secureAlert" hidden></div>
   ${tools}
   ${def.devices ? devicesTool(u) : ''}
-  ${def.tools.some((k) => k !== 'rec') ? resultsCard(u) : ''}
+  ${def.tools.some((k) => k !== 'rec' && k !== 'db') ? resultsCard(u) : ''}
   ${adSlot('afterTool', u.ad)}
   ${others}
   <article class="wrap article">

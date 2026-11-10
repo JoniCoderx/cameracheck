@@ -144,7 +144,27 @@
     "copyResults": "Copier les résultats",
     "share": "Partager",
     "copied": "Copié",
-    "shareText": "Testez le vôtre gratuitement :"
+    "shareText": "Testez le vôtre gratuitement :",
+    "dbTool": "Sonomètre",
+    "dbHint": "Appuyez sur Démarrer et voyez en direct le niveau de bruit autour de vous.",
+    "startDb": "Démarrer le sonomètre",
+    "dbMin": "Min",
+    "dbAvg": "Moyenne",
+    "dbMax": "Max",
+    "dbReset": "Réinitialiser",
+    "dbCal": "Étalonnage",
+    "dbNote": "Niveau estimé. Les micros des téléphones et des ordinateurs varient : si vous avez un vrai sonomètre, réglez l'étalonnage pour qu'ils correspondent.",
+    "dbHistory": "60 dernières secondes",
+    "lvQuiet": "Calme",
+    "lvModerate": "Modéré",
+    "lvLoud": "Fort",
+    "lvVeryLoud": "Très fort",
+    "lvDanger": "Nocif en cas d'exposition prolongée",
+    "refWhisper": "Chuchotement",
+    "refTalk": "Conversation",
+    "refTraffic": "Circulation",
+    "refConcert": "Concert",
+    "saveImage": "Enregistrer l'image"
   },
   "pages": {
     "home": {
@@ -800,6 +820,58 @@
         {
           "q": "L'enregistreur vocal est-il vraiment gratuit ?",
           "a": "Oui. Sans inscription, sans filigrane et sans envoi en ligne."
+        }
+      ]
+    },
+    "decibel": {
+      "card": {
+        "name": "Sonomètre",
+        "desc": "Mesurez le bruit en dB."
+      },
+      "title": "Sonomètre en ligne : mesurer les décibels gratuitement (dB)",
+      "description": "Sonomètre en ligne gratuit. Mesurez le bruit autour de vous en temps réel avec le micro de votre téléphone ou ordinateur : dB en direct, min, max et moyenne.",
+      "h1Html": "<span class=\"grad\">Sonomètre</span> en ligne",
+      "lead": "Voyez tout de suite à quel point il fait bruyant autour de vous. Décibels en direct, minimum, maximum et moyenne, avec le micro que vous avez déjà.",
+      "article": [
+        {
+          "h": "Comment mesurer le bruit avec un téléphone ou un ordinateur",
+          "ol": [
+            "Appuyez sur « Démarrer le sonomètre » et autorisez le micro.",
+            "Placez le téléphone ou l'ordinateur à l'endroit à mesurer, sans couvrir le micro.",
+            "Suivez la mesure en direct. Le minimum, le maximum et la moyenne se mettent à jour.",
+            "Appuyez sur Réinitialiser pour une nouvelle mesure."
+          ]
+        },
+        {
+          "h": "À partir de quand est-ce trop fort ?",
+          "p": [
+            "Environ 30 dB correspondent à une chambre calme, 60 dB à une conversation normale, 80 dB à une circulation dense et 100 dB ou plus à un concert ou une boîte de nuit. Les autorités sanitaires conseillent de limiter les expositions longues au-delà de 85 dB, car des heures à ce niveau peuvent abîmer l'audition."
+          ]
+        },
+        {
+          "h": "Un sonomètre en ligne est-il précis ?",
+          "p": [
+            "Les micros des téléphones et ordinateurs sont faits pour la voix, pas pour des mesures de laboratoire : la valeur est donc une estimation. C'est parfait pour comparer des pièces, voir si les voisins sont plus bruyants qu'hier ou trouver l'appareil le plus bruyant. Pour des mesures légales ou professionnelles, utilisez un sonomètre certifié.",
+            "Si vous avez un vrai sonomètre, réglez l'étalonnage pour que les deux affichent la même valeur. L'outil désactive l'annulation d'écho, la réduction de bruit et le gain automatique quand le navigateur le permet."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ce sonomètre est-il gratuit ?",
+          "a": "Oui. Pas d'application, pas d'inscription, et le son ne quitte jamais votre appareil."
+        },
+        {
+          "q": "Fonctionne-t-il sur iPhone et Android ?",
+          "a": "Oui. Ouvrez la page dans Safari sur iPhone ou Chrome sur Android et autorisez le micro."
+        },
+        {
+          "q": "Pourquoi la valeur diffère-t-elle d'un autre téléphone ?",
+          "a": "Chaque micro a une sensibilité différente. Utilisez l'étalonnage pour caler sur un sonomètre de référence, ou comparez toujours sur le même appareil."
+        },
+        {
+          "q": "Mon son est-il enregistré ?",
+          "a": "Non. Le son est seulement analysé dans votre navigateur pour calculer le niveau. Rien n'est enregistré ni envoyé."
         }
       ]
     }

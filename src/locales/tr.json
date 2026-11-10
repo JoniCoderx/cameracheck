@@ -144,7 +144,27 @@
     "copyResults": "Sonuçları kopyala",
     "share": "Paylaş",
     "copied": "Kopyalandı",
-    "shareText": "Seninkini ücretsiz test et:"
+    "shareText": "Seninkini ücretsiz test et:",
+    "dbTool": "Desibel ölçer",
+    "dbHint": "Başlat'a bas ve çevrendeki gürültüyü canlı olarak gör.",
+    "startDb": "Desibel ölçeri başlat",
+    "dbMin": "Min",
+    "dbAvg": "Ortalama",
+    "dbMax": "Maks",
+    "dbReset": "Sıfırla",
+    "dbCal": "Kalibrasyon",
+    "dbNote": "Tahmini seviye. Telefon ve dizüstü mikrofonları farklıdır: gerçek bir ses ölçerin varsa kalibrasyonu ona göre ayarla.",
+    "dbHistory": "Son 60 saniye",
+    "lvQuiet": "Sessiz",
+    "lvModerate": "Orta",
+    "lvLoud": "Yüksek",
+    "lvVeryLoud": "Çok yüksek",
+    "lvDanger": "Uzun süre maruz kalınca zararlı",
+    "refWhisper": "Fısıltı",
+    "refTalk": "Sohbet",
+    "refTraffic": "Trafik",
+    "refConcert": "Konser",
+    "saveImage": "Görseli kaydet"
   },
   "pages": {
     "home": {
@@ -800,6 +820,58 @@
         {
           "q": "Ses kaydedici gerçekten ücretsiz mi?",
           "a": "Evet. Üyelik yok, filigran yok ve yükleme yok."
+        }
+      ]
+    },
+    "decibel": {
+      "card": {
+        "name": "Desibel ölçer",
+        "desc": "Gürültüyü dB olarak ölç."
+      },
+      "title": "Online desibel ölçer: ücretsiz ses seviyesi ölçümü (dB)",
+      "description": "Ücretsiz online desibel ölçer. Telefon veya dizüstü mikrofonuyla çevrendeki gürültüyü anlık ölç: canlı dB, minimum, maksimum ve ortalama.",
+      "h1Html": "Online <span class=\"grad\">desibel ölçer</span>",
+      "lead": "Çevrende ne kadar gürültü olduğunu hemen gör. Canlı desibel değeri, minimum, maksimum ve ortalama, zaten sahip olduğun mikrofonla.",
+      "article": [
+        {
+          "h": "Telefon veya bilgisayarla gürültü nasıl ölçülür",
+          "ol": [
+            "\"Desibel ölçeri başlat\" düğmesine bas ve mikrofon iznini ver.",
+            "Telefonu veya dizüstünü ölçmek istediğin yere koy, mikrofonu kapatma.",
+            "Canlı değeri izle. Minimum, maksimum ve ortalama kendiliğinden güncellenir.",
+            "Yeni ölçüm için Sıfırla'ya bas."
+          ]
+        },
+        {
+          "h": "Ne kadar ses fazla?",
+          "p": [
+            "Yaklaşık 30 dB sessiz bir yatak odası, 60 dB normal bir sohbet, 80 dB yoğun şehir trafiği, 100 dB ve üzeri ise konser ya da gece kulübüdür. Sağlık kuruluşları 85 dB üzerindeki uzun maruziyetin sınırlanmasını önerir, çünkü bu seviyede saatler zamanla işitmeye zarar verebilir."
+          ]
+        },
+        {
+          "h": "Online desibel ölçer ne kadar doğru?",
+          "p": [
+            "Telefon ve dizüstü mikrofonları laboratuvar ölçümü için değil ses için yapılır, bu yüzden değer bir tahmindir. Odaları karşılaştırmak, komşuların dünden daha gürültülü olup olmadığını anlamak ya da en gürültülü cihazı bulmak için idealdir. Resmi veya iş yeri ölçümleri için sertifikalı bir ses ölçer kullan.",
+            "Gerçek bir ses ölçerin varsa kalibrasyonu ikisi aynı değeri gösterene kadar ayarla. Araç, tarayıcı izin verdiğinde yankı engelleme, gürültü bastırma ve otomatik kazancı kapatır."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Bu desibel ölçer ücretsiz mi?",
+          "a": "Evet. Uygulama yok, kayıt yok ve ses cihazından hiç çıkmaz."
+        },
+        {
+          "q": "iPhone ve Android'de çalışır mı?",
+          "a": "Evet. Sayfayı iPhone'da Safari'de veya Android'de Chrome'da aç ve mikrofona izin ver."
+        },
+        {
+          "q": "Başka bir telefon neden farklı değer gösteriyor?",
+          "a": "Her mikrofonun hassasiyeti farklıdır. Kalibrasyonla referans bir ölçere eşitle ya da hep aynı cihazda karşılaştır."
+        },
+        {
+          "q": "Sesim kaydediliyor mu?",
+          "a": "Hayır. Ses sadece seviyeyi hesaplamak için tarayıcında analiz edilir. Hiçbir şey kaydedilmez veya yüklenmez."
         }
       ]
     }

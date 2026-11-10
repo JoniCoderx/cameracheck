@@ -541,6 +541,7 @@
     fillSelect('#micSelect', 'audioinput', 'defaultMic');
     fillSelect('#camSelect', 'videoinput', 'defaultCam');
     fillSelect('#recMic', 'audioinput', 'defaultMic');
+    fillSelect('#dbMic', 'audioinput', 'defaultMic');
     renderDeviceList();
     fillPerms();
   }
@@ -630,7 +631,7 @@
       d.append(sm, b); tile.append(i, d); grid.appendChild(tile);
     });
     const any = keys.some((k) => status[k] === 'working' || status[k] === 'failed');
-    ['#resCopy', '#resShare'].forEach((s) => { const b = $(s); if (b) b.disabled = !any; });
+    ['#resCopy', '#resShare', '#resImg'].forEach((s) => { const b = $(s); if (b) b.disabled = !any; });
     const h = $('#resHint'); if (h) h.hidden = any;
   }
   function resultsText() {
@@ -642,6 +643,43 @@
     try { await navigator.clipboard.writeText(txt); toast(t('copied')); }
     catch (e) { const ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); toast(t('copied')); } catch (x) {} ta.remove(); }
   }
+  function resultsImage() {
+    const W = 1080, H = 1080, c = document.createElement('canvas'); c.width = W; c.height = H;
+    const g = c.getContext('2d'); const rtl = document.documentElement.dir === 'rtl';
+    try { g.direction = rtl ? 'rtl' : 'ltr'; } catch (e) {}
+    const F = (s, w) => (w || 700) + ' ' + s + 'px system-ui, -apple-system, Segoe UI, Roboto, sans-serif';
+    const bg = g.createLinearGradient(0, 0, W, H); bg.addColorStop(0, '#141417'); bg.addColorStop(1, '#0b0b0d');
+    g.fillStyle = bg; g.fillRect(0, 0, W, H);
+    // logo
+    g.fillStyle = '#cdf545'; g.beginPath(); g.roundRect ? g.roundRect(80, 80, 84, 84, 20) : g.rect(80, 80, 84, 84); g.fill();
+    g.fillStyle = '#0b0b0d'; [[98, 128, 26], [118, 106, 48], [138, 116, 38]].forEach(([x, y, h]) => g.fillRect(x, y, 12, h));
+    g.textAlign = 'left'; g.font = F(46, 800); g.fillStyle = '#f3f3ef'; g.fillText('MicTest', 186, 140);
+    const mw = g.measureText('MicTest').width; g.fillStyle = '#cdf545'; g.fillText('+', 186 + mw, 140);
+    g.textAlign = 'center';
+    g.fillStyle = '#9a9aa3'; g.font = F(40, 700); g.fillText(t('yourResults'), W / 2, 270);
+    let y0 = 330;
+    if (mic.score != null) {
+      const cx = W / 2, cy = 500, r = 150, col = mic.score >= 70 ? '#cdf545' : mic.score >= 50 ? '#ffb020' : '#ff5a4e';
+      g.lineWidth = 26; g.strokeStyle = '#26262c'; g.beginPath(); g.arc(cx, cy, r, 0, Math.PI * 2); g.stroke();
+      g.strokeStyle = col; g.lineCap = 'round'; g.beginPath(); g.arc(cx, cy, r, -Math.PI / 2, -Math.PI / 2 + (Math.PI * 2 * mic.score) / 100); g.stroke();
+      g.fillStyle = '#f3f3ef'; g.font = F(120, 800); g.fillText(String(mic.score), cx, cy + 40);
+      g.fillStyle = '#9a9aa3'; g.font = F(30, 700); g.fillText(t('micScore') + ' · ' + mic.grade, cx, cy + r + 80);
+      y0 = 790;
+    }
+    const keys = (PAGE.tools || []).filter((k) => k !== 'rec' && !(k === 'mic' && mic.score != null) && status[k] !== 'notTested');
+    keys.forEach((k, i) => { g.fillStyle = '#f3f3ef'; g.font = F(38, 700); g.fillText(t(k) + ': ' + resultValue(k), W / 2, y0 + i * 62); });
+    g.fillStyle = '#cdf545'; g.font = F(36, 800); g.fillText(t('shareText') + ' mictestplus.com', W / 2, H - 80);
+    return c;
+  }
+  on('#resImg', 'click', () => {
+    resultsImage().toBlob(async (blob) => {
+      logEvent('results_image');
+      const file = new File([blob], 'mictestplus-results.png', { type: 'image/png' });
+      if (navigator.canShare && navigator.canShare({ files: [file] })) { try { await navigator.share({ files: [file], text: t('shareText') + ' ' + shareUrl() }); return; } catch (e) { if (e && e.name === 'AbortError') return; } }
+      const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = file.name; document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+    }, 'image/png');
+  });
   on('#resCopy', 'click', () => { copyText(resultsText() + '\n' + t('shareText') + ' ' + shareUrl()); logEvent('results_copy'); });
   on('#resShare', 'click', async () => {
     const text = resultsText() + '\n' + t('shareText');
@@ -654,13 +692,109 @@
   on('#heroStart', 'click', async (e) => {
     getCtx();
     const action = e.currentTarget.dataset.action;
-    const target = { all: '#mic', mic: '#mic', cam: '#cam', spk: '#speaker', rec: '#recorder' }[action];
+    const target = { all: '#mic', mic: '#mic', cam: '#cam', spk: '#speaker', rec: '#recorder', db: '#dbm' }[action];
     if ($(target)) $(target).scrollIntoView({ behavior: 'smooth' });
     if ((action === 'all' || action === 'mic') && !mic.stream) await startMic();
     if ((action === 'all' || action === 'cam') && !cam.stream) await startCam();
+    if (action === 'db') { const b = $('#dbBtn'); if (b && !b.classList.contains('on')) b.click(); }
     if (action === 'rec') { const rb = $('#recToggle'); if (rb && !rb.classList.contains('on')) rb.click(); }
     if (action === 'spk') { const btn = $('.spk-btn[data-pan="0"]'); if (btn) btn.click(); }
   });
+
+  /* ---------------- DECIBEL METER ---------------- */
+  let dbActive = false;
+  if ($('#dbm')) {
+    const OFF = 100; // dBFS -> approximate dB SPL for typical phone/laptop mics
+    const D = { stream: null, an: null, src: null, raf: 0, lvl: null, min: Infinity, max: -Infinity, e: 0, n: 0, hist: [], lastT: 0, lastH: 0, lastTxt: 0, cal: 0, busy: false };
+    try { D.cal = Number(localStorage.getItem('mtp-db-cal')) || 0; } catch (e) {}
+    const box = $('#dbm'), btn = $('#dbBtn'), big = $('#dbBig'), lev = $('#dbLevel'), mark = $('#dbMark'), chart = $('#dbChart'), cal = $('#dbCal');
+    const calTxt = (v) => (v > 0 ? '+' : '') + v + ' dB';
+    cal.value = D.cal; setText('#dbCalVal', calTxt(D.cal));
+    cal.addEventListener('input', () => { D.cal = Number(cal.value); setText('#dbCalVal', calTxt(D.cal)); try { localStorage.setItem('mtp-db-cal', D.cal); } catch (e) {} });
+    const levelOf = (v) => (v < 40 ? ['lvQuiet', 'ok'] : v < 70 ? ['lvModerate', 'ok'] : v < 85 ? ['lvLoud', 'warn'] : v < 100 ? ['lvVeryLoud', 'bad'] : ['lvDanger', 'bad']);
+    function reset() {
+      D.min = Infinity; D.max = -Infinity; D.e = 0; D.n = 0; D.hist = [];
+      ['#dbMin', '#dbAvg', '#dbMax'].forEach((s) => setText(s, '–'));
+      drawChart();
+    }
+    async function start() {
+      if (D.busy) return;
+      getCtx();
+      if (!hasMedia) return toast(t('errUnsupported'));
+      const id = $('#dbMic').value;
+      const a = { echoCancellation: false, noiseSuppression: false, autoGainControl: false };
+      if (id) a.deviceId = { exact: id };
+      D.busy = true;
+      try { D.stream = await navigator.mediaDevices.getUserMedia({ audio: a }); }
+      catch (e) { toast(errMsg(e)); lev.textContent = errMsg(e); lev.className = 'db-level bad'; return; }
+      finally { D.busy = false; }
+      dbActive = true;
+      const ctx = getCtx(); D.src = ctx.createMediaStreamSource(D.stream); D.an = ctx.createAnalyser(); D.an.fftSize = 2048; D.src.connect(D.an);
+      D.lvl = null; D.lastT = D.t0 = performance.now();
+      box.classList.add('live'); btn.textContent = t('stop'); btn.classList.add('on');
+      D.stream.getAudioTracks()[0].addEventListener('ended', stop);
+      reset(); loop(); refreshDevices(); logEvent('decibel_meter');
+    }
+    function stop() {
+      cancelAnimationFrame(D.raf);
+      try { D.src.disconnect(); } catch (e) {}
+      D.an = null;
+      if (D.stream) D.stream.getTracks().forEach((tr) => tr.stop());
+      D.stream = null; dbActive = false;
+      box.classList.remove('live'); btn.textContent = t('start'); btn.classList.remove('on');
+    }
+    function loop() {
+      if (!D.an) return;
+      const buf = new Float32Array(D.an.fftSize);
+      const step = () => {
+        if (!D.an) return;
+        D.an.getFloatTimeDomainData(buf);
+        let s = 0; for (let i = 0; i < buf.length; i++) s += buf[i] * buf[i];
+        const raw = 20 * Math.log10(Math.sqrt(s / buf.length) || 1e-9) + OFF + D.cal;
+        const now = performance.now(), dt = now - D.lastT; D.lastT = now;
+        D.lvl = D.lvl == null ? raw : D.lvl + (1 - Math.exp(-dt / 125)) * (raw - D.lvl); // "fast" time weighting
+        const v = Math.max(0, Math.min(130, D.lvl));
+        mark.style.setProperty('--x', Math.max(0, Math.min(100, v - 20)) + '%');
+        if (now - D.lastTxt > 150) {
+          D.lastTxt = now; big.textContent = Math.round(v);
+          const [k, c] = levelOf(v); lev.textContent = t(k); lev.className = 'db-level ' + c;
+        }
+        if (now - D.lastH > 250 && now - D.t0 > 600) {
+          D.lastH = now; D.hist.push(v); if (D.hist.length > 240) D.hist.shift();
+          D.min = Math.min(D.min, v); D.max = Math.max(D.max, v); D.e += Math.pow(10, v / 10); D.n++;
+          setText('#dbMin', Math.round(D.min)); setText('#dbMax', Math.round(D.max)); setText('#dbAvg', Math.round(10 * Math.log10(D.e / D.n)));
+          drawChart();
+        }
+        D.raf = requestAnimationFrame(step);
+      };
+      step();
+    }
+    function drawChart() {
+      const { w, h, dpr } = fitCanvas(chart); const g = chart.getContext('2d');
+      g.clearRect(0, 0, w, h);
+      if (!D.hist.length) return;
+      const lo = 20, hi = 120, pad = 30 * dpr, top = 26 * dpr, bot = 10 * dpr;
+      const y = (v) => top + (1 - (Math.max(lo, Math.min(hi, v)) - lo) / (hi - lo)) * (h - top - bot);
+      try { g.direction = 'ltr'; } catch (e) {}
+      g.font = (11 * dpr) + 'px system-ui, sans-serif'; g.fillStyle = css('--muted'); g.textBaseline = 'middle'; g.textAlign = 'left';
+      g.strokeStyle = css('--line'); g.lineWidth = dpr;
+      [40, 60, 80, 100].forEach((v) => { g.beginPath(); g.moveTo(pad, y(v)); g.lineTo(w - 8 * dpr, y(v)); g.stroke(); g.fillText(v, 6 * dpr, y(v)); });
+      g.setLineDash([5 * dpr, 4 * dpr]); g.strokeStyle = css('--bad'); g.beginPath(); g.moveTo(pad, y(85)); g.lineTo(w - 8 * dpr, y(85)); g.stroke(); g.setLineDash([]);
+      const n = 240, xs = (i) => pad + ((w - pad - 8 * dpr) * (n - D.hist.length + i)) / (n - 1);
+      const grad = g.createLinearGradient(0, top, 0, h);
+      grad.addColorStop(0, css('--brand')); grad.addColorStop(1, 'rgba(0,0,0,0)');
+      g.beginPath(); D.hist.forEach((v, i) => (i ? g.lineTo(xs(i), y(v)) : g.moveTo(xs(i), y(v))));
+      g.lineTo(xs(D.hist.length - 1), h - bot); g.lineTo(xs(0), h - bot); g.closePath();
+      g.globalAlpha = 0.28; g.fillStyle = grad; g.fill(); g.globalAlpha = 1;
+      g.beginPath(); D.hist.forEach((v, i) => (i ? g.lineTo(xs(i), y(v)) : g.moveTo(xs(i), y(v))));
+      g.strokeStyle = css('--brand-text'); g.lineWidth = 2 * dpr; g.lineJoin = 'round'; g.stroke();
+    }
+    btn.addEventListener('click', () => (D.stream ? stop() : start()));
+    on('#dbGo', 'click', () => { if (!D.stream) start(); });
+    on('#dbReset', 'click', reset);
+    on('#dbMic', 'change', () => { if (D.stream) { stop(); start(); } });
+    window.addEventListener('resize', drawChart);
+  }
 
   /* ---------------- VOICE RECORDER ---------------- */
   let recActive = false;
@@ -764,8 +898,8 @@
   // pause camera loops when tab hidden on mobile to save battery
   document.addEventListener('visibilitychange', () => {
     if (!audioCtx) return;
-    if (document.hidden) { if (!mic.stream && !osc && !recActive) audioCtx.suspend(); }
-    else if ((mic.stream || recActive) && audioCtx.state !== 'running') audioCtx.resume().catch(() => {});
+    if (document.hidden) { if (!mic.stream && !osc && !recActive && !dbActive) audioCtx.suspend(); }
+    else if ((mic.stream || recActive || dbActive) && audioCtx.state !== 'running') audioCtx.resume().catch(() => {});
   });
 
   setText('#year', new Date().getFullYear());

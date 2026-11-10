@@ -144,7 +144,27 @@
     "copyResults": "Copiar resultados",
     "share": "Compartilhar",
     "copied": "Copiado",
-    "shareText": "Teste o seu grátis:"
+    "shareText": "Teste o seu grátis:",
+    "dbTool": "Medidor de decibéis",
+    "dbHint": "Toque em Iniciar e veja ao vivo o nível de ruído ao seu redor.",
+    "startDb": "Iniciar medidor de decibéis",
+    "dbMin": "Mín.",
+    "dbAvg": "Média",
+    "dbMax": "Máx.",
+    "dbReset": "Zerar",
+    "dbCal": "Calibração",
+    "dbNote": "Nível estimado. Microfones de celulares e notebooks variam: se você tiver um decibelímetro real, ajuste a calibração para coincidir.",
+    "dbHistory": "Últimos 60 segundos",
+    "lvQuiet": "Silencioso",
+    "lvModerate": "Moderado",
+    "lvLoud": "Alto",
+    "lvVeryLoud": "Muito alto",
+    "lvDanger": "Prejudicial com exposição longa",
+    "refWhisper": "Sussurro",
+    "refTalk": "Conversa",
+    "refTraffic": "Trânsito",
+    "refConcert": "Show",
+    "saveImage": "Salvar imagem"
   },
   "pages": {
     "home": {
@@ -800,6 +820,58 @@
         {
           "q": "O gravador de voz é grátis mesmo?",
           "a": "Sim. Sem cadastro, sem marca d'água e sem upload."
+        }
+      ]
+    },
+    "decibel": {
+      "card": {
+        "name": "Medidor de decibéis",
+        "desc": "Meça o ruído em dB."
+      },
+      "title": "Medidor de decibéis online: decibelímetro grátis (dB)",
+      "description": "Medidor de decibéis online grátis. Meça o ruído ao seu redor em tempo real com o microfone do celular ou notebook: dB ao vivo, mínimo, máximo e média.",
+      "h1Html": "<span class=\"grad\">Medidor de decibéis</span> online",
+      "lead": "Veja agora mesmo o nível de ruído ao seu redor. Leitura em decibéis ao vivo, mínimo, máximo e média, usando o microfone que você já tem.",
+      "article": [
+        {
+          "h": "Como medir o ruído com o celular ou o computador",
+          "ol": [
+            "Toque em \"Iniciar medidor de decibéis\" e permita o acesso ao microfone.",
+            "Coloque o celular ou notebook onde quer medir, sem cobrir o microfone.",
+            "Acompanhe a leitura ao vivo. Mínimo, máximo e média se atualizam sozinhos.",
+            "Toque em Zerar para começar uma nova medição."
+          ]
+        },
+        {
+          "h": "Quanto barulho é demais?",
+          "p": [
+            "Cerca de 30 dB é um quarto silencioso, 60 dB uma conversa normal, 80 dB o trânsito de uma cidade e 100 dB ou mais um show ou uma balada. Órgãos de saúde recomendam limitar a exposição prolongada acima de 85 dB, pois horas nesse nível podem prejudicar a audição com o tempo."
+          ]
+        },
+        {
+          "h": "Um medidor de decibéis online é preciso?",
+          "p": [
+            "Microfones de celulares e notebooks são feitos para voz, não para medições de laboratório, então a leitura é uma estimativa. É ótimo para comparar ambientes, ver se os vizinhos estão mais barulhentos que ontem ou descobrir o aparelho mais barulhento. Para medições legais ou de trabalho, use um decibelímetro certificado.",
+            "Se você tiver um decibelímetro real, ajuste a calibração para que os dois mostrem o mesmo número. O medidor desliga o cancelamento de eco, a supressão de ruído e o ganho automático quando o navegador permite."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Este medidor de decibéis é grátis?",
+          "a": "Sim. Sem app, sem cadastro, e o áudio nunca sai do seu aparelho."
+        },
+        {
+          "q": "Funciona no iPhone e no Android?",
+          "a": "Sim. Abra a página no Safari do iPhone ou no Chrome do Android e permita o microfone."
+        },
+        {
+          "q": "Por que a leitura é diferente da de outro celular?",
+          "a": "Cada microfone tem uma sensibilidade diferente. Use a calibração para igualar um medidor de referência ou compare sempre no mesmo aparelho."
+        },
+        {
+          "q": "Meu áudio é gravado?",
+          "a": "Não. O som só é analisado no seu navegador para calcular o nível. Nada é gravado ou enviado."
         }
       ]
     }

@@ -144,7 +144,27 @@
     "copyResults": "Salin hasil",
     "share": "Bagikan",
     "copied": "Disalin",
-    "shareText": "Tes milik Anda gratis:"
+    "shareText": "Tes milik Anda gratis:",
+    "dbTool": "Pengukur desibel",
+    "dbHint": "Tekan Mulai dan lihat secara langsung seberapa bising di sekitar Anda.",
+    "startDb": "Mulai pengukur desibel",
+    "dbMin": "Min",
+    "dbAvg": "Rata-rata",
+    "dbMax": "Maks",
+    "dbReset": "Atur ulang",
+    "dbCal": "Kalibrasi",
+    "dbNote": "Level perkiraan. Mikrofon ponsel dan laptop berbeda-beda: jika Anda punya sound level meter asli, sesuaikan kalibrasinya.",
+    "dbHistory": "60 detik terakhir",
+    "lvQuiet": "Tenang",
+    "lvModerate": "Sedang",
+    "lvLoud": "Keras",
+    "lvVeryLoud": "Sangat keras",
+    "lvDanger": "Berbahaya jika terpapar lama",
+    "refWhisper": "Berbisik",
+    "refTalk": "Percakapan",
+    "refTraffic": "Lalu lintas",
+    "refConcert": "Konser",
+    "saveImage": "Simpan gambar"
   },
   "pages": {
     "home": {
@@ -800,6 +820,58 @@
         {
           "q": "Apakah perekam suara ini benar-benar gratis?",
           "a": "Ya. Tanpa daftar, tanpa watermark, dan tanpa unggahan."
+        }
+      ]
+    },
+    "decibel": {
+      "card": {
+        "name": "Pengukur desibel",
+        "desc": "Ukur kebisingan dalam dB."
+      },
+      "title": "Pengukur desibel online: ukur tingkat kebisingan gratis (dB)",
+      "description": "Pengukur desibel online gratis. Ukur kebisingan di sekitar Anda secara real time dengan mikrofon ponsel atau laptop: dB langsung, minimum, maksimum, rata-rata.",
+      "h1Html": "<span class=\"grad\">Pengukur desibel</span> online",
+      "lead": "Lihat seberapa bising di sekitar Anda sekarang. Nilai desibel langsung, minimum, maksimum dan rata-rata, dengan mikrofon yang sudah Anda punya.",
+      "article": [
+        {
+          "h": "Cara mengukur kebisingan dengan ponsel atau komputer",
+          "ol": [
+            "Tekan \"Mulai pengukur desibel\" dan izinkan akses mikrofon.",
+            "Letakkan ponsel atau laptop di tempat yang ingin diukur, jangan tutupi mikrofon.",
+            "Lihat nilai langsungnya. Minimum, maksimum dan rata-rata diperbarui otomatis.",
+            "Tekan Atur ulang untuk memulai pengukuran baru."
+          ]
+        },
+        {
+          "h": "Seberapa keras itu terlalu keras?",
+          "p": [
+            "Sekitar 30 dB adalah kamar tidur yang tenang, 60 dB percakapan normal, 80 dB lalu lintas kota yang ramai, dan 100 dB ke atas konser atau klub malam. Lembaga kesehatan menyarankan membatasi paparan lama di atas 85 dB, karena berjam-jam di tingkat itu bisa merusak pendengaran seiring waktu."
+          ]
+        },
+        {
+          "h": "Seberapa akurat pengukur desibel online?",
+          "p": [
+            "Mikrofon ponsel dan laptop dibuat untuk suara, bukan pengukuran laboratorium, jadi nilainya adalah perkiraan. Sangat cocok untuk membandingkan ruangan, mengecek apakah tetangga lebih bising dari kemarin, atau mencari alat yang paling bising. Untuk pengukuran resmi atau di tempat kerja, gunakan sound level meter bersertifikat.",
+            "Jika Anda punya alat ukur asli, atur kalibrasi sampai keduanya menunjukkan angka yang sama. Alat ini mematikan peredam gema, peredam bising dan penguatan otomatis jika browser mengizinkan."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Apakah pengukur desibel ini gratis?",
+          "a": "Ya. Tanpa aplikasi, tanpa daftar, dan audio tidak pernah keluar dari perangkat Anda."
+        },
+        {
+          "q": "Apakah bisa di iPhone dan Android?",
+          "a": "Bisa. Buka halaman di Safari pada iPhone atau Chrome pada Android lalu izinkan mikrofon."
+        },
+        {
+          "q": "Kenapa hasilnya beda dengan ponsel lain?",
+          "a": "Setiap mikrofon punya sensitivitas berbeda. Gunakan kalibrasi agar sama dengan alat ukur acuan, atau bandingkan di perangkat yang sama."
+        },
+        {
+          "q": "Apakah suara saya direkam?",
+          "a": "Tidak. Suara hanya dianalisis di browser untuk menghitung level. Tidak ada yang direkam atau diunggah."
         }
       ]
     }

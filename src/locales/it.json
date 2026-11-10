@@ -144,7 +144,27 @@
     "copyResults": "Copia risultati",
     "share": "Condividi",
     "copied": "Copiato",
-    "shareText": "Prova il tuo gratis:"
+    "shareText": "Prova il tuo gratis:",
+    "dbTool": "Fonometro",
+    "dbHint": "Premi Avvia e guarda in tempo reale quanto è rumoroso intorno a te.",
+    "startDb": "Avvia fonometro",
+    "dbMin": "Min",
+    "dbAvg": "Media",
+    "dbMax": "Max",
+    "dbReset": "Azzera",
+    "dbCal": "Calibrazione",
+    "dbNote": "Livello stimato. I microfoni di telefoni e portatili sono diversi: se hai un fonometro vero, regola la calibrazione per farli coincidere.",
+    "dbHistory": "Ultimi 60 secondi",
+    "lvQuiet": "Silenzioso",
+    "lvModerate": "Moderato",
+    "lvLoud": "Forte",
+    "lvVeryLoud": "Molto forte",
+    "lvDanger": "Dannoso con esposizione prolungata",
+    "refWhisper": "Sussurro",
+    "refTalk": "Conversazione",
+    "refTraffic": "Traffico",
+    "refConcert": "Concerto",
+    "saveImage": "Salva immagine"
   },
   "pages": {
     "home": {
@@ -800,6 +820,58 @@
         {
           "q": "Il registratore vocale è davvero gratuito?",
           "a": "Sì. Nessuna iscrizione, nessuna filigrana e nessun upload."
+        }
+      ]
+    },
+    "decibel": {
+      "card": {
+        "name": "Fonometro",
+        "desc": "Misura il rumore in dB."
+      },
+      "title": "Fonometro online: misura i decibel gratis (dB)",
+      "description": "Fonometro online gratis. Misura il rumore intorno a te in tempo reale con il microfono di telefono o portatile: dB dal vivo, minimo, massimo e media.",
+      "h1Html": "<span class=\"grad\">Fonometro</span> online",
+      "lead": "Scopri subito quanto è rumoroso intorno a te. Decibel in tempo reale, minimo, massimo e media, con il microfono che hai già.",
+      "article": [
+        {
+          "h": "Come misurare il rumore con telefono o computer",
+          "ol": [
+            "Premi \"Avvia fonometro\" e consenti l'accesso al microfono.",
+            "Tieni il telefono o il portatile dove vuoi misurare, senza coprire il microfono.",
+            "Guarda la lettura dal vivo. Minimo, massimo e media si aggiornano da soli.",
+            "Premi Azzera per iniziare una nuova misura."
+          ]
+        },
+        {
+          "h": "Quando il rumore è troppo?",
+          "p": [
+            "Circa 30 dB sono una camera silenziosa, 60 dB una conversazione normale, 80 dB il traffico cittadino e 100 dB o più un concerto o una discoteca. Le autorità sanitarie consigliano di limitare l'esposizione prolungata sopra gli 85 dB, perché ore a quel livello possono danneggiare l'udito nel tempo."
+          ]
+        },
+        {
+          "h": "Quanto è preciso un fonometro online?",
+          "p": [
+            "I microfoni di telefoni e portatili sono fatti per la voce, non per misure di laboratorio, quindi il valore è una stima. È perfetto per confrontare stanze, capire se i vicini sono più rumorosi di ieri o trovare l'elettrodomestico più rumoroso. Per misure legali o sul lavoro usa un fonometro certificato.",
+            "Se hai un fonometro vero, regola la calibrazione finché i due valori coincidono. Lo strumento disattiva cancellazione dell'eco, soppressione del rumore e guadagno automatico quando il browser lo consente."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Questo fonometro è gratis?",
+          "a": "Sì. Nessuna app, nessuna registrazione, e l'audio non lascia mai il tuo dispositivo."
+        },
+        {
+          "q": "Funziona su iPhone e Android?",
+          "a": "Sì. Apri la pagina in Safari su iPhone o in Chrome su Android e consenti il microfono."
+        },
+        {
+          "q": "Perché il valore è diverso da un altro telefono?",
+          "a": "Ogni microfono ha una sensibilità diversa. Usa la calibrazione per allinearti a un fonometro di riferimento o confronta sempre sullo stesso dispositivo."
+        },
+        {
+          "q": "Il mio audio viene registrato?",
+          "a": "No. Il suono viene solo analizzato nel browser per calcolare il livello. Niente viene registrato o caricato."
         }
       ]
     }

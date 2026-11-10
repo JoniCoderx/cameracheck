@@ -144,7 +144,27 @@
     "copyResults": "Copy results",
     "share": "Share",
     "copied": "Copied",
-    "shareText": "Test yours free:"
+    "shareText": "Test yours free:",
+    "dbTool": "Decibel meter",
+    "dbHint": "Press Start and see how loud it is around you, live.",
+    "startDb": "Start decibel meter",
+    "dbMin": "Min",
+    "dbAvg": "Average",
+    "dbMax": "Max",
+    "dbReset": "Reset",
+    "dbCal": "Calibration",
+    "dbNote": "Estimated level. Phone and laptop mics differ, so if you have a real sound meter, set the calibration to match it.",
+    "dbHistory": "Last 60 seconds",
+    "lvQuiet": "Quiet",
+    "lvModerate": "Moderate",
+    "lvLoud": "Loud",
+    "lvVeryLoud": "Very loud",
+    "lvDanger": "Harmful with long exposure",
+    "refWhisper": "Whisper",
+    "refTalk": "Conversation",
+    "refTraffic": "Traffic",
+    "refConcert": "Concert",
+    "saveImage": "Save image"
   },
   "pages": {
     "home": {
@@ -808,6 +828,58 @@
         {
           "q": "Is the voice recorder really free?",
           "a": "Yes. No sign-up, no watermark and no upload."
+        }
+      ]
+    },
+    "decibel": {
+      "card": {
+        "name": "Decibel meter",
+        "desc": "Measure noise levels in dB."
+      },
+      "title": "Decibel Meter Online: Free Sound Level Meter (dB)",
+      "description": "Free online decibel meter. Measure noise around you in real time with your phone or laptop mic: live dB, min, max, average and a 60-second graph.",
+      "h1Html": "Online <span class=\"grad\">decibel meter</span>",
+      "lead": "See how loud it is around you right now. Live decibel reading, minimum, maximum and average, using the microphone you already have.",
+      "article": [
+        {
+          "h": "How to measure noise with your phone or computer",
+          "ol": [
+            "Press \"Start decibel meter\" and allow microphone access.",
+            "Hold the phone or laptop where you want to measure, with nothing covering the mic.",
+            "Watch the live reading. Min, max and average update as you go.",
+            "Press Reset to start a new measurement."
+          ]
+        },
+        {
+          "h": "How loud is too loud?",
+          "p": [
+            "About 30 dB is a quiet bedroom, 60 dB a normal conversation, 80 dB busy city traffic, and 100 dB or more a concert or a nightclub. Health agencies advise limiting long exposure above 85 dB, because hours at that level can damage hearing over time."
+          ]
+        },
+        {
+          "h": "How accurate is an online decibel meter?",
+          "p": [
+            "Phone and laptop microphones are made for voices, not for lab measurements, so the reading is an estimate. It is great for comparing rooms, checking whether the neighbours are louder than yesterday or finding the noisiest appliance. For legal or workplace measurements, use a certified sound level meter.",
+            "If you have a real meter, set the calibration so both show the same number. The meter turns off echo cancellation, noise suppression and automatic gain where the browser allows, so the reading stays honest."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is this decibel meter free?",
+          "a": "Yes. No app, no sign-up, and the audio never leaves your device."
+        },
+        {
+          "q": "Does it work on iPhone and Android?",
+          "a": "Yes. Open the page in Safari on iPhone or Chrome on Android and allow the microphone."
+        },
+        {
+          "q": "Why is the reading different from another phone?",
+          "a": "Every microphone has a different sensitivity. Use the calibration slider to match a reference meter, or compare readings on the same device."
+        },
+        {
+          "q": "Is my audio recorded?",
+          "a": "No. The sound is only analysed in your browser to compute the level. Nothing is recorded or uploaded."
         }
       ]
     }
