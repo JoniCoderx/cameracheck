@@ -42,6 +42,17 @@ Good places: r/techsupport, r/discordapp, r/Zoom, r/MicrosoftTeams, r/Twitch, r/
 > Also expected: when the mic is on, Bluetooth drops to a lower quality "hands-free" mode, so calls sound worse than music. That's Bluetooth, not your AirPods.
 > You can check the AirPods mic level here (my site, free, nothing uploaded): https://mictestplus.com/airpods-mic-test/
 
+### "my mouse double clicks by itself" (r/MouseReview, r/pcmasterrace, r/techsupport)
+> That is almost always a worn switch. Before you buy a new mouse: blow compressed air around the button, and if it is a gaming mouse, check the debounce setting in its software (raise it a little).
+> To confirm it, click normally in a tester for a minute. Two clicks under ~80 ms apart are not from your finger. I made a free one that flags them and also shows polling rate: https://mictestplus.com/mouse-test/
+
+### "some keys on my keyboard don't work / type twice" (r/MechanicalKeyboards, r/techsupport)
+> Press every key in a key tester to see exactly which ones never reach the PC, and which ones fire twice (chatter). Free, in the browser: https://mictestplus.com/keyboard-test/
+> Chatter on one key = dirty or worn switch: compressed air first, then swap the switch if it is hot-swap.
+
+### "new monitor, is that a dead pixel?" (r/Monitors, r/buildapc)
+> Clean the screen first, then fill it with solid black, white, red, green and blue. Dead = black on everything, stuck = one bright color on black. Return windows are short, so check now: https://mictestplus.com/dead-pixel-test/ (also shows the real refresh rate, handy to confirm 144 Hz is actually on).
+
 ---
 
 ## 2. Launch posts
@@ -72,7 +83,7 @@ Good places: r/techsupport, r/discordapp, r/Zoom, r/MicrosoftTeams, r/Twitch, r/
 
 - **Name:** MicTest+
 - **Tagline (≤60):** Test your mic, webcam and speakers in 5 seconds
-- **Description (≤260):** Free, private mic, webcam and speaker test that runs entirely in your browser. Live dB meter, recording and playback, real webcam FPS and resolution, left/right speaker tones and a voice recorder. 13 languages, works on phones, nothing is uploaded.
+- **Description (≤260):** Free, private mic, webcam and speaker test that runs entirely in your browser. Live dB meter, recording and playback, real webcam FPS and resolution, left/right speaker tones, a voice recorder, decibel meter, keyboard, mouse and dead pixel tests. 13 languages, works on phones, nothing is uploaded.
 - **Topics:** Productivity, Developer Tools, Remote Work, Privacy
 - **First comment:**
   > Hey Product Hunt! I built MicTest+ after one too many "can you hear me?" moments at the start of calls. Everything runs in the browser, so your audio and video never leave your device. I'd love to hear which test you'd add next.
