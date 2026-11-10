@@ -83,7 +83,7 @@ Good places: r/techsupport, r/discordapp, r/Zoom, r/MicrosoftTeams, r/Twitch, r/
 
 - **Name:** MicTest+
 - **Tagline (≤60):** Test your mic, webcam and speakers in 5 seconds
-- **Description (≤260):** Free, private mic, webcam and speaker test that runs entirely in your browser. Live dB meter, recording and playback, real webcam FPS and resolution, left/right speaker tones, a voice recorder, decibel meter, keyboard, mouse and dead pixel tests. 13 languages, works on phones, nothing is uploaded.
+- **Description (≤260):** Free, private device tests in your browser: mic, webcam, speakers, decibel meter, voice recorder, keyboard, mouse and dead pixel test. Real webcam FPS, mic score, nothing uploaded. 13 languages, works on phones.
 - **Topics:** Productivity, Developer Tools, Remote Work, Privacy
 - **First comment:**
   > Hey Product Hunt! I built MicTest+ after one too many "can you hear me?" moments at the start of calls. Everything runs in the browser, so your audio and video never leave your device. I'd love to hear which test you'd add next.
