@@ -164,7 +164,54 @@
     "refTalk": "Gespräch",
     "refTraffic": "Straßenverkehr",
     "refConcert": "Konzert",
-    "saveImage": "Bild speichern"
+    "saveImage": "Bild speichern",
+    "kbTool": "Tastatur-Tester",
+    "kbHint": "Drücken Sie jede Taste. Jede leuchtet auf, sobald der Browser sie empfängt.",
+    "startKb": "Tastaturtest starten",
+    "kbTested": "Getestete Tasten",
+    "kbLast": "Letzte Taste",
+    "kbHeld": "Gerade gedrückt",
+    "kbMaxHeld": "Max. gleichzeitig",
+    "kbChatter": "Doppelanschläge",
+    "kbChatterTip": "Eine Taste hat in weniger als 40 ms zweimal ausgelöst. Das deutet meist auf einen abgenutzten oder verschmutzten Schalter hin (Key Chatter).",
+    "kbReady": "Bereit. Drücken Sie eine beliebige Taste.",
+    "kbMobile": "Dieser Test ist für echte Tastaturen gedacht. Verbinden Sie am Handy oder Tablet eine Tastatur per Bluetooth oder USB.",
+    "kbNote": "Einige Tasten wie Fn, Druck oder die Windows-Taste verarbeitet das System selbst, sodass sie den Browser oft gar nicht erreichen. Defekt sind sie deshalb nicht.",
+    "msTool": "Maus-Tester",
+    "msHint": "Klicken, doppelklicken und scrollen Sie im Feld. Jede Taste wird erkannt.",
+    "msArea": "Hier mit einer beliebigen Maustaste klicken",
+    "startMs": "Maustest starten",
+    "msLeft": "Links",
+    "msMiddle": "Mitte",
+    "msRight": "Rechts",
+    "msBack": "Zurück",
+    "msForward": "Vor",
+    "msWheelUp": "Nach oben scrollen",
+    "msWheelDown": "Nach unten scrollen",
+    "msGhost": "Ungewollte Doppelklicks",
+    "msGhostTip": "Eine Taste hat in weniger als 80 ms zweimal ausgelöst. So schnell klickt kein Finger, meist ist der Schalter abgenutzt.",
+    "msCps": "Klicks pro Sekunde",
+    "msPoll": "Polling-Rate",
+    "msPollHint": "Bewegen Sie die Maus schnell im Kreis über das Feld.",
+    "pxTool": "Pixelfehler-Test",
+    "pxHint": "Füllen Sie den ganzen Bildschirm mit jeweils einer Farbe und achten Sie auf Punkte, die nicht passen.",
+    "startPx": "Pixeltest starten",
+    "pxHelp": "Klicken oder → für die nächste Farbe. Esc zum Beenden.",
+    "pxFixer": "Pixel-Fixer",
+    "pxFixerHint": "Schieben Sie das blinkende Quadrat über den hängenden Pixel und lassen Sie es 10 bis 20 Minuten laufen.",
+    "pxWarn": "Achtung: Der Fixer blinkt sehr schnell. Nicht verwenden, wenn Sie empfindlich auf Lichtblitze reagieren.",
+    "startFixer": "Fixer starten",
+    "scrRes": "Bildschirmauflösung",
+    "scrView": "Browserfenster",
+    "scrDpr": "Pixelverhältnis",
+    "scrHz": "Bildwiederholrate",
+    "scrDepth": "Farbtiefe",
+    "colBlack": "Schwarz",
+    "colWhite": "Weiß",
+    "colRed": "Rot",
+    "colGreen": "Grün",
+    "colBlue": "Blau",
+    "colGray": "Grau"
   },
   "pages": {
     "home": {
@@ -872,6 +919,161 @@
         {
           "q": "Wird mein Ton aufgenommen?",
           "a": "Nein. Der Ton wird nur in Ihrem Browser ausgewertet, um den Pegel zu berechnen. Nichts wird gespeichert oder hochgeladen."
+        }
+      ]
+    },
+    "keyboard": {
+      "card": {
+        "name": "Tastaturtest",
+        "desc": "Jede Taste prüfen."
+      },
+      "title": "Tastaturtest online: Alle Tasten prüfen (kostenloser Key Tester)",
+      "description": "Kostenloser Tastaturtest online. Drücken Sie jede Taste und sehen Sie, ob sie aufleuchtet. Findet tote Tasten, Doppelanschläge und Ghosting.",
+      "h1Html": "Online-<span class=\"grad\">Tastaturtest</span>",
+      "lead": "Drücken Sie jede Taste und sehen Sie, welche funktionieren. Tote Tasten, Doppelanschläge und wie viele Tasten Ihre Tastatur gleichzeitig erkennt, direkt im Browser.",
+      "article": [
+        {
+          "h": "So testen Sie Ihre Tastatur",
+          "ol": [
+            "Klicken Sie auf „Tastaturtest starten“ oder tippen Sie einfach auf dieser Seite los.",
+            "Drücken Sie jede Taste einmal. Funktionierende Tasten werden auf der Tastatur grün.",
+            "Tasten, die nach dem Drücken grau bleiben, kommen nicht am Computer an.",
+            "Halten Sie mehrere Tasten gleichzeitig gedrückt, um zu sehen, wie viele Ihre Tastatur auf einmal meldet."
+          ]
+        },
+        {
+          "h": "Key Chatter und Ghosting",
+          "p": [
+            "Key Chatter bedeutet, dass ein einziger Tastendruck den Buchstaben doppelt schreibt. Der Tester zählt Anschläge, die weniger als 40 ms nach dem vorherigen kommen, also schneller, als ein Finger tippen kann. Macht eine Taste das immer wieder, ist der Schalter abgenutzt oder verschmutzt: Versuchen Sie es mit Druckluft oder tauschen Sie bei einer mechanischen Tastatur den Switch.",
+            "Ghosting heißt, dass beim gleichzeitigen Drücken mehrerer Tasten eine davon verschluckt wird. Halten Sie die Tasten, die Sie beim Spielen nutzen, etwa W, A, Umschalt und Leertaste, und prüfen Sie den Wert „Max. gleichzeitig“. Viele Laptop-Tastaturen schaffen bei manchen Kombinationen nur 2 oder 3 Tasten, Gaming-Tastaturen oft 6 oder mehr."
+          ]
+        },
+        {
+          "h": "Eine Taste leuchtet nicht auf. Was nun?",
+          "p": [
+            "Prüfen Sie zuerst, ob die Tastatur in einem anderen Modus ist: Fn-Lock, Num-Lock und Gaming-Modi können ändern, was manche Tasten senden. Probieren Sie einen anderen USB-Anschluss oder koppeln Sie die Bluetooth-Tastatur neu. Versagt die Taste in jeder App und auch an einem anderen Computer, liegt das Problem an der Tastatur selbst. Tasten wie Fn und Druck verarbeitet das System, deshalb kann ein Browsertest sie nicht sehen."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ist dieser Tastaturtest kostenlos?",
+          "a": "Ja. Er läuft in Ihrem Browser, Sie installieren nichts, und was Sie tippen, wird nirgendwohin gesendet."
+        },
+        {
+          "q": "Funktioniert er mit mechanischen, Laptop- und kabellosen Tastaturen?",
+          "a": "Ja. Jede Tastatur, die Ihr Computer erkennt, funktioniert: USB, Bluetooth, eingebaute Laptop-Tastaturen und mechanische Modelle."
+        },
+        {
+          "q": "Warum leuchten Fn oder die Windows-Taste nicht auf?",
+          "a": "Das Betriebssystem verarbeitet diese Tasten, bevor der Browser sie sieht. Das ist normal und heißt nicht, dass die Taste defekt ist."
+        },
+        {
+          "q": "Meine Tastatur hat ein anderes Layout. Klappt der Test trotzdem?",
+          "a": "Ja. Der Tester richtet sich nach der physischen Position jeder Taste, und die Beschriftungen passen sich beim Tippen an Ihr Layout an."
+        }
+      ]
+    },
+    "mouse": {
+      "card": {
+        "name": "Maustest",
+        "desc": "Tasten, Mausrad, Doppelklicks."
+      },
+      "title": "Maustest online: Klick-, Doppelklick- und Scroll-Test",
+      "description": "Kostenloser Maustest online. Prüfen Sie linke, rechte, mittlere und seitliche Tasten, das Mausrad, ungewollte Doppelklicks und die Polling-Rate.",
+      "h1Html": "Online-<span class=\"grad\">Maustest</span>",
+      "lead": "Prüfen Sie jede Taste und das Mausrad, ertappen Sie eine Maus, die von selbst doppelklickt, und messen Sie ihre Polling-Rate.",
+      "article": [
+        {
+          "h": "So testen Sie Ihre Maus",
+          "ol": [
+            "Klicken Sie im Testfeld mit der linken, rechten und mittleren Taste.",
+            "Drücken Sie die Seitentasten (Zurück und Vor), falls Ihre Maus welche hat.",
+            "Drehen Sie das Mausrad nach oben und unten. Jede Richtung leuchtet einzeln auf.",
+            "Bewegen Sie die Maus schnell im Kreis, um die Polling-Rate zu messen."
+          ]
+        },
+        {
+          "h": "Doppelklickt meine Maus von selbst?",
+          "p": [
+            "Ein abgenutzter Schalter kann bei einem Druck zwei Klicks senden. Dann öffnen sich Dateien, obwohl Sie sie nur markieren wollten, oder beim Ziehen lässt die Maus plötzlich los. Der Tester markiert zwei Klicks derselben Taste, die weniger als 80 ms auseinanderliegen. So schnell klickt niemand absichtlich. Tauchen beim normalen Klicken mehrere davon auf, gibt der Schalter langsam den Geist auf."
+          ]
+        },
+        {
+          "h": "Was ist die Polling-Rate?",
+          "p": [
+            "Die Polling-Rate gibt an, wie oft pro Sekunde die Maus ihre Position meldet. Büromäuse liegen meist bei 125 Hz, Gaming-Mäuse bei 500 oder 1000 Hz, manche neueren Modelle sogar darüber. Bewegen Sie die Maus schnell, um den echten Wert zu sehen. Browser und Bildschirm können die Messung begrenzen, betrachten Sie das Ergebnis also als gute Schätzung."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ist dieser Maustest kostenlos?",
+          "a": "Ja. Kein Download, keine Anmeldung. Er läuft in jedem modernen Browser."
+        },
+        {
+          "q": "Kann ich die Seitentasten testen?",
+          "a": "Ja. Zurück- und Vor-Tasten werden im Testfeld erkannt, und die Seite springt beim Testen nicht weg."
+        },
+        {
+          "q": "Funktioniert er mit einem Touchpad?",
+          "a": "Ja. Tippen, Zwei-Finger-Klicks und Scrollen mit zwei Fingern werden wie Maustasten und Mausrad erkannt."
+        },
+        {
+          "q": "Warum ist meine Polling-Rate niedriger als angegeben?",
+          "a": "Bewegen Sie die Maus schneller und prüfen Sie die Einstellung in der Maus-Software. Manche Browser und Funkmodi begrenzen die Rate außerdem."
+        }
+      ]
+    },
+    "pixel": {
+      "card": {
+        "name": "Pixelfehler-Test",
+        "desc": "Tote und hängende Pixel finden."
+      },
+      "title": "Pixelfehler Test: Bildschirm auf tote Pixel prüfen (Dead Pixel Test)",
+      "description": "Kostenloser Dead Pixel Test: Füllen Sie den Bildschirm mit Vollfarben, finden Sie tote oder hängende Pixel und testen Sie den Pixel-Fixer.",
+      "h1Html": "<span class=\"grad\">Pixelfehler</span>-Test",
+      "lead": "Füllen Sie den Bildschirm mit Vollfarben, um tote und hängende Pixel zu entdecken, prüfen Sie die echte Auflösung und Bildwiederholrate und versuchen Sie, einen hängenden Pixel zu reparieren.",
+      "article": [
+        {
+          "h": "So prüfen Sie Ihren Bildschirm auf tote Pixel",
+          "ol": [
+            "Reinigen Sie den Bildschirm, damit Staub nicht wie ein Pixel aussieht.",
+            "Drücken Sie „Pixeltest starten“. Die Seite wechselt in den Vollbildmodus.",
+            "Klicken Sie oder drücken Sie die Pfeiltaste nach rechts, um Schwarz, Weiß, Rot, Grün, Blau und Grau durchzugehen.",
+            "Sehen Sie sich bei jeder Farbe den ganzen Bildschirm genau an. Mit Esc beenden Sie den Test."
+          ]
+        },
+        {
+          "h": "Toter oder hängender Pixel?",
+          "p": [
+            "Ein toter Pixel bleibt bei jeder Farbe schwarz und fällt auf Weiß am stärksten auf. Ein hängender Pixel (Stuck Pixel) leuchtet dauerhaft in einer Farbe, meist Rot, Grün oder Blau, und sticht auf Schwarz hervor. Hängende Pixel lassen sich manchmal wiederbeleben. Tote Pixel kommen fast nie zurück.",
+            "Bei einem neuen Bildschirm lohnt ein Blick in die Rückgabebedingungen: Viele Hersteller tauschen Monitore oder Laptops mit einigen hellen oder toten Pixeln aus, und in den ersten Tagen ist der Test am einfachsten."
+          ]
+        },
+        {
+          "h": "So funktioniert der Pixel-Fixer",
+          "p": [
+            "Der Fixer lässt in einem kleinen Quadrat sehr schnell zufällige Farben aufblitzen. Schieben Sie ihn über den hängenden Pixel und lassen Sie ihn 10 bis 20 Minuten laufen. Manchmal schaltet das hängende Subpixel danach wieder. Das klappt nicht immer und kann einen toten Pixel nicht reparieren, ist aber kostenlos und für den Bildschirm unbedenklich. Schauen Sie nicht hin, wenn Ihnen Lichtblitze zu schaffen machen."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ist dieser Pixelfehler-Test kostenlos?",
+          "a": "Ja. Er läuft in Ihrem Browser, ohne App-Installation."
+        },
+        {
+          "q": "Funktioniert er auch auf Handys und Fernsehern?",
+          "a": "Ja. Er läuft auf jedem Bildschirm mit Browser: Monitore, Laptops, Handys, Tablets und Smart-TVs."
+        },
+        {
+          "q": "Kann sich ein hängender Pixel von selbst erholen?",
+          "a": "Manchmal. Ein hängender Pixel kann nach einiger Nutzung oder mit dem Fixer wieder normal werden. Ein toter Pixel, der schwarz bleibt, meist nicht."
+        },
+        {
+          "q": "Wie viele Pixelfehler sind akzeptabel?",
+          "a": "Das hängt vom Hersteller ab. Viele erlauben ein paar, manche garantieren aber null helle Pixel. Prüfen Sie die Garantie Ihres Modells."
         }
       ]
     }

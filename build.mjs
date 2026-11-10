@@ -28,9 +28,13 @@ Object.assign(PAGES, {
   airpods: { slug: 'airpods-mic-test/', tools: ['mic'], devices: true, variant: true, icon: 'mic' },
   headphone: { slug: 'headphone-test/', tools: ['spk'], devices: false, variant: true, icon: 'spk' },
   recorder: { slug: 'voice-recorder/', tools: ['rec'], devices: false, variant: true, icon: 'rec' },
-  decibel: { slug: 'decibel-meter/', tools: ['db'], devices: false, variant: true, icon: 'gauge' }
+  decibel: { slug: 'decibel-meter/', tools: ['db'], devices: false, variant: true, icon: 'gauge' },
+  keyboard: { slug: 'keyboard-test/', tools: ['kb'], devices: false, variant: true, icon: 'kbd' },
+  mouse: { slug: 'mouse-test/', tools: ['ms'], devices: false, variant: true, icon: 'mouse' },
+  pixel: { slug: 'dead-pixel-test/', tools: ['px'], devices: false, variant: true, icon: 'screen' }
 });
-const PAGE_ORDER = ['home', 'mic', 'webcam', 'speaker', 'decibel', 'recorder', 'discord', 'zoom', 'iphone', 'android', 'airpods', 'headphone'];
+const MEDIA_TOOLS = ['mic', 'cam', 'spk'];
+const PAGE_ORDER = ['home', 'mic', 'webcam', 'speaker', 'decibel', 'keyboard', 'mouse', 'pixel', 'recorder', 'discord', 'zoom', 'iphone', 'android', 'airpods', 'headphone'];
 const VARIANTS = PAGE_ORDER.filter((p) => PAGES[p].variant);
 
 /* ---------- load locales ---------- */
@@ -144,6 +148,9 @@ const ICONS = {
   gauge: '<path d="M4.2 17.5a9 9 0 1 1 15.6 0"/><path d="M12 13.5l4-5"/><circle cx="12" cy="14" r="1.6" fill="currentColor" stroke="none"/>',
   badge: '<path d="M12 2.8l2.4 1.7 2.9-.1.9 2.8 2.4 1.7-.9 2.8.9 2.8-2.4 1.7-.9 2.8-2.9-.1L12 21.2l-2.4-1.7-2.9.1-.9-2.8-2.4-1.7.9-2.8-.9-2.8 2.4-1.7.9-2.8 2.9.1z"/><path d="M8.6 12.2l2.3 2.3 4.6-4.8"/>',
   share: '<circle cx="18" cy="5.5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="18.5" r="2.5"/><path d="M8.2 10.8l7.6-4.1M8.2 13.2l7.6 4.1"/>',
+  kbd: '<rect x="2.5" y="6" width="19" height="12" rx="2.5"/><path d="M6 9.5h.01M9 9.5h.01M12 9.5h.01M15 9.5h.01M18 9.5h.01M6 12.2h.01M9 12.2h.01M12 12.2h.01M15 12.2h.01M18 12.2h.01M8 15h8" stroke-width="2.2"/>',
+  mouse: '<rect x="6" y="3" width="12" height="18" rx="6"/><path d="M12 3v6.5M6.2 9.5h11.6"/><path d="M12 5.8v1.6" stroke-width="2.6"/>',
+  screen: '<rect x="2.5" y="4" width="19" height="13" rx="2"/><path d="M8.5 20.5h7M12 17v3.5"/><rect x="13.5" y="7.5" width="3" height="3" fill="currentColor" stroke="none"/>',
   copy: '<rect x="8.5" y="8.5" width="12" height="12" rx="2.5"/><path d="M15.5 8.5V6a2.5 2.5 0 0 0-2.5-2.5H6A2.5 2.5 0 0 0 3.5 6v7A2.5 2.5 0 0 0 6 15.5h2.5"/>'
 };
 const ic = (n) => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${ICONS[n]}</svg>`;
@@ -459,6 +466,139 @@ const dbTool = (u, headTag) => `
   </div>
 </section>`;
 
+
+/* ---------- keyboard tester ---------- */
+// [code, label, x, y, w, h] in key units (1u = one letter key); main block 15u, nav at 15.5u, numpad at 19u
+const KB = (() => {
+  const k = []; const row = (y, x0, list) => { let x = x0; for (const it of list) { if (typeof it === 'number') { x += it; continue; } const [c, l, w = 1, h = 1] = it; k.push([c, l, x, y, w, h]); x += w; } };
+  const ch = (s) => [...s];
+  row(0, 0, [['Escape', 'Esc'], 1, ...['F1', 'F2', 'F3', 'F4'].map((f) => [f, f]), 0.5, ...['F5', 'F6', 'F7', 'F8'].map((f) => [f, f]), 0.5, ...['F9', 'F10', 'F11', 'F12'].map((f) => [f, f])]);
+  row(0, 15.5, [['PrintScreen', 'PrtSc'], ['ScrollLock', 'ScrLk'], ['Pause', 'Pause']]);
+  row(1.25, 0, [['Backquote', '`'], ...ch('1234567890').map((d) => ['Digit' + d, d]), ['Minus', '-'], ['Equal', '='], ['Backspace', 'Backspace', 2]]);
+  row(1.25, 15.5, [['Insert', 'Ins'], ['Home', 'Home'], ['PageUp', 'PgUp']]);
+  row(1.25, 19, [['NumLock', 'Num'], ['NumpadDivide', '/'], ['NumpadMultiply', '*'], ['NumpadSubtract', '-']]);
+  row(2.25, 0, [['Tab', 'Tab', 1.5], ...ch('QWERTYUIOP').map((c) => ['Key' + c, c]), ['BracketLeft', '['], ['BracketRight', ']'], ['Backslash', '\\', 1.5]]);
+  row(2.25, 15.5, [['Delete', 'Del'], ['End', 'End'], ['PageDown', 'PgDn']]);
+  row(2.25, 19, [['Numpad7', '7'], ['Numpad8', '8'], ['Numpad9', '9'], ['NumpadAdd', '+', 1, 2]]);
+  row(3.25, 0, [['CapsLock', 'Caps Lock', 1.75], ...ch('ASDFGHJKL').map((c) => ['Key' + c, c]), ['Semicolon', ';'], ['Quote', "'"], ['Enter', 'Enter', 2.25]]);
+  row(3.25, 19, [['Numpad4', '4'], ['Numpad5', '5'], ['Numpad6', '6']]);
+  row(4.25, 0, [['ShiftLeft', 'Shift', 2.25], ...ch('ZXCVBNM').map((c) => ['Key' + c, c]), ['Comma', ','], ['Period', '.'], ['Slash', '/'], ['ShiftRight', 'Shift', 2.75]]);
+  row(4.25, 16.5, [['ArrowUp', '↑']]);
+  row(4.25, 19, [['Numpad1', '1'], ['Numpad2', '2'], ['Numpad3', '3'], ['NumpadEnter', 'Enter', 1, 2]]);
+  row(5.25, 0, [['ControlLeft', 'Ctrl', 1.25], ['MetaLeft', 'Win', 1.25], ['AltLeft', 'Alt', 1.25], ['Space', '', 6.25], ['AltRight', 'Alt', 1.25], ['MetaRight', 'Win', 1.25], ['ContextMenu', 'Menu', 1.25], ['ControlRight', 'Ctrl', 1.25]]);
+  row(5.25, 15.5, [['ArrowLeft', '←'], ['ArrowDown', '↓'], ['ArrowRight', '→']]);
+  row(5.25, 19, [['Numpad0', '0', 2], ['NumpadDecimal', '.']]);
+  return k;
+})();
+const kbBoard = () => KB.map(([c, l, x, y, w, h]) => {
+  const q = (n) => Math.round(n * 4); const r = Math.round(y * 4);
+  const cls = 'k' + (l.length > 1 && !/^F\d+$/.test(l) && !/^[←↑↓→]$/.test(l) ? ' k-mod' : '') + (c.startsWith('Numpad') || c === 'NumLock' ? ' k-num' : '');
+  return `<span class="${cls}" data-code="${c}" style="grid-area:${r + 1}/${q(x) + 1}/span ${q(h)}/span ${q(w)}">${esc(l)}</span>`;
+}).join('');
+const kbTool = (u, headTag) => `
+<section class="wrap tool" id="kbd" aria-labelledby="kbTitle">
+  <div class="card">
+    <div class="card-head">
+      <div>
+        <${headTag} id="kbTitle" class="tool-title"><span class="ico">${ic('kbd')}</span> ${esc(u.kbTool)}</${headTag}>
+        <p class="muted">${esc(u.kbHint)}</p>
+      </div>
+      <div class="controls"><button class="btn" id="kbReset" type="button">${esc(u.dbReset)}</button></div>
+    </div>
+    <p class="alert kb-mobile" id="kbMobile" hidden>${esc(u.kbMobile)}</p>
+    <dl class="stat-row">
+      <div><dt>${esc(u.kbTested)}</dt><dd id="kbCount">0</dd></div>
+      <div class="stat-wide"><dt>${esc(u.kbLast)}</dt><dd><span id="kbLast">–</span><small id="kbCode" dir="ltr"></small></dd></div>
+      <div><dt>${esc(u.kbHeld)}</dt><dd id="kbHeld">0</dd></div>
+      <div><dt>${esc(u.kbMaxHeld)}</dt><dd id="kbMax">0</dd></div>
+      <div><dt>${esc(u.kbChatter)}</dt><dd id="kbChat">0</dd></div>
+    </dl>
+    <div class="kb-scroll" id="kbFocus" tabindex="0" aria-label="${esc(u.kbTool)}">
+      <div class="kb-sizer"><div class="kb-board" id="kbBoard" dir="ltr">${kbBoard()}</div></div>
+      <div class="kb-ready" id="kbReady"><span>${esc(u.kbReady)}</span></div>
+    </div>
+    <div class="kb-trail" id="kbTrail" dir="ltr" aria-hidden="true"></div>
+    <p class="tip-line" id="kbTip" hidden>${esc(u.kbChatterTip)}</p>
+    <p class="muted tool-note">${esc(u.kbNote)}</p>
+  </div>
+</section>`;
+
+/* ---------- mouse tester ---------- */
+const mouseSvg = `<svg class="ms-svg" viewBox="0 0 160 240" aria-hidden="true">
+  <path class="ms-part" id="msP0" d="M78 8C40 10 18 36 16 78v20h62z"/>
+  <path class="ms-part" id="msP2" d="M82 8c38 2 60 28 62 70v20H82z"/>
+  <path class="ms-body" d="M16 102h128v50c0 48-28 80-64 80s-64-32-64-80z"/>
+  <rect class="ms-part" id="msP1" x="72" y="34" width="16" height="40" rx="8"/>
+  <path class="ms-part ms-arrow" id="msWU" d="M80 14l9 11H71z"/>
+  <path class="ms-part ms-arrow" id="msWD" d="M80 94l9-11H71z"/>
+  <rect class="ms-part" id="msP4" x="6" y="112" width="10" height="26" rx="4"/>
+  <rect class="ms-part" id="msP3" x="6" y="142" width="10" height="26" rx="4"/>
+</svg>`;
+const msTool = (u, headTag) => `
+<section class="wrap tool" id="mouse" aria-labelledby="msTitle">
+  <div class="card">
+    <div class="card-head">
+      <div>
+        <${headTag} id="msTitle" class="tool-title"><span class="ico">${ic('mouse')}</span> ${esc(u.msTool)}</${headTag}>
+        <p class="muted">${esc(u.msHint)}</p>
+      </div>
+      <div class="controls"><button class="btn" id="msReset" type="button">${esc(u.dbReset)}</button></div>
+    </div>
+    <div class="ms-wrap">
+      <div class="ms-area" id="msArea" role="application" aria-label="${esc(u.msArea)}">
+        ${mouseSvg}
+        <span class="ms-cta">${esc(u.msArea)}</span>
+        <span class="ms-ripple-host" id="msRip"></span>
+      </div>
+      <dl class="ms-stats">
+        ${[['0', u.msLeft], ['1', u.msMiddle], ['2', u.msRight], ['3', u.msBack], ['4', u.msForward]].map(([b, n]) => `<div id="msS${b}"><dt>${esc(n)}</dt><dd id="msC${b}">0</dd></div>`).join('')}
+        <div id="msSU"><dt>${esc(u.msWheelUp)}</dt><dd id="msCU">0</dd></div>
+        <div id="msSD"><dt>${esc(u.msWheelDown)}</dt><dd id="msCD">0</dd></div>
+        <div id="msSG" class="ms-ghost"><dt>${esc(u.msGhost)}</dt><dd id="msCG">0</dd></div>
+        <div class="stat-wide"><dt>${esc(u.msCps)}</dt><dd><span id="msCps">0</span><small>${esc(u.dbMax)} <b id="msCpsMax">0</b></small></dd></div>
+        <div class="stat-wide"><dt>${esc(u.msPoll)}</dt><dd><span id="msHz">–</span><small><bdi>Hz</bdi> · ${esc(u.dbMax)} <b id="msHzMax">–</b></small></dd></div>
+      </dl>
+    </div>
+    <p class="tip-line" id="msTip" hidden>${esc(u.msGhostTip)}</p>
+    <p class="muted tool-note">${esc(u.msPollHint)}</p>
+  </div>
+</section>`;
+
+/* ---------- dead pixel test ---------- */
+const PX_COLORS = [['#000000', 'colBlack'], ['#ffffff', 'colWhite'], ['#ff0000', 'colRed'], ['#00ff00', 'colGreen'], ['#0000ff', 'colBlue'], ['#808080', 'colGray']];
+const pxTool = (u, headTag) => `
+<section class="wrap tool" id="pixel" aria-labelledby="pxTitle">
+  <div class="card">
+    <div class="card-head">
+      <div>
+        <${headTag} id="pxTitle" class="tool-title"><span class="ico">${ic('screen')}</span> ${esc(u.pxTool)}</${headTag}>
+        <p class="muted">${esc(u.pxHint)}</p>
+      </div>
+      <div class="controls"><button class="btn btn-primary" id="pxStart" type="button">${ic('fullscreen')}<span>${esc(u.startPx)}</span></button></div>
+    </div>
+    <div class="px-swatches">
+      ${PX_COLORS.map(([c, k], i) => `<button class="px-sw" type="button" data-i="${i}" style="--c:${c}"><i></i><span>${esc(u[k])}</span></button>`).join('')}
+    </div>
+    <dl class="specs px-specs">
+      <div><dt>${esc(u.scrRes)}</dt><dd id="pxRes" dir="ltr">–</dd></div>
+      <div><dt>${esc(u.scrView)}</dt><dd id="pxView" dir="ltr">–</dd></div>
+      <div><dt>${esc(u.scrDpr)}</dt><dd id="pxDpr" dir="ltr">–</dd></div>
+      <div><dt>${esc(u.scrHz)}</dt><dd id="pxHz" dir="ltr">–</dd></div>
+      <div><dt>${esc(u.scrDepth)}</dt><dd id="pxDepth" dir="ltr">–</dd></div>
+    </dl>
+    <div class="px-fix">
+      <div>
+        <h3>${esc(u.pxFixer)}</h3>
+        <p class="muted">${esc(u.pxFixerHint)}</p>
+        <p class="px-warn">${esc(u.pxWarn)}</p>
+      </div>
+      <button class="btn" id="pxFixBtn" type="button">${esc(u.startFixer)}</button>
+    </div>
+  </div>
+  <div class="px-screen" id="pxScreen" hidden><p class="px-help" id="pxHelp">${esc(u.pxHelp)}</p></div>
+  <div class="px-fixer" id="pxFixer" hidden><canvas id="pxFixCv" width="64" height="64"></canvas><button type="button" id="pxFixClose" aria-label="${esc(u.stop)}">×</button></div>
+</section>`;
+
 const devicesTool = (u) => `
 <section class="wrap tool" id="devices" aria-labelledby="devTitle">
   <div class="card">
@@ -548,7 +688,7 @@ function renderPage(lang, page) {
     });
   }
 
-  const statuses = def.tools.filter((k) => k !== 'rec' && k !== 'db').map((k) => {
+  const statuses = def.tools.filter((k) => MEDIA_TOOLS.includes(k)).map((k) => {
     const id = { mic: 'stMic', cam: 'stCam', spk: 'stSpk' }[k];
     return `<div class="status" id="${id}"><span class="dot"></span><span>${esc(u[k])}<span class="colon">:</span></span> <b>${esc(u.notTested)}</b></div>`;
   }).join('');
@@ -556,9 +696,9 @@ function renderPage(lang, page) {
   const cta = isHome
     ? `<button class="btn btn-primary btn-lg" id="heroStart" data-action="all" type="button">${esc(u.testAll)}</button>
        <a class="btn btn-ghost btn-lg" href="${urlFor(lang, 'mic')}">${esc(u.justMic)}</a>`
-    : `<button class="btn btn-primary btn-lg" id="heroStart" data-action="${def.tools[0]}" type="button">${esc(u[{ mic: 'startMic', cam: 'startCam', spk: 'startSpk', rec: 'startRec', db: 'startDb' }[def.tools[0]]])}</button>`;
+    : `<button class="btn btn-primary btn-lg" id="heroStart" data-action="${def.tools[0]}" type="button">${esc(u[{ mic: 'startMic', cam: 'startCam', spk: 'startSpk', rec: 'startRec', db: 'startDb', kb: 'startKb', ms: 'startMs', px: 'startPx' }[def.tools[0]]])}</button>`;
 
-  const tools = def.tools.map((k) => ({ mic: micTool, cam: camTool, spk: spkTool, rec: recTool, db: dbTool }[k](u, toolHead))).join('\n');
+  const tools = def.tools.map((k) => ({ mic: micTool, cam: camTool, spk: spkTool, rec: recTool, db: dbTool, kb: kbTool, ms: msTool, px: pxTool }[k](u, toolHead))).join('\n');
 
   const cardList = ['mic', 'webcam', 'speaker', ...VARIANTS].filter((p) => p !== page && pageLangs(p).includes(lang) && (!isHome || PAGES[p].variant));
   const others = !cardList.length ? '' : `
@@ -599,7 +739,7 @@ ${header(lang, page)}
   <div class="alert wrap" id="secureAlert" hidden></div>
   ${tools}
   ${def.devices ? devicesTool(u) : ''}
-  ${def.tools.some((k) => k !== 'rec' && k !== 'db') ? resultsCard(u) : ''}
+  ${def.tools.some((k) => MEDIA_TOOLS.includes(k)) ? resultsCard(u) : ''}
   ${adSlot('afterTool', u.ad)}
   ${others}
   <article class="wrap article">

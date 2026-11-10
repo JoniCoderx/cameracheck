@@ -1236,6 +1236,747 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/decibel-meter/"/>
   </url>
   <url>
+    <loc>https://mictestplus.com/keyboard-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/keyboard-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/es/keyboard-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/keyboard-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/pt/keyboard-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/keyboard-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/fr/keyboard-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/keyboard-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/de/keyboard-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/keyboard-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/it/keyboard-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/keyboard-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/ru/keyboard-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/keyboard-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/tr/keyboard-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/keyboard-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/id/keyboard-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/keyboard-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/ja/keyboard-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/keyboard-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/ar/keyboard-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/keyboard-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/he/keyboard-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/keyboard-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/hi/keyboard-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/keyboard-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/keyboard-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/mouse-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/mouse-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/es/mouse-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/mouse-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/pt/mouse-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/mouse-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/fr/mouse-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/mouse-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/de/mouse-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/mouse-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/it/mouse-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/mouse-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/ru/mouse-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/mouse-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/tr/mouse-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/mouse-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/id/mouse-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/mouse-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/ja/mouse-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/mouse-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/ar/mouse-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/mouse-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/he/mouse-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/mouse-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/hi/mouse-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/mouse-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/mouse-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/dead-pixel-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/dead-pixel-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/es/dead-pixel-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/dead-pixel-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/pt/dead-pixel-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/dead-pixel-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/fr/dead-pixel-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/dead-pixel-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/de/dead-pixel-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/dead-pixel-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/it/dead-pixel-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/dead-pixel-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/ru/dead-pixel-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/dead-pixel-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/tr/dead-pixel-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/dead-pixel-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/id/dead-pixel-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/dead-pixel-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/ja/dead-pixel-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/dead-pixel-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/ar/dead-pixel-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/dead-pixel-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/he/dead-pixel-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/dead-pixel-test/"/>
+  </url>
+  <url>
+    <loc>https://mictestplus.com/hi/dead-pixel-test/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mictestplus.com/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://mictestplus.com/es/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mictestplus.com/pt/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://mictestplus.com/fr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mictestplus.com/de/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://mictestplus.com/it/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mictestplus.com/ru/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://mictestplus.com/tr/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://mictestplus.com/id/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://mictestplus.com/ja/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mictestplus.com/ar/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://mictestplus.com/he/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://mictestplus.com/hi/dead-pixel-test/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mictestplus.com/dead-pixel-test/"/>
+  </url>
+  <url>
     <loc>https://mictestplus.com/voice-recorder/</loc>
     <lastmod>2026-11-10</lastmod>
     <priority>0.8</priority>

@@ -164,7 +164,54 @@
     "refTalk": "Sohbet",
     "refTraffic": "Trafik",
     "refConcert": "Konser",
-    "saveImage": "Görseli kaydet"
+    "saveImage": "Görseli kaydet",
+    "kbTool": "Klavye test aracı",
+    "kbHint": "Tüm tuşlara bas. Tarayıcı her tuşu algıladığında tuş yanar.",
+    "startKb": "Klavye testini başlat",
+    "kbTested": "Test edilen tuşlar",
+    "kbLast": "Son tuş",
+    "kbHeld": "Şu an basılı",
+    "kbMaxHeld": "Aynı anda en fazla",
+    "kbChatter": "Çift basmalar",
+    "kbChatterTip": "Bir tuş 40 ms'den kısa sürede iki kez algılandı. Bu genelde yıpranmış ya da kirli bir switch'e işaret eder (key chatter).",
+    "kbReady": "Hazır. Herhangi bir tuşa bas.",
+    "kbMobile": "Bu test fiziksel klavyeler içindir. Telefon veya tablette Bluetooth ya da USB ile bir klavye bağla.",
+    "kbNote": "Fn, Print Screen veya Windows tuşu gibi bazı tuşları sistem kendisi işler ve bunlar tarayıcıya hiç ulaşmayabilir. Bu, tuşun bozuk olduğu anlamına gelmez.",
+    "msTool": "Mouse test aracı",
+    "msHint": "Alanın içinde tıkla, çift tıkla ve tekerleği çevir. Tüm tuşlar algılanır.",
+    "msArea": "Herhangi bir mouse tuşuyla buraya tıkla",
+    "startMs": "Mouse testini başlat",
+    "msLeft": "Sol",
+    "msMiddle": "Orta",
+    "msRight": "Sağ",
+    "msBack": "Geri",
+    "msForward": "İleri",
+    "msWheelUp": "Yukarı kaydır",
+    "msWheelDown": "Aşağı kaydır",
+    "msGhost": "İstemsiz çift tıklamalar",
+    "msGhostTip": "Bir tuş 80 ms'den kısa sürede iki kez algılandı. Bu, bir parmağın tıklayabileceğinden hızlıdır ve genelde yıpranmış bir switch demektir.",
+    "msCps": "Saniyedeki tıklama",
+    "msPoll": "Polling rate",
+    "msPollHint": "Mouse'u alanın üzerinde hızlıca daireler çizerek hareket ettir.",
+    "pxTool": "Ölü piksel testi",
+    "pxHint": "Tüm ekranı sırayla tek bir renkle doldur ve uyumsuz noktalara bak.",
+    "startPx": "Ölü piksel testini başlat",
+    "pxHelp": "Sonraki renk için tıkla veya → tuşuna bas. Çıkmak için Esc.",
+    "pxFixer": "Takılı piksel düzeltici",
+    "pxFixerHint": "Yanıp sönen kareyi takılı pikselin üzerine getir ve 10 ila 20 dakika çalışır halde bırak.",
+    "pxWarn": "Uyarı: düzeltici çok hızlı yanıp söner. Yanıp sönen ışığa hassassan kullanma.",
+    "startFixer": "Düzelticiyi başlat",
+    "scrRes": "Ekran çözünürlüğü",
+    "scrView": "Tarayıcı penceresi",
+    "scrDpr": "Piksel oranı",
+    "scrHz": "Yenileme hızı",
+    "scrDepth": "Renk derinliği",
+    "colBlack": "Siyah",
+    "colWhite": "Beyaz",
+    "colRed": "Kırmızı",
+    "colGreen": "Yeşil",
+    "colBlue": "Mavi",
+    "colGray": "Gri"
   },
   "pages": {
     "home": {
@@ -872,6 +919,161 @@
         {
           "q": "Sesim kaydediliyor mu?",
           "a": "Hayır. Ses sadece seviyeyi hesaplamak için tarayıcında analiz edilir. Hiçbir şey kaydedilmez veya yüklenmez."
+        }
+      ]
+    },
+    "keyboard": {
+      "card": {
+        "name": "Klavye testi",
+        "desc": "Tüm tuşlar çalışıyor mu?"
+      },
+      "title": "Online klavye testi: tüm tuşları ücretsiz kontrol et",
+      "description": "Ücretsiz online klavye testi. Her tuşa bas ve yandığını gör. Laptop ve mekanik klavyelerde çalışmayan tuşları, çift basmayı ve ghosting'i bul.",
+      "h1Html": "Online <span class=\"grad\">klavye testi</span>",
+      "lead": "Tüm tuşlara bas ve hangilerinin çalıştığını gör. Çalışmayan tuşlar, çift basmalar ve klavyenin aynı anda kaç tuşu algıladığı, hepsi tarayıcında.",
+      "article": [
+        {
+          "h": "Klavye nasıl test edilir",
+          "ol": [
+            "\"Klavye testini başlat\" düğmesine tıkla ya da bu sayfada yazmaya başla.",
+            "Her tuşa bir kez bas. Çalışan tuşlar ekrandaki klavyede yeşile döner.",
+            "Bastığın halde gri kalan tuşlar bilgisayara ulaşmıyor demektir.",
+            "Klavyenin aynı anda kaç tuşu algıladığını görmek için birkaç tuşu birlikte basılı tut."
+          ]
+        },
+        {
+          "h": "Key chatter ve ghosting",
+          "p": [
+            "Key chatter, tek bir basışın harfi iki kez yazmasıdır. Test aracı, bir öncekinden 40 ms'den kısa süre sonra gelen basışları sayar, bu hiçbir parmağın yetişemeyeceği bir hızdır. Bir tuş bunu sürekli yapıyorsa switch yıpranmış ya da kirlenmiştir: basınçlı hava dene, mekanik klavyedeyse switch'i değiştir.",
+            "Ghosting, birkaç tuşa birlikte bastığında birinin algılanmamasıdır. Oyunlarda kullandığın tuşları, örneğin W, A, Shift ve Boşluk tuşunu basılı tut ve \"Aynı anda en fazla\" değerine bak. Birçok laptop klavyesi bazı kombinasyonlarda 2 veya 3 tuşta kalırken oyuncu klavyeleri genelde 6 veya daha fazlasını algılar."
+          ]
+        },
+        {
+          "h": "Bir tuş yanmıyor. Şimdi ne yapmalı?",
+          "p": [
+            "Önce klavyenin farklı bir modda olmadığından emin ol: Fn Lock, Num Lock ve oyun modları bazı tuşların gönderdiği sinyali değiştirebilir. Başka bir USB girişi dene ya da Bluetooth klavyeyi yeniden eşleştir. Tuş tüm programlarda ve başka bir bilgisayarda da çalışmıyorsa sorun klavyenin kendisindedir. Fn ve Print Screen gibi tuşları sistem işlediği için tarayıcıdaki bir test bunları göremez."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Bu klavye testi ücretsiz mi?",
+          "a": "Evet. Tarayıcında çalışır, hiçbir şey yüklenmez ve yazdığın hiçbir şey bir yere gönderilmez."
+        },
+        {
+          "q": "Mekanik, laptop ve kablosuz klavyelerle çalışır mı?",
+          "a": "Evet. Bilgisayarının tanıdığı her klavye çalışır: USB, Bluetooth, laptopun kendi klavyesi ve mekanik klavyeler."
+        },
+        {
+          "q": "Fn veya Windows tuşu neden yanmıyor?",
+          "a": "İşletim sistemi bu tuşları tarayıcıdan önce işler. Bu normaldir ve tuşun bozuk olduğu anlamına gelmez."
+        },
+        {
+          "q": "Klavyem Q veya F klavye. Yine de çalışır mı?",
+          "a": "Evet. Test aracı her tuşun fiziksel konumunu takip eder, sen yazdıkça etiketler de klavye düzenine göre değişir."
+        }
+      ]
+    },
+    "mouse": {
+      "card": {
+        "name": "Mouse testi",
+        "desc": "Tuşlar, tekerlek ve çift tıklama."
+      },
+      "title": "Online mouse testi: tıklama, çift tıklama ve tekerlek testi",
+      "description": "Ücretsiz online mouse testi. Sol, sağ, orta ve yan tuşları, tekerleği, kendi kendine çift tıklamayı ve polling rate değerini tarayıcında kontrol et.",
+      "h1Html": "Online <span class=\"grad\">mouse testi</span>",
+      "lead": "Her tuşu ve tekerleği kontrol et, kendi kendine çift tıklayan mouse'u yakala ve polling rate değerini ölç.",
+      "article": [
+        {
+          "h": "Mouse nasıl test edilir",
+          "ol": [
+            "Test alanının içine sol, sağ ve orta tuşla tıkla.",
+            "Mouse'unda varsa yan tuşlara (geri ve ileri) bas.",
+            "Tekerleği yukarı ve aşağı çevir. Her yön ayrı ayrı yanar.",
+            "Polling rate değerini ölçmek için mouse'u hızlıca daireler çizerek hareket ettir."
+          ]
+        },
+        {
+          "h": "Mouse'um kendi kendine çift tıklıyor mu?",
+          "p": [
+            "Yıpranmış bir switch tek basışta iki tıklama gönderebilir. Bu yüzden sadece seçmek istediğin dosyalar açılır ya da sürüklediğin şey kendiliğinden bırakılır. Test aracı, aynı tuşun 80 ms'den kısa arayla gelen iki tıklamasını işaretler, bu bir insanın bilerek tıklayabileceğinden hızlıdır. Normal tıklarken bunlardan birkaç tane görürsen switch bozuluyor demektir."
+          ]
+        },
+        {
+          "h": "Polling rate nedir?",
+          "p": [
+            "Polling rate, mouse'un konumunu saniyede kaç kez bildirdiğidir. Ofis mouse'ları genelde 125 Hz, oyuncu mouse'ları 500 veya 1000 Hz, bazı yeni modeller ise daha fazlasını kullanır. Gerçek değeri görmek için mouse'u hızlı hareket ettir. Tarayıcı ve ekran ölçümü sınırlayabilir, bu yüzden sonucu yakın bir tahmin olarak düşün."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Bu mouse testi ücretsiz mi?",
+          "a": "Evet. İndirme yok, kayıt yok. Her modern tarayıcıda çalışır."
+        },
+        {
+          "q": "Yan tuşları test edebilir miyim?",
+          "a": "Evet. Geri ve ileri tuşları test alanının içinde algılanır, test ederken sayfa başka yere gitmez."
+        },
+        {
+          "q": "Touchpad ile çalışır mı?",
+          "a": "Evet. Dokunmalar, iki parmakla tıklama ve iki parmakla kaydırma mouse tuşları ve tekerlek gibi algılanır."
+        },
+        {
+          "q": "Polling rate neden yazandan düşük çıkıyor?",
+          "a": "Mouse'u daha hızlı hareket ettir ve mouse yazılımındaki ayarı kontrol et. Bazı tarayıcılar ve kablosuz modlar da değeri sınırlar."
+        }
+      ]
+    },
+    "pixel": {
+      "card": {
+        "name": "Ölü piksel testi",
+        "desc": "Ölü ve takılı pikselleri bul."
+      },
+      "title": "Ölü piksel testi: ekranda ölü ve takılı piksel kontrolü",
+      "description": "Ücretsiz ölü piksel testi. Ekranı düz renklerle doldur, ölü veya takılı pikselleri bul ve düzelticiyi dene. Monitör, laptop ve telefonda çalışır.",
+      "h1Html": "<span class=\"grad\">Ölü piksel</span> testi",
+      "lead": "Ölü ve takılı pikselleri bulmak için ekranı düz renklerle doldur, gerçek çözünürlüğü ve yenileme hızını kontrol et, takılı bir pikseli düzeltmeyi dene.",
+      "article": [
+        {
+          "h": "Ekranda ölü piksel nasıl kontrol edilir",
+          "ol": [
+            "Toz piksel gibi görünmesin diye ekranı temizle.",
+            "\"Ölü piksel testini başlat\" düğmesine bas. Sayfa tam ekrana geçer.",
+            "Siyah, beyaz, kırmızı, yeşil, mavi ve gri arasında geçmek için tıkla veya sağ ok tuşuna bas.",
+            "Her renkte ekranın tamamına dikkatlice bak. Bitirince Esc tuşuna bas."
+          ]
+        },
+        {
+          "h": "Ölü piksel mi, takılı piksel mi?",
+          "p": [
+            "Ölü piksel her renkte siyah kalır ve en çok beyazda belli olur. Takılı piksel tek bir renkte, genelde kırmızı, yeşil veya mavide kalır ve siyahta göze çarpar. Takılı pikseller bazen kurtarılabilir. Ölü pikseller neredeyse hiç geri gelmez.",
+            "Ekran yeniyse iade koşullarına bak: birçok marka birkaç parlak veya ölü pikseli olan monitörü ya da laptopu değiştirir ve testi ilk günlerde yapmak en kolayıdır."
+          ]
+        },
+        {
+          "h": "Takılı piksel düzeltici nasıl çalışır",
+          "p": [
+            "Düzeltici küçük bir karede rastgele renkleri çok hızlı yakıp söndürür. Kareyi takılı pikselin üzerine getir ve 10 ila 20 dakika çalışır halde bırak. Bu bazen takılı alt pikselin yeniden renk değiştirmesini sağlar. Her zaman işe yaramaz ve ölü pikseli düzeltemez, ama ücretsizdir ve ekrana zarar vermez. Yanıp sönen ışık seni etkiliyorsa ona bakma."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Bu ölü piksel testi ücretsiz mi?",
+          "a": "Evet. Tarayıcında çalışır, uygulama yüklemen gerekmez."
+        },
+        {
+          "q": "Telefon ve televizyonlarda çalışır mı?",
+          "a": "Evet. Tarayıcısı olan her ekranda çalışır: monitörler, laptoplar, telefonlar, tabletler ve akıllı TV'ler."
+        },
+        {
+          "q": "Takılı piksel kendiliğinden düzelir mi?",
+          "a": "Bazen. Takılı piksel kullanımla ya da düzeltici çalıştırıldıktan sonra geri gelebilir. Siyah kalan ölü piksel genelde düzelmez."
+        },
+        {
+          "q": "Kaç ölü piksel kabul edilebilir?",
+          "a": "Markaya göre değişir. Birçoğu birkaç tanesine izin verir, ama bazıları sıfır parlak piksel garantisi verir. Modelinin garanti koşullarına bak."
         }
       ]
     }

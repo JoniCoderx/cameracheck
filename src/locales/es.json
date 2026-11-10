@@ -164,7 +164,54 @@
     "refTalk": "Conversación",
     "refTraffic": "Tráfico",
     "refConcert": "Concierto",
-    "saveImage": "Guardar imagen"
+    "saveImage": "Guardar imagen",
+    "kbTool": "Probador de teclado",
+    "kbHint": "Pulsa todas las teclas. Cada una se ilumina cuando el navegador la recibe.",
+    "startKb": "Iniciar test de teclado",
+    "kbTested": "Teclas probadas",
+    "kbLast": "Última tecla",
+    "kbHeld": "Pulsadas ahora",
+    "kbMaxHeld": "Máximo a la vez",
+    "kbChatter": "Pulsaciones dobles",
+    "kbChatterTip": "Una tecla se activó dos veces en menos de 40 ms. Suele indicar un interruptor gastado o sucio (rebote de tecla).",
+    "kbReady": "Listo. Pulsa cualquier tecla.",
+    "kbMobile": "Este test es para teclados físicos. En un móvil o tablet, conecta un teclado por Bluetooth o USB.",
+    "kbNote": "Algunas teclas, como Fn, Impr Pant o la tecla Windows, las gestiona el sistema y puede que nunca lleguen al navegador. Eso no significa que estén rotas.",
+    "msTool": "Probador de ratón",
+    "msHint": "Haz clic, doble clic y desplázate dentro del área. Se detectan todos los botones.",
+    "msArea": "Haz clic aquí con cualquier botón del ratón",
+    "startMs": "Iniciar test de ratón",
+    "msLeft": "Izquierdo",
+    "msMiddle": "Central",
+    "msRight": "Derecho",
+    "msBack": "Atrás",
+    "msForward": "Adelante",
+    "msWheelUp": "Rueda arriba",
+    "msWheelDown": "Rueda abajo",
+    "msGhost": "Dobles clics involuntarios",
+    "msGhostTip": "Un botón se activó dos veces en menos de 80 ms. Ningún dedo hace clic tan rápido, así que suele ser un interruptor gastado.",
+    "msCps": "Clics por segundo",
+    "msPoll": "Tasa de sondeo",
+    "msPollHint": "Mueve el ratón rápido en círculos sobre el área.",
+    "pxTool": "Test de píxeles muertos",
+    "pxHint": "Llena toda la pantalla con un solo color cada vez y busca puntos que no encajen.",
+    "startPx": "Iniciar test de píxeles",
+    "pxHelp": "Haz clic o pulsa → para el siguiente color. Esc para salir.",
+    "pxFixer": "Reparador de píxeles atascados",
+    "pxFixerHint": "Mueve el cuadrado parpadeante sobre el píxel atascado y déjalo funcionando de 10 a 20 minutos.",
+    "pxWarn": "Aviso: el reparador parpadea muy rápido. No lo uses si eres sensible a las luces intermitentes.",
+    "startFixer": "Iniciar reparador",
+    "scrRes": "Resolución de pantalla",
+    "scrView": "Ventana del navegador",
+    "scrDpr": "Relación de píxeles",
+    "scrHz": "Frecuencia de actualización",
+    "scrDepth": "Profundidad de color",
+    "colBlack": "Negro",
+    "colWhite": "Blanco",
+    "colRed": "Rojo",
+    "colGreen": "Verde",
+    "colBlue": "Azul",
+    "colGray": "Gris"
   },
   "pages": {
     "home": {
@@ -872,6 +919,161 @@
         {
           "q": "¿Se graba mi audio?",
           "a": "No. El sonido solo se analiza en tu navegador para calcular el nivel. No se graba ni se sube nada."
+        }
+      ]
+    },
+    "keyboard": {
+      "card": {
+        "name": "Test de teclado",
+        "desc": "Comprueba cada tecla."
+      },
+      "title": "Test de teclado online: comprueba todas las teclas gratis",
+      "description": "Test de teclado online gratis. Pulsa cada tecla y mira cómo se ilumina. Detecta teclas muertas, pulsaciones dobles y ghosting en portátiles y mecánicos.",
+      "h1Html": "<span class=\"grad\">Test de teclado</span> online",
+      "lead": "Pulsa todas las teclas y mira cuáles funcionan. Teclas muertas, pulsaciones dobles y cuántas teclas reconoce tu teclado a la vez, todo en el navegador.",
+      "article": [
+        {
+          "h": "Cómo probar tu teclado",
+          "ol": [
+            "Haz clic en \"Iniciar test de teclado\" o simplemente empieza a escribir en esta página.",
+            "Pulsa cada tecla una vez. Las que funcionan se ponen en verde.",
+            "Las teclas que siguen en gris después de pulsarlas no llegan al ordenador.",
+            "Mantén varias teclas pulsadas a la vez para ver cuántas registra tu teclado al mismo tiempo."
+          ]
+        },
+        {
+          "h": "Rebote de teclas y ghosting",
+          "p": [
+            "El rebote (key chatter) ocurre cuando una sola pulsación escribe la letra dos veces. El probador cuenta las pulsaciones que llegan menos de 40 ms después de la anterior, algo más rápido que cualquier dedo. Si una tecla lo hace una y otra vez, el interruptor está gastado o sucio: prueba con aire comprimido o, en un teclado mecánico, cambia el switch.",
+            "El ghosting ocurre cuando, al pulsar varias teclas juntas, una de ellas se pierde. Mantén pulsadas las teclas que usas para jugar, por ejemplo W, A, Mayús y Espacio, y fíjate en el valor \"Máximo a la vez\". Muchos teclados de portátil se quedan en 2 o 3 teclas en algunas combinaciones, mientras que los teclados gaming suelen aguantar 6 o más."
+          ]
+        },
+        {
+          "h": "Una tecla no se ilumina. ¿Y ahora qué?",
+          "p": [
+            "Primero comprueba que el teclado no esté en otro modo: Bloq Fn, Bloq Num y los modos gaming pueden cambiar lo que envían algunas teclas. Prueba otro puerto USB o vuelve a emparejar el teclado Bluetooth. Si la tecla falla en todas las aplicaciones y también en otro ordenador, el problema está en el propio teclado. Teclas como Fn e Impr Pant las gestiona el sistema, así que un test en el navegador no puede verlas."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Este test de teclado es gratis?",
+          "a": "Sí. Funciona en tu navegador, no instalas nada y nada de lo que escribes se envía a ninguna parte."
+        },
+        {
+          "q": "¿Funciona con teclados mecánicos, de portátil e inalámbricos?",
+          "a": "Sí. Funciona cualquier teclado que reconozca tu ordenador: USB, Bluetooth, el integrado del portátil y teclados mecánicos."
+        },
+        {
+          "q": "¿Por qué no se iluminan Fn ni la tecla Windows?",
+          "a": "El sistema operativo gestiona esas teclas antes de que el navegador las vea. Es normal y no significa que la tecla esté rota."
+        },
+        {
+          "q": "Mi teclado tiene otra distribución. ¿Funciona igual?",
+          "a": "Sí. El probador sigue la posición física de cada tecla, y las etiquetas se adaptan a tu distribución mientras escribes."
+        }
+      ]
+    },
+    "mouse": {
+      "card": {
+        "name": "Test de ratón",
+        "desc": "Botones, rueda y dobles clics."
+      },
+      "title": "Test de ratón online: clic, doble clic y rueda (mouse test)",
+      "description": "Test de ratón online gratis. Comprueba los botones izquierdo, derecho, central y laterales, la rueda, los dobles clics involuntarios y la tasa de sondeo.",
+      "h1Html": "<span class=\"grad\">Test de ratón</span> online",
+      "lead": "Comprueba cada botón y la rueda, pilla a un ratón que hace doble clic solo y mide su tasa de sondeo.",
+      "article": [
+        {
+          "h": "Cómo probar tu ratón",
+          "ol": [
+            "Haz clic dentro del área de prueba con los botones izquierdo, derecho y central.",
+            "Pulsa los botones laterales (atrás y adelante) si tu ratón los tiene.",
+            "Gira la rueda hacia arriba y hacia abajo. Cada dirección se ilumina por separado.",
+            "Mueve el ratón rápido en círculos para medir la tasa de sondeo."
+          ]
+        },
+        {
+          "h": "¿Mi ratón hace doble clic solo?",
+          "p": [
+            "Un interruptor gastado puede enviar dos clics con una sola pulsación. Por eso se abren archivos que solo querías seleccionar, o se sueltan solos los elementos que arrastras. El probador marca dos clics del mismo botón con menos de 80 ms de diferencia, más rápido de lo que una persona puede hacer clic a propósito. Si aparecen unos cuantos mientras haces clic con normalidad, el interruptor está fallando."
+          ]
+        },
+        {
+          "h": "¿Qué es la tasa de sondeo?",
+          "p": [
+            "La tasa de sondeo (polling rate) es cuántas veces por segundo el ratón informa de su posición. Los ratones de oficina suelen ir a 125 Hz, los gaming a 500 o 1000 Hz y algunos modelos nuevos incluso más. Mueve el ratón rápido para ver el número real. El navegador y la pantalla pueden limitar la medición, así que tómalo como una estimación aproximada."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Este test de ratón es gratis?",
+          "a": "Sí. Sin descargas ni registro. Funciona en cualquier navegador moderno."
+        },
+        {
+          "q": "¿Puedo probar los botones laterales?",
+          "a": "Sí. Los botones atrás y adelante se detectan dentro del área de prueba, y la página no cambia mientras los pruebas."
+        },
+        {
+          "q": "¿Funciona con un touchpad?",
+          "a": "Sí. Los toques, los clics con dos dedos y el desplazamiento con dos dedos se detectan como los botones y la rueda del ratón."
+        },
+        {
+          "q": "¿Por qué mi tasa de sondeo es más baja de lo anunciado?",
+          "a": "Mueve el ratón más rápido y revisa el ajuste en el software del ratón. Algunos navegadores y modos inalámbricos también limitan la tasa."
+        }
+      ]
+    },
+    "pixel": {
+      "card": {
+        "name": "Píxeles muertos",
+        "desc": "Encuentra píxeles muertos."
+      },
+      "title": "Test de píxeles muertos: revisa tu pantalla gratis",
+      "description": "Test de píxeles muertos gratis. Llena la pantalla de colores sólidos para ver píxeles muertos o atascados y prueba el reparador. PC, portátil y móvil.",
+      "h1Html": "Test de <span class=\"grad\">píxeles muertos</span>",
+      "lead": "Llena la pantalla de colores sólidos para detectar píxeles muertos y atascados, comprueba su resolución y frecuencia de actualización reales e intenta reparar un píxel atascado.",
+      "article": [
+        {
+          "h": "Cómo buscar píxeles muertos en tu pantalla",
+          "ol": [
+            "Limpia la pantalla para que el polvo no parezca un píxel.",
+            "Pulsa \"Iniciar test de píxeles\". La página pasa a pantalla completa.",
+            "Haz clic o pulsa la flecha derecha para pasar por negro, blanco, rojo, verde, azul y gris.",
+            "Revisa con atención toda la pantalla en cada color. Pulsa Esc cuando termines."
+          ]
+        },
+        {
+          "h": "¿Píxel muerto o píxel atascado?",
+          "p": [
+            "Un píxel muerto se queda negro con todos los colores y se nota sobre todo en blanco. Un píxel atascado se queda fijo en un color, normalmente rojo, verde o azul, y destaca sobre negro. Los píxeles atascados a veces se pueden recuperar. Los muertos casi nunca vuelven.",
+            "Si la pantalla es nueva, revisa la política de devoluciones: muchas marcas cambian un monitor o portátil con unos pocos píxeles brillantes o muertos, y el test es más fácil de hacer en los primeros días."
+          ]
+        },
+        {
+          "h": "Cómo funciona el reparador de píxeles atascados",
+          "p": [
+            "El reparador hace parpadear colores aleatorios muy rápido en un cuadrado pequeño. Colócalo sobre el píxel atascado y déjalo funcionando de 10 a 20 minutos. A veces así el subpíxel atascado vuelve a cambiar. No siempre funciona y no puede arreglar un píxel muerto, pero es gratis y seguro para la pantalla. No lo mires si te afectan las luces intermitentes."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Este test de píxeles muertos es gratis?",
+          "a": "Sí. Funciona en tu navegador, sin instalar ninguna app."
+        },
+        {
+          "q": "¿Funciona en móviles y televisores?",
+          "a": "Sí. Funciona en cualquier pantalla con navegador: monitores, portátiles, móviles, tablets y smart TV."
+        },
+        {
+          "q": "¿Un píxel atascado se puede arreglar solo?",
+          "a": "A veces. Un píxel atascado puede recuperarse con el uso o después de usar el reparador. Un píxel muerto que se queda negro normalmente no."
+        },
+        {
+          "q": "¿Cuántos píxeles muertos son aceptables?",
+          "a": "Depende de la marca. Muchas permiten unos pocos, pero algunas prometen cero píxeles brillantes. Revisa la garantía de tu modelo."
         }
       ]
     }

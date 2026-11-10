@@ -164,7 +164,54 @@
     "refTalk": "Percakapan",
     "refTraffic": "Lalu lintas",
     "refConcert": "Konser",
-    "saveImage": "Simpan gambar"
+    "saveImage": "Simpan gambar",
+    "kbTool": "Penguji keyboard",
+    "kbHint": "Tekan setiap tombol. Tombol akan menyala saat browser menerimanya.",
+    "startKb": "Mulai tes keyboard",
+    "kbTested": "Tombol dites",
+    "kbLast": "Tombol terakhir",
+    "kbHeld": "Sedang ditekan",
+    "kbMaxHeld": "Maksimal sekaligus",
+    "kbChatter": "Tekanan ganda",
+    "kbChatterTip": "Satu tombol terbaca dua kali dalam waktu kurang dari 40 ms. Biasanya ini tanda switch yang aus atau kotor (key chatter).",
+    "kbReady": "Siap. Tekan tombol apa saja.",
+    "kbMobile": "Tes ini untuk keyboard fisik. Di ponsel atau tablet, sambungkan keyboard lewat Bluetooth atau USB.",
+    "kbNote": "Beberapa tombol, seperti Fn, Print Screen, atau tombol Windows, ditangani oleh sistem dan bisa saja tidak pernah sampai ke browser. Itu bukan berarti tombolnya rusak.",
+    "msTool": "Penguji mouse",
+    "msHint": "Klik, klik dua kali, dan scroll di dalam area. Setiap tombol akan terdeteksi.",
+    "msArea": "Klik di sini dengan tombol mouse mana saja",
+    "startMs": "Mulai tes mouse",
+    "msLeft": "Kiri",
+    "msMiddle": "Tengah",
+    "msRight": "Kanan",
+    "msBack": "Kembali",
+    "msForward": "Maju",
+    "msWheelUp": "Scroll ke atas",
+    "msWheelDown": "Scroll ke bawah",
+    "msGhost": "Klik ganda tak sengaja",
+    "msGhostTip": "Satu tombol terbaca dua kali dalam waktu kurang dari 80 ms. Itu lebih cepat dari klik jari dan biasanya berarti switch sudah aus.",
+    "msCps": "Klik per detik",
+    "msPoll": "Polling rate",
+    "msPollHint": "Gerakkan mouse dengan cepat membentuk lingkaran di atas area.",
+    "pxTool": "Tes dead pixel",
+    "pxHint": "Isi seluruh layar dengan satu warna bergantian dan cari titik yang warnanya tidak sama.",
+    "startPx": "Mulai tes dead pixel",
+    "pxHelp": "Klik atau tekan → untuk warna berikutnya. Esc untuk keluar.",
+    "pxFixer": "Perbaikan stuck pixel",
+    "pxFixerHint": "Pindahkan kotak berkedip ke atas stuck pixel dan biarkan berjalan selama 10 sampai 20 menit.",
+    "pxWarn": "Perhatian: alat ini berkedip sangat cepat. Jangan gunakan jika Anda sensitif terhadap cahaya berkedip.",
+    "startFixer": "Mulai perbaikan",
+    "scrRes": "Resolusi layar",
+    "scrView": "Jendela browser",
+    "scrDpr": "Rasio piksel",
+    "scrHz": "Refresh rate",
+    "scrDepth": "Kedalaman warna",
+    "colBlack": "Hitam",
+    "colWhite": "Putih",
+    "colRed": "Merah",
+    "colGreen": "Hijau",
+    "colBlue": "Biru",
+    "colGray": "Abu-abu"
   },
   "pages": {
     "home": {
@@ -872,6 +919,161 @@
         {
           "q": "Apakah suara saya direkam?",
           "a": "Tidak. Suara hanya dianalisis di browser untuk menghitung level. Tidak ada yang direkam atau diunggah."
+        }
+      ]
+    },
+    "keyboard": {
+      "card": {
+        "name": "Tes keyboard",
+        "desc": "Cek semua tombol berfungsi."
+      },
+      "title": "Tes keyboard online: cek semua tombol keyboard gratis",
+      "description": "Tes keyboard online gratis. Tekan setiap tombol dan lihat tombolnya menyala. Temukan tombol mati, key chatter, dan ghosting di laptop dan keyboard mekanik.",
+      "h1Html": "<span class=\"grad\">Tes keyboard</span> online",
+      "lead": "Tekan semua tombol dan lihat mana yang berfungsi. Tombol mati, tekanan ganda, dan berapa tombol yang bisa dibaca keyboard Anda sekaligus, langsung di browser.",
+      "article": [
+        {
+          "h": "Cara mengetes keyboard Anda",
+          "ol": [
+            "Klik \"Mulai tes keyboard\" atau langsung saja mengetik di halaman ini.",
+            "Tekan setiap tombol satu kali. Tombol yang berfungsi berubah hijau di papan.",
+            "Tombol yang tetap abu-abu setelah ditekan berarti sinyalnya tidak sampai ke komputer.",
+            "Tahan beberapa tombol sekaligus untuk melihat berapa banyak yang dibaca keyboard Anda bersamaan."
+          ]
+        },
+        {
+          "h": "Key chatter dan ghosting",
+          "p": [
+            "Key chatter terjadi saat satu kali tekan mengetik huruf dua kali. Penguji ini menghitung tekanan yang datang kurang dari 40 ms setelah tekanan sebelumnya, lebih cepat dari jari mana pun. Jika satu tombol terus begitu, switch-nya aus atau kotor: coba semprot dengan udara bertekanan, atau ganti switch-nya pada keyboard mekanik.",
+            "Ghosting terjadi saat salah satu tombol tidak terbaca ketika beberapa tombol ditekan bersamaan. Tahan tombol yang biasa Anda pakai untuk game, misalnya W, A, Shift, dan Spasi, lalu lihat angka \"Maksimal sekaligus\". Banyak keyboard laptop berhenti di 2 atau 3 tombol pada kombinasi tertentu, sedangkan keyboard gaming biasanya sanggup 6 tombol atau lebih."
+          ]
+        },
+        {
+          "h": "Ada tombol yang tidak menyala. Lalu bagaimana?",
+          "p": [
+            "Pertama, pastikan keyboard tidak sedang dalam mode lain: Fn Lock, Num Lock, dan mode gaming bisa mengubah sinyal yang dikirim beberapa tombol. Coba port USB lain atau pasangkan ulang keyboard Bluetooth. Jika tombol tetap tidak berfungsi di semua aplikasi dan juga di komputer lain, masalahnya ada pada keyboard itu sendiri. Tombol seperti Fn dan Print Screen ditangani oleh sistem, jadi tes di browser tidak bisa melihatnya."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Apakah tes keyboard ini gratis?",
+          "a": "Ya. Tes ini berjalan di browser Anda, tidak perlu memasang apa pun, dan tidak ada ketikan Anda yang dikirim ke mana pun."
+        },
+        {
+          "q": "Apakah bisa untuk keyboard mekanik, laptop, dan wireless?",
+          "a": "Bisa. Semua keyboard yang dikenali komputer Anda bisa dites: USB, Bluetooth, keyboard bawaan laptop, dan keyboard mekanik."
+        },
+        {
+          "q": "Kenapa tombol Fn atau Windows tidak menyala?",
+          "a": "Sistem operasi menangani tombol tersebut sebelum browser melihatnya. Itu normal dan bukan berarti tombolnya rusak."
+        },
+        {
+          "q": "Layout keyboard saya berbeda. Apakah tetap bisa?",
+          "a": "Bisa. Penguji mengikuti posisi fisik setiap tombol, dan labelnya berubah mengikuti layout Anda saat Anda mengetik."
+        }
+      ]
+    },
+    "mouse": {
+      "card": {
+        "name": "Tes mouse",
+        "desc": "Tombol, scroll, dan klik ganda."
+      },
+      "title": "Tes mouse online: cek klik, double click, dan scroll",
+      "description": "Tes mouse online gratis. Cek tombol kiri, kanan, tengah, dan samping, scroll wheel, double click sendiri, dan polling rate langsung di browser Anda.",
+      "h1Html": "<span class=\"grad\">Tes mouse</span> online",
+      "lead": "Cek setiap tombol dan scroll wheel, ketahui apakah mouse Anda double click sendiri, dan ukur polling rate-nya.",
+      "article": [
+        {
+          "h": "Cara mengetes mouse Anda",
+          "ol": [
+            "Klik di dalam area tes dengan tombol kiri, kanan, dan tengah.",
+            "Tekan tombol samping (kembali dan maju) jika mouse Anda memilikinya.",
+            "Putar scroll wheel ke atas dan ke bawah. Setiap arah menyala terpisah.",
+            "Gerakkan mouse dengan cepat membentuk lingkaran untuk mengukur polling rate."
+          ]
+        },
+        {
+          "h": "Apakah mouse saya double click sendiri?",
+          "p": [
+            "Switch yang aus bisa mengirim dua klik untuk satu kali tekan. Akibatnya file terbuka padahal Anda hanya ingin memilihnya, atau drag terlepas dengan sendirinya. Penguji menandai dua klik dari tombol yang sama dengan jeda kurang dari 80 ms, lebih cepat dari klik yang disengaja. Jika beberapa muncul saat Anda klik seperti biasa, berarti switch-nya mulai rusak."
+          ]
+        },
+        {
+          "h": "Apa itu polling rate?",
+          "p": [
+            "Polling rate adalah berapa kali per detik mouse melaporkan posisinya. Mouse kantor biasanya 125 Hz, mouse gaming 500 atau 1000 Hz, dan beberapa model baru bahkan lebih tinggi. Gerakkan mouse dengan cepat untuk melihat angka sebenarnya. Browser dan layar bisa membatasi hasil pengukuran, jadi anggap ini perkiraan yang mendekati."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Apakah tes mouse ini gratis?",
+          "a": "Ya. Tanpa unduhan dan tanpa daftar. Bisa di browser modern apa pun."
+        },
+        {
+          "q": "Apakah tombol samping bisa dites?",
+          "a": "Bisa. Tombol kembali dan maju terdeteksi di dalam area tes, dan halaman tidak akan berpindah saat Anda mengetesnya."
+        },
+        {
+          "q": "Apakah bisa untuk touchpad?",
+          "a": "Bisa. Ketukan, klik dua jari, dan scroll dua jari terdeteksi seperti tombol dan scroll wheel mouse."
+        },
+        {
+          "q": "Kenapa polling rate saya lebih rendah dari spesifikasi?",
+          "a": "Gerakkan mouse lebih cepat, dan cek pengaturan di software mouse. Beberapa browser dan mode wireless juga membatasi angkanya."
+        }
+      ]
+    },
+    "pixel": {
+      "card": {
+        "name": "Tes dead pixel",
+        "desc": "Cari dead pixel dan stuck pixel."
+      },
+      "title": "Tes dead pixel: cek layar dari dead pixel dan stuck pixel",
+      "description": "Tes dead pixel gratis. Isi layar dengan warna solid untuk mencari dead atau stuck pixel, lalu coba perbaikannya. Bisa untuk monitor, laptop, dan HP.",
+      "h1Html": "Tes <span class=\"grad\">dead pixel</span>",
+      "lead": "Isi layar dengan warna solid untuk menemukan dead pixel dan stuck pixel, cek resolusi dan refresh rate sebenarnya, dan coba perbaiki stuck pixel.",
+      "article": [
+        {
+          "h": "Cara cek dead pixel di layar",
+          "ol": [
+            "Bersihkan layar agar debu tidak terlihat seperti piksel.",
+            "Tekan \"Mulai tes dead pixel\". Halaman akan masuk ke layar penuh.",
+            "Klik atau tekan panah kanan untuk berganti ke hitam, putih, merah, hijau, biru, dan abu-abu.",
+            "Perhatikan seluruh layar dengan teliti di setiap warna. Tekan Esc jika sudah selesai."
+          ]
+        },
+        {
+          "h": "Dead pixel atau stuck pixel?",
+          "p": [
+            "Dead pixel tetap hitam di semua warna dan paling terlihat di latar putih. Stuck pixel tertahan di satu warna, biasanya merah, hijau, atau biru, dan mencolok di latar hitam. Stuck pixel kadang masih bisa dihidupkan lagi. Dead pixel hampir tidak pernah kembali.",
+            "Untuk layar baru, cek kebijakan retur atau garansi: banyak merek mengganti monitor atau laptop yang punya beberapa bright pixel atau dead pixel, dan tes paling mudah dilakukan di hari-hari pertama."
+          ]
+        },
+        {
+          "h": "Cara kerja perbaikan stuck pixel",
+          "p": [
+            "Alat ini mengedipkan warna acak dengan sangat cepat di sebuah kotak kecil. Pindahkan kotak ke atas stuck pixel dan biarkan berjalan selama 10 sampai 20 menit. Terkadang cara ini membuat subpiksel yang macet bisa berganti warna lagi. Tidak selalu berhasil dan tidak bisa memperbaiki dead pixel, tapi gratis dan aman untuk layar. Jangan menatapnya jika Anda terganggu oleh cahaya berkedip."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Apakah tes dead pixel ini gratis?",
+          "a": "Ya. Tes ini berjalan di browser Anda tanpa perlu memasang aplikasi."
+        },
+        {
+          "q": "Apakah bisa di HP dan TV?",
+          "a": "Bisa. Tes ini berfungsi di layar apa pun yang punya browser: monitor, laptop, HP, tablet, dan smart TV."
+        },
+        {
+          "q": "Apakah stuck pixel bisa pulih sendiri?",
+          "a": "Kadang bisa. Stuck pixel bisa kembali normal seiring pemakaian atau setelah menjalankan alat perbaikan. Dead pixel yang tetap hitam biasanya tidak."
+        },
+        {
+          "q": "Berapa jumlah dead pixel yang masih wajar?",
+          "a": "Tergantung mereknya. Banyak yang menoleransi beberapa, tetapi ada juga yang menjamin nol bright pixel. Cek garansi model Anda."
         }
       ]
     }

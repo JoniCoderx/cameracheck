@@ -690,13 +690,15 @@
 
   /* ---------------- hero button ---------------- */
   on('#heroStart', 'click', async (e) => {
-    getCtx();
     const action = e.currentTarget.dataset.action;
-    const target = { all: '#mic', mic: '#mic', cam: '#cam', spk: '#speaker', rec: '#recorder', db: '#dbm' }[action];
+    if (action === 'px' && window.__pxStart) return window.__pxStart();
+    if (!['kb', 'ms'].includes(action)) getCtx();
+    const target = { all: '#mic', mic: '#mic', cam: '#cam', spk: '#speaker', rec: '#recorder', db: '#dbm', kb: '#kbd', ms: '#mouse', px: '#pixel' }[action];
     if ($(target)) $(target).scrollIntoView({ behavior: 'smooth' });
     if ((action === 'all' || action === 'mic') && !mic.stream) await startMic();
     if ((action === 'all' || action === 'cam') && !cam.stream) await startCam();
     if (action === 'db') { const b = $('#dbBtn'); if (b && !b.classList.contains('on')) b.click(); }
+    if (action === 'kb' && window.__kbStart) window.__kbStart();
     if (action === 'rec') { const rb = $('#recToggle'); if (rb && !rb.classList.contains('on')) rb.click(); }
     if (action === 'spk') { const btn = $('.spk-btn[data-pan="0"]'); if (btn) btn.click(); }
   });
@@ -869,6 +871,217 @@
       logEvent('voice_recording', { seconds: Math.round(dur / 1000) });
     }
     on('#recToggle', 'click', () => { if (R.rec && R.rec.state === 'recording') R.rec.stop(); else startRec(); });
+  }
+
+  /* ---------------- KEYBOARD TESTER ---------------- */
+  if ($('#kbd')) {
+    const board = $('#kbBoard'), focusBox = $('#kbFocus'), trail = $('#kbTrail');
+    const keys = {}; $$('#kbBoard .k').forEach((el) => { keys[el.dataset.code] = el; });
+    const K = { tested: new Set(), held: new Set(), max: 0, chat: 0, lastDown: {}, armed: false, logged: false };
+    const isMac = /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent);
+    if (isMac) { ['MetaLeft', 'MetaRight'].forEach((c) => { if (keys[c]) keys[c].textContent = '⌘'; }); ['AltLeft', 'AltRight'].forEach((c) => { if (keys[c]) keys[c].textContent = '⌥'; }); }
+    if (matchMedia('(pointer: coarse)').matches && !matchMedia('(any-pointer: fine)').matches) $('#kbMobile').hidden = false;
+    const BLOCK = /^(Tab|Space|Backspace|Enter|Arrow|Page|Home|End|F\d|Quote|Slash|Alt|Meta|ContextMenu|Escape|Numpad)/;
+    const arm = (v) => { K.armed = v; focusBox.classList.toggle('armed', v); };
+    const stats = () => {
+      setText('#kbCount', K.tested.size); setText('#kbHeld', K.held.size); setText('#kbMax', K.max); setText('#kbChat', K.chat);
+    };
+    const press = (e, down) => {
+      const t = e.target;
+      if (t && (t.tagName === 'SELECT' || t.tagName === 'INPUT' || t.tagName === 'TEXTAREA')) return;
+      const code = e.code || '';
+      const el = keys[code];
+      if (down && !K.armed && (code.startsWith('Key') || code.startsWith('Digit') || code === 'Space')) arm(true);
+      if (down && K.armed && code === 'Escape' && e.repeat) { arm(false); return; }
+      if (K.armed && (BLOCK.test(code) || e.ctrlKey || e.metaKey)) e.preventDefault();
+      if (!code) return;
+      if (down) {
+        if (e.repeat) return;
+        if (!K.logged) { K.logged = true; logEvent('keyboard_test'); }
+        const now = performance.now();
+        if (K.lastDown[code] && now - K.lastDown[code] < 40) { K.chat++; $('#kbTip').hidden = false; if (el) el.classList.add('chat'); }
+        K.lastDown[code] = now;
+        K.held.add(code); K.max = Math.max(K.max, K.held.size);
+        K.tested.add(code);
+        focusBox.classList.add('typed');
+        if (el) {
+          el.classList.add('on', 'done');
+          if (e.key && e.key.length === 1 && e.key !== ' ' && !e.shiftKey && !e.altKey && !e.ctrlKey && !e.metaKey && !code.startsWith('Numpad')) el.textContent = e.key.toUpperCase();
+        }
+        const name = e.key === ' ' ? 'Space' : e.key === 'Dead' || !e.key ? code : e.key.length === 1 ? e.key.toUpperCase() : e.key;
+        setText('#kbLast', name); setText('#kbCode', code);
+        const chip = document.createElement('span'); chip.textContent = name; trail.prepend(chip);
+        while (trail.children.length > 18) trail.lastChild.remove();
+      } else {
+        K.held.delete(code);
+        if (el) el.classList.remove('on');
+        if (code === 'PrintScreen' && !K.tested.has(code)) { K.tested.add(code); if (el) el.classList.add('done'); }
+      }
+      stats();
+    };
+    window.addEventListener('keydown', (e) => press(e, true));
+    window.addEventListener('keyup', (e) => press(e, false));
+    window.addEventListener('blur', () => { K.held.clear(); $$('#kbBoard .k.on').forEach((k) => k.classList.remove('on')); stats(); });
+    focusBox.addEventListener('pointerdown', () => { arm(true); focusBox.focus({ preventScroll: true }); });
+    document.addEventListener('pointerdown', (e) => { if (!$('#kbd').contains(e.target)) arm(false); });
+    on('#kbReset', 'click', () => {
+      K.tested.clear(); K.held.clear(); K.max = 0; K.chat = 0; K.lastDown = {};
+      $$('#kbBoard .k').forEach((k) => k.classList.remove('on', 'done', 'chat'));
+      focusBox.classList.remove('typed'); trail.textContent = ''; setText('#kbLast', '–'); setText('#kbCode', ''); $('#kbTip').hidden = true; stats();
+    });
+    window.__kbStart = () => { arm(true); focusBox.focus({ preventScroll: true }); };
+  }
+
+  /* ---------------- MOUSE TESTER ---------------- */
+  if ($('#mouse')) {
+    const area = $('#msArea'), rip = $('#msRip');
+    const M = { c: [0, 0, 0, 0, 0], up: 0, down: 0, ghost: 0, last: [0, 0, 0, 0, 0], clicks: [], cpsMax: 0, ev: [], hzMax: 0, logged: false, wheelT: 0 };
+    const part = (id, cls) => { const el = $('#' + id); if (el) el.classList.add(cls); return el; };
+    const flash = (el) => { if (!el) return; el.classList.add('hit'); clearTimeout(el._t); el._t = setTimeout(() => el.classList.remove('hit'), 160); };
+    const draw = () => {
+      for (let b = 0; b < 5; b++) setText('#msC' + b, M.c[b]);
+      setText('#msCU', M.up); setText('#msCD', M.down); setText('#msCG', M.ghost);
+      $('#msSG').classList.toggle('bad', M.ghost > 0);
+    };
+    area.addEventListener('contextmenu', (e) => e.preventDefault());
+    area.addEventListener('auxclick', (e) => e.preventDefault());
+    area.addEventListener('mouseup', (e) => {
+      if (e.button > 0) e.preventDefault();
+      const p = $('#msP' + e.button); if (p) p.classList.remove('on');
+    });
+    area.addEventListener('mousedown', (e) => {
+      e.preventDefault();
+      const b = e.button; if (b < 0 || b > 4) return;
+      if (!M.logged) { M.logged = true; logEvent('mouse_test'); }
+      const now = performance.now();
+      if (M.last[b] && now - M.last[b] < 80) { M.ghost++; $('#msTip').hidden = false; flash($('#msSG')); }
+      M.last[b] = now;
+      M.c[b]++; M.clicks.push(now);
+      part('msP' + b, 'on'); part('msP' + b, 'done'); $('#msS' + b).classList.add('done'); flash($('#msS' + b));
+      area.classList.add('used');
+      const r = area.getBoundingClientRect(), d = document.createElement('i');
+      d.className = 'b' + b; d.style.left = (e.clientX - r.left) + 'px'; d.style.top = (e.clientY - r.top) + 'px';
+      rip.append(d); setTimeout(() => d.remove(), 600);
+      draw();
+    });
+    window.addEventListener('mouseup', () => $$('#msArea .ms-part.on').forEach((p) => p.classList.remove('on')));
+    area.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      if (!e.deltaY) return;
+      const now = performance.now(); if (now - M.wheelT < 30) return; M.wheelT = now;
+      const upDir = e.deltaY < 0; if (upDir) M.up++; else M.down++;
+      const id = upDir ? 'msWU' : 'msWD'; part(id, 'done'); flash($('#' + id)); $(upDir ? '#msSU' : '#msSD').classList.add('done'); flash($(upDir ? '#msSU' : '#msSD'));
+      part('msP1', 'done'); area.classList.add('used');
+      draw();
+    }, { passive: false });
+    const mv = (e) => {
+      const list = e.getCoalescedEvents ? e.getCoalescedEvents() : [e];
+      for (const x of (list.length ? list : [e])) M.ev.push(x.timeStamp);
+      if (M.ev.length > 400) M.ev.splice(0, M.ev.length - 400);
+    };
+    if ('onpointerrawupdate' in window) area.addEventListener('pointerrawupdate', (e) => { if (e.pointerType === 'mouse') M.ev.push(e.timeStamp); });
+    else area.addEventListener('pointermove', (e) => { if (e.pointerType === 'mouse') mv(e); });
+    setInterval(() => {
+      const now = performance.now();
+      M.clicks = M.clicks.filter((t) => now - t < 1000);
+      const cps = M.clicks.length; M.cpsMax = Math.max(M.cpsMax, cps);
+      setText('#msCps', cps); setText('#msCpsMax', M.cpsMax);
+      const recent = M.ev.filter((t) => now - t < 250);
+      if (recent.length >= 12) {
+        // only count while the mouse moves continuously: ignore gaps longer than 40 ms
+        let span = 0, n = 0;
+        for (let i = 1; i < recent.length; i++) { const d = recent[i] - recent[i - 1]; if (d > 0 && d < 40) { span += d; n++; } }
+        if (n >= 10 && span > 0) {
+          const hz = Math.round((n * 1000) / span);
+          setText('#msHz', hz); if (hz > M.hzMax) { M.hzMax = hz; setText('#msHzMax', hz); }
+        }
+      }
+    }, 200);
+    on('#msReset', 'click', () => {
+      M.c = [0, 0, 0, 0, 0]; M.up = M.down = M.ghost = M.cpsMax = M.hzMax = 0; M.last = [0, 0, 0, 0, 0]; M.clicks = []; M.ev = [];
+      $$('#mouse .done').forEach((x) => x.classList.remove('done')); area.classList.remove('used');
+      setText('#msHz', '–'); setText('#msHzMax', '–'); $('#msTip').hidden = true; draw();
+    });
+  }
+
+  /* ---------------- DEAD PIXEL TEST ---------------- */
+  if ($('#pixel')) {
+    const COLORS = ['#000000', '#ffffff', '#ff0000', '#00ff00', '#0000ff', '#808080'];
+    const scr = $('#pxScreen'), help = $('#pxHelp');
+    let idx = 0, helpT = 0, curT = 0, open = false;
+    const info = () => {
+      const d = window.devicePixelRatio || 1;
+      setText('#pxRes', Math.round(screen.width * d) + ' × ' + Math.round(screen.height * d));
+      setText('#pxView', innerWidth + ' × ' + innerHeight);
+      setText('#pxDpr', (Math.round(d * 100) / 100) + '×');
+      setText('#pxDepth', (screen.colorDepth || 24) + '-bit');
+    };
+    info(); window.addEventListener('resize', info);
+    const measureHz = () => {
+      const ts = []; const step = (t) => { ts.push(t); if (ts.length < 90) requestAnimationFrame(step); else {
+        const d = []; for (let i = 1; i < ts.length; i++) d.push(ts[i] - ts[i - 1]);
+        d.sort((a, b) => a - b); const med = d[d.length >> 1];
+        if (med > 0) { const hz = 1000 / med; const std = [24, 30, 48, 50, 60, 72, 75, 90, 100, 120, 144, 160, 165, 170, 180, 200, 240, 280, 360, 480, 500]; const near = std.reduce((a, b) => Math.abs(b - hz) < Math.abs(a - hz) ? b : a); setText('#pxHz', (Math.abs(near - hz) / hz < 0.04 ? near : Math.round(hz)) + ' Hz'); }
+      } };
+      requestAnimationFrame(step);
+    };
+    if (document.visibilityState === 'visible') setTimeout(measureHz, 600); else document.addEventListener('visibilitychange', function f() { if (!document.hidden) { document.removeEventListener('visibilitychange', f); setTimeout(measureHz, 600); } });
+    const paint = () => { scr.style.background = COLORS[idx]; help.classList.toggle('dark', idx === 1 || idx === 3); };
+    const showHelp = () => { help.classList.add('show'); clearTimeout(helpT); helpT = setTimeout(() => help.classList.remove('show'), 2600); };
+    const showCursor = () => { scr.classList.remove('nocur'); clearTimeout(curT); curT = setTimeout(() => scr.classList.add('nocur'), 1500); };
+    const openScr = (i) => {
+      idx = i || 0; scr.hidden = false; open = true; paint(); showHelp(); showCursor();
+      document.documentElement.classList.add('px-lock');
+      const rf = scr.requestFullscreen || scr.webkitRequestFullscreen;
+      if (rf) { try { const p = rf.call(scr); if (p && p.catch) p.catch(() => {}); } catch (e) {} }
+      logEvent('pixel_test');
+    };
+    const closeScr = () => {
+      if (!open) return; open = false; scr.hidden = true; document.documentElement.classList.remove('px-lock');
+      const fe = document.fullscreenElement || document.webkitFullscreenElement;
+      if (fe) { const ex = document.exitFullscreen || document.webkitExitFullscreen; if (ex) { try { const p = ex.call(document); if (p && p.catch) p.catch(() => {}); } catch (e) {} } }
+    };
+    const next = (d) => { idx = (idx + d + COLORS.length) % COLORS.length; paint(); };
+    on('#pxStart', 'click', () => openScr(0));
+    $$('.px-sw').forEach((b) => b.addEventListener('click', () => openScr(+b.dataset.i)));
+    scr.addEventListener('click', () => next(1));
+    scr.addEventListener('contextmenu', (e) => { e.preventDefault(); next(-1); });
+    scr.addEventListener('pointermove', showCursor);
+    document.addEventListener('keydown', (e) => {
+      if (!open) return;
+      if (e.key === 'Escape') { closeScr(); return; }
+      if (['ArrowRight', 'ArrowDown', ' ', 'Enter', 'PageDown'].includes(e.key)) { e.preventDefault(); next(1); }
+      else if (['ArrowLeft', 'ArrowUp', 'Backspace', 'PageUp'].includes(e.key)) { e.preventDefault(); next(-1); }
+    });
+    const fsChange = () => { if (open && !(document.fullscreenElement || document.webkitFullscreenElement) && scr._wasFs) closeScr(); scr._wasFs = !!(document.fullscreenElement || document.webkitFullscreenElement); };
+    document.addEventListener('fullscreenchange', fsChange); document.addEventListener('webkitfullscreenchange', fsChange);
+    window.__pxStart = () => openScr(0);
+
+    // stuck pixel fixer: a draggable square of fast random primaries
+    const fx = $('#pxFixer'), cv = $('#pxFixCv'), g = cv.getContext('2d');
+    let fxRaf = 0;
+    const img = g.createImageData(cv.width, cv.height), PR = [[255, 0, 0], [0, 255, 0], [0, 0, 255], [255, 255, 255], [0, 0, 0]];
+    const tick = () => {
+      const a = img.data;
+      for (let i = 0; i < a.length; i += 4) { const c = PR[(Math.random() * 5) | 0]; a[i] = c[0]; a[i + 1] = c[1]; a[i + 2] = c[2]; a[i + 3] = 255; }
+      g.putImageData(img, 0, 0); fxRaf = requestAnimationFrame(tick);
+    };
+    const stopFix = () => { cancelAnimationFrame(fxRaf); fx.hidden = true; };
+    on('#pxFixBtn', 'click', () => {
+      if (!fx.hidden) return stopFix();
+      fx.hidden = false; fx.style.left = Math.max(8, innerWidth / 2 - 60) + 'px'; fx.style.top = Math.max(8, innerHeight / 2 - 60) + 'px';
+      cancelAnimationFrame(fxRaf); tick(); logEvent('pixel_fixer');
+    });
+    on('#pxFixClose', 'click', stopFix);
+    let drag = null;
+    fx.addEventListener('pointerdown', (e) => { if (e.target.id === 'pxFixClose') return; drag = { x: e.clientX - fx.offsetLeft, y: e.clientY - fx.offsetTop }; fx.setPointerCapture(e.pointerId); e.preventDefault(); });
+    fx.addEventListener('pointermove', (e) => {
+      if (!drag) return;
+      fx.style.left = Math.min(innerWidth - fx.offsetWidth, Math.max(0, e.clientX - drag.x)) + 'px';
+      fx.style.top = Math.min(innerHeight - fx.offsetHeight, Math.max(0, e.clientY - drag.y)) + 'px';
+    });
+    fx.addEventListener('pointerup', () => { drag = null; });
+    fx.addEventListener('pointercancel', () => { drag = null; });
   }
 
   /* ---------------- language hint (no auto-redirect: better for SEO and users) ---------------- */

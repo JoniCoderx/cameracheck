@@ -164,7 +164,54 @@
     "refTalk": "Conversation",
     "refTraffic": "Circulation",
     "refConcert": "Concert",
-    "saveImage": "Enregistrer l'image"
+    "saveImage": "Enregistrer l'image",
+    "kbTool": "Testeur de clavier",
+    "kbHint": "Appuyez sur chaque touche. Elle s'allume dès que le navigateur la reçoit.",
+    "startKb": "Lancer le test clavier",
+    "kbTested": "Touches testées",
+    "kbLast": "Dernière touche",
+    "kbHeld": "Enfoncées",
+    "kbMaxHeld": "Max. simultanées",
+    "kbChatter": "Doubles frappes",
+    "kbChatterTip": "Une touche s'est déclenchée deux fois en moins de 40 ms. C'est souvent le signe d'un switch usé ou encrassé (rebond de touche).",
+    "kbReady": "Prêt. Appuyez sur une touche.",
+    "kbMobile": "Ce test est fait pour les claviers physiques. Sur téléphone ou tablette, connectez un clavier en Bluetooth ou en USB.",
+    "kbNote": "Certaines touches, comme Fn, Impr. écran ou la touche Windows, sont gérées par le système et n'arrivent parfois jamais au navigateur. Cela ne veut pas dire qu'elles sont cassées.",
+    "msTool": "Testeur de souris",
+    "msHint": "Cliquez, double-cliquez et faites défiler dans la zone. Chaque bouton est détecté.",
+    "msArea": "Cliquez ici avec n'importe quel bouton",
+    "startMs": "Lancer le test souris",
+    "msLeft": "Gauche",
+    "msMiddle": "Milieu",
+    "msRight": "Droit",
+    "msBack": "Précédent",
+    "msForward": "Suivant",
+    "msWheelUp": "Molette vers le haut",
+    "msWheelDown": "Molette vers le bas",
+    "msGhost": "Doubles clics involontaires",
+    "msGhostTip": "Un bouton s'est déclenché deux fois en moins de 80 ms. Aucun doigt ne clique aussi vite : le switch est sans doute usé.",
+    "msCps": "Clics par seconde",
+    "msPoll": "Polling rate",
+    "msPollHint": "Bougez vite la souris en cercles au-dessus de la zone.",
+    "pxTool": "Test pixel mort",
+    "pxHint": "Remplissez tout l'écran d'une seule couleur à la fois et cherchez les points qui ne collent pas.",
+    "startPx": "Lancer le test pixel mort",
+    "pxHelp": "Cliquez ou appuyez sur → pour la couleur suivante. Échap pour quitter.",
+    "pxFixer": "Réparateur de pixel bloqué",
+    "pxFixerHint": "Placez le carré clignotant sur le pixel bloqué et laissez-le tourner 10 à 20 minutes.",
+    "pxWarn": "Attention : le réparateur clignote très vite. Ne l'utilisez pas si vous êtes sensible aux lumières clignotantes.",
+    "startFixer": "Lancer le réparateur",
+    "scrRes": "Résolution d'écran",
+    "scrView": "Fenêtre du navigateur",
+    "scrDpr": "Ratio de pixels",
+    "scrHz": "Fréquence de rafraîchissement",
+    "scrDepth": "Profondeur de couleur",
+    "colBlack": "Noir",
+    "colWhite": "Blanc",
+    "colRed": "Rouge",
+    "colGreen": "Vert",
+    "colBlue": "Bleu",
+    "colGray": "Gris"
   },
   "pages": {
     "home": {
@@ -872,6 +919,161 @@
         {
           "q": "Mon son est-il enregistré ?",
           "a": "Non. Le son est seulement analysé dans votre navigateur pour calculer le niveau. Rien n'est enregistré ni envoyé."
+        }
+      ]
+    },
+    "keyboard": {
+      "card": {
+        "name": "Test clavier",
+        "desc": "Vérifiez chaque touche."
+      },
+      "title": "Test clavier en ligne : vérifiez toutes les touches (gratuit)",
+      "description": "Test clavier en ligne gratuit. Appuyez sur chaque touche et voyez-la s'allumer. Repérez touches mortes, doubles frappes et ghosting, portable ou mécanique.",
+      "h1Html": "<span class=\"grad\">Test clavier</span> en ligne",
+      "lead": "Appuyez sur chaque touche et voyez lesquelles fonctionnent. Touches mortes, doubles frappes et nombre de touches gérées en même temps, directement dans votre navigateur.",
+      "article": [
+        {
+          "h": "Comment tester votre clavier",
+          "ol": [
+            "Cliquez sur « Lancer le test clavier » ou commencez simplement à taper sur cette page.",
+            "Appuyez une fois sur chaque touche. Celles qui fonctionnent passent au vert.",
+            "Les touches qui restent grises après un appui n'arrivent pas jusqu'à l'ordinateur.",
+            "Maintenez plusieurs touches ensemble pour voir combien votre clavier en signale à la fois."
+          ]
+        },
+        {
+          "h": "Rebond de touche et ghosting",
+          "p": [
+            "Le rebond (key chatter), c'est quand un seul appui tape la lettre deux fois. Le testeur compte les frappes qui arrivent moins de 40 ms après la précédente, plus vite qu'aucun doigt. Si une touche le fait sans arrêt, son switch est usé ou encrassé : essayez une bombe d'air sec, ou remplacez le switch sur un clavier mécanique.",
+            "Le ghosting, c'est quand une touche saute lorsque vous en appuyez plusieurs à la fois. Maintenez les touches que vous utilisez en jeu, par exemple Z, Q, Maj et Espace (W et A sur un clavier QWERTY), et regardez la valeur « Max. simultanées ». Beaucoup de claviers de portable bloquent à 2 ou 3 touches sur certaines combinaisons, alors que les claviers gaming en gèrent souvent 6 ou plus."
+          ]
+        },
+        {
+          "h": "Une touche ne s'allume pas. Que faire ?",
+          "p": [
+            "Vérifiez d'abord que le clavier n'est pas dans un autre mode : Verr. Fn, Verr. Num et les modes jeu peuvent changer ce que certaines touches envoient. Essayez un autre port USB ou réappairez le clavier Bluetooth. Si la touche ne marche dans aucune application ni sur un autre ordinateur, le problème vient du clavier lui-même. Les touches comme Fn et Impr. écran sont gérées par le système, un test dans le navigateur ne peut donc pas les voir."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ce test clavier est-il gratuit ?",
+          "a": "Oui. Il fonctionne dans votre navigateur, rien à installer, et rien de ce que vous tapez n'est envoyé nulle part."
+        },
+        {
+          "q": "Fonctionne-t-il avec les claviers mécaniques, de portable et sans fil ?",
+          "a": "Oui. Tout clavier reconnu par votre ordinateur fonctionne : USB, Bluetooth, clavier intégré de portable ou clavier mécanique."
+        },
+        {
+          "q": "Pourquoi Fn ou la touche Windows ne s'allument-elles pas ?",
+          "a": "Le système d'exploitation gère ces touches avant que le navigateur ne les voie. C'est normal et cela ne veut pas dire que la touche est cassée."
+        },
+        {
+          "q": "Mon clavier a une autre disposition. Ça marche quand même ?",
+          "a": "Oui. Le testeur suit la position physique de chaque touche, et les libellés s'adaptent à votre disposition pendant que vous tapez."
+        }
+      ]
+    },
+    "mouse": {
+      "card": {
+        "name": "Test souris",
+        "desc": "Boutons, molette, doubles clics."
+      },
+      "title": "Test souris en ligne : clic, double clic et molette",
+      "description": "Test souris en ligne gratuit. Vérifiez les boutons gauche, droit, milieu et latéraux, la molette, les doubles clics involontaires et le polling rate.",
+      "h1Html": "<span class=\"grad\">Test souris</span> en ligne",
+      "lead": "Vérifiez chaque bouton et la molette, démasquez une souris qui double-clique toute seule et mesurez son polling rate.",
+      "article": [
+        {
+          "h": "Comment tester votre souris",
+          "ol": [
+            "Cliquez dans la zone de test avec les boutons gauche, droit et du milieu.",
+            "Appuyez sur les boutons latéraux (précédent et suivant) si votre souris en a.",
+            "Faites tourner la molette vers le haut et vers le bas. Chaque sens s'allume séparément.",
+            "Bougez vite la souris en cercles pour mesurer le polling rate."
+          ]
+        },
+        {
+          "h": "Ma souris double-clique-t-elle toute seule ?",
+          "p": [
+            "Un switch usé peut envoyer deux clics pour un seul appui. Résultat : des fichiers qui s'ouvrent alors que vous vouliez juste les sélectionner, ou des glisser-déposer qui lâchent tout seuls. Le testeur signale deux clics du même bouton espacés de moins de 80 ms, plus vite qu'on ne peut cliquer exprès. S'il en apparaît quelques-uns quand vous cliquez normalement, le switch est en train de lâcher."
+          ]
+        },
+        {
+          "h": "Qu'est-ce que le polling rate ?",
+          "p": [
+            "Le polling rate (taux d'interrogation) indique combien de fois par seconde la souris transmet sa position. Les souris de bureau tournent en général à 125 Hz, les souris gaming à 500 ou 1000 Hz, et certaines récentes encore plus. Bougez la souris rapidement pour voir la vraie valeur. Le navigateur et l'écran peuvent limiter la mesure : considérez-la comme une estimation proche."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ce test souris est-il gratuit ?",
+          "a": "Oui. Pas de téléchargement, pas d'inscription. Il fonctionne dans tout navigateur récent."
+        },
+        {
+          "q": "Puis-je tester les boutons latéraux ?",
+          "a": "Oui. Les boutons précédent et suivant sont détectés dans la zone de test, et la page ne change pas pendant que vous les essayez."
+        },
+        {
+          "q": "Fonctionne-t-il avec un pavé tactile ?",
+          "a": "Oui. Les tapotements, les clics à deux doigts et le défilement à deux doigts sont détectés comme les boutons et la molette d'une souris."
+        },
+        {
+          "q": "Pourquoi mon polling rate est-il plus bas qu'annoncé ?",
+          "a": "Bougez la souris plus vite et vérifiez le réglage dans le logiciel de la souris. Certains navigateurs et modes sans fil limitent aussi la fréquence."
+        }
+      ]
+    },
+    "pixel": {
+      "card": {
+        "name": "Test pixel mort",
+        "desc": "Pixels morts et bloqués."
+      },
+      "title": "Test pixel mort : vérifiez votre écran (pixels morts et bloqués)",
+      "description": "Test pixel mort gratuit. Affichez des couleurs unies en plein écran pour repérer pixels morts ou bloqués, puis essayez le réparateur. PC, portable, mobile.",
+      "h1Html": "Test <span class=\"grad\">pixel mort</span>",
+      "lead": "Remplissez votre écran de couleurs unies pour repérer les pixels morts et bloqués, vérifiez sa vraie résolution et sa fréquence de rafraîchissement, et tentez de réparer un pixel bloqué.",
+      "article": [
+        {
+          "h": "Comment vérifier les pixels morts de votre écran",
+          "ol": [
+            "Nettoyez l'écran pour qu'une poussière ne passe pas pour un pixel.",
+            "Appuyez sur « Lancer le test pixel mort ». La page passe en plein écran.",
+            "Cliquez ou appuyez sur la flèche droite pour passer par le noir, le blanc, le rouge, le vert, le bleu et le gris.",
+            "Examinez tout l'écran sur chaque couleur. Appuyez sur Échap quand vous avez fini."
+          ]
+        },
+        {
+          "h": "Pixel mort ou pixel bloqué ?",
+          "p": [
+            "Un pixel mort reste noir sur toutes les couleurs et se voit surtout sur fond blanc. Un pixel bloqué reste d'une seule couleur, souvent rouge, vert ou bleu, et ressort sur fond noir. Un pixel bloqué peut parfois revivre. Un pixel mort ne revient presque jamais.",
+            "Sur un écran neuf, regardez la politique de retour : beaucoup de marques remplacent un moniteur ou un portable qui a quelques pixels brillants ou morts, et c'est dans les premiers jours que le test est le plus simple à faire."
+          ]
+        },
+        {
+          "h": "Comment fonctionne le réparateur de pixel bloqué",
+          "p": [
+            "Le réparateur fait clignoter très vite des couleurs aléatoires dans un petit carré. Placez-le sur le pixel bloqué et laissez-le tourner 10 à 20 minutes. Parfois, le sous-pixel bloqué se remet à changer d'état. Ça ne marche pas à tous les coups et ça ne répare pas un pixel mort, mais c'est gratuit et sans danger pour l'écran. Ne le regardez pas si les lumières clignotantes vous gênent."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ce test pixel mort est-il gratuit ?",
+          "a": "Oui. Il fonctionne dans votre navigateur, sans application à installer."
+        },
+        {
+          "q": "Fonctionne-t-il sur téléphone et télévision ?",
+          "a": "Oui. Il marche sur tout écran doté d'un navigateur : moniteurs, portables, téléphones, tablettes et smart TV."
+        },
+        {
+          "q": "Un pixel bloqué peut-il se réparer tout seul ?",
+          "a": "Parfois. Un pixel bloqué peut revenir à la normale avec l'usage ou après le réparateur. Un pixel mort qui reste noir, en général non."
+        },
+        {
+          "q": "Combien de pixels morts sont acceptables ?",
+          "a": "Ça dépend de la marque. Beaucoup en tolèrent quelques-uns, mais certaines garantissent zéro pixel brillant. Vérifiez la garantie de votre modèle."
         }
       ]
     }

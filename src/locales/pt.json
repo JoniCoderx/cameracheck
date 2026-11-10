@@ -164,7 +164,54 @@
     "refTalk": "Conversa",
     "refTraffic": "Trânsito",
     "refConcert": "Show",
-    "saveImage": "Salvar imagem"
+    "saveImage": "Salvar imagem",
+    "kbTool": "Testador de teclado",
+    "kbHint": "Aperte todas as teclas. Cada uma acende quando o navegador a recebe.",
+    "startKb": "Iniciar teste de teclado",
+    "kbTested": "Teclas testadas",
+    "kbLast": "Última tecla",
+    "kbHeld": "Pressionadas agora",
+    "kbMaxHeld": "Máximo ao mesmo tempo",
+    "kbChatter": "Toques duplos",
+    "kbChatterTip": "Uma tecla disparou duas vezes em menos de 40 ms. Isso costuma indicar um switch gasto ou sujo (key chatter).",
+    "kbReady": "Pronto. Aperte qualquer tecla.",
+    "kbMobile": "Este teste é para teclados físicos. No celular ou tablet, conecte um teclado por Bluetooth ou USB.",
+    "kbNote": "Algumas teclas, como Fn, Print Screen ou a tecla Windows, são tratadas pelo sistema e podem nunca chegar ao navegador. Isso não quer dizer que estejam com defeito.",
+    "msTool": "Testador de mouse",
+    "msHint": "Clique, dê duplo clique e role a rodinha dentro da área. Todos os botões são detectados.",
+    "msArea": "Clique aqui com qualquer botão do mouse",
+    "startMs": "Iniciar teste de mouse",
+    "msLeft": "Esquerdo",
+    "msMiddle": "Meio",
+    "msRight": "Direito",
+    "msBack": "Voltar",
+    "msForward": "Avançar",
+    "msWheelUp": "Rolar para cima",
+    "msWheelDown": "Rolar para baixo",
+    "msGhost": "Cliques duplos acidentais",
+    "msGhostTip": "Um botão disparou duas vezes em menos de 80 ms. Isso é mais rápido do que um dedo consegue clicar e geralmente indica um switch gasto.",
+    "msCps": "Cliques por segundo",
+    "msPoll": "Taxa de polling",
+    "msPollHint": "Mova o mouse rápido em círculos sobre a área.",
+    "pxTool": "Teste de pixel morto",
+    "pxHint": "Preencha a tela inteira com uma cor de cada vez e procure pontos que não combinam.",
+    "startPx": "Iniciar teste de pixel morto",
+    "pxHelp": "Clique ou aperte → para a próxima cor. Esc para sair.",
+    "pxFixer": "Corretor de pixel preso",
+    "pxFixerHint": "Coloque o quadrado piscante sobre o pixel preso e deixe rodando por 10 a 20 minutos.",
+    "pxWarn": "Atenção: o corretor pisca muito rápido. Não use se você for sensível a luzes piscantes.",
+    "startFixer": "Iniciar corretor",
+    "scrRes": "Resolução da tela",
+    "scrView": "Janela do navegador",
+    "scrDpr": "Proporção de pixels",
+    "scrHz": "Taxa de atualização",
+    "scrDepth": "Profundidade de cor",
+    "colBlack": "Preto",
+    "colWhite": "Branco",
+    "colRed": "Vermelho",
+    "colGreen": "Verde",
+    "colBlue": "Azul",
+    "colGray": "Cinza"
   },
   "pages": {
     "home": {
@@ -872,6 +919,161 @@
         {
           "q": "Meu áudio é gravado?",
           "a": "Não. O som só é analisado no seu navegador para calcular o nível. Nada é gravado ou enviado."
+        }
+      ]
+    },
+    "keyboard": {
+      "card": {
+        "name": "Teste de teclado",
+        "desc": "Veja se todas as teclas funcionam."
+      },
+      "title": "Teste de teclado online: confira todas as teclas grátis",
+      "description": "Teste de teclado online e grátis. Aperte cada tecla e veja ela acender. Encontre teclas mortas, toques duplos e ghosting em notebooks e teclados mecânicos.",
+      "h1Html": "<span class=\"grad\">Teste de teclado</span> online",
+      "lead": "Aperte todas as teclas e veja quais funcionam. Teclas mortas, toques duplos e quantas teclas o seu teclado aceita ao mesmo tempo, tudo no navegador.",
+      "article": [
+        {
+          "h": "Como testar o seu teclado",
+          "ol": [
+            "Clique em \"Iniciar teste de teclado\" ou simplesmente comece a digitar nesta página.",
+            "Aperte cada tecla uma vez. As que funcionam ficam verdes no teclado da tela.",
+            "Se uma tecla continua cinza depois de apertada, ela não está chegando ao computador.",
+            "Segure várias teclas juntas para ver quantas o seu teclado registra ao mesmo tempo."
+          ]
+        },
+        {
+          "h": "Toques duplos (key chatter) e ghosting",
+          "p": [
+            "Key chatter é quando um único toque digita a letra duas vezes. O testador conta os toques que chegam menos de 40 ms depois do anterior, mais rápido do que qualquer dedo. Se uma tecla faz isso sempre, o switch está gasto ou sujo: tente ar comprimido ou, num teclado mecânico, troque o switch.",
+            "Ghosting é quando, ao apertar várias teclas juntas, uma delas some. Segure as teclas que você usa nos jogos, por exemplo W, A, Shift e Espaço, e confira o número em \"Máximo ao mesmo tempo\". Muitos teclados de notebook param em 2 ou 3 teclas em algumas combinações, enquanto teclados gamer costumam aceitar 6 ou mais."
+          ]
+        },
+        {
+          "h": "Uma tecla não acende. E agora?",
+          "p": [
+            "Primeiro veja se o teclado não está em outro modo: Fn Lock, Num Lock e modos gamer podem mudar o que algumas teclas enviam. Teste outra porta USB ou pareie de novo o teclado Bluetooth. Se a tecla falha em todos os programas e também em outro computador, o problema está no próprio teclado. Teclas como Fn e Print Screen são tratadas pelo sistema, então um teste no navegador não consegue vê-las."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Este teste de teclado é grátis?",
+          "a": "Sim. Ele roda no seu navegador, não precisa instalar nada e nada do que você digita é enviado."
+        },
+        {
+          "q": "Funciona com teclado mecânico, de notebook e sem fio?",
+          "a": "Sim. Qualquer teclado que o computador reconhece funciona: USB, Bluetooth, o teclado do notebook e teclados mecânicos."
+        },
+        {
+          "q": "Por que Fn e a tecla Windows não acendem?",
+          "a": "O sistema operacional trata essas teclas antes de o navegador vê-las. Isso é normal e não significa que a tecla esteja quebrada."
+        },
+        {
+          "q": "Meu teclado é ABNT2 ou tem outro layout. Funciona?",
+          "a": "Sim. O testador segue a posição física de cada tecla, e os rótulos mudam para o seu layout conforme você digita."
+        }
+      ]
+    },
+    "mouse": {
+      "card": {
+        "name": "Teste de mouse",
+        "desc": "Botões, rolagem e cliques duplos."
+      },
+      "title": "Teste de mouse online: clique, duplo clique e rolagem",
+      "description": "Teste de mouse online e grátis. Confira os botões esquerdo, direito, do meio e laterais, a rodinha, cliques duplos sozinhos e a taxa de polling.",
+      "h1Html": "<span class=\"grad\">Teste de mouse</span> online",
+      "lead": "Confira cada botão e a rodinha, descubra se o mouse está dando clique duplo sozinho e meça a taxa de polling.",
+      "article": [
+        {
+          "h": "Como testar o seu mouse",
+          "ol": [
+            "Clique dentro da área de teste com os botões esquerdo, direito e do meio.",
+            "Aperte os botões laterais (voltar e avançar), se o seu mouse tiver.",
+            "Role a rodinha para cima e para baixo. Cada direção acende separada.",
+            "Mova o mouse rápido em círculos para medir a taxa de polling."
+          ]
+        },
+        {
+          "h": "Meu mouse está dando clique duplo sozinho?",
+          "p": [
+            "Um switch gasto pode enviar dois cliques num só toque. Aí arquivos abrem quando você só queria selecionar, ou o arrastar solta sozinho. O testador marca dois cliques do mesmo botão com menos de 80 ms de intervalo, mais rápido do que uma pessoa clica de propósito. Se aparecem alguns enquanto você clica normalmente, o switch está falhando."
+          ]
+        },
+        {
+          "h": "O que é taxa de polling?",
+          "p": [
+            "Taxa de polling é quantas vezes por segundo o mouse informa a sua posição. Mouses de escritório costumam ficar em 125 Hz, mouses gamer em 500 ou 1000 Hz e alguns mais novos passam disso. Mova o mouse rápido para ver o número real. O navegador e a tela podem limitar a medição, então considere o valor uma boa estimativa."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Este teste de mouse é grátis?",
+          "a": "Sim. Sem download e sem cadastro. Funciona em qualquer navegador moderno."
+        },
+        {
+          "q": "Dá para testar os botões laterais?",
+          "a": "Sim. Os botões voltar e avançar são detectados dentro da área de teste, e a página não sai do lugar enquanto você testa."
+        },
+        {
+          "q": "Funciona com touchpad?",
+          "a": "Sim. Toques, cliques com dois dedos e rolagem com dois dedos são detectados como botões e rodinha do mouse."
+        },
+        {
+          "q": "Por que a taxa de polling está menor do que a anunciada?",
+          "a": "Mova o mouse mais rápido e confira a configuração no software do mouse. Alguns navegadores e modos sem fio também limitam a taxa."
+        }
+      ]
+    },
+    "pixel": {
+      "card": {
+        "name": "Pixel morto",
+        "desc": "Ache pixels mortos e presos."
+      },
+      "title": "Teste de pixel morto: veja se a tela tem pixels mortos ou presos",
+      "description": "Teste de pixel morto grátis. Encha a tela de cores sólidas para achar pixels mortos ou presos e use o corretor. Funciona em monitor, notebook e celular.",
+      "h1Html": "Teste de <span class=\"grad\">pixel morto</span>",
+      "lead": "Encha a tela de cores sólidas para achar pixels mortos e presos, confira a resolução e a taxa de atualização reais e tente recuperar um pixel preso.",
+      "article": [
+        {
+          "h": "Como verificar pixels mortos na tela",
+          "ol": [
+            "Limpe a tela para que a poeira não pareça um pixel.",
+            "Clique em \"Iniciar teste de pixel morto\". A página entra em tela cheia.",
+            "Clique ou aperte a seta para a direita para passar por preto, branco, vermelho, verde, azul e cinza.",
+            "Olhe com calma a tela inteira em cada cor. Aperte Esc quando terminar."
+          ]
+        },
+        {
+          "h": "Pixel morto ou pixel preso?",
+          "p": [
+            "Um pixel morto fica preto em todas as cores e aparece mais no branco. Um pixel preso fica travado numa cor, geralmente vermelho, verde ou azul, e se destaca no preto. Pixels presos às vezes podem ser recuperados. Pixels mortos quase nunca voltam.",
+            "Em uma tela nova, veja a política de troca: muitas marcas trocam o monitor ou notebook com alguns pixels mortos ou acesos, e o ideal é fazer o teste nos primeiros dias."
+          ]
+        },
+        {
+          "h": "Como funciona o corretor de pixel preso",
+          "p": [
+            "O corretor pisca cores aleatórias muito rápido num quadrado pequeno. Coloque-o sobre o pixel preso e deixe rodando por 10 a 20 minutos. Às vezes isso faz o subpixel travado voltar a mudar de cor. Nem sempre funciona e não conserta pixel morto, mas é grátis e seguro para a tela. Não olhe para ele se luzes piscantes afetam você."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Este teste de pixel morto é grátis?",
+          "a": "Sim. Ele roda no seu navegador, sem app para instalar."
+        },
+        {
+          "q": "Funciona no celular e na TV?",
+          "a": "Sim. Funciona em qualquer tela com navegador: monitores, notebooks, celulares, tablets e smart TVs."
+        },
+        {
+          "q": "Um pixel preso pode voltar sozinho?",
+          "a": "Às vezes. Um pixel preso pode voltar com o uso ou depois de rodar o corretor. Um pixel morto que fica preto geralmente não volta."
+        },
+        {
+          "q": "Quantos pixels mortos são aceitáveis?",
+          "a": "Depende da marca. Muitas aceitam alguns, mas outras garantem zero pixels acesos. Confira a garantia do seu modelo."
         }
       ]
     }

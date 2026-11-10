@@ -164,7 +164,54 @@
     "refTalk": "Conversazione",
     "refTraffic": "Traffico",
     "refConcert": "Concerto",
-    "saveImage": "Salva immagine"
+    "saveImage": "Salva immagine",
+    "kbTool": "Tester tastiera",
+    "kbHint": "Premi tutti i tasti. Ognuno si illumina quando il browser lo riceve.",
+    "startKb": "Avvia test tastiera",
+    "kbTested": "Tasti testati",
+    "kbLast": "Ultimo tasto",
+    "kbHeld": "Premuti ora",
+    "kbMaxHeld": "Massimo insieme",
+    "kbChatter": "Doppie pressioni",
+    "kbChatterTip": "Un tasto si è attivato due volte in meno di 40 ms. Di solito indica uno switch usurato o sporco (key chatter).",
+    "kbReady": "Pronto. Premi un tasto qualsiasi.",
+    "kbMobile": "Questo test è per tastiere fisiche. Su telefono o tablet, collega una tastiera via Bluetooth o USB.",
+    "kbNote": "Alcuni tasti, come Fn, Stamp o il tasto Windows, sono gestiti dal sistema e potrebbero non arrivare mai al browser. Non vuol dire che siano rotti.",
+    "msTool": "Tester mouse",
+    "msHint": "Fai clic, doppio clic e scorri dentro l'area. Ogni tasto viene rilevato.",
+    "msArea": "Fai clic qui con un tasto qualsiasi del mouse",
+    "startMs": "Avvia test mouse",
+    "msLeft": "Sinistro",
+    "msMiddle": "Centrale",
+    "msRight": "Destro",
+    "msBack": "Indietro",
+    "msForward": "Avanti",
+    "msWheelUp": "Rotella su",
+    "msWheelDown": "Rotella giù",
+    "msGhost": "Doppi clic involontari",
+    "msGhostTip": "Un tasto si è attivato due volte in meno di 80 ms. Nessun dito clicca così veloce: di solito è uno switch usurato.",
+    "msCps": "Clic al secondo",
+    "msPoll": "Polling rate",
+    "msPollHint": "Muovi il mouse velocemente in cerchio sopra l'area.",
+    "pxTool": "Test pixel morti",
+    "pxHint": "Riempi tutto lo schermo con un colore alla volta e cerca i punti che non tornano.",
+    "startPx": "Avvia test pixel morti",
+    "pxHelp": "Fai clic o premi → per il colore successivo. Esc per uscire.",
+    "pxFixer": "Riparatore pixel bloccati",
+    "pxFixerHint": "Sposta il quadrato lampeggiante sopra il pixel bloccato e lascialo andare da 10 a 20 minuti.",
+    "pxWarn": "Attenzione: il riparatore lampeggia molto velocemente. Non usarlo se sei sensibile alle luci lampeggianti.",
+    "startFixer": "Avvia riparatore",
+    "scrRes": "Risoluzione schermo",
+    "scrView": "Finestra del browser",
+    "scrDpr": "Rapporto pixel",
+    "scrHz": "Frequenza di aggiornamento",
+    "scrDepth": "Profondità colore",
+    "colBlack": "Nero",
+    "colWhite": "Bianco",
+    "colRed": "Rosso",
+    "colGreen": "Verde",
+    "colBlue": "Blu",
+    "colGray": "Grigio"
   },
   "pages": {
     "home": {
@@ -872,6 +919,161 @@
         {
           "q": "Il mio audio viene registrato?",
           "a": "No. Il suono viene solo analizzato nel browser per calcolare il livello. Niente viene registrato o caricato."
+        }
+      ]
+    },
+    "keyboard": {
+      "card": {
+        "name": "Test tastiera",
+        "desc": "Controlla ogni tasto."
+      },
+      "title": "Test tastiera online: controlla tutti i tasti gratis",
+      "description": "Test tastiera online gratuito. Premi ogni tasto e guardalo illuminarsi. Trova tasti morti, doppie pressioni e ghosting su portatili e tastiere meccaniche.",
+      "h1Html": "<span class=\"grad\">Test tastiera</span> online",
+      "lead": "Premi tutti i tasti e scopri quali funzionano. Tasti morti, doppie pressioni e quanti tasti la tastiera gestisce insieme, tutto nel browser.",
+      "article": [
+        {
+          "h": "Come testare la tastiera",
+          "ol": [
+            "Fai clic su \"Avvia test tastiera\" o inizia semplicemente a scrivere su questa pagina.",
+            "Premi ogni tasto una volta. Quelli che funzionano diventano verdi.",
+            "I tasti che restano grigi dopo averli premuti non arrivano al computer.",
+            "Tieni premuti più tasti insieme per vedere quanti ne rileva la tastiera contemporaneamente."
+          ]
+        },
+        {
+          "h": "Key chatter e ghosting",
+          "p": [
+            "Il key chatter è quando una sola pressione scrive la lettera due volte. Il tester conta le pressioni che arrivano meno di 40 ms dopo la precedente, più veloci di qualsiasi dito. Se un tasto lo fa di continuo, lo switch è usurato o sporco: prova con l'aria compressa o, su una tastiera meccanica, sostituisci lo switch.",
+            "Il ghosting è quando, premendo più tasti insieme, uno si perde. Tieni premuti i tasti che usi nei giochi, per esempio W, A, Maiusc e Spazio, e guarda il valore \"Massimo insieme\". Molte tastiere di portatili si fermano a 2 o 3 tasti in certe combinazioni, mentre le tastiere da gaming spesso ne gestiscono 6 o più."
+          ]
+        },
+        {
+          "h": "Un tasto non si illumina. E adesso?",
+          "p": [
+            "Prima controlla che la tastiera non sia in un'altra modalità: Fn Lock, Bloc Num e le modalità gaming possono cambiare quello che inviano alcuni tasti. Prova un'altra porta USB o associa di nuovo la tastiera Bluetooth. Se il tasto non va in nessuna app e nemmeno su un altro computer, il problema è nella tastiera stessa. Tasti come Fn e Stamp sono gestiti dal sistema, quindi un test nel browser non può vederli."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Questo test tastiera è gratis?",
+          "a": "Sì. Funziona nel browser, non devi installare nulla e niente di ciò che scrivi viene inviato da qualche parte."
+        },
+        {
+          "q": "Funziona con tastiere meccaniche, di portatili e wireless?",
+          "a": "Sì. Funziona qualsiasi tastiera riconosciuta dal computer: USB, Bluetooth, integrata nel portatile e meccanica."
+        },
+        {
+          "q": "Perché Fn o il tasto Windows non si illuminano?",
+          "a": "Il sistema operativo gestisce questi tasti prima che il browser li veda. È normale e non significa che il tasto sia rotto."
+        },
+        {
+          "q": "La mia tastiera ha un layout diverso. Funziona lo stesso?",
+          "a": "Sì. Il tester segue la posizione fisica di ogni tasto e le etichette si adattano al tuo layout mentre scrivi."
+        }
+      ]
+    },
+    "mouse": {
+      "card": {
+        "name": "Test mouse",
+        "desc": "Tasti, rotella e doppi clic."
+      },
+      "title": "Test mouse online: clic, doppio clic e rotella",
+      "description": "Test mouse online gratuito. Controlla tasto sinistro, destro, centrale e laterali, la rotella, i doppi clic involontari e il polling rate nel browser.",
+      "h1Html": "<span class=\"grad\">Test mouse</span> online",
+      "lead": "Controlla ogni tasto e la rotella, scopri se il mouse fa doppio clic da solo e misura il suo polling rate.",
+      "article": [
+        {
+          "h": "Come testare il mouse",
+          "ol": [
+            "Fai clic nell'area di test con il tasto sinistro, destro e centrale.",
+            "Premi i tasti laterali (indietro e avanti) se il tuo mouse li ha.",
+            "Gira la rotella su e giù. Ogni direzione si illumina separatamente.",
+            "Muovi il mouse velocemente in cerchio per misurare il polling rate."
+          ]
+        },
+        {
+          "h": "Il mio mouse fa doppio clic da solo?",
+          "p": [
+            "Uno switch usurato può inviare due clic con una sola pressione. Così si aprono file che volevi solo selezionare, o gli oggetti che trascini vengono mollati da soli. Il tester segnala due clic dello stesso tasto a meno di 80 ms di distanza, più veloci di quanto una persona possa cliccare di proposito. Se ne compaiono alcuni mentre clicchi normalmente, lo switch sta cedendo."
+          ]
+        },
+        {
+          "h": "Cos'è il polling rate?",
+          "p": [
+            "Il polling rate indica quante volte al secondo il mouse comunica la sua posizione. I mouse da ufficio di solito lavorano a 125 Hz, quelli da gaming a 500 o 1000 Hz e alcuni modelli recenti anche di più. Muovi il mouse velocemente per vedere il valore reale. Browser e schermo possono limitare la misura, quindi consideralo una stima molto vicina."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Questo test mouse è gratis?",
+          "a": "Sì. Niente download e niente registrazione. Funziona in qualsiasi browser moderno."
+        },
+        {
+          "q": "Posso testare i tasti laterali?",
+          "a": "Sì. I tasti indietro e avanti vengono rilevati nell'area di test, e la pagina non cambia mentre li provi."
+        },
+        {
+          "q": "Funziona con il touchpad?",
+          "a": "Sì. Tocchi, clic con due dita e scorrimento con due dita vengono rilevati come i tasti e la rotella del mouse."
+        },
+        {
+          "q": "Perché il mio polling rate è più basso di quello dichiarato?",
+          "a": "Muovi il mouse più velocemente e controlla l'impostazione nel software del mouse. Anche alcuni browser e modalità wireless limitano la frequenza."
+        }
+      ]
+    },
+    "pixel": {
+      "card": {
+        "name": "Test pixel morti",
+        "desc": "Trova pixel morti e bloccati."
+      },
+      "title": "Test pixel morti: controlla lo schermo (pixel morti e bloccati)",
+      "description": "Test pixel morti gratuito. Riempi lo schermo di colori pieni per trovare pixel morti o bloccati, poi prova il riparatore. Monitor, portatili e telefoni.",
+      "h1Html": "Test <span class=\"grad\">pixel morti</span>",
+      "lead": "Riempi lo schermo di colori pieni per individuare pixel morti e bloccati, controlla la risoluzione e la frequenza di aggiornamento reali e prova a riparare un pixel bloccato.",
+      "article": [
+        {
+          "h": "Come controllare i pixel morti dello schermo",
+          "ol": [
+            "Pulisci lo schermo, così la polvere non sembra un pixel.",
+            "Premi \"Avvia test pixel morti\". La pagina va a schermo intero.",
+            "Fai clic o premi la freccia destra per passare tra nero, bianco, rosso, verde, blu e grigio.",
+            "Guarda con attenzione tutto lo schermo con ogni colore. Premi Esc quando hai finito."
+          ]
+        },
+        {
+          "h": "Pixel morto o pixel bloccato?",
+          "p": [
+            "Un pixel morto resta nero con ogni colore e si vede soprattutto sul bianco. Un pixel bloccato resta fisso su un colore, di solito rosso, verde o blu, e risalta sul nero. I pixel bloccati a volte si possono recuperare. Quelli morti non tornano quasi mai.",
+            "Su uno schermo nuovo, controlla le condizioni di reso: molti marchi sostituiscono un monitor o un portatile con qualche pixel acceso o morto, e il test è più facile da fare nei primi giorni."
+          ]
+        },
+        {
+          "h": "Come funziona il riparatore di pixel bloccati",
+          "p": [
+            "Il riparatore fa lampeggiare colori casuali molto velocemente in un piccolo quadrato. Spostalo sopra il pixel bloccato e lascialo andare da 10 a 20 minuti. A volte così il subpixel bloccato ricomincia a cambiare stato. Non funziona sempre e non può riparare un pixel morto, ma è gratis e sicuro per lo schermo. Non guardarlo se le luci lampeggianti ti danno fastidio."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Questo test pixel morti è gratis?",
+          "a": "Sì. Funziona nel browser, senza app da installare."
+        },
+        {
+          "q": "Funziona su telefoni e TV?",
+          "a": "Sì. Funziona su qualsiasi schermo con un browser: monitor, portatili, telefoni, tablet e smart TV."
+        },
+        {
+          "q": "Un pixel bloccato può sistemarsi da solo?",
+          "a": "A volte. Un pixel bloccato può tornare normale con l'uso o dopo il riparatore. Un pixel morto che resta nero di solito no."
+        },
+        {
+          "q": "Quanti pixel morti sono accettabili?",
+          "a": "Dipende dal marchio. Molti ne tollerano qualcuno, ma alcuni garantiscono zero pixel accesi. Controlla la garanzia del tuo modello."
         }
       ]
     }

@@ -164,7 +164,54 @@
     "refTalk": "Conversation",
     "refTraffic": "Traffic",
     "refConcert": "Concert",
-    "saveImage": "Save image"
+    "saveImage": "Save image",
+    "kbTool": "Keyboard tester",
+    "kbHint": "Press every key. Each one lights up when the browser receives it.",
+    "startKb": "Start keyboard test",
+    "kbTested": "Keys tested",
+    "kbLast": "Last key",
+    "kbHeld": "Held now",
+    "kbMaxHeld": "Most at once",
+    "kbChatter": "Double presses",
+    "kbChatterTip": "A key fired twice in under 40 ms. That usually points to a worn or dirty switch (key chatter).",
+    "kbReady": "Ready. Press any key.",
+    "kbMobile": "This test is for physical keyboards. On a phone or tablet, connect a keyboard by Bluetooth or USB.",
+    "kbNote": "Some keys, like Fn, Print Screen or the Windows key, are handled by the system and may never reach the browser. That does not mean they are broken.",
+    "msTool": "Mouse tester",
+    "msHint": "Click, double-click and scroll inside the area. Every button is detected.",
+    "msArea": "Click here with any mouse button",
+    "startMs": "Start mouse test",
+    "msLeft": "Left",
+    "msMiddle": "Middle",
+    "msRight": "Right",
+    "msBack": "Back",
+    "msForward": "Forward",
+    "msWheelUp": "Scroll up",
+    "msWheelDown": "Scroll down",
+    "msGhost": "Accidental double clicks",
+    "msGhostTip": "A button fired twice in under 80 ms. That is faster than a finger can click and usually means a worn switch.",
+    "msCps": "Clicks per second",
+    "msPoll": "Polling rate",
+    "msPollHint": "Move the mouse fast in circles over the area.",
+    "pxTool": "Dead pixel test",
+    "pxHint": "Fill the whole screen with one color at a time and look for dots that don't match.",
+    "startPx": "Start dead pixel test",
+    "pxHelp": "Click or press → for the next color. Esc to exit.",
+    "pxFixer": "Stuck pixel fixer",
+    "pxFixerHint": "Move the flashing square over the stuck pixel and leave it running for 10 to 20 minutes.",
+    "pxWarn": "Warning: the fixer flashes rapidly. Do not use it if you are sensitive to flashing light.",
+    "startFixer": "Start fixer",
+    "scrRes": "Screen resolution",
+    "scrView": "Browser window",
+    "scrDpr": "Pixel ratio",
+    "scrHz": "Refresh rate",
+    "scrDepth": "Color depth",
+    "colBlack": "Black",
+    "colWhite": "White",
+    "colRed": "Red",
+    "colGreen": "Green",
+    "colBlue": "Blue",
+    "colGray": "Gray"
   },
   "pages": {
     "home": {
@@ -880,6 +927,161 @@
         {
           "q": "Is my audio recorded?",
           "a": "No. The sound is only analysed in your browser to compute the level. Nothing is recorded or uploaded."
+        }
+      ]
+    },
+    "keyboard": {
+      "card": {
+        "name": "Keyboard test",
+        "desc": "Check every key works."
+      },
+      "title": "Keyboard Test Online: Check Every Key (Free Key Tester)",
+      "description": "Free online keyboard tester. Press each key and watch it light up. Find dead keys, key chatter and ghosting on laptop and mechanical keyboards.",
+      "h1Html": "Online <span class=\"grad\">keyboard test</span>",
+      "lead": "Press every key and see which ones work. Dead keys, double presses and how many keys your keyboard handles at once, all in your browser.",
+      "article": [
+        {
+          "h": "How to test your keyboard",
+          "ol": [
+            "Click \"Start keyboard test\" or just start typing on this page.",
+            "Press every key once. Keys that work turn green on the board.",
+            "Keys that stay grey after you press them are not reaching the computer.",
+            "Hold several keys together to see how many your keyboard reports at once."
+          ]
+        },
+        {
+          "h": "Key chatter and ghosting",
+          "p": [
+            "Key chatter is when one press types the letter twice. The tester counts presses that come in under 40 ms after the previous one, which is faster than any finger. If one key keeps doing it, the switch is worn or dirty: try compressed air, or replace the switch on a mechanical keyboard.",
+            "Ghosting is when pressing several keys together drops one of them. Hold the keys you use in games, for example W, A, Shift and Space, and check the \"Most at once\" number. Many laptop keyboards stop at 2 or 3 keys in some combinations, while gaming keyboards often handle 6 or more."
+          ]
+        },
+        {
+          "h": "A key does not light up. What now?",
+          "p": [
+            "First check that the keyboard is not in a different mode: Fn Lock, Num Lock and gaming modes can change what some keys send. Try another USB port or re-pair the Bluetooth keyboard. If the key fails in every app and on another computer too, the problem is in the keyboard itself. Keys like Fn and Print Screen are handled by the system, so a browser test cannot see them."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is this keyboard test free?",
+          "a": "Yes. It runs in your browser, nothing is installed and nothing you type is sent anywhere."
+        },
+        {
+          "q": "Does it work with mechanical, laptop and wireless keyboards?",
+          "a": "Yes. Any keyboard your computer recognises works: USB, Bluetooth, laptop built-in and mechanical keyboards."
+        },
+        {
+          "q": "Why don't Fn or the Windows key light up?",
+          "a": "The operating system handles those keys before the browser sees them. That is normal and does not mean the key is broken."
+        },
+        {
+          "q": "My keyboard has a different layout. Does it still work?",
+          "a": "Yes. The tester follows the physical position of each key, and the labels change to match your layout as you type."
+        }
+      ]
+    },
+    "mouse": {
+      "card": {
+        "name": "Mouse test",
+        "desc": "Buttons, scroll and double clicks."
+      },
+      "title": "Mouse Test Online: Click, Double Click & Scroll Tester",
+      "description": "Free online mouse tester. Check left, right, middle and side buttons, the scroll wheel, accidental double clicks and polling rate in your browser.",
+      "h1Html": "Online <span class=\"grad\">mouse test</span>",
+      "lead": "Check every button and the scroll wheel, catch a mouse that double clicks on its own, and measure its polling rate.",
+      "article": [
+        {
+          "h": "How to test your mouse",
+          "ol": [
+            "Click inside the test area with the left, right and middle buttons.",
+            "Press the side buttons (back and forward) if your mouse has them.",
+            "Scroll the wheel up and down. Each direction lights up separately.",
+            "Move the mouse fast in circles to measure the polling rate."
+          ]
+        },
+        {
+          "h": "Is my mouse double clicking by itself?",
+          "p": [
+            "A worn switch can send two clicks for one press. That makes files open when you only wanted to select them, or drags that let go on their own. The tester flags any two clicks of the same button that come less than 80 ms apart, which is faster than a person can click on purpose. A few of them while clicking normally means the switch is failing."
+          ]
+        },
+        {
+          "h": "What is polling rate?",
+          "p": [
+            "Polling rate is how many times per second the mouse reports its position. Office mice usually report 125 Hz, gaming mice 500 or 1000 Hz and some newer ones even more. Move the mouse quickly to see the real number. The browser and screen can limit what is measured, so treat it as a close estimate."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is this mouse test free?",
+          "a": "Yes. No download and no sign-up. It works in any modern browser."
+        },
+        {
+          "q": "Can I test the side buttons?",
+          "a": "Yes. Back and forward buttons are detected inside the test area, and the page will not navigate away while you test them."
+        },
+        {
+          "q": "Does it work with a touchpad?",
+          "a": "Yes. Taps, two-finger clicks and two-finger scrolling are detected like mouse buttons and the wheel."
+        },
+        {
+          "q": "Why is my polling rate lower than advertised?",
+          "a": "Move the mouse faster, and check the setting in the mouse software. Some browsers and wireless modes also cap the rate."
+        }
+      ]
+    },
+    "pixel": {
+      "card": {
+        "name": "Dead pixel test",
+        "desc": "Find dead and stuck pixels."
+      },
+      "title": "Dead Pixel Test: Check Your Screen for Dead & Stuck Pixels",
+      "description": "Free dead pixel test. Fill the screen with solid colors to find dead or stuck pixels, then try the stuck pixel fixer. Works on monitors, laptops and phones.",
+      "h1Html": "<span class=\"grad\">Dead pixel</span> test",
+      "lead": "Fill your screen with solid colors to spot dead and stuck pixels, check its real resolution and refresh rate, and try to fix a stuck pixel.",
+      "article": [
+        {
+          "h": "How to check your screen for dead pixels",
+          "ol": [
+            "Clean the screen so dust does not look like a pixel.",
+            "Press \"Start dead pixel test\". The page goes full screen.",
+            "Click or press the right arrow to go through black, white, red, green, blue and gray.",
+            "Look closely at the whole screen on each color. Press Esc when you are done."
+          ]
+        },
+        {
+          "h": "Dead pixel or stuck pixel?",
+          "p": [
+            "A dead pixel stays black on every color, most visible on white. A stuck pixel stays one color, usually red, green or blue, and stands out on black. Stuck pixels can sometimes be revived. Dead pixels almost never come back.",
+            "On a new screen, check the return policy: many brands replace a monitor or laptop with a few bright or dead pixels, and the test is easiest to do in the first days."
+          ]
+        },
+        {
+          "h": "How the stuck pixel fixer works",
+          "p": [
+            "The fixer flashes random colors very fast in a small square. Move it over the stuck pixel and let it run for 10 to 20 minutes. Sometimes this gets the stuck subpixel switching again. It does not always work, and it cannot fix a dead pixel, but it is free and safe for the screen. Do not look at it if flashing light affects you."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is this dead pixel test free?",
+          "a": "Yes. It runs in your browser with no app to install."
+        },
+        {
+          "q": "Does it work on phones and TVs?",
+          "a": "Yes. It works on any screen with a browser: monitors, laptops, phones, tablets and smart TVs."
+        },
+        {
+          "q": "Can a stuck pixel fix itself?",
+          "a": "Sometimes. A stuck pixel can come back after use or after running the fixer. A dead pixel that stays black usually will not."
+        },
+        {
+          "q": "How many dead pixels are acceptable?",
+          "a": "It depends on the brand. Many allow a few, but some promise zero bright pixels. Check the warranty of your model."
         }
       ]
     }
