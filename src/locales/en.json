@@ -124,7 +124,27 @@
     "recName": "Recording",
     "startRec": "Start recording",
     "fullTest": "Full test",
-    "widget": "Free widget"
+    "widget": "Free widget",
+    "waveform": "Waveform",
+    "spectrum": "Spectrum",
+    "micScore": "Mic score",
+    "scoreWait": "Keep talking for a few seconds to get your score",
+    "gExcellent": "Excellent",
+    "gGood": "Good",
+    "gFair": "Fair",
+    "gPoor": "Poor",
+    "tipGreat": "Clear and loud enough. You're ready for calls.",
+    "tipQuiet": "Too quiet. Move closer or raise the input volume.",
+    "tipLoud": "Clipping. Lower the input volume a little.",
+    "tipNoise": "Lots of background noise. Try a quieter spot or turn on noise suppression.",
+    "noiseFloor": "Background noise",
+    "voiceLevel": "Voice level",
+    "yourResults": "Your results",
+    "resultsHint": "Run a test above and your results show up here.",
+    "copyResults": "Copy results",
+    "share": "Share",
+    "copied": "Copied",
+    "shareText": "Test yours free:"
   },
   "pages": {
     "home": {
@@ -688,8 +708,8 @@
         "name": "Headphone test",
         "desc": "Left/right, stereo and bass check."
       },
-      "title": "Headphone Test: Left/Right, Stereo and Bass Check Online",
-      "description": "Free online headphone test. Check left and right channels, stereo balance and bass with test tones and a frequency sweep. Works with wired and Bluetooth.",
+      "title": "Headphone & Headset Test: Left/Right, Stereo and Bass Online",
+      "description": "Free online headphone and headset test. Check left and right channels, stereo balance and bass with test tones and a frequency sweep. Wired and Bluetooth.",
       "h1Html": "Online <span class=\"grad\">headphone test</span>",
       "lead": "Find out in seconds if both sides of your headphones work, if left and right are the right way round, and how deep the bass goes.",
       "article": [

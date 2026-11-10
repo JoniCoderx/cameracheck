@@ -124,7 +124,27 @@
     "recName": "Grabación",
     "startRec": "Empezar a grabar",
     "fullTest": "Prueba completa",
-    "widget": "Widget gratis"
+    "widget": "Widget gratis",
+    "waveform": "Forma de onda",
+    "spectrum": "Espectro",
+    "micScore": "Puntuación del micrófono",
+    "scoreWait": "Sigue hablando unos segundos para obtener tu puntuación",
+    "gExcellent": "Excelente",
+    "gGood": "Bueno",
+    "gFair": "Regular",
+    "gPoor": "Malo",
+    "tipGreat": "Claro y con buen volumen. Listo para tus llamadas.",
+    "tipQuiet": "Demasiado bajo. Acércate o sube el volumen de entrada.",
+    "tipLoud": "Satura. Baja un poco el volumen de entrada.",
+    "tipNoise": "Mucho ruido de fondo. Busca un lugar más tranquilo o activa la supresión de ruido.",
+    "noiseFloor": "Ruido de fondo",
+    "voiceLevel": "Nivel de voz",
+    "yourResults": "Tus resultados",
+    "resultsHint": "Haz una prueba arriba y tus resultados aparecerán aquí.",
+    "copyResults": "Copiar resultados",
+    "share": "Compartir",
+    "copied": "Copiado",
+    "shareText": "Prueba el tuyo gratis:"
   },
   "pages": {
     "home": {
@@ -680,8 +700,8 @@
         "name": "Test de auriculares",
         "desc": "Izquierda/derecha, estéreo y graves."
       },
-      "title": "Test de auriculares online: izquierda/derecha, estéreo y graves",
-      "description": "Test de auriculares online gratis. Prueba los canales izquierdo y derecho, el balance estéreo y los graves con tonos y un barrido. Con cable y Bluetooth.",
+      "title": "Probar auriculares y audífonos online: izquierda, derecha y graves",
+      "description": "Prueba tus auriculares o audífonos online gratis: canales izquierdo y derecho, balance estéreo y graves con tonos y un barrido. Con cable y Bluetooth.",
       "h1Html": "<span class=\"grad\">Test de auriculares</span> online",
       "lead": "Descubre en segundos si funcionan los dos lados de tus auriculares, si izquierda y derecha están bien colocados y hasta dónde llegan los graves.",
       "article": [

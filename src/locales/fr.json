@@ -124,7 +124,27 @@
     "recName": "Enregistrement",
     "startRec": "Enregistrer ma voix",
     "fullTest": "Test complet",
-    "widget": "Widget gratuit"
+    "widget": "Widget gratuit",
+    "waveform": "Forme d'onde",
+    "spectrum": "Spectre",
+    "micScore": "Note du micro",
+    "scoreWait": "Continuez à parler quelques secondes pour obtenir votre note",
+    "gExcellent": "Excellent",
+    "gGood": "Bon",
+    "gFair": "Moyen",
+    "gPoor": "Faible",
+    "tipGreat": "Clair et assez fort. Vous êtes prêt pour vos appels.",
+    "tipQuiet": "Trop faible. Rapprochez-vous ou montez le volume d'entrée.",
+    "tipLoud": "Saturation. Baissez un peu le volume d'entrée.",
+    "tipNoise": "Beaucoup de bruit de fond. Essayez un endroit plus calme ou activez la suppression du bruit.",
+    "noiseFloor": "Bruit de fond",
+    "voiceLevel": "Niveau de la voix",
+    "yourResults": "Vos résultats",
+    "resultsHint": "Lancez un test ci-dessus et vos résultats s'afficheront ici.",
+    "copyResults": "Copier les résultats",
+    "share": "Partager",
+    "copied": "Copié",
+    "shareText": "Testez le vôtre gratuitement :"
   },
   "pages": {
     "home": {

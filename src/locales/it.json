@@ -124,7 +124,27 @@
     "recName": "Registrazione",
     "startRec": "Avvia registrazione",
     "fullTest": "Test completo",
-    "widget": "Widget gratuito"
+    "widget": "Widget gratuito",
+    "waveform": "Forma d'onda",
+    "spectrum": "Spettro",
+    "micScore": "Punteggio del microfono",
+    "scoreWait": "Continua a parlare per qualche secondo per ottenere il punteggio",
+    "gExcellent": "Eccellente",
+    "gGood": "Buono",
+    "gFair": "Discreto",
+    "gPoor": "Scarso",
+    "tipGreat": "Chiaro e abbastanza forte. Pronto per le chiamate.",
+    "tipQuiet": "Troppo basso. Avvicinati o alza il volume di ingresso.",
+    "tipLoud": "Distorce. Abbassa un po' il volume di ingresso.",
+    "tipNoise": "Molto rumore di fondo. Prova un posto più silenzioso o attiva la soppressione del rumore.",
+    "noiseFloor": "Rumore di fondo",
+    "voiceLevel": "Livello della voce",
+    "yourResults": "I tuoi risultati",
+    "resultsHint": "Fai un test qui sopra e i risultati appariranno qui.",
+    "copyResults": "Copia risultati",
+    "share": "Condividi",
+    "copied": "Copiato",
+    "shareText": "Prova il tuo gratis:"
   },
   "pages": {
     "home": {

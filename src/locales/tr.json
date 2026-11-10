@@ -124,7 +124,27 @@
     "recName": "Kayıt",
     "startRec": "Kaydı başlat",
     "fullTest": "Tam test",
-    "widget": "Ücretsiz widget"
+    "widget": "Ücretsiz widget",
+    "waveform": "Dalga formu",
+    "spectrum": "Spektrum",
+    "micScore": "Mikrofon puanı",
+    "scoreWait": "Puanını görmek için birkaç saniye daha konuş",
+    "gExcellent": "Mükemmel",
+    "gGood": "İyi",
+    "gFair": "Orta",
+    "gPoor": "Zayıf",
+    "tipGreat": "Net ve yeterince yüksek. Görüşmelere hazırsın.",
+    "tipQuiet": "Çok sessiz. Yaklaş veya giriş sesini artır.",
+    "tipLoud": "Ses bozuluyor. Giriş sesini biraz azalt.",
+    "tipNoise": "Çok fazla arka plan gürültüsü. Daha sessiz bir yer dene veya gürültü engellemeyi aç.",
+    "noiseFloor": "Arka plan gürültüsü",
+    "voiceLevel": "Ses seviyesi",
+    "yourResults": "Sonuçların",
+    "resultsHint": "Yukarıda bir test başlat, sonuçların burada görünsün.",
+    "copyResults": "Sonuçları kopyala",
+    "share": "Paylaş",
+    "copied": "Kopyalandı",
+    "shareText": "Seninkini ücretsiz test et:"
   },
   "pages": {
     "home": {

@@ -124,7 +124,27 @@
     "recName": "Rekaman",
     "startRec": "Mulai merekam",
     "fullTest": "Tes lengkap",
-    "widget": "Widget gratis"
+    "widget": "Widget gratis",
+    "waveform": "Bentuk gelombang",
+    "spectrum": "Spektrum",
+    "micScore": "Skor mikrofon",
+    "scoreWait": "Terus bicara beberapa detik untuk mendapatkan skor",
+    "gExcellent": "Sangat baik",
+    "gGood": "Baik",
+    "gFair": "Cukup",
+    "gPoor": "Buruk",
+    "tipGreat": "Jernih dan cukup keras. Siap untuk panggilan.",
+    "tipQuiet": "Terlalu pelan. Dekatkan atau naikkan volume input.",
+    "tipLoud": "Suara pecah. Turunkan sedikit volume input.",
+    "tipNoise": "Banyak suara latar. Cari tempat yang lebih tenang atau aktifkan peredam bising.",
+    "noiseFloor": "Suara latar",
+    "voiceLevel": "Level suara",
+    "yourResults": "Hasil Anda",
+    "resultsHint": "Jalankan tes di atas dan hasilnya muncul di sini.",
+    "copyResults": "Salin hasil",
+    "share": "Bagikan",
+    "copied": "Disalin",
+    "shareText": "Tes milik Anda gratis:"
   },
   "pages": {
     "home": {

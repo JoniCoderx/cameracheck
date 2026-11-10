@@ -139,7 +139,10 @@ const ICONS = {
   grid: '<rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M9.2 3.5v17M14.8 3.5v17M3.5 9.2h17M3.5 14.8h17"/>',
   fullscreen: '<path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/>',
   globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9M12 3C9.5 5.6 8.2 8.6 8.2 12s1.3 6.4 3.8 9"/>',
-  moon: '<path d="M20.5 13.2A8.5 8.5 0 1 1 10.8 3.5a6.5 6.5 0 0 0 9.7 9.7z"/>'
+  moon: '<path d="M20.5 13.2A8.5 8.5 0 1 1 10.8 3.5a6.5 6.5 0 0 0 9.7 9.7z"/>',
+  badge: '<path d="M12 2.8l2.4 1.7 2.9-.1.9 2.8 2.4 1.7-.9 2.8.9 2.8-2.4 1.7-.9 2.8-2.9-.1L12 21.2l-2.4-1.7-2.9.1-.9-2.8-2.4-1.7.9-2.8-.9-2.8 2.4-1.7.9-2.8 2.9.1z"/><path d="M8.6 12.2l2.3 2.3 4.6-4.8"/>',
+  share: '<circle cx="18" cy="5.5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="18.5" r="2.5"/><path d="M8.2 10.8l7.6-4.1M8.2 13.2l7.6 4.1"/>',
+  copy: '<rect x="8.5" y="8.5" width="12" height="12" rx="2.5"/><path d="M15.5 8.5V6a2.5 2.5 0 0 0-2.5-2.5H6A2.5 2.5 0 0 0 3.5 6v7A2.5 2.5 0 0 0 6 15.5h2.5"/>'
 };
 const ic = (n) => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${ICONS[n]}</svg>`;
 const wordmark = (size) => `<span class="logo" style="width:${size}px;height:${size}px">${LOGO_SVG}</span><span>MicTest<span class="plus">+</span></span>`;
@@ -284,8 +287,18 @@ const micTool = (u, headTag) => `
         <div class="verdict" id="micVerdict">${esc(u.waiting)}</div>
       </div>
       <div class="viz">
-        <canvas id="waveCanvas" role="img" aria-label="Waveform"></canvas>
-        <canvas id="specCanvas" role="img" aria-label="Spectrum"></canvas>
+        <div class="viz-cell viz-wave"><canvas id="waveCanvas" role="img" aria-label="${esc(u.waveform)}"></canvas><span class="viz-tag">${esc(u.waveform)}</span></div>
+        <div class="viz-cell viz-spec"><canvas id="specCanvas" role="img" aria-label="${esc(u.spectrum)}"></canvas><span class="viz-tag">${esc(u.spectrum)}</span></div>
+        <button class="viz-go" id="micGo" type="button"><span class="go-ico">${ic('mic')}</span><span>${esc(u.startMic)}</span></button>
+      </div>
+    </div>
+    <div class="score" id="micScore" hidden>
+      <div class="score-ring" id="scoreRing"><b id="scoreNum">–</b><small>/100</small></div>
+      <div class="score-body">
+        <div class="score-title">${esc(u.micScore)} <b id="scoreGrade"></b></div>
+        <p class="score-tip" id="scoreTip">${esc(u.scoreWait)}</p>
+        <div class="score-prog" aria-hidden="true"><i id="scoreProg"></i></div>
+        <div class="score-stats"><span>${esc(u.noiseFloor)} <b id="sNoise" dir="ltr">–</b></span><span>${esc(u.voiceLevel)} <b id="sVoice" dir="ltr">–</b></span></div>
       </div>
     </div>
     <div class="row-actions">
@@ -328,7 +341,7 @@ const camTool = (u, headTag) => `
     <div class="video-wrap" id="videoWrap">
       <video id="video" playsinline muted></video>
       <canvas id="gridOverlay" class="grid-overlay" hidden></canvas>
-      <div class="video-empty" id="videoEmpty">${ic('cam')}<p>${esc(u.camOff)}</p></div>
+      <button class="video-empty" id="videoEmpty" type="button"><span class="go-ico">${ic('cam')}</span><b>${esc(u.startCam)}</b><small>${esc(u.camOff)}</small></button>
       <div class="video-badges" id="videoBadges" hidden><span class="badge" id="bRes">–</span><span class="badge" id="bFps">– fps</span></div>
       <div class="flash" id="flash"></div>
     </div>
@@ -423,6 +436,23 @@ const devicesTool = (u) => `
   </div>
 </section>`;
 
+const resultsCard = (u) => `
+<section class="wrap tool" id="results" aria-labelledby="resTitle">
+  <div class="card results">
+    <div class="card-head">
+      <div>
+        <h2 id="resTitle" class="tool-title"><span class="ico">${ic('badge')}</span> ${esc(u.yourResults)}</h2>
+        <p class="muted" id="resHint">${esc(u.resultsHint)}</p>
+      </div>
+      <div class="controls">
+        <button class="btn" id="resCopy" type="button" disabled>${ic('copy')}<span>${esc(u.copyResults)}</span></button>
+        <button class="btn btn-primary" id="resShare" type="button" disabled>${ic('share')}<span>${esc(u.share)}</span></button>
+      </div>
+    </div>
+    <div class="res-grid" id="resGrid"></div>
+  </div>
+</section>`;
+
 function article(sections, u) {
   return sections.map((s, i) => {
     let h = `<section class="art-sec"><h2>${esc(s.h)}</h2>`;
@@ -475,7 +505,7 @@ function renderPage(lang, page) {
 
   const statuses = def.tools.filter((k) => k !== 'rec').map((k) => {
     const id = { mic: 'stMic', cam: 'stCam', spk: 'stSpk' }[k];
-    return `<div class="status" id="${id}"><span class="dot"></span><span>${esc(u[k])}:</span> <b>${esc(u.notTested)}</b></div>`;
+    return `<div class="status" id="${id}"><span class="dot"></span><span>${esc(u[k])}<span class="colon">:</span></span> <b>${esc(u.notTested)}</b></div>`;
   }).join('');
 
   const cta = isHome
@@ -524,6 +554,7 @@ ${header(lang, page)}
   <div class="alert wrap" id="secureAlert" hidden></div>
   ${tools}
   ${def.devices ? devicesTool(u) : ''}
+  ${def.tools.some((k) => k !== 'rec') ? resultsCard(u) : ''}
   ${adSlot('afterTool', u.ad)}
   ${others}
   <article class="wrap article">

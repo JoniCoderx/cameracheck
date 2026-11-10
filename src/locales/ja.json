@@ -124,7 +124,27 @@
     "recName": "録音",
     "startRec": "録音開始",
     "fullTest": "詳しいテスト",
-    "widget": "無料ウィジェット"
+    "widget": "無料ウィジェット",
+    "waveform": "波形",
+    "spectrum": "スペクトラム",
+    "micScore": "マイクスコア",
+    "scoreWait": "スコアを出すには数秒間話し続けてください",
+    "gExcellent": "とても良い",
+    "gGood": "良い",
+    "gFair": "まあまあ",
+    "gPoor": "悪い",
+    "tipGreat": "クリアで十分な音量です。通話の準備OKです。",
+    "tipQuiet": "音が小さすぎます。マイクに近づくか入力音量を上げてください。",
+    "tipLoud": "音割れしています。入力音量を少し下げてください。",
+    "tipNoise": "周囲の雑音が多いです。静かな場所に移るかノイズ抑制をオンにしてください。",
+    "noiseFloor": "周囲の雑音",
+    "voiceLevel": "声のレベル",
+    "yourResults": "あなたの結果",
+    "resultsHint": "上でテストを実行すると、ここに結果が表示されます。",
+    "copyResults": "結果をコピー",
+    "share": "共有",
+    "copied": "コピーしました",
+    "shareText": "無料で試す:"
   },
   "pages": {
     "home": {

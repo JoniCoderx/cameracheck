@@ -124,7 +124,27 @@
     "recName": "Aufnahme",
     "startRec": "Aufnahme starten",
     "fullTest": "Vollständiger Test",
-    "widget": "Kostenloses Widget"
+    "widget": "Kostenloses Widget",
+    "waveform": "Wellenform",
+    "spectrum": "Spektrum",
+    "micScore": "Mikrofon-Score",
+    "scoreWait": "Sprechen Sie noch ein paar Sekunden weiter, um Ihren Score zu erhalten",
+    "gExcellent": "Ausgezeichnet",
+    "gGood": "Gut",
+    "gFair": "Mittel",
+    "gPoor": "Schwach",
+    "tipGreat": "Klar und laut genug. Bereit für Anrufe.",
+    "tipQuiet": "Zu leise. Gehen Sie näher ran oder erhöhen Sie die Eingangslautstärke.",
+    "tipLoud": "Übersteuert. Senken Sie die Eingangslautstärke etwas.",
+    "tipNoise": "Viel Hintergrundrauschen. Suchen Sie einen ruhigeren Ort oder aktivieren Sie die Rauschunterdrückung.",
+    "noiseFloor": "Hintergrundrauschen",
+    "voiceLevel": "Sprachpegel",
+    "yourResults": "Ihre Ergebnisse",
+    "resultsHint": "Starten Sie oben einen Test, dann erscheinen hier Ihre Ergebnisse.",
+    "copyResults": "Ergebnisse kopieren",
+    "share": "Teilen",
+    "copied": "Kopiert",
+    "shareText": "Testen Sie Ihres kostenlos:"
   },
   "pages": {
     "home": {
@@ -272,8 +292,8 @@
       ]
     },
     "webcam": {
-      "title": "Webcam Test: Kamera online testen (Auflösung & FPS)",
-      "description": "Kostenloser Webcam Test online: Live-Bild, echte Auflösung, Bildrate (FPS), Seitenverhältnis und Helligkeit. Fotos und Clips. Für Laptop, USB und Handy.",
+      "title": "Webcam Test & Kameratest online (Auflösung & FPS)",
+      "description": "Kostenloser Webcam- und Kameratest online: Live-Bild, echte Auflösung, Bildrate (FPS), Seitenverhältnis und Helligkeit. Für Laptop, USB und Handy.",
       "h1Html": "Online <span class=\"grad\">Webcam Test</span>",
       "lead": "Stellen Sie sicher, dass Ihre Kamera funktioniert und gut aussieht. Sehen Sie das Live-Bild, die echte Auflösung und FPS und machen Sie mit einem Klick ein Foto.",
       "article": [

@@ -124,7 +124,27 @@
     "recName": "Gravação",
     "startRec": "Iniciar gravação",
     "fullTest": "Teste completo",
-    "widget": "Widget grátis"
+    "widget": "Widget grátis",
+    "waveform": "Forma de onda",
+    "spectrum": "Espectro",
+    "micScore": "Nota do microfone",
+    "scoreWait": "Continue falando por alguns segundos para receber sua nota",
+    "gExcellent": "Excelente",
+    "gGood": "Bom",
+    "gFair": "Regular",
+    "gPoor": "Ruim",
+    "tipGreat": "Claro e com bom volume. Pronto para chamadas.",
+    "tipQuiet": "Muito baixo. Aproxime-se ou aumente o volume de entrada.",
+    "tipLoud": "Está distorcendo. Diminua um pouco o volume de entrada.",
+    "tipNoise": "Muito ruído de fundo. Procure um lugar mais silencioso ou ative a supressão de ruído.",
+    "noiseFloor": "Ruído de fundo",
+    "voiceLevel": "Nível da voz",
+    "yourResults": "Seus resultados",
+    "resultsHint": "Faça um teste acima e seus resultados aparecem aqui.",
+    "copyResults": "Copiar resultados",
+    "share": "Compartilhar",
+    "copied": "Copiado",
+    "shareText": "Teste o seu grátis:"
   },
   "pages": {
     "home": {

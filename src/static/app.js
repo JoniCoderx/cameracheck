@@ -39,7 +39,8 @@
     return t('errGeneric') + (e && (e.message || n) || '');
   }
   const status = { mic: 'notTested', cam: 'notTested', spk: 'notTested' };
-  function setStatus(which, s) { status[which] = s; renderStatuses(); }
+  const extra = { mic: '', cam: '', spk: '' };
+  function setStatus(which, s) { status[which] = s; renderStatuses(); renderResults(); }
   function renderStatuses() {
     [['mic', '#stMic'], ['cam', '#stCam'], ['spk', '#stSpk']].forEach(([k, sel]) => {
       const el = $(sel); if (!el) return; const s = status[k];
@@ -47,9 +48,10 @@
       if (s === 'working') el.classList.add('ok');
       if (s === 'failed') el.classList.add('bad');
       if (s === 'testing') el.classList.add('wait');
-      el.querySelector('b').textContent = t(s);
+      el.querySelector('b').textContent = extra[k] && s === 'working' ? extra[k] : t(s);
     });
   }
+  const sr = $('.status-row'); if (sr) sr.style.setProperty('--n', sr.children.length);
   function fitCanvas(c) {
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
     const w = c.clientWidth, h = c.clientHeight;
@@ -106,7 +108,9 @@
       mic.analyser.fftSize = 2048;
       mic.analyser.smoothingTimeConstant = 0.75;
       mic.src.connect(mic.analyser);
-      mic.heard = false;
+      mic.heard = false; mic.samples = []; mic.clips = 0; mic.scored = false;
+      const sc = $('#micScore'); if (sc) { sc.hidden = false; sc.classList.remove('done'); setText('#scoreTip', t('scoreWait')); setText('#scoreNum', '–'); setText('#scoreGrade', ''); $('#scoreRing').className = 'score-ring'; $('#scoreRing').style.setProperty('--p', 0); $('#scoreProg').style.setProperty('--w', '0%'); setText('#sNoise', '–'); setText('#sVoice', '–'); }
+      $('#mic').classList.add('live');
       $('#micBtn').textContent = t('stop'); $('#micBtn').classList.add('on');
       $('#recBtn').disabled = false; $('#echoBtn').disabled = false;
       const track = stream.getAudioTracks()[0];
@@ -137,6 +141,7 @@
     if (mic.stream) mic.stream.getTracks().forEach((tr) => tr.stop());
     mic.stream = null; mic.src = null; mic.analyser = null;
     if (silent) return;
+    $('#mic').classList.remove('live');
     $('#micBtn').textContent = t('start'); $('#micBtn').classList.remove('on');
     $('#recBtn').disabled = true; $('#echoBtn').disabled = true;
     $('.meter').style.setProperty('--lvl', '0%'); $('.meter').style.setProperty('--pk', '0%');
@@ -179,6 +184,7 @@
         else if (pk > 0.98) { txt = t('vLoud'); cls += ' bad'; }
         else { txt = t('vGood'); cls += ' ok'; }
         if (db > -50 && !mic.heard) { mic.heard = true; setStatus('mic', 'working'); }
+        if (mic.heard) { mic.samples.push(isFinite(db) ? db : -100); if (pk > 0.98) mic.clips++; if (mic.samples.length > 125) mic.samples.shift(); updateScore(); }
         if (mic.heard && db < -55) cls += ' ok';
         verdict.textContent = txt; verdict.className = cls;
         // dominant frequency
@@ -220,7 +226,33 @@
     draw();
   }
 
+  const NEED = 42; // about five seconds of samples after the first sound
+  function updateScore() {
+    const n = mic.samples.length;
+    if (!$('#micScore')) return;
+    if (n < NEED && !mic.scored) { $('#scoreProg').style.setProperty('--w', Math.round((n / NEED) * 100) + '%'); return; }
+    if (n % 8 && mic.scored) return; // refresh about once a second
+    const s = [...mic.samples].sort((a, b) => a - b);
+    const q = (p) => s[Math.min(s.length - 1, Math.floor(p * s.length))];
+    const noise = q(0.05), voice = q(0.9), clip = mic.clips / Math.max(n, NEED);
+    const pQuiet = voice < -30 ? Math.min(45, (-30 - voice) * 2.5) : 0;
+    const pNoise = Math.min(40, Math.max(0, (noise + 55) * 1.6) + Math.max(0, (25 - (voice - noise)) * 1.2));
+    const pLoud = Math.min(35, clip * 300);
+    const score = Math.max(0, Math.min(100, Math.round(100 - pQuiet - pNoise - pLoud)));
+    const g = score >= 85 ? ['gExcellent', 'ok'] : score >= 70 ? ['gGood', 'ok'] : score >= 50 ? ['gFair', 'warn'] : ['gPoor', 'bad'];
+    const worst = Math.max(pQuiet, pNoise, pLoud);
+    const tip = score >= 85 || worst === 0 ? 'tipGreat' : worst === pLoud ? 'tipLoud' : worst === pQuiet ? 'tipQuiet' : 'tipNoise';
+    setText('#scoreNum', score); setText('#scoreGrade', t(g[0])); $('#scoreGrade').className = g[1];
+    $('#scoreRing').className = 'score-ring ' + g[1]; $('#scoreRing').style.setProperty('--p', score);
+    setText('#scoreTip', t(tip)); setText('#sNoise', Math.round(noise) + ' dB'); setText('#sVoice', Math.round(voice) + ' dB');
+    $('#micScore').classList.add('done');
+    mic.score = score; mic.grade = t(g[0]); extra.mic = score + '/100';
+    if (!mic.scored) { mic.scored = true; logEvent('mic_score', { score }); }
+    renderStatuses(); renderResults();
+  }
+
   on('#micBtn', 'click', () => (mic.stream ? stopMic() : startMic()));
+  on('#micGo', 'click', () => { if (!mic.stream) startMic(); });
   on('#micSelect', 'change', () => { if (mic.stream) startMic(); });
 
   function toggleEcho() {
@@ -273,7 +305,7 @@
       cam.stream = stream;
       video.srcObject = stream;
       await video.play().catch(() => {});
-      $('#videoEmpty').hidden = true; $('#videoBadges').hidden = false;
+      $('#videoEmpty').hidden = true; $('#videoBadges').hidden = false; wrap.classList.add('live');
       $('#camBtn').textContent = t('stop'); $('#camBtn').classList.add('on');
       ['#snapBtn', '#mirrorBtn', '#flipBtn', '#gridBtn', '#fsBtn', '#vrecBtn'].forEach((s) => ($(s).disabled = false));
       const track = stream.getVideoTracks()[0];
@@ -319,6 +351,7 @@
     $('#cAsp').textContent = ar;
     $('#cMp').textContent = ((w * h) / 1e6).toFixed(2) + ' MP';
     wrap.style.aspectRatio = w + ' / ' + h;
+    cam.res = w + '×' + h; extra.cam = (h >= 2160 ? '4K' : Math.min(w, h) + 'p'); renderStatuses(); renderResults();
     drawGrid();
   }
   if (video) video.addEventListener('resize', updateCamSpecs);
@@ -343,7 +376,7 @@
       cam.frames = 0; lastT = now;
       if (!fps && nominal) fps = nominal;
       const txt = fps ? Math.round(fps) + ' fps' : '–';
-      $('#bFps').textContent = txt;
+      $('#bFps').textContent = txt; if (fps && Math.round(fps) !== cam.fps) { cam.fps = Math.round(fps); renderResults(); }
       $('#cFps').textContent = txt + (nominal ? ' / ' + Math.round(nominal) : '');
     }, 1000);
   }
@@ -367,13 +400,14 @@
     cam.stream = null;
     if (silent) return;
     video.srcObject = null;
-    $('#videoEmpty').hidden = false; $('#videoBadges').hidden = true;
+    $('#videoEmpty').hidden = false; $('#videoBadges').hidden = true; wrap.classList.remove('live');
     $('#camBtn').textContent = t('start'); $('#camBtn').classList.remove('on');
     ['#snapBtn', '#mirrorBtn', '#flipBtn', '#gridBtn', '#fsBtn', '#vrecBtn'].forEach((s) => ($(s).disabled = true));
     wrap.style.aspectRatio = '';
   }
 
   on('#camBtn', 'click', () => (cam.stream ? stopCam() : startCam()));
+  on('#videoEmpty', 'click', () => { if (!cam.stream) startCam(); });
   on('#camSelect', 'change', () => { if (cam.stream) startCam(); });
   on('#resSelect', 'change', () => { if (cam.stream) startCam(); });
   on('#mirrorBtn', 'click', () => {
@@ -572,6 +606,50 @@
     }
   }
 
+  /* ---------------- results summary ---------------- */
+  const ICO = {};
+  ['mic', 'cam', 'spk'].forEach((k) => { const el = document.querySelector('#' + { mic: 'micTitle', cam: 'camTitle', spk: 'spkTitle' }[k] + ' .ico'); if (el) ICO[k] = el.innerHTML; });
+  function resultValue(k) {
+    const s = status[k];
+    if (k === 'mic' && mic.score != null) return mic.score + '/100 · ' + mic.grade;
+    if (k === 'cam' && s === 'working' && cam.res) return cam.res + (cam.fps ? ' · ' + cam.fps + ' fps' : '');
+    return t(s);
+  }
+  function renderResults() {
+    const grid = $('#resGrid'); if (!grid) return;
+    const keys = (PAGE.tools || []).filter((k) => k !== 'rec');
+    grid.innerHTML = '';
+    keys.forEach((k) => {
+      const tile = document.createElement('div');
+      const s = status[k];
+      tile.className = 'res-tile' + (s === 'working' ? ' ok' : s === 'failed' ? ' bad' : '');
+      const i = document.createElement('span'); i.className = 'r-ico'; i.innerHTML = ICO[k] || '';
+      const d = document.createElement('div');
+      const sm = document.createElement('small'); sm.textContent = t(k);
+      const b = document.createElement('b'); b.textContent = resultValue(k); b.title = b.textContent;
+      d.append(sm, b); tile.append(i, d); grid.appendChild(tile);
+    });
+    const any = keys.some((k) => status[k] === 'working' || status[k] === 'failed');
+    ['#resCopy', '#resShare'].forEach((s) => { const b = $(s); if (b) b.disabled = !any; });
+    const h = $('#resHint'); if (h) h.hidden = any;
+  }
+  function resultsText() {
+    const keys = (PAGE.tools || []).filter((k) => k !== 'rec' && status[k] !== 'notTested');
+    return 'MicTest+ · ' + keys.map((k) => t(k) + ': ' + resultValue(k)).join(' · ');
+  }
+  const shareUrl = () => location.origin + location.pathname;
+  async function copyText(txt) {
+    try { await navigator.clipboard.writeText(txt); toast(t('copied')); }
+    catch (e) { const ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); toast(t('copied')); } catch (x) {} ta.remove(); }
+  }
+  on('#resCopy', 'click', () => { copyText(resultsText() + '\n' + t('shareText') + ' ' + shareUrl()); logEvent('results_copy'); });
+  on('#resShare', 'click', async () => {
+    const text = resultsText() + '\n' + t('shareText');
+    logEvent('results_share');
+    if (navigator.share) { try { await navigator.share({ title: 'MicTest+', text, url: shareUrl() }); return; } catch (e) { if (e && e.name === 'AbortError') return; } }
+    copyText(text + ' ' + shareUrl());
+  });
+
   /* ---------------- hero button ---------------- */
   on('#heroStart', 'click', async (e) => {
     getCtx();
@@ -692,6 +770,7 @@
 
   setText('#year', new Date().getFullYear());
   renderStatuses();
+  renderResults();
   fillInfo();
   refreshDevices();
 
