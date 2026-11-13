@@ -8,13 +8,21 @@
     "titleWebcam": "Webcam-Test",
     "runMic": "Mikrofontest starten",
     "runWebcam": "Webcam-Test starten",
-    "moreGuides": "Weitere Ratgeber"
+    "moreGuides": "Weitere Ratgeber",
+    "titleSpeaker": "Lautsprecher-Test",
+    "runSpeaker": "Lautsprecher-Test starten",
+    "titleKeyboard": "Tastaturtest",
+    "runKeyboard": "Tastaturtest starten",
+    "titleMouse": "Maustest",
+    "runMouse": "Maustest starten",
+    "titlePixel": "Pixelfehler-Test",
+    "runPixel": "Pixelfehler-Test starten"
   },
   "hub": {
-    "title": "Mikrofon oder Webcam funktioniert nicht: Ratgeber",
-    "description": "Mikrofon oder Webcam funktioniert nicht unter Windows, Mac, Discord, Zoom, Teams oder Google Meet? Lösungen Schritt für Schritt, kostenlos und klar.",
+    "title": "Mikrofon, Webcam, Ton & PC: Ratgeber zur Fehlerbehebung",
+    "description": "Schritt-für-Schritt-Lösungen, wenn Mikrofon, Webcam, Lautsprecher, Tastatur, Maus oder Bildschirm streiken. Windows, Mac, iPhone, Android, Discord und Zoom.",
     "h1": "Ratgeber zur Fehlerbehebung",
-    "lead": "Kurze, praktische Lösungen für die häufigsten Probleme mit Mikrofon und Kamera. Testen Sie zuerst und folgen Sie dann dem Ratgeber, der zu Ihrem Ergebnis passt."
+    "lead": "Kurze, praktische Lösungen für die häufigsten Probleme mit Mikrofon, Kamera, Ton, Tastatur, Maus und Bildschirm. Testen Sie zuerst und folgen Sie dann dem Ratgeber, der zu Ihrem Ergebnis passt."
   },
   "guides": [
     {
@@ -322,6 +330,407 @@
           "a": "Öffnen Sie den Mikrofontest auf dieser Seite oder gehen Sie in Zoom zu Einstellungen → Audio → Mikrofon testen. Beides dauert etwa fünf Sekunden."
         }
       ]
+    },
+    {
+      "slug": "no-sound-speakers-headphones",
+      "title": "Kein Ton aus Lautsprecher oder Kopfhörer? 8 Lösungen",
+      "description": "Kein Ton am PC oder Mac? Prüfen Sie Ausgabegerät, Lautstärkemixer, Kabel, Bluetooth und Treiber. Acht Lösungen für Lautsprecher und Kopfhörer, einfache zuerst.",
+      "h1": "Kein Ton aus Lautsprechern oder Kopfhörern",
+      "lead": "Wenn der Computer plötzlich stumm ist, schickt er den Ton fast immer an das falsche Gerät oder ein Lautstärkeregler steht auf null. Gehen Sie die Prüfungen der Reihe nach durch. Bei den meisten ist der Ton spätestens nach Schritt 3 wieder da.",
+      "tool": "speaker",
+      "sections": [
+        {
+          "h": "Schritt 0: Testton abspielen",
+          "p": [
+            "Öffnen Sie den Lautsprecher-Test auf dieser Seite und spielen Sie den linken und rechten Ton ab. Hören Sie beide, sind Lautsprecher und System in Ordnung und das Problem liegt in einer einzelnen App oder Website. Hören Sie nichts, lesen Sie weiter."
+          ]
+        },
+        {
+          "h": "1. Die naheliegenden Lautstärkeregler prüfen",
+          "ul": [
+            "Den Lautstärkeregler oder die Tasten direkt an den Lautsprechern oder Kopfhörern.",
+            "Die Stummschalttaste auf der Tastatur (oft F1, F10 oder eine Taste mit durchgestrichenem Lautsprecher).",
+            "Den Lautstärkeregler in der Taskleiste (Windows) oder in der Menüleiste (Mac).",
+            "Die Lautstärke im Videoplayer oder auf der Website, die Sie gerade nutzen."
+          ]
+        },
+        {
+          "h": "2. Das richtige Ausgabegerät wählen",
+          "p": [
+            "Computer haben oft mehrere Ausgänge: Laptop-Lautsprecher, Kopfhörer, einen Monitor mit Lautsprechern über HDMI, ein USB-Headset und Bluetooth-Geräte. Der Ton geht immer nur an eines davon."
+          ],
+          "ol": [
+            "Windows: Klicken Sie auf das Lautsprechersymbol in der Taskleiste, dann auf den Pfeil neben dem Lautstärkeregler, und wählen Sie Ihre Lautsprecher oder Kopfhörer.",
+            "Mac: Öffnen Sie Systemeinstellungen → Ton → Ausgang und wählen Sie Ihr Gerät.",
+            "Spielen Sie den Testton erneut ab."
+          ]
+        },
+        {
+          "h": "3. Lautstärkemixer prüfen (Windows)",
+          "p": [
+            "Windows speichert für jede App eine eigene Lautstärke. Klicken Sie mit der rechten Maustaste auf das Lautsprechersymbol → Lautstärkemixer öffnen und prüfen Sie, dass Ihr Browser oder Spiel nicht stummgeschaltet oder auf null gestellt ist."
+          ]
+        },
+        {
+          "h": "4. Kabel und Anschlüsse prüfen",
+          "p": [
+            "Stecken Sie den Stecker ganz hinein. Kabelgebundene Kopfhörer gehören in die Kopfhörerbuchse (grün), nicht in die Mikrofonbuchse (rosa). Probieren Sie am Desktop-PC die Buchse auf der Rückseite, denn die Buchsen an der Front sind im Gehäuse manchmal nicht angeschlossen. USB-Lautsprecher und Headsets stecken Sie testweise in einen anderen USB-Anschluss direkt am Computer."
+          ]
+        },
+        {
+          "h": "5. Bluetooth-Kopfhörer neu verbinden",
+          "ol": [
+            "Schalten Sie Bluetooth aus und wieder ein.",
+            "Hilft das nicht, entfernen Sie die Kopfhörer in den Bluetooth-Einstellungen und koppeln Sie sie neu.",
+            "Wählen Sie unter Windows für die beste Qualität die Ausgabe „Kopfhörer“ oder „Stereo“, nicht „Headset“ oder „Freisprechen“."
+          ]
+        },
+        {
+          "h": "6. Problembehandlung ausführen (Windows)",
+          "p": [
+            "Öffnen Sie Einstellungen → System → Sound und klicken Sie unter Ausgabe auf „Problembehandlung für häufige Soundprobleme“. Sie startet den Audiodienst neu und korrigiert häufige Treibereinstellungen automatisch."
+          ]
+        },
+        {
+          "h": "7. Soundtreiber neu installieren (Windows)",
+          "ol": [
+            "Klicken Sie mit der rechten Maustaste auf Start → Geräte-Manager.",
+            "Öffnen Sie „Audio-, Video- und Gamecontroller“.",
+            "Klicken Sie mit der rechten Maustaste auf Ihr Audiogerät (Realtek, Intel, AMD oder ähnlich) → Gerät deinstallieren und starten Sie neu. Windows installiert den Treiber beim Hochfahren wieder."
+          ]
+        },
+        {
+          "h": "8. Audiosystem neu starten (Mac)",
+          "p": [
+            "Zeigt der Mac den richtigen Ausgang an, gibt aber nichts wieder, starten Sie ihn neu. Bleibt der Ton weg, öffnen Sie die Aktivitätsanzeige, suchen Sie nach „coreaudiod“ und beenden Sie den Prozess. macOS startet ihn innerhalb einer Sekunde neu."
+          ]
+        },
+        {
+          "h": "Ton nur auf einer Seite?",
+          "p": [
+            "Spielen Sie im Lautsprecher-Test den linken und rechten Ton ab. Bleibt eine Seite bei allen Kopfhörern stumm, prüfen Sie den Balance-Regler (Windows: Einstellungen → System → Sound → Ihr Gerät; Mac: Ton → Ausgang → Balance). Betrifft es nur ein Paar, sind Kabel oder Stecker beschädigt."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Warum habe ich am Computer keinen Ton, obwohl die Lautstärke aufgedreht ist?",
+          "a": "Meist geht der Ton an einen anderen Ausgang, etwa einen Monitor über HDMI oder ein ausgeschaltetes Bluetooth-Gerät. Wählen Sie Ihre Lautsprecher oder Kopfhörer als Ausgabegerät und testen Sie erneut."
+        },
+        {
+          "q": "Warum funktionieren meine Kopfhörer am Handy, aber nicht am PC?",
+          "a": "Der PC schickt den Ton vermutlich noch an seine Lautsprecher oder einen anderen Ausgang. Wählen Sie die Kopfhörer als Ausgabegerät. Kabelgebundene Kopfhörer gehören in die grüne Kopfhörerbuchse."
+        },
+        {
+          "q": "Wie teste ich meine Lautsprecher online?",
+          "a": "Öffnen Sie den Lautsprecher-Test auf dieser Seite und spielen Sie den linken, rechten und den Sweep-Ton ab. Sie hören sofort, ob beide Kanäle sowie tiefe und hohe Frequenzen funktionieren."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "mouse-double-clicking",
+      "title": "Maus Doppelklick statt Einzelklick? So testen & beheben",
+      "description": "Maus macht Doppelklick bei einem Klick? In 30 Sekunden testen, dann beheben: Windows-Einstellungen, Debounce, Schalter reinigen oder Garantie nutzen.",
+      "h1": "Maus macht Doppelklick bei einem Klick",
+      "lead": "Eine Maus, die bei einem Druck zwei Klicks registriert, gehört zu den häufigsten Hardwarefehlern. Meist ist der Schalter unter der Taste verschlissen. Bestätigen Sie den Fehler zuerst und probieren Sie dann diese Lösungen der Reihe nach.",
+      "tool": "mouse",
+      "sections": [
+        {
+          "h": "Schritt 0: Mit dem Maustest bestätigen",
+          "p": [
+            "Öffnen Sie den Maustest auf dieser Seite und klicken Sie eine Minute lang ganz normal. Er markiert zwei Klicks derselben Taste, die weniger als 80 Millisekunden auseinanderliegen. So schnell kann kein Finger absichtlich klicken, jede Markierung ist also ein Fehler. Sehen Sie Markierungen, macht die Maus Doppelklicks. Wenn nicht, prüfen Sie die Windows-Einstellungen unten."
+          ]
+        },
+        {
+          "h": "1. Klickeinstellung in Windows prüfen",
+          "p": [
+            "Windows lässt sich so einstellen, dass Dateien mit einem einfachen Klick geöffnet werden, was sich wie ein Doppelklick anfühlt. Öffnen Sie Explorer → Ansicht (oder die drei Punkte) → Optionen und wählen Sie unter „Klickverhalten“ die Option „Durch Doppelklick öffnen (durch einfachen Klick auswählen)“. Prüfen Sie außerdem Einstellungen → Bluetooth und Geräte → Maus → Weitere Mauseinstellungen und stellen Sie die Doppelklickgeschwindigkeit auf die Mitte."
+          ]
+        },
+        {
+          "h": "2. Anderen USB-Anschluss nutzen und USB-Energiesparen abschalten",
+          "p": [
+            "Schließen Sie die Maus direkt am Computer an statt an einem Hub. Öffnen Sie am Laptop Geräte-Manager → USB-Controller, öffnen Sie jeden „USB-Root-Hub“ und entfernen Sie auf der Registerkarte Energieverwaltung den Haken bei „Computer kann das Gerät ausschalten, um Energie zu sparen“."
+          ]
+        },
+        {
+          "h": "3. Debounce-Zeit erhöhen (Gaming-Mäuse)",
+          "p": [
+            "Viele Gaming-Mäuse haben in ihrer Software eine Einstellung für Debounce oder „Klickreaktion“ (Logitech G HUB, Razer Synapse, SteelSeries GG und andere). Ein sehr niedriger Wert lässt einen verschlissenen Schalter zwei Klicks senden. Erhöhen Sie ihn etwas, zum Beispiel von 2 ms auf 8 oder 10 ms, und testen Sie erneut."
+          ]
+        },
+        {
+          "h": "4. Taste reinigen",
+          "p": [
+            "Ziehen Sie den Stecker der Maus oder nehmen Sie die Batterie heraus. Blasen Sie Druckluft in den Spalt rund um die Taste und klicken Sie dabei 20 bis 30 Sekunden lang immer wieder. Staub und Schmutz können den Schalter prellen lassen."
+          ]
+        },
+        {
+          "h": "5. Garantie prüfen",
+          "p": [
+            "Die meisten Mäuse haben 1 bis 3 Jahre Garantie, und ungewollte Doppelklicks sind ein anerkannter Mangel. Bewahren Sie das Ergebnis des Maustests als Nachweis für den Support auf."
+          ]
+        },
+        {
+          "h": "6. Schalter tauschen (für Fortgeschrittene)",
+          "p": [
+            "Wenn Sie sich zutrauen, die Maus zu öffnen und zu löten, lässt sich der Schalter unter der Taste für wenige Euro ersetzen. Recherchieren Sie vorher Ihr genaues Modell, denn manche Mäuse haben optische Schalter, die nicht auf diese Weise verschleißen."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Warum macht meine Maus einen Doppelklick, wenn ich einmal klicke?",
+          "a": "Meist ist der Metallkontakt im Schalter der Taste abgenutzt oder verschmutzt, sodass er bei einem Druck prellt und zwei Klicks sendet. Auch Einstellungen wie der Einzelklick-Modus in Windows können sich wie ein Doppelklick anfühlen."
+        },
+        {
+          "q": "Wie teste ich, ob meine Maus Doppelklicks macht?",
+          "a": "Öffnen Sie den Maustest auf dieser Seite und klicken Sie normal. Zwei Klicks derselben Taste mit weniger als 80 ms Abstand werden als ungewollte Doppelklicks markiert."
+        },
+        {
+          "q": "Lässt sich eine Maus mit Doppelklick-Problem reparieren?",
+          "a": "Oft ja. Eine höhere Debounce-Zeit und das Reinigen des Schalters helfen bei vielen Mäusen. Tritt es weiter auf, muss der Schalter ersetzt werden oder die Maus ist ein Garantiefall."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "keyboard-keys-not-working",
+      "title": "Tastatur: Tasten funktionieren nicht oder doppelt? 8 Tipps",
+      "description": "Einige Tasten reagieren nicht, schreiben doppelt oder falsche Zeichen? Jede Taste testen, dann Anschlagverzögerung, Layout, Treiber, Schmutz, Prellen beheben.",
+      "h1": "Tastaturtasten funktionieren nicht oder schreiben doppelt",
+      "lead": "Wenn einzelne Tasten nichts tun, doppelt schreiben oder den falschen Buchstaben liefern, stecken meist eine Einstellung, das Tastaturlayout oder ein verschmutzter Schalter dahinter. Finden Sie zuerst heraus, welche Tasten genau betroffen sind, und folgen Sie dann der passenden Lösung.",
+      "tool": "keyboard",
+      "sections": [
+        {
+          "h": "Schritt 0: Jede Taste testen",
+          "p": [
+            "Öffnen Sie den Tastaturtest auf dieser Seite und drücken Sie jede Taste einmal. Tasten, die nie aufleuchten, kommen beim Computer nicht an. Tasten mit Prell-Markierung haben für einen Druck zwei Anschläge gesendet. Schreibt eine Taste das falsche Zeichen, leuchtet aber an der richtigen Stelle auf, liegt das Problem am Layout (Schritt 3), nicht an der Hardware."
+          ]
+        },
+        {
+          "h": "1. Neu starten und neu verbinden",
+          "p": [
+            "Starten Sie den Computer neu. Schließen Sie eine USB-Tastatur direkt am Computer an und probieren Sie einen anderen Anschluss. Bei einer Funktastatur wechseln oder laden Sie die Batterien und koppeln Sie sie neu."
+          ]
+        },
+        {
+          "h": "2. Anschlagverzögerung und Einrastfunktion abschalten (Windows)",
+          "p": [
+            "Die Anschlagverzögerung ignoriert kurze oder wiederholte Tastendrücke, was genau wie defekte Tasten aussieht. Öffnen Sie Einstellungen → Barrierefreiheit → Tastatur und schalten Sie Anschlagverzögerung und Einrastfunktion aus. Wer die rechte Umschalttaste 8 Sekunden gedrückt hält, schaltet die Anschlagverzögerung leicht versehentlich ein."
+          ]
+        },
+        {
+          "h": "3. Falsche Zeichen? Layout prüfen",
+          "p": [
+            "Erscheinen falsche Symbole, sind zum Beispiel @ und \" vertauscht oder Y und Z verdreht, nutzt der Computer ein anderes Tastaturlayout. Windows: Drücken Sie Windows + Leertaste zum Umschalten und entfernen Sie nicht genutzte Layouts unter Einstellungen → Zeit und Sprache → Sprache und Region. Mac: Systemeinstellungen → Tastatur → Eingabequellen."
+          ]
+        },
+        {
+          "h": "4. Ziffernblock tippt keine Zahlen?",
+          "p": [
+            "Drücken Sie Num Lock. Auf vielen Laptops ist es Fn + Num Lock oder Fn + F11. Ist Num Lock aus, funktioniert der Ziffernblock stattdessen als Pfeiltasten."
+          ]
+        },
+        {
+          "h": "5. Unter den Tasten reinigen",
+          "ol": [
+            "Ziehen Sie den Stecker der Tastatur oder schalten Sie den Laptop aus.",
+            "Halten Sie das Gerät schräg kopfüber und klopfen Sie leicht darauf.",
+            "Blasen Sie Druckluft unter die klemmenden Tasten.",
+            "Ziehen Sie bei einer mechanischen Tastatur die Tastenkappe mit einem Keycap-Puller ab und reinigen Sie rund um den Schalter."
+          ]
+        },
+        {
+          "h": "6. Doppelt schreibende Taste beheben (Prellen)",
+          "p": [
+            "Sendet eine Taste für einen Druck zwei Anschläge, spricht man von Prellen (Chatter). Bei einer mechanischen Tastatur hilft oft Druckluft unter dem Schalter, und bei einer Hot-Swap-Tastatur tauschen Sie den Schalter in einer Minute. Viele Gaming-Tastaturen haben in ihrer Software auch eine Debounce-Einstellung. Ein etwas höherer Wert stoppt das meiste Prellen."
+          ]
+        },
+        {
+          "h": "7. Tastaturtreiber neu installieren (Windows)",
+          "ol": [
+            "Klicken Sie mit der rechten Maustaste auf Start → Geräte-Manager.",
+            "Öffnen Sie Tastaturen.",
+            "Klicken Sie mit der rechten Maustaste auf Ihre Tastatur → Gerät deinstallieren und starten Sie neu."
+          ]
+        },
+        {
+          "h": "8. Außerhalb von Windows testen",
+          "p": [
+            "Versagen die Tasten weiterhin, ist wahrscheinlich die Hardware schuld. Probieren Sie die Tastatur an einem anderen Computer. Fallen am Laptop dieselben Tasten auch im BIOS aus, muss die Tastatur repariert oder ersetzt werden."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Warum funktionieren einige Tasten meiner Tastatur nicht?",
+          "a": "Häufige Ursachen sind eine eingeschaltete Anschlagverzögerung, Schmutz unter den Tasten, eine lockere USB-Verbindung oder ein defekter Schalter. Ein Tastaturtest zeigt genau, welche Tasten nicht erkannt werden."
+        },
+        {
+          "q": "Warum schreibt meine Tastatur zwei Buchstaben bei einem Druck?",
+          "a": "Das ist Tastenprellen: Der Schalter prellt und sendet zwei Anschläge. Den Schalter zu reinigen oder die Debounce-Zeit zu erhöhen, hilft meistens. Andernfalls muss der Schalter ersetzt werden."
+        },
+        {
+          "q": "Wie teste ich alle Tasten meiner Tastatur?",
+          "a": "Öffnen Sie den Tastaturtest auf dieser Seite und drücken Sie jede Taste. Jede erkannte Taste leuchtet auf, und der Test zeigt auch Prellen und wie viele Tasten gleichzeitig gehalten werden können."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "dead-pixel-stuck-pixel-fix",
+      "title": "Pixelfehler: Tote Pixel finden und beheben",
+      "description": "Tote und hängende Pixel mit Vollfarben finden, den Unterschied verstehen und Lösungen probieren, die wirken: blinkender Pixel-Fixer, sanfter Druck und Garantie.",
+      "h1": "Toter oder hängender Pixel: prüfen und beheben",
+      "lead": "Ein Pixel, der schwarz, weiß oder in einer grellen Farbe bleibt, fällt leicht nicht auf, bis man plötzlich nur noch ihn sieht. Prüfen Sie einen neuen Bildschirm sofort nach dem Kauf, denn Rückgabefristen sind kurz. So finden Sie fehlerhafte Pixel und das können Sie dagegen tun.",
+      "tool": "pixel",
+      "sections": [
+        {
+          "h": "Schritt 0: Bildschirm reinigen",
+          "p": [
+            "Wischen Sie den Bildschirm zuerst mit einem trockenen Mikrofasertuch ab. Ein Staubkorn sieht genau wie ein toter Pixel aus, verschiebt sich aber oder verschwindet beim Abwischen."
+          ]
+        },
+        {
+          "h": "1. Vollbild-Farbtest durchführen",
+          "p": [
+            "Öffnen Sie den Pixelfehler-Test auf dieser Seite und starten Sie den Vollbildmodus. Er füllt den Bildschirm mit Schwarz, Weiß, Rot, Grün, Blau und Grau. Betrachten Sie jede Farbe aus etwa 30 cm Abstand langsam Abschnitt für Abschnitt."
+          ]
+        },
+        {
+          "h": "2. Toter, hängender oder heißer Pixel?",
+          "ul": [
+            "Toter Pixel: schwarz auf jeder Farbe, am besten auf Weiß zu sehen. Der Transistor bekommt keinen Strom, eine Reparatur gelingt selten.",
+            "Hängender Pixel: immer in einer Farbe (Rot, Grün oder Blau), am besten auf Schwarz zu sehen. Ein Teil davon bleibt dauerhaft an, und oft lässt er sich beheben.",
+            "Heißer Pixel: immer weiß, auf Schwarz zu sehen. Er wird wie ein hängender Pixel behandelt."
+          ]
+        },
+        {
+          "h": "3. Pixel-Fixer ausprobieren",
+          "p": [
+            "Hängende Pixel lassen sich manchmal wiederbeleben, indem man schnell wechselnde Farben darüber blinken lässt. Öffnen Sie im Pixelfehler-Test den Pixel-Fixer, ziehen Sie das blinkende Quadrat über den hängenden Pixel und lassen Sie es 10 bis 30 Minuten laufen. Klappt es beim ersten Mal nicht, versuchen Sie es noch einmal für ein paar Stunden. Schauen Sie nicht auf das blinkende Quadrat, wenn Sie empfindlich auf Lichtblitze reagieren."
+          ]
+        },
+        {
+          "h": "4. Sanfter Druck (auf eigenes Risiko)",
+          "p": [
+            "Schalten Sie den Bildschirm aus, wickeln Sie eine Fingerspitze in ein weiches Tuch, drücken Sie ganz sanft auf die betroffene Stelle und schalten Sie den Bildschirm ein, während Sie drücken. Drücken Sie nie fest und verwenden Sie nie etwas Spitzes. Bei manchen Panels kann das alles verschlimmern, probieren Sie also zuerst den Pixel-Fixer."
+          ]
+        },
+        {
+          "h": "5. Garantie und Rückgaberecht prüfen",
+          "p": [
+            "Viele Hersteller tauschen einen Bildschirm erst ab einer Mindestzahl fehlerhafter Pixel aus, Händler nehmen Geräte aber meist innerhalb von 14 bis 30 Tagen ohne Angabe von Gründen zurück. Fotografieren Sie den Pixel auf der Vollfarbe und wenden Sie sich schnell an den Verkäufer."
+          ]
+        },
+        {
+          "h": "Bonus: Bildwiederholrate prüfen",
+          "p": [
+            "Wenn Sie schon einen neuen Monitor testen: Der Pixelfehler-Test misst auch seine tatsächliche Bildwiederholrate. Zeigt ein 144-Hz-Monitor nur 60 Hz, stellen Sie die Rate in Windows unter Einstellungen → System → Bildschirm → Erweiterte Anzeige ein und achten Sie auf ein DisplayPort-Kabel oder ein ausreichend schnelles HDMI-Kabel."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Was ist der Unterschied zwischen einem toten und einem hängenden Pixel?",
+          "a": "Ein toter Pixel bleibt auf jeder Farbe schwarz. Ein hängender Pixel bleibt in einer Farbe, meist Rot, Grün oder Blau. Hängende Pixel lassen sich oft beheben, tote nur selten."
+        },
+        {
+          "q": "Kann sich ein hängender Pixel von selbst reparieren?",
+          "a": "Manchmal, nach Stunden oder Tagen normaler Nutzung. Ein blinkender Pixel-Fixer beschleunigt das und hilft bei vielen hängenden Pixeln."
+        },
+        {
+          "q": "Wie prüfe ich einen neuen Monitor auf tote Pixel?",
+          "a": "Reinigen Sie den Bildschirm, öffnen Sie dann einen Pixelfehler-Test im Vollbild und betrachten Sie reines Schwarz, Weiß, Rot, Grün und Blau. Tun Sie das am ersten Tag, damit Sie das Gerät noch zurückgeben können."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "phone-mic-not-working",
+      "title": "iPhone oder Android Mikrofon funktioniert nicht? 8 Tipps",
+      "description": "Man hört Sie beim Telefonieren nicht, oder das Handy-Mikrofon klingt leise oder dumpf? Berechtigungen, Bluetooth, Hülle und verdeckte Öffnungen prüfen.",
+      "h1": "Mikrofon am iPhone oder Android funktioniert nicht",
+      "lead": "Wenn man Sie nicht hört oder Ihre Stimme leise oder dumpf klingt, liegt es meist an einer Berechtigung, einem Bluetooth-Gerät oder etwas, das das Mikrofon verdeckt. Handys haben mehr als ein Mikrofon, testen Sie also zuerst, welches betroffen ist.",
+      "tool": "mic",
+      "sections": [
+        {
+          "h": "Schritt 0: Mikrofon im Browser testen",
+          "p": [
+            "Öffnen Sie den Mikrofontest auf dieser Seite auf Ihrem Handy und tippen Sie auf Start. Bewegt sich die Pegelanzeige, wenn Sie sprechen, funktioniert das Mikrofon und das Problem liegt in einer App oder einer Anrufeinstellung. Bleibt sie flach, lesen Sie weiter."
+          ]
+        },
+        {
+          "h": "1. Bluetooth trennen",
+          "p": [
+            "Handys wechseln automatisch zu einem verbundenen Bluetooth-Headset, Auto oder Ohrhörern, selbst wenn diese in Ihrer Tasche liegen. Schalten Sie Bluetooth aus und testen Sie erneut."
+          ]
+        },
+        {
+          "h": "2. Mikrofonzugriff für die App erlauben",
+          "ol": [
+            "iPhone: Einstellungen → Datenschutz & Sicherheit → Mikrofon, dann die App einschalten.",
+            "Android: Einstellungen → Apps → App auswählen → Berechtigungen → Mikrofon → Zulassen.",
+            "Prüfen Sie ab Android 12 außerdem, dass der Mikrofon-Schalter in den Schnelleinstellungen nicht ausgeschaltet ist."
+          ]
+        },
+        {
+          "h": "3. Hülle und Displayschutz abnehmen",
+          "p": [
+            "Hüllen und Displayschutzfolien können eine Mikrofonöffnung verdecken, besonders wenn sie nach einem Sturz verrutscht sind. Nehmen Sie sie ab und testen Sie erneut."
+          ]
+        },
+        {
+          "h": "4. Mikrofonöffnungen reinigen",
+          "p": [
+            "Handys haben Mikrofonöffnungen unten, neben der Kamera und manchmal oben. Reinigen Sie sie vorsichtig mit einer weichen, trockenen Zahnbürste. Stecken Sie keine Nadeln in die Öffnungen, das kann das Schutzgitter beschädigen."
+          ]
+        },
+        {
+          "h": "5. Jedes Mikrofon einzeln testen",
+          "ul": [
+            "Unteres Mikrofon: eine Sprachmemo oder Sprachaufnahme aufnehmen.",
+            "Vorderes oder oberes Mikrofon: ein Selfie-Video aufnehmen.",
+            "Hinteres Mikrofon: ein Video mit der Rückkamera aufnehmen.",
+            "Klingt nur eines davon dumpf, ist diese Öffnung verdeckt oder beschädigt."
+          ]
+        },
+        {
+          "h": "6. Funktionen zur Rauschunterdrückung abschalten",
+          "p": [
+            "Wechseln Sie am iPhone während eines Anrufs im Kontrollzentrum den Mikrofonmodus (Standard, Sprachisolation, Breites Spektrum). Schalten Sie unter Android in den Anrufeinstellungen „Rauschunterdrückung“ oder „Klare Stimme“ aus, falls Ihr Handy diese Optionen hat, und testen Sie erneut."
+          ]
+        },
+        {
+          "h": "7. Neu starten und aktualisieren",
+          "p": [
+            "Starten Sie das Handy neu und installieren Sie verfügbare Systemupdates. Fehler im Audiosystem werden oft per Update behoben."
+          ]
+        },
+        {
+          "h": "8. Im abgesicherten Modus testen (Android)",
+          "p": [
+            "Halten Sie die Ein-/Aus-Taste gedrückt, dann tippen und halten Sie „Ausschalten“, bis „Abgesicherter Modus“ erscheint. Funktioniert das Mikrofon im abgesicherten Modus, beansprucht eine installierte App das Mikrofon für sich."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Warum hört man mich beim Telefonieren nicht, über Lautsprecher aber schon?",
+          "a": "Bei normalen Anrufen wird meist das untere Mikrofon genutzt, beim Freisprechen oder bei Videoanrufen eventuell ein anderes. Reinigen Sie die untere Öffnung, nehmen Sie die Hülle ab und testen Sie erneut."
+        },
+        {
+          "q": "Wie teste ich das Mikrofon meines Handys?",
+          "a": "Öffnen Sie den Mikrofontest auf dieser Seite im Browser Ihres Handys, erlauben Sie den Mikrofonzugriff und sprechen Sie. Bewegt sich die Anzeige, funktioniert das Mikrofon. Sie können auch einen Clip aufnehmen und abspielen."
+        },
+        {
+          "q": "Warum klingt das Mikrofon meines Handys dumpf?",
+          "a": "Meist verdecken die Hülle, eine Displayschutzfolie oder Fusseln eine Öffnung. Nehmen Sie Hülle und Folie ab und reinigen Sie die Öffnungen vorsichtig mit einer weichen, trockenen Bürste."
+        }
+      ],
+      "published": "2026-11-13"
     }
   ]
 }

@@ -8,13 +8,21 @@
     "titleWebcam": "Kamera testi",
     "runMic": "Mikrofon testini başlat",
     "runWebcam": "Kamera testini başlat",
-    "moreGuides": "Diğer rehberler"
+    "moreGuides": "Diğer rehberler",
+    "titleSpeaker": "Hoparlör testi",
+    "runSpeaker": "Hoparlör testini başlat",
+    "titleKeyboard": "Klavye testi",
+    "runKeyboard": "Klavye testini başlat",
+    "titleMouse": "Mouse testi",
+    "runMouse": "Mouse testini başlat",
+    "titlePixel": "Ölü piksel testi",
+    "runPixel": "Ölü piksel testini başlat"
   },
   "hub": {
-    "title": "Mikrofon ve Kamera Sorun Giderme Rehberleri",
-    "description": "Windows, Mac, Discord, Zoom, Teams ve Google Meet'te mikrofon veya kamera çalışmıyorsa adım adım çözümler. Ücretsiz ve anlaşılır Türkçe rehberler.",
+    "title": "Mikrofon, Kamera, Ses ve PC Sorun Giderme Rehberleri",
+    "description": "Mikrofon, kamera, hoparlör, klavye, mouse veya ekran düzgün çalışmıyor mu? Windows, Mac, iPhone, Android, Discord ve Zoom için adım adım çözümler.",
     "h1": "Sorun giderme rehberleri",
-    "lead": "En sık görülen mikrofon ve kamera sorunları için kısa, pratik çözümler. Önce test edin, sonra gördüğünüz soruna uyan rehberi izleyin."
+    "lead": "En sık görülen mikrofon, kamera, ses, klavye, mouse ve ekran sorunları için kısa, pratik çözümler. Önce test edin, sonra gördüğünüz soruna uyan rehberi izleyin."
   },
   "guides": [
     {
@@ -322,6 +330,407 @@
           "a": "Bu sitedeki mikrofon testini açın ya da Zoom'da Ayarlar → Ses → Mikrofonu Test Et yolunu izleyin. İkisi de yaklaşık beş saniye sürer."
         }
       ]
+    },
+    {
+      "slug": "no-sound-speakers-headphones",
+      "title": "Bilgisayardan Ses Gelmiyor? 8 Çözüm (Windows ve Mac)",
+      "description": "Bilgisayardan ses gelmiyor mu? Çıkış cihazını, ses düzeyi karıştırıcısını, kabloları, Bluetooth'u ve sürücüyü kontrol edin. En kolayından 8 çözüm.",
+      "h1": "Hoparlörden veya kulaklıktan ses gelmiyor",
+      "lead": "Bilgisayar sustuğunda neredeyse her zaman sesi yanlış cihaza gönderiyordur ya da ses kaydırıcılarından biri sıfırdadır. Kontrolleri sırayla yapın. Çoğu kişi 3. adıma gelmeden sesini geri alır.",
+      "tool": "speaker",
+      "sections": [
+        {
+          "h": "Adım 0: Test sesi çalın",
+          "p": [
+            "Bu sitedeki hoparlör testini açın ve sol ile sağ tonları çalın. Duyuyorsanız hoparlörleriniz ve sisteminiz sağlamdır, sorun tek bir uygulamada veya web sitesindedir. Hiçbir şey duymuyorsanız okumaya devam edin."
+          ]
+        },
+        {
+          "h": "1. Gözden kaçan ses kontrollerine bakın",
+          "ul": [
+            "Hoparlörün veya kulaklığın üzerindeki ses düğmesi ya da tuşları.",
+            "Klavyedeki sessiz tuşu (çoğunlukla F1, F10 veya üzeri çizili hoparlör simgesi olan tuş).",
+            "Görev çubuğundaki (Windows) veya menü çubuğundaki (Mac) ses kaydırıcısı.",
+            "Kullandığınız video oynatıcının veya web sitesinin kendi ses ayarı."
+          ]
+        },
+        {
+          "h": "2. Doğru çıkış cihazını seçin",
+          "p": [
+            "Bilgisayarlarda genellikle birden fazla çıkış bulunur: dizüstü hoparlörleri, kulaklık, HDMI ile bağlı hoparlörlü bir monitör, USB kulaklık ve Bluetooth cihazlar. Ses bunlardan yalnızca birine gider."
+          ],
+          "ol": [
+            "Windows: Görev çubuğundaki hoparlör simgesine, ardından ses kaydırıcısının yanındaki oka tıklayın ve hoparlörünüzü veya kulaklığınızı seçin.",
+            "Mac: Sistem Ayarları → Ses → Çıkış yolunu açın ve cihazınızı seçin.",
+            "Test sesini yeniden çalın."
+          ]
+        },
+        {
+          "h": "3. Ses düzeyi karıştırıcısını kontrol edin (Windows)",
+          "p": [
+            "Windows her uygulama için ayrı bir ses düzeyi tutar. Hoparlör simgesine sağ tıklayın → Ses düzeyi karıştırıcısını aç, ve tarayıcınızın veya oyununuzun sessize alınmadığından ya da sıfıra çekilmediğinden emin olun."
+          ]
+        },
+        {
+          "h": "4. Kabloları ve girişleri kontrol edin",
+          "p": [
+            "Fişi sonuna kadar itin. Kablolu kulaklık mikrofon (pembe) girişine değil, kulaklık (yeşil) girişine takılmalıdır. Masaüstü bilgisayarda kasanın arkasındaki girişi deneyin, çünkü ön paneldeki girişler bazen kasanın içinde bağlı değildir. USB hoparlör ve kulaklıklarda doğrudan bilgisayardaki başka bir USB girişini deneyin."
+          ]
+        },
+        {
+          "h": "5. Bluetooth kulaklığı yeniden bağlayın",
+          "ol": [
+            "Bluetooth'u kapatıp yeniden açın.",
+            "İşe yaramazsa kulaklığı Bluetooth ayarlarından kaldırın (unutun) ve yeniden eşleştirin.",
+            "Windows'ta en iyi kalite için \"Headset\" veya \"Hands-Free\" yerine \"Kulaklık\" ya da \"Stereo\" çıkışını seçin."
+          ]
+        },
+        {
+          "h": "6. Ses sorun gidericisini çalıştırın (Windows)",
+          "p": [
+            "Ayarlar → Sistem → Ses yolunu açın ve Çıkış bölümünün altındaki \"Yaygın ses sorunlarını giderin\" seçeneğine tıklayın. Ses hizmetini yeniden başlatır ve sık görülen sürücü ayarlarını otomatik olarak düzeltir."
+          ]
+        },
+        {
+          "h": "7. Ses sürücüsünü yeniden yükleyin (Windows)",
+          "ol": [
+            "Başlat'a sağ tıklayın → Aygıt Yöneticisi.",
+            "\"Ses, video ve oyun denetleyicileri\" bölümünü açın.",
+            "Ses cihazınıza (Realtek, Intel, AMD veya benzeri) sağ tıklayın → Cihazı kaldır, ardından yeniden başlatın. Windows açılışta sürücüyü yeniden yükler."
+          ]
+        },
+        {
+          "h": "8. Ses sistemini yeniden başlatın (Mac)",
+          "p": [
+            "Mac doğru çıkışı gösteriyor ama hiçbir şey çalmıyorsa bilgisayarı yeniden başlatın. Ses hâlâ gelmiyorsa Etkinlik Monitörü'nü açın, \"coreaudiod\" arayın ve işlemden çıkın. macOS onu bir saniye içinde yeniden başlatır."
+          ]
+        },
+        {
+          "h": "Ses yalnızca bir taraftan mı geliyor?",
+          "p": [
+            "Hoparlör testinde sol ve sağ tonları çalın. Her kulaklıkta aynı taraf sessizse denge kaydırıcısını kontrol edin (Windows: Ayarlar → Sistem → Ses → cihazınız; Mac: Ses → Çıkış → Denge). Sorun yalnızca tek bir kulaklıktaysa kablosu veya fişi hasarlıdır."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ses açık olmasına rağmen bilgisayardan neden ses gelmiyor?",
+          "a": "Genellikle ses başka bir çıkışa gidiyordur, örneğin HDMI ile bağlı bir monitöre ya da kapalı bir Bluetooth cihazına. Çıkış cihazı olarak hoparlörünüzü veya kulaklığınızı seçin ve yeniden test edin."
+        },
+        {
+          "q": "Kulaklığım telefonda çalışıyor ama bilgisayarda neden çalışmıyor?",
+          "a": "Bilgisayar muhtemelen sesi hâlâ kendi hoparlörlerine veya başka bir çıkışa gönderiyordur. Çıkış cihazı olarak kulaklığı seçin. Kablolu kulaklıkta yeşil kulaklık girişini kullanın."
+        },
+        {
+          "q": "Hoparlörlerimi online nasıl test ederim?",
+          "a": "Bu sitedeki hoparlör testini açın ve sol, sağ ve tarama tonlarını çalın. Her iki kanalın ve düşük ile yüksek frekansların çalışıp çalışmadığını hemen duyarsınız."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "mouse-double-clicking",
+      "title": "Mouse Tek Tıklamada Çift Tıklıyor? Test ve Çözüm",
+      "description": "Mouse tek tıklamada çift tıklıyor mu? 30 saniyede test edin, sonra çözün: Windows ayarları, debounce süresi, tuşun temizlenmesi veya garanti.",
+      "h1": "Mouse tek tıklamada çift tıklıyor",
+      "lead": "Bir kez bastığınızda iki tıklama algılayan mouse, en sık görülen donanım arızalarından biridir. Genellikle tuşun altındaki switch aşınmıştır. Önce sorunu doğrulayın, sonra bu çözümleri sırayla deneyin.",
+      "tool": "mouse",
+      "sections": [
+        {
+          "h": "Adım 0: Mouse testiyle doğrulayın",
+          "p": [
+            "Bu sitedeki mouse testini açın ve bir dakika boyunca normal şekilde tıklayın. Test, aynı tuşa ait aralarında 80 milisaniyeden az olan iki tıklamayı işaretler. Parmaklar bilerek bu kadar hızlı tıklayamaz, yani her işaret bir arızadır. İşaret görüyorsanız mouse çift tıklıyordur. Görmüyorsanız aşağıdaki Windows ayarlarına bakın."
+          ]
+        },
+        {
+          "h": "1. Windows tıklama ayarını kontrol edin",
+          "p": [
+            "Windows dosyaları tek tıklamayla açacak şekilde ayarlanabilir, bu da çift tıklama gibi hissettirir. Dosya Gezgini → Görünüm (veya üç nokta) → Seçenekler yolunu açın ve \"Öğeleri şu şekilde tıklat\" altında \"Bir öğeyi açmak için çift tıklat\" seçeneğini seçin. Ayrıca Ayarlar → Bluetooth ve cihazlar → Fare → Ek fare ayarları bölümünü açın ve çift tıklama hızını ortaya getirin."
+          ]
+        },
+        {
+          "h": "2. Başka bir USB girişi deneyin ve USB güç tasarrufunu kapatın",
+          "p": [
+            "Mouse'u hub yerine doğrudan bilgisayara takın. Dizüstü bilgisayarda Aygıt Yöneticisi → Evrensel Seri Veri Yolu denetleyicileri yolunu açın, her \"USB Kök Hub\" öğesini açın ve Güç Yönetimi sekmesinde \"Güç tasarrufu için bilgisayarın bu aygıtı kapatmasına izin ver\" seçeneğinin işaretini kaldırın."
+          ]
+        },
+        {
+          "h": "3. Debounce süresini artırın (oyuncu mouse'ları)",
+          "p": [
+            "Birçok oyuncu mouse'unun yazılımında bir debounce veya \"tıklama tepkisi\" ayarı bulunur (Logitech G HUB, Razer Synapse, SteelSeries GG ve diğerleri). Çok düşük bir değer, aşınmış bir switch'in iki tıklama göndermesine izin verir. Değeri biraz artırın, örneğin 2 ms'den 8 veya 10 ms'ye, ve yeniden test edin."
+          ]
+        },
+        {
+          "h": "4. Tuşu temizleyin",
+          "p": [
+            "Mouse'un kablosunu çıkarın veya pilini sökün. Tuşa art arda tıklarken tuşun çevresindeki boşluğa 20 ila 30 saniye boyunca basınçlı hava püskürtün. Toz ve kir switch'in sekmesine yol açabilir."
+          ]
+        },
+        {
+          "h": "5. Garantiyi kontrol edin",
+          "p": [
+            "Çoğu mouse'un 1 ila 3 yıllık garantisi vardır ve çift tıklama bilinen bir arızadır. Destek ekibiyle iletişime geçtiğinizde mouse testinin sonucunu kanıt olarak saklayın."
+          ]
+        },
+        {
+          "h": "6. Switch'i değiştirin (ileri seviye)",
+          "p": [
+            "Mouse'u açmak ve lehim yapmak size zor gelmiyorsa tuşun altındaki switch birkaç dolara değiştirilebilir. Önce tam modelinizi araştırın, çünkü bazı mouse'lar bu şekilde aşınmayan optik switch'ler kullanır."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Mouse'um tek tıklamada neden çift tıklıyor?",
+          "a": "Genellikle tuşun switch'i içindeki metal kontak aşınmış veya kirlenmiştir, bu yüzden tek basış sektirir ve iki tıklama gönderir. Windows'taki tek tıklama modu gibi ayarlar da çift tıklama gibi hissettirebilir."
+        },
+        {
+          "q": "Mouse'umun çift tıklayıp tıklamadığını nasıl test ederim?",
+          "a": "Bu sitedeki mouse testini açın ve normal şekilde tıklayın. Aynı tuşa ait aralarında 80 ms'den az olan iki tıklama, istem dışı çift tıklama olarak işaretlenir."
+        },
+        {
+          "q": "Çift tıklayan mouse tamir edilebilir mi?",
+          "a": "Çoğu zaman evet. Debounce süresini artırmak ve switch'i temizlemek birçok mouse'u düzeltir. Sorun devam ederse switch'in değiştirilmesi gerekir ya da mouse garanti kapsamındadır."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "keyboard-keys-not-working",
+      "title": "Klavye Tuşları Çalışmıyor veya Çift Yazıyor? 8 Çözüm",
+      "description": "Bazı tuşlar çalışmıyor, çift yazıyor ya da yanlış karakter mi çıkıyor? Tüm tuşları test edin, sonra Filtre Tuşları, düzen, sürücü, kir ve switch sorununu çözün.",
+      "h1": "Klavye tuşları çalışmıyor veya çift yazıyor",
+      "lead": "Bazı tuşlar hiçbir şey yapmıyorsa, çift yazıyorsa veya yanlış harf çıkarıyorsa sebep genellikle bir ayar, klavye düzeni ya da kirli bir switch'tir. Önce tam olarak hangi tuşların etkilendiğini bulun, sonra uygun çözümü izleyin.",
+      "tool": "keyboard",
+      "sections": [
+        {
+          "h": "Adım 0: Tüm tuşları test edin",
+          "p": [
+            "Bu sitedeki klavye testini açın ve her tuşa bir kez basın. Hiç yanmayan tuşlar bilgisayara ulaşmıyordur. Çift basma (chatter) olarak işaretlenen tuşlar tek basışta iki basış göndermiştir. Bir tuş yanlış karakter yazıyor ama doğru yerde yanıyorsa sorun donanımda değil, düzendedir (3. adım)."
+          ]
+        },
+        {
+          "h": "1. Yeniden başlatın ve yeniden bağlayın",
+          "p": [
+            "Bilgisayarı yeniden başlatın. USB klavyeyi doğrudan bilgisayara takın ve başka bir giriş deneyin. Kablosuz klavyede pilleri değiştirin veya şarj edin ve klavyeyi yeniden eşleştirin."
+          ]
+        },
+        {
+          "h": "2. Filtre Tuşları ve Yapışkan Tuşlar'ı kapatın (Windows)",
+          "p": [
+            "Filtre Tuşları kısa veya tekrarlanan basışları yok sayar, bu da tam olarak tuşlar çalışmıyormuş gibi görünür. Ayarlar → Erişilebilirlik → Klavye yolunu açın ve Filtre Tuşları ile Yapışkan Tuşlar'ı kapatın. Sağ Shift tuşunu 8 saniye basılı tutmak Filtre Tuşları'nı yanlışlıkla açabilir."
+          ]
+        },
+        {
+          "h": "3. Yanlış karakter mi çıkıyor? Düzeni kontrol edin",
+          "p": [
+            "Tuşlar yanlış simgeler yazıyorsa, örneğin @ ile \" yer değiştirmişse veya Y ile Z karışmışsa, bilgisayar farklı bir klavye düzeni kullanıyordur. Windows: Geçiş yapmak için Windows + Boşluk tuşlarına basın ve kullanmadığınız düzenleri Ayarlar → Saat ve dil → Dil ve bölge bölümünden kaldırın. Mac: Sistem Ayarları → Klavye → Giriş Kaynakları."
+          ]
+        },
+        {
+          "h": "4. Sayısal tuş takımı rakam yazmıyor mu?",
+          "p": [
+            "Num Lock tuşuna basın. Birçok dizüstü bilgisayarda bu Fn + Num Lock veya Fn + F11'dir. Num Lock kapalıyken sayısal tuş takımı ok tuşları gibi çalışır."
+          ]
+        },
+        {
+          "h": "5. Tuşların altını temizleyin",
+          "ol": [
+            "Klavyenin kablosunu çıkarın veya dizüstü bilgisayarı kapatın.",
+            "Klavyeyi eğik şekilde ters tutun ve hafifçe vurun.",
+            "Takılan tuşların altına basınçlı hava püskürtün.",
+            "Mekanik klavyede tuş kapağını bir keycap çektirmesiyle çıkarın ve switch'in çevresini temizleyin."
+          ]
+        },
+        {
+          "h": "6. Çift yazan tuşu düzeltin (chatter)",
+          "p": [
+            "Tek basışta iki basış gönderen tuşa chatter denir. Mekanik klavyede switch'in altına basınçlı hava püskürtmek çoğu zaman sorunu çözer, hot-swap klavyede ise switch'i bir dakikada değiştirebilirsiniz. Birçok oyuncu klavyesinin yazılımında da bir debounce ayarı vardır. Bu değeri biraz artırmak çoğu chatter sorununu durdurur."
+          ]
+        },
+        {
+          "h": "7. Klavye sürücüsünü yeniden yükleyin (Windows)",
+          "ol": [
+            "Başlat'a sağ tıklayın → Aygıt Yöneticisi.",
+            "Klavyeler bölümünü açın.",
+            "Klavyenize sağ tıklayın → Cihazı kaldır, ardından yeniden başlatın."
+          ]
+        },
+        {
+          "h": "8. Windows dışında test edin",
+          "p": [
+            "Tuşlar hâlâ çalışmıyorsa sorun büyük olasılıkla donanımdadır. Klavyeyi başka bir bilgisayarda deneyin. Dizüstü bilgisayarda aynı tuşlar BIOS ekranında da çalışmıyorsa klavyenin onarılması veya değiştirilmesi gerekir."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Klavyemdeki bazı tuşlar neden çalışmıyor?",
+          "a": "Sık görülen sebepler açık kalmış Filtre Tuşları, tuşların altındaki kir, gevşek bir USB bağlantısı veya arızalı bir switch'tir. Bir tuş testi hangi tuşların algılanmadığını tam olarak gösterir."
+        },
+        {
+          "q": "Klavyem bir kez bastığımda neden iki harf yazıyor?",
+          "a": "Buna key chatter denir: switch seker ve iki basış gönderir. Switch'i temizlemek veya debounce süresini artırmak genellikle sorunu çözer. Çözmezse switch'in değiştirilmesi gerekir."
+        },
+        {
+          "q": "Klavyemdeki tüm tuşları nasıl test ederim?",
+          "a": "Bu sitedeki klavye testini açın ve her tuşa basın. Algılanan her tuş yanar, test ayrıca çift basmayı ve aynı anda kaç tuşun basılı tutulabildiğini de gösterir."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "dead-pixel-stuck-pixel-fix",
+      "title": "Ölü veya Takılı Piksel? Ekran Kontrolü ve Çözümü",
+      "description": "Düz renkli ekranlarla ölü ve takılı pikselleri bulun, aradaki farkı öğrenin ve işe yarayan çözümleri deneyin: piksel düzeltici, hafif baskı ve garanti.",
+      "h1": "Ölü veya takılı piksel: nasıl kontrol edilir ve düzeltilir",
+      "lead": "Siyah, beyaz veya tek bir parlak renkte kalan bir piksel, bir anda tek gördüğünüz şey olana kadar kolayca gözden kaçar. Yeni bir ekranı elinize geçer geçmez kontrol edin, çünkü iade süreleri kısadır. Kusurlu pikselleri nasıl bulacağınızı ve neler yapabileceğinizi burada bulabilirsiniz.",
+      "tool": "pixel",
+      "sections": [
+        {
+          "h": "Adım 0: Ekranı temizleyin",
+          "p": [
+            "Önce ekranı kuru bir mikrofiber bezle silin. Bir toz zerresi tıpkı ölü piksel gibi görünür, ama sildiğinizde yer değiştirir veya kaybolur."
+          ]
+        },
+        {
+          "h": "1. Tam ekran renk testi yapın",
+          "p": [
+            "Bu sitedeki ölü piksel testini açın ve tam ekran başlatın. Test ekranı siyah, beyaz, kırmızı, yeşil, mavi ve griyle doldurur. Her renge yaklaşık 30 cm uzaktan, bölüm bölüm ve yavaşça bakın."
+          ]
+        },
+        {
+          "h": "2. Ölü, takılı mı yoksa sıcak piksel mi?",
+          "ul": [
+            "Ölü piksel: Her renkte siyahtır, en çok beyazda görünür. Transistör güç almaz ve nadiren düzeltilebilir.",
+            "Takılı piksel: Hep aynı renktedir (kırmızı, yeşil veya mavi), en çok siyahta görünür. Bir kısmı açık konumda takılı kalmıştır ve çoğu zaman düzeltilebilir.",
+            "Sıcak piksel: Hep beyazdır, siyahta görünür. Takılı piksel gibi ele alınır."
+          ]
+        },
+        {
+          "h": "3. Piksel düzelticiyi deneyin",
+          "p": [
+            "Takılı pikseller bazen üzerlerinde renkleri hızla yakıp söndürerek canlandırılabilir. Ölü piksel testindeki piksel düzelticiyi açın, yanıp sönen kareyi takılı pikselin üzerine sürükleyin ve 10 ila 30 dakika çalışır halde bırakın. İlk seferde işe yaramazsa birkaç saatliğine yeniden deneyin. Yanıp sönen ışıklara hassassanız yanıp sönen kareye bakmayın."
+          ]
+        },
+        {
+          "h": "4. Hafif baskı (riski size ait)",
+          "p": [
+            "Ekranı kapatın, parmak ucunuzu yumuşak bir beze sarın, takılı noktaya çok hafifçe bastırın ve bastırmaya devam ederken ekranı açın. Asla sert bastırmayın ve asla sivri bir şey kullanmayın. Bu yöntem bazı panellerde durumu kötüleştirebilir, bu yüzden önce piksel düzelticiyi deneyin."
+          ]
+        },
+        {
+          "h": "5. Garantiyi ve iade koşullarını kontrol edin",
+          "p": [
+            "Birçok üretici ekranı yalnızca belirli bir sayıda kusurlu piksel varsa değiştirir, ama mağazalar genellikle 14 ila 30 gün içinde sebep sormadan iade kabul eder. Pikselin düz renk üzerindeki fotoğrafını çekin ve satıcıyla hızla iletişime geçin."
+          ]
+        },
+        {
+          "h": "Bonus: Yenileme hızını kontrol edin",
+          "p": [
+            "Yeni bir monitörü test ederken ölü piksel testi gerçek yenileme hızını da ölçer. 144 Hz bir monitör 60 Hz gösteriyorsa Windows'ta Ayarlar → Sistem → Ekran → Gelişmiş ekran bölümünden ayarlayın ve DisplayPort ya da yeterince hızlı bir HDMI kablo kullandığınızdan emin olun."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ölü piksel ile takılı piksel arasındaki fark nedir?",
+          "a": "Ölü piksel her renkte siyah kalır. Takılı piksel ise tek bir renkte kalır, genellikle kırmızı, yeşil veya mavi. Takılı pikseller çoğu zaman düzeltilebilir, ölü pikseller nadiren."
+        },
+        {
+          "q": "Takılı piksel kendiliğinden düzelir mi?",
+          "a": "Bazen, saatler veya günler süren normal kullanımdan sonra düzelir. Üzerinde yanıp sönen bir piksel düzeltici çalıştırmak bu süreci hızlandırır ve birçok takılı pikselde işe yarar."
+        },
+        {
+          "q": "Yeni monitörde ölü piksel nasıl kontrol edilir?",
+          "a": "Ekranı temizleyin, ardından tam ekran bir ölü piksel testi açın ve düz siyah, beyaz, kırmızı, yeşil ve maviye bakın. Hâlâ iade edebilmek için bunu ilk gün yapın."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "phone-mic-not-working",
+      "title": "iPhone veya Android Mikrofon Çalışmıyor? 8 Çözüm",
+      "description": "Aramalarda sesiniz duyulmuyor ya da telefon mikrofonu kısık veya boğuk mu? iPhone ve Android'de izinleri, Bluetooth'u, kılıfı ve tıkalı delikleri kontrol edin.",
+      "h1": "iPhone veya Android mikrofon çalışmıyor",
+      "lead": "Karşı taraf sizi duymuyorsa ya da sesiniz kısık veya boğuk geliyorsa sorun genellikle bir izin, bir Bluetooth cihazı ya da mikrofonu kapatan bir şeydir. Telefonlarda birden fazla mikrofon bulunur, bu yüzden hangisinin etkilendiğini görmek için önce test edin.",
+      "tool": "mic",
+      "sections": [
+        {
+          "h": "Adım 0: Mikrofonu tarayıcıda test edin",
+          "p": [
+            "Bu sitedeki mikrofon testini telefonunuzda açın ve Başlat'a basın. Konuşurken seviye göstergesi hareket ediyorsa mikrofon çalışıyordur ve sorun tek bir uygulamada veya bir arama ayarındadır. Gösterge hiç kıpırdamıyorsa okumaya devam edin."
+          ]
+        },
+        {
+          "h": "1. Bluetooth bağlantısını kesin",
+          "p": [
+            "Telefonlar bağlı bir Bluetooth kulaklığa, araca veya kablosuz kulaklığa otomatik olarak geçer, bunlar çantanızda olsa bile. Bluetooth'u kapatın ve yeniden test edin."
+          ]
+        },
+        {
+          "h": "2. Uygulamaya mikrofon izni verin",
+          "ol": [
+            "iPhone: Ayarlar → Gizlilik ve Güvenlik → Mikrofon yolunu açın ve uygulamayı açık konuma getirin.",
+            "Android: Ayarlar → Uygulamalar → uygulamayı seçin → İzinler → Mikrofon → İzin ver.",
+            "Android 12 ve sonrasında Hızlı Ayarlar'daki mikrofon anahtarının kapalı olmadığını da kontrol edin."
+          ]
+        },
+        {
+          "h": "3. Kılıfı ve ekran koruyucuyu çıkarın",
+          "p": [
+            "Kılıflar ve ekran koruyucular, özellikle bir düşmeden sonra kaydıklarında, mikrofon deliğini kapatabilir. Bunları çıkarın ve yeniden test edin."
+          ]
+        },
+        {
+          "h": "4. Mikrofon deliklerini temizleyin",
+          "p": [
+            "Telefonlarda mikrofon delikleri altta, kameranın yanında ve bazen üstte bulunur. Bunları yumuşak, kuru bir diş fırçasıyla nazikçe temizleyin. Deliklere iğne veya toplu iğne sokmayın, bu delikteki ağ yapısına zarar verebilir."
+          ]
+        },
+        {
+          "h": "5. Her mikrofonu ayrı test edin",
+          "ul": [
+            "Alt mikrofon: Sesli not veya ses kaydedici ile bir kayıt alın.",
+            "Ön veya üst mikrofon: Bir selfie videosu çekin.",
+            "Arka mikrofon: Arka kamerayla bir video çekin.",
+            "Yalnızca biri boğuk geliyorsa o delik tıkalı veya hasarlıdır."
+          ]
+        },
+        {
+          "h": "6. Gürültü azaltma özelliklerini kapatın",
+          "p": [
+            "iPhone'da arama sırasında Denetim Merkezi'nden Mikrofon Modu'nu değiştirmeyi deneyin (Standart, Ses Yalıtımı, Geniş Spektrum). Android'de telefonunuzda varsa arama ayarlarındaki \"Gürültü azaltma\" veya \"Net ses\" seçeneğini kapatın ve yeniden test edin."
+          ]
+        },
+        {
+          "h": "7. Yeniden başlatın ve güncelleyin",
+          "p": [
+            "Telefonu yeniden başlatın ve varsa sistem güncellemesini yükleyin. Ses sistemindeki hatalar çoğu zaman güncellemelerle düzeltilir."
+          ]
+        },
+        {
+          "h": "8. Güvenli modda test edin (Android)",
+          "p": [
+            "Güç düğmesini basılı tutun, ardından Güvenli mod seçeneğini görene kadar \"Kapat\" seçeneğine basılı tutun. Mikrofon güvenli modda çalışıyorsa yüklediğiniz bir uygulama mikrofonu ele geçiriyordur."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Aramalarda karşı taraf beni neden duymuyor ama hoparlör modu çalışıyor?",
+          "a": "Aramalar normalde alt mikrofonu kullanır, hoparlör modu veya görüntülü arama ise başka bir mikrofonu kullanabilir. Alttaki deliği temizleyin, kılıfı çıkarın ve yeniden test edin."
+        },
+        {
+          "q": "Telefonumun mikrofonunu nasıl test ederim?",
+          "a": "Bu sitedeki mikrofon testini telefonunuzun tarayıcısında açın, mikrofona izin verin ve konuşun. Gösterge hareket ediyorsa mikrofon çalışıyordur. Ayrıca bir kayıt alıp dinleyebilirsiniz."
+        },
+        {
+          "q": "Telefonumun mikrofonu neden boğuk?",
+          "a": "Genellikle kılıf, ekran koruyucu veya tüy bir deliği kapatıyordur. Bunları çıkarın ve delikleri yumuşak, kuru bir fırçayla nazikçe temizleyin."
+        }
+      ],
+      "published": "2026-11-13"
     }
   ]
 }

@@ -8,13 +8,21 @@
     "titleWebcam": "Teste de webcam",
     "runMic": "Testar o microfone",
     "runWebcam": "Testar a webcam",
-    "moreGuides": "Mais guias"
+    "moreGuides": "Mais guias",
+    "titleSpeaker": "Teste de alto-falante",
+    "runSpeaker": "Testar os alto-falantes",
+    "titleKeyboard": "Teste de teclado",
+    "runKeyboard": "Fazer o teste de teclado",
+    "titleMouse": "Teste de mouse",
+    "runMouse": "Fazer o teste de mouse",
+    "titlePixel": "Teste de pixel morto",
+    "runPixel": "Fazer o teste de pixel morto"
   },
   "hub": {
-    "title": "Guias para resolver problemas de microfone e webcam",
-    "description": "Soluções passo a passo para microfone ou webcam que não funciona no Windows, Mac, Discord, Zoom, Teams e Google Meet. Grátis e sem complicação.",
+    "title": "Guias para resolver problemas de microfone, webcam, som e PC",
+    "description": "Soluções passo a passo para microfone, webcam, alto-falantes, teclado, mouse ou tela com defeito. Windows, Mac, iPhone, Android, Discord e Zoom.",
     "h1": "Guias de solução de problemas",
-    "lead": "Soluções curtas e práticas para os problemas mais comuns de microfone e câmera. Faça o teste primeiro e depois siga o guia que combina com o que você vê."
+    "lead": "Soluções curtas e práticas para os problemas mais comuns de microfone, câmera, som, teclado, mouse e tela. Faça o teste primeiro e depois siga o guia que combina com o que você vê."
   },
   "guides": [
     {
@@ -322,6 +330,407 @@
           "a": "Abra o teste de microfone deste site, ou no Zoom vá em Configurações → Áudio → Testar microfone. Os dois levam uns cinco segundos."
         }
       ]
+    },
+    {
+      "slug": "no-sound-speakers-headphones",
+      "title": "Sem som no alto-falante ou fone de ouvido? 8 soluções",
+      "description": "Sem som no PC ou no Mac? Confira o dispositivo de saída, o mixer de volume, os cabos, o Bluetooth e os drivers. 8 soluções para alto-falantes e fones.",
+      "h1": "Sem som no alto-falante ou fone de ouvido",
+      "lead": "Quando o computador fica mudo, quase sempre ele está mandando o som para o dispositivo errado ou tem algum controle de volume no zero. Faça estas verificações em ordem. A maioria das pessoas volta a ouvir som até o passo 3.",
+      "tool": "speaker",
+      "sections": [
+        {
+          "h": "Passo 0: toque um tom de teste",
+          "p": [
+            "Abra o teste de alto-falante deste site e toque os tons esquerdo e direito. Se você ouvir, os alto-falantes e o sistema estão funcionando e o problema está dentro de algum aplicativo ou site. Se não ouvir nada, continue lendo."
+          ]
+        },
+        {
+          "h": "1. Confira os controles de volume mais óbvios",
+          "ul": [
+            "O botão ou as teclas de volume dos próprios alto-falantes ou fones.",
+            "A tecla de mudo do teclado (geralmente F1, F10 ou uma tecla com um alto-falante riscado).",
+            "O controle de volume da barra de tarefas (Windows) ou da barra de menus (Mac).",
+            "O volume dentro do player de vídeo ou do site que você está usando."
+          ]
+        },
+        {
+          "h": "2. Escolha o dispositivo de saída certo",
+          "p": [
+            "Os computadores costumam ter várias saídas: alto-falantes do notebook, fones de ouvido, um monitor com alto-falantes via HDMI, um headset USB e dispositivos Bluetooth. O som sai por apenas uma delas."
+          ],
+          "ol": [
+            "Windows: clique no ícone de alto-falante na barra de tarefas, depois na seta ao lado do controle de volume, e escolha seus alto-falantes ou fones.",
+            "Mac: abra Ajustes do Sistema → Som → Saída e escolha o seu dispositivo.",
+            "Toque o tom de teste de novo."
+          ]
+        },
+        {
+          "h": "3. Confira o mixer de volume (Windows)",
+          "p": [
+            "O Windows guarda um volume separado para cada aplicativo. Clique com o botão direito no ícone de alto-falante → Abrir mixer de volume e veja se o navegador ou o jogo não está no mudo ou no zero."
+          ]
+        },
+        {
+          "h": "4. Confira os cabos e as entradas",
+          "p": [
+            "Encaixe o plugue até o fim. Fones com fio devem ir na entrada de fone (verde), não na de microfone (rosa). Em um PC de mesa, tente a entrada na parte de trás do gabinete, porque às vezes as entradas frontais não estão ligadas por dentro. Para alto-falantes e headsets USB, tente outra porta USB direto no computador."
+          ]
+        },
+        {
+          "h": "5. Reconecte os fones Bluetooth",
+          "ol": [
+            "Desligue e ligue o Bluetooth de novo.",
+            "Se não resolver, remova (esqueça) os fones nas configurações de Bluetooth e pareie de novo.",
+            "No Windows, escolha a saída “Fones de ouvido” ou “Estéreo”, e não “Headset” ou “Viva-voz”, para ter a melhor qualidade."
+          ]
+        },
+        {
+          "h": "6. Use a solução de problemas de áudio (Windows)",
+          "p": [
+            "Vá em Configurações → Sistema → Som e clique em “Solucionar problemas de som comuns”, na seção Saída. Ela reinicia o serviço de áudio e corrige automaticamente as configurações de driver mais comuns."
+          ]
+        },
+        {
+          "h": "7. Reinstale o driver de som (Windows)",
+          "ol": [
+            "Clique com o botão direito em Iniciar → Gerenciador de Dispositivos.",
+            "Abra “Controladores de som, vídeo e jogos”.",
+            "Clique com o botão direito no seu dispositivo de áudio (Realtek, Intel, AMD ou similar) → Desinstalar dispositivo e reinicie. O Windows instala o driver de novo ao ligar."
+          ]
+        },
+        {
+          "h": "8. Reinicie o sistema de áudio (Mac)",
+          "p": [
+            "Se o Mac mostra a saída certa mas não toca nada, reinicie-o. Se o som continuar sem funcionar, abra o Monitor de Atividade, procure “coreaudiod” e encerre o processo. O macOS o reinicia em um segundo."
+          ]
+        },
+        {
+          "h": "Som saindo só de um lado?",
+          "p": [
+            "Toque os tons esquerdo e direito no teste de alto-falante. Se um lado fica mudo com qualquer fone, confira o controle de balanço (Windows: Configurações → Sistema → Som → seu dispositivo; Mac: Som → Saída → Balanço). Se só um fone tem o problema, o cabo ou o plugue está danificado."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Por que meu computador está sem som mesmo com o volume alto?",
+          "a": "Geralmente o som está indo para outra saída, como um monitor via HDMI ou um dispositivo Bluetooth desligado. Escolha seus alto-falantes ou fones como dispositivo de saída e teste de novo."
+        },
+        {
+          "q": "Por que meu fone funciona no celular mas não no PC?",
+          "a": "Provavelmente o PC ainda está mandando o som para os alto-falantes ou para outra saída. Selecione o fone como dispositivo de saída. Se for com fio, use a entrada verde de fone."
+        },
+        {
+          "q": "Como testar meus alto-falantes online?",
+          "a": "Abra o teste de alto-falante deste site e toque os tons esquerdo, direito e de varredura. Você vai ouvir na hora se os dois canais e as frequências graves e agudas estão funcionando."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "mouse-double-clicking",
+      "title": "Mouse dando clique duplo sozinho? Como testar e resolver",
+      "description": "Mouse dando clique duplo com um clique só? Teste em 30 segundos e resolva: configurações do Windows, debounce, limpeza do switch ou garantia.",
+      "h1": "Mouse dando clique duplo quando você clica uma vez",
+      "lead": "Um mouse que registra dois cliques quando você aperta uma vez é um dos defeitos de hardware mais comuns. Quase sempre é o switch embaixo do botão que está se desgastando. Confirme primeiro e depois tente estas soluções em ordem.",
+      "tool": "mouse",
+      "sections": [
+        {
+          "h": "Passo 0: confirme com um teste de mouse",
+          "p": [
+            "Abra o teste de mouse deste site e clique normalmente por um minuto. Ele marca quaisquer dois cliques do mesmo botão que chegam com menos de 80 milissegundos de intervalo. Ninguém consegue clicar tão rápido de propósito, então cada marcação é um defeito. Se aparecerem marcações, o mouse está dando clique duplo. Se não, confira as configurações do Windows abaixo."
+          ]
+        },
+        {
+          "h": "1. Confira a configuração de clique do Windows",
+          "p": [
+            "O Windows pode estar configurado para abrir arquivos com um clique só, o que parece um clique duplo. Abra o Explorador de Arquivos → Exibir (ou os três pontos) → Opções e, em “Clicar nos itens da seguinte maneira”, escolha “Clicar duas vezes para abrir um item”. Confira também Configurações → Bluetooth e dispositivos → Mouse → Configurações adicionais de mouse e deixe a velocidade do clique duplo no meio."
+          ]
+        },
+        {
+          "h": "2. Tente outra porta USB e desative a economia de energia USB",
+          "p": [
+            "Ligue o mouse direto no computador em vez de usar um hub. Em um notebook, abra o Gerenciador de Dispositivos → Controladores USB (barramento serial universal), abra cada “Hub raiz USB” e, na aba Gerenciamento de Energia, desmarque “O computador pode desligar o dispositivo para economizar energia”."
+          ]
+        },
+        {
+          "h": "3. Aumente o tempo de debounce (mouses gamer)",
+          "p": [
+            "Muitos mouses gamer têm uma configuração de debounce ou “resposta do clique” no software (Logitech G HUB, Razer Synapse, SteelSeries GG e outros). Um valor muito baixo deixa um switch gasto mandar dois cliques. Aumente um pouco, por exemplo de 2 ms para 8 ou 10 ms, e teste de novo."
+          ]
+        },
+        {
+          "h": "4. Limpe o botão",
+          "p": [
+            "Desconecte o mouse ou tire a pilha. Sopre ar comprimido na fresta em volta do botão enquanto clica várias vezes por 20 a 30 segundos. Poeira e sujeira podem fazer o switch trepidar."
+          ]
+        },
+        {
+          "h": "5. Confira a garantia",
+          "p": [
+            "A maioria dos mouses tem garantia de 1 a 3 anos, e o clique duplo é um defeito reconhecido. Guarde o resultado do teste de mouse como prova quando entrar em contato com o suporte."
+          ]
+        },
+        {
+          "h": "6. Troque o switch (avançado)",
+          "p": [
+            "Se você tem prática em abrir o mouse e soldar, dá para trocar o switch embaixo do botão gastando pouco. Pesquise o seu modelo exato antes, porque alguns mouses usam switches ópticos que não se desgastam desse jeito."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Por que meu mouse dá clique duplo quando clico uma vez?",
+          "a": "Geralmente o contato metálico dentro do switch do botão está gasto ou sujo, então um toque faz ele trepidar e mandar dois cliques. Configurações como o modo de clique único do Windows também podem parecer um clique duplo."
+        },
+        {
+          "q": "Como testar se meu mouse está dando clique duplo?",
+          "a": "Abra o teste de mouse deste site e clique normalmente. Dois cliques do mesmo botão com menos de 80 ms de intervalo são marcados como cliques duplos acidentais."
+        },
+        {
+          "q": "Dá para consertar um mouse que dá clique duplo?",
+          "a": "Muitas vezes, sim. Aumentar o tempo de debounce e limpar o switch resolve em muitos mouses. Se continuar acontecendo, é preciso trocar o switch ou acionar a garantia."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "keyboard-keys-not-working",
+      "title": "Teclas do teclado não funcionam ou digitam duas vezes?",
+      "description": "Teclas que não funcionam, digitam duas vezes ou saem errado? Teste cada tecla e resolva Teclas de Filtro, layout, drivers, sujeira e switches com chatter.",
+      "h1": "Teclas do teclado não funcionam ou digitam duas vezes",
+      "lead": "Quando algumas teclas não fazem nada, digitam duas vezes ou saem com a letra errada, a causa geralmente é uma configuração, o layout do teclado ou um switch sujo. Descubra primeiro exatamente quais teclas têm problema e depois siga a solução correspondente.",
+      "tool": "keyboard",
+      "sections": [
+        {
+          "h": "Passo 0: teste todas as teclas",
+          "p": [
+            "Abra o teste de teclado deste site e aperte cada tecla uma vez. As teclas que nunca acendem não estão chegando ao computador. As marcadas com chatter mandaram dois toques em vez de um. Se uma tecla digita o caractere errado mas acende no lugar certo, o problema é o layout (passo 3), não o hardware."
+          ]
+        },
+        {
+          "h": "1. Reinicie e reconecte",
+          "p": [
+            "Reinicie o computador. Se o teclado for USB, ligue-o direto no computador e tente outra porta. Se for sem fio, troque ou carregue as pilhas e pareie de novo."
+          ]
+        },
+        {
+          "h": "2. Desative as Teclas de Filtro e as Teclas de Aderência (Windows)",
+          "p": [
+            "As Teclas de Filtro ignoram toques curtos ou repetidos, o que parece exatamente com teclas que não funcionam. Abra Configurações → Acessibilidade → Teclado e desative as Teclas de Filtro e as Teclas de Aderência. Segurar a tecla Shift direita por 8 segundos pode ativar as Teclas de Filtro sem querer."
+          ]
+        },
+        {
+          "h": "3. Caracteres errados? Confira o layout",
+          "p": [
+            "Se as teclas digitam símbolos errados, por exemplo @ e \" trocados, ou o Y e o Z invertidos, o computador está usando outro layout de teclado. Windows: aperte Windows + Espaço para alternar e remova os layouts que você não usa em Configurações → Hora e idioma → Idioma e região. Mac: Ajustes do Sistema → Teclado → Fontes de Entrada."
+          ]
+        },
+        {
+          "h": "4. Teclado numérico não digita números?",
+          "p": [
+            "Aperte Num Lock. Em muitos notebooks é Fn + Num Lock ou Fn + F11. Com o Num Lock desligado, o teclado numérico funciona como setas."
+          ]
+        },
+        {
+          "h": "5. Limpe embaixo das teclas",
+          "ol": [
+            "Desconecte o teclado ou desligue o notebook.",
+            "Vire-o de cabeça para baixo, inclinado, e dê batidinhas leves.",
+            "Sopre ar comprimido embaixo das teclas que estão travando.",
+            "Em um teclado mecânico, tire a keycap com um extrator e limpe em volta do switch."
+          ]
+        },
+        {
+          "h": "6. Resolva uma tecla que digita duas vezes (chatter)",
+          "p": [
+            "Uma tecla que manda dois toques em vez de um está com chatter. Em um teclado mecânico, ar comprimido embaixo do switch costuma resolver, e em um teclado hot-swap dá para trocar o switch em um minuto. Muitos teclados gamer também têm uma configuração de debounce no software. Aumentar um pouco acaba com a maior parte do chatter."
+          ]
+        },
+        {
+          "h": "7. Reinstale o driver do teclado (Windows)",
+          "ol": [
+            "Clique com o botão direito em Iniciar → Gerenciador de Dispositivos.",
+            "Abra Teclados.",
+            "Clique com o botão direito no seu teclado → Desinstalar dispositivo e reinicie."
+          ]
+        },
+        {
+          "h": "8. Teste fora do Windows",
+          "p": [
+            "Se as teclas continuarem falhando, o defeito provavelmente é no hardware. Teste o teclado em outro computador. Em um notebook, se as mesmas teclas também falharem na tela da BIOS, o teclado precisa de conserto ou troca."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Por que algumas teclas do meu teclado não funcionam?",
+          "a": "As causas mais comuns são as Teclas de Filtro ativadas, sujeira embaixo das teclas, conexão USB frouxa ou um switch com defeito. Um testador de teclas mostra exatamente quais teclas não registram."
+        },
+        {
+          "q": "Por que meu teclado digita duas letras quando aperto uma vez?",
+          "a": "Isso é key chatter: o switch trepida e manda dois toques. Limpar o switch ou aumentar o tempo de debounce costuma resolver. Se não resolver, o switch precisa ser trocado."
+        },
+        {
+          "q": "Como testar todas as teclas do meu teclado?",
+          "a": "Abra o teste de teclado deste site e aperte cada tecla. Cada uma acende quando é registrada, e o teste também mostra o chatter e quantas teclas podem ser seguradas ao mesmo tempo."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "dead-pixel-stuck-pixel-fix",
+      "title": "Pixel morto ou preso? Como testar a tela e resolver",
+      "description": "Encontre pixels mortos e presos com telas de cores sólidas, entenda a diferença e tente o que funciona: corretor com cores piscando, pressão leve e garantia.",
+      "h1": "Pixel morto ou preso: como testar e resolver",
+      "lead": "Um pixel que fica preto, branco ou de uma cor forte passa despercebido até que, de repente, é a única coisa que você vê. Teste uma tela nova assim que receber, porque o prazo de devolução é curto. Veja como achar pixels com defeito e o que dá para fazer.",
+      "tool": "pixel",
+      "sections": [
+        {
+          "h": "Passo 0: limpe a tela",
+          "p": [
+            "Primeiro passe um pano de microfibra seco na tela. Um grão de poeira parece exatamente um pixel morto, mas ele se mexe ou some quando você limpa."
+          ]
+        },
+        {
+          "h": "1. Faça um teste de cores em tela cheia",
+          "p": [
+            "Abra o teste de pixel morto deste site e coloque em tela cheia. Ele enche a tela de preto, branco, vermelho, verde, azul e cinza. Olhe cada cor com calma a uns 30 cm de distância, parte por parte."
+          ]
+        },
+        {
+          "h": "2. Pixel morto, preso ou quente?",
+          "ul": [
+            "Pixel morto: preto em todas as cores, mais visível no branco. O transistor não recebe energia e raramente tem conserto.",
+            "Pixel preso: sempre de uma cor (vermelho, verde ou azul), mais visível no preto. Uma parte dele travou ligada, e muitas vezes dá para consertar.",
+            "Pixel quente: sempre branco, visível no preto. É tratado como um pixel preso."
+          ]
+        },
+        {
+          "h": "3. Tente o corretor de pixels",
+          "p": [
+            "Às vezes um pixel preso volta a funcionar quando cores piscam rapidamente sobre ele. Abra o corretor de pixels no teste de pixel morto, arraste o quadrado piscante para cima do pixel preso e deixe rodando de 10 a 30 minutos. Se não funcionar na primeira vez, tente de novo por algumas horas. Não olhe para o quadrado piscante se você tem sensibilidade a luzes piscando."
+          ]
+        },
+        {
+          "h": "4. Pressão leve (por sua conta e risco)",
+          "p": [
+            "Desligue a tela, enrole a ponta do dedo em um pano macio, pressione bem de leve o ponto preso e ligue a tela enquanto pressiona. Nunca aperte com força e nunca use nada pontudo. Em alguns painéis isso pode piorar as coisas, então tente primeiro o corretor de pixels."
+          ]
+        },
+        {
+          "h": "5. Confira a garantia e a política de devolução",
+          "p": [
+            "Muitos fabricantes só trocam a tela quando ela tem um número mínimo de pixels com defeito, mas as lojas costumam aceitar devolução em 14 a 30 dias por qualquer motivo. Tire uma foto do pixel na cor sólida e fale com o vendedor rápido."
+          ]
+        },
+        {
+          "h": "Bônus: confira a taxa de atualização",
+          "p": [
+            "Já que você está testando um monitor novo, o teste de pixel morto também mede a taxa de atualização real. Se um monitor de 144 Hz mostrar 60 Hz, ajuste no Windows em Configurações → Sistema → Tela → Tela avançada, e use um cabo DisplayPort ou um HDMI rápido o suficiente."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Qual a diferença entre pixel morto e pixel preso?",
+          "a": "Um pixel morto fica preto em todas as cores. Um pixel preso fica de uma cor só, geralmente vermelho, verde ou azul. Pixels presos muitas vezes têm conserto; pixels mortos, raramente."
+        },
+        {
+          "q": "Um pixel preso pode voltar sozinho?",
+          "a": "Às vezes, depois de horas ou dias de uso normal. Passar um corretor de pixels com cores piscando acelera isso e funciona com muitos pixels presos."
+        },
+        {
+          "q": "Como verificar se um monitor novo tem pixel morto?",
+          "a": "Limpe a tela, abra um teste de pixel morto em tela cheia e olhe o preto, branco, vermelho, verde e azul sólidos. Faça isso no primeiro dia, para ainda poder devolver."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "phone-mic-not-working",
+      "title": "Microfone do celular não funciona (iPhone e Android)? 8 dicas",
+      "description": "As pessoas não te ouvem nas ligações ou o microfone do celular está baixo ou abafado? Resolva permissões, Bluetooth, capinha e furos no iPhone e Android.",
+      "h1": "Microfone do iPhone ou Android não funciona",
+      "lead": "Se as pessoas não te ouvem, ou sua voz sai baixa ou abafada, o problema geralmente é uma permissão, um dispositivo Bluetooth ou algo cobrindo o microfone. O celular tem mais de um microfone, então teste primeiro para ver qual está com problema.",
+      "tool": "mic",
+      "sections": [
+        {
+          "h": "Passo 0: teste o microfone no navegador",
+          "p": [
+            "Abra o teste de microfone deste site no celular e toque em Iniciar. Se o medidor de nível se mexer quando você fala, o microfone funciona e o problema está em algum aplicativo ou numa configuração de chamada. Se ficar parado, continue lendo."
+          ]
+        },
+        {
+          "h": "1. Desconecte o Bluetooth",
+          "p": [
+            "O celular passa automaticamente para um headset, carro ou fone Bluetooth conectado, mesmo que esteja dentro da sua bolsa. Desligue o Bluetooth e teste de novo."
+          ]
+        },
+        {
+          "h": "2. Permita o acesso ao microfone para o app",
+          "ol": [
+            "iPhone: Ajustes → Privacidade e Segurança → Microfone e ative o app.",
+            "Android: Configurações → Apps → escolha o app → Permissões → Microfone → Permitir.",
+            "No Android 12 ou mais recente, confira também se o botão do microfone nas Configurações rápidas não está desativado."
+          ]
+        },
+        {
+          "h": "3. Tire a capinha e a película",
+          "p": [
+            "Capinhas e películas podem cobrir um furo do microfone, principalmente depois de uma queda que as desloca. Tire e teste de novo."
+          ]
+        },
+        {
+          "h": "4. Limpe os furos do microfone",
+          "p": [
+            "O celular tem furos de microfone na parte de baixo, perto da câmera e às vezes em cima. Limpe com cuidado usando uma escova de dentes macia e seca. Não enfie alfinetes nem agulhas nos furos, porque isso pode danificar a telinha de proteção."
+          ]
+        },
+        {
+          "h": "5. Teste cada microfone",
+          "ul": [
+            "Microfone de baixo: grave uma nota de voz ou um áudio no gravador.",
+            "Microfone frontal ou de cima: grave um vídeo selfie.",
+            "Microfone traseiro: grave um vídeo com a câmera traseira.",
+            "Se só um deles sai abafado, esse furo está entupido ou danificado."
+          ]
+        },
+        {
+          "h": "6. Desative os recursos de redução de ruído",
+          "p": [
+            "No iPhone, tente trocar o Modo do Microfone na Central de Controle durante uma ligação (Padrão, Isolamento de Voz, Amplo Espectro). No Android, desative “Redução de ruído” ou “Voz clara” nas configurações de chamada, se o seu celular tiver, e teste de novo."
+          ]
+        },
+        {
+          "h": "7. Reinicie e atualize",
+          "p": [
+            "Reinicie o celular e instale qualquer atualização do sistema. Bugs no sistema de áudio costumam ser corrigidos nas atualizações."
+          ]
+        },
+        {
+          "h": "8. Teste no modo de segurança (Android)",
+          "p": [
+            "Segure o botão liga/desliga e depois toque e segure em “Desligar” até aparecer Modo de segurança. Se o microfone funcionar no modo de segurança, algum app que você instalou está tomando conta do microfone."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Por que não me ouvem nas ligações, mas no viva-voz funciona?",
+          "a": "As ligações normalmente usam o microfone de baixo, enquanto o viva-voz ou o vídeo podem usar outro. Limpe o furo de baixo, tire a capinha e teste de novo."
+        },
+        {
+          "q": "Como testar o microfone do celular?",
+          "a": "Abra o teste de microfone deste site no navegador do celular, permita o acesso ao microfone e fale. Se o medidor se mexer, o microfone funciona. Você também pode gravar um áudio e ouvir."
+        },
+        {
+          "q": "Por que o microfone do meu celular está abafado?",
+          "a": "Geralmente a capinha, uma película ou fiapos estão cobrindo um furo. Tire tudo e limpe os furos com cuidado usando uma escova macia e seca."
+        }
+      ],
+      "published": "2026-11-13"
     }
   ]
 }

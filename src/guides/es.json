@@ -8,13 +8,21 @@
     "titleWebcam": "Prueba de cámara web",
     "runMic": "Probar el micrófono",
     "runWebcam": "Probar la cámara web",
-    "moreGuides": "Más guías"
+    "moreGuides": "Más guías",
+    "titleSpeaker": "Prueba de altavoces",
+    "runSpeaker": "Probar los altavoces",
+    "titleKeyboard": "Test de teclado",
+    "runKeyboard": "Hacer el test de teclado",
+    "titleMouse": "Test de ratón",
+    "runMouse": "Hacer el test de ratón",
+    "titlePixel": "Test de píxeles muertos",
+    "runPixel": "Hacer el test de píxeles muertos"
   },
   "hub": {
-    "title": "Guías para solucionar problemas de micrófono y cámara",
-    "description": "Soluciones paso a paso si tu micrófono o cámara web no funciona en Windows, Mac, Discord, Zoom, Teams o Google Meet. Gratis y explicadas fácil.",
+    "title": "Guías para solucionar problemas de micro, cámara, sonido y PC",
+    "description": "Soluciones paso a paso si tu micrófono, cámara web, altavoces, teclado, ratón o pantalla fallan. Windows, Mac, iPhone, Android, Discord y Zoom.",
     "h1": "Guías de solución de problemas",
-    "lead": "Soluciones cortas y prácticas para los problemas más comunes de micrófono y cámara. Primero haz la prueba y luego sigue la guía que coincida con lo que ves."
+    "lead": "Soluciones cortas y prácticas para los problemas más comunes de micrófono, cámara, sonido, teclado, ratón y pantalla. Primero haz la prueba y luego sigue la guía que coincida con lo que ves."
   },
   "guides": [
     {
@@ -322,6 +330,407 @@
           "a": "Abre la prueba de micrófono de este sitio, o en Zoom ve a Configuración → Audio → Probar micrófono. Las dos opciones tardan unos cinco segundos."
         }
       ]
+    },
+    {
+      "slug": "no-sound-speakers-headphones",
+      "title": "No sale sonido por altavoces o auriculares: 8 soluciones",
+      "description": "¿No tienes sonido en tu PC o Mac? Revisa el dispositivo de salida, el mezclador de volumen, los cables, el Bluetooth y los controladores. 8 soluciones.",
+      "h1": "No sale sonido por los altavoces o auriculares",
+      "lead": "Cuando el ordenador se queda mudo, casi siempre está enviando el sonido al dispositivo equivocado o tiene algún control de volumen a cero. Sigue estas comprobaciones en orden. La mayoría de la gente recupera el sonido antes del paso 3.",
+      "tool": "speaker",
+      "sections": [
+        {
+          "h": "Paso 0: reproduce un tono de prueba",
+          "p": [
+            "Abre la prueba de altavoces de este sitio y reproduce los tonos izquierdo y derecho. Si los oyes, tus altavoces y el sistema están bien y el problema está dentro de una aplicación o web concreta. Si no oyes nada, sigue leyendo."
+          ]
+        },
+        {
+          "h": "1. Revisa los controles de volumen más obvios",
+          "ul": [
+            "La rueda o los botones de volumen de los propios altavoces o auriculares.",
+            "La tecla de silencio del teclado (suele ser F1, F10 o una tecla con un altavoz tachado).",
+            "El control de volumen de la barra de tareas (Windows) o de la barra de menús (Mac).",
+            "El volumen dentro del reproductor de vídeo o de la web que estás usando."
+          ]
+        },
+        {
+          "h": "2. Elige el dispositivo de salida correcto",
+          "p": [
+            "Los ordenadores suelen tener varias salidas: los altavoces del portátil, los auriculares, un monitor con altavoces por HDMI, un headset USB y dispositivos Bluetooth. El sonido solo sale por una de ellas."
+          ],
+          "ol": [
+            "Windows: haz clic en el icono del altavoz de la barra de tareas, luego en la flecha junto al control de volumen, y elige tus altavoces o auriculares.",
+            "Mac: abre Ajustes del Sistema → Sonido → Salida y elige tu dispositivo.",
+            "Vuelve a reproducir el tono de prueba."
+          ]
+        },
+        {
+          "h": "3. Revisa el mezclador de volumen (Windows)",
+          "p": [
+            "Windows guarda un volumen distinto para cada aplicación. Haz clic derecho en el icono del altavoz → Abrir mezclador de volumen y comprueba que tu navegador o tu juego no estén silenciados ni a cero."
+          ]
+        },
+        {
+          "h": "4. Revisa los cables y los conectores",
+          "p": [
+            "Mete la clavija hasta el fondo. Los auriculares con cable deben ir en la toma de auriculares (verde), no en la del micrófono (rosa). En un PC de sobremesa, prueba la toma de la parte trasera, porque a veces las tomas frontales no están conectadas dentro de la caja. Con altavoces y headsets USB, prueba otro puerto USB directamente en el ordenador."
+          ]
+        },
+        {
+          "h": "5. Vuelve a conectar los auriculares Bluetooth",
+          "ol": [
+            "Desactiva el Bluetooth y vuelve a activarlo.",
+            "Si no sirve, quita (olvida) los auriculares en los ajustes de Bluetooth y vuelve a emparejarlos.",
+            "En Windows, elige la salida «Auriculares» o «Estéreo», no «Headset» ni «Manos libres», para tener la mejor calidad."
+          ]
+        },
+        {
+          "h": "6. Usa el solucionador de problemas de audio (Windows)",
+          "p": [
+            "Ve a Configuración → Sistema → Sonido y haz clic en «Solucionar problemas de sonido comunes», en el apartado Salida. Reinicia el servicio de audio y corrige automáticamente los ajustes de controlador más habituales."
+          ]
+        },
+        {
+          "h": "7. Reinstala el controlador de sonido (Windows)",
+          "ol": [
+            "Haz clic derecho en Inicio → Administrador de dispositivos.",
+            "Despliega «Controladoras de sonido y vídeo y dispositivos de juego».",
+            "Haz clic derecho en tu dispositivo de audio (Realtek, Intel, AMD o similar) → Desinstalar el dispositivo y reinicia. Windows vuelve a instalar el controlador al arrancar."
+          ]
+        },
+        {
+          "h": "8. Reinicia el sistema de audio (Mac)",
+          "p": [
+            "Si el Mac muestra la salida correcta pero no suena nada, reinícialo. Si sigue sin sonido, abre Monitor de Actividad, busca «coreaudiod» y fuerza su cierre. macOS lo vuelve a iniciar en un segundo."
+          ]
+        },
+        {
+          "h": "¿El sonido solo sale por un lado?",
+          "p": [
+            "Reproduce los tonos izquierdo y derecho en la prueba de altavoces. Si un lado no suena con ningún par de auriculares, revisa el control de balance (Windows: Configuración → Sistema → Sonido → tu dispositivo; Mac: Sonido → Salida → Balance). Si solo falla un par, el cable o la clavija están dañados."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Por qué no se oye nada en mi ordenador si el volumen está alto?",
+          "a": "Normalmente el sonido se está enviando a otra salida, como un monitor por HDMI o un dispositivo Bluetooth apagado. Elige tus altavoces o auriculares como dispositivo de salida y vuelve a probar."
+        },
+        {
+          "q": "¿Por qué mis auriculares funcionan en el móvil pero no en el PC?",
+          "a": "Seguramente el PC sigue enviando el sonido a sus altavoces o a otra salida. Selecciona los auriculares como dispositivo de salida. Si son de cable, usa la toma verde de auriculares."
+        },
+        {
+          "q": "¿Cómo pruebo mis altavoces online?",
+          "a": "Abre la prueba de altavoces de este sitio y reproduce los tonos izquierdo, derecho y de barrido. Sabrás al momento si funcionan los dos canales y las frecuencias graves y agudas."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "mouse-double-clicking",
+      "title": "El ratón hace doble clic solo: cómo comprobarlo y arreglarlo",
+      "description": "¿Tu ratón hace doble clic con un solo clic? Compruébalo en 30 segundos y arréglalo: ajustes de Windows, debounce, limpieza del switch o garantía.",
+      "h1": "El ratón hace doble clic cuando haces un solo clic",
+      "lead": "Un ratón que registra dos clics cuando pulsas una vez es una de las averías más habituales. Casi siempre es el switch que hay bajo el botón, que se está desgastando. Primero confírmalo y luego prueba estas soluciones en orden.",
+      "tool": "mouse",
+      "sections": [
+        {
+          "h": "Paso 0: confírmalo con un test de ratón",
+          "p": [
+            "Abre el test de ratón de este sitio y haz clic con normalidad durante un minuto. Marca cualquier par de clics del mismo botón que lleguen con menos de 80 milisegundos de diferencia. Nadie puede hacer clic tan rápido a propósito, así que cada marca es un fallo. Si ves marcas, el ratón está haciendo doble clic. Si no, revisa los ajustes de Windows de abajo."
+          ]
+        },
+        {
+          "h": "1. Revisa el ajuste de clic de Windows",
+          "p": [
+            "Windows puede estar configurado para abrir archivos con un solo clic, y eso se parece mucho a un doble clic. Abre el Explorador de archivos → Ver (o los tres puntos) → Opciones y, en «Hacer clic en los elementos de la siguiente forma», elige «Doble clic para abrir un elemento». Revisa también Configuración → Bluetooth y dispositivos → Mouse → Configuración adicional del mouse y deja la velocidad de doble clic en el punto medio."
+          ]
+        },
+        {
+          "h": "2. Prueba otro puerto USB y desactiva el ahorro de energía USB",
+          "p": [
+            "Conecta el ratón directamente al ordenador en lugar de a un hub. En un portátil, abre el Administrador de dispositivos → Controladoras de bus serie universal, abre cada «Concentrador raíz USB» y, en la pestaña Administración de energía, desmarca «Permitir que el equipo apague este dispositivo para ahorrar energía»."
+          ]
+        },
+        {
+          "h": "3. Sube el tiempo de debounce (ratones gaming)",
+          "p": [
+            "Muchos ratones gaming tienen un ajuste de debounce o «respuesta del clic» en su software (Logitech G HUB, Razer Synapse, SteelSeries GG y otros). Un valor muy bajo deja que un switch gastado envíe dos clics. Súbelo un poco, por ejemplo de 2 ms a 8 o 10 ms, y vuelve a probar."
+          ]
+        },
+        {
+          "h": "4. Limpia el botón",
+          "p": [
+            "Desconecta el ratón o quítale la pila. Echa aire comprimido en la ranura alrededor del botón mientras haces clic repetidamente durante 20 a 30 segundos. El polvo y la suciedad pueden hacer que el switch rebote."
+          ]
+        },
+        {
+          "h": "5. Revisa la garantía",
+          "p": [
+            "La mayoría de los ratones tienen entre 1 y 3 años de garantía, y el doble clic es una avería reconocida. Guarda el resultado del test de ratón como prueba cuando contactes con el soporte técnico."
+          ]
+        },
+        {
+          "h": "6. Cambia el switch (avanzado)",
+          "p": [
+            "Si sabes abrir el ratón y soldar, el switch que hay bajo el botón se puede cambiar por unos pocos euros. Busca antes tu modelo exacto, porque algunos ratones usan switches ópticos que no se desgastan de esta forma."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Por qué mi ratón hace doble clic cuando hago un solo clic?",
+          "a": "Normalmente el contacto metálico del switch del botón está gastado o sucio, así que una pulsación lo hace rebotar y envía dos clics. Ajustes como el modo de un solo clic de Windows también pueden parecer un doble clic."
+        },
+        {
+          "q": "¿Cómo compruebo si mi ratón hace doble clic solo?",
+          "a": "Abre el test de ratón de este sitio y haz clic con normalidad. Dos clics del mismo botón con menos de 80 ms de diferencia se marcan como dobles clics involuntarios."
+        },
+        {
+          "q": "¿Se puede arreglar un ratón que hace doble clic?",
+          "a": "Muchas veces, sí. Subir el tiempo de debounce y limpiar el switch soluciona el problema en muchos ratones. Si sigue pasando, hay que cambiar el switch o reclamar la garantía."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "keyboard-keys-not-working",
+      "title": "Teclas del teclado que no funcionan o escriben doble",
+      "description": "¿Algunas teclas no funcionan, escriben doble o sacan otro carácter? Prueba cada tecla y corrige Teclas filtro, la distribución, drivers, suciedad o rebote.",
+      "h1": "Las teclas del teclado no funcionan o escriben doble",
+      "lead": "Cuando algunas teclas no hacen nada, escriben dos veces o ponen la letra equivocada, la causa suele ser un ajuste, la distribución del teclado o un switch sucio. Primero averigua exactamente qué teclas fallan y luego sigue la solución que corresponda.",
+      "tool": "keyboard",
+      "sections": [
+        {
+          "h": "Paso 0: prueba todas las teclas",
+          "p": [
+            "Abre el test de teclado de este sitio y pulsa cada tecla una vez. Las que nunca se iluminan no llegan al ordenador. Las marcadas con rebote enviaron dos pulsaciones en lugar de una. Si una tecla escribe un carácter equivocado pero se ilumina en el sitio correcto, el problema es la distribución del teclado (paso 3), no el hardware."
+          ]
+        },
+        {
+          "h": "1. Reinicia y vuelve a conectar",
+          "p": [
+            "Reinicia el ordenador. Si el teclado es USB, conéctalo directamente al ordenador y prueba otro puerto. Si es inalámbrico, cambia o carga las pilas y vuelve a emparejarlo."
+          ]
+        },
+        {
+          "h": "2. Desactiva Teclas filtro y Teclas especiales (Windows)",
+          "p": [
+            "Teclas filtro ignora las pulsaciones breves o repetidas, y eso se parece exactamente a que las teclas no funcionen. Abre Configuración → Accesibilidad → Teclado y desactiva Teclas filtro y Teclas especiales. Mantener pulsada la tecla Mayús derecha durante 8 segundos puede activar Teclas filtro sin querer."
+          ]
+        },
+        {
+          "h": "3. ¿Salen otros caracteres? Revisa la distribución",
+          "p": [
+            "Si las teclas escriben símbolos equivocados, por ejemplo @ y \" están intercambiados o la Y y la Z están cambiadas, el ordenador está usando otra distribución de teclado. Windows: pulsa Windows + Espacio para cambiarla y quita las que no uses en Configuración → Hora e idioma → Idioma y región. Mac: Ajustes del Sistema → Teclado → Fuentes de entrada."
+          ]
+        },
+        {
+          "h": "4. ¿El teclado numérico no escribe números?",
+          "p": [
+            "Pulsa Bloq Num (Num Lock). En muchos portátiles es Fn + Bloq Num o Fn + F11. Con Bloq Num desactivado, el teclado numérico funciona como teclas de flecha."
+          ]
+        },
+        {
+          "h": "5. Limpia debajo de las teclas",
+          "ol": [
+            "Desconecta el teclado o apaga el portátil.",
+            "Ponlo boca abajo e inclinado y dale unos golpecitos suaves.",
+            "Echa aire comprimido debajo de las teclas que se atascan.",
+            "En un teclado mecánico, quita la tecla con un extractor de keycaps y limpia alrededor del switch."
+          ]
+        },
+        {
+          "h": "6. Arregla una tecla que escribe doble (rebote)",
+          "p": [
+            "Una tecla que envía dos pulsaciones en lugar de una tiene rebote (key chatter). En un teclado mecánico, echar aire comprimido bajo el switch suele arreglarlo, y en un teclado hot-swap puedes cambiar el switch en un minuto. Muchos teclados gaming también tienen un ajuste de debounce en su software. Subirlo un poco elimina la mayoría de los rebotes."
+          ]
+        },
+        {
+          "h": "7. Reinstala el controlador del teclado (Windows)",
+          "ol": [
+            "Haz clic derecho en Inicio → Administrador de dispositivos.",
+            "Despliega Teclados.",
+            "Haz clic derecho en tu teclado → Desinstalar el dispositivo y reinicia."
+          ]
+        },
+        {
+          "h": "8. Prueba fuera de Windows",
+          "p": [
+            "Si las teclas siguen fallando, lo más probable es que sea el hardware. Prueba el teclado en otro ordenador. En un portátil, si las mismas teclas también fallan en la pantalla de la BIOS, el teclado necesita reparación o sustitución."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Por qué no funcionan algunas teclas de mi teclado?",
+          "a": "Las causas más comunes son tener Teclas filtro activado, suciedad bajo las teclas, una conexión USB floja o un switch defectuoso. Un probador de teclas te muestra exactamente cuáles no se registran."
+        },
+        {
+          "q": "¿Por qué mi teclado escribe dos letras cuando pulso una vez?",
+          "a": "Es el rebote de teclas: el switch rebota y envía dos pulsaciones. Limpiar el switch o subir el tiempo de debounce suele arreglarlo. Si no, hay que cambiar el switch."
+        },
+        {
+          "q": "¿Cómo pruebo todas las teclas de mi teclado?",
+          "a": "Abre el test de teclado de este sitio y pulsa cada tecla. Cada una se ilumina cuando se registra, y el test también muestra el rebote y cuántas teclas se pueden mantener pulsadas a la vez."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "dead-pixel-stuck-pixel-fix",
+      "title": "Píxeles muertos o atascados: cómo detectarlos y arreglarlos",
+      "description": "Encuentra píxeles muertos y atascados con colores sólidos, aprende a distinguirlos y prueba lo que funciona: reparador con destellos, presión suave y garantía.",
+      "h1": "Píxel muerto o atascado: cómo detectarlo y arreglarlo",
+      "lead": "Un píxel que se queda negro, blanco o de un color brillante pasa desapercibido hasta que, de repente, no ves otra cosa. Revisa una pantalla nueva en cuanto la recibas, porque los plazos de devolución son cortos. Así puedes encontrar píxeles defectuosos y esto es lo que puedes hacer.",
+      "tool": "pixel",
+      "sections": [
+        {
+          "h": "Paso 0: limpia la pantalla",
+          "p": [
+            "Primero pasa un paño de microfibra seco por la pantalla. Una mota de polvo parece exactamente un píxel muerto, pero se mueve o desaparece al limpiarla."
+          ]
+        },
+        {
+          "h": "1. Haz una prueba de color a pantalla completa",
+          "p": [
+            "Abre el test de píxeles muertos de este sitio y ponlo a pantalla completa. Llena la pantalla de negro, blanco, rojo, verde, azul y gris. Mira cada color con calma desde unos 30 cm, zona por zona."
+          ]
+        },
+        {
+          "h": "2. ¿Píxel muerto, atascado o caliente?",
+          "ul": [
+            "Píxel muerto: negro en todos los colores, se ve sobre todo sobre blanco. El transistor no recibe corriente y casi nunca tiene arreglo.",
+            "Píxel atascado: siempre de un color (rojo, verde o azul), se ve sobre todo sobre negro. Una parte se ha quedado encendida y a menudo se puede arreglar.",
+            "Píxel caliente: siempre blanco, se ve sobre negro. Se trata igual que un píxel atascado."
+          ]
+        },
+        {
+          "h": "3. Prueba el reparador de píxeles",
+          "p": [
+            "A veces un píxel atascado revive si se le hacen pasar colores muy rápido. Abre el reparador de píxeles en el test de píxeles muertos, arrastra el cuadrado parpadeante sobre el píxel atascado y déjalo funcionando entre 10 y 30 minutos. Si no funciona a la primera, vuelve a intentarlo durante unas horas. No mires el cuadrado parpadeante si eres sensible a las luces intermitentes."
+          ]
+        },
+        {
+          "h": "4. Presión suave (bajo tu responsabilidad)",
+          "p": [
+            "Apaga la pantalla, envuelve la yema de un dedo en un paño suave, presiona con mucha suavidad sobre el punto atascado y enciende la pantalla sin dejar de presionar. Nunca aprietes fuerte ni uses nada puntiagudo. En algunos paneles esto puede empeorar las cosas, así que prueba primero el reparador de píxeles."
+          ]
+        },
+        {
+          "h": "5. Revisa la garantía y la política de devolución",
+          "p": [
+            "Muchos fabricantes solo cambian la pantalla si tiene un número mínimo de píxeles defectuosos, pero las tiendas suelen aceptar devoluciones en un plazo de 14 a 30 días por cualquier motivo. Haz una foto del píxel sobre el color sólido y contacta con el vendedor cuanto antes."
+          ]
+        },
+        {
+          "h": "Extra: comprueba la frecuencia de actualización",
+          "p": [
+            "Ya que estás probando un monitor nuevo, el test de píxeles muertos también mide su frecuencia de actualización real. Si un monitor de 144 Hz muestra 60 Hz, cámbialo en Windows en Configuración → Sistema → Pantalla → Pantalla avanzada, y asegúrate de usar un cable DisplayPort o un HDMI lo bastante rápido."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Qué diferencia hay entre un píxel muerto y uno atascado?",
+          "a": "Un píxel muerto se queda negro en todos los colores. Uno atascado se queda de un solo color, normalmente rojo, verde o azul. Los atascados a menudo se pueden arreglar; los muertos, casi nunca."
+        },
+        {
+          "q": "¿Un píxel atascado se puede arreglar solo?",
+          "a": "A veces, tras horas o días de uso normal. Pasarle un reparador de píxeles con destellos acelera el proceso y funciona con muchos píxeles atascados."
+        },
+        {
+          "q": "¿Cómo reviso si un monitor nuevo tiene píxeles muertos?",
+          "a": "Limpia la pantalla, abre un test de píxeles muertos a pantalla completa y mira el negro, blanco, rojo, verde y azul sólidos. Hazlo el primer día para poder devolverlo si hace falta."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "phone-mic-not-working",
+      "title": "El micrófono del iPhone o Android no funciona: 8 soluciones",
+      "description": "¿No te oyen en las llamadas o el micro del móvil suena bajo o apagado? Revisa los permisos, el Bluetooth, la funda y los orificios en iPhone y Android.",
+      "h1": "El micrófono del iPhone o Android no funciona",
+      "lead": "Si no te oyen o tu voz suena baja o apagada, el problema suele ser un permiso, un dispositivo Bluetooth o algo que tapa el micrófono. Los móviles tienen más de un micrófono, así que primero haz la prueba para ver cuál falla.",
+      "tool": "mic",
+      "sections": [
+        {
+          "h": "Paso 0: prueba el micro en el navegador",
+          "p": [
+            "Abre la prueba de micrófono de este sitio en tu móvil y pulsa Iniciar. Si el medidor de nivel se mueve cuando hablas, el micrófono funciona y el problema está en una aplicación o en un ajuste de llamada. Si no se mueve, sigue leyendo."
+          ]
+        },
+        {
+          "h": "1. Desconecta el Bluetooth",
+          "p": [
+            "Los móviles pasan automáticamente a un headset, coche o auriculares Bluetooth conectados, aunque estén dentro de tu mochila. Desactiva el Bluetooth y vuelve a probar."
+          ]
+        },
+        {
+          "h": "2. Da permiso de micrófono a la aplicación",
+          "ol": [
+            "iPhone: Ajustes → Privacidad y seguridad → Micrófono, y activa la aplicación.",
+            "Android: Ajustes → Aplicaciones → elige la aplicación → Permisos → Micrófono → Permitir.",
+            "En Android 12 y posteriores, comprueba también que el interruptor del micrófono de los Ajustes rápidos no esté desactivado."
+          ]
+        },
+        {
+          "h": "3. Quita la funda y el protector de pantalla",
+          "p": [
+            "Las fundas y los protectores de pantalla pueden tapar un orificio del micrófono, sobre todo si se han movido tras una caída. Quítalos y vuelve a probar."
+          ]
+        },
+        {
+          "h": "4. Limpia los orificios del micro",
+          "p": [
+            "Los móviles tienen orificios de micrófono en la parte inferior, junto a la cámara y a veces en la parte superior. Límpialos con cuidado con un cepillo de dientes suave y seco. No metas alfileres ni agujas en los orificios, porque puedes dañar la rejilla."
+          ]
+        },
+        {
+          "h": "5. Prueba cada micrófono",
+          "ul": [
+            "Micro inferior: graba una nota de voz o un clip con la grabadora.",
+            "Micro frontal o superior: graba un vídeo selfie.",
+            "Micro trasero: graba un vídeo con la cámara trasera.",
+            "Si solo uno de ellos suena apagado, ese orificio está tapado o dañado."
+          ]
+        },
+        {
+          "h": "6. Desactiva las funciones de reducción de ruido",
+          "p": [
+            "En iPhone, prueba a cambiar el Modo de micrófono en el Centro de control durante una llamada (Estándar, Aislamiento de voz, Espectro amplio). En Android, desactiva «Reducción de ruido» o «Voz clara» en los ajustes de llamada, si tu móvil los tiene, y vuelve a probar."
+          ]
+        },
+        {
+          "h": "7. Reinicia y actualiza",
+          "p": [
+            "Reinicia el móvil e instala cualquier actualización del sistema. Los fallos del sistema de audio suelen corregirse en las actualizaciones."
+          ]
+        },
+        {
+          "h": "8. Prueba en modo seguro (Android)",
+          "p": [
+            "Mantén pulsado el botón de encendido y luego mantén pulsado «Apagar» hasta que aparezca Modo seguro. Si el micrófono funciona en modo seguro, una aplicación que instalaste está acaparando el micrófono."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Por qué no me oyen en las llamadas pero el altavoz sí funciona?",
+          "a": "Las llamadas suelen usar el micrófono inferior, mientras que el manos libres o el vídeo pueden usar otro. Limpia el orificio inferior, quita la funda y vuelve a probar."
+        },
+        {
+          "q": "¿Cómo pruebo el micrófono de mi móvil?",
+          "a": "Abre la prueba de micrófono de este sitio en el navegador del móvil, permite el acceso al micrófono y habla. Si el medidor se mueve, el micro funciona. También puedes grabar un clip y escucharlo."
+        },
+        {
+          "q": "¿Por qué el micro de mi móvil suena apagado?",
+          "a": "Normalmente la funda, un protector de pantalla o pelusa están tapando un orificio. Quítalos y limpia los orificios con cuidado con un cepillo suave y seco."
+        }
+      ],
+      "published": "2026-11-13"
     }
   ]
 }

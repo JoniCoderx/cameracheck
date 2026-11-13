@@ -103,6 +103,18 @@ for (const f of fs.readdirSync(path.join(SRC, 'static'))) {
 }
 const asset = (f) => `/${f}?v=${ver[f]}`;
 
+/* ---------- per-page social images (rendered by tools/og.cjs into src/og/) ---------- */
+const OG_DIR = path.join(SRC, 'og'), OG_HAVE = new Set(), OG_HASH = {}, OG_JOBS = [];
+if (fs.existsSync(OG_DIR)) for (const l of fs.readdirSync(OG_DIR)) {
+  if (!fs.statSync(path.join(OG_DIR, l)).isDirectory()) continue;
+  fs.mkdirSync(path.join(OUT, 'og', l), { recursive: true });
+  for (const f of fs.readdirSync(path.join(OG_DIR, l))) {
+    const buf = fs.readFileSync(path.join(OG_DIR, l, f));
+    OG_HAVE.add(`${l}/${f}`); OG_HASH[`${l}/${f}`] = crypto.createHash('md5').update(buf).digest('hex').slice(0, 8);
+    fs.writeFileSync(path.join(OUT, 'og', l, f), buf);
+  }
+}
+
 /* ---------- inline CSS (one less render-blocking request) ---------- */
 const minCss = (c) => c.replace(/\/\*[\s\S]*?\*\//g, '').replace(/\s+/g, ' ').replace(/\s*([{};,>])\s*/g, '$1').replace(/:\s+/g, ':').replace(/;}/g, '}').trim();
 const CSS_INLINE = minCss(fs.readFileSync(path.join(SRC, 'static/styles.css'), 'utf8'));
@@ -173,9 +185,11 @@ function adSlot(name, label) {
     `<ins class="adsbygoogle" style="display:block" data-ad-client="${esc(AD.client)}" data-ad-slot="${esc(slot)}" data-ad-format="auto" data-full-width-responsive="true"></ins></aside>`;
 }
 
-function head({ lang, title, description, canonical, alternates, ogType = 'website', extraLd = [] }) {
+function head({ lang, title, description, canonical, alternates, ogType = 'website', extraLd = [], og = null }) {
   const L = locales[lang] || en;
-  const fullTitle = title.length + BRAND.length + 3 <= (lang === "ja" ? 40 : 70) ? `${title} | ${BRAND}` : title;
+  const ogImg = og && OG_HAVE.has(og.file) ? { url: `${DOMAIN}/og/${og.file}?v=${OG_HASH[og.file]}`, alt: og.alt } : { url: `${DOMAIN}/og.png`, alt: `${BRAND}: free mic, webcam and speaker test` };
+  if (og) OG_JOBS.push({ ...og, lang, dir: L.meta.dir });
+  const fullTitle = !title.includes(BRAND) && title.length + BRAND.length + 3 <= (lang === "ja" ? 40 : 70) ? `${title} | ${BRAND}` : title;
   return `<!doctype html>
 <html lang="${lang}" dir="${L.meta.dir}">
 <head>
@@ -198,15 +212,15 @@ ${cfg.bingSiteVerification ? `<meta name="msvalidate.01" content="${esc(cfg.bing
 <meta property="og:url" content="${abs(canonical)}">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
-<meta property="og:image" content="${DOMAIN}/og.png">
+<meta property="og:image" content="${ogImg.url}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="${BRAND}: free mic, webcam and speaker test">
+<meta property="og:image:alt" content="${esc(ogImg.alt)}">
 <meta property="og:locale" content="${L.meta.ogLocale}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(title)}">
 <meta name="twitter:description" content="${esc(description)}">
-<meta name="twitter:image" content="${DOMAIN}/og.png">
+<meta name="twitter:image" content="${ogImg.url}">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-96.png" type="image/png" sizes="96x96">
@@ -713,16 +727,19 @@ function renderPage(lang, page) {
   </div>
 </section>`;
 
-  const toolKey = { mic: 'mic', webcam: 'webcam', speaker: null, home: 'any', headphone: null }[page] ?? (PAGES[page].tools[0] === 'mic' || PAGES[page].tools[0] === 'rec' || PAGES[page].tools[0] === 'db' ? 'mic' : null);
-  const GL = GUIDES_BY_LANG[lang] ? lang : 'en'; const rel = GUIDES_BY_LANG[GL].guides.filter((g) => toolKey === 'any' || g.tool === toolKey).slice(0, 3);
+  const toolKey = { mic: 'mic', webcam: 'webcam', speaker: 'speaker', home: 'any', headphone: 'speaker' }[page] ?? ({ mic: 'mic', rec: 'mic', db: 'mic', cam: 'webcam', spk: 'speaker', kb: 'keyboard', ms: 'mouse', px: 'pixel' }[PAGES[page].tools[0]] || null);
+  const GL = GUIDES_BY_LANG[lang] ? lang : 'en'; const rel = toolKey === 'any' ? ['microphone-not-working-windows', 'webcam-not-working', 'no-sound-speakers-headphones'].map((s) => GUIDES_BY_LANG[GL].guides.find((g) => g.slug === s)).filter(Boolean) : GUIDES_BY_LANG[GL].guides.filter((g) => g.tool === toolKey).slice(0, 3);
   const related = rel.length ? `
 <section class="wrap others" aria-labelledby="guidesTitle">
   <h2 id="guidesTitle">${esc(u.guides)}</h2>
-  <div class="other-grid">${rel.map((g) => `<a class="other-card" href="${guideUrl(GL, g.slug)}" hreflang="${GL}"><span class="other-ico">${ic(g.tool === 'mic' ? 'mic' : 'cam')}</span><span lang="${GL}" dir="${locales[GL].meta.dir}"><b>${esc(g.h1)}</b><small>${esc(g.description.split('. ')[0].replace(/\.+$/, ''))}.</small></span></a>`).join('')}</div>
+  <div class="other-grid">${rel.map((g) => `<a class="other-card" href="${guideUrl(GL, g.slug)}" hreflang="${GL}"><span class="other-ico">${ic(GTOOL[g.tool].icon)}</span><span lang="${GL}" dir="${locales[GL].meta.dir}"><b>${esc(g.h1)}</b><small>${esc(g.description.split('. ')[0].replace(/\.+$/, ''))}.</small></span></a>`).join('')}</div>
 </section>` : '';
   const runtime = { lang, page, tools: def.tools, alts: Object.fromEntries(pageLangs(page).map((l) => [l, urlFor(l, page)])), names: Object.fromEntries(LANGS.map((l) => [l, locales[l].meta.langName])) };
 
-  return `${head({ lang, title: P.title, description: P.description, canonical: url, alternates, extraLd: ld })}
+  const ogMain = { mic: [u.navMic, u.cardMicDesc, 'mic'], webcam: [u.navCam, u.cardCamDesc, 'cam'], speaker: [u.navSpk, u.cardSpkDesc, 'spk'] }[page];
+  const og = isHome ? { file: `${lang}/home.png`, alt: `${BRAND}: ${u.navMic}, ${u.navCam}, ${u.navSpk}`, lines: [u.navMic, u.navCam, u.navSpk], icon: '', foot: u.heroPill }
+    : (() => { const [name, desc, icon] = ogMain || [L.pages[page].card.name, L.pages[page].card.desc, PAGES[page].icon]; return { file: `${lang}/${page}.png`, alt: `${name}: ${desc}`, lines: [name], sub: desc, icon: ICONS[icon], foot: u.heroPill }; })();
+  return `${head({ lang, title: P.title, description: P.description, canonical: url, alternates, extraLd: ld, og })}
 <body class="page-${page}">
 ${header(lang, page)}
 <main id="main">
@@ -762,6 +779,8 @@ ${footer(lang)}
 
 /* ---------- guide pages (all languages that have a translation in src/guides/) ---------- */
 const GUIDE_LANGS = LANGS.filter((l) => GUIDES_BY_LANG[l]);
+const GTOOL = { mic: { page: 'mic', icon: 'mic', t: 'titleMic', r: 'runMic' }, webcam: { page: 'webcam', icon: 'cam', t: 'titleWebcam', r: 'runWebcam' }, speaker: { page: 'speaker', icon: 'spk', t: 'titleSpeaker', r: 'runSpeaker' },
+  keyboard: { page: 'keyboard', icon: 'kbd', t: 'titleKeyboard', r: 'runKeyboard' }, mouse: { page: 'mouse', icon: 'mouse', t: 'titleMouse', r: 'runMouse' }, pixel: { page: 'pixel', icon: 'screen', t: 'titlePixel', r: 'runPixel' } };
 const guideUrl = (lang, slug) => prefix(lang) + 'guides/' + (slug ? slug + '/' : '');
 const guidesHref = (lang) => guideUrl(GUIDES_BY_LANG[lang] ? lang : 'en');
 function crumbs(items) {
@@ -775,12 +794,13 @@ const guideRuntime = (lang, page, slug) => `<script>window.I18N=${JSON.stringify
 function guidePage(lang, g) {
   const G = GUIDES_BY_LANG[lang], u = locales[lang].ui, gu = G.ui;
   const url = guideUrl(lang, g.slug), hub = guideUrl(lang);
+  const gOg = { file: `${lang}/guide-${g.slug}.png`, alt: g.h1, kicker: gu.guides, lines: [g.h1], icon: ICONS[GTOOL[g.tool].icon], foot: u.heroPill };
   const text = [g.lead, ...g.sections.flatMap((x) => [x.h, ...(x.p || []), ...(x.ol || []), ...(x.ul || [])]), ...g.faq.flatMap((f) => [f.q, f.a])].join(' ');
   const words = /^(ja)$/.test(lang) ? text.length / 2.5 : text.split(/\s+/).length;
   const mins = Math.max(2, Math.round(words / 220));
   const ld = [{
     '@context': 'https://schema.org', '@type': 'Article', headline: g.h1, description: g.description, inLanguage: lang,
-    mainEntityOfPage: abs(url), datePublished: '2026-11-05', dateModified: TODAY, image: DOMAIN + '/og.png',
+    mainEntityOfPage: abs(url), datePublished: g.published || '2026-11-05', dateModified: TODAY, image: OG_HAVE.has(gOg.file) ? `${DOMAIN}/og/${gOg.file}` : DOMAIN + '/og.png',
     author: { '@type': 'Organization', name: BRAND, url: DOMAIN + '/' },
     publisher: { '@type': 'Organization', name: BRAND, logo: { '@type': 'ImageObject', url: DOMAIN + '/icon-512.png' } }
   }, {
@@ -792,12 +812,12 @@ function guidePage(lang, g) {
     '@context': 'https://schema.org', '@type': 'FAQPage',
     mainEntity: g.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } }))
   }];
-  const isMic = g.tool === 'mic';
-  const toolHref = urlFor(lang, isMic ? 'mic' : 'webcam');
-  const cta = `<div class="cta-box"><div><b>${esc(isMic ? gu.titleMic : gu.titleWebcam)}</b><span>${esc(gu.ctaSub)}</span></div><a class="btn btn-primary" href="${toolHref}">${ic(isMic ? 'mic' : 'cam')}<span>${esc(isMic ? gu.runMic : gu.runWebcam)}</span></a></div>`;
+  const T = GTOOL[g.tool];
+  const toolHref = urlFor(lang, T.page);
+  const cta = `<div class="cta-box"><div><b>${esc(gu[T.t])}</b><span>${esc(gu.ctaSub)}</span></div><a class="btn btn-primary" href="${toolHref}">${ic(T.icon)}<span>${esc(gu[T.r])}</span></a></div>`;
   const others = G.guides.filter((x) => x.slug !== g.slug);
   const yr = TODAY.slice(0, 4); const limit = lang === 'ja' ? 40 : 65; const gTitle = (g.title + ' (' + yr + ')').length <= limit ? g.title + ' (' + yr + ')' : g.title;
-  return `${head({ lang, title: gTitle, description: g.description, canonical: url, alternates: guideAlts(g.slug), ogType: 'article', extraLd: ld })}
+  return `${head({ lang, title: gTitle, description: g.description, canonical: url, alternates: guideAlts(g.slug), ogType: 'article', extraLd: ld, og: gOg })}
 <body class="page-guide">
 ${header(lang, 'guides', guideAltMap(g.slug))}
 <main id="main">
@@ -816,7 +836,7 @@ ${header(lang, 'guides', guideAltMap(g.slug))}
   </article>
   <section class="wrap others" aria-labelledby="moreGuides">
     <h2 id="moreGuides">${esc(gu.moreGuides)}</h2>
-    <div class="other-grid">${others.map((x) => `<a class="other-card" href="${guideUrl(lang, x.slug)}"><span class="other-ico">${ic(x.tool === 'mic' ? 'mic' : 'cam')}</span><span><b>${esc(x.h1)}</b></span></a>`).join('')}</div>
+    <div class="other-grid">${others.map((x) => `<a class="other-card" href="${guideUrl(lang, x.slug)}"><span class="other-ico">${ic(GTOOL[x.tool].icon)}</span><span><b>${esc(x.h1)}</b></span></a>`).join('')}</div>
   </section>
 </main>
 ${footer(lang)}
@@ -832,7 +852,7 @@ function guidesHub(lang) {
     hasPart: G.guides.map((g) => ({ '@type': 'Article', headline: g.title, url: abs(guideUrl(lang, g.slug)) })) },
     { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
       { '@type': 'ListItem', position: 1, name: BRAND, item: abs(prefix(lang)) }, { '@type': 'ListItem', position: 2, name: gu.guides, item: abs(hub) }] }];
-  return `${head({ lang, title: H.title, description: H.description, canonical: hub, alternates: guideAlts(''), extraLd: ld })}
+  return `${head({ lang, title: H.title, description: H.description, canonical: hub, alternates: guideAlts(''), extraLd: ld, og: { file: `${lang}/guides.png`, alt: H.title, kicker: gu.guides, lines: [H.h1], sub: H.lead.split(/(?<=[.。!?])\s*/)[0], icon: ICONS.badge, foot: u.heroPill } })}
 <body class="page-guides">
 ${header(lang, 'guides', guideAltMap(''))}
 <main id="main" class="wrap">
@@ -841,11 +861,12 @@ ${header(lang, 'guides', guideAltMap(''))}
     <h1>${esc(H.h1)}</h1>
     <p class="lead">${esc(H.lead)}</p>
   </div>
-  <div class="guide-list">${G.guides.map((g) => `<a class="guide-card" href="${guideUrl(lang, g.slug)}"><span class="other-ico">${ic(g.tool === 'mic' ? 'mic' : 'cam')}</span><span><b>${esc(g.h1)}</b><small>${esc(g.description)}</small></span></a>`).join('')}</div>
+  <div class="guide-list">${G.guides.map((g) => `<a class="guide-card" href="${guideUrl(lang, g.slug)}"><span class="other-ico">${ic(GTOOL[g.tool].icon)}</span><span><b>${esc(g.h1)}</b><small>${esc(g.description)}</small></span></a>`).join('')}</div>
   <section class="others"><h2>${esc(u.otherTests)}</h2><div class="other-grid">
     <a class="other-card" href="${urlFor(lang, 'mic')}"><span class="other-ico">${ic('mic')}</span><span><b>${esc(u.navMic)}</b><small>${esc(u.cardMicDesc)}</small></span></a>
     <a class="other-card" href="${urlFor(lang, 'webcam')}"><span class="other-ico">${ic('cam')}</span><span><b>${esc(u.navCam)}</b><small>${esc(u.cardCamDesc)}</small></span></a>
     <a class="other-card" href="${urlFor(lang, 'speaker')}"><span class="other-ico">${ic('spk')}</span><span><b>${esc(u.navSpk)}</b><small>${esc(u.cardSpkDesc)}</small></span></a>
+    ${['keyboard', 'mouse', 'pixel'].filter((p) => pageLangs(p).includes(lang)).map((p) => `<a class="other-card" href="${urlFor(lang, p)}"><span class="other-ico">${ic(PAGES[p].icon)}</span><span><b>${esc(locales[lang].pages[p].card.name)}</b><small>${esc(locales[lang].pages[p].card.desc)}</small></span></a>`).join('')}
   </div></section>
 </main>
 ${footer(lang)}
@@ -1092,5 +1113,8 @@ write('CNAME', DOMAIN.replace(/^https?:\/\//, '') + '\n');
 write('.nojekyll', '');
 if (/^[a-f0-9]{32}$/.test(cfg.indexNowKey || '')) write(`${cfg.indexNowKey}.txt`, cfg.indexNowKey);
 
+fs.writeFileSync(path.join(SRC, '..', '.og-jobs.json'), JSON.stringify(OG_JOBS.map((j) => ({ ...j, icon: j.icon || '' }))));
+const ogMissing = OG_JOBS.filter((j) => !OG_HAVE.has(j.file)).length;
+if (ogMissing) console.warn(`! ${ogMissing} pages have no social image yet: run node tools/og.cjs, then build again`);
 fs.writeFileSync(LM_FILE, JSON.stringify(Object.fromEntries(Object.entries(LM).sort()), null, 1) + '\n');
 console.log(`✓ built ${count} tool pages + ${guideCount} guide pages (${GUIDE_LANGS.length} languages), in ${LANGS.length} languages (${LANGS.join(', ')}) → docs/  ads: ${adsOn ? 'ON' : 'off'}`);

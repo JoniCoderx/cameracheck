@@ -8,13 +8,21 @@
     "titleWebcam": "Test webcam",
     "runMic": "Lancer le test micro",
     "runWebcam": "Lancer le test webcam",
-    "moreGuides": "Autres guides"
+    "moreGuides": "Autres guides",
+    "titleSpeaker": "Test haut-parleurs",
+    "runSpeaker": "Lancer le test haut-parleurs",
+    "titleKeyboard": "Test clavier",
+    "runKeyboard": "Lancer le test clavier",
+    "titleMouse": "Test souris",
+    "runMouse": "Lancer le test souris",
+    "titlePixel": "Test pixel mort",
+    "runPixel": "Lancer le test pixel mort"
   },
   "hub": {
-    "title": "Micro et webcam ne fonctionnent pas : guides de dépannage",
-    "description": "Micro ou webcam qui ne fonctionne pas sous Windows, Mac, Discord, Zoom, Teams ou Google Meet ? Des solutions pas à pas, gratuites et faciles à suivre.",
-    "h1": "Guides de dépannage micro et webcam",
-    "lead": "Des solutions courtes et concrètes aux problèmes de micro et de caméra les plus courants. Faites d'abord le test, puis suivez le guide qui correspond à ce que vous voyez."
+    "title": "Guides de dépannage : micro, webcam, son, clavier, souris",
+    "description": "Solutions pas à pas quand le micro, la webcam, les haut-parleurs, le clavier, la souris ou l'écran déraillent. Windows, Mac, iPhone, Android, Discord, Zoom.",
+    "h1": "Guides de dépannage",
+    "lead": "Des solutions courtes et concrètes aux problèmes de micro, de caméra, de son, de clavier, de souris et d'écran les plus courants. Faites d'abord le test, puis suivez le guide qui correspond à ce que vous voyez."
   },
   "guides": [
     {
@@ -322,6 +330,407 @@
           "a": "Ouvrez le test micro de ce site, ou dans Zoom allez dans Paramètres → Audio → Tester le micro. Les deux prennent environ cinq secondes."
         }
       ]
+    },
+    {
+      "slug": "no-sound-speakers-headphones",
+      "title": "Pas de son dans les haut-parleurs ou le casque : 8 solutions",
+      "description": "Plus de son sur PC ou Mac ? Vérifiez la sortie audio, le mélangeur de volume, les câbles, le Bluetooth et les pilotes : 8 solutions, des plus simples d'abord.",
+      "h1": "Pas de son dans les haut-parleurs ou le casque",
+      "lead": "Quand un ordinateur devient muet, il envoie presque toujours le son vers le mauvais appareil, ou l'un des curseurs de volume est à zéro. Faites ces vérifications dans l'ordre. La plupart des gens retrouvent le son avant l'étape 3.",
+      "tool": "speaker",
+      "sections": [
+        {
+          "h": "Étape 0 : jouer un son test",
+          "p": [
+            "Ouvrez le test haut-parleurs de ce site et jouez les sons gauche et droite. Si vous les entendez, vos haut-parleurs et votre système fonctionnent : le problème vient d'une seule application ou d'un seul site. Si vous n'entendez rien, lisez la suite."
+          ]
+        },
+        {
+          "h": "1. Vérifier les réglages de volume évidents",
+          "ul": [
+            "La molette ou les boutons de volume des haut-parleurs ou du casque eux-mêmes.",
+            "La touche muet du clavier (souvent F1, F10 ou une touche avec un haut-parleur barré).",
+            "Le curseur de volume de la barre des tâches (Windows) ou de la barre des menus (Mac).",
+            "Le volume du lecteur vidéo ou du site que vous utilisez."
+          ]
+        },
+        {
+          "h": "2. Choisir le bon périphérique de sortie",
+          "p": [
+            "Un ordinateur a souvent plusieurs sorties : les haut-parleurs du portable, un casque, un écran avec haut-parleurs en HDMI, un casque-micro USB et des appareils Bluetooth. Le son ne sort que par l'une d'elles."
+          ],
+          "ol": [
+            "Windows : cliquez sur l'icône du haut-parleur dans la barre des tâches, puis sur la flèche à côté du curseur de volume, et choisissez vos haut-parleurs ou votre casque.",
+            "Mac : ouvrez Réglages Système → Son → Sortie et choisissez votre appareil.",
+            "Rejouez le son test."
+          ]
+        },
+        {
+          "h": "3. Vérifier le mélangeur de volume (Windows)",
+          "p": [
+            "Windows garde un volume distinct pour chaque application. Faites un clic droit sur l'icône du haut-parleur → Ouvrir le mélangeur de volume, et vérifiez que votre navigateur ou votre jeu n'est ni coupé ni à zéro."
+          ]
+        },
+        {
+          "h": "4. Vérifier les câbles et les prises",
+          "p": [
+            "Enfoncez la fiche jusqu'au bout. Un casque filaire se branche sur la prise casque (verte), pas sur la prise micro (rose). Sur un PC fixe, essayez la prise à l'arrière de l'unité centrale, car les prises en façade ne sont parfois pas reliées à l'intérieur du boîtier. Pour les haut-parleurs et casques USB, essayez un autre port USB directement sur l'ordinateur."
+          ]
+        },
+        {
+          "h": "5. Reconnecter un casque Bluetooth",
+          "ol": [
+            "Désactivez puis réactivez le Bluetooth.",
+            "Si ça ne suffit pas, supprimez (oubliez) le casque dans les réglages Bluetooth et appairez-le de nouveau.",
+            "Sous Windows, choisissez la sortie « Casque » ou « Stéréo », et non « Casque-micro » ou « Mains libres », pour la meilleure qualité."
+          ]
+        },
+        {
+          "h": "6. Lancer l'utilitaire de résolution des problèmes audio (Windows)",
+          "p": [
+            "Allez dans Paramètres → Système → Son et cliquez sur « Résoudre les problèmes de son courants » sous Sortie. L'outil redémarre le service audio et corrige automatiquement les réglages de pilote les plus courants."
+          ]
+        },
+        {
+          "h": "7. Réinstaller le pilote audio (Windows)",
+          "ol": [
+            "Faites un clic droit sur Démarrer → Gestionnaire de périphériques.",
+            "Ouvrez « Contrôleurs audio, vidéo et jeu ».",
+            "Faites un clic droit sur votre périphérique audio (Realtek, Intel, AMD ou autre) → Désinstaller l'appareil, puis redémarrez. Windows réinstalle le pilote au démarrage."
+          ]
+        },
+        {
+          "h": "8. Redémarrer le système audio (Mac)",
+          "p": [
+            "Si le Mac affiche la bonne sortie mais ne joue rien, redémarrez-le. Si le son ne revient toujours pas, ouvrez le Moniteur d'activité, cherchez « coreaudiod » et quittez-le. macOS le relance en une seconde."
+          ]
+        },
+        {
+          "h": "Le son ne sort que d'un côté ?",
+          "p": [
+            "Jouez les sons gauche et droite dans le test haut-parleurs. Si un côté reste muet avec tous les casques, vérifiez le curseur de balance (Windows : Paramètres → Système → Son → votre appareil ; Mac : Son → Sortie → Balance). Si un seul casque est concerné, c'est son câble ou sa fiche qui est abîmé."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Pourquoi mon ordinateur n'a-t-il pas de son alors que le volume est monté ?",
+          "a": "En général, le son part vers une autre sortie, comme un écran en HDMI ou un appareil Bluetooth éteint. Choisissez vos haut-parleurs ou votre casque comme périphérique de sortie et refaites le test."
+        },
+        {
+          "q": "Pourquoi mon casque fonctionne sur mon téléphone mais pas sur mon PC ?",
+          "a": "Le PC envoie sans doute encore le son vers ses haut-parleurs ou une autre sortie. Sélectionnez le casque comme périphérique de sortie. Pour un casque filaire, utilisez la prise casque verte."
+        },
+        {
+          "q": "Comment tester mes haut-parleurs en ligne ?",
+          "a": "Ouvrez le test haut-parleurs de ce site et jouez les sons gauche, droite et le balayage. Vous saurez tout de suite si les deux canaux, les graves et les aigus fonctionnent."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "mouse-double-clicking",
+      "title": "Souris qui double-clique toute seule : tester et réparer",
+      "description": "Souris qui fait un double clic au lieu d'un seul ? Testez-la en 30 secondes, puis réglez Windows et le debounce, nettoyez le switch ou utilisez la garantie.",
+      "h1": "Souris qui fait un double clic quand vous cliquez une fois",
+      "lead": "Une souris qui enregistre deux clics pour un seul appui est l'une des pannes matérielles les plus fréquentes. C'est presque toujours le switch sous le bouton qui s'use. Confirmez d'abord le problème, puis essayez ces solutions dans l'ordre.",
+      "tool": "mouse",
+      "sections": [
+        {
+          "h": "Étape 0 : confirmer avec un test souris",
+          "p": [
+            "Ouvrez le test souris de ce site et cliquez normalement pendant une minute. Il signale tous les doubles clics d'un même bouton espacés de moins de 80 millisecondes. Personne ne clique aussi vite exprès : chaque signalement est donc un défaut. Si vous en voyez, la souris double-clique toute seule. Sinon, vérifiez les réglages Windows ci-dessous."
+          ]
+        },
+        {
+          "h": "1. Vérifier le réglage de clic de Windows",
+          "p": [
+            "Windows peut être réglé pour ouvrir les fichiers d'un simple clic, ce qui ressemble à un double clic. Ouvrez l'Explorateur de fichiers → Affichage (ou les trois points) → Options, et sous « Cliquer sur les éléments de la manière suivante », choisissez « Double-cliquer pour ouvrir un élément ». Vérifiez aussi Paramètres → Bluetooth et appareils → Souris → Paramètres de souris supplémentaires, et placez la vitesse du double-clic au milieu."
+          ]
+        },
+        {
+          "h": "2. Changer de port USB et désactiver l'économie d'énergie USB",
+          "p": [
+            "Branchez la souris directement sur l'ordinateur plutôt que sur un hub. Sur un portable, ouvrez le Gestionnaire de périphériques → Contrôleurs de bus USB, ouvrez chaque « Concentrateur USB racine » et, dans l'onglet Gestion de l'alimentation, décochez « Autoriser l'ordinateur à éteindre ce périphérique pour économiser l'énergie »."
+          ]
+        },
+        {
+          "h": "3. Augmenter le temps de debounce (souris gaming)",
+          "p": [
+            "Beaucoup de souris gaming ont un réglage de debounce ou de « réponse au clic » dans leur logiciel (Logitech G HUB, Razer Synapse, SteelSeries GG et d'autres). Une valeur trop basse laisse un switch usé envoyer deux clics. Augmentez-la un peu, par exemple de 2 ms à 8 ou 10 ms, puis refaites le test."
+          ]
+        },
+        {
+          "h": "4. Nettoyer le bouton",
+          "p": [
+            "Débranchez la souris ou retirez la pile. Soufflez de l'air comprimé dans l'interstice autour du bouton tout en cliquant plusieurs fois pendant 20 à 30 secondes. La poussière et la crasse peuvent faire rebondir le switch."
+          ]
+        },
+        {
+          "h": "5. Vérifier la garantie",
+          "p": [
+            "La plupart des souris sont garanties 1 à 3 ans, et le double clic intempestif est une panne reconnue. Gardez le résultat du test souris comme preuve quand vous contactez le support."
+          ]
+        },
+        {
+          "h": "6. Remplacer le switch (avancé)",
+          "p": [
+            "Si vous savez ouvrir une souris et souder, le switch sous le bouton se remplace pour quelques euros. Renseignez-vous d'abord sur votre modèle exact, car certaines souris utilisent des switchs optiques qui ne s'usent pas de cette façon."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Pourquoi ma souris fait-elle un double clic quand je clique une fois ?",
+          "a": "Le plus souvent, le contact métallique du switch du bouton est usé ou sale : un seul appui le fait rebondir et envoie deux clics. Des réglages comme le mode simple clic de Windows peuvent aussi donner l'impression d'un double clic."
+        },
+        {
+          "q": "Comment savoir si ma souris double-clique toute seule ?",
+          "a": "Ouvrez le test souris de ce site et cliquez normalement. Deux clics d'un même bouton espacés de moins de 80 ms sont signalés comme des doubles clics involontaires."
+        },
+        {
+          "q": "Peut-on réparer une souris qui double-clique ?",
+          "a": "Souvent, oui. Augmenter le temps de debounce et nettoyer le switch règle le problème sur beaucoup de souris. Si ça continue, il faut remplacer le switch ou faire jouer la garantie."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "keyboard-keys-not-working",
+      "title": "Touches du clavier qui ne marchent pas ou tapent deux fois",
+      "description": "Touches qui ne répondent pas, tapent en double ou affichent un autre caractère ? Testez-les, puis corrigez Touches filtres, disposition, pilotes ou rebond.",
+      "h1": "Touches du clavier qui ne fonctionnent pas ou tapent deux fois",
+      "lead": "Quand certaines touches ne font rien, tapent deux fois ou affichent la mauvaise lettre, la cause est généralement un réglage, la disposition du clavier ou un switch encrassé. Repérez d'abord précisément les touches concernées, puis suivez la solution qui correspond.",
+      "tool": "keyboard",
+      "sections": [
+        {
+          "h": "Étape 0 : tester toutes les touches",
+          "p": [
+            "Ouvrez le test clavier de ce site et appuyez une fois sur chaque touche. Les touches qui ne s'allument jamais n'atteignent pas l'ordinateur. Celles marquées comme rebond ont envoyé deux appuis pour un. Si une touche tape le mauvais caractère mais s'allume au bon endroit, le problème vient de la disposition (étape 3), pas du matériel."
+          ]
+        },
+        {
+          "h": "1. Redémarrer et rebrancher",
+          "p": [
+            "Redémarrez l'ordinateur. Pour un clavier USB, branchez-le directement sur l'ordinateur et essayez un autre port. Pour un clavier sans fil, changez ou rechargez les piles et appairez-le de nouveau."
+          ]
+        },
+        {
+          "h": "2. Désactiver les Touches filtres et les Touches rémanentes (Windows)",
+          "p": [
+            "Les Touches filtres ignorent les appuis brefs ou répétés, ce qui ressemble exactement à des touches qui ne marchent pas. Ouvrez Paramètres → Accessibilité → Clavier et désactivez les Touches filtres et les Touches rémanentes. Maintenir la touche Maj droite enfoncée pendant 8 secondes peut activer les Touches filtres par accident."
+          ]
+        },
+        {
+          "h": "3. Mauvais caractères ? Vérifier la disposition",
+          "p": [
+            "Si les touches tapent les mauvais symboles, par exemple @ et \" inversés, ou le Y et le Z permutés, l'ordinateur utilise une autre disposition de clavier. Windows : appuyez sur Windows + Espace pour en changer, et supprimez celles que vous n'utilisez pas dans Paramètres → Heure et langue → Langue et région. Mac : Réglages Système → Clavier → Méthodes de saisie."
+          ]
+        },
+        {
+          "h": "4. Le pavé numérique ne tape pas de chiffres ?",
+          "p": [
+            "Appuyez sur Verr Num (Num Lock). Sur beaucoup de portables, c'est Fn + Verr Num ou Fn + F11. Quand Verr Num est désactivé, le pavé numérique sert de touches fléchées."
+          ]
+        },
+        {
+          "h": "5. Nettoyer sous les touches",
+          "ol": [
+            "Débranchez le clavier ou éteignez le portable.",
+            "Retournez-le en l'inclinant et tapotez-le doucement.",
+            "Soufflez de l'air comprimé sous les touches qui coincent.",
+            "Sur un clavier mécanique, retirez le keycap avec un extracteur et nettoyez autour du switch."
+          ]
+        },
+        {
+          "h": "6. Réparer une touche qui tape deux fois (rebond)",
+          "p": [
+            "Une touche qui envoie deux appuis pour un souffre de rebond (key chatter). Sur un clavier mécanique, un coup d'air comprimé sous le switch règle souvent le problème, et sur un clavier hot-swap, vous pouvez changer le switch en une minute. Beaucoup de claviers gaming ont aussi un réglage de debounce dans leur logiciel. L'augmenter légèrement supprime la plupart des rebonds."
+          ]
+        },
+        {
+          "h": "7. Réinstaller le pilote du clavier (Windows)",
+          "ol": [
+            "Faites un clic droit sur Démarrer → Gestionnaire de périphériques.",
+            "Ouvrez Claviers.",
+            "Faites un clic droit sur votre clavier → Désinstaller l'appareil, puis redémarrez."
+          ]
+        },
+        {
+          "h": "8. Tester en dehors de Windows",
+          "p": [
+            "Si les touches ne marchent toujours pas, le matériel est probablement en cause. Essayez le clavier sur un autre ordinateur. Sur un portable, si les mêmes touches ne répondent pas non plus dans l'écran du BIOS, le clavier doit être réparé ou remplacé."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Pourquoi certaines touches de mon clavier ne fonctionnent-elles pas ?",
+          "a": "Les causes courantes sont les Touches filtres activées, des saletés sous les touches, une connexion USB mal enfoncée ou un switch défectueux. Un testeur de touches montre exactement lesquelles ne sont pas détectées."
+        },
+        {
+          "q": "Pourquoi mon clavier tape-t-il deux lettres quand j'appuie une fois ?",
+          "a": "C'est le rebond de touche : le switch rebondit et envoie deux appuis. Nettoyer le switch ou augmenter le temps de debounce règle généralement le problème. Sinon, il faut remplacer le switch."
+        },
+        {
+          "q": "Comment tester toutes les touches de mon clavier ?",
+          "a": "Ouvrez le test clavier de ce site et appuyez sur chaque touche. Chacune s'allume quand elle est détectée, et le test indique aussi le rebond et le nombre de touches que l'on peut maintenir en même temps."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "dead-pixel-stuck-pixel-fix",
+      "title": "Pixel mort ou bloqué : comment le repérer et le réparer",
+      "description": "Repérez pixels morts et bloqués avec des couleurs unies, distinguez-les et essayez ce qui marche : réparateur clignotant, pression douce, garantie.",
+      "h1": "Pixel mort ou bloqué : comment le repérer et le réparer",
+      "lead": "Un pixel qui reste noir, blanc ou d'une couleur vive passe facilement inaperçu, jusqu'au jour où on ne voit plus que lui. Vérifiez un nouvel écran dès sa réception, car les délais de retour sont courts. Voici comment repérer les pixels défectueux et ce que vous pouvez faire.",
+      "tool": "pixel",
+      "sections": [
+        {
+          "h": "Étape 0 : nettoyer l'écran",
+          "p": [
+            "Commencez par essuyer l'écran avec un chiffon microfibre sec. Une poussière ressemble exactement à un pixel mort, mais elle bouge ou disparaît quand vous l'essuyez."
+          ]
+        },
+        {
+          "h": "1. Lancer un test de couleurs en plein écran",
+          "p": [
+            "Ouvrez le test pixel mort de ce site et passez en plein écran. Il remplit l'affichage de noir, blanc, rouge, vert, bleu et gris. Regardez chaque couleur tranquillement à environ 30 cm, zone par zone."
+          ]
+        },
+        {
+          "h": "2. Pixel mort, bloqué ou chaud ?",
+          "ul": [
+            "Pixel mort : noir sur toutes les couleurs, surtout visible sur le blanc. Le transistor n'est plus alimenté et c'est rarement réparable.",
+            "Pixel bloqué : toujours d'une seule couleur (rouge, vert ou bleu), surtout visible sur le noir. Une partie reste allumée en permanence, et on peut souvent le réparer.",
+            "Pixel chaud : toujours blanc, visible sur le noir. Il se traite comme un pixel bloqué."
+          ]
+        },
+        {
+          "h": "3. Essayer le réparateur de pixels",
+          "p": [
+            "Un pixel bloqué peut parfois revivre si l'on fait défiler des couleurs très vite dessus. Ouvrez le réparateur de pixels dans le test pixel mort, faites glisser le carré clignotant sur le pixel bloqué et laissez-le tourner 10 à 30 minutes. Si ça ne marche pas du premier coup, réessayez pendant quelques heures. Ne regardez pas le carré clignotant si vous êtes sensible aux lumières clignotantes."
+          ]
+        },
+        {
+          "h": "4. Pression douce (à vos risques)",
+          "p": [
+            "Éteignez l'écran, enveloppez le bout d'un doigt dans un chiffon doux, appuyez très doucement sur le point bloqué et rallumez l'écran tout en appuyant. N'appuyez jamais fort et n'utilisez jamais d'objet pointu. Sur certaines dalles, cela peut aggraver les choses : essayez d'abord le réparateur de pixels."
+          ]
+        },
+        {
+          "h": "5. Vérifier la garantie et la politique de retour",
+          "p": [
+            "Beaucoup de fabricants ne remplacent un écran qu'à partir d'un nombre minimum de pixels défectueux, mais les magasins acceptent généralement les retours sous 14 à 30 jours, quel que soit le motif. Prenez une photo du pixel sur la couleur unie et contactez vite le vendeur."
+          ]
+        },
+        {
+          "h": "Bonus : vérifier la fréquence de rafraîchissement",
+          "p": [
+            "Tant que vous testez un nouvel écran, le test pixel mort mesure aussi sa vraie fréquence de rafraîchissement. Si un écran 144 Hz affiche 60 Hz, réglez-le dans Windows sous Paramètres → Système → Écran → Affichage avancé, et vérifiez que vous utilisez un câble DisplayPort ou un HDMI assez rapide."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Quelle est la différence entre un pixel mort et un pixel bloqué ?",
+          "a": "Un pixel mort reste noir sur toutes les couleurs. Un pixel bloqué reste d'une seule couleur, généralement rouge, vert ou bleu. Les pixels bloqués se réparent souvent, les pixels morts rarement."
+        },
+        {
+          "q": "Un pixel bloqué peut-il se réparer tout seul ?",
+          "a": "Parfois, après quelques heures ou jours d'utilisation normale. Faire tourner un réparateur de pixels clignotant dessus accélère les choses et fonctionne sur beaucoup de pixels bloqués."
+        },
+        {
+          "q": "Comment vérifier qu'un nouvel écran n'a pas de pixel mort ?",
+          "a": "Nettoyez l'écran, puis ouvrez un test pixel mort en plein écran et regardez le noir, le blanc, le rouge, le vert et le bleu unis. Faites-le dès le premier jour pour pouvoir encore le retourner."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "phone-mic-not-working",
+      "title": "Micro iPhone ou Android qui ne marche pas : 8 solutions",
+      "description": "On ne vous entend pas en appel ou votre micro est faible ou étouffé ? Vérifiez autorisations, Bluetooth, coque et orifices sur iPhone et Android.",
+      "h1": "Micro de l'iPhone ou d'Android qui ne fonctionne pas",
+      "lead": "Si on ne vous entend pas, ou si votre voix est faible ou étouffée, le problème vient généralement d'une autorisation, d'un appareil Bluetooth ou de quelque chose qui couvre le micro. Les téléphones ont plusieurs micros : testez d'abord pour savoir lequel est concerné.",
+      "tool": "mic",
+      "sections": [
+        {
+          "h": "Étape 0 : tester le micro dans le navigateur",
+          "p": [
+            "Ouvrez le test micro de ce site sur votre téléphone et appuyez sur Démarrer. Si l'indicateur de niveau bouge quand vous parlez, le micro fonctionne : le problème vient d'une application ou d'un réglage d'appel. S'il reste immobile, lisez la suite."
+          ]
+        },
+        {
+          "h": "1. Déconnecter le Bluetooth",
+          "p": [
+            "Le téléphone bascule automatiquement sur un casque, une voiture ou des écouteurs Bluetooth connectés, même s'ils sont au fond de votre sac. Désactivez le Bluetooth et refaites le test."
+          ]
+        },
+        {
+          "h": "2. Autoriser l'accès au micro pour l'application",
+          "ol": [
+            "iPhone : Réglages → Confidentialité et sécurité → Micro, puis activez l'application.",
+            "Android : Paramètres → Applications → choisissez l'application → Autorisations → Micro → Autoriser.",
+            "Sous Android 12 et versions ultérieures, vérifiez aussi que l'accès au micro n'est pas coupé dans les Réglages rapides."
+          ]
+        },
+        {
+          "h": "3. Retirer la coque et le protecteur d'écran",
+          "p": [
+            "Les coques et les protections d'écran peuvent masquer un orifice de micro, surtout si une chute les a décalées. Retirez-les et refaites le test."
+          ]
+        },
+        {
+          "h": "4. Nettoyer les orifices du micro",
+          "p": [
+            "Les téléphones ont des orifices de micro en bas, près de l'appareil photo et parfois en haut. Nettoyez-les délicatement avec une brosse à dents souple et sèche. N'enfoncez ni épingle ni aiguille dans les orifices : vous risquez d'abîmer la grille."
+          ]
+        },
+        {
+          "h": "5. Tester chaque micro",
+          "ul": [
+            "Micro du bas : enregistrez un mémo vocal ou un clip avec l'enregistreur.",
+            "Micro avant ou du haut : filmez une vidéo selfie.",
+            "Micro arrière : filmez une vidéo avec la caméra arrière.",
+            "Si un seul d'entre eux sonne étouffé, cet orifice est bouché ou endommagé."
+          ]
+        },
+        {
+          "h": "6. Désactiver la réduction de bruit",
+          "p": [
+            "Sur iPhone, essayez de changer le Mode micro dans le Centre de contrôle pendant un appel (Standard, Isolation de la voix, Large spectre). Sur Android, désactivez « Réduction du bruit » ou « Voix claire » dans les paramètres d'appel, si votre téléphone les propose, et refaites le test."
+          ]
+        },
+        {
+          "h": "7. Redémarrer et mettre à jour",
+          "p": [
+            "Redémarrez le téléphone et installez les mises à jour système disponibles. Les bugs du système audio sont souvent corrigés par les mises à jour."
+          ]
+        },
+        {
+          "h": "8. Tester en mode sécurisé (Android)",
+          "p": [
+            "Maintenez le bouton marche/arrêt, puis appuyez longuement sur « Éteindre » jusqu'à voir Mode sécurisé. Si le micro fonctionne en mode sécurisé, une application que vous avez installée accapare le micro."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Pourquoi on ne m'entend pas en appel alors que le haut-parleur fonctionne ?",
+          "a": "Les appels utilisent normalement le micro du bas, alors que le haut-parleur ou la vidéo peuvent en utiliser un autre. Nettoyez l'orifice du bas, retirez la coque et refaites le test."
+        },
+        {
+          "q": "Comment tester le micro de mon téléphone ?",
+          "a": "Ouvrez le test micro de ce site dans le navigateur du téléphone, autorisez le micro et parlez. Si l'indicateur bouge, le micro fonctionne. Vous pouvez aussi enregistrer un clip et le réécouter."
+        },
+        {
+          "q": "Pourquoi le micro de mon téléphone est-il étouffé ?",
+          "a": "Le plus souvent, la coque, une protection d'écran ou des peluches bouchent un orifice. Retirez-les et nettoyez délicatement les orifices avec une brosse souple et sèche."
+        }
+      ],
+      "published": "2026-11-13"
     }
   ]
 }

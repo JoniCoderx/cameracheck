@@ -8,13 +8,21 @@
     "titleWebcam": "Tes webcam",
     "runMic": "Mulai tes mic",
     "runWebcam": "Mulai tes webcam",
-    "moreGuides": "Panduan lainnya"
+    "moreGuides": "Panduan lainnya",
+    "titleSpeaker": "Tes speaker",
+    "runSpeaker": "Mulai tes speaker",
+    "titleKeyboard": "Tes keyboard",
+    "runKeyboard": "Mulai tes keyboard",
+    "titleMouse": "Tes mouse",
+    "runMouse": "Mulai tes mouse",
+    "titlePixel": "Tes dead pixel",
+    "runPixel": "Mulai tes dead pixel"
   },
   "hub": {
-    "title": "Panduan Mengatasi Mic dan Webcam Tidak Berfungsi",
-    "description": "Cara mengatasi mic atau webcam tidak berfungsi di Windows, Mac, Discord, Zoom, Teams dan Google Meet. Langkah demi langkah, gratis dan mudah dipahami.",
+    "title": "Panduan Mengatasi Masalah Mic, Webcam, Suara dan PC",
+    "description": "Cara mengatasi mic, webcam, speaker, keyboard, mouse atau layar yang bermasalah. Langkah demi langkah untuk Windows, Mac, iPhone, Android, Discord dan Zoom.",
     "h1": "Panduan mengatasi masalah",
-    "lead": "Solusi singkat dan praktis untuk masalah mikrofon dan kamera yang paling sering terjadi. Tes dulu, lalu ikuti panduan yang sesuai dengan masalah Anda."
+    "lead": "Solusi singkat dan praktis untuk masalah mikrofon, kamera, suara, keyboard, mouse dan layar yang paling sering terjadi. Tes dulu, lalu ikuti panduan yang sesuai dengan masalah Anda."
   },
   "guides": [
     {
@@ -322,6 +330,407 @@
           "a": "Buka tes mic di situs ini, atau di Zoom buka Pengaturan → Audio → Uji Mikrofon. Keduanya hanya butuh sekitar lima detik."
         }
       ]
+    },
+    {
+      "slug": "no-sound-speakers-headphones",
+      "title": "Laptop atau PC Tidak Ada Suara? 8 Cara Mengatasinya",
+      "description": "Tidak ada suara di PC atau Mac? Cek perangkat output, mixer volume, kabel, Bluetooth dan driver. 8 cara untuk speaker dan headphone, dari yang termudah.",
+      "h1": "Speaker atau headphone tidak ada suara",
+      "lead": "Saat komputer tiba-tiba tidak bersuara, hampir selalu penyebabnya adalah suara dikirim ke perangkat yang salah atau ada satu slider volume di angka nol. Ikuti pengecekan berikut secara berurutan. Kebanyakan orang sudah mendengar suara lagi di langkah 3.",
+      "tool": "speaker",
+      "sections": [
+        {
+          "h": "Langkah 0: putar nada tes",
+          "p": [
+            "Buka tes speaker di situs ini lalu putar nada kiri dan kanan. Jika terdengar, speaker dan sistem Anda baik-baik saja, dan masalahnya ada di satu aplikasi atau situs web. Jika tidak terdengar apa pun, lanjutkan membaca."
+          ]
+        },
+        {
+          "h": "1. Cek pengaturan volume yang sering terlewat",
+          "ul": [
+            "Kenop atau tombol volume di speaker atau headphone itu sendiri.",
+            "Tombol mute di keyboard (biasanya F1, F10 atau tombol bergambar speaker yang dicoret).",
+            "Slider volume di taskbar (Windows) atau bar menu (Mac).",
+            "Volume di dalam pemutar video atau situs web yang sedang Anda pakai."
+          ]
+        },
+        {
+          "h": "2. Pilih perangkat output yang benar",
+          "p": [
+            "Komputer sering punya beberapa output: speaker laptop, headphone, monitor dengan speaker lewat HDMI, headset USB dan perangkat Bluetooth. Suara hanya dikirim ke salah satunya."
+          ],
+          "ol": [
+            "Windows: klik ikon speaker di taskbar, lalu panah di samping slider volume, dan pilih speaker atau headphone Anda.",
+            "Mac: buka Pengaturan Sistem → Suara → Output lalu pilih perangkat Anda.",
+            "Putar nada tes lagi."
+          ]
+        },
+        {
+          "h": "3. Cek mixer volume (Windows)",
+          "p": [
+            "Windows menyimpan volume terpisah untuk setiap aplikasi. Klik kanan ikon speaker → Buka mixer volume, lalu pastikan browser atau game Anda tidak di-mute atau di angka nol."
+          ]
+        },
+        {
+          "h": "4. Cek kabel dan port",
+          "p": [
+            "Tancapkan colokan sampai benar-benar masuk. Headphone kabel harus dicolokkan ke jack headphone (hijau), bukan jack mikrofon (merah muda). Di PC desktop, coba jack di bagian belakang PC, karena jack di panel depan kadang tidak tersambung di dalam casing. Untuk speaker dan headset USB, coba port USB lain yang langsung ada di komputer."
+          ]
+        },
+        {
+          "h": "5. Sambungkan ulang headphone Bluetooth",
+          "ol": [
+            "Matikan Bluetooth lalu nyalakan lagi.",
+            "Jika tidak membantu, hapus (lupakan) headphone di pengaturan Bluetooth lalu pasangkan lagi.",
+            "Di Windows, pilih output \"Headphones\" atau \"Stereo\", bukan \"Headset\" atau \"Hands-Free\", agar kualitasnya paling bagus."
+          ]
+        },
+        {
+          "h": "6. Jalankan pemecah masalah audio (Windows)",
+          "p": [
+            "Buka Pengaturan → Sistem → Suara lalu klik \"Pecahkan masalah suara umum\" di bagian Output. Fitur ini me-restart layanan audio dan memperbaiki pengaturan driver yang umum bermasalah secara otomatis."
+          ]
+        },
+        {
+          "h": "7. Instal ulang driver suara (Windows)",
+          "ol": [
+            "Klik kanan Mulai → Pengelola Perangkat.",
+            "Buka \"Pengontrol suara, video, dan game\".",
+            "Klik kanan perangkat audio Anda (Realtek, Intel, AMD atau sejenisnya) → Hapus instalan perangkat, lalu restart. Windows akan memasang driver lagi saat booting."
+          ]
+        },
+        {
+          "h": "8. Restart sistem audio (Mac)",
+          "p": [
+            "Jika Mac sudah menampilkan output yang benar tapi tidak ada suara, restart Mac. Jika suara masih tidak keluar, buka Monitor Aktivitas, cari \"coreaudiod\" lalu keluarkan prosesnya. macOS akan menjalankannya lagi dalam satu detik."
+          ]
+        },
+        {
+          "h": "Suara hanya keluar dari satu sisi?",
+          "p": [
+            "Putar nada kiri dan kanan di tes speaker. Jika satu sisi selalu diam di semua headphone, cek slider keseimbangan (Windows: Pengaturan → Sistem → Suara → perangkat Anda; Mac: Suara → Output → Keseimbangan). Jika hanya satu headphone yang bermasalah, kabel atau colokannya rusak."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Kenapa komputer saya tidak ada suara padahal volumenya sudah besar?",
+          "a": "Biasanya suara dikirim ke output lain, misalnya monitor lewat HDMI atau perangkat Bluetooth yang sedang mati. Pilih speaker atau headphone Anda sebagai perangkat output lalu tes lagi."
+        },
+        {
+          "q": "Kenapa headphone saya berfungsi di HP tapi tidak di PC?",
+          "a": "Kemungkinan PC masih mengirim suara ke speaker-nya atau ke output lain. Pilih headphone sebagai perangkat output. Untuk headphone kabel, gunakan jack headphone yang berwarna hijau."
+        },
+        {
+          "q": "Bagaimana cara tes speaker secara online?",
+          "a": "Buka tes speaker di situs ini lalu putar nada kiri, kanan dan sweep. Anda langsung bisa mendengar apakah kedua kanal serta frekuensi rendah dan tinggi berfungsi."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "mouse-double-clicking",
+      "title": "Mouse Double Click Sendiri? Cara Tes dan Mengatasinya",
+      "description": "Mouse double click padahal hanya klik sekali? Tes dalam 30 detik, lalu atasi: pengaturan Windows, debounce, membersihkan switch, atau klaim garansi.",
+      "h1": "Mouse double click sendiri saat diklik sekali",
+      "lead": "Mouse yang mencatat dua klik padahal Anda hanya menekan sekali adalah salah satu kerusakan hardware yang paling umum. Biasanya switch di bawah tombolnya sudah aus. Pastikan dulu masalahnya, lalu coba cara berikut secara berurutan.",
+      "tool": "mouse",
+      "sections": [
+        {
+          "h": "Langkah 0: pastikan dengan tes mouse",
+          "p": [
+            "Buka tes mouse di situs ini lalu klik seperti biasa selama satu menit. Tes ini menandai setiap dua klik dari tombol yang sama dengan jarak kurang dari 80 milidetik. Jari tidak mungkin sengaja mengklik secepat itu, jadi setiap tanda adalah kerusakan. Jika muncul tanda, berarti mouse Anda double click sendiri. Jika tidak, cek pengaturan Windows di bawah."
+          ]
+        },
+        {
+          "h": "1. Cek pengaturan klik di Windows",
+          "p": [
+            "Windows bisa diatur untuk membuka file dengan sekali klik, yang terasa seperti double click. Buka File Explorer → Tampilan (atau titik tiga) → Opsi, lalu di bawah \"Klik item sebagai berikut\" pilih \"Klik ganda untuk membuka item\". Cek juga Pengaturan → Bluetooth & perangkat → Mouse → Pengaturan mouse tambahan, lalu atur kecepatan klik ganda ke tengah."
+          ]
+        },
+        {
+          "h": "2. Coba port USB lain dan matikan hemat daya USB",
+          "p": [
+            "Colokkan mouse langsung ke komputer, jangan lewat hub. Di laptop, buka Pengelola Perangkat → Pengontrol Universal Serial Bus, buka setiap \"USB Root Hub\", lalu di tab Manajemen Daya hapus centang \"Izinkan komputer mematikan perangkat ini untuk menghemat daya\"."
+          ]
+        },
+        {
+          "h": "3. Naikkan waktu debounce (mouse gaming)",
+          "p": [
+            "Banyak mouse gaming punya pengaturan debounce atau \"click response\" di software-nya (Logitech G HUB, Razer Synapse, SteelSeries GG dan lainnya). Nilai yang terlalu rendah membuat switch yang aus bisa mengirim dua klik. Naikkan sedikit, misalnya dari 2 ms ke 8 atau 10 ms, lalu tes lagi."
+          ]
+        },
+        {
+          "h": "4. Bersihkan tombolnya",
+          "p": [
+            "Cabut mouse atau lepas baterainya. Semprotkan udara bertekanan ke celah di sekitar tombol sambil mengkliknya berulang kali selama 20 sampai 30 detik. Debu dan kotoran bisa membuat switch memantul."
+          ]
+        },
+        {
+          "h": "5. Cek garansi",
+          "p": [
+            "Kebanyakan mouse punya garansi 1 sampai 3 tahun, dan double click sendiri adalah kerusakan yang diakui. Simpan hasil tes mouse sebagai bukti saat menghubungi layanan pelanggan."
+          ]
+        },
+        {
+          "h": "6. Ganti switch (tingkat lanjut)",
+          "p": [
+            "Jika Anda terbiasa membongkar mouse dan menyolder, switch di bawah tombol bisa diganti dengan biaya murah. Cari dulu model persis mouse Anda, karena beberapa mouse memakai switch optik yang tidak aus dengan cara ini."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Kenapa mouse saya double click padahal saya klik sekali?",
+          "a": "Biasanya kontak logam di dalam switch tombol sudah aus atau kotor, sehingga satu tekanan membuatnya memantul dan mengirim dua klik. Pengaturan seperti mode sekali klik di Windows juga bisa terasa seperti double click."
+        },
+        {
+          "q": "Bagaimana cara tes apakah mouse saya double click sendiri?",
+          "a": "Buka tes mouse di situs ini lalu klik seperti biasa. Dua klik dari tombol yang sama dengan jarak kurang dari 80 ms ditandai sebagai double click yang tidak disengaja."
+        },
+        {
+          "q": "Apakah mouse yang double click sendiri bisa diperbaiki?",
+          "a": "Sering kali bisa. Menaikkan waktu debounce dan membersihkan switch bisa memperbaiki banyak mouse. Jika masih terjadi, switch perlu diganti atau mouse bisa diklaim lewat garansi."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "keyboard-keys-not-working",
+      "title": "Tombol Keyboard Tidak Berfungsi atau Mengetik Dobel? 8 Cara",
+      "description": "Beberapa tombol keyboard tidak berfungsi, mengetik dobel atau salah karakter? Tes semua tombol, lalu atasi Tombol Filter, layout, driver, kotoran dan switch.",
+      "h1": "Tombol keyboard tidak berfungsi atau mengetik dobel",
+      "lead": "Jika beberapa tombol tidak merespons, mengetik dua kali atau mengeluarkan huruf yang salah, penyebabnya biasanya pengaturan, layout keyboard atau switch yang kotor. Cari tahu dulu tombol mana saja yang bermasalah, lalu ikuti cara yang sesuai.",
+      "tool": "keyboard",
+      "sections": [
+        {
+          "h": "Langkah 0: tes semua tombol",
+          "p": [
+            "Buka tes keyboard di situs ini lalu tekan setiap tombol satu kali. Tombol yang tidak pernah menyala tidak sampai ke komputer. Tombol yang ditandai chatter mengirim dua tekanan untuk satu kali tekan. Jika sebuah tombol mengetik karakter yang salah tapi menyala di posisi yang benar, masalahnya ada di layout (langkah 3), bukan di hardware."
+          ]
+        },
+        {
+          "h": "1. Restart dan sambungkan ulang",
+          "p": [
+            "Restart komputer. Untuk keyboard USB, colokkan langsung ke komputer dan coba port lain. Untuk keyboard wireless, ganti atau isi ulang baterainya lalu pasangkan lagi."
+          ]
+        },
+        {
+          "h": "2. Matikan Tombol Filter dan Tombol Lekat (Windows)",
+          "p": [
+            "Tombol Filter mengabaikan tekanan yang singkat atau berulang, sehingga tampak persis seperti tombol yang tidak berfungsi. Buka Pengaturan → Aksesibilitas → Keyboard lalu matikan Tombol Filter dan Tombol Lekat. Menahan tombol Shift kanan selama 8 detik bisa tidak sengaja mengaktifkan Tombol Filter."
+          ]
+        },
+        {
+          "h": "3. Karakter salah? Cek layout",
+          "p": [
+            "Jika tombol mengetik simbol yang salah, misalnya @ dan \" tertukar atau Y dan Z terbalik, berarti komputer memakai layout keyboard yang berbeda. Windows: tekan Windows + Spasi untuk berganti layout, dan hapus layout yang tidak Anda pakai di Pengaturan → Waktu & bahasa → Bahasa & wilayah. Mac: Pengaturan Sistem → Keyboard → Sumber Input."
+          ]
+        },
+        {
+          "h": "4. Angka tidak keluar dari numpad?",
+          "p": [
+            "Tekan Num Lock. Di banyak laptop tombolnya Fn + Num Lock atau Fn + F11. Saat Num Lock mati, numpad berfungsi sebagai tombol panah."
+          ]
+        },
+        {
+          "h": "5. Bersihkan bagian bawah tombol",
+          "ol": [
+            "Cabut keyboard atau matikan laptop.",
+            "Pegang dalam posisi terbalik dan agak miring, lalu ketuk perlahan.",
+            "Semprotkan udara bertekanan ke bawah tombol yang macet.",
+            "Untuk keyboard mekanik, cabut keycap dengan keycap puller lalu bersihkan sekitar switch."
+          ]
+        },
+        {
+          "h": "6. Atasi tombol yang mengetik dobel (chatter)",
+          "p": [
+            "Tombol yang mengirim dua tekanan untuk satu kali tekan disebut chatter. Di keyboard mekanik, menyemprotkan udara bertekanan ke bawah switch sering kali bisa mengatasinya, dan di keyboard hot-swap Anda bisa mengganti switch dalam satu menit. Banyak keyboard gaming juga punya pengaturan debounce di software-nya. Menaikkannya sedikit menghentikan sebagian besar chatter."
+          ]
+        },
+        {
+          "h": "7. Instal ulang driver keyboard (Windows)",
+          "ol": [
+            "Klik kanan Mulai → Pengelola Perangkat.",
+            "Buka Keyboard.",
+            "Klik kanan keyboard Anda → Hapus instalan perangkat, lalu restart."
+          ]
+        },
+        {
+          "h": "8. Tes di luar Windows",
+          "p": [
+            "Jika tombol masih tidak berfungsi, kemungkinan besar hardware-nya yang rusak. Coba keyboard di komputer lain. Di laptop, jika tombol yang sama juga tidak berfungsi di layar BIOS, keyboard perlu diperbaiki atau diganti."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Kenapa beberapa tombol di keyboard saya tidak berfungsi?",
+          "a": "Penyebab umumnya adalah Tombol Filter yang aktif, kotoran di bawah tombol, sambungan USB yang longgar atau switch yang rusak. Key tester menunjukkan dengan tepat tombol mana yang tidak terbaca."
+        },
+        {
+          "q": "Kenapa keyboard saya mengetik dua huruf saat ditekan sekali?",
+          "a": "Itu disebut key chatter: switch memantul dan mengirim dua tekanan. Membersihkan switch atau menaikkan waktu debounce biasanya bisa mengatasinya. Jika tidak, switch perlu diganti."
+        },
+        {
+          "q": "Bagaimana cara tes semua tombol di keyboard saya?",
+          "a": "Buka tes keyboard di situs ini lalu tekan setiap tombol. Setiap tombol akan menyala saat terbaca, dan tes ini juga menunjukkan chatter serta berapa banyak tombol yang bisa ditekan bersamaan."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "dead-pixel-stuck-pixel-fix",
+      "title": "Dead Pixel atau Stuck Pixel? Cara Cek Layar dan Mengatasinya",
+      "description": "Temukan dead pixel dan stuck pixel dengan layar warna solid, pahami bedanya, lalu coba cara yang berhasil: pixel fixer berkedip, tekanan lembut dan garansi.",
+      "h1": "Dead pixel atau stuck pixel: cara cek dan mengatasinya",
+      "lead": "Piksel yang tetap hitam, putih atau satu warna terang mudah terlewat sampai tiba-tiba hanya itu yang Anda lihat. Cek layar baru segera setelah Anda menerimanya, karena batas waktu retur biasanya singkat. Berikut cara menemukan piksel rusak dan apa yang bisa Anda lakukan.",
+      "tool": "pixel",
+      "sections": [
+        {
+          "h": "Langkah 0: bersihkan layar",
+          "p": [
+            "Lap layar dengan kain mikrofiber kering terlebih dulu. Setitik debu terlihat persis seperti dead pixel, tapi akan bergeser atau hilang saat dilap."
+          ]
+        },
+        {
+          "h": "1. Jalankan tes warna layar penuh",
+          "p": [
+            "Buka tes dead pixel di situs ini lalu mulai dalam mode layar penuh. Tes ini mengisi layar dengan warna hitam, putih, merah, hijau, biru dan abu-abu. Perhatikan setiap warna dengan pelan dari jarak sekitar 30 cm, bagian demi bagian."
+          ]
+        },
+        {
+          "h": "2. Dead, stuck atau hot pixel?",
+          "ul": [
+            "Dead pixel: hitam di semua warna, paling terlihat di latar putih. Transistornya tidak mendapat daya dan jarang bisa diperbaiki.",
+            "Stuck pixel: selalu satu warna (merah, hijau atau biru), paling terlihat di latar hitam. Sebagiannya macet dalam kondisi menyala, dan sering kali bisa diperbaiki.",
+            "Hot pixel: selalu putih, terlihat di latar hitam. Penanganannya sama seperti stuck pixel."
+          ]
+        },
+        {
+          "h": "3. Coba pixel fixer",
+          "p": [
+            "Stuck pixel kadang bisa dihidupkan lagi dengan mengedipkan warna secara cepat di atasnya. Buka pixel fixer di tes dead pixel, seret kotak yang berkedip ke atas stuck pixel lalu biarkan berjalan selama 10 sampai 30 menit. Jika belum berhasil pada percobaan pertama, coba lagi selama beberapa jam. Jangan melihat kotak yang berkedip jika Anda sensitif terhadap cahaya berkedip."
+          ]
+        },
+        {
+          "h": "4. Tekanan lembut (risiko ditanggung sendiri)",
+          "p": [
+            "Matikan layar, bungkus ujung jari dengan kain lembut, tekan area yang stuck dengan sangat pelan lalu nyalakan layar sambil tetap menekan. Jangan pernah menekan keras dan jangan pernah memakai benda runcing. Cara ini bisa memperburuk kondisi di beberapa panel, jadi coba pixel fixer terlebih dulu."
+          ]
+        },
+        {
+          "h": "5. Cek garansi dan kebijakan retur",
+          "p": [
+            "Banyak produsen hanya mengganti layar jika jumlah piksel rusaknya mencapai batas minimum, tapi toko biasanya menerima retur dalam 14 sampai 30 hari dengan alasan apa pun. Foto piksel tersebut di atas warna solid lalu segera hubungi penjual."
+          ]
+        },
+        {
+          "h": "Bonus: cek refresh rate",
+          "p": [
+            "Saat menguji monitor baru, tes dead pixel juga mengukur refresh rate sebenarnya. Jika monitor 144 Hz hanya menunjukkan 60 Hz, atur di Windows lewat Pengaturan → Sistem → Layar → Tampilan tingkat lanjut, dan pastikan Anda memakai kabel DisplayPort atau HDMI yang cukup cepat."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Apa bedanya dead pixel dan stuck pixel?",
+          "a": "Dead pixel tetap hitam di semua warna. Stuck pixel tetap satu warna, biasanya merah, hijau atau biru. Stuck pixel sering bisa diperbaiki, sedangkan dead pixel jarang bisa."
+        },
+        {
+          "q": "Apakah stuck pixel bisa hilang sendiri?",
+          "a": "Kadang bisa, setelah beberapa jam atau hari pemakaian normal. Menjalankan pixel fixer berkedip di atasnya mempercepat proses ini dan berhasil untuk banyak stuck pixel."
+        },
+        {
+          "q": "Bagaimana cara cek dead pixel di monitor baru?",
+          "a": "Bersihkan layar, lalu buka tes dead pixel layar penuh dan perhatikan warna hitam, putih, merah, hijau dan biru solid. Lakukan di hari pertama agar Anda masih bisa meretur monitornya."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "phone-mic-not-working",
+      "title": "Mic HP iPhone atau Android Tidak Berfungsi? 8 Cara",
+      "description": "Suara Anda tidak terdengar saat telepon, atau mic HP pelan dan teredam? Atasi izin aplikasi, Bluetooth, casing dan lubang mic tertutup di iPhone dan Android.",
+      "h1": "Mikrofon iPhone atau Android tidak berfungsi",
+      "lead": "Jika lawan bicara tidak bisa mendengar Anda, atau suara Anda terdengar pelan atau teredam, masalahnya biasanya ada di izin, perangkat Bluetooth atau sesuatu yang menutupi mic. HP punya lebih dari satu mikrofon, jadi tes dulu untuk mengetahui mana yang bermasalah.",
+      "tool": "mic",
+      "sections": [
+        {
+          "h": "Langkah 0: tes mic di browser",
+          "p": [
+            "Buka tes mic di situs ini di HP Anda lalu tekan Mulai. Jika indikator level bergerak saat Anda berbicara, mikrofon berfungsi dan masalahnya ada di satu aplikasi atau di pengaturan panggilan. Jika indikatornya diam saja, lanjutkan membaca."
+          ]
+        },
+        {
+          "h": "1. Putuskan Bluetooth",
+          "p": [
+            "HP otomatis beralih ke headset Bluetooth, mobil atau earbud yang tersambung, bahkan saat perangkat itu ada di dalam tas Anda. Matikan Bluetooth lalu tes lagi."
+          ]
+        },
+        {
+          "h": "2. Izinkan akses mikrofon untuk aplikasi",
+          "ol": [
+            "iPhone: Pengaturan → Privasi & Keamanan → Mikrofon, lalu aktifkan aplikasinya.",
+            "Android: Setelan → Aplikasi → pilih aplikasinya → Izin → Mikrofon → Izinkan.",
+            "Di Android 12 dan yang lebih baru, cek juga bahwa sakelar mikrofon di Setelan Cepat tidak dalam kondisi mati."
+          ]
+        },
+        {
+          "h": "3. Lepas casing dan pelindung layar",
+          "p": [
+            "Casing dan pelindung layar bisa menutupi lubang mikrofon, terutama jika bergeser setelah HP jatuh. Lepas keduanya lalu tes lagi."
+          ]
+        },
+        {
+          "h": "4. Bersihkan lubang mic",
+          "p": [
+            "HP punya lubang mic di bagian bawah, di dekat kamera dan kadang di bagian atas. Bersihkan perlahan dengan sikat gigi yang lembut dan kering. Jangan menusukkan jarum atau peniti ke lubangnya, karena bisa merusak jaring pelindungnya."
+          ]
+        },
+        {
+          "h": "5. Tes setiap mikrofon",
+          "ul": [
+            "Mic bawah: rekam memo suara atau klip dengan aplikasi perekam suara.",
+            "Mic depan atau atas: rekam video selfie.",
+            "Mic belakang: rekam video dengan kamera belakang.",
+            "Jika hanya salah satunya yang terdengar teredam, lubang itu tertutup atau rusak."
+          ]
+        },
+        {
+          "h": "6. Matikan fitur peredam bising",
+          "p": [
+            "Di iPhone, coba ganti Mode Mik di Pusat Kontrol saat sedang menelepon (Standar, Isolasi Suara, Spektrum Lebar). Di Android, matikan \"Pengurangan bising\" atau \"Suara jernih\" di pengaturan panggilan jika HP Anda memilikinya, lalu tes lagi."
+          ]
+        },
+        {
+          "h": "7. Restart dan perbarui",
+          "p": [
+            "Restart HP dan instal pembaruan sistem jika ada. Bug di sistem audio sering diperbaiki lewat pembaruan."
+          ]
+        },
+        {
+          "h": "8. Tes di mode aman (Android)",
+          "p": [
+            "Tahan tombol power, lalu tekan lama \"Matikan\" sampai muncul Mode aman. Jika mic berfungsi di mode aman, berarti ada aplikasi yang Anda instal yang mengambil alih mikrofon."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Kenapa lawan bicara tidak bisa mendengar saya saat telepon, tapi speakerphone berfungsi?",
+          "a": "Panggilan biasa umumnya memakai mikrofon bawah, sedangkan speakerphone atau video call bisa memakai mikrofon lain. Bersihkan lubang bawah, lepas casing lalu tes lagi."
+        },
+        {
+          "q": "Bagaimana cara tes mikrofon HP saya?",
+          "a": "Buka tes mic di situs ini lewat browser HP Anda, izinkan akses mikrofon lalu bicaralah. Jika indikatornya bergerak, mic berfungsi. Anda juga bisa merekam klip lalu memutarnya kembali."
+        },
+        {
+          "q": "Kenapa suara mic HP saya teredam?",
+          "a": "Biasanya casing, pelindung layar atau serat debu menutupi lubangnya. Lepas casing dan pelindung layar, lalu bersihkan lubangnya perlahan dengan sikat yang lembut dan kering."
+        }
+      ],
+      "published": "2026-11-13"
     }
   ]
 }

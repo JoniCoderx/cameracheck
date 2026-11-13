@@ -8,13 +8,21 @@
     "titleWebcam": "Webcam test",
     "runMic": "Run the mic test",
     "runWebcam": "Run the webcam test",
-    "moreGuides": "More guides"
+    "moreGuides": "More guides",
+    "titleSpeaker": "Speaker test",
+    "runSpeaker": "Run the speaker test",
+    "titleKeyboard": "Keyboard test",
+    "runKeyboard": "Run the keyboard test",
+    "titleMouse": "Mouse test",
+    "runMouse": "Run the mouse test",
+    "titlePixel": "Dead pixel test",
+    "runPixel": "Run the dead pixel test"
   },
   "hub": {
-    "title": "Mic & Webcam Troubleshooting Guides",
-    "description": "Step-by-step fixes for a microphone or webcam that isn't working on Windows, Mac, Discord, Zoom, Teams and Google Meet. Free and written in plain English.",
+    "title": "Mic, Webcam, Sound & PC Troubleshooting Guides",
+    "description": "Step-by-step fixes for a mic, webcam, speakers, keyboard, mouse or screen that isn't working right. Windows, Mac, iPhone, Android, Discord and Zoom.",
     "h1": "Troubleshooting guides",
-    "lead": "Short, practical fixes for the most common microphone and camera problems. Test first, then follow the guide that matches what you see."
+    "lead": "Short, practical fixes for the most common microphone, camera, sound, keyboard, mouse and screen problems. Test first, then follow the guide that matches what you see."
   },
   "guides": [
     {
@@ -322,6 +330,407 @@
           "a": "Open the mic test on this site, or in Zoom go to Settings → Audio → Test Mic. Both take about five seconds."
         }
       ]
+    },
+    {
+      "slug": "no-sound-speakers-headphones",
+      "title": "No Sound from Speakers or Headphones? 8 Fixes (Windows & Mac)",
+      "description": "No sound on your PC or Mac? Check the output device, volume mixer, cables, Bluetooth and drivers. Eight fixes for speakers and headphones, easiest first.",
+      "h1": "No sound from speakers or headphones",
+      "lead": "When a computer goes silent, it is almost always sending sound to the wrong device or has one volume slider at zero. Work through these checks in order. Most people hear sound again by step 3.",
+      "tool": "speaker",
+      "sections": [
+        {
+          "h": "Step 0: play a test tone",
+          "p": [
+            "Open the speaker test on this site and play the left and right tones. If you hear them, your speakers and system are fine and the problem is inside one app or website. If you hear nothing, keep reading."
+          ]
+        },
+        {
+          "h": "1. Check the obvious volume controls",
+          "ul": [
+            "The volume knob or buttons on the speakers or headphones themselves.",
+            "The mute key on the keyboard (often F1, F10 or a key with a crossed-out speaker).",
+            "The volume slider in the taskbar (Windows) or menu bar (Mac).",
+            "The volume inside the video player or website you are using."
+          ]
+        },
+        {
+          "h": "2. Pick the right output device",
+          "p": [
+            "Computers often have several outputs: laptop speakers, headphones, a monitor with speakers over HDMI, a USB headset and Bluetooth devices. Sound goes to only one of them."
+          ],
+          "ol": [
+            "Windows: click the speaker icon in the taskbar, then the arrow next to the volume slider, and choose your speakers or headphones.",
+            "Mac: open System Settings → Sound → Output and choose your device.",
+            "Play the test tone again."
+          ]
+        },
+        {
+          "h": "3. Check the volume mixer (Windows)",
+          "p": [
+            "Windows keeps a separate volume for every app. Right-click the speaker icon → Open volume mixer, and make sure your browser or game is not muted or set to zero."
+          ]
+        },
+        {
+          "h": "4. Check cables and ports",
+          "p": [
+            "Push the plug all the way in. Wired headphones must go into the headphone (green) jack, not the microphone (pink) one. On a desktop, try the jack on the back of the PC, since front-panel jacks are sometimes not connected inside the case. For USB speakers and headsets, try another USB port directly on the computer."
+          ]
+        },
+        {
+          "h": "5. Reconnect Bluetooth headphones",
+          "ol": [
+            "Turn Bluetooth off and on again.",
+            "If that does not help, remove (forget) the headphones in Bluetooth settings and pair them again.",
+            "On Windows, choose the \"Headphones\" or \"Stereo\" output, not \"Headset\" or \"Hands-Free\", for the best quality."
+          ]
+        },
+        {
+          "h": "6. Run the audio troubleshooter (Windows)",
+          "p": [
+            "Go to Settings → System → Sound and click \"Troubleshoot common sound problems\" under Output. It restarts the audio service and fixes common driver settings automatically."
+          ]
+        },
+        {
+          "h": "7. Reinstall the sound driver (Windows)",
+          "ol": [
+            "Right-click Start → Device Manager.",
+            "Open \"Sound, video and game controllers\".",
+            "Right-click your audio device (Realtek, Intel, AMD or similar) → Uninstall device, then restart. Windows installs the driver again on boot."
+          ]
+        },
+        {
+          "h": "8. Restart the audio system (Mac)",
+          "p": [
+            "If the Mac shows the right output but plays nothing, restart it. If sound still fails, open Activity Monitor, search for \"coreaudiod\" and quit it. macOS restarts it within a second."
+          ]
+        },
+        {
+          "h": "Sound only from one side?",
+          "p": [
+            "Play the left and right tones in the speaker test. If one side is silent with every pair of headphones, check the balance slider (Windows: Settings → System → Sound → your device; Mac: Sound → Output → Balance). If only one pair is affected, the cable or plug is damaged."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why is there no sound on my computer even though the volume is up?",
+          "a": "Usually the sound is going to another output, such as a monitor over HDMI or a Bluetooth device that is off. Choose your speakers or headphones as the output device and test again."
+        },
+        {
+          "q": "Why do my headphones work on my phone but not my PC?",
+          "a": "The PC is probably still sending sound to its speakers or a different output. Select the headphones as the output device. For wired headphones, use the green headphone jack."
+        },
+        {
+          "q": "How do I test my speakers online?",
+          "a": "Open the speaker test on this site and play the left, right and sweep tones. You'll hear right away whether both channels and the low and high frequencies work."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "mouse-double-clicking",
+      "title": "Mouse Double Clicking When You Click Once? How to Test & Fix",
+      "description": "Mouse double clicks on a single click? Test it in 30 seconds, then fix it: Windows settings, debounce, cleaning the switch, or using the warranty.",
+      "h1": "Mouse double clicking when you click once",
+      "lead": "A mouse that registers two clicks when you press once is one of the most common hardware faults. It is usually the switch under the button wearing out. Confirm it first, then try these fixes in order.",
+      "tool": "mouse",
+      "sections": [
+        {
+          "h": "Step 0: confirm it with a mouse test",
+          "p": [
+            "Open the mouse test on this site and click normally for a minute. It flags any two clicks of the same button that arrive less than 80 milliseconds apart. Fingers cannot click that fast on purpose, so each flag is a fault. If you see flags, the mouse is double clicking. If not, check the Windows settings below."
+          ]
+        },
+        {
+          "h": "1. Check the Windows click setting",
+          "p": [
+            "Windows can be set to open files with a single click, which feels like a double click. Open File Explorer → View (or the three dots) → Options, and under \"Click items as follows\" choose \"Double-click to open an item\". Also check Settings → Bluetooth & devices → Mouse → Additional mouse settings, and set the double-click speed to the middle."
+          ]
+        },
+        {
+          "h": "2. Try another USB port and turn off USB power saving",
+          "p": [
+            "Plug the mouse directly into the computer instead of a hub. On a laptop, open Device Manager → Universal Serial Bus controllers, open each \"USB Root Hub\", and on the Power Management tab untick \"Allow the computer to turn off this device to save power\"."
+          ]
+        },
+        {
+          "h": "3. Raise the debounce time (gaming mice)",
+          "p": [
+            "Many gaming mice have a debounce or \"click response\" setting in their software (Logitech G HUB, Razer Synapse, SteelSeries GG and others). A very low value lets a worn switch send two clicks. Raise it a little, for example from 2 ms to 8 or 10 ms, and test again."
+          ]
+        },
+        {
+          "h": "4. Clean the button",
+          "p": [
+            "Unplug the mouse or remove the battery. Blow compressed air into the gap around the button while clicking it repeatedly for 20 to 30 seconds. Dust and grime can make the switch bounce."
+          ]
+        },
+        {
+          "h": "5. Check the warranty",
+          "p": [
+            "Most mice have a warranty of 1 to 3 years, and double clicking is a recognized fault. Keep the result from the mouse test as proof when you contact support."
+          ]
+        },
+        {
+          "h": "6. Replace the switch (advanced)",
+          "p": [
+            "If you are comfortable opening the mouse and soldering, the switch under the button can be replaced for a few dollars. Look up your exact model first, since some mice use optical switches that do not wear out this way."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why does my mouse double click when I click once?",
+          "a": "Usually the metal contact inside the button's switch is worn or dirty, so one press makes it bounce and send two clicks. Settings such as single-click mode in Windows can also feel like a double click."
+        },
+        {
+          "q": "How do I test if my mouse is double clicking?",
+          "a": "Open the mouse test on this site and click normally. Two clicks of the same button less than 80 ms apart are flagged as accidental double clicks."
+        },
+        {
+          "q": "Can a double clicking mouse be fixed?",
+          "a": "Often yes. Raising the debounce time and cleaning the switch fix many mice. If it keeps happening, the switch needs replacing or the mouse is covered by warranty."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "keyboard-keys-not-working",
+      "title": "Keyboard Keys Not Working or Typing Twice? 8 Fixes",
+      "description": "Some keys not working, typing twice or typing the wrong characters? Test every key, then fix Filter Keys, the layout, drivers, debris and chattering switches.",
+      "h1": "Keyboard keys not working or typing twice",
+      "lead": "When some keys do nothing, type twice or type the wrong letter, the cause is usually a setting, the keyboard layout or a dirty switch. Find out exactly which keys are affected first, then follow the fix that matches.",
+      "tool": "keyboard",
+      "sections": [
+        {
+          "h": "Step 0: test every key",
+          "p": [
+            "Open the keyboard test on this site and press every key once. Keys that never light up are not reaching the computer. Keys marked as chatter sent two presses for one. If a key types the wrong character but lights up in the right place, the problem is the layout (step 3), not the hardware."
+          ]
+        },
+        {
+          "h": "1. Restart and reconnect",
+          "p": [
+            "Restart the computer. For a USB keyboard, plug it directly into the computer and try another port. For a wireless keyboard, replace or charge the batteries and pair it again."
+          ]
+        },
+        {
+          "h": "2. Turn off Filter Keys and Sticky Keys (Windows)",
+          "p": [
+            "Filter Keys ignores short or repeated presses, which looks exactly like keys not working. Open Settings → Accessibility → Keyboard and turn off Filter Keys and Sticky Keys. Holding the right Shift key for 8 seconds can switch Filter Keys on by accident."
+          ]
+        },
+        {
+          "h": "3. Wrong characters? Check the layout",
+          "p": [
+            "If keys type the wrong symbols, for example @ and \" are swapped or Y and Z are switched, the computer is using a different keyboard layout. Windows: press Windows + Space to switch, and remove layouts you don't use in Settings → Time & language → Language & region. Mac: System Settings → Keyboard → Input Sources."
+          ]
+        },
+        {
+          "h": "4. Numbers not typing on the number pad?",
+          "p": [
+            "Press Num Lock. On many laptops it is Fn + Num Lock or Fn + F11. When Num Lock is off, the number pad works as arrow keys instead."
+          ]
+        },
+        {
+          "h": "5. Clean under the keys",
+          "ol": [
+            "Unplug the keyboard or turn off the laptop.",
+            "Hold it upside down at an angle and tap it gently.",
+            "Blow compressed air under the stuck keys.",
+            "For a mechanical keyboard, pull off the keycap with a keycap puller and clean around the switch."
+          ]
+        },
+        {
+          "h": "6. Fix a key that types twice (chatter)",
+          "p": [
+            "A key that sends two presses for one is called chattering. On a mechanical keyboard, compressed air under the switch often fixes it, and on a hot-swap keyboard you can replace the switch in a minute. Many gaming keyboards also have a debounce setting in their software. Raising it slightly stops most chatter."
+          ]
+        },
+        {
+          "h": "7. Reinstall the keyboard driver (Windows)",
+          "ol": [
+            "Right-click Start → Device Manager.",
+            "Open Keyboards.",
+            "Right-click your keyboard → Uninstall device, then restart."
+          ]
+        },
+        {
+          "h": "8. Test outside Windows",
+          "p": [
+            "If keys still fail, the hardware is likely at fault. Try the keyboard on another computer. On a laptop, if the same keys fail in the BIOS screen too, the keyboard needs repair or replacement."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why are some keys on my keyboard not working?",
+          "a": "Common causes are Filter Keys being on, debris under the keys, a loose USB connection or a faulty switch. A key tester shows exactly which keys don't register."
+        },
+        {
+          "q": "Why does my keyboard type two letters when I press once?",
+          "a": "That is key chatter: the switch bounces and sends two presses. Cleaning the switch or raising the debounce time usually fixes it. Otherwise the switch needs replacing."
+        },
+        {
+          "q": "How do I test all the keys on my keyboard?",
+          "a": "Open the keyboard test on this site and press every key. Each key lights up when it registers, and the test also shows chatter and how many keys can be held at once."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "dead-pixel-stuck-pixel-fix",
+      "title": "Dead or Stuck Pixel? How to Check Your Screen & Fix It",
+      "description": "Find dead and stuck pixels with solid color screens, learn the difference, and try the fixes that work: a flashing pixel fixer, gentle pressure, the warranty.",
+      "h1": "Dead or stuck pixel: how to check and fix it",
+      "lead": "A pixel that stays black, white or one bright color is easy to miss until it suddenly is all you see. Check a new screen as soon as you get it, because return windows are short. Here is how to find bad pixels and what you can do about them.",
+      "tool": "pixel",
+      "sections": [
+        {
+          "h": "Step 0: clean the screen",
+          "p": [
+            "Wipe the screen with a dry microfiber cloth first. A speck of dust looks exactly like a dead pixel, but it moves or disappears when you wipe it."
+          ]
+        },
+        {
+          "h": "1. Run a full-screen color test",
+          "p": [
+            "Open the dead pixel test on this site and start full screen. It fills the display with black, white, red, green, blue and gray. Look at each color slowly from about 30 cm (one foot) away, section by section."
+          ]
+        },
+        {
+          "h": "2. Dead, stuck or hot pixel?",
+          "ul": [
+            "Dead pixel: black on every color, most visible on white. The transistor gets no power and it is rarely fixable.",
+            "Stuck pixel: always one color (red, green or blue), most visible on black. Part of it is stuck on, and it can often be fixed.",
+            "Hot pixel: always white, visible on black. It is treated like a stuck pixel."
+          ]
+        },
+        {
+          "h": "3. Try the pixel fixer",
+          "p": [
+            "Stuck pixels can sometimes be revived by flashing colors rapidly over them. Open the pixel fixer in the dead pixel test, drag the flashing square over the stuck pixel and leave it running for 10 to 30 minutes. If it doesn't work the first time, try again for a few hours. Don't look at the flashing square if you are sensitive to flashing lights."
+          ]
+        },
+        {
+          "h": "4. Gentle pressure (at your own risk)",
+          "p": [
+            "Turn the screen off, wrap a fingertip in a soft cloth, press very gently on the stuck spot and turn the screen on while pressing. Never press hard and never use anything pointed. This can make things worse on some panels, so try the pixel fixer first."
+          ]
+        },
+        {
+          "h": "5. Check the warranty and return policy",
+          "p": [
+            "Many manufacturers only replace a screen when it has a minimum number of bad pixels, but stores usually accept returns within 14 to 30 days for any reason. Take a photo of the pixel on the solid color and contact the seller quickly."
+          ]
+        },
+        {
+          "h": "Bonus: check the refresh rate",
+          "p": [
+            "While you're testing a new monitor, the dead pixel test also measures its real refresh rate. If a 144 Hz monitor shows 60 Hz, set it in Windows under Settings → System → Display → Advanced display, and make sure you use a DisplayPort or a fast enough HDMI cable."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the difference between a dead pixel and a stuck pixel?",
+          "a": "A dead pixel stays black on every color. A stuck pixel stays one color, usually red, green or blue. Stuck pixels can often be fixed, dead pixels rarely can."
+        },
+        {
+          "q": "Can a stuck pixel fix itself?",
+          "a": "Sometimes, after hours or days of normal use. Running a flashing pixel fixer over it speeds this up and works for many stuck pixels."
+        },
+        {
+          "q": "How do I check a new monitor for dead pixels?",
+          "a": "Clean the screen, then open a full-screen dead pixel test and look at solid black, white, red, green and blue. Do it on the first day so you can still return it."
+        }
+      ],
+      "published": "2026-11-13"
+    },
+    {
+      "slug": "phone-mic-not-working",
+      "title": "iPhone or Android Mic Not Working? 8 Fixes",
+      "description": "People can't hear you on calls, or your phone's mic is quiet or muffled? Fix app permissions, Bluetooth, the case and blocked openings on iPhone and Android.",
+      "h1": "iPhone or Android microphone not working",
+      "lead": "If people can't hear you, or your voice sounds quiet or muffled, the problem is usually a permission, a Bluetooth device or something covering the mic. Phones have more than one microphone, so test first to see which one is affected.",
+      "tool": "mic",
+      "sections": [
+        {
+          "h": "Step 0: test the mic in your browser",
+          "p": [
+            "Open the mic test on this site on your phone and press Start. If the level meter moves when you talk, the microphone works and the problem is in one app or in a call setting. If it stays flat, keep reading."
+          ]
+        },
+        {
+          "h": "1. Disconnect Bluetooth",
+          "p": [
+            "Phones switch to a connected Bluetooth headset, car or earbuds automatically, even if they are in your bag. Turn Bluetooth off and test again."
+          ]
+        },
+        {
+          "h": "2. Allow microphone access for the app",
+          "ol": [
+            "iPhone: Settings → Privacy & Security → Microphone, then turn on the app.",
+            "Android: Settings → Apps → choose the app → Permissions → Microphone → Allow.",
+            "On Android 12 and later, also check that the microphone toggle in Quick Settings is not turned off."
+          ]
+        },
+        {
+          "h": "3. Remove the case and screen protector",
+          "p": [
+            "Cases and screen protectors can cover a microphone opening, especially after a drop shifts them. Remove them and test again."
+          ]
+        },
+        {
+          "h": "4. Clean the mic openings",
+          "p": [
+            "Phones have mic openings at the bottom, near the camera and sometimes at the top. Gently clean them with a soft, dry toothbrush. Don't push pins or needles into the openings, since that can damage the mesh."
+          ]
+        },
+        {
+          "h": "5. Test each microphone",
+          "ul": [
+            "Bottom mic: record a voice memo or voice recorder clip.",
+            "Front or top mic: record a selfie video.",
+            "Rear mic: record a video with the back camera.",
+            "If only one of them sounds muffled, that opening is blocked or damaged."
+          ]
+        },
+        {
+          "h": "6. Turn off noise reduction features",
+          "p": [
+            "On iPhone, try switching Mic Mode in Control Center during a call (Standard, Voice Isolation, Wide Spectrum). On Android, turn off \"Noise reduction\" or \"Clear voice\" in the call settings, if your phone has them, and test again."
+          ]
+        },
+        {
+          "h": "7. Restart and update",
+          "p": [
+            "Restart the phone and install any system update. Bugs in the audio system are often fixed in updates."
+          ]
+        },
+        {
+          "h": "8. Test in safe mode (Android)",
+          "p": [
+            "Hold the power button, then press and hold \"Power off\" until you see Safe mode. If the mic works in safe mode, an app you installed is taking over the microphone."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why can't people hear me on calls but speakerphone works?",
+          "a": "Calls normally use the bottom microphone while speakerphone or video can use another one. Clean the bottom opening, remove the case and test again."
+        },
+        {
+          "q": "How do I test my phone's microphone?",
+          "a": "Open the mic test on this site in your phone's browser, allow the microphone and talk. If the meter moves, the mic works. You can also record and play back a clip."
+        },
+        {
+          "q": "Why is my phone mic muffled?",
+          "a": "Usually the case, a screen protector or lint is covering an opening. Remove them and gently clean the openings with a soft, dry brush."
+        }
+      ],
+      "published": "2026-11-13"
     }
   ]
 }

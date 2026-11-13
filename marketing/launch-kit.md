@@ -163,3 +163,33 @@ Page: **https://mictestplus.com/widget/**. Site owners copy one snippet and get 
 
 **Reddit / forum reply when someone runs a community or support site:**
 > If you want your members to check their mic before joining voice, there's a free embeddable mic test you can drop on a help page: https://mictestplus.com/widget/ (I built it; it runs in the browser, nothing is uploaded).
+
+---
+
+## 9. Short social posts (Facebook, X, LinkedIn, Threads)
+
+Each link now shows its own preview image in the right language, so paste the link on its own line and let the preview do the work. One post a day is plenty.
+
+**Mouse**
+> Mouse double clicking when you click once? It's usually a worn switch, not you. Test it in 30 seconds (two clicks under 80 ms = fault), then try the fixes before buying a new one:
+> https://mictestplus.com/guides/mouse-double-clicking/
+
+**Keyboard**
+> Some keys not working, or typing twice? Press every key here and see exactly which ones fail. Then the fix list: Filter Keys, layout, debris, chatter.
+> https://mictestplus.com/guides/keyboard-keys-not-working/
+
+**New monitor**
+> Just got a new monitor or phone? Check for dead pixels today, while you can still return it. Full-screen colors, plus the real refresh rate (is your 144 Hz actually on?):
+> https://mictestplus.com/dead-pixel-test/
+
+**No sound**
+> No sound from your PC? Most of the time Windows is just sending audio to the wrong device (often a monitor over HDMI). Play a test tone, then go through 8 quick fixes:
+> https://mictestplus.com/guides/no-sound-speakers-headphones/
+
+**Phone mic**
+> People can't hear you on calls? Before you pay for a repair: Bluetooth, app permission, the case and a blocked mic hole cause most of it. Test your phone's mic in the browser:
+> https://mictestplus.com/guides/phone-mic-not-working/
+
+**Hebrew (Facebook groups)**
+> העכבר עושה דאבל קליק לבד? מקש במקלדת לא עובד? פיקסל מת במסך חדש? בניתי כלים חינמיים שבודקים את זה תוך 30 שניות בדפדפן, עם מדריכי תיקון בעברית:
+> https://mictestplus.com/he/guides/
