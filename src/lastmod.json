@@ -20,80 +20,80 @@
   "date": "2026-11-13"
  },
  "/ar/airpods-mic-test/": {
-  "hash": "8f1ef3f4710693db4b0c548f72a061d4",
-  "date": "2026-11-13"
+  "hash": "f72e945ef90ec9db918954493e779311",
+  "date": "2026-11-15"
  },
  "/ar/android-mic-test/": {
-  "hash": "33f3a779a3d1947806b0064ccbd1fc0e",
-  "date": "2026-11-13"
+  "hash": "20a286d4ee1ea2be3b5f16f244e230e5",
+  "date": "2026-11-15"
  },
  "/ar/dead-pixel-test/": {
   "hash": "0f1c4f477e0c821e013a856f0583ce66",
   "date": "2026-11-13"
  },
  "/ar/decibel-meter/": {
-  "hash": "845a59d7c49b258766532fb539b2da17",
-  "date": "2026-11-13"
+  "hash": "c3d0cbcb2eac8cfacb9acee3685f0934",
+  "date": "2026-11-15"
  },
  "/ar/discord-mic-test/": {
-  "hash": "adaf7bf13e4f9ece4af6a5f6fd12e023",
-  "date": "2026-11-13"
+  "hash": "fae840e28d12acd4381560ef661c4b72",
+  "date": "2026-11-15"
  },
  "/ar/guides/": {
-  "hash": "314759d9826a84fcd74de895a2fac772",
-  "date": "2026-11-13"
+  "hash": "c0e5ccac523eb9c06b7f106e778cdcd9",
+  "date": "2026-11-15"
  },
  "/ar/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "cd664046adccfebf19f71acb74979aa5",
-  "date": "2026-11-13"
+  "hash": "ceb1f22a53ee1fd498b031125e17e6dc",
+  "date": "2026-11-15"
  },
  "/ar/guides/keyboard-keys-not-working/": {
-  "hash": "f1ca225bf8ffd1c948797dd1dd9ec627",
-  "date": "2026-11-13"
+  "hash": "7d217e86bac01f5f7d64f8c5b35d676c",
+  "date": "2026-11-15"
  },
  "/ar/guides/mic-camera-not-working-mac/": {
-  "hash": "dfda76562dc76ff14b227739811b64c8",
-  "date": "2026-11-13"
+  "hash": "c7ccfe0945c96c04d89792dbb33bedc5",
+  "date": "2026-11-15"
  },
  "/ar/guides/mic-not-working-discord-zoom-teams/": {
-  "hash": "2444079a3a82420990ddc3b11a53ad53",
-  "date": "2026-11-13"
+  "hash": "e5922535183d5986a2b3091fd4de7c75",
+  "date": "2026-11-15"
  },
  "/ar/guides/microphone-not-working-windows/": {
-  "hash": "3b81cbfa1f937cc715fb4b64ae5d8127",
-  "date": "2026-11-13"
+  "hash": "c0e73a6dfe39d992b5646f00153efcd8",
+  "date": "2026-11-15"
  },
  "/ar/guides/mouse-double-clicking/": {
-  "hash": "ffcd220e8cf33dfbea95c7f7d4624397",
-  "date": "2026-11-13"
+  "hash": "a0f8204e4232a99f147ae3203fc8e35a",
+  "date": "2026-11-15"
  },
  "/ar/guides/no-sound-speakers-headphones/": {
-  "hash": "823410af95c8f53b78e4a696b26a12a6",
-  "date": "2026-11-13"
+  "hash": "0b315f435bc53abd327d445853f6275e",
+  "date": "2026-11-15"
  },
  "/ar/guides/phone-mic-not-working/": {
-  "hash": "1878119d1fff143370e09d8f72524cc9",
-  "date": "2026-11-13"
+  "hash": "d9fc557625e710ae9ec79f629a825ff6",
+  "date": "2026-11-15"
  },
  "/ar/guides/webcam-not-working/": {
-  "hash": "7b9f3cf8d182581142fd25c4928ed03c",
-  "date": "2026-11-13"
+  "hash": "1b3b1e84754042268d346e5217e5f9ef",
+  "date": "2026-11-15"
  },
  "/ar/headphone-test/": {
   "hash": "0f049268144aac075bc65426c9400934",
   "date": "2026-11-13"
  },
  "/ar/iphone-mic-test/": {
-  "hash": "8e79d0ddd5d2b8bca56b517eada127fe",
-  "date": "2026-11-13"
+  "hash": "7945eaa9e309ce6c32830c4920d3f655",
+  "date": "2026-11-15"
  },
  "/ar/keyboard-test/": {
   "hash": "775b1a84b639cd6263f0399044ddad23",
   "date": "2026-11-13"
  },
  "/ar/mic-test/": {
-  "hash": "a1d7a11d58b4bdebae0e4f084bf3b0b4",
-  "date": "2026-11-13"
+  "hash": "bcdb96b5ecb8d9c467e8b0fd601b087d",
+  "date": "2026-11-15"
  },
  "/ar/mouse-test/": {
   "hash": "76f479d129181955389fd00239dadb5e",
@@ -104,16 +104,16 @@
   "date": "2026-11-13"
  },
  "/ar/voice-recorder/": {
-  "hash": "ef7fc8e9fb41af73fe0a6cb9bcea7541",
-  "date": "2026-11-13"
+  "hash": "39a9ff7c8ecb43b8ebdd923e411bd15d",
+  "date": "2026-11-15"
  },
  "/ar/webcam-test/": {
   "hash": "59eef2ddb0ebbc5904960a7df98be7fb",
   "date": "2026-11-13"
  },
  "/ar/zoom-mic-test/": {
-  "hash": "a8952fd03c83cccb3f4ce4926098a02e",
-  "date": "2026-11-13"
+  "hash": "e8583de7b19416a16cf0b257dd93cbf0",
+  "date": "2026-11-15"
  },
  "/de/": {
   "hash": "85647d85f84a546702c81a11fa377faf",
@@ -144,12 +144,12 @@
   "date": "2026-11-13"
  },
  "/de/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "5b888f0b792defb2dee952ab805e18cb",
-  "date": "2026-11-13"
+  "hash": "3502ca221d2618084bfedc80d81f8d36",
+  "date": "2026-11-15"
  },
  "/de/guides/keyboard-keys-not-working/": {
-  "hash": "f538fcdddd671c6464e4ed7567d7f2d7",
-  "date": "2026-11-13"
+  "hash": "be52f244d8db26d55dafbed563f4c450",
+  "date": "2026-11-15"
  },
  "/de/guides/mic-camera-not-working-mac/": {
   "hash": "00caa5628951852bb071caf47354a515",
@@ -164,16 +164,16 @@
   "date": "2026-11-13"
  },
  "/de/guides/mouse-double-clicking/": {
-  "hash": "8ebba7a6c74b34871e58e505d3625362",
-  "date": "2026-11-13"
+  "hash": "3b83aae1b32d7edd7707df8f7942d92f",
+  "date": "2026-11-15"
  },
  "/de/guides/no-sound-speakers-headphones/": {
-  "hash": "299ed22bbc58f4b402bc1192f15fbf1c",
-  "date": "2026-11-13"
+  "hash": "4319af2c1a09970b4583a05a3b0c35a9",
+  "date": "2026-11-15"
  },
  "/de/guides/phone-mic-not-working/": {
-  "hash": "4098a0d1fcd59b368afd3f754c9b82f9",
-  "date": "2026-11-13"
+  "hash": "2f62dd4e14c4dec2afd317635982485c",
+  "date": "2026-11-15"
  },
  "/de/guides/webcam-not-working/": {
   "hash": "03d394886cefc434b6e641d5e10019a9",
@@ -256,12 +256,12 @@
   "date": "2026-11-13"
  },
  "/es/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "e7d4086fcc6ecc70cd58713eb78513c1",
-  "date": "2026-11-13"
+  "hash": "1fbcb549bdf4da8c2524b275e7f072f9",
+  "date": "2026-11-15"
  },
  "/es/guides/keyboard-keys-not-working/": {
-  "hash": "db1acb72f83973da6f1bf74849b37c88",
-  "date": "2026-11-13"
+  "hash": "f4d9fba711b32b9d75dcfe7b1d082153",
+  "date": "2026-11-15"
  },
  "/es/guides/mic-camera-not-working-mac/": {
   "hash": "ed4f3ea54d3f7753ed3d8ae58aca4f4d",
@@ -276,16 +276,16 @@
   "date": "2026-11-13"
  },
  "/es/guides/mouse-double-clicking/": {
-  "hash": "10096ca71a3c104beffd641bccfd6681",
-  "date": "2026-11-13"
+  "hash": "d64ec1af9e795abe8615810623490263",
+  "date": "2026-11-15"
  },
  "/es/guides/no-sound-speakers-headphones/": {
-  "hash": "237be419d5a194c6fe0f450d51ce9a31",
-  "date": "2026-11-13"
+  "hash": "ce1e007850dfd0749b3b5d49be47d187",
+  "date": "2026-11-15"
  },
  "/es/guides/phone-mic-not-working/": {
-  "hash": "6fd7445cad79f973ef253cc2881cbd79",
-  "date": "2026-11-13"
+  "hash": "97a3db3501cae9d8d7bb3d961a8905f5",
+  "date": "2026-11-15"
  },
  "/es/guides/webcam-not-working/": {
   "hash": "e0956f170e4e46bdbcf1044e61620d4c",
@@ -356,12 +356,12 @@
   "date": "2026-11-13"
  },
  "/fr/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "c5f61568ec97ac99ac0d531457864f59",
-  "date": "2026-11-13"
+  "hash": "512fc547935509acef78fd6231ce4b13",
+  "date": "2026-11-15"
  },
  "/fr/guides/keyboard-keys-not-working/": {
-  "hash": "a9f77a0cba0cc1bb332b3982e5ffc879",
-  "date": "2026-11-13"
+  "hash": "56e4f75d88b96bdc18eb6ab576171b24",
+  "date": "2026-11-15"
  },
  "/fr/guides/mic-camera-not-working-mac/": {
   "hash": "83ac30f492738c108d1ef95bb90a43c1",
@@ -376,16 +376,16 @@
   "date": "2026-11-13"
  },
  "/fr/guides/mouse-double-clicking/": {
-  "hash": "a8519af6faadda67ccd3adb73903d09a",
-  "date": "2026-11-13"
+  "hash": "f90b5c4492e62d6ee039de8235acbe02",
+  "date": "2026-11-15"
  },
  "/fr/guides/no-sound-speakers-headphones/": {
-  "hash": "f6cca38cae25de06476dc6650fa67ceb",
-  "date": "2026-11-13"
+  "hash": "cd304c9ea86d094f9be1c84d48ac8319",
+  "date": "2026-11-15"
  },
  "/fr/guides/phone-mic-not-working/": {
-  "hash": "b21f3bb1fa89d79738943da788b1536a",
-  "date": "2026-11-13"
+  "hash": "76f52a3520a699fbd0aaaa7fc8290824",
+  "date": "2026-11-15"
  },
  "/fr/guides/webcam-not-working/": {
   "hash": "dd61cffbb2d717c43cf2c9eb7c639bb5",
@@ -432,12 +432,12 @@
   "date": "2026-11-13"
  },
  "/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "1c1a70206507188ce8ed73a3d5926d4a",
-  "date": "2026-11-13"
+  "hash": "c4d700dfd1d4f2538501c2707495afb6",
+  "date": "2026-11-15"
  },
  "/guides/keyboard-keys-not-working/": {
-  "hash": "49a6244946f2767e5d193f8abf6f5e15",
-  "date": "2026-11-13"
+  "hash": "c1d28ebea180c1011b34abac8f9c2576",
+  "date": "2026-11-15"
  },
  "/guides/mic-camera-not-working-mac/": {
   "hash": "3bc26646a4398fb18da36b35ff838631",
@@ -452,16 +452,16 @@
   "date": "2026-11-13"
  },
  "/guides/mouse-double-clicking/": {
-  "hash": "a4e6c27eeb01f5a5a0800abeb8b56e93",
-  "date": "2026-11-13"
+  "hash": "eeb72c1a77b41e30668327a556642878",
+  "date": "2026-11-15"
  },
  "/guides/no-sound-speakers-headphones/": {
-  "hash": "37981d5c48d15406f77013825e337d19",
-  "date": "2026-11-13"
+  "hash": "eb0679cc2214452598ce6ac1891ed445",
+  "date": "2026-11-15"
  },
  "/guides/phone-mic-not-working/": {
-  "hash": "7b7a6234f18ec2c761e50cf13aefff49",
-  "date": "2026-11-13"
+  "hash": "44cf1ae7783e74e8f9e3c2abd281a55d",
+  "date": "2026-11-15"
  },
  "/guides/webcam-not-working/": {
   "hash": "cb8d369695c5b1ce734da4d940c5315c",
@@ -496,12 +496,12 @@
   "date": "2026-11-13"
  },
  "/he/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "50a9c0ade80f95f88c2d2b691b63ba7f",
-  "date": "2026-11-13"
+  "hash": "759f3f76c0c7d8578bd7697b89c01ed7",
+  "date": "2026-11-15"
  },
  "/he/guides/keyboard-keys-not-working/": {
-  "hash": "ddfa6d0e6f46733bf5020c0a6c5aa10a",
-  "date": "2026-11-13"
+  "hash": "45ce9090cbc072f23613a54c0f7228d8",
+  "date": "2026-11-15"
  },
  "/he/guides/mic-camera-not-working-mac/": {
   "hash": "a9a4e87609fa3da19b4479c61585c104",
@@ -516,16 +516,16 @@
   "date": "2026-11-13"
  },
  "/he/guides/mouse-double-clicking/": {
-  "hash": "2539388107cb0c954f95928149339ded",
-  "date": "2026-11-13"
+  "hash": "584fcdb6768f2fdaf9e41c38d893eb97",
+  "date": "2026-11-15"
  },
  "/he/guides/no-sound-speakers-headphones/": {
-  "hash": "b126bc49bb122940155629a040c44aaf",
-  "date": "2026-11-13"
+  "hash": "48ee86b5dccafb23ce3d217536be596c",
+  "date": "2026-11-15"
  },
  "/he/guides/phone-mic-not-working/": {
-  "hash": "7cb37d6ca767ac5c1317567620f9f52b",
-  "date": "2026-11-13"
+  "hash": "361e9207a9f38a85be47d0e19ccdee27",
+  "date": "2026-11-15"
  },
  "/he/guides/webcam-not-working/": {
   "hash": "0d0b2a2b0795aa5e8b068b8b54cd360c",
@@ -600,12 +600,12 @@
   "date": "2026-11-13"
  },
  "/hi/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "6da6dc8f876c815cc795cbbd610876d0",
-  "date": "2026-11-13"
+  "hash": "5f563f2b2276b9c0c7efd767d9031bd8",
+  "date": "2026-11-15"
  },
  "/hi/guides/keyboard-keys-not-working/": {
-  "hash": "c81efe05ffc69074383bf166ecc3d3e1",
-  "date": "2026-11-13"
+  "hash": "7fe523c60422961cde30952032dbbee1",
+  "date": "2026-11-15"
  },
  "/hi/guides/mic-camera-not-working-mac/": {
   "hash": "09f170d97c64d335f17a64ceabb3cff3",
@@ -620,16 +620,16 @@
   "date": "2026-11-13"
  },
  "/hi/guides/mouse-double-clicking/": {
-  "hash": "77abdd91d5796da4041b4d2197f6fc1c",
-  "date": "2026-11-13"
+  "hash": "4f8ba7ccf6b4cffdd4b9f8ac799b2ded",
+  "date": "2026-11-15"
  },
  "/hi/guides/no-sound-speakers-headphones/": {
-  "hash": "7a30f91f7dbc723bbcd60b810adc47d0",
-  "date": "2026-11-13"
+  "hash": "d190ed68ddb6535b7e3c9d1c33a801c0",
+  "date": "2026-11-15"
  },
  "/hi/guides/phone-mic-not-working/": {
-  "hash": "601c456826145deebc56c34b19c12f15",
-  "date": "2026-11-13"
+  "hash": "6ff23237f50eb110402de4674ddcfcd6",
+  "date": "2026-11-15"
  },
  "/hi/guides/webcam-not-working/": {
   "hash": "3b761f4f0c52173465567a8f45192d8a",
@@ -700,12 +700,12 @@
   "date": "2026-11-13"
  },
  "/id/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "42b32ea9b1995f8e1803b3fb0e0682d1",
-  "date": "2026-11-13"
+  "hash": "49169f7ffbec7d5fd69728e1ef5a8111",
+  "date": "2026-11-15"
  },
  "/id/guides/keyboard-keys-not-working/": {
-  "hash": "d5c9cfd333ae26f0b17aea0c3be004ce",
-  "date": "2026-11-13"
+  "hash": "00dfa2db06acbb5c1d2cbbb2e2d7a2d9",
+  "date": "2026-11-15"
  },
  "/id/guides/mic-camera-not-working-mac/": {
   "hash": "b1aa53832b4c57ba956985df4307096d",
@@ -720,16 +720,16 @@
   "date": "2026-11-13"
  },
  "/id/guides/mouse-double-clicking/": {
-  "hash": "0fa92263c87632789e7346dc1e665ff1",
-  "date": "2026-11-13"
+  "hash": "9814ff179880afb70149511a8e4d65f6",
+  "date": "2026-11-15"
  },
  "/id/guides/no-sound-speakers-headphones/": {
-  "hash": "56e2729b671f14dbadb1a1940b356ac1",
-  "date": "2026-11-13"
+  "hash": "d13ebb4054ad5882cb28690a8b8f366a",
+  "date": "2026-11-15"
  },
  "/id/guides/phone-mic-not-working/": {
-  "hash": "60a27d8f0f6924824207617bbc58827e",
-  "date": "2026-11-13"
+  "hash": "23dbeb9734883614427803d5a42c7c9f",
+  "date": "2026-11-15"
  },
  "/id/guides/webcam-not-working/": {
   "hash": "b7a7ce8173fa695fdf8c502ca7281224",
@@ -804,12 +804,12 @@
   "date": "2026-11-13"
  },
  "/it/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "004b7a283bad0a222661608bfa4f374f",
-  "date": "2026-11-13"
+  "hash": "e9575abbc9083ad4978a2726327adb62",
+  "date": "2026-11-15"
  },
  "/it/guides/keyboard-keys-not-working/": {
-  "hash": "643bfe9000f690698aad74fc562db618",
-  "date": "2026-11-13"
+  "hash": "bbc3d1682fd37c57468c61edb09c6c37",
+  "date": "2026-11-15"
  },
  "/it/guides/mic-camera-not-working-mac/": {
   "hash": "77c5a23b4f8fc1450f7329f84fee2981",
@@ -824,16 +824,16 @@
   "date": "2026-11-13"
  },
  "/it/guides/mouse-double-clicking/": {
-  "hash": "8d8c899c68f32ff9178f7fa5ecac2332",
-  "date": "2026-11-13"
+  "hash": "7a1d96eea3d0d46400352d934df8cba4",
+  "date": "2026-11-15"
  },
  "/it/guides/no-sound-speakers-headphones/": {
-  "hash": "e0813927623bee04eae5b69e4a8f2e87",
-  "date": "2026-11-13"
+  "hash": "19603c0721f19eab34bf658762e776a5",
+  "date": "2026-11-15"
  },
  "/it/guides/phone-mic-not-working/": {
-  "hash": "58246a6e99f0b33977cec06d647abb53",
-  "date": "2026-11-13"
+  "hash": "9388a99e072e29114447ca224c76300a",
+  "date": "2026-11-15"
  },
  "/it/guides/webcam-not-working/": {
   "hash": "3f016a49f053993ccf7a39341022377e",
@@ -904,12 +904,12 @@
   "date": "2026-11-13"
  },
  "/ja/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "417beb7d42b11ad2157c0977212631d7",
-  "date": "2026-11-13"
+  "hash": "295b7aaa90fbbb22c600d18c23171535",
+  "date": "2026-11-15"
  },
  "/ja/guides/keyboard-keys-not-working/": {
-  "hash": "5590c460444cce2a5528993a5ea0b6ec",
-  "date": "2026-11-13"
+  "hash": "8cfdc4df1980ddde3115742a6dd2404e",
+  "date": "2026-11-15"
  },
  "/ja/guides/mic-camera-not-working-mac/": {
   "hash": "35282b35f2bb843bc9d182d423af6740",
@@ -924,16 +924,16 @@
   "date": "2026-11-13"
  },
  "/ja/guides/mouse-double-clicking/": {
-  "hash": "c79fb7dd5942ac029796861f5d36602c",
-  "date": "2026-11-13"
+  "hash": "37889776bb704cd030a2f34fbf3285bb",
+  "date": "2026-11-15"
  },
  "/ja/guides/no-sound-speakers-headphones/": {
-  "hash": "0609ae850e772f672fac09d5112fdc2e",
-  "date": "2026-11-13"
+  "hash": "5f9f5d0230f68310d08fae64489e33bb",
+  "date": "2026-11-15"
  },
  "/ja/guides/phone-mic-not-working/": {
-  "hash": "3615c4cc285a819dc2ead3daedc8addd",
-  "date": "2026-11-13"
+  "hash": "38e7daa1a0bd7e8e87d1c2b3f8a43f65",
+  "date": "2026-11-15"
  },
  "/ja/guides/webcam-not-working/": {
   "hash": "aa8244b00e35eac96ef7dbf4a3082327",
@@ -1020,12 +1020,12 @@
   "date": "2026-11-13"
  },
  "/pt/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "68094b3e3c1f3eb9ae5b18bee9f59494",
-  "date": "2026-11-13"
+  "hash": "70d29a75cf0a5b46f33d649765ab5a07",
+  "date": "2026-11-15"
  },
  "/pt/guides/keyboard-keys-not-working/": {
-  "hash": "2c03fcfd1ad264be5e3cffc1a8007ff6",
-  "date": "2026-11-13"
+  "hash": "3f08062dac765648815085bb7ea67cb2",
+  "date": "2026-11-15"
  },
  "/pt/guides/mic-camera-not-working-mac/": {
   "hash": "ab28778c7e9d64608df74eaa6278c136",
@@ -1040,16 +1040,16 @@
   "date": "2026-11-13"
  },
  "/pt/guides/mouse-double-clicking/": {
-  "hash": "ed3e875fde69f4b06265162c5234c2d6",
-  "date": "2026-11-13"
+  "hash": "ccaa484234ce20bb772360915cf611fa",
+  "date": "2026-11-15"
  },
  "/pt/guides/no-sound-speakers-headphones/": {
-  "hash": "fadfa00d6face7bca654869f1e1b4a84",
-  "date": "2026-11-13"
+  "hash": "d20dbf9f0ddf7d7dc72e88ee9ec1ac2a",
+  "date": "2026-11-15"
  },
  "/pt/guides/phone-mic-not-working/": {
-  "hash": "7533f5dd4dcda7b6f120f8e71c5d2c96",
-  "date": "2026-11-13"
+  "hash": "0c67d8d2eedf16db7d086151c75fa861",
+  "date": "2026-11-15"
  },
  "/pt/guides/webcam-not-working/": {
   "hash": "2e147f78dc7a449e2877a687d58ec412",
@@ -1120,12 +1120,12 @@
   "date": "2026-11-13"
  },
  "/ru/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "f2fec729727a716acb8355b2fe73a8d5",
-  "date": "2026-11-13"
+  "hash": "9fdf83aa0e99151de4769ed7dfafa9e0",
+  "date": "2026-11-15"
  },
  "/ru/guides/keyboard-keys-not-working/": {
-  "hash": "4337065fec0cf9a27f8d350a88fce897",
-  "date": "2026-11-13"
+  "hash": "448d7bcf4c44f2e72829722d762d022f",
+  "date": "2026-11-15"
  },
  "/ru/guides/mic-camera-not-working-mac/": {
   "hash": "3eeb7940d985f34b91ff7989a579b791",
@@ -1140,16 +1140,16 @@
   "date": "2026-11-13"
  },
  "/ru/guides/mouse-double-clicking/": {
-  "hash": "a491ec44b4aa516f94b02cd5ebfc5a5e",
-  "date": "2026-11-13"
+  "hash": "1ff552c93f0084686aa3c193b194349c",
+  "date": "2026-11-15"
  },
  "/ru/guides/no-sound-speakers-headphones/": {
-  "hash": "d9631c6450c970013a856a30ff4d6540",
-  "date": "2026-11-13"
+  "hash": "d3771f9f7d710ff96ffc206ffb9cb420",
+  "date": "2026-11-15"
  },
  "/ru/guides/phone-mic-not-working/": {
-  "hash": "15c2c9ab608230f3178654f8f3496541",
-  "date": "2026-11-13"
+  "hash": "7c9ba1f8f88e15d3f030da6ce716c1ad",
+  "date": "2026-11-15"
  },
  "/ru/guides/webcam-not-working/": {
   "hash": "e1acd4482caa5721aa84e48364515f57",
@@ -1224,12 +1224,12 @@
   "date": "2026-11-13"
  },
  "/tr/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "09934615337db3cfe3d6492a6b930979",
-  "date": "2026-11-13"
+  "hash": "34c3128f8b9b90c1930e97691223ba15",
+  "date": "2026-11-15"
  },
  "/tr/guides/keyboard-keys-not-working/": {
-  "hash": "18f68d0e1e0c4b0e1b19dbe11e3e7c75",
-  "date": "2026-11-13"
+  "hash": "47f95cb6a096d571aaaa157ea138fe24",
+  "date": "2026-11-15"
  },
  "/tr/guides/mic-camera-not-working-mac/": {
   "hash": "849aebfc68c98942fee60f46de1cf7ff",
@@ -1244,16 +1244,16 @@
   "date": "2026-11-13"
  },
  "/tr/guides/mouse-double-clicking/": {
-  "hash": "7fad2169f53e265222f0b1b4423b0975",
-  "date": "2026-11-13"
+  "hash": "0c4b1ea0d7bc697c632ecdb6504935a0",
+  "date": "2026-11-15"
  },
  "/tr/guides/no-sound-speakers-headphones/": {
-  "hash": "dee86b2e12beb55455e33068496e386d",
-  "date": "2026-11-13"
+  "hash": "3e1f682a8ee66751b99aaec64bb28aea",
+  "date": "2026-11-15"
  },
  "/tr/guides/phone-mic-not-working/": {
-  "hash": "0a77e2c71e5865372fe2eee83b6ecc4c",
-  "date": "2026-11-13"
+  "hash": "b4852d0140a97abd68b3f7af97173239",
+  "date": "2026-11-15"
  },
  "/tr/guides/webcam-not-working/": {
   "hash": "b3f1b0744f6cfc65bdf43944c3b7c7e9",
