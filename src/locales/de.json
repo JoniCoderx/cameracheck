@@ -211,7 +211,102 @@
     "colRed": "Rot",
     "colGreen": "Grün",
     "colBlue": "Blau",
-    "colGray": "Grau"
+    "colGray": "Grau",
+    "unitSec": "s",
+    "gpTool": "Controller-Tester",
+    "gpHint": "Schließen Sie einen Controller per USB oder Bluetooth an und drücken Sie eine beliebige Taste.",
+    "gpWaiting": "Kein Controller gefunden. Schließen Sie einen an und drücken Sie eine Taste, um ihn zu aktivieren.",
+    "gpName": "Controller",
+    "gpButtons": "Getestete Tasten",
+    "gpLeft": "Linker Stick",
+    "gpRight": "Rechter Stick",
+    "gpDrift": "Stick-Drift",
+    "gpDriftNone": "Keiner gefunden",
+    "gpDriftTip": "Ein Stick meldet Bewegung, obwohl Sie ihn nicht berühren. Das ist Stick-Drift. Reinigen Sie den Bereich um den Stick mit Druckluft oder prüfen Sie die Garantie.",
+    "gpVibrate": "Vibration testen",
+    "gpNoVibrate": "Vibration wird für diesen Controller in diesem Browser nicht unterstützt.",
+    "gpNote": "Funktioniert mit Xbox, PlayStation, Switch Pro und den meisten USB-Controllern in Chrome, Edge und Firefox. Für den Drift-Check lassen Sie beide Sticks los: Der Wert sollte auf fast 0 % zurückgehen.",
+    "startGp": "Controller-Test starten",
+    "tyTool": "Tipptest",
+    "tyHint": "Tippen Sie die Wörter unten ab. Der Timer startet mit dem ersten Tastendruck. Drücken Sie nach jedem Wort die Leertaste.",
+    "tyWpm": "WPM",
+    "tyAcc": "Genauigkeit",
+    "tyTime": "Zeit",
+    "tyWrong": "Fehler",
+    "tyBest": "Bestwert",
+    "tyRestart": "Neu starten",
+    "tyInput": "Hier lostippen",
+    "tyDone": "Zeit abgelaufen!",
+    "tyResult": "{wpm} Wörter pro Minute bei {acc} Genauigkeit.",
+    "tyNote": "WPM zählt korrekt getippte Zeichen geteilt durch 5 pro Minute. Die meisten Erwachsenen schaffen 35 bis 45 WPM.",
+    "startTy": "Tipptest starten",
+    "tyWords": "der die das und ist nicht ein eine ich du er sie es wir ihr mit auf für von zu den dem des im in an aus bei nach über unter vor hinter neben haus hund katze auto zeit tag nacht jahr woche monat heute morgen gestern immer nie oft schon noch jetzt hier dort dann wenn weil aber oder auch nur sehr gut schlecht groß klein alt neu jung lang kurz hoch tief warm kalt schnell langsam früh spät viel wenig mehr alle alles nichts etwas machen gehen kommen sehen sagen geben nehmen finden denken wissen haben sein werden können müssen sollen wollen dürfen mögen lesen schreiben spielen lernen arbeiten wohnen leben essen trinken schlafen laufen fahren fliegen kaufen helfen fragen antworten hören sprechen rufen bringen stellen legen liegen stehen sitzen öffnen schließen wasser brot milch kaffee tee apfel obst fisch fleisch käse butter zucker salz stadt land dorf straße weg platz schule buch heft stift tisch stuhl tür fenster zimmer küche garten baum blume wald berg see meer fluss sonne mond stern himmel wetter regen schnee wind farbe rot blau grün gelb weiß schwarz mann frau kind vater mutter bruder schwester freund familie name frage antwort spiel musik bild film geld arbeit hand kopf auge ohr mund fuß herz welt liebe glück ende anfang woher wohin warum wie was wer wo wann danke bitte hallo ja nein schön müde froh böse ganz halb erst zweite drei vier fünf zehn hundert zug bus rad brief karte uhr licht feuer luft erde tier vogel pferd kuh maus ball lied wort satz seite punkt teil art form recht",
+    "cpsTool": "Klicktest",
+    "cpsHint": "Klicken Sie so schnell Sie können in das Feld. Der Timer startet mit dem ersten Klick.",
+    "cpsArea": "Hier klicken zum Starten",
+    "cpsClicks": "Klicks",
+    "cpsCps": "CPS",
+    "cpsAgain": "Klicken für neuen Versuch",
+    "cpsResult": "{cps} Klicks pro Sekunde ({n} Klicks in {s} Sekunden).",
+    "cpsR1": "Entspannt",
+    "cpsR2": "Durchschnitt",
+    "cpsR3": "Schnell",
+    "cpsR4": "Sehr schnell",
+    "cpsNote": "Die meisten Menschen klicken 6 bis 8 Mal pro Sekunde. Über 10 ist sehr schnell. Tippen auf einem Touchscreen zählt auch.",
+    "startCps": "Klicktest starten",
+    "rtTool": "Reaktionstest",
+    "rtHint": "Klicken oder tippen Sie, sobald das Feld grün wird. Fünf Versuche.",
+    "rtStart": "Hier klicken zum Starten",
+    "rtWait": "Warten Sie auf Grün…",
+    "rtGo": "Klick!",
+    "rtEarly": "Zu früh! Klicken für neuen Versuch.",
+    "rtShot": "{ms} ms. Klicken zum Weitermachen.",
+    "rtDone": "Ihr Durchschnitt: {ms} ms. Klicken für neuen Versuch.",
+    "rtAvg": "Durchschnitt",
+    "rtBest": "Bestwert",
+    "rtTries": "Versuche",
+    "rtMs": "ms",
+    "rtNote": "Die meisten Menschen reagieren in 200 bis 300 ms. Bildschirm, Maus und Browser fügen ein paar Millisekunden hinzu.",
+    "startRt": "Reaktionstest starten",
+    "hzTool": "Bildwiederholrate-Test",
+    "hzHint": "Die tatsächliche Bildwiederholrate Ihres Bildschirms, live im Browser gemessen.",
+    "hzFrame": "Frame-Zeit",
+    "hzDropped": "Übersprungene Frames",
+    "hzMotion": "Bewegungsvergleich",
+    "hzYour": "Ihr Bildschirm",
+    "hzTip": "Gemessen: {hz} Hz. Wenn Ihr Monitor mehr unterstützt, stellen Sie es in Windows unter Einstellungen → System → Bildschirm → Erweiterte Anzeige ein und verwenden Sie DisplayPort oder ein schnelles HDMI-Kabel.",
+    "hzNote": "Schließen Sie andere Tabs für einen stabilen Messwert. Schließen Sie bei Laptops das Ladegerät an: Der Energiesparmodus kann die Rate auf 60 Hz senken.",
+    "startHz": "Bildwiederholrate testen",
+    "hrTool": "Hörtest",
+    "hrHint": "Verwenden Sie Kopfhörer. Starten Sie den Frequenzlauf und drücken Sie die Taste, sobald Sie den Ton nicht mehr hören.",
+    "hrWarn": "Beginnen Sie mit geringer Lautstärke und erhöhen Sie sie langsam. Hohe Töne können viel lauter klingen als erwartet.",
+    "hrStart": "Frequenzlauf starten",
+    "hrStop": "Ich höre nichts mehr",
+    "hrFreq": "Frequenz",
+    "hrVolume": "Lautstärke",
+    "hrEar": "Ohr",
+    "hrLeft": "Links",
+    "hrBoth": "Beide",
+    "hrRight": "Rechts",
+    "hrHighest": "Höchster gehörter Ton",
+    "hrTones": "Einzelnen Ton abspielen",
+    "hrResult": "Sie hören bis {f}. Das ist typisch für Menschen {age}.",
+    "hrUnder": "unter {n}",
+    "hrOver": "über {n}",
+    "hrNote": "Dies ist kein medizinischer Test. Ihre Kopfhörer oder Lautsprecher geben die höchsten Töne eventuell nicht wieder. Wenn Sie einen Hörverlust bemerken, gehen Sie zum Arzt.",
+    "startHr": "Hörtest starten",
+    "weTool": "Wasser auswerfen",
+    "weHint": "Spielt einen tiefen, pulsierenden Ton ab, der den Lautsprecher vibrieren lässt und Wasser hinausdrückt.",
+    "weStart": "Wasser auswerfen",
+    "weStop": "Stopp",
+    "weMode": "Klang",
+    "weTone": "165-Hz-Ton",
+    "weSweep": "Tiefer Sweep",
+    "we1": "Entfernen Sie Kopfhörer und drehen Sie die Lautstärke ganz auf.",
+    "we2": "Halten Sie das Handy mit dem Lautsprecher nach unten.",
+    "we3": "Drücken Sie die Taste und lassen Sie den Ton laufen. Wiederholen Sie es 2 bis 3 Mal, wenn der Klang noch dumpf ist.",
+    "weNote": "Das kann helfen, Wasser hinauszudrücken, repariert aber keinen beschädigten Lautsprecher. Bleibt der Klang nach einigen Versuchen dumpf, lassen Sie das Handy ein paar Stunden trocknen.",
+    "startWe": "Jetzt Wasser auswerfen"
   },
   "pages": {
     "home": {
@@ -1074,6 +1169,375 @@
         {
           "q": "Wie viele Pixelfehler sind akzeptabel?",
           "a": "Das hängt vom Hersteller ab. Viele erlauben ein paar, manche garantieren aber null helle Pixel. Prüfen Sie die Garantie Ihres Modells."
+        }
+      ]
+    },
+    "gamepad": {
+      "card": {
+        "name": "Controller-Test",
+        "desc": "Tasten, Sticks und Drift."
+      },
+      "title": "Controller testen online: Gamepad-Test & Stick-Drift",
+      "description": "Kostenloser Gamepad-Tester für Xbox-, PlayStation- und Switch-Controller. Prüfen Sie Tasten, Trigger, Analogsticks, Stick-Drift und Vibration im Browser.",
+      "h1Html": "Online-<span class=\"grad\">Controller-Test</span>",
+      "lead": "Schließen Sie Ihren Controller an oder koppeln Sie ihn und drücken Sie eine Taste. Sehen Sie jede Taste, jeden Trigger und Stick live und finden Sie Stick-Drift in Sekunden.",
+      "article": [
+        {
+          "h": "So testen Sie Ihren Controller",
+          "ol": [
+            "Verbinden Sie den Controller per USB-Kabel oder Bluetooth.",
+            "Drücken Sie eine beliebige Taste, damit der Browser ihn erkennt.",
+            "Drücken Sie jede Taste einmal. Funktionierende Tasten werden grün.",
+            "Bewegen Sie beide Sticks in vollen Kreisen, lassen Sie dann los und beobachten Sie den Drift-Wert."
+          ]
+        },
+        {
+          "h": "Was ist Stick-Drift?",
+          "p": [
+            "Bei Stick-Drift meldet ein Analogstick Bewegung, obwohl Sie ihn nicht berühren: Ihre Figur läuft oder die Kamera dreht sich von allein. Ursache sind Verschleiß oder Schmutz im Stick. Lassen Sie beide Sticks los: Der Wert sollte auf 0 % oder knapp darüber fallen. Bleibt er bei 8 % oder mehr, meldet der Test Drift."
+          ]
+        },
+        {
+          "h": "Welche Controller funktionieren?",
+          "p": [
+            "Xbox One und Series Controller, PlayStation 4 und 5 (DualShock 4 und DualSense), Nintendo Switch Pro, 8BitDo und die meisten USB-Gamepads funktionieren in Chrome, Edge und Firefox. Safari unterstützt die meisten ebenfalls. Vibration funktioniert in Chrome und Edge mit Xbox- und PlayStation-Controllern."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ist dieser Gamepad-Tester kostenlos?",
+          "a": "Ja. Er ist kostenlos und läuft in Ihrem Browser, ohne Installation."
+        },
+        {
+          "q": "Warum wird mein Controller nicht angezeigt?",
+          "a": "Drücken Sie nach dem Verbinden eine Taste. Browser zeigen einen Controller erst nach dem ersten Tastendruck an. Erscheint er trotzdem nicht, probieren Sie ein anderes USB-Kabel oder einen anderen Anschluss."
+        },
+        {
+          "q": "Wie behebe ich Stick-Drift?",
+          "a": "Blasen Sie Druckluft um die Basis des Sticks, während Sie ihn kreisen lassen, und kalibrieren Sie den Controller in den Einstellungen der Konsole oder von Windows neu. Bleibt der Drift, muss das Stick-Modul repariert werden, oder der Controller fällt noch unter die Garantie."
+        },
+        {
+          "q": "Kann ich einen PS5-Controller am PC testen?",
+          "a": "Ja. Verbinden Sie den DualSense per USB-C oder Bluetooth und drücken Sie eine Taste. Alle Tasten, Trigger und Sticks werden angezeigt."
+        }
+      ]
+    },
+    "typing": {
+      "card": {
+        "name": "Tipptest",
+        "desc": "Wörter pro Minute und Genauigkeit."
+      },
+      "title": "Tipptest: Schreibgeschwindigkeit online testen (WPM)",
+      "description": "Kostenloser Tipptest. Tippen Sie 15, 30 oder 60 Sekunden und erhalten Sie Ihre Wörter pro Minute (WPM) und Genauigkeit. Ohne Anmeldung, auf jeder Tastatur.",
+      "h1Html": "Online-<span class=\"grad\">Tipptest</span>",
+      "lead": "Wie schnell tippen Sie? Machen Sie den Test eine Minute lang und sehen Sie sofort Ihre Wörter pro Minute und Ihre Genauigkeit.",
+      "article": [
+        {
+          "h": "So funktioniert der Tipptest",
+          "ol": [
+            "Wählen Sie 15, 30 oder 60 Sekunden.",
+            "Tippen Sie die Wörter ab. Der Timer startet mit dem ersten Tastendruck.",
+            "Drücken Sie nach jedem Wort die Leertaste. Richtige Wörter werden grün, Fehler rot.",
+            "Nach Ablauf der Zeit sehen Sie WPM, Genauigkeit und Ihren Bestwert."
+          ]
+        },
+        {
+          "h": "Was ist eine gute Tippgeschwindigkeit?",
+          "p": [
+            "Die meisten Erwachsenen tippen 35 bis 45 Wörter pro Minute. 60 WPM sind für Büroarbeit schnell, professionelle Schreibkräfte erreichen meist 70 bis 90 WPM. Genauigkeit zählt genauso viel wie Tempo: Über 95 % ist gut."
+          ]
+        },
+        {
+          "h": "So tippen Sie schneller",
+          "ul": [
+            "Lassen Sie die Finger auf der Grundreihe (ASDF und JKLÖ) und nutzen Sie alle zehn Finger.",
+            "Schauen Sie auf den Bildschirm, nicht auf die Tastatur.",
+            "Üben Sie lieber jeden Tag ein paar Minuten als einmal pro Woche.",
+            "Werden Sie langsamer, bis Sie weniger Fehler machen. Tempo kommt mit Genauigkeit."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Wie wird WPM berechnet?",
+          "a": "Korrekt getippte Zeichen inklusive Leerzeichen werden durch 5 geteilt, um Wörter zu erhalten, und dann durch die Minuten des Tests."
+        },
+        {
+          "q": "Ist dieser Tipptest kostenlos?",
+          "a": "Ja. Er ist kostenlos, ohne Anmeldung und ohne Begrenzung der Versuche."
+        },
+        {
+          "q": "Funktioniert er auf dem Handy?",
+          "a": "Ja, aber Handytastaturen sind langsamer als eine echte Tastatur, daher fällt Ihr Ergebnis niedriger aus."
+        },
+        {
+          "q": "Wird mein Bestwert gespeichert?",
+          "a": "Ja. Ihr Bestwert für jede Testdauer wird nur in diesem Browser gespeichert."
+        }
+      ]
+    },
+    "cps": {
+      "card": {
+        "name": "Klicktest",
+        "desc": "Klicks pro Sekunde (CPS)."
+      },
+      "title": "Klicktest: CPS Test für Klicks pro Sekunde online",
+      "description": "Kostenloser Klicktest. Klicken Sie 1, 5, 10, 30 oder 60 Sekunden so schnell wie möglich und sehen Sie Ihre Klicks pro Sekunde (CPS). Für Maus, Touchpad, Touch.",
+      "h1Html": "Online-<span class=\"grad\">Klicktest</span>",
+      "lead": "Wie schnell können Sie klicken? Wählen Sie eine Zeit, klicken Sie in das Feld und erhalten Sie Ihre Klicks pro Sekunde.",
+      "article": [
+        {
+          "h": "So funktioniert der CPS-Test",
+          "ol": [
+            "Wählen Sie 1, 5, 10, 30 oder 60 Sekunden.",
+            "Klicken Sie so schnell Sie können in das Feld. Der Timer startet mit dem ersten Klick.",
+            "Nach Ablauf der Zeit sehen Sie Ihre Klicks pro Sekunde und Ihren Bestwert."
+          ]
+        },
+        {
+          "h": "Was ist ein guter CPS-Wert?",
+          "p": [
+            "Die meisten Menschen klicken 6 bis 8 Mal pro Sekunde. 10 oder mehr ist sehr schnell. Gamer mit Techniken wie Jitter-Klicken oder Butterfly-Klicken erreichen kurzzeitig 12 bis 20 CPS."
+          ]
+        },
+        {
+          "h": "Klicktechniken",
+          "ul": [
+            "Normales Klicken: ein Finger, schont die Hand, meist 6 bis 8 CPS.",
+            "Jitter-Klicken: Der Arm wird angespannt, sodass der Finger auf der Taste vibriert, oft 10 bis 14 CPS.",
+            "Butterfly-Klicken: zwei Finger klicken abwechselnd auf eine Taste, oft 15 CPS oder mehr. Manche Mäuse werten das als Doppelklicks."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Was bedeutet CPS?",
+          "a": "CPS steht für Clicks per Second, also Klicks pro Sekunde: wie oft Sie die Maustaste in einer Sekunde drücken."
+        },
+        {
+          "q": "Ist der CPS-Test kostenlos?",
+          "a": "Ja. Er ist kostenlos, ohne Anmeldung und mit unbegrenzten Versuchen."
+        },
+        {
+          "q": "Kann ich ein Touchpad oder Handy verwenden?",
+          "a": "Ja. Tippen auf einem Touchpad oder Touchscreen zählt als Klick."
+        },
+        {
+          "q": "Warum registriert meine Maus zusätzliche Klicks?",
+          "a": "Ein abgenutzter Schalter kann bei einem Druck zwei Klicks senden. Prüfen Sie das mit dem Maustest auf dieser Seite, der versehentliche Doppelklicks erkennt."
+        }
+      ]
+    },
+    "reaction": {
+      "card": {
+        "name": "Reaktionstest",
+        "desc": "Wie schnell reagieren Sie?"
+      },
+      "title": "Reaktionstest: Reaktionszeit online in ms messen",
+      "description": "Kostenloser Reaktionstest. Klicken Sie, sobald das Feld grün wird, und sehen Sie Ihre Reaktionszeit in Millisekunden. Fünf Versuche, Durchschnitt, Bestwert.",
+      "h1Html": "Online-<span class=\"grad\">Reaktionstest</span>",
+      "lead": "Klicken Sie, sobald das Feld grün wird. Fünf Versuche ergeben Ihre durchschnittliche Reaktionszeit in Millisekunden.",
+      "article": [
+        {
+          "h": "So funktioniert der Reaktionstest",
+          "ol": [
+            "Klicken Sie auf das Feld, um zu starten. Es wird rot.",
+            "Warten Sie. Nach einer zufälligen Pause wird es grün.",
+            "Klicken oder tippen Sie so schnell wie möglich. Ein Klick auf Rot gilt als zu früh.",
+            "Nach fünf Versuchen sehen Sie Ihren Durchschnitt und Ihre Bestzeit."
+          ]
+        },
+        {
+          "h": "Was ist eine gute Reaktionszeit?",
+          "p": [
+            "Die durchschnittliche visuelle Reaktionszeit liegt bei etwa 250 ms. Unter 200 ms ist schnell, viele Gamer erreichen 150 bis 200 ms. Werte über 300 ms sind bei Müdigkeit oder Ablenkung normal."
+          ]
+        },
+        {
+          "h": "Warum Ihr Setup das Ergebnis beeinflusst",
+          "p": [
+            "Jedes Ergebnis enthält ein paar Millisekunden von Bildschirm, Maus und Browser. Ein 60-Hz-Bildschirm zeigt alle 16,7 ms ein neues Bild, ein 144-Hz-Bildschirm alle 7 ms. Schnellere Bildschirme können also etwas bessere Werte liefern."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Wie hoch ist die durchschnittliche Reaktionszeit des Menschen?",
+          "a": "Etwa 250 Millisekunden für ein visuelles Signal wie in diesem Test."
+        },
+        {
+          "q": "Kann ich meine Reaktionszeit verbessern?",
+          "a": "Ja, ein wenig. Schlaf, Übung sowie ein schneller Bildschirm und eine schnelle Maus helfen. Koffein und Aufwärmen können kurzfristig helfen."
+        },
+        {
+          "q": "Funktioniert er auf dem Handy?",
+          "a": "Ja. Tippen Sie auf das Feld. Touchscreens können im Vergleich zur Maus etwas Verzögerung hinzufügen."
+        },
+        {
+          "q": "Kann ich die Tastatur verwenden?",
+          "a": "Ja. Wählen Sie das Feld aus und drücken Sie Leertaste oder Enter statt zu klicken."
+        }
+      ]
+    },
+    "refresh": {
+      "card": {
+        "name": "Hz-Test",
+        "desc": "Echte Hz Ihres Bildschirms."
+      },
+      "title": "Hz Test: Bildwiederholrate des Monitors prüfen (144 Hz)",
+      "description": "Kostenloser Hz-Test. Sehen Sie die echte Bildwiederholrate Ihres Monitors, Frame-Zeit und übersprungene Frames sowie einen Vergleich mit 60 und 30 fps.",
+      "h1Html": "Online-<span class=\"grad\">Bildwiederholrate-Test</span>",
+      "lead": "Prüfen Sie, ob Ihr 120-, 144- oder 240-Hz-Bildschirm wirklich mit voller Geschwindigkeit läuft. Das Ergebnis erscheint sofort.",
+      "article": [
+        {
+          "h": "So funktioniert der Test",
+          "p": [
+            "Der Browser zeichnet bei jeder Aktualisierung des Bildschirms ein neues Bild. Der Test misst Hunderte Frames und zeigt das Ergebnis in Hz, zusammen mit der Frame-Zeit und übersprungenen Frames. Die bewegten Blöcke vergleichen die Bewegung auf Ihrem Bildschirm mit 60 und 30 Bildern pro Sekunde."
+          ]
+        },
+        {
+          "h": "Warum zeigt mein 144-Hz-Monitor nur 60 Hz?",
+          "ul": [
+            "In Windows sind 60 Hz eingestellt: Öffnen Sie Einstellungen → System → Bildschirm → Erweiterte Anzeige und wählen Sie die höchste Rate.",
+            "Das Kabel schafft es nicht: Verwenden Sie DisplayPort oder ein Kabel ab HDMI 2.0.",
+            "Der Laptop ist im Energiesparmodus: Schließen Sie das Ladegerät an.",
+            "Das Browserfenster liegt auf einem zweiten, langsameren Monitor."
+          ]
+        },
+        {
+          "h": "Welche Bildwiederholrate brauche ich?",
+          "p": [
+            "60 Hz reichen für Büroarbeit und Videos. In Spielen fühlen sich 120 bis 165 Hz deutlich flüssiger an, und 240 Hz oder mehr helfen vor allem kompetitiven Spielern."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ist das Ergebnis genau?",
+          "a": "Ja, meist auf ein bis zwei Hz genau. Schließen Sie andere Tabs für einen möglichst stabilen Wert."
+        },
+        {
+          "q": "Funktioniert es auf Handys?",
+          "a": "Ja. Handys mit 90- oder 120-Hz-Display zeigen ihre Rate, viele senken sie aber zum Akkusparen, wenn sich nichts bewegt."
+        },
+        {
+          "q": "Was sind übersprungene Frames?",
+          "a": "Bilder, die der Browser nicht rechtzeitig gezeichnet hat. Ein paar sind normal. Viele davon lassen Bewegungen ruckeln."
+        },
+        {
+          "q": "Warum ändert sich die Zahl?",
+          "a": "Manche Bildschirme mit variabler Bildwiederholrate (VRR, G-SYNC, FreeSync oder ProMotion) passen ihre Rate an den Bildinhalt an."
+        }
+      ]
+    },
+    "hearing": {
+      "card": {
+        "name": "Hörtest",
+        "desc": "Höchste Frequenz, die Sie hören."
+      },
+      "title": "Hörtest online: Hörbereich in Hz kostenlos testen",
+      "description": "Kostenloser Online-Hörtest. Finden Sie die höchste Frequenz, die Sie hören, testen Sie jedes Ohr einzeln und sehen Sie, was für Ihr Alter typisch ist.",
+      "h1Html": "Online-<span class=\"grad\">Hörtest</span>",
+      "lead": "Finden Sie den höchsten Ton, den Sie noch hören, testen Sie jedes Ohr einzeln und sehen Sie, was für Ihr Alter typisch ist.",
+      "article": [
+        {
+          "h": "So machen Sie den Hörtest",
+          "ol": [
+            "Setzen Sie Kopfhörer auf und stellen Sie die Lautstärke niedrig ein.",
+            "Drücken Sie Start: Ein Ton steigt ab 8.000 Hz an.",
+            "Drücken Sie die Taste, sobald Sie ihn nicht mehr hören.",
+            "Wiederholen Sie den Test für jedes Ohr mit den Tasten Links und Rechts."
+          ]
+        },
+        {
+          "h": "Hörbereich nach Alter",
+          "ul": [
+            "Unter 20: bis etwa 19.000 Hz oder höher.",
+            "Unter 25: bis etwa 17.400 Hz (der sogenannte Mosquito-Ton).",
+            "Unter 30: bis etwa 16.000 Hz.",
+            "Unter 40: etwa 15.000 Hz.",
+            "Unter 50: etwa 14.000 Hz.",
+            "Unter 60: etwa 12.000 Hz."
+          ]
+        },
+        {
+          "h": "Was das Ergebnis beeinflusst",
+          "p": [
+            "Günstige Kopfhörer und Laptop-Lautsprecher können Töne über 16.000 Hz oft nicht wiedergeben, sodass Sie sie selbst mit perfektem Gehör nicht hören. Hintergrundgeräusche und sehr geringe Lautstärke senken das Ergebnis ebenfalls. Dieser Test prüft nur hohe Frequenzen und ist kein medizinischer Hörtest."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ist das ein medizinischer Hörtest?",
+          "a": "Nein. Es ist ein schneller Check Ihres Hochfrequenzbereichs. Für einen echten Hörtest gehen Sie zum HNO-Arzt oder Hörakustiker."
+        },
+        {
+          "q": "Was ist der Mosquito-Ton?",
+          "a": "Ein Ton um 17.400 Hz, den die meisten jungen Menschen hören, viele Erwachsene über 25 aber nicht."
+        },
+        {
+          "q": "Warum höre ich die höchsten Töne nicht?",
+          "a": "Das Hören hoher Frequenzen lässt mit dem Alter natürlich nach. Außerdem geben Ihre Kopfhörer oder Lautsprecher sie eventuell nicht wieder."
+        },
+        {
+          "q": "Ist das sicher?",
+          "a": "Ja, wenn Sie mit geringer Lautstärke beginnen. Spielen Sie hohe Töne nie laut ab, besonders nicht über Kopfhörer."
+        }
+      ]
+    },
+    "water": {
+      "card": {
+        "name": "Wasser auswerfen",
+        "desc": "Wasser aus dem Lautsprecher."
+      },
+      "title": "Wasser aus Handy-Lautsprecher entfernen (165-Hz-Ton)",
+      "description": "Wasser im Handy-Lautsprecher? Spielen Sie einen 165-Hz-Ton ab, der das Wasser hinausdrückt. Funktioniert auf iPhone und Android im Browser, ohne App.",
+      "h1Html": "<span class=\"grad\">Wasser auswerfen</span> per Ton",
+      "lead": "Wasser im Handy-Lautsprecher? Spielen Sie einen tiefen, pulsierenden Ton ab, der das Wasser herausschüttelt, direkt im Browser.",
+      "article": [
+        {
+          "h": "So entfernen Sie Wasser aus dem Lautsprecher",
+          "ol": [
+            "Entfernen Sie Kopfhörer und drehen Sie die Lautstärke ganz auf.",
+            "Halten Sie das Handy mit dem Lautsprecher nach unten.",
+            "Drücken Sie die Taste und lassen Sie den Ton 30 Sekunden lang laufen.",
+            "Wiederholen Sie es 2 bis 3 Mal, wenn der Klang noch dumpf ist."
+          ]
+        },
+        {
+          "h": "Wie funktioniert das?",
+          "p": [
+            "Ein tiefer Ton lässt die Membran des Lautsprechers stark vor und zurück schwingen. Diese Bewegung drückt Wassertropfen aus dem Lautsprechergitter, nach demselben Prinzip wie die Wassersperre der Apple Watch. Das Pulsieren verstärkt die Bewegung."
+          ]
+        },
+        {
+          "h": "Wenn der Klang noch dumpf ist",
+          "ul": [
+            "Lassen Sie das Handy einige Stunden mit dem Lautsprecher nach unten trocknen.",
+            "Legen Sie das Handy nicht in Reis: Es trocknet nicht schneller und Staub kann eindringen.",
+            "Verwenden Sie keinen Föhn und stechen Sie nichts in den Lautsprecher.",
+            "Klingt der Lautsprecher nach einem Tag noch schlecht, ist er vielleicht beschädigt und muss repariert werden."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Funktioniert Wasser auswerfen wirklich?",
+          "a": "Es kann helfen, Wasser aus dem Lautsprechergitter zu drücken, und bei vielen wird der Klang wieder klar. Einen bereits beschädigten Lautsprecher repariert es nicht."
+        },
+        {
+          "q": "Welche Frequenz wird zum Wasser auswerfen verwendet?",
+          "a": "Üblich ist ein tiefer Ton um 165 Hz. Die Option „Tiefer Sweep“ bewegt sich zwischen 110 und 300 Hz."
+        },
+        {
+          "q": "Funktioniert es auf iPhone und Android?",
+          "a": "Ja. Es funktioniert in Safari, Chrome und anderen Browsern auf jedem Handy. Schalten Sie auf dem iPhone den Stumm-Modus aus, wenn Sie nichts hören."
+        },
+        {
+          "q": "Ist das sicher für meinen Lautsprecher?",
+          "a": "Ja. Es spielt einen normalen Ton in der Lautstärke Ihres Handys ab, wie Musik. Hören Sie auf, wenn der Lautsprecher stark scheppert."
         }
       ]
     }

@@ -1,1314 +1,1678 @@
 {
  "/": {
-  "hash": "0543d87480acb78d1d369ce35ee1ac89",
-  "date": "2026-11-13"
+  "hash": "1da6047d9fec8f388cabd4c9fd93c961",
+  "date": "2026-11-19"
  },
  "/about/": {
-  "hash": "6bdbb87dcf92dae5e8e6d4d1b940aca9",
-  "date": "2026-11-13"
+  "hash": "f2b8b92dfe8279aada70926897519e58",
+  "date": "2026-11-19"
  },
  "/airpods-mic-test/": {
-  "hash": "cb629d79ec67a02e532715275b59e741",
-  "date": "2026-11-13"
+  "hash": "973f325297346f1e881c8ddce55a7bbf",
+  "date": "2026-11-19"
  },
  "/android-mic-test/": {
-  "hash": "7cdbb6ac9acea94ffe2eeadbfc48a9cd",
-  "date": "2026-11-13"
+  "hash": "4763d3057a0c8915bad0aa9524be2787",
+  "date": "2026-11-19"
  },
  "/ar/": {
-  "hash": "4323b6fdd56b95c064679216ca782c41",
-  "date": "2026-11-13"
+  "hash": "68385debe0e58c7f7b4136b922a53c2a",
+  "date": "2026-11-19"
  },
  "/ar/airpods-mic-test/": {
-  "hash": "f72e945ef90ec9db918954493e779311",
-  "date": "2026-11-15"
+  "hash": "996e914377bd69293120b24135929f70",
+  "date": "2026-11-19"
  },
  "/ar/android-mic-test/": {
-  "hash": "20a286d4ee1ea2be3b5f16f244e230e5",
-  "date": "2026-11-15"
+  "hash": "18b93b0e58487e37fc3e63e5cdbe2caf",
+  "date": "2026-11-19"
+ },
+ "/ar/cps-test/": {
+  "hash": "4d34123bf6537d0e388162791be335bb",
+  "date": "2026-11-19"
  },
  "/ar/dead-pixel-test/": {
-  "hash": "0f1c4f477e0c821e013a856f0583ce66",
-  "date": "2026-11-13"
+  "hash": "acba4b07bba1856e3fa46af02fbb0727",
+  "date": "2026-11-19"
  },
  "/ar/decibel-meter/": {
-  "hash": "c3d0cbcb2eac8cfacb9acee3685f0934",
-  "date": "2026-11-15"
+  "hash": "0759c572bf0f9cc28d52d555fa867a52",
+  "date": "2026-11-19"
  },
  "/ar/discord-mic-test/": {
-  "hash": "fae840e28d12acd4381560ef661c4b72",
-  "date": "2026-11-15"
+  "hash": "12b8bd95f06d17271a4c789513274f97",
+  "date": "2026-11-19"
+ },
+ "/ar/gamepad-test/": {
+  "hash": "436724de0933b91e5c46cc922c660538",
+  "date": "2026-11-19"
  },
  "/ar/guides/": {
-  "hash": "c0e5ccac523eb9c06b7f106e778cdcd9",
-  "date": "2026-11-15"
+  "hash": "418b340089ff7ded23480e245473b4ce",
+  "date": "2026-11-19"
  },
  "/ar/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "ceb1f22a53ee1fd498b031125e17e6dc",
-  "date": "2026-11-15"
+  "hash": "d9a95402e2bc8bcb635fe38d47106678",
+  "date": "2026-11-19"
  },
  "/ar/guides/keyboard-keys-not-working/": {
-  "hash": "7d217e86bac01f5f7d64f8c5b35d676c",
-  "date": "2026-11-15"
+  "hash": "cdd8c4440c2d128f110b1b27f77430db",
+  "date": "2026-11-19"
  },
  "/ar/guides/mic-camera-not-working-mac/": {
-  "hash": "c7ccfe0945c96c04d89792dbb33bedc5",
-  "date": "2026-11-15"
+  "hash": "79f2de7762c917d9d7ddbdb195c26e80",
+  "date": "2026-11-19"
  },
  "/ar/guides/mic-not-working-discord-zoom-teams/": {
-  "hash": "e5922535183d5986a2b3091fd4de7c75",
-  "date": "2026-11-15"
+  "hash": "af96f1460eb8b00d4b769bb6055c4751",
+  "date": "2026-11-19"
  },
  "/ar/guides/microphone-not-working-windows/": {
-  "hash": "c0e73a6dfe39d992b5646f00153efcd8",
-  "date": "2026-11-15"
+  "hash": "9f33bc4245135f4c7d695d9d9ae48a6e",
+  "date": "2026-11-19"
  },
  "/ar/guides/mouse-double-clicking/": {
-  "hash": "a0f8204e4232a99f147ae3203fc8e35a",
-  "date": "2026-11-15"
+  "hash": "f2416d3e31c2a9d66debbc1537af90d6",
+  "date": "2026-11-19"
  },
  "/ar/guides/no-sound-speakers-headphones/": {
-  "hash": "0b315f435bc53abd327d445853f6275e",
-  "date": "2026-11-15"
+  "hash": "66b94c13732294b807e0271744652b18",
+  "date": "2026-11-19"
  },
  "/ar/guides/phone-mic-not-working/": {
-  "hash": "d9fc557625e710ae9ec79f629a825ff6",
-  "date": "2026-11-15"
+  "hash": "50ceef124c59eaf6c525a8f0010f31e5",
+  "date": "2026-11-19"
  },
  "/ar/guides/webcam-not-working/": {
-  "hash": "1b3b1e84754042268d346e5217e5f9ef",
-  "date": "2026-11-15"
+  "hash": "31d6473956a2bcbec7872581d0042eb3",
+  "date": "2026-11-19"
  },
  "/ar/headphone-test/": {
-  "hash": "0f049268144aac075bc65426c9400934",
-  "date": "2026-11-13"
+  "hash": "1f2f60f1ac09a096a6b1c41f91fa95cf",
+  "date": "2026-11-19"
+ },
+ "/ar/hearing-test/": {
+  "hash": "d3b61e3db2ecd1aca5ebcb818fec2cf3",
+  "date": "2026-11-19"
  },
  "/ar/iphone-mic-test/": {
-  "hash": "7945eaa9e309ce6c32830c4920d3f655",
-  "date": "2026-11-15"
+  "hash": "0ceea2a6fabd988f87787ede246946d5",
+  "date": "2026-11-19"
  },
  "/ar/keyboard-test/": {
-  "hash": "775b1a84b639cd6263f0399044ddad23",
-  "date": "2026-11-13"
+  "hash": "2867c8c9d84390b372e3524449e849f8",
+  "date": "2026-11-19"
  },
  "/ar/mic-test/": {
-  "hash": "bcdb96b5ecb8d9c467e8b0fd601b087d",
-  "date": "2026-11-15"
+  "hash": "fbab8e92b327adabf36750b4cbcb32a1",
+  "date": "2026-11-19"
  },
  "/ar/mouse-test/": {
-  "hash": "76f479d129181955389fd00239dadb5e",
-  "date": "2026-11-13"
+  "hash": "ed74741e39fc98fb03bbe563ab3c22cd",
+  "date": "2026-11-19"
+ },
+ "/ar/reaction-time-test/": {
+  "hash": "a663e58fa999a48f63f2eac6c0cd2f32",
+  "date": "2026-11-19"
+ },
+ "/ar/refresh-rate-test/": {
+  "hash": "2ca97dc7b63e5b6b15023a10d15a4a58",
+  "date": "2026-11-19"
  },
  "/ar/speaker-test/": {
-  "hash": "856c6f326397824fca2cca966fca3fa9",
-  "date": "2026-11-13"
+  "hash": "c284e405d51b4ad0e1edab2ec42bf870",
+  "date": "2026-11-19"
+ },
+ "/ar/typing-test/": {
+  "hash": "b280ea72a06aefb6c6298e8a75888dd0",
+  "date": "2026-11-19"
  },
  "/ar/voice-recorder/": {
-  "hash": "39a9ff7c8ecb43b8ebdd923e411bd15d",
-  "date": "2026-11-15"
+  "hash": "ff3d2d18cfe28227371e2a74e0b07c90",
+  "date": "2026-11-19"
+ },
+ "/ar/water-eject/": {
+  "hash": "c763bc2136b2a53c880cbae436974841",
+  "date": "2026-11-19"
  },
  "/ar/webcam-test/": {
-  "hash": "59eef2ddb0ebbc5904960a7df98be7fb",
-  "date": "2026-11-13"
+  "hash": "5ab2d44f1d119e640e62214ce618eaff",
+  "date": "2026-11-19"
  },
  "/ar/zoom-mic-test/": {
-  "hash": "e8583de7b19416a16cf0b257dd93cbf0",
-  "date": "2026-11-15"
+  "hash": "7472eb9a02307679cea45f9dad1282f0",
+  "date": "2026-11-19"
+ },
+ "/cps-test/": {
+  "hash": "f5b65e216e414d651b9127479c49b572",
+  "date": "2026-11-19"
  },
  "/de/": {
-  "hash": "85647d85f84a546702c81a11fa377faf",
-  "date": "2026-11-13"
+  "hash": "8b26a2d0cbf93dcfb37e396ec5001235",
+  "date": "2026-11-19"
  },
  "/de/airpods-mic-test/": {
-  "hash": "279b85a44600d17e7d84d1a21bf67f41",
-  "date": "2026-11-13"
+  "hash": "c96d2b388edc5ef8685975dbd0968646",
+  "date": "2026-11-19"
  },
  "/de/android-mic-test/": {
-  "hash": "e9705ceaf12def92e7799057776570ed",
-  "date": "2026-11-13"
+  "hash": "4d2421d21f62bf633197956fc511cf7f",
+  "date": "2026-11-19"
+ },
+ "/de/cps-test/": {
+  "hash": "6e9e2a957242bec55d03969628ca008d",
+  "date": "2026-11-19"
  },
  "/de/dead-pixel-test/": {
-  "hash": "7a254a7e9641eadf4f6b352bf17a24c0",
-  "date": "2026-11-13"
+  "hash": "e028cbfe5e9d2b06669c56b6996c2945",
+  "date": "2026-11-19"
  },
  "/de/decibel-meter/": {
-  "hash": "4bd1587c1eb295b7999be6d355603999",
-  "date": "2026-11-13"
+  "hash": "9b3fa9f33c0e5ecaadf69254333acf27",
+  "date": "2026-11-19"
  },
  "/de/discord-mic-test/": {
-  "hash": "08a164e71ea446de099f6c8956ee18bc",
-  "date": "2026-11-13"
+  "hash": "88a1fa54b8435c5614218771f57e0a70",
+  "date": "2026-11-19"
+ },
+ "/de/gamepad-test/": {
+  "hash": "d06ad15e322a67074bfb5d2045089492",
+  "date": "2026-11-19"
  },
  "/de/guides/": {
-  "hash": "a4b097af873e52b4b8378be6a8de90b3",
-  "date": "2026-11-13"
+  "hash": "6b5bd6e570ea466a9b35bead02c83863",
+  "date": "2026-11-19"
  },
  "/de/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "3502ca221d2618084bfedc80d81f8d36",
-  "date": "2026-11-15"
+  "hash": "f4c525a5ada50f9f6c9bc291fcadb709",
+  "date": "2026-11-19"
  },
  "/de/guides/keyboard-keys-not-working/": {
-  "hash": "be52f244d8db26d55dafbed563f4c450",
-  "date": "2026-11-15"
+  "hash": "0fe371dab56e621b26d3ba07a8eb7064",
+  "date": "2026-11-19"
  },
  "/de/guides/mic-camera-not-working-mac/": {
-  "hash": "00caa5628951852bb071caf47354a515",
-  "date": "2026-11-13"
+  "hash": "0759bd278e534b069125654ab6eef4be",
+  "date": "2026-11-19"
  },
  "/de/guides/mic-not-working-discord-zoom-teams/": {
-  "hash": "14951e98b8ca02449654502995b89e09",
-  "date": "2026-11-13"
+  "hash": "6d6b5cb208c22885e8a62c1d5c3d462d",
+  "date": "2026-11-19"
  },
  "/de/guides/microphone-not-working-windows/": {
-  "hash": "79ed5553ee0be2676e05027313d68553",
-  "date": "2026-11-13"
+  "hash": "83fe5e3e30ebdde64ea333c4fe6b5ffc",
+  "date": "2026-11-19"
  },
  "/de/guides/mouse-double-clicking/": {
-  "hash": "3b83aae1b32d7edd7707df8f7942d92f",
-  "date": "2026-11-15"
+  "hash": "d13e364b611200273aaa99ab6cc4b854",
+  "date": "2026-11-19"
  },
  "/de/guides/no-sound-speakers-headphones/": {
-  "hash": "4319af2c1a09970b4583a05a3b0c35a9",
-  "date": "2026-11-15"
+  "hash": "8f511295de436424ccf4c0f873b64094",
+  "date": "2026-11-19"
  },
  "/de/guides/phone-mic-not-working/": {
-  "hash": "2f62dd4e14c4dec2afd317635982485c",
-  "date": "2026-11-15"
+  "hash": "ded742899cee0071d5a17433117563a2",
+  "date": "2026-11-19"
  },
  "/de/guides/webcam-not-working/": {
-  "hash": "03d394886cefc434b6e641d5e10019a9",
-  "date": "2026-11-13"
+  "hash": "9a54d806807d134c75afbf19d3c8a538",
+  "date": "2026-11-19"
  },
  "/de/headphone-test/": {
-  "hash": "3df8725aa02318f7d3834d76c7d18768",
-  "date": "2026-11-13"
+  "hash": "902c630090180d0e54fd782fe428b1e1",
+  "date": "2026-11-19"
+ },
+ "/de/hearing-test/": {
+  "hash": "895d065aed6d2c905941deb64151b240",
+  "date": "2026-11-19"
  },
  "/de/iphone-mic-test/": {
-  "hash": "0269cdd7be05b4f25c0e0b5e6f04b51f",
-  "date": "2026-11-13"
+  "hash": "4abcf0546f51ccc35e51961fa6074d4d",
+  "date": "2026-11-19"
  },
  "/de/keyboard-test/": {
-  "hash": "89aa0f2beb8c7786aadc7911cbddf67a",
-  "date": "2026-11-13"
+  "hash": "33f14493bb8856594a3a419469af349d",
+  "date": "2026-11-19"
  },
  "/de/mic-test/": {
-  "hash": "3a378ff6604c22f6412a077b30b1d909",
-  "date": "2026-11-13"
+  "hash": "e75b29cafee4793d01f92653c8c29f5d",
+  "date": "2026-11-19"
  },
  "/de/mouse-test/": {
-  "hash": "5ec6e4aa26b6248dce11994cc03e0f14",
-  "date": "2026-11-13"
+  "hash": "2fe52807ba52f040ab950040d229cd7e",
+  "date": "2026-11-19"
+ },
+ "/de/reaction-time-test/": {
+  "hash": "dde0c778b414cb5cf66da50067b9e187",
+  "date": "2026-11-19"
+ },
+ "/de/refresh-rate-test/": {
+  "hash": "d8a7592ed90995d2efabfca12870d652",
+  "date": "2026-11-19"
  },
  "/de/speaker-test/": {
-  "hash": "a62f5332d881a4989a6de61b728b733b",
-  "date": "2026-11-13"
+  "hash": "b2151d317ce2cec94534a86e6ac9a251",
+  "date": "2026-11-19"
+ },
+ "/de/typing-test/": {
+  "hash": "9fad28dd6eeea2db1f1d0ae02f9b63e6",
+  "date": "2026-11-19"
  },
  "/de/voice-recorder/": {
-  "hash": "b88eca139d8d9772faaf7fcb0d929b02",
-  "date": "2026-11-13"
+  "hash": "d2f3e5582e26f3ced44520390c0826ff",
+  "date": "2026-11-19"
+ },
+ "/de/water-eject/": {
+  "hash": "6b4a46b12697558290a465a807892c4e",
+  "date": "2026-11-19"
  },
  "/de/webcam-test/": {
-  "hash": "0ff983813bcbcb6dfab7a8aab44fbb14",
-  "date": "2026-11-13"
+  "hash": "46e98c026382c3c5180b650c5acef7ae",
+  "date": "2026-11-19"
  },
  "/de/zoom-mic-test/": {
-  "hash": "3b8ed884616cacc9a2079be98db23f65",
-  "date": "2026-11-13"
+  "hash": "36433d17088321c953216b0cd4a21855",
+  "date": "2026-11-19"
  },
  "/dead-pixel-test/": {
-  "hash": "2df43afb1b01f2132bb06e43fa22441b",
-  "date": "2026-11-13"
+  "hash": "5c9aa27faac48820ddd96d17f7cf96ae",
+  "date": "2026-11-19"
  },
  "/decibel-meter/": {
-  "hash": "927c3211d01c12c469e4f4cdbce56b27",
-  "date": "2026-11-13"
+  "hash": "d26d503075e51f591dc0702dbcc0f3c9",
+  "date": "2026-11-19"
  },
  "/discord-mic-test/": {
-  "hash": "fdb126972eb20dac25c54964dc861f3a",
-  "date": "2026-11-13"
+  "hash": "66aaa88bb259c0942e69e4a7104d677d",
+  "date": "2026-11-19"
  },
  "/es/": {
-  "hash": "334b5f05af4b41d170979e40fe492001",
-  "date": "2026-11-13"
+  "hash": "85e1c09a2c980413453bc45e88f4e56a",
+  "date": "2026-11-19"
  },
  "/es/airpods-mic-test/": {
-  "hash": "a44905a4d16331c816bb2d2337b350b2",
-  "date": "2026-11-13"
+  "hash": "b9372946da422ebe7215a585b8494007",
+  "date": "2026-11-19"
  },
  "/es/android-mic-test/": {
-  "hash": "c992bc5ef2ebf1c040d69aec8719119a",
-  "date": "2026-11-13"
+  "hash": "9c5f48887bc04054438d37c059717cf2",
+  "date": "2026-11-19"
+ },
+ "/es/cps-test/": {
+  "hash": "bd41568a0241e76f9ec8121da36cbc06",
+  "date": "2026-11-19"
  },
  "/es/dead-pixel-test/": {
-  "hash": "d20938013fcae54ce333f178032a61af",
-  "date": "2026-11-13"
+  "hash": "25399433658cb3a145e619ea2aa6e03d",
+  "date": "2026-11-19"
  },
  "/es/decibel-meter/": {
-  "hash": "502ad48dc2f3cd26d6765637308d18a1",
-  "date": "2026-11-13"
+  "hash": "d1c5e0d18065e190352d2f26f5384bd4",
+  "date": "2026-11-19"
  },
  "/es/discord-mic-test/": {
-  "hash": "5f32546cab4889d873723aa1101139e4",
-  "date": "2026-11-13"
+  "hash": "bcfed5c0a84f1785603960997aef4cf0",
+  "date": "2026-11-19"
+ },
+ "/es/gamepad-test/": {
+  "hash": "6971cfeef524a55df7ae55f18cbbfc60",
+  "date": "2026-11-19"
  },
  "/es/guides/": {
-  "hash": "9490e92cfb6beb4c8f45fd882110a38b",
-  "date": "2026-11-13"
+  "hash": "6bcef39a54b6de811983e7d8054d0db6",
+  "date": "2026-11-19"
  },
  "/es/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "1fbcb549bdf4da8c2524b275e7f072f9",
-  "date": "2026-11-15"
+  "hash": "339e243fe31079a6023d602ec6413e37",
+  "date": "2026-11-19"
  },
  "/es/guides/keyboard-keys-not-working/": {
-  "hash": "f4d9fba711b32b9d75dcfe7b1d082153",
-  "date": "2026-11-15"
+  "hash": "c651beecf3d1e2a048647656fcf100fa",
+  "date": "2026-11-19"
  },
  "/es/guides/mic-camera-not-working-mac/": {
-  "hash": "ed4f3ea54d3f7753ed3d8ae58aca4f4d",
-  "date": "2026-11-13"
+  "hash": "34a1f9c6dfa7255b0d4ce89a5204699f",
+  "date": "2026-11-19"
  },
  "/es/guides/mic-not-working-discord-zoom-teams/": {
-  "hash": "2880eeb13498bcdabd8e554635f1ba33",
-  "date": "2026-11-13"
+  "hash": "6da13d4dfbe3e8b3036e0ac14580b5f7",
+  "date": "2026-11-19"
  },
  "/es/guides/microphone-not-working-windows/": {
-  "hash": "76866e623f0b6f0500c60cdbcc3a9eb2",
-  "date": "2026-11-13"
+  "hash": "09ab53a27ba9324cbed9a221a95a3e51",
+  "date": "2026-11-19"
  },
  "/es/guides/mouse-double-clicking/": {
-  "hash": "d64ec1af9e795abe8615810623490263",
-  "date": "2026-11-15"
+  "hash": "c1586e7e7786a54698860aae4cef4c9a",
+  "date": "2026-11-19"
  },
  "/es/guides/no-sound-speakers-headphones/": {
-  "hash": "ce1e007850dfd0749b3b5d49be47d187",
-  "date": "2026-11-15"
+  "hash": "1eedec47e247bde92da6b21b04c00f97",
+  "date": "2026-11-19"
  },
  "/es/guides/phone-mic-not-working/": {
-  "hash": "97a3db3501cae9d8d7bb3d961a8905f5",
-  "date": "2026-11-15"
+  "hash": "2ff8bb94222134548a420ce2fe4c5a0b",
+  "date": "2026-11-19"
  },
  "/es/guides/webcam-not-working/": {
-  "hash": "e0956f170e4e46bdbcf1044e61620d4c",
-  "date": "2026-11-13"
+  "hash": "da2be8f415c3bfa383a56f27ef363225",
+  "date": "2026-11-19"
  },
  "/es/headphone-test/": {
-  "hash": "01f7c9fc67321b1531b649c31796840f",
-  "date": "2026-11-13"
+  "hash": "833d26e1127e480bfaf20a617af37f61",
+  "date": "2026-11-19"
+ },
+ "/es/hearing-test/": {
+  "hash": "adb994a1a1c9be3757b88cc21851e977",
+  "date": "2026-11-19"
  },
  "/es/iphone-mic-test/": {
-  "hash": "d58c22f49eb1fade61d6319542703ed5",
-  "date": "2026-11-13"
+  "hash": "2474b66c1f0765225a04babc42875f4d",
+  "date": "2026-11-19"
  },
  "/es/keyboard-test/": {
-  "hash": "45c66aa4867a7c7f83cf6debddcb5550",
-  "date": "2026-11-13"
+  "hash": "40b6b299a05553a8b8d19cc9921ea22e",
+  "date": "2026-11-19"
  },
  "/es/mic-test/": {
-  "hash": "bee0e1b0b4d7d4cb9d51477591d1f5cf",
-  "date": "2026-11-13"
+  "hash": "cc539e6b7e47a2fa9247ca927889071f",
+  "date": "2026-11-19"
  },
  "/es/mouse-test/": {
-  "hash": "d9a3d0d338c1c46f263577fbce97fdaa",
-  "date": "2026-11-13"
+  "hash": "14218bad92d8ab0550f6acc823a8e67a",
+  "date": "2026-11-19"
+ },
+ "/es/reaction-time-test/": {
+  "hash": "602d7efe0f39f795a9da4c27ac9d2080",
+  "date": "2026-11-19"
+ },
+ "/es/refresh-rate-test/": {
+  "hash": "b88a4c3eb44922760ee783286318d97c",
+  "date": "2026-11-19"
  },
  "/es/speaker-test/": {
-  "hash": "3e3a62e6da3c94587e2b492c0f46fd6a",
-  "date": "2026-11-13"
+  "hash": "8f2f24efefe9be6edbc55ef79c78c14b",
+  "date": "2026-11-19"
+ },
+ "/es/typing-test/": {
+  "hash": "d975557064e7d9f92f5a45b778256ee1",
+  "date": "2026-11-19"
  },
  "/es/voice-recorder/": {
-  "hash": "7838089c9af40b5b07284d4dee828446",
-  "date": "2026-11-13"
+  "hash": "3c196679db6f4230a30cc394b7eeb4b5",
+  "date": "2026-11-19"
+ },
+ "/es/water-eject/": {
+  "hash": "b732fccc2bf52d16dfc8fb7fed95661f",
+  "date": "2026-11-19"
  },
  "/es/webcam-test/": {
-  "hash": "cd26bb3384d815720160fc188ef9d5d9",
-  "date": "2026-11-13"
+  "hash": "f1be00e6c6fb0d8b53bbb4ef933c1d15",
+  "date": "2026-11-19"
  },
  "/es/zoom-mic-test/": {
-  "hash": "2ce914dda970538ccd5c1437f6b3b76d",
-  "date": "2026-11-13"
+  "hash": "9db6bbd402613c38f41155959b44023f",
+  "date": "2026-11-19"
  },
  "/fr/": {
-  "hash": "23ba1afecd8024a944021dbf76012ada",
-  "date": "2026-11-13"
+  "hash": "23a0c9ff89451092d6a5a85571595161",
+  "date": "2026-11-19"
  },
  "/fr/airpods-mic-test/": {
-  "hash": "4b11b30aca4df81e2f70e7d0ba245fd8",
-  "date": "2026-11-13"
+  "hash": "360844dd65fc4200f485fa631af2112f",
+  "date": "2026-11-19"
  },
  "/fr/android-mic-test/": {
-  "hash": "c0892064d93511b2a5e845ba7b960fb7",
-  "date": "2026-11-13"
+  "hash": "7a11d6b6f03673398c6a019cf533b1ad",
+  "date": "2026-11-19"
+ },
+ "/fr/cps-test/": {
+  "hash": "596f023229092d7ba848e4abc02fa6ae",
+  "date": "2026-11-19"
  },
  "/fr/dead-pixel-test/": {
-  "hash": "eb5d674f7b9b8da374984a87366f4d52",
-  "date": "2026-11-13"
+  "hash": "023c303af142151369c18b8cef77e428",
+  "date": "2026-11-19"
  },
  "/fr/decibel-meter/": {
-  "hash": "c7c0f145f7096b7275e5dba5421eeae8",
-  "date": "2026-11-13"
+  "hash": "2f830e54d97c24a6263fb19f73ea054f",
+  "date": "2026-11-19"
  },
  "/fr/discord-mic-test/": {
-  "hash": "2fd3249d73d980bcd9e91c27735e58aa",
-  "date": "2026-11-13"
+  "hash": "4f3fede6f0ba86914bfd09ded5a6e962",
+  "date": "2026-11-19"
+ },
+ "/fr/gamepad-test/": {
+  "hash": "4f994abc1e051086f372f3f755164b42",
+  "date": "2026-11-19"
  },
  "/fr/guides/": {
-  "hash": "9af5a3c16c2acfef6fc737962966d4e8",
-  "date": "2026-11-13"
+  "hash": "37eb72fe694819d6ed73cf64822d30c1",
+  "date": "2026-11-19"
  },
  "/fr/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "512fc547935509acef78fd6231ce4b13",
-  "date": "2026-11-15"
+  "hash": "dcf7e9ed9f0949db64a694ac45a9ef10",
+  "date": "2026-11-19"
  },
  "/fr/guides/keyboard-keys-not-working/": {
-  "hash": "56e4f75d88b96bdc18eb6ab576171b24",
-  "date": "2026-11-15"
+  "hash": "1a15448dfea4d92d63690ff6be6582ac",
+  "date": "2026-11-19"
  },
  "/fr/guides/mic-camera-not-working-mac/": {
-  "hash": "83ac30f492738c108d1ef95bb90a43c1",
-  "date": "2026-11-13"
+  "hash": "41798dd617a11f148eb7553affb9e791",
+  "date": "2026-11-19"
  },
  "/fr/guides/mic-not-working-discord-zoom-teams/": {
-  "hash": "70a8639b26333346d4277414343d5a5d",
-  "date": "2026-11-13"
+  "hash": "a4c7794502987ba0e7261ad4595997a5",
+  "date": "2026-11-19"
  },
  "/fr/guides/microphone-not-working-windows/": {
-  "hash": "d0adbd1b28fe5215ff01bd0e6e9be5f6",
-  "date": "2026-11-13"
+  "hash": "ce17541b063adc3920d120f6e76c2706",
+  "date": "2026-11-19"
  },
  "/fr/guides/mouse-double-clicking/": {
-  "hash": "f90b5c4492e62d6ee039de8235acbe02",
-  "date": "2026-11-15"
+  "hash": "efe8573605af407808e4e6d3b65ee9e1",
+  "date": "2026-11-19"
  },
  "/fr/guides/no-sound-speakers-headphones/": {
-  "hash": "cd304c9ea86d094f9be1c84d48ac8319",
-  "date": "2026-11-15"
+  "hash": "b3eb893b4f631a5c6ebb6888c61a9867",
+  "date": "2026-11-19"
  },
  "/fr/guides/phone-mic-not-working/": {
-  "hash": "76f52a3520a699fbd0aaaa7fc8290824",
-  "date": "2026-11-15"
+  "hash": "91122bc8222bd559491d78c8d3a1adb5",
+  "date": "2026-11-19"
  },
  "/fr/guides/webcam-not-working/": {
-  "hash": "dd61cffbb2d717c43cf2c9eb7c639bb5",
-  "date": "2026-11-13"
+  "hash": "2f65336b8748a7b5bac8620773b2a91a",
+  "date": "2026-11-19"
  },
  "/fr/headphone-test/": {
-  "hash": "672cbc8bb13c5d3ebb6635a43bdf8f64",
-  "date": "2026-11-13"
+  "hash": "196d0849d1c59cbde4856df35ac37953",
+  "date": "2026-11-19"
+ },
+ "/fr/hearing-test/": {
+  "hash": "a181fef0d4951fa41b34500c005930e8",
+  "date": "2026-11-19"
  },
  "/fr/iphone-mic-test/": {
-  "hash": "9ad2254721679996c27c0c8c1396d0f5",
-  "date": "2026-11-13"
+  "hash": "40932640e33af5c73df59179dc12c09d",
+  "date": "2026-11-19"
  },
  "/fr/keyboard-test/": {
-  "hash": "3f39c8a5a33c31a1d045e4f985cd92ad",
-  "date": "2026-11-13"
+  "hash": "67e2fc6c491d36a541ce97086e2ece3b",
+  "date": "2026-11-19"
  },
  "/fr/mic-test/": {
-  "hash": "46361388025cf982b4653afbf94b22b8",
-  "date": "2026-11-13"
+  "hash": "7fb90982a7fae51efcee53ccf5230983",
+  "date": "2026-11-19"
  },
  "/fr/mouse-test/": {
-  "hash": "8f24193f790cfe2a13a63bc6361b5c1c",
-  "date": "2026-11-13"
+  "hash": "3cb3b225a96a31016887860408d76c8c",
+  "date": "2026-11-19"
+ },
+ "/fr/reaction-time-test/": {
+  "hash": "c477d1c286fb44f03d460c2c8547a84b",
+  "date": "2026-11-19"
+ },
+ "/fr/refresh-rate-test/": {
+  "hash": "2feeaa932297f25ea279dfa3ef47cd66",
+  "date": "2026-11-19"
  },
  "/fr/speaker-test/": {
-  "hash": "f24dca591c0d45b7849c6061dbc23eb1",
-  "date": "2026-11-13"
+  "hash": "0e0b9ab150f5e5aa0812ec3936f107b9",
+  "date": "2026-11-19"
+ },
+ "/fr/typing-test/": {
+  "hash": "ee0598327381693adde30787504193c1",
+  "date": "2026-11-19"
  },
  "/fr/voice-recorder/": {
-  "hash": "b350d7a6a5d153b6496c92e71582bd23",
-  "date": "2026-11-13"
+  "hash": "2f43c829a6811d37eb7c5eb6cdaf4b6e",
+  "date": "2026-11-19"
+ },
+ "/fr/water-eject/": {
+  "hash": "8f510c861c115b9556f91184a8aa935f",
+  "date": "2026-11-19"
  },
  "/fr/webcam-test/": {
-  "hash": "8c7c6dd4c9001c199bdad1e63aca928c",
-  "date": "2026-11-13"
+  "hash": "49545e8b90b5839a5b7bd8674cbcce02",
+  "date": "2026-11-19"
  },
  "/fr/zoom-mic-test/": {
-  "hash": "6722ea1342554f59098188a1152cb3b3",
-  "date": "2026-11-13"
+  "hash": "52aa6ad124ddbe995c2b53a98b88c534",
+  "date": "2026-11-19"
+ },
+ "/gamepad-test/": {
+  "hash": "5091759d6e16416bad7292ab9534303b",
+  "date": "2026-11-19"
  },
  "/guides/": {
-  "hash": "12ffdce5b6efa61618cc8e8b7fceb5ed",
-  "date": "2026-11-13"
+  "hash": "79cca13e45fd28dd6497580a20d5ecd6",
+  "date": "2026-11-19"
  },
  "/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "c4d700dfd1d4f2538501c2707495afb6",
-  "date": "2026-11-15"
+  "hash": "2e9e60ca1555ce857f297dc81c47a0e2",
+  "date": "2026-11-19"
  },
  "/guides/keyboard-keys-not-working/": {
-  "hash": "c1d28ebea180c1011b34abac8f9c2576",
-  "date": "2026-11-15"
+  "hash": "ec3a0f21c7d30773ab6fc883215b3f23",
+  "date": "2026-11-19"
  },
  "/guides/mic-camera-not-working-mac/": {
-  "hash": "3bc26646a4398fb18da36b35ff838631",
-  "date": "2026-11-13"
+  "hash": "df3590060e8e4fdddd3381849fae37ed",
+  "date": "2026-11-19"
  },
  "/guides/mic-not-working-discord-zoom-teams/": {
-  "hash": "3dcf177f74e5c5ddf578d85bdee4171b",
-  "date": "2026-11-13"
+  "hash": "32976a2096473bf8cb0c7eb28abbf01f",
+  "date": "2026-11-19"
  },
  "/guides/microphone-not-working-windows/": {
-  "hash": "8d15c2b01e6172c691dccf1db3cc1ea2",
-  "date": "2026-11-13"
+  "hash": "af25ec91c137685048dff8505ac6dc82",
+  "date": "2026-11-19"
  },
  "/guides/mouse-double-clicking/": {
-  "hash": "eeb72c1a77b41e30668327a556642878",
-  "date": "2026-11-15"
+  "hash": "cbe6bf458ccbca6a8a41502910913265",
+  "date": "2026-11-19"
  },
  "/guides/no-sound-speakers-headphones/": {
-  "hash": "eb0679cc2214452598ce6ac1891ed445",
-  "date": "2026-11-15"
+  "hash": "adb2c0dd9820990dc9c96bb57eb91821",
+  "date": "2026-11-19"
  },
  "/guides/phone-mic-not-working/": {
-  "hash": "44cf1ae7783e74e8f9e3c2abd281a55d",
-  "date": "2026-11-15"
+  "hash": "2fb5291ab8e16848f56f67de364745cb",
+  "date": "2026-11-19"
  },
  "/guides/webcam-not-working/": {
-  "hash": "cb8d369695c5b1ce734da4d940c5315c",
-  "date": "2026-11-13"
+  "hash": "a0c82c0132d76edc7d3a3143db0f5084",
+  "date": "2026-11-19"
  },
  "/he/": {
-  "hash": "1bef9f919cdfd96124c2078acebe734b",
-  "date": "2026-11-13"
+  "hash": "87696a73b8d838cdf0834d66a6c37f39",
+  "date": "2026-11-19"
  },
  "/he/airpods-mic-test/": {
-  "hash": "306de8f25184f8ef325105a3b889e833",
-  "date": "2026-11-13"
+  "hash": "42f226cfcc971c80212ec872cce30413",
+  "date": "2026-11-19"
  },
  "/he/android-mic-test/": {
-  "hash": "59827b072c88f1480528e24d5779d2be",
-  "date": "2026-11-13"
+  "hash": "0b7e475f264eccd28aec7b9a6257ad12",
+  "date": "2026-11-19"
+ },
+ "/he/cps-test/": {
+  "hash": "6b40cbccf8b439c0324a046a8b1dd448",
+  "date": "2026-11-19"
  },
  "/he/dead-pixel-test/": {
-  "hash": "896beec28b248bee0c823d55c95bf46b",
-  "date": "2026-11-13"
+  "hash": "b09e45180118f4d764838f17fc6adcb2",
+  "date": "2026-11-19"
  },
  "/he/decibel-meter/": {
-  "hash": "cfa3d29c79393e3a58f560e5e847b272",
-  "date": "2026-11-13"
+  "hash": "ecb07a755deeaae833e99c70b0402a2d",
+  "date": "2026-11-19"
  },
  "/he/discord-mic-test/": {
-  "hash": "a341c5dc8a968fe17722b7b30049cee6",
-  "date": "2026-11-13"
+  "hash": "e03c7a87f30066b02c61475d9200a406",
+  "date": "2026-11-19"
+ },
+ "/he/gamepad-test/": {
+  "hash": "297d3ad919e31b616cea20afcd24b83e",
+  "date": "2026-11-19"
  },
  "/he/guides/": {
-  "hash": "4433ed9729247566716e46d3434f6f93",
-  "date": "2026-11-13"
+  "hash": "5ecb571ab684799fce0b36a7423b8da4",
+  "date": "2026-11-19"
  },
  "/he/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "759f3f76c0c7d8578bd7697b89c01ed7",
-  "date": "2026-11-15"
+  "hash": "8c1192837fd5ae96b8a5469f89e097b1",
+  "date": "2026-11-19"
  },
  "/he/guides/keyboard-keys-not-working/": {
-  "hash": "45ce9090cbc072f23613a54c0f7228d8",
-  "date": "2026-11-15"
+  "hash": "31e4d4bc1583cb3f9975c42181476e31",
+  "date": "2026-11-19"
  },
  "/he/guides/mic-camera-not-working-mac/": {
-  "hash": "a9a4e87609fa3da19b4479c61585c104",
-  "date": "2026-11-13"
+  "hash": "d7c2dfc898fa0f510f736f48f337e280",
+  "date": "2026-11-19"
  },
  "/he/guides/mic-not-working-discord-zoom-teams/": {
-  "hash": "de0d7f50a21b772b1edadd4d7ba2f1c9",
-  "date": "2026-11-13"
+  "hash": "a0289766c4de7d81b6d7083dad61a87d",
+  "date": "2026-11-19"
  },
  "/he/guides/microphone-not-working-windows/": {
-  "hash": "087afd7073b5aac7c891bce224a3e8e5",
-  "date": "2026-11-13"
+  "hash": "fdb6daeff905afa45605ee521ab4b6c3",
+  "date": "2026-11-19"
  },
  "/he/guides/mouse-double-clicking/": {
-  "hash": "584fcdb6768f2fdaf9e41c38d893eb97",
-  "date": "2026-11-15"
+  "hash": "ec46fdc1929b16c03e8edce3c9c4701a",
+  "date": "2026-11-19"
  },
  "/he/guides/no-sound-speakers-headphones/": {
-  "hash": "48ee86b5dccafb23ce3d217536be596c",
-  "date": "2026-11-15"
+  "hash": "3518afa5a1807e6d489b440a6ff7b486",
+  "date": "2026-11-19"
  },
  "/he/guides/phone-mic-not-working/": {
-  "hash": "361e9207a9f38a85be47d0e19ccdee27",
-  "date": "2026-11-15"
+  "hash": "fbe5e1abd8a25aacb4ad12dfa4c59325",
+  "date": "2026-11-19"
  },
  "/he/guides/webcam-not-working/": {
-  "hash": "0d0b2a2b0795aa5e8b068b8b54cd360c",
-  "date": "2026-11-13"
+  "hash": "dda5e76c78369ffc983dc7bbda7ce8c7",
+  "date": "2026-11-19"
  },
  "/he/headphone-test/": {
-  "hash": "742968d85a1804fc8ee66324e524b1e3",
-  "date": "2026-11-13"
+  "hash": "a56b714c9477a147d73328c48b2226f8",
+  "date": "2026-11-19"
+ },
+ "/he/hearing-test/": {
+  "hash": "8aee0e63f5990604aaa4e9a13c066294",
+  "date": "2026-11-19"
  },
  "/he/iphone-mic-test/": {
-  "hash": "f449c62d0687dacb9050b89b965c0221",
-  "date": "2026-11-13"
+  "hash": "639fe0998ef90bcb3c5fd5d2c72af303",
+  "date": "2026-11-19"
  },
  "/he/keyboard-test/": {
-  "hash": "1683428a9547dac4ce4439b9633b132e",
-  "date": "2026-11-13"
+  "hash": "0954f91efd91434c6000fb1758cef23b",
+  "date": "2026-11-19"
  },
  "/he/mic-test/": {
-  "hash": "51b64f722dac6303dbfc7f68f1f18392",
-  "date": "2026-11-13"
+  "hash": "879c5d6dbb937682c6593d83511e7df9",
+  "date": "2026-11-19"
  },
  "/he/mouse-test/": {
-  "hash": "e44d31e3780a91b58e102d36e2d485b8",
-  "date": "2026-11-13"
+  "hash": "935763e839812cabaaf3fe1588aa6a00",
+  "date": "2026-11-19"
+ },
+ "/he/reaction-time-test/": {
+  "hash": "d6ab024aeb291f248bd1f665df43e610",
+  "date": "2026-11-19"
+ },
+ "/he/refresh-rate-test/": {
+  "hash": "0fd86a4f92b413aa40fce853bf36cbeb",
+  "date": "2026-11-19"
  },
  "/he/speaker-test/": {
-  "hash": "2cf7c1ebad18a515a89d46bbda3f0a3a",
-  "date": "2026-11-13"
+  "hash": "274716006e8629e36c55885f5fc4c9c1",
+  "date": "2026-11-19"
+ },
+ "/he/typing-test/": {
+  "hash": "fafe1c2cc272f2dee96ef7f6cb6e9480",
+  "date": "2026-11-19"
  },
  "/he/voice-recorder/": {
-  "hash": "27915993dbbb744e8ee203b35ac41a92",
-  "date": "2026-11-13"
+  "hash": "546d4f3c37cb24b891caa5903c704467",
+  "date": "2026-11-19"
+ },
+ "/he/water-eject/": {
+  "hash": "cc15bb042b9054e58035a03efd0b9e3e",
+  "date": "2026-11-19"
  },
  "/he/webcam-test/": {
-  "hash": "4ffa63b5400468543333f2da0d94d558",
-  "date": "2026-11-13"
+  "hash": "dd6d4189c38254854b34fabb59e25547",
+  "date": "2026-11-19"
  },
  "/he/zoom-mic-test/": {
-  "hash": "cecc7064a83de94da4c8c2595e29dd41",
-  "date": "2026-11-13"
+  "hash": "0860db3e0bd2874b3639f95617001f8d",
+  "date": "2026-11-19"
  },
  "/headphone-test/": {
-  "hash": "a05aad3f77c3f2ba2e7ce83bf2c26c17",
-  "date": "2026-11-13"
+  "hash": "b323bce6559ada8a5fbede646fa45a40",
+  "date": "2026-11-19"
+ },
+ "/hearing-test/": {
+  "hash": "82872da030a1538317e87b307d096231",
+  "date": "2026-11-19"
  },
  "/hi/": {
-  "hash": "bf25a925556072f19bfc6f99687802a3",
-  "date": "2026-11-13"
+  "hash": "2906989a78a0d75a2c2c55884563b6ae",
+  "date": "2026-11-19"
  },
  "/hi/airpods-mic-test/": {
-  "hash": "c5d14eb5867a05d2b46cd318665a750e",
-  "date": "2026-11-13"
+  "hash": "edf2dc8546b2be360fbaa32c59188cf2",
+  "date": "2026-11-19"
  },
  "/hi/android-mic-test/": {
-  "hash": "0c345fd70bf265efbdfb39a9153f9fa3",
-  "date": "2026-11-13"
+  "hash": "037788d1cb7ad549546d7394de6652f4",
+  "date": "2026-11-19"
+ },
+ "/hi/cps-test/": {
+  "hash": "bbc7fe3adf55edc007c4f5902c01da32",
+  "date": "2026-11-19"
  },
  "/hi/dead-pixel-test/": {
-  "hash": "58f250a8efbc07a624166e506d545ac2",
-  "date": "2026-11-13"
+  "hash": "00b4ce9728a049038f2a6411e5134d84",
+  "date": "2026-11-19"
  },
  "/hi/decibel-meter/": {
-  "hash": "2cb9718138b8f0aa5c2b61c11e7e99f9",
-  "date": "2026-11-13"
+  "hash": "1f7f820a4c31895322193e16ced380ef",
+  "date": "2026-11-19"
  },
  "/hi/discord-mic-test/": {
-  "hash": "7c1548a100236d293e902d1d8d85eb5f",
-  "date": "2026-11-13"
+  "hash": "5b8c89df073ca7091eaae6f0996812ca",
+  "date": "2026-11-19"
+ },
+ "/hi/gamepad-test/": {
+  "hash": "8c28a78f082ef81b337dd403fca14547",
+  "date": "2026-11-19"
  },
  "/hi/guides/": {
-  "hash": "711884cd210a69e9e6a624ea7d6e4bf4",
-  "date": "2026-11-13"
+  "hash": "77103c73a25c8fbe39900cfeb716eec3",
+  "date": "2026-11-19"
  },
  "/hi/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "5f563f2b2276b9c0c7efd767d9031bd8",
-  "date": "2026-11-15"
+  "hash": "93be689e47f8ae13ec670a2dabb7ec1d",
+  "date": "2026-11-19"
  },
  "/hi/guides/keyboard-keys-not-working/": {
-  "hash": "7fe523c60422961cde30952032dbbee1",
-  "date": "2026-11-15"
+  "hash": "81523673931a42ded5c63f78c86556cd",
+  "date": "2026-11-19"
  },
  "/hi/guides/mic-camera-not-working-mac/": {
-  "hash": "09f170d97c64d335f17a64ceabb3cff3",
-  "date": "2026-11-13"
+  "hash": "ac2775727289999492cf138446b41a5d",
+  "date": "2026-11-19"
  },
  "/hi/guides/mic-not-working-discord-zoom-teams/": {
-  "hash": "dd29777aa612c4ac618757ad10e57890",
-  "date": "2026-11-13"
+  "hash": "dfb0d81dbaaba897d0c7d0e5fb6269bb",
+  "date": "2026-11-19"
  },
  "/hi/guides/microphone-not-working-windows/": {
-  "hash": "1e330e2d8747507cd4cb4ff5c544153f",
-  "date": "2026-11-13"
+  "hash": "2f1fa4d4790c51c20e4f359ac53247ea",
+  "date": "2026-11-19"
  },
  "/hi/guides/mouse-double-clicking/": {
-  "hash": "4f8ba7ccf6b4cffdd4b9f8ac799b2ded",
-  "date": "2026-11-15"
+  "hash": "477ba670703050c9a540ee9e2f0eb415",
+  "date": "2026-11-19"
  },
  "/hi/guides/no-sound-speakers-headphones/": {
-  "hash": "d190ed68ddb6535b7e3c9d1c33a801c0",
-  "date": "2026-11-15"
+  "hash": "82ac1d54a2a9463ad7f8e49b0eef5ca4",
+  "date": "2026-11-19"
  },
  "/hi/guides/phone-mic-not-working/": {
-  "hash": "6ff23237f50eb110402de4674ddcfcd6",
-  "date": "2026-11-15"
+  "hash": "b51bba9814a6e395a7fb7669aa466412",
+  "date": "2026-11-19"
  },
  "/hi/guides/webcam-not-working/": {
-  "hash": "3b761f4f0c52173465567a8f45192d8a",
-  "date": "2026-11-13"
+  "hash": "ac12d6c45c841db4f801c37d048b8282",
+  "date": "2026-11-19"
  },
  "/hi/headphone-test/": {
-  "hash": "55d4363d94a54d320538c704d1c0c7ee",
-  "date": "2026-11-13"
+  "hash": "108e9f0bdef470584b3f81958fdd6e77",
+  "date": "2026-11-19"
+ },
+ "/hi/hearing-test/": {
+  "hash": "ecf6ac61d09a65a3212074d3b5a510ea",
+  "date": "2026-11-19"
  },
  "/hi/iphone-mic-test/": {
-  "hash": "e16a6010e8527df8f88b363574b551ca",
-  "date": "2026-11-13"
+  "hash": "36706278e3f749eaf86a04cec494e2a4",
+  "date": "2026-11-19"
  },
  "/hi/keyboard-test/": {
-  "hash": "1e001412093f81e280e41a0238eb97c7",
-  "date": "2026-11-13"
+  "hash": "b00c2ce0e9466adc0b96d390a9fa885c",
+  "date": "2026-11-19"
  },
  "/hi/mic-test/": {
-  "hash": "1c192d7fcaac8b5088cbf88b75f4ed91",
-  "date": "2026-11-13"
+  "hash": "be4fa091f5560c24c237797ce8033924",
+  "date": "2026-11-19"
  },
  "/hi/mouse-test/": {
-  "hash": "54c649780fdd54cf3bf729c9f4e73ab7",
-  "date": "2026-11-13"
+  "hash": "f850f237961e8c22c79d122a4b48c9bd",
+  "date": "2026-11-19"
+ },
+ "/hi/reaction-time-test/": {
+  "hash": "9e7e9829c1ef917bbc26f7d058adf43c",
+  "date": "2026-11-19"
+ },
+ "/hi/refresh-rate-test/": {
+  "hash": "165b48810a9dafaec2d609abce87e563",
+  "date": "2026-11-19"
  },
  "/hi/speaker-test/": {
-  "hash": "cfe353571e09ec5f2c390dd82d05285b",
-  "date": "2026-11-13"
+  "hash": "36b45cc468faf70121194a8bc13ffce1",
+  "date": "2026-11-19"
+ },
+ "/hi/typing-test/": {
+  "hash": "0b9019ecc735a7811f43f4808e70feb3",
+  "date": "2026-11-19"
  },
  "/hi/voice-recorder/": {
-  "hash": "d85ee905e6fbb3e3c867644ccdc84221",
-  "date": "2026-11-13"
+  "hash": "a6174add9132ad0127e616ec39ff93fd",
+  "date": "2026-11-19"
+ },
+ "/hi/water-eject/": {
+  "hash": "309d18e22121f11daabafd57df6efb97",
+  "date": "2026-11-19"
  },
  "/hi/webcam-test/": {
-  "hash": "4d3654b446f3e8360a3f58d5cbb251b6",
-  "date": "2026-11-13"
+  "hash": "1080ccc385612844b993ffb07a9f7d0d",
+  "date": "2026-11-19"
  },
  "/hi/zoom-mic-test/": {
-  "hash": "405bedda93a90431cb17ad5a935a607e",
-  "date": "2026-11-13"
+  "hash": "6cdba1d9753ff1947a1d5962167c773d",
+  "date": "2026-11-19"
  },
  "/id/": {
-  "hash": "14e79ad852145051a71b08f6e2f3757f",
-  "date": "2026-11-13"
+  "hash": "c9894eef64a3ef20590601b5334c1bbf",
+  "date": "2026-11-19"
  },
  "/id/airpods-mic-test/": {
-  "hash": "e9584fef76c655110f166917fc6acfbc",
-  "date": "2026-11-13"
+  "hash": "132b0a8c5baf29e88b55f57766c0fd3a",
+  "date": "2026-11-19"
  },
  "/id/android-mic-test/": {
-  "hash": "0d8d744e0900b5cd3553c80532dea9e3",
-  "date": "2026-11-13"
+  "hash": "1c5a56193b981e1d349bd14a3c38d048",
+  "date": "2026-11-19"
+ },
+ "/id/cps-test/": {
+  "hash": "815c9bfd9188f8455c3adee334e07daf",
+  "date": "2026-11-19"
  },
  "/id/dead-pixel-test/": {
-  "hash": "992bf0810206e7fe33c0fdd850a39613",
-  "date": "2026-11-13"
+  "hash": "ab49171e4badd997a9dcb6a4cefe73ad",
+  "date": "2026-11-19"
  },
  "/id/decibel-meter/": {
-  "hash": "afb5ec4c8e0f6f38da1dc5c758938751",
-  "date": "2026-11-13"
+  "hash": "c26403757e6db541a293e483e850f232",
+  "date": "2026-11-19"
  },
  "/id/discord-mic-test/": {
-  "hash": "ffa77eedef7914f1059e98a9c22ca2b5",
-  "date": "2026-11-13"
+  "hash": "8eb0b7d7e4eabe331e128699f85de46e",
+  "date": "2026-11-19"
+ },
+ "/id/gamepad-test/": {
+  "hash": "1dce3399683995e77cf1e731d9f415d1",
+  "date": "2026-11-19"
  },
  "/id/guides/": {
-  "hash": "0d0d3009baafffcd486b2480a3762069",
-  "date": "2026-11-13"
+  "hash": "49f62a6cfaa5486f1a3bad26aee75b26",
+  "date": "2026-11-19"
  },
  "/id/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "49169f7ffbec7d5fd69728e1ef5a8111",
-  "date": "2026-11-15"
+  "hash": "a7ddfbf8e859d2899485230bebc192c4",
+  "date": "2026-11-19"
  },
  "/id/guides/keyboard-keys-not-working/": {
-  "hash": "00dfa2db06acbb5c1d2cbbb2e2d7a2d9",
-  "date": "2026-11-15"
+  "hash": "2ed76f46babe493043141b168ef12780",
+  "date": "2026-11-19"
  },
  "/id/guides/mic-camera-not-working-mac/": {
-  "hash": "b1aa53832b4c57ba956985df4307096d",
-  "date": "2026-11-13"
+  "hash": "2a9f41d79ecdcc3ca32bdd8e6c6c0428",
+  "date": "2026-11-19"
  },
  "/id/guides/mic-not-working-discord-zoom-teams/": {
-  "hash": "9dbb560f57b43a0e250d126064d4328c",
-  "date": "2026-11-13"
+  "hash": "0dc190255fcea4d3a6cce1689710bef8",
+  "date": "2026-11-19"
  },
  "/id/guides/microphone-not-working-windows/": {
-  "hash": "32f223e5b5ffac2a1b6ff9966ec66cc1",
-  "date": "2026-11-13"
+  "hash": "042737802131c9d91f38a4e623dd3875",
+  "date": "2026-11-19"
  },
  "/id/guides/mouse-double-clicking/": {
-  "hash": "9814ff179880afb70149511a8e4d65f6",
-  "date": "2026-11-15"
+  "hash": "4012ecf38ab196307322ee45ffc01f5e",
+  "date": "2026-11-19"
  },
  "/id/guides/no-sound-speakers-headphones/": {
-  "hash": "d13ebb4054ad5882cb28690a8b8f366a",
-  "date": "2026-11-15"
+  "hash": "823e155b3da61d086d21da03f4dd0656",
+  "date": "2026-11-19"
  },
  "/id/guides/phone-mic-not-working/": {
-  "hash": "23dbeb9734883614427803d5a42c7c9f",
-  "date": "2026-11-15"
+  "hash": "1ce507f064ada43da9b94fc601551c90",
+  "date": "2026-11-19"
  },
  "/id/guides/webcam-not-working/": {
-  "hash": "b7a7ce8173fa695fdf8c502ca7281224",
-  "date": "2026-11-13"
+  "hash": "3a31f36bc12d1a768b4dbfd7167bf036",
+  "date": "2026-11-19"
  },
  "/id/headphone-test/": {
-  "hash": "ee83a7867e20182d5b17debe559e84a4",
-  "date": "2026-11-13"
+  "hash": "9320984436ebd31f89e3cab77dcb587c",
+  "date": "2026-11-19"
+ },
+ "/id/hearing-test/": {
+  "hash": "ae2ce68ccc10fd57bf73e5c7e39a8b3d",
+  "date": "2026-11-19"
  },
  "/id/iphone-mic-test/": {
-  "hash": "d05edded80311ac82bb40275c9e761c1",
-  "date": "2026-11-13"
+  "hash": "5309a8ddfdd39a96b64452858e294a56",
+  "date": "2026-11-19"
  },
  "/id/keyboard-test/": {
-  "hash": "ac6b41139ca6d1d456ec701a70401e8a",
-  "date": "2026-11-13"
+  "hash": "594136c34be0488fcd28bc7993e981fe",
+  "date": "2026-11-19"
  },
  "/id/mic-test/": {
-  "hash": "2c54e1d4d752c0d93e01e8eee28e93eb",
-  "date": "2026-11-13"
+  "hash": "a735f083eeb56494e5f86d1e4e9b01fd",
+  "date": "2026-11-19"
  },
  "/id/mouse-test/": {
-  "hash": "fc939a4b73423abec769655a93bc4945",
-  "date": "2026-11-13"
+  "hash": "59c5741de6af46a2c2bdc518156a2dbf",
+  "date": "2026-11-19"
+ },
+ "/id/reaction-time-test/": {
+  "hash": "cd983e3dd97f5ec99ecab3f6887d0108",
+  "date": "2026-11-19"
+ },
+ "/id/refresh-rate-test/": {
+  "hash": "d33a5e96142884ebe0ed2737b1b32368",
+  "date": "2026-11-19"
  },
  "/id/speaker-test/": {
-  "hash": "c4057267ff42df7ebf848d616fa74b4b",
-  "date": "2026-11-13"
+  "hash": "845e07b6356316e7e5d2c23115098f35",
+  "date": "2026-11-19"
+ },
+ "/id/typing-test/": {
+  "hash": "da8d458a3445e3820fc0839d9ab032fa",
+  "date": "2026-11-19"
  },
  "/id/voice-recorder/": {
-  "hash": "c6be005ce0197b48acdb11366ddd340c",
-  "date": "2026-11-13"
+  "hash": "44f4c961bb08da30b0c7e9ce0520996d",
+  "date": "2026-11-19"
+ },
+ "/id/water-eject/": {
+  "hash": "65e311c854670a5157cc64e83b5ee80b",
+  "date": "2026-11-19"
  },
  "/id/webcam-test/": {
-  "hash": "4f61334b093181e1e16cc41f5c33fc0d",
-  "date": "2026-11-13"
+  "hash": "e5e5113f5ba48864a10c280980dc8897",
+  "date": "2026-11-19"
  },
  "/id/zoom-mic-test/": {
-  "hash": "43a575b5b6d6fc8c877342d3ccb45aaf",
-  "date": "2026-11-13"
+  "hash": "a5be5f81370f8dceb6eb8d8accf334c6",
+  "date": "2026-11-19"
  },
  "/iphone-mic-test/": {
-  "hash": "89da918e182cbca96810fec8a926f931",
-  "date": "2026-11-13"
+  "hash": "ec5ed809ebe14c84168d6b7e5f3914ea",
+  "date": "2026-11-19"
  },
  "/it/": {
-  "hash": "a82f68ff07cb26d2e9f2b388e3a7c984",
-  "date": "2026-11-13"
+  "hash": "2373622bc312880635ec0b9632d8dc0b",
+  "date": "2026-11-19"
  },
  "/it/airpods-mic-test/": {
-  "hash": "5698494c94ddacdd43b013ce0421ec1d",
-  "date": "2026-11-13"
+  "hash": "4a3d3bd069619944ec4329f5d89f43a5",
+  "date": "2026-11-19"
  },
  "/it/android-mic-test/": {
-  "hash": "49c7c48cefe180e3d31ffbee1aa28afc",
-  "date": "2026-11-13"
+  "hash": "cc436f6b61bc24649a8a02dcc881e1a2",
+  "date": "2026-11-19"
+ },
+ "/it/cps-test/": {
+  "hash": "eaa09aeebeeb7240458b9cac9d9099c2",
+  "date": "2026-11-19"
  },
  "/it/dead-pixel-test/": {
-  "hash": "2e5e31e3e7938bcbea3226e73f589e0d",
-  "date": "2026-11-13"
+  "hash": "48f73e12b7e214b8f967ab71d039faba",
+  "date": "2026-11-19"
  },
  "/it/decibel-meter/": {
-  "hash": "59a5258dc048d79cd46a2f383e19a5ec",
-  "date": "2026-11-13"
+  "hash": "494c9d458f35a9052d925ddafc4c0d20",
+  "date": "2026-11-19"
  },
  "/it/discord-mic-test/": {
-  "hash": "c03a0ffe4ab3bed884c2730aae5b8bbf",
-  "date": "2026-11-13"
+  "hash": "cad5b7e49c5d80801eb7a6f14cfecc5a",
+  "date": "2026-11-19"
+ },
+ "/it/gamepad-test/": {
+  "hash": "1c62efd381f2d251b5da6a223279b4e0",
+  "date": "2026-11-19"
  },
  "/it/guides/": {
-  "hash": "92801c598882bcf29d76d8fd7cb44315",
-  "date": "2026-11-13"
+  "hash": "2f35ef29efb5f00fc3751201fe9f0ad4",
+  "date": "2026-11-19"
  },
  "/it/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "e9575abbc9083ad4978a2726327adb62",
-  "date": "2026-11-15"
+  "hash": "5f3d4e5bbc1d615c0b25b80b66666ae0",
+  "date": "2026-11-19"
  },
  "/it/guides/keyboard-keys-not-working/": {
-  "hash": "bbc3d1682fd37c57468c61edb09c6c37",
-  "date": "2026-11-15"
+  "hash": "08c46d5828d735b186dd9ba87f9e963a",
+  "date": "2026-11-19"
  },
  "/it/guides/mic-camera-not-working-mac/": {
-  "hash": "77c5a23b4f8fc1450f7329f84fee2981",
-  "date": "2026-11-13"
+  "hash": "b605019d86677371d6e4388a604a7549",
+  "date": "2026-11-19"
  },
  "/it/guides/mic-not-working-discord-zoom-teams/": {
-  "hash": "20861886aa04447b73ed3d1fd4ada893",
-  "date": "2026-11-13"
+  "hash": "54268b33d39f32f1d3302732bea2ea77",
+  "date": "2026-11-19"
  },
  "/it/guides/microphone-not-working-windows/": {
-  "hash": "70281b121cc76d547c67500df4c533a2",
-  "date": "2026-11-13"
+  "hash": "05e074c94f07445186f1596daf7a96e3",
+  "date": "2026-11-19"
  },
  "/it/guides/mouse-double-clicking/": {
-  "hash": "7a1d96eea3d0d46400352d934df8cba4",
-  "date": "2026-11-15"
+  "hash": "4741b6d3148172b1b2fe63f027ee0954",
+  "date": "2026-11-19"
  },
  "/it/guides/no-sound-speakers-headphones/": {
-  "hash": "19603c0721f19eab34bf658762e776a5",
-  "date": "2026-11-15"
+  "hash": "b763e7c0594d0aab9703ef93eaddc398",
+  "date": "2026-11-19"
  },
  "/it/guides/phone-mic-not-working/": {
-  "hash": "9388a99e072e29114447ca224c76300a",
-  "date": "2026-11-15"
+  "hash": "b544f3f47815d480670753d6b750f1ca",
+  "date": "2026-11-19"
  },
  "/it/guides/webcam-not-working/": {
-  "hash": "3f016a49f053993ccf7a39341022377e",
-  "date": "2026-11-13"
+  "hash": "f881316d36b0f43e70d98d325468b513",
+  "date": "2026-11-19"
  },
  "/it/headphone-test/": {
-  "hash": "addc9e6db94f3d33e3c65efd8ea71f58",
-  "date": "2026-11-13"
+  "hash": "db8a5d8a9042bd51f1b2a46a707afb7a",
+  "date": "2026-11-19"
+ },
+ "/it/hearing-test/": {
+  "hash": "af1f50081fc47e0e980b48a6b3770e30",
+  "date": "2026-11-19"
  },
  "/it/iphone-mic-test/": {
-  "hash": "6b3804c586b340edd25a84e35e3aeec8",
-  "date": "2026-11-13"
+  "hash": "79e4c051ee50e89684a2fc31f5b72e45",
+  "date": "2026-11-19"
  },
  "/it/keyboard-test/": {
-  "hash": "747e3335bf82162e4006578447be6506",
-  "date": "2026-11-13"
+  "hash": "1879a7c0e9839f332ff5adb9484860ae",
+  "date": "2026-11-19"
  },
  "/it/mic-test/": {
-  "hash": "79199e639894936283ccba3b8936b744",
-  "date": "2026-11-13"
+  "hash": "41a0662d392bca5ff2c8fdcba8eaf50a",
+  "date": "2026-11-19"
  },
  "/it/mouse-test/": {
-  "hash": "b47f757835f5073e2c781d6604fa4408",
-  "date": "2026-11-13"
+  "hash": "1cc577f5f2192b5004219cc7aa417d93",
+  "date": "2026-11-19"
+ },
+ "/it/reaction-time-test/": {
+  "hash": "eff7e58a0a24580a1eedfbdb9e8bb746",
+  "date": "2026-11-19"
+ },
+ "/it/refresh-rate-test/": {
+  "hash": "89a238fb719d3e68834e3abf9a4e7a73",
+  "date": "2026-11-19"
  },
  "/it/speaker-test/": {
-  "hash": "c5dc6ddb26da2c5366a5a37ec3d21f4f",
-  "date": "2026-11-13"
+  "hash": "e53f3bb9ebbbb59fd3425083033c80ca",
+  "date": "2026-11-19"
+ },
+ "/it/typing-test/": {
+  "hash": "2d616cc0a6d21a3ac33c4e3f76b2b62a",
+  "date": "2026-11-19"
  },
  "/it/voice-recorder/": {
-  "hash": "8a1d9369795d467329de913c6e6b3f05",
-  "date": "2026-11-13"
+  "hash": "c9a50e6f67853b1934a918aa93b4b278",
+  "date": "2026-11-19"
+ },
+ "/it/water-eject/": {
+  "hash": "bd655761acd96c3f178937a2e94397a9",
+  "date": "2026-11-19"
  },
  "/it/webcam-test/": {
-  "hash": "3dc155d95a514da7bcb956399b907d9d",
-  "date": "2026-11-13"
+  "hash": "cd751a2afc321bfd43bf404569bad779",
+  "date": "2026-11-19"
  },
  "/it/zoom-mic-test/": {
-  "hash": "a653fb579c48895a428ae982e77620e6",
-  "date": "2026-11-13"
+  "hash": "6b143f35bd8ef652e46a8729e47304e8",
+  "date": "2026-11-19"
  },
  "/ja/": {
-  "hash": "347c7cfa235030b932a6ed6729422bec",
-  "date": "2026-11-13"
+  "hash": "8ab47edd7412d6a0caee3501ea2b11c0",
+  "date": "2026-11-19"
  },
  "/ja/airpods-mic-test/": {
-  "hash": "147f1e2a94a78a0b9b48ab7393248154",
-  "date": "2026-11-13"
+  "hash": "13d97fb236491e5bd034131051ec86a8",
+  "date": "2026-11-19"
  },
  "/ja/android-mic-test/": {
-  "hash": "c56dd8fae8f75d4d9c69e1c079524f53",
-  "date": "2026-11-13"
+  "hash": "d14e00970b60e2feff8555c2452240a8",
+  "date": "2026-11-19"
+ },
+ "/ja/cps-test/": {
+  "hash": "9c3f16b6203a07b399335f724ff375d2",
+  "date": "2026-11-19"
  },
  "/ja/dead-pixel-test/": {
-  "hash": "7a5750543449d5a2d3a50e728a1a9830",
-  "date": "2026-11-13"
+  "hash": "dbcfa8bd0415c016665f8860e25b2ad2",
+  "date": "2026-11-19"
  },
  "/ja/decibel-meter/": {
-  "hash": "5caa4e618f805d9124d633c1c626bb35",
-  "date": "2026-11-13"
+  "hash": "7fa3b96131ea8eb0ab52b9e3fc30dfd9",
+  "date": "2026-11-19"
  },
  "/ja/discord-mic-test/": {
-  "hash": "bcc600acdc86823b1d265135cc6f514a",
-  "date": "2026-11-13"
+  "hash": "babfabd57fde5fc76682dbdfe0a0a6b2",
+  "date": "2026-11-19"
+ },
+ "/ja/gamepad-test/": {
+  "hash": "0e62e833678e2b67d5e44ac72128d67d",
+  "date": "2026-11-19"
  },
  "/ja/guides/": {
-  "hash": "4529fd48c3b17c4607344a5534c25d73",
-  "date": "2026-11-13"
+  "hash": "ae557c001bae69bcef4916717d5ce2ca",
+  "date": "2026-11-19"
  },
  "/ja/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "295b7aaa90fbbb22c600d18c23171535",
-  "date": "2026-11-15"
+  "hash": "270e1dc3e9bb413b692217a255617c80",
+  "date": "2026-11-19"
  },
  "/ja/guides/keyboard-keys-not-working/": {
-  "hash": "8cfdc4df1980ddde3115742a6dd2404e",
-  "date": "2026-11-15"
+  "hash": "5fa6ddb8f72f30094f4ea41952a09216",
+  "date": "2026-11-19"
  },
  "/ja/guides/mic-camera-not-working-mac/": {
-  "hash": "35282b35f2bb843bc9d182d423af6740",
-  "date": "2026-11-13"
+  "hash": "5c1c7416bdcdd7c5da5c875f366daf9f",
+  "date": "2026-11-19"
  },
  "/ja/guides/mic-not-working-discord-zoom-teams/": {
-  "hash": "28e9ae40de8e75438b15f646563e2224",
-  "date": "2026-11-13"
+  "hash": "7020c55e9c6dfba3ade3a0dce4800935",
+  "date": "2026-11-19"
  },
  "/ja/guides/microphone-not-working-windows/": {
-  "hash": "ff76f41de2b6c87810a15e0230e0ff5f",
-  "date": "2026-11-13"
+  "hash": "3e2c94fb1bb8dde52e2c05b1270e8c19",
+  "date": "2026-11-19"
  },
  "/ja/guides/mouse-double-clicking/": {
-  "hash": "37889776bb704cd030a2f34fbf3285bb",
-  "date": "2026-11-15"
+  "hash": "b437df8aba151e257d8bf4da7b0d7e54",
+  "date": "2026-11-19"
  },
  "/ja/guides/no-sound-speakers-headphones/": {
-  "hash": "5f9f5d0230f68310d08fae64489e33bb",
-  "date": "2026-11-15"
+  "hash": "c7fdec22874ddfefd6dde640e9e1f5a7",
+  "date": "2026-11-19"
  },
  "/ja/guides/phone-mic-not-working/": {
-  "hash": "38e7daa1a0bd7e8e87d1c2b3f8a43f65",
-  "date": "2026-11-15"
+  "hash": "7610bee6a1d4a741165c82603f29c516",
+  "date": "2026-11-19"
  },
  "/ja/guides/webcam-not-working/": {
-  "hash": "aa8244b00e35eac96ef7dbf4a3082327",
-  "date": "2026-11-13"
+  "hash": "61bb872b017292cd9a48fdb75e04fa98",
+  "date": "2026-11-19"
  },
  "/ja/headphone-test/": {
-  "hash": "1b1b410df5a328b624af511ca7598810",
-  "date": "2026-11-13"
+  "hash": "538f2255c442f045678696fa91d15733",
+  "date": "2026-11-19"
+ },
+ "/ja/hearing-test/": {
+  "hash": "019f9ccb0df007c248adac01eb0314f6",
+  "date": "2026-11-19"
  },
  "/ja/iphone-mic-test/": {
-  "hash": "a32b3206a8bb645767f4244237d113fa",
-  "date": "2026-11-13"
+  "hash": "4524cf5db3bd7f8e73259ab672040f00",
+  "date": "2026-11-19"
  },
  "/ja/keyboard-test/": {
-  "hash": "e4ad7a17da114b30acee73bf4973fd87",
-  "date": "2026-11-13"
+  "hash": "b0b7f550a54f23873d0c480936fb4f04",
+  "date": "2026-11-19"
  },
  "/ja/mic-test/": {
-  "hash": "48fb0e6d989f4f3347c7228629465cd9",
-  "date": "2026-11-13"
+  "hash": "c6c942a967af03772b4d42d6c32887a9",
+  "date": "2026-11-19"
  },
  "/ja/mouse-test/": {
-  "hash": "28ba2c6ba53d7feeb498de55155d5f3c",
-  "date": "2026-11-13"
+  "hash": "4ce379eff63e12ce9061958847f71952",
+  "date": "2026-11-19"
+ },
+ "/ja/reaction-time-test/": {
+  "hash": "6614d908cf5c9b15270135cf6068c7de",
+  "date": "2026-11-19"
+ },
+ "/ja/refresh-rate-test/": {
+  "hash": "0f4215c520d2d46d1608db76e0ce4e51",
+  "date": "2026-11-19"
  },
  "/ja/speaker-test/": {
-  "hash": "cc8525120833d44211b785f5ce03e8bd",
-  "date": "2026-11-13"
+  "hash": "da9adb71ebf2f9ec7c69f80e66fe9c11",
+  "date": "2026-11-19"
+ },
+ "/ja/typing-test/": {
+  "hash": "747dcc4ce27773e5982719def9e5f161",
+  "date": "2026-11-19"
  },
  "/ja/voice-recorder/": {
-  "hash": "f4134cdd7545848bbc3b22e8948c439c",
-  "date": "2026-11-13"
+  "hash": "5f31626c200028a2d5f97e44be5dce63",
+  "date": "2026-11-19"
+ },
+ "/ja/water-eject/": {
+  "hash": "ee2f6cb3909647fe7e862717f36c9c6f",
+  "date": "2026-11-19"
  },
  "/ja/webcam-test/": {
-  "hash": "5268bf0aa1c29dd82f90b6e8b99f8f97",
-  "date": "2026-11-13"
+  "hash": "ef046080b59a6b927a4dd17bd1cb7c76",
+  "date": "2026-11-19"
  },
  "/ja/zoom-mic-test/": {
-  "hash": "870fc22537bfb933b5eba0d7f6adb54a",
-  "date": "2026-11-13"
+  "hash": "e5e6cb61b468abeeb2b26e876b2ccc5d",
+  "date": "2026-11-19"
  },
  "/keyboard-test/": {
-  "hash": "2ba6615796f49da8f0db13c580251acd",
-  "date": "2026-11-13"
+  "hash": "931e6d2a54ebe03a679b61173802a656",
+  "date": "2026-11-19"
  },
  "/mic-test/": {
-  "hash": "0759bdaa6cad32c0754a6a7c163db86d",
-  "date": "2026-11-13"
+  "hash": "64849a062b721a782b4fc73745c8fb85",
+  "date": "2026-11-19"
  },
  "/mouse-test/": {
-  "hash": "3c3c4691200dae80f13f9a9f8b1063c9",
-  "date": "2026-11-13"
+  "hash": "78c58ea220028dcdb0ba94bd48cd5dfc",
+  "date": "2026-11-19"
  },
  "/privacy/": {
-  "hash": "1a7139e6dc5d91ac3f13ff1bade10e8d",
-  "date": "2026-11-10"
+  "hash": "161a4b0fdc7a926b0b3b55580a243627",
+  "date": "2026-11-19"
  },
  "/pt/": {
-  "hash": "e8462f1f7d446fbc6cf3e8c7da916b7d",
-  "date": "2026-11-13"
+  "hash": "423c25f99e32e62efabb28965dad14be",
+  "date": "2026-11-19"
  },
  "/pt/airpods-mic-test/": {
-  "hash": "8aca10af21cdbf045baa3427a23b439b",
-  "date": "2026-11-13"
+  "hash": "4b412e58f0b9a6742d3fdaff05cf4cce",
+  "date": "2026-11-19"
  },
  "/pt/android-mic-test/": {
-  "hash": "d0e2e369f5acb666bd5cd380ff2f6d59",
-  "date": "2026-11-13"
+  "hash": "7b40da050ae01e9b71a0a53edee87ded",
+  "date": "2026-11-19"
+ },
+ "/pt/cps-test/": {
+  "hash": "2787609c8462342dee6a84cdab5213ed",
+  "date": "2026-11-19"
  },
  "/pt/dead-pixel-test/": {
-  "hash": "ac22c8e6bc703505666e18a75381c2f3",
-  "date": "2026-11-13"
+  "hash": "642c7fb7bec08e27de3199ac7bdda5df",
+  "date": "2026-11-19"
  },
  "/pt/decibel-meter/": {
-  "hash": "69c2ad759d7cc4fb3e5875e484f73b30",
-  "date": "2026-11-13"
+  "hash": "14a1640cbc33035d217f78708025485e",
+  "date": "2026-11-19"
  },
  "/pt/discord-mic-test/": {
-  "hash": "97a30e4c6f5f2922845085b84ec8e2d6",
-  "date": "2026-11-13"
+  "hash": "1f38519e0c892dc093c49488fd971d6c",
+  "date": "2026-11-19"
+ },
+ "/pt/gamepad-test/": {
+  "hash": "66141ae1d16d9e5dc2a89a5f1bab471b",
+  "date": "2026-11-19"
  },
  "/pt/guides/": {
-  "hash": "92157cb2ba06d76a8e9f95133e0bb87f",
-  "date": "2026-11-13"
+  "hash": "517d46a9be968654624d159af545050a",
+  "date": "2026-11-19"
  },
  "/pt/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "70d29a75cf0a5b46f33d649765ab5a07",
-  "date": "2026-11-15"
+  "hash": "3055d6497a2e70dcf45e205aae9100c5",
+  "date": "2026-11-19"
  },
  "/pt/guides/keyboard-keys-not-working/": {
-  "hash": "3f08062dac765648815085bb7ea67cb2",
-  "date": "2026-11-15"
+  "hash": "05fca9d89a104f2d40df1f4815e2ba57",
+  "date": "2026-11-19"
  },
  "/pt/guides/mic-camera-not-working-mac/": {
-  "hash": "ab28778c7e9d64608df74eaa6278c136",
-  "date": "2026-11-13"
+  "hash": "9031a928cb181d44128deb03f52517f1",
+  "date": "2026-11-19"
  },
  "/pt/guides/mic-not-working-discord-zoom-teams/": {
-  "hash": "baa9f2ffd8e8d8d36b39210afac10018",
-  "date": "2026-11-13"
+  "hash": "2f5be2c2967843c30df6409a75ee7853",
+  "date": "2026-11-19"
  },
  "/pt/guides/microphone-not-working-windows/": {
-  "hash": "6ad5278f67fae66d74c3f422041d7929",
-  "date": "2026-11-13"
+  "hash": "c7a0f502fe48653c26dbdba6e91245d2",
+  "date": "2026-11-19"
  },
  "/pt/guides/mouse-double-clicking/": {
-  "hash": "ccaa484234ce20bb772360915cf611fa",
-  "date": "2026-11-15"
+  "hash": "66516e67b0fd7f256df2fbe4fa9cbfdb",
+  "date": "2026-11-19"
  },
  "/pt/guides/no-sound-speakers-headphones/": {
-  "hash": "d20dbf9f0ddf7d7dc72e88ee9ec1ac2a",
-  "date": "2026-11-15"
+  "hash": "9edd31b2f8bb3c1fb56fb95a0f1a2dfe",
+  "date": "2026-11-19"
  },
  "/pt/guides/phone-mic-not-working/": {
-  "hash": "0c67d8d2eedf16db7d086151c75fa861",
-  "date": "2026-11-15"
+  "hash": "90ac4aa450c353a5fe5c262a6ccbe23f",
+  "date": "2026-11-19"
  },
  "/pt/guides/webcam-not-working/": {
-  "hash": "2e147f78dc7a449e2877a687d58ec412",
-  "date": "2026-11-13"
+  "hash": "654002c955a77c312720f9f5a5f641f7",
+  "date": "2026-11-19"
  },
  "/pt/headphone-test/": {
-  "hash": "4e1a5ad4a1cdd4f9a21d60c6914dc47f",
-  "date": "2026-11-13"
+  "hash": "a974a70a59992a58ff741cb2ae4b2ab7",
+  "date": "2026-11-19"
+ },
+ "/pt/hearing-test/": {
+  "hash": "127975a2be5350cbef30c1517a609436",
+  "date": "2026-11-19"
  },
  "/pt/iphone-mic-test/": {
-  "hash": "f9520545a36d9ecd38d423b07fa8521c",
-  "date": "2026-11-13"
+  "hash": "6db3caf036790e5eaea9c5cfe342b6eb",
+  "date": "2026-11-19"
  },
  "/pt/keyboard-test/": {
-  "hash": "b033459cd097c51755965dc274b04431",
-  "date": "2026-11-13"
+  "hash": "e51da028de6497ff97c9a7bc43e1f737",
+  "date": "2026-11-19"
  },
  "/pt/mic-test/": {
-  "hash": "280534036e2b003cdd646feea2706927",
-  "date": "2026-11-13"
+  "hash": "bad27c25a9214caf8dc9a3f7de18e5a0",
+  "date": "2026-11-19"
  },
  "/pt/mouse-test/": {
-  "hash": "09623b74bbcb9e2d545305cdf51301fc",
-  "date": "2026-11-13"
+  "hash": "6c961977fa87434b309b0d4a354c408e",
+  "date": "2026-11-19"
+ },
+ "/pt/reaction-time-test/": {
+  "hash": "07f01b48e59cc453daf84e73c62bb6f5",
+  "date": "2026-11-19"
+ },
+ "/pt/refresh-rate-test/": {
+  "hash": "2280e260186e2223489a5a39e73cf5f7",
+  "date": "2026-11-19"
  },
  "/pt/speaker-test/": {
-  "hash": "2c819685b574895ce6ebc0dfc8d3e3a7",
-  "date": "2026-11-13"
+  "hash": "cbbcb47626d144a2a10fc1531769621a",
+  "date": "2026-11-19"
+ },
+ "/pt/typing-test/": {
+  "hash": "114c3653debf81756f75224a0048774b",
+  "date": "2026-11-19"
  },
  "/pt/voice-recorder/": {
-  "hash": "ad0a652f3bab0fdda642b7f248eb7348",
-  "date": "2026-11-13"
+  "hash": "c815994f12ec983afadba845acdf8c57",
+  "date": "2026-11-19"
+ },
+ "/pt/water-eject/": {
+  "hash": "20637044f05f059d06dff81058e061ac",
+  "date": "2026-11-19"
  },
  "/pt/webcam-test/": {
-  "hash": "f43259699870770d227380046ebb8b69",
-  "date": "2026-11-13"
+  "hash": "33e647dcc2966af3fe36a105399589b6",
+  "date": "2026-11-19"
  },
  "/pt/zoom-mic-test/": {
-  "hash": "516f2ea99356c46e06e653caa8218abb",
-  "date": "2026-11-13"
+  "hash": "7c611d3c911686d836b4054d489a5c75",
+  "date": "2026-11-19"
+ },
+ "/reaction-time-test/": {
+  "hash": "9d108e490078f199198631b13f75364c",
+  "date": "2026-11-19"
+ },
+ "/refresh-rate-test/": {
+  "hash": "4bc9f1e1d68bf64b8ca3ee0a39cc467a",
+  "date": "2026-11-19"
  },
  "/ru/": {
-  "hash": "36f183bf65645c38d3f944dd71fcf99a",
-  "date": "2026-11-13"
+  "hash": "04ba7abdc3bacba4ba3f0ce003be9f2a",
+  "date": "2026-11-19"
  },
  "/ru/airpods-mic-test/": {
-  "hash": "0be4bc6d00b7c9d6a2cc13ad3c682e04",
-  "date": "2026-11-13"
+  "hash": "ac7918578f2783adb9e6f390a6588d46",
+  "date": "2026-11-19"
  },
  "/ru/android-mic-test/": {
-  "hash": "0a3b1e618ac71e6b3e017a1731145ea4",
-  "date": "2026-11-13"
+  "hash": "78741dacd28a30f393ec24abc6087288",
+  "date": "2026-11-19"
+ },
+ "/ru/cps-test/": {
+  "hash": "0c1a2294f797f9d6b6927ade04e33bad",
+  "date": "2026-11-19"
  },
  "/ru/dead-pixel-test/": {
-  "hash": "8d762787aadc2591c40975bb9a4c567b",
-  "date": "2026-11-13"
+  "hash": "c711241a432d4bdc377e96efd568e285",
+  "date": "2026-11-19"
  },
  "/ru/decibel-meter/": {
-  "hash": "d39318ea9d8d98f1f68fdf4095fae40f",
-  "date": "2026-11-13"
+  "hash": "0cd8762922ea94541833b649fc9629b0",
+  "date": "2026-11-19"
  },
  "/ru/discord-mic-test/": {
-  "hash": "6b18614bb923f32fab21072b9ad8f5c4",
-  "date": "2026-11-13"
+  "hash": "714cca96b7edc45545aee743e634dcb5",
+  "date": "2026-11-19"
+ },
+ "/ru/gamepad-test/": {
+  "hash": "d7a16151da5aba831f8a006b8d0c44f5",
+  "date": "2026-11-19"
  },
  "/ru/guides/": {
-  "hash": "0ab87c0b52a36c1ad4f320f29458a282",
-  "date": "2026-11-13"
+  "hash": "146b7831bfef09133798b7c30d4c6579",
+  "date": "2026-11-19"
  },
  "/ru/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "9fdf83aa0e99151de4769ed7dfafa9e0",
-  "date": "2026-11-15"
+  "hash": "f26cf5782f0bcd18f87e8361a725f7f6",
+  "date": "2026-11-19"
  },
  "/ru/guides/keyboard-keys-not-working/": {
-  "hash": "448d7bcf4c44f2e72829722d762d022f",
-  "date": "2026-11-15"
+  "hash": "cf391f5ed32600546278aa37ca0000e3",
+  "date": "2026-11-19"
  },
  "/ru/guides/mic-camera-not-working-mac/": {
-  "hash": "3eeb7940d985f34b91ff7989a579b791",
-  "date": "2026-11-13"
+  "hash": "591d47c1ccbbb51b49b4f253b51ca5c7",
+  "date": "2026-11-19"
  },
  "/ru/guides/mic-not-working-discord-zoom-teams/": {
-  "hash": "a96d5330fdbd2b79b69828415f71cd5e",
-  "date": "2026-11-13"
+  "hash": "17cd8dd38dc8880ed18c859b3942fc4a",
+  "date": "2026-11-19"
  },
  "/ru/guides/microphone-not-working-windows/": {
-  "hash": "d11f853075614d009c79c777c39081fa",
-  "date": "2026-11-13"
+  "hash": "03e833783fe96fc4cf74fc5431cc16a3",
+  "date": "2026-11-19"
  },
  "/ru/guides/mouse-double-clicking/": {
-  "hash": "1ff552c93f0084686aa3c193b194349c",
-  "date": "2026-11-15"
+  "hash": "f1f83ea1e22bd9808d8e31b07d7bc3ad",
+  "date": "2026-11-19"
  },
  "/ru/guides/no-sound-speakers-headphones/": {
-  "hash": "d3771f9f7d710ff96ffc206ffb9cb420",
-  "date": "2026-11-15"
+  "hash": "7d7082ef33c84f4da6bc6310bceb28f1",
+  "date": "2026-11-19"
  },
  "/ru/guides/phone-mic-not-working/": {
-  "hash": "7c9ba1f8f88e15d3f030da6ce716c1ad",
-  "date": "2026-11-15"
+  "hash": "e5f9c71c36c60bc1b24c902b901e2160",
+  "date": "2026-11-19"
  },
  "/ru/guides/webcam-not-working/": {
-  "hash": "e1acd4482caa5721aa84e48364515f57",
-  "date": "2026-11-13"
+  "hash": "705d958730e19fb47330dba512ab19de",
+  "date": "2026-11-19"
  },
  "/ru/headphone-test/": {
-  "hash": "91ea68a6636d45b390d9562ab10a675d",
-  "date": "2026-11-13"
+  "hash": "6577df6ed992a2c1e92a258852de5fae",
+  "date": "2026-11-19"
+ },
+ "/ru/hearing-test/": {
+  "hash": "ce979a2c5bdac9efb5a3f80685b50598",
+  "date": "2026-11-19"
  },
  "/ru/iphone-mic-test/": {
-  "hash": "85c6b141bf240d94fbabdd3dfd19bc96",
-  "date": "2026-11-13"
+  "hash": "cb91b75b94bd4f0b7d89aaae336add48",
+  "date": "2026-11-19"
  },
  "/ru/keyboard-test/": {
-  "hash": "3a1e190238d09783133c316e64b4f5e2",
-  "date": "2026-11-13"
+  "hash": "23de0af4f6a568f4512d89439ba9302b",
+  "date": "2026-11-19"
  },
  "/ru/mic-test/": {
-  "hash": "e350930e5dbf2e04c336a392597e102a",
-  "date": "2026-11-13"
+  "hash": "31e6ec36983511ffdafe745579309cad",
+  "date": "2026-11-19"
  },
  "/ru/mouse-test/": {
-  "hash": "8f12acc8ebd73cce3ca84eff25c0a456",
-  "date": "2026-11-13"
+  "hash": "dd825b39b12aad7f3f92fcdc8ff1b780",
+  "date": "2026-11-19"
+ },
+ "/ru/reaction-time-test/": {
+  "hash": "3276b62e6b3fad5a3698cad6103a2184",
+  "date": "2026-11-19"
+ },
+ "/ru/refresh-rate-test/": {
+  "hash": "416a475db5e1e66f65d64d42ff2f6694",
+  "date": "2026-11-19"
  },
  "/ru/speaker-test/": {
-  "hash": "4f95e2d172dca7e7f550c3ad3b95fbee",
-  "date": "2026-11-13"
+  "hash": "ac888f4c8b9fe64ef0d3276fc05cd6e0",
+  "date": "2026-11-19"
+ },
+ "/ru/typing-test/": {
+  "hash": "5409256d57194bd8b16cd7a551a906b5",
+  "date": "2026-11-19"
  },
  "/ru/voice-recorder/": {
-  "hash": "aee0079d8bf0ab16ec837e09a5f4e66b",
-  "date": "2026-11-13"
+  "hash": "a1cb3ee958430fbd00e0851e10acb643",
+  "date": "2026-11-19"
+ },
+ "/ru/water-eject/": {
+  "hash": "c9310ff4bd2535112eeef333650be506",
+  "date": "2026-11-19"
  },
  "/ru/webcam-test/": {
-  "hash": "8b8efb87891368bc3ba3afd4e61a3362",
-  "date": "2026-11-13"
+  "hash": "f572c069ce907ecb408f275eb4c85ea6",
+  "date": "2026-11-19"
  },
  "/ru/zoom-mic-test/": {
-  "hash": "33387506358d84be85cc22aed84ac588",
-  "date": "2026-11-13"
+  "hash": "d596bb67500637f4308be27df749590d",
+  "date": "2026-11-19"
  },
  "/speaker-test/": {
-  "hash": "2ef261842b2157eaf21627944fa10a55",
-  "date": "2026-11-13"
+  "hash": "a14e79b497f5dab2cf1f7d2501016e12",
+  "date": "2026-11-19"
  },
  "/tr/": {
-  "hash": "448da49ab5c42a68c699613a9b443452",
-  "date": "2026-11-13"
+  "hash": "d47c3bbe9c98d63841e8462a12fbd232",
+  "date": "2026-11-19"
  },
  "/tr/airpods-mic-test/": {
-  "hash": "0dba608ca7fd4a89923db9711fab0508",
-  "date": "2026-11-13"
+  "hash": "35748c7512a7c1dee0f32d78a3885be3",
+  "date": "2026-11-19"
  },
  "/tr/android-mic-test/": {
-  "hash": "ff6c7dcf60512c2d45ed85241e4f4d4a",
-  "date": "2026-11-13"
+  "hash": "d8f93402f08da8d806091721f9164505",
+  "date": "2026-11-19"
+ },
+ "/tr/cps-test/": {
+  "hash": "7d9a55aa02291af7f81e29a5aa97dc20",
+  "date": "2026-11-19"
  },
  "/tr/dead-pixel-test/": {
-  "hash": "917bf1c0b4ca0a96fcfd72bf190f842b",
-  "date": "2026-11-13"
+  "hash": "57602a9a2aa9a404ca4cb8d48c3c6e61",
+  "date": "2026-11-19"
  },
  "/tr/decibel-meter/": {
-  "hash": "d3bb5f7be905f8f2f556aa444d8b64e6",
-  "date": "2026-11-13"
+  "hash": "e14c7b5e9035ab6bd3fb3faf9a23709d",
+  "date": "2026-11-19"
  },
  "/tr/discord-mic-test/": {
-  "hash": "5d5111d8102d05a1b84b8e139c165b6f",
-  "date": "2026-11-13"
+  "hash": "cbaeb45722bd438c2b84d33fa7ff85e1",
+  "date": "2026-11-19"
+ },
+ "/tr/gamepad-test/": {
+  "hash": "e92c6bb902d6174c617d5dac22b476ac",
+  "date": "2026-11-19"
  },
  "/tr/guides/": {
-  "hash": "a2cf9457ba197a59e61ac2aec5311cdf",
-  "date": "2026-11-13"
+  "hash": "accbef9e90292b4a7ac6fff6f3522eea",
+  "date": "2026-11-19"
  },
  "/tr/guides/dead-pixel-stuck-pixel-fix/": {
-  "hash": "34c3128f8b9b90c1930e97691223ba15",
-  "date": "2026-11-15"
+  "hash": "415443bb8b8ed21e8ce3338206ebedfe",
+  "date": "2026-11-19"
  },
  "/tr/guides/keyboard-keys-not-working/": {
-  "hash": "47f95cb6a096d571aaaa157ea138fe24",
-  "date": "2026-11-15"
+  "hash": "d38ccac267d53dd5135055074ac8460c",
+  "date": "2026-11-19"
  },
  "/tr/guides/mic-camera-not-working-mac/": {
-  "hash": "849aebfc68c98942fee60f46de1cf7ff",
-  "date": "2026-11-13"
+  "hash": "4e9159834359a1cb3f94e479ceeb3458",
+  "date": "2026-11-19"
  },
  "/tr/guides/mic-not-working-discord-zoom-teams/": {
-  "hash": "1f4561da0687b212aa5335796f5477cf",
-  "date": "2026-11-13"
+  "hash": "d04c5f9279f90377741084ca6981ac42",
+  "date": "2026-11-19"
  },
  "/tr/guides/microphone-not-working-windows/": {
-  "hash": "a42e9740b3318152b0a84bf62eec6991",
-  "date": "2026-11-13"
+  "hash": "064847ec29d1a89af61e5210180705ca",
+  "date": "2026-11-19"
  },
  "/tr/guides/mouse-double-clicking/": {
-  "hash": "0c4b1ea0d7bc697c632ecdb6504935a0",
-  "date": "2026-11-15"
+  "hash": "9a44cbc5016086139d80628c48540682",
+  "date": "2026-11-19"
  },
  "/tr/guides/no-sound-speakers-headphones/": {
-  "hash": "3e1f682a8ee66751b99aaec64bb28aea",
-  "date": "2026-11-15"
+  "hash": "c20291729477dc36b08f9ae18374c0d9",
+  "date": "2026-11-19"
  },
  "/tr/guides/phone-mic-not-working/": {
-  "hash": "b4852d0140a97abd68b3f7af97173239",
-  "date": "2026-11-15"
+  "hash": "c8410d783949865151782817e796f93f",
+  "date": "2026-11-19"
  },
  "/tr/guides/webcam-not-working/": {
-  "hash": "b3f1b0744f6cfc65bdf43944c3b7c7e9",
-  "date": "2026-11-13"
+  "hash": "4e1dba3129e5e33fdb8d5224c51cf651",
+  "date": "2026-11-19"
  },
  "/tr/headphone-test/": {
-  "hash": "7d74a5ddb17bd99e57e20df91c921325",
-  "date": "2026-11-13"
+  "hash": "a315db08df5969d54660a4e0e06fcc84",
+  "date": "2026-11-19"
+ },
+ "/tr/hearing-test/": {
+  "hash": "b0f468b64b7b4e612a674ca2ddeab5b5",
+  "date": "2026-11-19"
  },
  "/tr/iphone-mic-test/": {
-  "hash": "a15a27cb6b91633dabc666bc14edc03c",
-  "date": "2026-11-13"
+  "hash": "e6230122c5b3e02f733ab13d457bfa45",
+  "date": "2026-11-19"
  },
  "/tr/keyboard-test/": {
-  "hash": "dbb72516e0d276b8cfe9be57f1cb3d68",
-  "date": "2026-11-13"
+  "hash": "3a2f90b19f422969d0985f2e01fb2efc",
+  "date": "2026-11-19"
  },
  "/tr/mic-test/": {
-  "hash": "79f6143ed3da2ac4e2f3748644707384",
-  "date": "2026-11-13"
+  "hash": "1478caca10cbcc4583b33634bcb559c9",
+  "date": "2026-11-19"
  },
  "/tr/mouse-test/": {
-  "hash": "85e334f211dc7b2f54b5cb134c4cbd9f",
-  "date": "2026-11-13"
+  "hash": "c7b13731e2b1d1a9b1e11e2a4027dca2",
+  "date": "2026-11-19"
+ },
+ "/tr/reaction-time-test/": {
+  "hash": "6ea0ef07729a1853ccbdbaf6c8dff751",
+  "date": "2026-11-19"
+ },
+ "/tr/refresh-rate-test/": {
+  "hash": "81508f4e8d020b7f3934c71deb63ed3c",
+  "date": "2026-11-19"
  },
  "/tr/speaker-test/": {
-  "hash": "da7200933883fc12679ca210401bdc5a",
-  "date": "2026-11-13"
+  "hash": "c2ee9aa5987721c3a21181f4f4c1e7fa",
+  "date": "2026-11-19"
+ },
+ "/tr/typing-test/": {
+  "hash": "4a142e3b66c9db49302650679ff2b508",
+  "date": "2026-11-19"
  },
  "/tr/voice-recorder/": {
-  "hash": "d12f74cc507b453e6d694899b65c592e",
-  "date": "2026-11-13"
+  "hash": "048e1f27ea7af6869423ffd89c96eb6d",
+  "date": "2026-11-19"
+ },
+ "/tr/water-eject/": {
+  "hash": "5cd8be50deb868ac8a11efe3af6ede2a",
+  "date": "2026-11-19"
  },
  "/tr/webcam-test/": {
-  "hash": "5f567aedd5aecb34ada17e56ca6694fd",
-  "date": "2026-11-13"
+  "hash": "ec4128587d56d12863c4ec7a57dc0ee8",
+  "date": "2026-11-19"
  },
  "/tr/zoom-mic-test/": {
-  "hash": "f7ace7baf89262fedb446eb0d8f2167e",
-  "date": "2026-11-13"
+  "hash": "9960e3f19025accfb0e1a24c9a99b8b4",
+  "date": "2026-11-19"
+ },
+ "/typing-test/": {
+  "hash": "968f2067791d0e516d6356143ca6bb77",
+  "date": "2026-11-19"
  },
  "/voice-recorder/": {
-  "hash": "686fa87f53cc89e84959473ef217f7cc",
-  "date": "2026-11-13"
+  "hash": "d596f1159d0c0c0a143718ed41f58e2f",
+  "date": "2026-11-19"
+ },
+ "/water-eject/": {
+  "hash": "af430296a5c9f651208508b78e4cfec1",
+  "date": "2026-11-19"
  },
  "/webcam-test/": {
-  "hash": "8d10c517ff026e2e383b44afdfdfb9f5",
-  "date": "2026-11-13"
+  "hash": "e2b7b02094c93b0cefb4072cb5e74ef3",
+  "date": "2026-11-19"
  },
  "/widget/": {
-  "hash": "6bade2867ea2c95a010d73e28689924c",
-  "date": "2026-11-10"
+  "hash": "35d2a9a58dbde67ecb1f8ac881b54fe9",
+  "date": "2026-11-19"
  },
  "/zoom-mic-test/": {
-  "hash": "57a68c0abc305dc3ad1f7cf8e497b98e",
-  "date": "2026-11-13"
+  "hash": "d3d635dae1667128ea4cc1de88088695",
+  "date": "2026-11-19"
  }
 }

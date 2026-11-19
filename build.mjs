@@ -31,10 +31,17 @@ Object.assign(PAGES, {
   decibel: { slug: 'decibel-meter/', tools: ['db'], devices: false, variant: true, icon: 'gauge' },
   keyboard: { slug: 'keyboard-test/', tools: ['kb'], devices: false, variant: true, icon: 'kbd' },
   mouse: { slug: 'mouse-test/', tools: ['ms'], devices: false, variant: true, icon: 'mouse' },
-  pixel: { slug: 'dead-pixel-test/', tools: ['px'], devices: false, variant: true, icon: 'screen' }
+  pixel: { slug: 'dead-pixel-test/', tools: ['px'], devices: false, variant: true, icon: 'screen' },
+  gamepad: { slug: 'gamepad-test/', tools: ['gp'], devices: false, variant: true, icon: 'pad' },
+  typing: { slug: 'typing-test/', tools: ['ty'], devices: false, variant: true, icon: 'type' },
+  cps: { slug: 'cps-test/', tools: ['cps'], devices: false, variant: true, icon: 'click' },
+  reaction: { slug: 'reaction-time-test/', tools: ['rt'], devices: false, variant: true, icon: 'bolt' },
+  refresh: { slug: 'refresh-rate-test/', tools: ['hz'], devices: false, variant: true, icon: 'hz' },
+  hearing: { slug: 'hearing-test/', tools: ['hr'], devices: false, variant: true, icon: 'ear' },
+  water: { slug: 'water-eject/', tools: ['we'], devices: false, variant: true, icon: 'drop' }
 });
 const MEDIA_TOOLS = ['mic', 'cam', 'spk'];
-const PAGE_ORDER = ['home', 'mic', 'webcam', 'speaker', 'decibel', 'keyboard', 'mouse', 'pixel', 'recorder', 'discord', 'zoom', 'iphone', 'android', 'airpods', 'headphone'];
+const PAGE_ORDER = ['home', 'mic', 'webcam', 'speaker', 'decibel', 'keyboard', 'mouse', 'pixel', 'gamepad', 'typing', 'cps', 'reaction', 'refresh', 'hearing', 'water', 'recorder', 'discord', 'zoom', 'iphone', 'android', 'airpods', 'headphone'];
 const VARIANTS = PAGE_ORDER.filter((p) => PAGES[p].variant);
 
 /* ---------- load locales ---------- */
@@ -163,6 +170,13 @@ const ICONS = {
   kbd: '<rect x="2.5" y="6" width="19" height="12" rx="2.5"/><path d="M6 9.5h.01M9 9.5h.01M12 9.5h.01M15 9.5h.01M18 9.5h.01M6 12.2h.01M9 12.2h.01M12 12.2h.01M15 12.2h.01M18 12.2h.01M8 15h8" stroke-width="2.2"/>',
   mouse: '<rect x="6" y="3" width="12" height="18" rx="6"/><path d="M12 3v6.5M6.2 9.5h11.6"/><path d="M12 5.8v1.6" stroke-width="2.6"/>',
   screen: '<rect x="2.5" y="4" width="19" height="13" rx="2"/><path d="M8.5 20.5h7M12 17v3.5"/><rect x="13.5" y="7.5" width="3" height="3" fill="currentColor" stroke="none"/>',
+  pad: '<path d="M7.5 7h9a5 5 0 0 1 4.8 6.4l-1.2 4.1a2.4 2.4 0 0 1-4 1L14 16.4h-4l-2.1 2.1a2.4 2.4 0 0 1-4-1l-1.2-4.1A5 5 0 0 1 7.5 7z"/><path d="M7.5 10.2v3M6 11.7h3"/><circle cx="15.6" cy="10.6" r=".9" fill="currentColor" stroke="none"/><circle cx="17.4" cy="12.6" r=".9" fill="currentColor" stroke="none"/>',
+  type: '<rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M6.5 9.5h4M6.5 13h6.5M15.5 8.5v7"/>',
+  click: '<path d="M9 9l10.5 3.6-4.4 1.6-1.6 4.4z"/><path d="M5.2 5.2l2 2M9.5 3v2.6M3 9.5h2.6M5.4 13.6l1.8-1.8M13.6 5.4l-1.8 1.8"/>',
+  bolt: '<path d="M13.5 2.5L5 13.5h6l-1 8 8.5-11h-6z"/>',
+  hz: '<rect x="2.5" y="4" width="19" height="13" rx="2"/><path d="M8.5 20.5h7M12 17v3.5"/><path d="M5.5 12.5l2.2-4 2.2 4 2.2-4 2.2 4 2.2-4 2 3.6"/>',
+  ear: '<path d="M6.5 9a5.5 5.5 0 0 1 11 0c0 3.2-2.7 4-3.4 6.2-.6 1.9-1.6 4.3-4.3 4.3A2.8 2.8 0 0 1 7 16.8"/><path d="M9.5 9.3a2.5 2.5 0 0 1 5 0c0 1.5-1.4 1.8-1.8 3"/>',
+  drop: '<path d="M12 3c3.5 4.3 6.5 7.8 6.5 11.3a6.5 6.5 0 0 1-13 0C5.5 10.8 8.5 7.3 12 3z"/><path d="M9 14.5a3 3 0 0 0 3 3"/>',
   copy: '<rect x="8.5" y="8.5" width="12" height="12" rx="2.5"/><path d="M15.5 8.5V6a2.5 2.5 0 0 0-2.5-2.5H6A2.5 2.5 0 0 0 3.5 6v7A2.5 2.5 0 0 0 6 15.5h2.5"/>'
 };
 const ic = (n) => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${ICONS[n]}</svg>`;
@@ -613,6 +627,189 @@ const pxTool = (u, headTag) => `
   <div class="px-fixer" id="pxFixer" hidden><canvas id="pxFixCv" width="64" height="64"></canvas><button type="button" id="pxFixClose" aria-label="${esc(u.stop)}">×</button></div>
 </section>`;
 
+/* ---------- controller (gamepad) tester ---------- */
+const GP_BTNS = ['A', 'B', 'X', 'Y', 'LB', 'RB', 'LT', 'RT', 'Select', 'Start', 'L3', 'R3', '↑', '↓', '←', '→', 'Home'];
+const gpTool = (u, headTag) => `
+<section class="wrap tool" id="gpad" aria-labelledby="gpTitle">
+  <div class="card">
+    <div class="card-head">
+      <div>
+        <${headTag} id="gpTitle" class="tool-title"><span class="ico">${ic('pad')}</span> ${esc(u.gpTool)}</${headTag}>
+        <p class="muted">${esc(u.gpHint)}</p>
+      </div>
+      <div class="controls"><button class="btn" id="gpVib" type="button" disabled>${esc(u.gpVibrate)}</button><button class="btn" id="gpReset" type="button">${esc(u.dbReset)}</button></div>
+    </div>
+    <div class="gp-wait" id="gpWait"><span class="gp-wait-ico">${ic('pad')}</span><b>${esc(u.gpWaiting)}</b></div>
+    <div class="gp-live" id="gpLive" hidden>
+      <p class="gp-name"><span>${esc(u.gpName)}:</span> <b id="gpName" dir="ltr"></b></p>
+      <dl class="stat-row gp-stats">
+        <div><dt>${esc(u.gpButtons)}</dt><dd><span id="gpCount">0</span><small>/ <b>${GP_BTNS.length}</b></small></dd></div>
+        <div><dt>${esc(u.gpLeft)}</dt><dd><span id="gpLv" dir="ltr">0%</span></dd></div>
+        <div><dt>${esc(u.gpRight)}</dt><dd><span id="gpRv" dir="ltr">0%</span></dd></div>
+        <div class="stat-wide" id="gpDriftBox"><dt>${esc(u.gpDrift)}</dt><dd><span id="gpDrift">${esc(u.gpDriftNone)}</span></dd></div>
+      </dl>
+      <div class="gp-board" dir="ltr">
+        <div class="gp-sticks">
+          <div class="gp-stick" id="gpS0"><i></i><b></b></div>
+          <div class="gp-stick" id="gpS1"><i></i><b></b></div>
+        </div>
+        <div class="gp-trig"><span>LT</span><div class="gp-bar"><i id="gpT6"></i></div><span>RT</span><div class="gp-bar"><i id="gpT7"></i></div></div>
+        <div class="gp-btns">${GP_BTNS.map((b, i) => `<span class="gp-b" id="gpB${i}">${b}</span>`).join('')}</div>
+      </div>
+    </div>
+    <p class="tip-line" id="gpTip" hidden>${esc(u.gpDriftTip)}</p>
+    <p class="muted tool-note">${esc(u.gpNote)}</p>
+  </div>
+</section>`;
+
+/* ---------- typing speed test ---------- */
+const tyTool = (u, headTag) => `
+<section class="wrap tool" id="typing" aria-labelledby="tyTitle">
+  <div class="card">
+    <div class="card-head">
+      <div>
+        <${headTag} id="tyTitle" class="tool-title"><span class="ico">${ic('type')}</span> ${esc(u.tyTool)}</${headTag}>
+        <p class="muted">${esc(u.tyHint)}</p>
+      </div>
+      <div class="controls"><div class="seg" role="group" aria-label="${esc(u.tyTime)}">${[15, 30, 60].map((s) => `<button class="seg-b${s === 60 ? ' on' : ''}" type="button" data-s="${s}" aria-pressed="${s === 60}">${s} ${esc(u.unitSec)}</button>`).join('')}</div><button class="btn" id="tyRestart" type="button">${esc(u.tyRestart)}</button></div>
+    </div>
+    <dl class="stat-row ty-stats">
+      <div><dt>${esc(u.tyTime)}</dt><dd><span id="tyTime">60</span></dd></div>
+      <div><dt>${esc(u.tyWpm)}</dt><dd><span id="tyWpm">0</span></dd></div>
+      <div><dt>${esc(u.tyAcc)}</dt><dd><span id="tyAcc" dir="ltr">–</span></dd></div>
+      <div><dt>${esc(u.tyWrong)}</dt><dd><span id="tyWrong">0</span></dd></div>
+      <div><dt>${esc(u.tyBest)}</dt><dd><span id="tyBest">–</span><small>${esc(u.tyWpm)}</small></dd></div>
+    </dl>
+    <div class="ty-box" id="tyBox"><div class="ty-words" id="tyWords"></div></div>
+    <input class="ty-input" id="tyIn" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="next" aria-label="${esc(u.tyInput)}" placeholder="${esc(u.tyInput)}">
+    <p class="ty-result" id="tyResult" aria-live="polite" hidden></p>
+    <p class="muted tool-note">${esc(u.tyNote)}</p>
+  </div>
+</section>`;
+
+/* ---------- click speed (CPS) test ---------- */
+const cpsTool = (u, headTag) => `
+<section class="wrap tool" id="cpst" aria-labelledby="cpsTitle">
+  <div class="card">
+    <div class="card-head">
+      <div>
+        <${headTag} id="cpsTitle" class="tool-title"><span class="ico">${ic('click')}</span> ${esc(u.cpsTool)}</${headTag}>
+        <p class="muted">${esc(u.cpsHint)}</p>
+      </div>
+      <div class="controls"><div class="seg" role="group" aria-label="${esc(u.tyTime)}">${[1, 5, 10, 30, 60].map((s) => `<button class="seg-b${s === 5 ? ' on' : ''}" type="button" data-s="${s}" aria-pressed="${s === 5}">${s} ${esc(u.unitSec)}</button>`).join('')}</div></div>
+    </div>
+    <dl class="stat-row cps-stats">
+      <div><dt>${esc(u.tyTime)}</dt><dd><span id="cpsTime" dir="ltr">5.0</span></dd></div>
+      <div><dt>${esc(u.cpsClicks)}</dt><dd><span id="cpsN">0</span></dd></div>
+      <div><dt>${esc(u.cpsCps)}</dt><dd><span id="cpsV">0</span></dd></div>
+      <div class="stat-wide"><dt>${esc(u.tyBest)}</dt><dd><span id="cpsBest">–</span><small>${esc(u.cpsCps)}</small></dd></div>
+    </dl>
+    <button class="cps-area" id="cpsArea" type="button"><span id="cpsMsg">${esc(u.cpsArea)}</span><span class="ms-ripple-host" id="cpsRip"></span></button>
+    <p class="ty-result" id="cpsResult" aria-live="polite" hidden></p>
+    <p class="muted tool-note">${esc(u.cpsNote)}</p>
+  </div>
+</section>`;
+
+/* ---------- reaction time test ---------- */
+const rtTool = (u, headTag) => `
+<section class="wrap tool" id="react" aria-labelledby="rtTitle">
+  <div class="card">
+    <div class="card-head">
+      <div>
+        <${headTag} id="rtTitle" class="tool-title"><span class="ico">${ic('bolt')}</span> ${esc(u.rtTool)}</${headTag}>
+        <p class="muted">${esc(u.rtHint)}</p>
+      </div>
+      <div class="controls"><button class="btn" id="rtReset" type="button">${esc(u.dbReset)}</button></div>
+    </div>
+    <dl class="stat-row rt-stats">
+      <div><dt>${esc(u.rtTries)}</dt><dd><span id="rtN">0</span><small>/ <b>5</b></small></dd></div>
+      <div><dt>${esc(u.rtAvg)}</dt><dd><span id="rtAvg">–</span><small>${esc(u.rtMs)}</small></dd></div>
+      <div><dt>${esc(u.rtBest)}</dt><dd><span id="rtBest">–</span><small>${esc(u.rtMs)}</small></dd></div>
+      <div class="stat-wide"><dt>${esc(u.tyBest)} (${esc(u.rtAvg)})</dt><dd><span id="rtRecord">–</span><small>${esc(u.rtMs)}</small></dd></div>
+    </dl>
+    <button class="rt-area" id="rtArea" type="button" data-state="idle"><b id="rtMsg">${esc(u.rtStart)}</b></button>
+    <ol class="rt-list" id="rtList" dir="ltr"></ol>
+    <p class="muted tool-note">${esc(u.rtNote)}</p>
+  </div>
+</section>`;
+
+/* ---------- refresh rate test ---------- */
+const hzTool = (u, headTag) => `
+<section class="wrap tool" id="hzt" aria-labelledby="hzTitle">
+  <div class="card">
+    <div class="card-head">
+      <div>
+        <${headTag} id="hzTitle" class="tool-title"><span class="ico">${ic('hz')}</span> ${esc(u.hzTool)}</${headTag}>
+        <p class="muted">${esc(u.hzHint)}</p>
+      </div>
+    </div>
+    <div class="hz-top">
+      <div class="hz-big"><span id="hzVal">–</span><small>Hz</small></div>
+      <dl class="hz-specs">
+        <div><dt>${esc(u.hzFrame)}</dt><dd id="hzFrame" dir="ltr">–</dd></div>
+        <div><dt>${esc(u.hzDropped)}</dt><dd id="hzDrop">0</dd></div>
+        <div><dt>${esc(u.scrRes)}</dt><dd id="hzRes" dir="ltr">–</dd></div>
+      </dl>
+    </div>
+    <h3 class="hz-h">${esc(u.hzMotion)}</h3>
+    <div class="hz-lanes" dir="ltr">
+      <div class="hz-lane"><span class="hz-lab"><b id="hzLab0">${esc(u.hzYour)}</b></span><canvas id="hzC0"></canvas></div>
+      <div class="hz-lane"><span class="hz-lab"><b>60 fps</b></span><canvas id="hzC1"></canvas></div>
+      <div class="hz-lane"><span class="hz-lab"><b>30 fps</b></span><canvas id="hzC2"></canvas></div>
+    </div>
+    <p class="tip-line" id="hzTip" hidden></p>
+    <p class="muted tool-note">${esc(u.hzNote)}</p>
+  </div>
+</section>`;
+
+/* ---------- hearing test ---------- */
+const HR_TONES = [8000, 10000, 12000, 14000, 15000, 16000, 17000, 17400, 18000, 19000, 20000];
+const hrTool = (u, headTag) => `
+<section class="wrap tool" id="hearing" aria-labelledby="hrTitle">
+  <div class="card">
+    <div class="card-head">
+      <div>
+        <${headTag} id="hrTitle" class="tool-title"><span class="ico">${ic('ear')}</span> ${esc(u.hrTool)}</${headTag}>
+        <p class="muted">${esc(u.hrHint)}</p>
+      </div>
+      <div class="controls"><div class="seg" role="group" aria-label="${esc(u.hrEar)}">${[['-1', u.hrLeft], ['0', u.hrBoth], ['1', u.hrRight]].map(([p, n]) => `<button class="seg-b${p === '0' ? ' on' : ''}" type="button" data-pan="${p}" aria-pressed="${p === '0'}">${esc(n)}</button>`).join('')}</div></div>
+    </div>
+    <p class="tip-line hr-warn">${esc(u.hrWarn)}</p>
+    <div class="hr-main">
+      <div class="hr-read"><span class="hr-lab">${esc(u.hrFreq)}</span><span class="hr-f" dir="ltr"><b id="hrF">–</b> <small>Hz</small></span><div class="hr-bar"><i id="hrBar"></i></div></div>
+      <div class="hr-ctl">
+        <button class="btn btn-primary btn-lg" id="hrGo" type="button" data-on="${esc(u.hrStop)}" data-off="${esc(u.hrStart)}">${esc(u.hrStart)}</button>
+        <label class="hr-vol"><span>${esc(u.hrVolume)}</span><input type="range" id="hrVol" min="0.01" max="0.6" step="0.01" value="0.12"></label>
+      </div>
+    </div>
+    <div class="hr-res" id="hrRes" hidden><span>${esc(u.hrHighest)}</span><b id="hrMax" dir="ltr">–</b><p id="hrAge"></p></div>
+    <h3 class="hz-h">${esc(u.hrTones)}</h3>
+    <div class="hr-tones" dir="ltr">${HR_TONES.map((f) => `<button class="hr-t" type="button" data-f="${f}">${f >= 1000 ? (f / 1000) + ' kHz' : f + ' Hz'}</button>`).join('')}</div>
+    <p class="muted tool-note">${esc(u.hrNote)}</p>
+  </div>
+</section>`;
+
+/* ---------- water eject ---------- */
+const weTool = (u, headTag) => `
+<section class="wrap tool" id="water" aria-labelledby="weTitle">
+  <div class="card">
+    <div class="card-head">
+      <div>
+        <${headTag} id="weTitle" class="tool-title"><span class="ico">${ic('drop')}</span> ${esc(u.weTool)}</${headTag}>
+        <p class="muted">${esc(u.weHint)}</p>
+      </div>
+      <div class="controls"><div class="seg" role="group" aria-label="${esc(u.weMode)}"><button class="seg-b on" type="button" data-m="tone" aria-pressed="true">${esc(u.weTone)}</button><button class="seg-b" type="button" data-m="sweep" aria-pressed="false">${esc(u.weSweep)}</button></div></div>
+    </div>
+    <div class="we-main">
+      <button class="we-btn" id="weGo" type="button" data-on="${esc(u.weStop)}" data-off="${esc(u.weStart)}" style="--p:0">
+        <span class="we-ring"></span><span class="we-ico">${ic('drop')}</span><b id="weLab">${esc(u.weStart)}</b><small id="weLeft" dir="ltr"></small>
+      </button>
+      <ol class="we-steps"><li>${esc(u.we1)}</li><li>${esc(u.we2)}</li><li>${esc(u.we3)}</li></ol>
+    </div>
+    <p class="muted tool-note">${esc(u.weNote)}</p>
+  </div>
+</section>`;
+
 const devicesTool = (u) => `
 <section class="wrap tool" id="devices" aria-labelledby="devTitle">
   <div class="card">
@@ -710,9 +907,9 @@ function renderPage(lang, page) {
   const cta = isHome
     ? `<button class="btn btn-primary btn-lg" id="heroStart" data-action="all" type="button">${esc(u.testAll)}</button>
        <a class="btn btn-ghost btn-lg" href="${urlFor(lang, 'mic')}">${esc(u.justMic)}</a>`
-    : `<button class="btn btn-primary btn-lg" id="heroStart" data-action="${def.tools[0]}" type="button">${esc(u[{ mic: 'startMic', cam: 'startCam', spk: 'startSpk', rec: 'startRec', db: 'startDb', kb: 'startKb', ms: 'startMs', px: 'startPx' }[def.tools[0]]])}</button>`;
+    : `<button class="btn btn-primary btn-lg" id="heroStart" data-action="${def.tools[0]}" type="button">${esc(u[{ mic: 'startMic', cam: 'startCam', spk: 'startSpk', rec: 'startRec', db: 'startDb', kb: 'startKb', ms: 'startMs', px: 'startPx', gp: 'startGp', ty: 'startTy', cps: 'startCps', rt: 'startRt', hz: 'startHz', hr: 'startHr', we: 'startWe' }[def.tools[0]]])}</button>`;
 
-  const tools = def.tools.map((k) => ({ mic: micTool, cam: camTool, spk: spkTool, rec: recTool, db: dbTool, kb: kbTool, ms: msTool, px: pxTool }[k](u, toolHead))).join('\n');
+  const tools = def.tools.map((k) => ({ mic: micTool, cam: camTool, spk: spkTool, rec: recTool, db: dbTool, kb: kbTool, ms: msTool, px: pxTool, gp: gpTool, ty: tyTool, cps: cpsTool, rt: rtTool, hz: hzTool, hr: hrTool, we: weTool }[k](u, toolHead))).join('\n');
 
   const cardList = ['mic', 'webcam', 'speaker', ...VARIANTS].filter((p) => p !== page && pageLangs(p).includes(lang) && (!isHome || PAGES[p].variant));
   const others = !cardList.length ? '' : `
@@ -727,7 +924,7 @@ function renderPage(lang, page) {
   </div>
 </section>`;
 
-  const toolKey = { mic: 'mic', webcam: 'webcam', speaker: 'speaker', home: 'any', headphone: 'speaker' }[page] ?? ({ mic: 'mic', rec: 'mic', db: 'mic', cam: 'webcam', spk: 'speaker', kb: 'keyboard', ms: 'mouse', px: 'pixel' }[PAGES[page].tools[0]] || null);
+  const toolKey = { mic: 'mic', webcam: 'webcam', speaker: 'speaker', home: 'any', headphone: 'speaker' }[page] ?? ({ mic: 'mic', rec: 'mic', db: 'mic', cam: 'webcam', spk: 'speaker', kb: 'keyboard', ms: 'mouse', px: 'pixel', ty: 'keyboard', cps: 'mouse', rt: 'mouse', hz: 'pixel', hr: 'speaker', we: 'speaker' }[PAGES[page].tools[0]] || null);
   const GL = GUIDES_BY_LANG[lang] ? lang : 'en'; const rel = toolKey === 'any' ? ['microphone-not-working-windows', 'webcam-not-working', 'no-sound-speakers-headphones'].map((s) => GUIDES_BY_LANG[GL].guides.find((g) => g.slug === s)).filter(Boolean) : GUIDES_BY_LANG[GL].guides.filter((g) => g.tool === toolKey).slice(0, 3);
   const related = rel.length ? `
 <section class="wrap others" aria-labelledby="guidesTitle">

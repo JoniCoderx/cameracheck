@@ -211,7 +211,102 @@
     "colRed": "Red",
     "colGreen": "Green",
     "colBlue": "Blue",
-    "colGray": "Gray"
+    "colGray": "Gray",
+    "unitSec": "s",
+    "gpTool": "Controller tester",
+    "gpHint": "Connect a controller by USB or Bluetooth and press any button.",
+    "gpWaiting": "No controller found. Connect one and press any button to wake it up.",
+    "gpName": "Controller",
+    "gpButtons": "Buttons tested",
+    "gpLeft": "Left stick",
+    "gpRight": "Right stick",
+    "gpDrift": "Stick drift",
+    "gpDriftNone": "None found",
+    "gpDriftTip": "A stick reports movement while you aren't touching it. That is stick drift. Clean around the stick with compressed air, or check the warranty.",
+    "gpVibrate": "Test vibration",
+    "gpNoVibrate": "Vibration isn't supported for this controller in this browser.",
+    "gpNote": "Works with Xbox, PlayStation, Switch Pro and most USB controllers in Chrome, Edge and Firefox. To check for drift, let go of both sticks: the value should fall back to near 0%.",
+    "startGp": "Start controller test",
+    "tyTool": "Typing speed test",
+    "tyHint": "Type the words below. The timer starts with your first key. Press space after each word.",
+    "tyWpm": "WPM",
+    "tyAcc": "Accuracy",
+    "tyTime": "Time",
+    "tyWrong": "Mistakes",
+    "tyBest": "Best",
+    "tyRestart": "Restart",
+    "tyInput": "Start typing here",
+    "tyDone": "Time's up!",
+    "tyResult": "{wpm} words per minute with {acc} accuracy.",
+    "tyNote": "WPM counts correctly typed characters divided by 5, per minute. Most adults type 35 to 45 WPM.",
+    "startTy": "Start typing test",
+    "tyWords": "the be to of and a in that have it for not on with he as you do at this but his by from they we say her she or an will my one all would there their what so up out if about who get which go me when make can like time no just him know take people into year your good some could them see other than then now look only come its over think also back after use two how our work first well way even new want because any these give day most us is was are has had been more find here thing many great where through long little world still own hand old life tell write become last school never same another begin while number part turn real leave might keep point home small large next early young important few public bad able group always music those both often until children side feet car mile night walk white sea began grow took river four carry state once book hear stop without second later miss idea enough eat face watch far really almost let above girl sometimes mountain cut talk soon list song being family water open city light place sound answer study learn should under name very form sentence help low line differ cause much mean before move right boy too does set three air play end put read port spell add land must big high such follow act why ask men change went kind off need house picture try again animal mother found",
+    "cpsTool": "Click speed test",
+    "cpsHint": "Click as fast as you can inside the box. The timer starts with your first click.",
+    "cpsArea": "Click here to start",
+    "cpsClicks": "Clicks",
+    "cpsCps": "CPS",
+    "cpsAgain": "Click to try again",
+    "cpsResult": "{cps} clicks per second ({n} clicks in {s} seconds).",
+    "cpsR1": "Relaxed",
+    "cpsR2": "Average",
+    "cpsR3": "Fast",
+    "cpsR4": "Very fast",
+    "cpsNote": "Most people click 6 to 8 times per second. Above 10 is very fast. Taps on a touchscreen count too.",
+    "startCps": "Start click test",
+    "rtTool": "Reaction time test",
+    "rtHint": "Click or tap as soon as the box turns green. Five tries.",
+    "rtStart": "Click here to start",
+    "rtWait": "Wait for green…",
+    "rtGo": "Click!",
+    "rtEarly": "Too soon! Click to try again.",
+    "rtShot": "{ms} ms. Click to keep going.",
+    "rtDone": "Your average: {ms} ms. Click to try again.",
+    "rtAvg": "Average",
+    "rtBest": "Best",
+    "rtTries": "Tries",
+    "rtMs": "ms",
+    "rtNote": "Most people react in 200 to 300 ms. Your screen, mouse and browser add a few milliseconds.",
+    "startRt": "Start reaction test",
+    "hzTool": "Refresh rate test",
+    "hzHint": "Your screen's real refresh rate, measured live in the browser.",
+    "hzFrame": "Frame time",
+    "hzDropped": "Skipped frames",
+    "hzMotion": "Motion comparison",
+    "hzYour": "Your screen",
+    "hzTip": "Measured {hz} Hz. If your monitor supports more, set it in Windows under Settings → System → Display → Advanced display, and use DisplayPort or a fast HDMI cable.",
+    "hzNote": "Close other tabs for the most stable reading. On laptops, plug in the charger: battery saving can lower the rate to 60 Hz.",
+    "startHz": "Start refresh rate test",
+    "hrTool": "Hearing test",
+    "hrHint": "Use headphones. Start the sweep and press the button as soon as you can no longer hear the tone.",
+    "hrWarn": "Start at a low volume and turn it up slowly. High tones can sound much louder than you expect.",
+    "hrStart": "Start the sweep",
+    "hrStop": "I can't hear it anymore",
+    "hrFreq": "Frequency",
+    "hrVolume": "Volume",
+    "hrEar": "Ear",
+    "hrLeft": "Left",
+    "hrBoth": "Both",
+    "hrRight": "Right",
+    "hrHighest": "Highest tone you heard",
+    "hrTones": "Play a single tone",
+    "hrResult": "You heard up to {f}. That is typical for people {age}.",
+    "hrUnder": "under {n}",
+    "hrOver": "over {n}",
+    "hrNote": "This is not a medical test. Your headphones or speakers may not play the highest tones. If you notice hearing loss, see a doctor.",
+    "startHr": "Start hearing test",
+    "weTool": "Water eject",
+    "weHint": "Plays a low, pulsing tone that makes the speaker vibrate and push water out.",
+    "weStart": "Eject water",
+    "weStop": "Stop",
+    "weMode": "Sound",
+    "weTone": "165 Hz tone",
+    "weSweep": "Low sweep",
+    "we1": "Remove headphones and turn the volume all the way up.",
+    "we2": "Hold the phone with the speaker facing down.",
+    "we3": "Press the button and let it play. Repeat 2 or 3 times if the sound is still muffled.",
+    "weNote": "This can help push water out, but it can't fix a damaged speaker. If the sound stays muffled after a few tries, let the phone dry for a few hours.",
+    "startWe": "Eject water now"
   },
   "pages": {
     "home": {
@@ -1082,6 +1177,375 @@
         {
           "q": "How many dead pixels are acceptable?",
           "a": "It depends on the brand. Many allow a few, but some promise zero bright pixels. Check the warranty of your model."
+        }
+      ]
+    },
+    "gamepad": {
+      "card": {
+        "name": "Controller test",
+        "desc": "Buttons, sticks and drift."
+      },
+      "title": "Gamepad Tester: Test Your Controller & Stick Drift Online",
+      "description": "Free online gamepad tester for Xbox, PlayStation and Switch controllers. Check every button, triggers, analog sticks, stick drift and vibration in your browser.",
+      "h1Html": "Online <span class=\"grad\">controller test</span>",
+      "lead": "Plug in or pair your controller and press any button. See every button, trigger and stick move live, and find stick drift in seconds.",
+      "article": [
+        {
+          "h": "How to test your controller",
+          "ol": [
+            "Connect the controller by USB cable or Bluetooth.",
+            "Press any button so the browser can see it.",
+            "Press every button once. Each one turns green when it works.",
+            "Move both sticks in full circles, then let go and watch the drift value."
+          ]
+        },
+        {
+          "h": "What is stick drift?",
+          "p": [
+            "Stick drift means an analog stick reports movement while you aren't touching it, so your character walks or the camera turns on its own. It's caused by wear or dirt inside the stick. Let go of both sticks: the value should fall to 0% or close to it. If it stays at 8% or more, the test flags it as drift."
+          ]
+        },
+        {
+          "h": "Which controllers work?",
+          "p": [
+            "Xbox One and Series controllers, PlayStation 4 and 5 (DualShock 4 and DualSense), Nintendo Switch Pro, 8BitDo and most USB gamepads work in Chrome, Edge and Firefox. Safari supports most of them too. Vibration works in Chrome and Edge for Xbox and PlayStation controllers."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is this gamepad tester free?",
+          "a": "Yes. It's free and runs in your browser with nothing to install."
+        },
+        {
+          "q": "Why doesn't my controller show up?",
+          "a": "Press a button after connecting it. Browsers only show a controller after the first button press. If it still doesn't appear, try another USB cable or port."
+        },
+        {
+          "q": "How do I fix stick drift?",
+          "a": "Blow compressed air around the base of the stick while moving it in circles, and recalibrate the controller in your console or Windows settings. If drift stays, the stick module needs repair or the controller may be covered by warranty."
+        },
+        {
+          "q": "Can I test a PS5 controller on PC?",
+          "a": "Yes. Connect the DualSense by USB-C or Bluetooth and press any button. All buttons, triggers and sticks are shown."
+        }
+      ]
+    },
+    "typing": {
+      "card": {
+        "name": "Typing test",
+        "desc": "Words per minute and accuracy."
+      },
+      "title": "Typing Test: Check Your Typing Speed (WPM) Online Free",
+      "description": "Free typing speed test. Type for 15, 30 or 60 seconds and get your words per minute (WPM) and accuracy. No sign-up, works on any keyboard.",
+      "h1Html": "Online <span class=\"grad\">typing test</span>",
+      "lead": "How fast do you type? Take a one-minute test and get your words per minute and accuracy right away.",
+      "article": [
+        {
+          "h": "How the typing test works",
+          "ol": [
+            "Choose 15, 30 or 60 seconds.",
+            "Start typing the words. The timer starts with your first key.",
+            "Press space after each word. Correct words turn green and mistakes turn red.",
+            "When time is up you'll see your WPM, accuracy and best score."
+          ]
+        },
+        {
+          "h": "What is a good typing speed?",
+          "p": [
+            "Most adults type 35 to 45 words per minute. 60 WPM is fast for office work, and professional typists usually reach 70 to 90 WPM. Accuracy matters as much as speed: above 95% is good."
+          ]
+        },
+        {
+          "h": "How to type faster",
+          "ul": [
+            "Keep your fingers on the home row (ASDF and JKL;) and use all ten fingers.",
+            "Look at the screen, not the keyboard.",
+            "Practise a few minutes every day rather than once a week.",
+            "Slow down until you make fewer mistakes. Speed comes with accuracy."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "How is WPM calculated?",
+          "a": "Correctly typed characters, including spaces, are divided by 5 to get words, then divided by the minutes of the test."
+        },
+        {
+          "q": "Is this typing test free?",
+          "a": "Yes. It's free, with no sign-up and no limit on tries."
+        },
+        {
+          "q": "Does it work on a phone?",
+          "a": "Yes, but phone keyboards are slower than a physical keyboard, so your score will be lower."
+        },
+        {
+          "q": "Is my best score saved?",
+          "a": "Yes. Your best score for each test length is saved in this browser only."
+        }
+      ]
+    },
+    "cps": {
+      "card": {
+        "name": "Click speed test",
+        "desc": "Clicks per second (CPS)."
+      },
+      "title": "CPS Test: Check Your Clicks Per Second (Click Speed Test)",
+      "description": "Free click speed test. Click as fast as you can for 1, 5, 10, 30 or 60 seconds and see your clicks per second (CPS). Works with mouse, touchpad and touch.",
+      "h1Html": "Online <span class=\"grad\">click speed test</span>",
+      "lead": "How fast can you click? Pick a time, click inside the box and get your clicks per second.",
+      "article": [
+        {
+          "h": "How the CPS test works",
+          "ol": [
+            "Choose 1, 5, 10, 30 or 60 seconds.",
+            "Click inside the box as fast as you can. The timer starts with your first click.",
+            "When time is up you'll see your clicks per second and your best score."
+          ]
+        },
+        {
+          "h": "What is a good CPS?",
+          "p": [
+            "Most people click 6 to 8 times per second. 10 or more is very fast. Gamers who use techniques like jitter clicking or butterfly clicking can reach 12 to 20 CPS for short bursts."
+          ]
+        },
+        {
+          "h": "Clicking techniques",
+          "ul": [
+            "Normal clicking: one finger, easy on the hand, usually 6 to 8 CPS.",
+            "Jitter clicking: tensing the arm so the finger vibrates on the button, often 10 to 14 CPS.",
+            "Butterfly clicking: two fingers alternating on one button, often 15 CPS or more. Some mice register it as double clicks."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What does CPS mean?",
+          "a": "CPS means clicks per second: how many times you click the mouse button in one second."
+        },
+        {
+          "q": "Is the CPS test free?",
+          "a": "Yes. It's free, with no sign-up and unlimited tries."
+        },
+        {
+          "q": "Can I use a touchpad or phone?",
+          "a": "Yes. Taps on a touchpad or touchscreen count as clicks."
+        },
+        {
+          "q": "Why does my mouse register extra clicks?",
+          "a": "A worn switch can send two clicks for one press. Check it with the mouse test on this site, which flags accidental double clicks."
+        }
+      ]
+    },
+    "reaction": {
+      "card": {
+        "name": "Reaction time test",
+        "desc": "How fast do you react?"
+      },
+      "title": "Reaction Time Test: Check Your Reaction Speed in ms",
+      "description": "Free reaction time test. Click when the box turns green and get your reaction time in milliseconds. Five tries, average and best score.",
+      "h1Html": "Online <span class=\"grad\">reaction time test</span>",
+      "lead": "Click as soon as the box turns green. Five tries give you your average reaction time in milliseconds.",
+      "article": [
+        {
+          "h": "How the reaction test works",
+          "ol": [
+            "Click the box to start. It turns red.",
+            "Wait. After a random delay it turns green.",
+            "Click or tap as fast as you can. Clicking on red counts as too soon.",
+            "After five tries you'll see your average and best time."
+          ]
+        },
+        {
+          "h": "What is a good reaction time?",
+          "p": [
+            "The average visual reaction time is about 250 ms. Under 200 ms is fast, and many gamers score between 150 and 200 ms. Results above 300 ms are common when tired or distracted."
+          ]
+        },
+        {
+          "h": "Why your result includes your setup",
+          "p": [
+            "Every result includes a few milliseconds from your screen, mouse and browser. A 60 Hz screen shows a new frame every 16.7 ms, while a 144 Hz screen shows one every 7 ms, so faster screens can give slightly better scores."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the average human reaction time?",
+          "a": "About 250 milliseconds for a visual signal like this test."
+        },
+        {
+          "q": "Can I improve my reaction time?",
+          "a": "Yes, a little. Sleep, practice, and a fast screen and mouse all help. Caffeine and warm-up can help short term."
+        },
+        {
+          "q": "Does it work on a phone?",
+          "a": "Yes. Tap the box. Touchscreens can add some delay compared to a mouse."
+        },
+        {
+          "q": "Can I use the keyboard?",
+          "a": "Yes. Focus the box and press space or Enter instead of clicking."
+        }
+      ]
+    },
+    "refresh": {
+      "card": {
+        "name": "Refresh rate test",
+        "desc": "Your screen's real Hz."
+      },
+      "title": "Refresh Rate Test: Check Your Monitor's Hz (60, 144, 240)",
+      "description": "Free online refresh rate test. See your monitor's real refresh rate in Hz, frame time and skipped frames, plus a motion comparison at 60 and 30 fps.",
+      "h1Html": "Online <span class=\"grad\">refresh rate test</span>",
+      "lead": "Check if your 120, 144 or 240 Hz screen is really running at its full speed. The result appears right away.",
+      "article": [
+        {
+          "h": "How the test works",
+          "p": [
+            "The browser draws a new frame every time your screen refreshes. The test times hundreds of frames and shows the result in Hz, along with the frame time and any skipped frames. The moving blocks compare your screen's motion with 60 and 30 frames per second."
+          ]
+        },
+        {
+          "h": "Why does my 144 Hz monitor show 60 Hz?",
+          "ul": [
+            "The refresh rate is set to 60 Hz in Windows: go to Settings → System → Display → Advanced display and choose the highest rate.",
+            "The cable can't carry it: use DisplayPort or an HDMI 2.0 or newer cable.",
+            "The laptop is on battery saving: plug in the charger.",
+            "The browser window is on a second, slower monitor."
+          ]
+        },
+        {
+          "h": "What refresh rate do I need?",
+          "p": [
+            "60 Hz is fine for office work and video. For games, 120 to 165 Hz feels much smoother, and 240 Hz or more mostly helps competitive players."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is the result accurate?",
+          "a": "Yes, usually within one or two Hz. Close other tabs for the most stable reading."
+        },
+        {
+          "q": "Does it work on phones?",
+          "a": "Yes. Phones with 90 or 120 Hz screens show their rate, but many phones lower it to save battery when nothing moves."
+        },
+        {
+          "q": "What are skipped frames?",
+          "a": "Frames the browser didn't draw in time. A few are normal. Many of them make motion look choppy."
+        },
+        {
+          "q": "Why does the number change?",
+          "a": "Some screens with variable refresh (VRR, G-SYNC, FreeSync or ProMotion) change their rate based on what's on screen."
+        }
+      ]
+    },
+    "hearing": {
+      "card": {
+        "name": "Hearing test",
+        "desc": "Highest frequency you hear."
+      },
+      "title": "Hearing Test Online: Check Your Hearing Range (Hz)",
+      "description": "Free online hearing test. Find the highest frequency you can hear with a tone sweep, test each ear and see what's typical for your age.",
+      "h1Html": "Online <span class=\"grad\">hearing test</span>",
+      "lead": "Find the highest tone you can still hear, test each ear separately, and see what's typical for your age.",
+      "article": [
+        {
+          "h": "How to take the hearing test",
+          "ol": [
+            "Put on headphones and set the volume low.",
+            "Press Start: a tone rises from 8,000 Hz upward.",
+            "Press the button as soon as you can't hear it anymore.",
+            "Repeat for each ear with the Left and Right buttons."
+          ]
+        },
+        {
+          "h": "Hearing range by age",
+          "ul": [
+            "Under 20: up to about 19,000 Hz or higher.",
+            "Under 25: up to about 17,400 Hz (the so-called mosquito tone).",
+            "Under 30: up to about 16,000 Hz.",
+            "Under 40: about 15,000 Hz.",
+            "Under 50: about 14,000 Hz.",
+            "Under 60: about 12,000 Hz."
+          ]
+        },
+        {
+          "h": "Things that affect the result",
+          "p": [
+            "Cheap headphones and laptop speakers often can't play tones above 16,000 Hz, so you may not hear them even with perfect hearing. Background noise and very low volume also lower the result. This test checks only high frequencies and isn't a medical hearing test."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is this a medical hearing test?",
+          "a": "No. It's a quick check of your high-frequency range. For a real hearing test, see a doctor or an audiologist."
+        },
+        {
+          "q": "What is the mosquito tone?",
+          "a": "A tone around 17,400 Hz that most young people can hear but many adults over 25 can't."
+        },
+        {
+          "q": "Why can't I hear the highest tones?",
+          "a": "Hearing of high frequencies drops naturally with age. Your headphones or speakers may also not play them."
+        },
+        {
+          "q": "Is it safe?",
+          "a": "Yes, if you start at a low volume. Never play high tones loudly, especially on headphones."
+        }
+      ]
+    },
+    "water": {
+      "card": {
+        "name": "Water eject",
+        "desc": "Push water out of the speaker."
+      },
+      "title": "Water Eject: Get Water Out of Your Phone Speaker (165 Hz Sound)",
+      "description": "Water in your phone speaker? Play a 165 Hz water eject tone to push it out. Works on iPhone and Android in the browser, no app needed.",
+      "h1Html": "<span class=\"grad\">Water eject</span> sound",
+      "lead": "Got water in your phone speaker? Play a low, pulsing tone that shakes the water out, right in your browser.",
+      "article": [
+        {
+          "h": "How to eject water from your speaker",
+          "ol": [
+            "Remove headphones and turn the volume all the way up.",
+            "Hold the phone with the speaker facing down.",
+            "Press the button and let the sound play for 30 seconds.",
+            "Repeat 2 or 3 times if the sound is still muffled."
+          ]
+        },
+        {
+          "h": "How does it work?",
+          "p": [
+            "A low tone makes the speaker's membrane move back and forth a lot. That movement pushes water droplets out of the speaker grille, the same idea Apple uses for the water lock on Apple Watch. The pulsing makes the movement stronger."
+          ]
+        },
+        {
+          "h": "If the sound is still muffled",
+          "ul": [
+            "Let the phone dry with the speaker facing down for a few hours.",
+            "Don't put the phone in rice: it doesn't dry faster and the dust can get inside.",
+            "Don't use a hair dryer or poke anything into the speaker.",
+            "If the speaker still sounds bad after a day, it may be damaged and needs repair."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does water eject really work?",
+          "a": "It can help push water out of the speaker grille, and many people find their sound clears up. It can't fix a speaker that is already damaged."
+        },
+        {
+          "q": "What frequency is used to eject water?",
+          "a": "A low tone around 165 Hz is commonly used. The low sweep option moves between 110 and 300 Hz."
+        },
+        {
+          "q": "Does it work on iPhone and Android?",
+          "a": "Yes. It works in Safari, Chrome and other browsers on any phone. Turn off silent mode on iPhone if you hear nothing."
+        },
+        {
+          "q": "Is it safe for my speaker?",
+          "a": "Yes. It plays a normal tone at your phone's volume, like music. Stop if the speaker rattles badly."
         }
       ]
     }

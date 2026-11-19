@@ -211,7 +211,102 @@
     "colRed": "Merah",
     "colGreen": "Hijau",
     "colBlue": "Biru",
-    "colGray": "Abu-abu"
+    "colGray": "Abu-abu",
+    "unitSec": "dtk",
+    "gpTool": "Penguji controller",
+    "gpHint": "Sambungkan controller lewat USB atau Bluetooth, lalu tekan tombol apa saja.",
+    "gpWaiting": "Controller tidak ditemukan. Sambungkan controller dan tekan tombol apa saja untuk mengaktifkannya.",
+    "gpName": "Controller",
+    "gpButtons": "Tombol dites",
+    "gpLeft": "Stik kiri",
+    "gpRight": "Stik kanan",
+    "gpDrift": "Stick drift",
+    "gpDriftNone": "Tidak ada",
+    "gpDriftTip": "Stik melaporkan gerakan padahal tidak Anda sentuh. Itulah stick drift. Bersihkan sekitar stik dengan udara bertekanan, atau cek garansinya.",
+    "gpVibrate": "Tes getaran",
+    "gpNoVibrate": "Getaran tidak didukung untuk controller ini di browser ini.",
+    "gpNote": "Berfungsi dengan Xbox, PlayStation, Switch Pro, dan sebagian besar controller USB di Chrome, Edge, dan Firefox. Untuk cek drift, lepaskan kedua stik: nilainya harus kembali mendekati 0%.",
+    "startGp": "Mulai tes controller",
+    "tyTool": "Tes kecepatan mengetik",
+    "tyHint": "Ketik kata-kata di bawah. Timer mulai saat tombol pertama ditekan. Tekan spasi setelah setiap kata.",
+    "tyWpm": "WPM",
+    "tyAcc": "Akurasi",
+    "tyTime": "Waktu",
+    "tyWrong": "Kesalahan",
+    "tyBest": "Terbaik",
+    "tyRestart": "Ulangi",
+    "tyInput": "Mulai mengetik di sini",
+    "tyDone": "Waktu habis!",
+    "tyResult": "{wpm} kata per menit dengan akurasi {acc}.",
+    "tyNote": "WPM menghitung karakter yang diketik dengan benar dibagi 5, per menit. Kebanyakan orang dewasa mengetik 35 sampai 45 WPM.",
+    "startTy": "Mulai tes mengetik",
+    "tyWords": "yang dan di ke dari ini itu dengan untuk tidak ada saya kamu dia kami kita mereka akan sudah belum bisa harus mau ingin juga lagi hanya saja sangat lebih paling banyak sedikit semua setiap apa siapa mana kapan kenapa bagaimana berapa karena jadi tapi atau kalau jika maka seperti sama baru lama besar kecil tinggi rendah panjang pendek baik buruk bagus cantik senang sedih marah takut capek sakit sehat rumah sekolah kantor pasar toko jalan kota desa negara dunia air api tanah udara langit laut gunung sungai pohon bunga daun buah nasi roti teh kopi susu gula garam ayam ikan telur sayur makan minum tidur bangun duduk berdiri lari pergi datang pulang masuk keluar naik turun buka tutup baca tulis lihat dengar bicara kata tanya jawab beli jual bayar uang harga kerja main belajar ajar guru murid buku pena meja kursi pintu jendela kamar mobil motor sepeda kereta pesawat kapal hari minggu bulan tahun jam pagi siang sore malam sekarang nanti tadi besok kemarin ibu bapak ayah anak adik kakak nenek kakek teman orang laki perempuan tangan kaki kepala mata telinga mulut hidung rambut hati badan baju celana sepatu topi tas warna merah putih hitam biru hijau kuning satu dua tiga empat lima enam tujuh delapan sembilan sepuluh ratus ribu cepat lambat mudah susah dekat jauh atas bawah depan belakang dalam luar kiri kanan tengah benar salah tahu pikir rasa suka cinta hidup mati kirim terima pakai cari temu tunggu bantu coba mulai selesai",
+    "cpsTool": "Tes kecepatan klik",
+    "cpsHint": "Klik secepat mungkin di dalam kotak. Timer mulai saat klik pertama.",
+    "cpsArea": "Klik di sini untuk mulai",
+    "cpsClicks": "Klik",
+    "cpsCps": "CPS",
+    "cpsAgain": "Klik untuk coba lagi",
+    "cpsResult": "{cps} klik per detik ({n} klik dalam {s} detik).",
+    "cpsR1": "Santai",
+    "cpsR2": "Rata-rata",
+    "cpsR3": "Cepat",
+    "cpsR4": "Sangat cepat",
+    "cpsNote": "Kebanyakan orang klik 6 sampai 8 kali per detik. Di atas 10 sudah sangat cepat. Ketukan di layar sentuh juga dihitung.",
+    "startCps": "Mulai tes klik",
+    "rtTool": "Tes waktu reaksi",
+    "rtHint": "Klik atau ketuk begitu kotak berubah hijau. Lima kali percobaan.",
+    "rtStart": "Klik di sini untuk mulai",
+    "rtWait": "Tunggu sampai hijau…",
+    "rtGo": "Klik!",
+    "rtEarly": "Terlalu cepat! Klik untuk coba lagi.",
+    "rtShot": "{ms} ms. Klik untuk lanjut.",
+    "rtDone": "Rata-rata Anda: {ms} ms. Klik untuk coba lagi.",
+    "rtAvg": "Rata-rata",
+    "rtBest": "Terbaik",
+    "rtTries": "Percobaan",
+    "rtMs": "ms",
+    "rtNote": "Kebanyakan orang bereaksi dalam 200 sampai 300 ms. Layar, mouse, dan browser Anda menambah beberapa milidetik.",
+    "startRt": "Mulai tes reaksi",
+    "hzTool": "Tes refresh rate",
+    "hzHint": "Refresh rate layar Anda yang sebenarnya, diukur langsung di browser.",
+    "hzFrame": "Frame time",
+    "hzDropped": "Frame terlewat",
+    "hzMotion": "Perbandingan gerakan",
+    "hzYour": "Layar Anda",
+    "hzTip": "Terukur {hz} Hz. Jika monitor Anda mendukung lebih tinggi, atur di Windows lewat Pengaturan → Sistem → Layar → Layar tingkat lanjut, dan gunakan kabel DisplayPort atau HDMI yang cepat.",
+    "hzNote": "Tutup tab lain agar hasil paling stabil. Di laptop, colokkan charger: mode hemat baterai bisa menurunkan refresh rate ke 60 Hz.",
+    "startHz": "Mulai tes refresh rate",
+    "hrTool": "Tes pendengaran",
+    "hrHint": "Gunakan headphone. Mulai sweep dan tekan tombol begitu Anda tidak lagi mendengar nadanya.",
+    "hrWarn": "Mulai dengan volume rendah lalu naikkan perlahan. Nada tinggi bisa terdengar jauh lebih keras dari yang Anda kira.",
+    "hrStart": "Mulai sweep",
+    "hrStop": "Sudah tidak terdengar",
+    "hrFreq": "Frekuensi",
+    "hrVolume": "Volume",
+    "hrEar": "Telinga",
+    "hrLeft": "Kiri",
+    "hrBoth": "Keduanya",
+    "hrRight": "Kanan",
+    "hrHighest": "Nada tertinggi yang terdengar",
+    "hrTones": "Putar satu nada",
+    "hrResult": "Anda mendengar hingga {f}. Itu wajar untuk orang berusia {age}.",
+    "hrUnder": "di bawah {n} tahun",
+    "hrOver": "di atas {n} tahun",
+    "hrNote": "Ini bukan tes medis. Headphone atau speaker Anda mungkin tidak bisa memutar nada tertinggi. Jika Anda merasa pendengaran menurun, periksakan ke dokter.",
+    "startHr": "Mulai tes pendengaran",
+    "weTool": "Pengusir air speaker",
+    "weHint": "Memutar nada rendah yang berdenyut agar speaker bergetar dan mendorong air keluar.",
+    "weStart": "Keluarkan air",
+    "weStop": "Berhenti",
+    "weMode": "Suara",
+    "weTone": "Nada 165 Hz",
+    "weSweep": "Sweep rendah",
+    "we1": "Lepas headphone dan naikkan volume sampai penuh.",
+    "we2": "Pegang ponsel dengan speaker menghadap ke bawah.",
+    "we3": "Tekan tombol dan biarkan suaranya berbunyi. Ulangi 2 atau 3 kali jika suara masih teredam.",
+    "weNote": "Ini bisa membantu mendorong air keluar, tetapi tidak bisa memperbaiki speaker yang rusak. Jika suara tetap teredam setelah beberapa kali, biarkan ponsel mengering beberapa jam.",
+    "startWe": "Keluarkan air sekarang"
   },
   "pages": {
     "home": {
@@ -1074,6 +1169,375 @@
         {
           "q": "Berapa jumlah dead pixel yang masih wajar?",
           "a": "Tergantung mereknya. Banyak yang menoleransi beberapa, tetapi ada juga yang menjamin nol bright pixel. Cek garansi model Anda."
+        }
+      ]
+    },
+    "gamepad": {
+      "card": {
+        "name": "Tes controller",
+        "desc": "Tombol, stik, dan drift."
+      },
+      "title": "Tes gamepad online: cek controller dan stick drift",
+      "description": "Gamepad tester online gratis untuk controller Xbox, PlayStation, dan Switch. Cek semua tombol, trigger, stik analog, stick drift, dan getaran di browser Anda.",
+      "h1Html": "<span class=\"grad\">Tes controller</span> online",
+      "lead": "Colokkan atau pasangkan controller Anda lalu tekan tombol apa saja. Lihat setiap tombol, trigger, dan stik bergerak langsung, dan temukan stick drift dalam hitungan detik.",
+      "article": [
+        {
+          "h": "Cara mengetes controller Anda",
+          "ol": [
+            "Sambungkan controller lewat kabel USB atau Bluetooth.",
+            "Tekan tombol apa saja agar browser bisa mendeteksinya.",
+            "Tekan setiap tombol satu kali. Tombol yang berfungsi akan berubah hijau.",
+            "Putar kedua stik membentuk lingkaran penuh, lalu lepaskan dan perhatikan nilai drift-nya."
+          ]
+        },
+        {
+          "h": "Apa itu stick drift?",
+          "p": [
+            "Stick drift berarti stik analog melaporkan gerakan padahal tidak Anda sentuh, sehingga karakter berjalan sendiri atau kamera berputar sendiri. Penyebabnya adalah keausan atau kotoran di dalam stik. Lepaskan kedua stik: nilainya harus turun ke 0% atau mendekatinya. Jika tetap di 8% atau lebih, tes akan menandainya sebagai drift."
+          ]
+        },
+        {
+          "h": "Controller apa saja yang didukung?",
+          "p": [
+            "Controller Xbox One dan Series, PlayStation 4 dan 5 (DualShock 4 dan DualSense), Nintendo Switch Pro, 8BitDo, dan sebagian besar gamepad USB berfungsi di Chrome, Edge, dan Firefox. Safari juga mendukung sebagian besarnya. Getaran berfungsi di Chrome dan Edge untuk controller Xbox dan PlayStation."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Apakah gamepad tester ini gratis?",
+          "a": "Ya. Gratis dan berjalan di browser Anda tanpa perlu menginstal apa pun."
+        },
+        {
+          "q": "Kenapa controller saya tidak muncul?",
+          "a": "Tekan satu tombol setelah menyambungkannya. Browser baru menampilkan controller setelah tombol pertama ditekan. Jika masih tidak muncul, coba kabel atau port USB lain."
+        },
+        {
+          "q": "Bagaimana cara memperbaiki stick drift?",
+          "a": "Semprotkan udara bertekanan di sekitar pangkal stik sambil memutarnya, lalu kalibrasi ulang controller di pengaturan konsol atau Windows. Jika drift tetap ada, modul stik perlu diperbaiki atau controller mungkin masih bergaransi."
+        },
+        {
+          "q": "Bisakah saya mengetes controller PS5 di PC?",
+          "a": "Bisa. Sambungkan DualSense lewat USB-C atau Bluetooth lalu tekan tombol apa saja. Semua tombol, trigger, dan stik akan ditampilkan."
+        }
+      ]
+    },
+    "typing": {
+      "card": {
+        "name": "Tes mengetik",
+        "desc": "Kata per menit dan akurasi."
+      },
+      "title": "Tes kecepatan mengetik online gratis (WPM)",
+      "description": "Tes kecepatan mengetik gratis. Mengetik selama 15, 30, atau 60 detik dan lihat kata per menit (WPM) serta akurasi Anda. Tanpa daftar, bisa di keyboard apa pun.",
+      "h1Html": "<span class=\"grad\">Tes mengetik</span> online",
+      "lead": "Seberapa cepat Anda mengetik? Ikuti tes satu menit dan langsung lihat kata per menit serta akurasi Anda.",
+      "article": [
+        {
+          "h": "Cara kerja tes mengetik",
+          "ol": [
+            "Pilih 15, 30, atau 60 detik.",
+            "Mulai ketik kata-katanya. Timer mulai saat tombol pertama ditekan.",
+            "Tekan spasi setelah setiap kata. Kata yang benar berubah hijau dan yang salah berubah merah.",
+            "Saat waktu habis, Anda akan melihat WPM, akurasi, dan skor terbaik."
+          ]
+        },
+        {
+          "h": "Berapa kecepatan mengetik yang bagus?",
+          "p": [
+            "Kebanyakan orang dewasa mengetik 35 sampai 45 kata per menit. 60 WPM sudah cepat untuk pekerjaan kantor, dan juru ketik profesional biasanya mencapai 70 sampai 90 WPM. Akurasi sama pentingnya dengan kecepatan: di atas 95% sudah bagus."
+          ]
+        },
+        {
+          "h": "Cara mengetik lebih cepat",
+          "ul": [
+            "Letakkan jari di baris utama (ASDF dan JKL;) dan gunakan sepuluh jari.",
+            "Lihat layar, bukan keyboard.",
+            "Berlatih beberapa menit setiap hari, bukan sekali seminggu.",
+            "Pelankan sampai kesalahan Anda berkurang. Kecepatan datang bersama akurasi."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Bagaimana WPM dihitung?",
+          "a": "Karakter yang diketik dengan benar, termasuk spasi, dibagi 5 untuk mendapatkan jumlah kata, lalu dibagi dengan durasi tes dalam menit."
+        },
+        {
+          "q": "Apakah tes mengetik ini gratis?",
+          "a": "Ya. Gratis, tanpa daftar, dan tanpa batas percobaan."
+        },
+        {
+          "q": "Apakah bisa di ponsel?",
+          "a": "Bisa, tetapi keyboard ponsel lebih lambat daripada keyboard fisik, jadi skor Anda akan lebih rendah."
+        },
+        {
+          "q": "Apakah skor terbaik saya disimpan?",
+          "a": "Ya. Skor terbaik untuk setiap durasi tes disimpan hanya di browser ini."
+        }
+      ]
+    },
+    "cps": {
+      "card": {
+        "name": "Tes CPS",
+        "desc": "Klik per detik (CPS)."
+      },
+      "title": "CPS test: cek klik per detik (tes kecepatan klik)",
+      "description": "Tes kecepatan klik gratis. Klik secepat mungkin selama 1, 5, 10, 30, atau 60 detik dan lihat CPS Anda. Bisa dengan mouse, touchpad, dan layar sentuh.",
+      "h1Html": "<span class=\"grad\">Tes kecepatan klik</span> online",
+      "lead": "Seberapa cepat Anda bisa klik? Pilih durasi, klik di dalam kotak, dan lihat klik per detik Anda.",
+      "article": [
+        {
+          "h": "Cara kerja CPS test",
+          "ol": [
+            "Pilih 1, 5, 10, 30, atau 60 detik.",
+            "Klik di dalam kotak secepat mungkin. Timer mulai saat klik pertama.",
+            "Saat waktu habis, Anda akan melihat klik per detik dan skor terbaik."
+          ]
+        },
+        {
+          "h": "Berapa CPS yang bagus?",
+          "p": [
+            "Kebanyakan orang klik 6 sampai 8 kali per detik. 10 atau lebih sudah sangat cepat. Gamer yang memakai teknik seperti jitter click atau butterfly click bisa mencapai 12 sampai 20 CPS dalam waktu singkat."
+          ]
+        },
+        {
+          "h": "Teknik klik",
+          "ul": [
+            "Klik biasa: satu jari, tidak melelahkan tangan, biasanya 6 sampai 8 CPS.",
+            "Jitter click: menegangkan lengan sehingga jari bergetar di atas tombol, sering 10 sampai 14 CPS.",
+            "Butterfly click: dua jari bergantian pada satu tombol, sering 15 CPS atau lebih. Beberapa mouse membacanya sebagai klik ganda."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Apa arti CPS?",
+          "a": "CPS artinya clicks per second atau klik per detik: berapa kali Anda menekan tombol mouse dalam satu detik."
+        },
+        {
+          "q": "Apakah CPS test ini gratis?",
+          "a": "Ya. Gratis, tanpa daftar, dan percobaan tanpa batas."
+        },
+        {
+          "q": "Bisakah saya pakai touchpad atau ponsel?",
+          "a": "Bisa. Ketukan di touchpad atau layar sentuh dihitung sebagai klik."
+        },
+        {
+          "q": "Kenapa mouse saya mencatat klik tambahan?",
+          "a": "Switch yang aus bisa mengirim dua klik untuk satu tekanan. Cek dengan tes mouse di situs ini, yang menandai klik ganda tak sengaja."
+        }
+      ]
+    },
+    "reaction": {
+      "card": {
+        "name": "Tes reaksi",
+        "desc": "Seberapa cepat reaksi Anda?"
+      },
+      "title": "Tes waktu reaksi: cek kecepatan reaksi dalam ms",
+      "description": "Tes waktu reaksi gratis. Klik saat kotak berubah hijau dan lihat waktu reaksi Anda dalam milidetik. Lima percobaan, rata-rata, dan skor terbaik.",
+      "h1Html": "<span class=\"grad\">Tes waktu reaksi</span> online",
+      "lead": "Klik begitu kotak berubah hijau. Lima percobaan memberi Anda rata-rata waktu reaksi dalam milidetik.",
+      "article": [
+        {
+          "h": "Cara kerja tes reaksi",
+          "ol": [
+            "Klik kotak untuk mulai. Kotak berubah merah.",
+            "Tunggu. Setelah jeda acak, kotak berubah hijau.",
+            "Klik atau ketuk secepat mungkin. Klik saat masih merah dihitung terlalu cepat.",
+            "Setelah lima percobaan, Anda akan melihat waktu rata-rata dan terbaik."
+          ]
+        },
+        {
+          "h": "Berapa waktu reaksi yang bagus?",
+          "p": [
+            "Rata-rata waktu reaksi visual sekitar 250 ms. Di bawah 200 ms tergolong cepat, dan banyak gamer mencetak antara 150 dan 200 ms. Hasil di atas 300 ms umum terjadi saat lelah atau tidak fokus."
+          ]
+        },
+        {
+          "h": "Kenapa hasil Anda juga dipengaruhi perangkat",
+          "p": [
+            "Setiap hasil mencakup beberapa milidetik dari layar, mouse, dan browser Anda. Layar 60 Hz menampilkan frame baru setiap 16,7 ms, sedangkan layar 144 Hz setiap 7 ms, jadi layar yang lebih cepat bisa memberi skor sedikit lebih baik."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Berapa rata-rata waktu reaksi manusia?",
+          "a": "Sekitar 250 milidetik untuk sinyal visual seperti pada tes ini."
+        },
+        {
+          "q": "Bisakah waktu reaksi saya ditingkatkan?",
+          "a": "Bisa, sedikit. Tidur cukup, latihan, serta layar dan mouse yang cepat semuanya membantu. Kafein dan pemanasan bisa membantu dalam jangka pendek."
+        },
+        {
+          "q": "Apakah bisa di ponsel?",
+          "a": "Bisa. Ketuk kotaknya. Layar sentuh bisa menambah sedikit jeda dibanding mouse."
+        },
+        {
+          "q": "Bisakah saya pakai keyboard?",
+          "a": "Bisa. Fokuskan kotak lalu tekan spasi atau Enter sebagai ganti klik."
+        }
+      ]
+    },
+    "refresh": {
+      "card": {
+        "name": "Tes refresh rate",
+        "desc": "Hz asli layar Anda."
+      },
+      "title": "Tes refresh rate monitor: cek Hz layar (60, 144, 240)",
+      "description": "Tes refresh rate online gratis. Lihat refresh rate asli monitor Anda dalam Hz, frame time, dan frame terlewat, plus perbandingan gerakan pada 60 dan 30 fps.",
+      "h1Html": "<span class=\"grad\">Tes refresh rate</span> online",
+      "lead": "Cek apakah layar 120, 144, atau 240 Hz Anda benar-benar berjalan dengan kecepatan penuh. Hasilnya langsung muncul.",
+      "article": [
+        {
+          "h": "Cara kerja tes",
+          "p": [
+            "Browser menggambar frame baru setiap kali layar Anda refresh. Tes ini mengukur waktu ratusan frame dan menampilkan hasilnya dalam Hz, beserta frame time dan frame yang terlewat. Blok yang bergerak membandingkan gerakan layar Anda dengan 60 dan 30 frame per detik."
+          ]
+        },
+        {
+          "h": "Kenapa monitor 144 Hz saya menunjukkan 60 Hz?",
+          "ul": [
+            "Refresh rate diatur ke 60 Hz di Windows: buka Pengaturan → Sistem → Layar → Layar tingkat lanjut dan pilih rate tertinggi.",
+            "Kabelnya tidak mampu: gunakan DisplayPort atau kabel HDMI 2.0 atau yang lebih baru.",
+            "Laptop dalam mode hemat baterai: colokkan charger.",
+            "Jendela browser ada di monitor kedua yang lebih lambat."
+          ]
+        },
+        {
+          "h": "Refresh rate berapa yang saya butuhkan?",
+          "p": [
+            "60 Hz cukup untuk kerja kantor dan video. Untuk game, 120 sampai 165 Hz terasa jauh lebih mulus, dan 240 Hz atau lebih terutama membantu pemain kompetitif."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Apakah hasilnya akurat?",
+          "a": "Ya, biasanya selisihnya hanya satu atau dua Hz. Tutup tab lain agar hasil paling stabil."
+        },
+        {
+          "q": "Apakah bisa di ponsel?",
+          "a": "Bisa. Ponsel dengan layar 90 atau 120 Hz akan menunjukkan rate-nya, tetapi banyak ponsel menurunkannya untuk menghemat baterai saat tidak ada yang bergerak."
+        },
+        {
+          "q": "Apa itu frame terlewat?",
+          "a": "Frame yang tidak sempat digambar browser tepat waktu. Beberapa masih normal. Jika banyak, gerakan akan terlihat patah-patah."
+        },
+        {
+          "q": "Kenapa angkanya berubah-ubah?",
+          "a": "Beberapa layar dengan refresh rate variabel (VRR, G-SYNC, FreeSync, atau ProMotion) mengubah rate-nya sesuai konten di layar."
+        }
+      ]
+    },
+    "hearing": {
+      "card": {
+        "name": "Tes pendengaran",
+        "desc": "Frekuensi tertinggi yang terdengar."
+      },
+      "title": "Tes pendengaran online: cek rentang dengar (Hz)",
+      "description": "Tes pendengaran online gratis. Temukan frekuensi tertinggi yang bisa Anda dengar dengan sweep nada, tes tiap telinga, dan lihat yang wajar untuk usia Anda.",
+      "h1Html": "<span class=\"grad\">Tes pendengaran</span> online",
+      "lead": "Temukan nada tertinggi yang masih bisa Anda dengar, tes tiap telinga secara terpisah, dan lihat yang wajar untuk usia Anda.",
+      "article": [
+        {
+          "h": "Cara melakukan tes pendengaran",
+          "ol": [
+            "Pakai headphone dan atur volume rendah.",
+            "Tekan Mulai: nada naik dari 8.000 Hz ke atas.",
+            "Tekan tombol begitu Anda tidak lagi mendengarnya.",
+            "Ulangi untuk tiap telinga dengan tombol Kiri dan Kanan."
+          ]
+        },
+        {
+          "h": "Rentang pendengaran menurut usia",
+          "ul": [
+            "Di bawah 20 tahun: hingga sekitar 19.000 Hz atau lebih.",
+            "Di bawah 25 tahun: hingga sekitar 17.400 Hz (yang disebut nada nyamuk).",
+            "Di bawah 30 tahun: hingga sekitar 16.000 Hz.",
+            "Di bawah 40 tahun: sekitar 15.000 Hz.",
+            "Di bawah 50 tahun: sekitar 14.000 Hz.",
+            "Di bawah 60 tahun: sekitar 12.000 Hz."
+          ]
+        },
+        {
+          "h": "Hal yang memengaruhi hasil",
+          "p": [
+            "Headphone murah dan speaker laptop sering tidak bisa memutar nada di atas 16.000 Hz, jadi Anda mungkin tidak mendengarnya meski pendengaran Anda sempurna. Suara bising di sekitar dan volume yang terlalu rendah juga menurunkan hasil. Tes ini hanya mengecek frekuensi tinggi dan bukan tes pendengaran medis."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Apakah ini tes pendengaran medis?",
+          "a": "Bukan. Ini pengecekan cepat rentang frekuensi tinggi Anda. Untuk tes pendengaran sungguhan, periksakan ke dokter atau audiolog."
+        },
+        {
+          "q": "Apa itu nada nyamuk?",
+          "a": "Nada sekitar 17.400 Hz yang bisa didengar kebanyakan anak muda, tetapi tidak oleh banyak orang dewasa di atas 25 tahun."
+        },
+        {
+          "q": "Kenapa saya tidak bisa mendengar nada tertinggi?",
+          "a": "Kemampuan mendengar frekuensi tinggi menurun secara alami seiring usia. Headphone atau speaker Anda juga mungkin tidak bisa memutarnya."
+        },
+        {
+          "q": "Apakah ini aman?",
+          "a": "Aman, jika Anda mulai dengan volume rendah. Jangan pernah memutar nada tinggi dengan keras, terutama lewat headphone."
+        }
+      ]
+    },
+    "water": {
+      "card": {
+        "name": "Pengusir air",
+        "desc": "Keluarkan air dari speaker."
+      },
+      "title": "Water eject: keluarkan air dari speaker HP (165 Hz)",
+      "description": "Speaker HP kemasukan air? Putar suara water eject 165 Hz untuk mendorongnya keluar. Bisa di iPhone dan Android langsung di browser, tanpa aplikasi.",
+      "h1Html": "Suara <span class=\"grad\">pengusir air speaker</span>",
+      "lead": "Speaker HP Anda kemasukan air? Putar nada rendah yang berdenyut untuk menggetarkan air keluar, langsung di browser Anda.",
+      "article": [
+        {
+          "h": "Cara mengeluarkan air dari speaker",
+          "ol": [
+            "Lepas headphone dan naikkan volume sampai penuh.",
+            "Pegang ponsel dengan speaker menghadap ke bawah.",
+            "Tekan tombol dan biarkan suaranya berbunyi selama 30 detik.",
+            "Ulangi 2 atau 3 kali jika suara masih teredam."
+          ]
+        },
+        {
+          "h": "Bagaimana cara kerjanya?",
+          "p": [
+            "Nada rendah membuat membran speaker bergerak maju mundur dengan kuat. Gerakan itu mendorong tetesan air keluar dari kisi speaker, ide yang sama dengan fitur kunci air Apple di Apple Watch. Denyutannya membuat gerakan semakin kuat."
+          ]
+        },
+        {
+          "h": "Jika suara masih teredam",
+          "ul": [
+            "Biarkan ponsel mengering dengan speaker menghadap ke bawah selama beberapa jam.",
+            "Jangan masukkan ponsel ke dalam beras: tidak lebih cepat kering dan debunya bisa masuk.",
+            "Jangan pakai hair dryer atau menusukkan apa pun ke speaker.",
+            "Jika speaker masih terdengar jelek setelah sehari, mungkin sudah rusak dan perlu diperbaiki."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Apakah water eject benar-benar berhasil?",
+          "a": "Ini bisa membantu mendorong air keluar dari kisi speaker, dan banyak orang mendapati suaranya kembali jernih. Tetapi ini tidak bisa memperbaiki speaker yang sudah rusak."
+        },
+        {
+          "q": "Frekuensi berapa yang dipakai untuk mengeluarkan air?",
+          "a": "Biasanya nada rendah sekitar 165 Hz. Opsi sweep rendah bergerak antara 110 dan 300 Hz."
+        },
+        {
+          "q": "Apakah bisa di iPhone dan Android?",
+          "a": "Bisa. Berfungsi di Safari, Chrome, dan browser lain di ponsel apa pun. Matikan mode senyap di iPhone jika tidak ada suara."
+        },
+        {
+          "q": "Apakah aman untuk speaker saya?",
+          "a": "Aman. Yang diputar hanya nada biasa sesuai volume ponsel, seperti musik. Hentikan jika speaker bergetar terlalu keras atau berderak."
         }
       ]
     }

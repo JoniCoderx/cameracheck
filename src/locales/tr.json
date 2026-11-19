@@ -211,7 +211,102 @@
     "colRed": "Kırmızı",
     "colGreen": "Yeşil",
     "colBlue": "Mavi",
-    "colGray": "Gri"
+    "colGray": "Gri",
+    "unitSec": "sn",
+    "gpTool": "Oyun kolu test aracı",
+    "gpHint": "Oyun kolunu USB veya Bluetooth ile bağla ve herhangi bir tuşa bas.",
+    "gpWaiting": "Oyun kolu bulunamadı. Bir kol bağla ve uyandırmak için herhangi bir tuşa bas.",
+    "gpName": "Oyun kolu",
+    "gpButtons": "Test edilen tuşlar",
+    "gpLeft": "Sol analog",
+    "gpRight": "Sağ analog",
+    "gpDrift": "Analog kayması",
+    "gpDriftNone": "Bulunamadı",
+    "gpDriftTip": "Analoğa dokunmadığın halde hareket algılanıyor. Buna analog kayması (stick drift) denir. Analoğun çevresini basınçlı havayla temizle ya da garantiyi kontrol et.",
+    "gpVibrate": "Titreşimi test et",
+    "gpNoVibrate": "Bu tarayıcıda bu oyun kolu için titreşim desteklenmiyor.",
+    "gpNote": "Chrome, Edge ve Firefox'ta Xbox, PlayStation, Switch Pro ve çoğu USB oyun koluyla çalışır. Kaymayı kontrol etmek için iki analoğu da bırak: değer %0'a yakın bir yere düşmeli.",
+    "startGp": "Oyun kolu testini başlat",
+    "tyTool": "Klavye hız testi",
+    "tyHint": "Aşağıdaki kelimeleri yaz. Süre ilk tuşla başlar. Her kelimeden sonra boşluğa bas.",
+    "tyWpm": "WPM",
+    "tyAcc": "Doğruluk",
+    "tyTime": "Süre",
+    "tyWrong": "Hatalar",
+    "tyBest": "En iyi",
+    "tyRestart": "Yeniden başlat",
+    "tyInput": "Yazmaya buradan başla",
+    "tyDone": "Süre doldu!",
+    "tyResult": "Dakikada {wpm} kelime, doğruluk {acc}.",
+    "tyNote": "WPM, doğru yazılan karakterlerin 5'e bölünüp dakikaya oranlanmasıyla hesaplanır. Çoğu yetişkin 35 ila 45 WPM hızında yazar.",
+    "startTy": "Yazma testini başlat",
+    "tyWords": "bir ve bu da de için ile ne çok var yok ben sen o biz siz onlar gibi daha en ama her şey kadar sonra önce şimdi bugün yarın dün gün yıl ay hafta saat zaman ev okul iş yol su ekmek çay kahve yemek kitap kalem masa kapı pencere oda araba otobüs tren şehir köy deniz dağ orman ağaç çiçek güneş yağmur kar rüzgar hava sıcak soğuk büyük küçük yeni eski güzel iyi kötü uzun kısa hızlı yavaş kolay zor açık kapalı beyaz siyah kırmızı mavi yeşil sarı anne baba kardeş abla abi çocuk kız oğul aile arkadaş insan adam kadın el göz kulak baş yüz ağız kalp ses söz dil soru cevap sayı para fiyat çarşı pazar market dükkan doktor öğretmen öğrenci ders sınav oyun müzik film resim renk hayat dünya ülke halk devlet kent sokak bahçe kedi köpek kuş balık at inek süt peynir yumurta elma armut üzüm limon şeker tuz yağ et tavuk pilav çorba sabah akşam gece öğle gelmek gitmek yapmak etmek olmak almak vermek bakmak görmek bilmek demek istemek sevmek okumak yazmak koşmak yürümek oturmak kalkmak uyumak içmek konuşmak dinlemek gülmek ağlamak beklemek bulmak başka bazen hep hiç belki evet hayır lütfen teşekkür merhaba nasıl neden nerede kim hangi çünkü eğer şöyle böyle burada orada içinde dışarı yukarı aşağı yan ön arka sağ sol orta ilk son tek iki üç dört beş altı yedi sekiz dokuz on bin mutlu üzgün yorgun hasta sağlık bilgi fikir haber mektup telefon bilgisayar ekran tuş",
+    "cpsTool": "Tıklama hızı testi",
+    "cpsHint": "Kutunun içine olabildiğince hızlı tıkla. Süre ilk tıklamayla başlar.",
+    "cpsArea": "Başlamak için buraya tıkla",
+    "cpsClicks": "Tıklama",
+    "cpsCps": "CPS",
+    "cpsAgain": "Tekrar denemek için tıkla",
+    "cpsResult": "Saniyede {cps} tıklama ({s} saniyede {n} tıklama).",
+    "cpsR1": "Sakin",
+    "cpsR2": "Ortalama",
+    "cpsR3": "Hızlı",
+    "cpsR4": "Çok hızlı",
+    "cpsNote": "Çoğu kişi saniyede 6 ila 8 kez tıklar. 10'un üstü çok hızlıdır. Dokunmatik ekrandaki dokunuşlar da sayılır.",
+    "startCps": "Tıklama testini başlat",
+    "rtTool": "Refleks testi",
+    "rtHint": "Kutu yeşile döner dönmez tıkla ya da dokun. Beş deneme.",
+    "rtStart": "Başlamak için buraya tıkla",
+    "rtWait": "Yeşili bekle…",
+    "rtGo": "Tıkla!",
+    "rtEarly": "Çok erken! Tekrar denemek için tıkla.",
+    "rtShot": "{ms} ms. Devam etmek için tıkla.",
+    "rtDone": "Ortalaman: {ms} ms. Tekrar denemek için tıkla.",
+    "rtAvg": "Ortalama",
+    "rtBest": "En iyi",
+    "rtTries": "Deneme",
+    "rtMs": "ms",
+    "rtNote": "Çoğu kişinin tepki süresi 200 ila 300 ms arasındadır. Ekranın, mouse'un ve tarayıcın birkaç milisaniye ekler.",
+    "startRt": "Refleks testini başlat",
+    "hzTool": "Yenileme hızı testi",
+    "hzHint": "Ekranının gerçek yenileme hızı, tarayıcıda canlı olarak ölçülür.",
+    "hzFrame": "Kare süresi",
+    "hzDropped": "Atlanan kareler",
+    "hzMotion": "Hareket karşılaştırması",
+    "hzYour": "Senin ekranın",
+    "hzTip": "Ölçülen değer {hz} Hz. Monitörün daha fazlasını destekliyorsa Windows'ta Ayarlar → Sistem → Ekran → Gelişmiş ekran yolundan ayarla ve DisplayPort ya da hızlı bir HDMI kablosu kullan.",
+    "hzNote": "En kararlı ölçüm için diğer sekmeleri kapat. Dizüstü bilgisayarda şarj aletini tak: pil tasarrufu hızı 60 Hz'e düşürebilir.",
+    "startHz": "Yenileme hızı testini başlat",
+    "hrTool": "İşitme testi",
+    "hrHint": "Kulaklık kullan. Taramayı başlat ve sesi artık duyamadığın anda düğmeye bas.",
+    "hrWarn": "Düşük sesle başla ve yavaşça aç. Tiz sesler beklediğinden çok daha yüksek gelebilir.",
+    "hrStart": "Taramayı başlat",
+    "hrStop": "Artık duymuyorum",
+    "hrFreq": "Frekans",
+    "hrVolume": "Ses düzeyi",
+    "hrEar": "Kulak",
+    "hrLeft": "Sol",
+    "hrBoth": "İkisi",
+    "hrRight": "Sağ",
+    "hrHighest": "Duyduğun en yüksek ses",
+    "hrTones": "Tek bir ton çal",
+    "hrResult": "{f} frekansına kadar duydun. Bu, {age} kişiler için tipik bir değer.",
+    "hrUnder": "{n} yaşın altındaki",
+    "hrOver": "{n} yaşın üstündeki",
+    "hrNote": "Bu tıbbi bir test değildir. Kulaklığın veya hoparlörün en yüksek tonları çalamayabilir. İşitme kaybı fark edersen bir doktora başvur.",
+    "startHr": "İşitme testini başlat",
+    "weTool": "Hoparlörden su atma",
+    "weHint": "Hoparlörü titreştirip suyu dışarı iten, kalın ve kesik kesik bir ses çalar.",
+    "weStart": "Suyu at",
+    "weStop": "Durdur",
+    "weMode": "Ses",
+    "weTone": "165 Hz ton",
+    "weSweep": "Kalın tarama",
+    "we1": "Kulaklığı çıkar ve sesi sonuna kadar aç.",
+    "we2": "Telefonu hoparlörü aşağı bakacak şekilde tut.",
+    "we3": "Düğmeye bas ve sesin çalmasına izin ver. Ses hâlâ boğuksa 2 veya 3 kez tekrarla.",
+    "weNote": "Bu, suyun dışarı atılmasına yardımcı olabilir ama hasarlı bir hoparlörü onaramaz. Birkaç denemeden sonra ses hâlâ boğuksa telefonu birkaç saat kurumaya bırak.",
+    "startWe": "Suyu şimdi at"
   },
   "pages": {
     "home": {
@@ -1074,6 +1169,375 @@
         {
           "q": "Kaç ölü piksel kabul edilebilir?",
           "a": "Markaya göre değişir. Birçoğu birkaç tanesine izin verir, ama bazıları sıfır parlak piksel garantisi verir. Modelinin garanti koşullarına bak."
+        }
+      ]
+    },
+    "gamepad": {
+      "card": {
+        "name": "Oyun kolu testi",
+        "desc": "Tuşlar, analoglar ve kayma."
+      },
+      "title": "Oyun kolu testi: gamepad ve analog kayması testi",
+      "description": "Ücretsiz online oyun kolu testi. Xbox, PlayStation ve Switch kollarında her tuşu, tetikleri, analogları, analog kaymasını ve titreşimi tarayıcında kontrol et.",
+      "h1Html": "Online <span class=\"grad\">oyun kolu testi</span>",
+      "lead": "Oyun kolunu tak ya da eşleştir ve herhangi bir tuşa bas. Her tuşu, tetiği ve analoğu canlı izle, analog kaymasını saniyeler içinde bul.",
+      "article": [
+        {
+          "h": "Oyun kolu nasıl test edilir",
+          "ol": [
+            "Oyun kolunu USB kablosu veya Bluetooth ile bağla.",
+            "Tarayıcının kolu görebilmesi için herhangi bir tuşa bas.",
+            "Her tuşa bir kez bas. Çalışan her tuş yeşile döner.",
+            "İki analoğu da tam daireler çizerek hareket ettir, sonra bırak ve kayma değerine bak."
+          ]
+        },
+        {
+          "h": "Analog kayması nedir?",
+          "p": [
+            "Analog kayması (stick drift), sen dokunmadığın halde analoğun hareket bildirmesidir. Karakterin kendi kendine yürür ya da kamera kendiliğinden döner. Sebebi analoğun içindeki aşınma veya kirdir. İki analoğu da bırak: değer %0'a ya da ona çok yakın bir yere düşmeli. %8 veya üstünde kalırsa test bunu kayma olarak işaretler."
+          ]
+        },
+        {
+          "h": "Hangi oyun kolları çalışır?",
+          "p": [
+            "Xbox One ve Series kolları, PlayStation 4 ve 5 (DualShock 4 ve DualSense), Nintendo Switch Pro, 8BitDo ve çoğu USB oyun kolu Chrome, Edge ve Firefox'ta çalışır. Safari de çoğunu destekler. Titreşim, Xbox ve PlayStation kollarında Chrome ve Edge'de çalışır."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Bu oyun kolu testi ücretsiz mi?",
+          "a": "Evet. Ücretsizdir ve hiçbir şey kurmadan tarayıcında çalışır."
+        },
+        {
+          "q": "Oyun kolum neden görünmüyor?",
+          "a": "Bağladıktan sonra bir tuşa bas. Tarayıcılar oyun kolunu ancak ilk tuş basışından sonra gösterir. Hâlâ görünmüyorsa başka bir USB kablosu veya portu dene."
+        },
+        {
+          "q": "Analog kayması nasıl düzeltilir?",
+          "a": "Analoğu daireler çizerek çevirirken tabanına basınçlı hava üfle ve kolu konsolunun ya da Windows'un ayarlarından yeniden kalibre et. Kayma devam ederse analog modülünün tamiri gerekir ya da kol garanti kapsamında olabilir."
+        },
+        {
+          "q": "PS5 kolunu PC'de test edebilir miyim?",
+          "a": "Evet. DualSense'i USB-C veya Bluetooth ile bağla ve herhangi bir tuşa bas. Tüm tuşlar, tetikler ve analoglar gösterilir."
+        }
+      ]
+    },
+    "typing": {
+      "card": {
+        "name": "Klavye hız testi",
+        "desc": "Dakikada kelime ve doğruluk."
+      },
+      "title": "Klavye hız testi: online yazma hızı testi (WPM)",
+      "description": "Ücretsiz klavye hız testi. 15, 30 veya 60 saniye yaz, dakikadaki kelime sayını (WPM) ve doğruluğunu gör. Üyelik yok, her klavyede çalışır.",
+      "h1Html": "Online <span class=\"grad\">klavye hız testi</span>",
+      "lead": "Ne kadar hızlı yazıyorsun? Bir dakikalık testi yap, dakikadaki kelime sayını ve doğruluğunu hemen öğren.",
+      "article": [
+        {
+          "h": "Yazma testi nasıl çalışır",
+          "ol": [
+            "15, 30 veya 60 saniye seç.",
+            "Kelimeleri yazmaya başla. Süre ilk tuşla başlar.",
+            "Her kelimeden sonra boşluğa bas. Doğru kelimeler yeşile, hatalar kırmızıya döner.",
+            "Süre dolduğunda WPM değerini, doğruluğunu ve en iyi skorunu görürsün."
+          ]
+        },
+        {
+          "h": "İyi bir yazma hızı nedir?",
+          "p": [
+            "Çoğu yetişkin dakikada 35 ila 45 kelime yazar. Ofis işi için 60 WPM hızlıdır, profesyonel daktilograflar genelde 70 ila 90 WPM'e ulaşır. Doğruluk da hız kadar önemlidir: %95'in üstü iyidir."
+          ]
+        },
+        {
+          "h": "Daha hızlı yazmanın yolları",
+          "ul": [
+            "Parmaklarını temel sırada tut (F klavyede UIEA ve TNMK, Q klavyede ASDF ve JKLŞ) ve on parmağını da kullan.",
+            "Klavyeye değil ekrana bak.",
+            "Haftada bir yerine her gün birkaç dakika pratik yap.",
+            "Daha az hata yapana kadar yavaşla. Hız, doğrulukla birlikte gelir."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "WPM nasıl hesaplanır?",
+          "a": "Boşluklar dahil doğru yazılan karakterler 5'e bölünerek kelime sayısı bulunur, ardından testin dakika cinsinden süresine bölünür."
+        },
+        {
+          "q": "Bu yazma testi ücretsiz mi?",
+          "a": "Evet. Ücretsizdir, üyelik gerekmez ve deneme sınırı yoktur."
+        },
+        {
+          "q": "Telefonda çalışır mı?",
+          "a": "Evet, ama telefon klavyeleri fiziksel klavyeden yavaştır, bu yüzden skorun daha düşük olur."
+        },
+        {
+          "q": "En iyi skorum kaydediliyor mu?",
+          "a": "Evet. Her test süresi için en iyi skorun sadece bu tarayıcıda kaydedilir."
+        }
+      ]
+    },
+    "cps": {
+      "card": {
+        "name": "CPS testi",
+        "desc": "Saniyedeki tıklama (CPS)."
+      },
+      "title": "CPS testi: saniyede kaç tıklama? Tıklama hızı testi",
+      "description": "Ücretsiz tıklama hızı testi. 1, 5, 10, 30 veya 60 saniye hızlıca tıkla ve saniyedeki tıklama sayını (CPS) gör. Mouse, touchpad ve dokunmatikle çalışır.",
+      "h1Html": "Online <span class=\"grad\">CPS testi</span>",
+      "lead": "Ne kadar hızlı tıklayabiliyorsun? Bir süre seç, kutunun içine tıkla ve saniyedeki tıklama sayını öğren.",
+      "article": [
+        {
+          "h": "CPS testi nasıl çalışır",
+          "ol": [
+            "1, 5, 10, 30 veya 60 saniye seç.",
+            "Kutunun içine olabildiğince hızlı tıkla. Süre ilk tıklamayla başlar.",
+            "Süre dolduğunda saniyedeki tıklama sayını ve en iyi skorunu görürsün."
+          ]
+        },
+        {
+          "h": "İyi bir CPS değeri nedir?",
+          "p": [
+            "Çoğu kişi saniyede 6 ila 8 kez tıklar. 10 veya üstü çok hızlıdır. Jitter click ya da butterfly click gibi teknikler kullanan oyuncular kısa sürelerde 12 ila 20 CPS'e ulaşabilir."
+          ]
+        },
+        {
+          "h": "Tıklama teknikleri",
+          "ul": [
+            "Normal tıklama: tek parmak, eli yormaz, genelde 6 ila 8 CPS.",
+            "Jitter click: kolu gererek parmağın tuş üzerinde titremesini sağlamak, genelde 10 ila 14 CPS.",
+            "Butterfly click: tek tuşa iki parmakla sırayla basmak, genelde 15 CPS veya üstü. Bazı mouse'lar bunu çift tıklama olarak algılar."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "CPS ne demek?",
+          "a": "CPS, saniyedeki tıklama (clicks per second) demektir: bir saniyede mouse tuşuna kaç kez tıkladığın."
+        },
+        {
+          "q": "CPS testi ücretsiz mi?",
+          "a": "Evet. Ücretsizdir, üyelik gerekmez ve sınırsız deneme hakkın var."
+        },
+        {
+          "q": "Touchpad veya telefon kullanabilir miyim?",
+          "a": "Evet. Touchpad'e veya dokunmatik ekrana yapılan dokunuşlar da tıklama sayılır."
+        },
+        {
+          "q": "Mouse'um neden fazladan tıklama algılıyor?",
+          "a": "Yıpranmış bir switch tek basışta iki tıklama gönderebilir. Bunu istemsiz çift tıklamaları işaretleyen sitedeki mouse testiyle kontrol et."
+        }
+      ]
+    },
+    "reaction": {
+      "card": {
+        "name": "Refleks testi",
+        "desc": "Ne kadar hızlı tepki veriyorsun?"
+      },
+      "title": "Refleks testi: tepki süreni ms cinsinden ölç",
+      "description": "Ücretsiz refleks testi. Kutu yeşile döndüğünde tıkla ve tepki süreni milisaniye cinsinden öğren. Beş deneme, ortalama ve en iyi skor.",
+      "h1Html": "Online <span class=\"grad\">refleks testi</span>",
+      "lead": "Kutu yeşile döner dönmez tıkla. Beş deneme sonunda ortalama tepki süreni milisaniye cinsinden görürsün.",
+      "article": [
+        {
+          "h": "Refleks testi nasıl çalışır",
+          "ol": [
+            "Başlamak için kutuya tıkla. Kutu kırmızıya döner.",
+            "Bekle. Rastgele bir süre sonra yeşile döner.",
+            "Olabildiğince hızlı tıkla ya da dokun. Kırmızıyken tıklamak erken sayılır.",
+            "Beş denemeden sonra ortalama ve en iyi süreni görürsün."
+          ]
+        },
+        {
+          "h": "İyi bir tepki süresi nedir?",
+          "p": [
+            "Ortalama görsel tepki süresi yaklaşık 250 ms'dir. 200 ms'nin altı hızlıdır ve birçok oyuncu 150 ila 200 ms arasında skor yapar. Yorgun ya da dalgınken 300 ms'nin üstündeki sonuçlar yaygındır."
+          ]
+        },
+        {
+          "h": "Sonucun neden donanımını da içerir",
+          "p": [
+            "Her sonuç, ekranından, mouse'undan ve tarayıcından gelen birkaç milisaniyeyi içerir. 60 Hz bir ekran her 16,7 ms'de bir yeni kare gösterirken 144 Hz bir ekran her 7 ms'de bir gösterir, bu yüzden hızlı ekranlar biraz daha iyi skor verebilir."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ortalama insan tepki süresi nedir?",
+          "a": "Bu testteki gibi görsel bir sinyal için yaklaşık 250 milisaniye."
+        },
+        {
+          "q": "Tepki süremi geliştirebilir miyim?",
+          "a": "Evet, biraz. Uyku, pratik, hızlı bir ekran ve mouse yardımcı olur. Kafein ve ısınma kısa vadede işe yarayabilir."
+        },
+        {
+          "q": "Telefonda çalışır mı?",
+          "a": "Evet. Kutuya dokun. Dokunmatik ekranlar mouse'a göre biraz gecikme ekleyebilir."
+        },
+        {
+          "q": "Klavye kullanabilir miyim?",
+          "a": "Evet. Kutuyu seç ve tıklamak yerine boşluk veya Enter tuşuna bas."
+        }
+      ]
+    },
+    "refresh": {
+      "card": {
+        "name": "Hz testi",
+        "desc": "Ekranının gerçek Hz değeri."
+      },
+      "title": "Ekran Hz testi: monitör yenileme hızını ölç (144 Hz)",
+      "description": "Ücretsiz online yenileme hızı testi. Monitörünün gerçek Hz değerini, kare süresini ve atlanan kareleri gör, 60 ve 30 fps ile hareket karşılaştırması yap.",
+      "h1Html": "Online <span class=\"grad\">yenileme hızı testi</span>",
+      "lead": "120, 144 veya 240 Hz ekranının gerçekten tam hızda çalışıp çalışmadığını kontrol et. Sonuç hemen görünür.",
+      "article": [
+        {
+          "h": "Test nasıl çalışır",
+          "p": [
+            "Tarayıcı, ekranın her yenilendiğinde yeni bir kare çizer. Test yüzlerce karenin süresini ölçer ve sonucu kare süresi ve atlanan karelerle birlikte Hz olarak gösterir. Hareket eden bloklar, ekranının hareketini saniyede 60 ve 30 kareyle karşılaştırır."
+          ]
+        },
+        {
+          "h": "144 Hz monitörüm neden 60 Hz gösteriyor?",
+          "ul": [
+            "Windows'ta yenileme hızı 60 Hz olarak ayarlı: Ayarlar → Sistem → Ekran → Gelişmiş ekran yolunu izle ve en yüksek hızı seç.",
+            "Kablo bu hızı taşıyamıyor: DisplayPort ya da HDMI 2.0 veya daha yeni bir kablo kullan.",
+            "Dizüstü bilgisayar pil tasarrufunda: şarj aletini tak.",
+            "Tarayıcı penceresi ikinci, daha yavaş bir monitörde."
+          ]
+        },
+        {
+          "h": "Hangi yenileme hızına ihtiyacım var?",
+          "p": [
+            "Ofis işi ve video için 60 Hz yeterlidir. Oyunlarda 120 ila 165 Hz çok daha akıcı hissettirir, 240 Hz ve üstü ise çoğunlukla rekabetçi oyunculara fayda sağlar."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Sonuç doğru mu?",
+          "a": "Evet, genelde bir iki Hz farkla. En kararlı ölçüm için diğer sekmeleri kapat."
+        },
+        {
+          "q": "Telefonlarda çalışır mı?",
+          "a": "Evet. 90 veya 120 Hz ekranlı telefonlar kendi hızlarını gösterir, ama birçok telefon ekranda hareket olmadığında pil tasarrufu için hızı düşürür."
+        },
+        {
+          "q": "Atlanan kareler nedir?",
+          "a": "Tarayıcının zamanında çizemediği karelerdir. Birkaç tane olması normaldir. Çok sayıda olursa hareket takılır."
+        },
+        {
+          "q": "Sayı neden değişiyor?",
+          "a": "Değişken yenileme hızlı (VRR, G-SYNC, FreeSync veya ProMotion) bazı ekranlar, ekrandaki içeriğe göre hızlarını değiştirir."
+        }
+      ]
+    },
+    "hearing": {
+      "card": {
+        "name": "İşitme testi",
+        "desc": "Duyduğun en yüksek frekans."
+      },
+      "title": "Online işitme testi: duyma aralığını Hz ile ölç",
+      "description": "Ücretsiz online işitme testi. Ton taramasıyla duyabildiğin en yüksek frekansı bul, her kulağı ayrı test et ve yaşına göre normal değeri gör.",
+      "h1Html": "Online <span class=\"grad\">işitme testi</span>",
+      "lead": "Hâlâ duyabildiğin en yüksek tonu bul, her kulağı ayrı test et ve yaşına göre normal olanı gör.",
+      "article": [
+        {
+          "h": "İşitme testi nasıl yapılır",
+          "ol": [
+            "Kulaklığını tak ve sesi kıs.",
+            "Başlat'a bas: ton 8.000 Hz'den yukarı doğru yükselir.",
+            "Sesi artık duyamadığın anda düğmeye bas.",
+            "Sol ve Sağ düğmeleriyle her kulak için tekrarla."
+          ]
+        },
+        {
+          "h": "Yaşa göre duyma aralığı",
+          "ul": [
+            "20 yaş altı: yaklaşık 19.000 Hz veya üstüne kadar.",
+            "25 yaş altı: yaklaşık 17.400 Hz'e kadar (sivrisinek sesi denen ton).",
+            "30 yaş altı: yaklaşık 16.000 Hz'e kadar.",
+            "40 yaş altı: yaklaşık 15.000 Hz.",
+            "50 yaş altı: yaklaşık 14.000 Hz.",
+            "60 yaş altı: yaklaşık 12.000 Hz."
+          ]
+        },
+        {
+          "h": "Sonucu etkileyen şeyler",
+          "p": [
+            "Ucuz kulaklıklar ve dizüstü hoparlörleri çoğu zaman 16.000 Hz üstündeki tonları çalamaz, yani kusursuz bir işitmeyle bile bunları duymayabilirsin. Ortam gürültüsü ve çok düşük ses de sonucu düşürür. Bu test yalnızca yüksek frekansları ölçer, tıbbi bir işitme testi değildir."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Bu tıbbi bir işitme testi mi?",
+          "a": "Hayır. Yüksek frekans aralığının hızlı bir kontrolüdür. Gerçek bir işitme testi için bir doktora veya odyoloğa başvur."
+        },
+        {
+          "q": "Sivrisinek sesi nedir?",
+          "a": "Yaklaşık 17.400 Hz civarında, çoğu gencin duyabildiği ama 25 yaş üstü birçok yetişkinin duyamadığı bir tondur."
+        },
+        {
+          "q": "En yüksek tonları neden duyamıyorum?",
+          "a": "Yüksek frekansları duyma yeteneği yaşla birlikte doğal olarak azalır. Kulaklığın veya hoparlörün de bu tonları çalamıyor olabilir."
+        },
+        {
+          "q": "Güvenli mi?",
+          "a": "Evet, düşük sesle başlarsan. Yüksek tonları asla yüksek sesle çalma, özellikle kulaklıkta."
+        }
+      ]
+    },
+    "water": {
+      "card": {
+        "name": "Su atma sesi",
+        "desc": "Hoparlördeki suyu at."
+      },
+      "title": "Hoparlörden su atma sesi: telefondaki suyu çıkar (165 Hz)",
+      "description": "Telefon hoparlörüne su mu kaçtı? Suyu dışarı itmek için 165 Hz su atma sesini çal. iPhone ve Android'de tarayıcıda çalışır, uygulama gerekmez.",
+      "h1Html": "<span class=\"grad\">Hoparlörden su atma</span> sesi",
+      "lead": "Telefonunun hoparlörüne su mu kaçtı? Suyu titreterek dışarı atan kalın, kesik kesik bir sesi doğrudan tarayıcında çal.",
+      "article": [
+        {
+          "h": "Hoparlördeki su nasıl atılır",
+          "ol": [
+            "Kulaklığı çıkar ve sesi sonuna kadar aç.",
+            "Telefonu hoparlörü aşağı bakacak şekilde tut.",
+            "Düğmeye bas ve sesin 30 saniye çalmasına izin ver.",
+            "Ses hâlâ boğuksa 2 veya 3 kez tekrarla."
+          ]
+        },
+        {
+          "h": "Nasıl çalışır?",
+          "p": [
+            "Kalın bir ton, hoparlörün zarının güçlü bir şekilde ileri geri hareket etmesini sağlar. Bu hareket su damlacıklarını hoparlör ızgarasından dışarı iter. Apple'ın Apple Watch'taki su kilidinde kullandığı fikir de budur. Kesik kesik çalması hareketi daha da güçlendirir."
+          ]
+        },
+        {
+          "h": "Ses hâlâ boğuksa",
+          "ul": [
+            "Telefonu hoparlörü aşağı bakacak şekilde birkaç saat kurumaya bırak.",
+            "Telefonu pirince koyma: daha hızlı kurumaz ve tozu içeri girebilir.",
+            "Saç kurutma makinesi kullanma ve hoparlörün içine hiçbir şey sokma.",
+            "Bir gün sonra hoparlör hâlâ kötü çıkıyorsa hasar görmüş olabilir ve tamir gerekir."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Su atma sesi gerçekten işe yarıyor mu?",
+          "a": "Hoparlör ızgarasındaki suyun dışarı atılmasına yardımcı olabilir ve birçok kişinin sesi düzelir. Ama zaten hasar görmüş bir hoparlörü onaramaz."
+        },
+        {
+          "q": "Suyu atmak için hangi frekans kullanılır?",
+          "a": "Genelde 165 Hz civarında kalın bir ton kullanılır. Kalın tarama seçeneği 110 ile 300 Hz arasında gidip gelir."
+        },
+        {
+          "q": "iPhone ve Android'de çalışır mı?",
+          "a": "Evet. Her telefonda Safari, Chrome ve diğer tarayıcılarda çalışır. iPhone'da hiçbir şey duymuyorsan sessiz modu kapat."
+        },
+        {
+          "q": "Hoparlörüm için güvenli mi?",
+          "a": "Evet. Müzik gibi, telefonunun ses düzeyinde normal bir ton çalar. Hoparlör çok cızırdarsa durdur."
         }
       ]
     }

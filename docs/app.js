@@ -692,13 +692,15 @@
   on('#heroStart', 'click', async (e) => {
     const action = e.currentTarget.dataset.action;
     if (action === 'px' && window.__pxStart) return window.__pxStart();
-    if (!['kb', 'ms'].includes(action)) getCtx();
-    const target = { all: '#mic', mic: '#mic', cam: '#cam', spk: '#speaker', rec: '#recorder', db: '#dbm', kb: '#kbd', ms: '#mouse', px: '#pixel' }[action];
+    if (['all', 'mic', 'cam', 'spk', 'rec', 'db', 'hr', 'we'].includes(action)) getCtx();
+    const target = { all: '#mic', mic: '#mic', cam: '#cam', spk: '#speaker', rec: '#recorder', db: '#dbm', kb: '#kbd', ms: '#mouse', px: '#pixel', gp: '#gpad', ty: '#typing', cps: '#cpst', rt: '#react', hz: '#hzt', hr: '#hearing', we: '#water' }[action];
     if ($(target)) $(target).scrollIntoView({ behavior: 'smooth' });
     if ((action === 'all' || action === 'mic') && !mic.stream) await startMic();
     if ((action === 'all' || action === 'cam') && !cam.stream) await startCam();
     if (action === 'db') { const b = $('#dbBtn'); if (b && !b.classList.contains('on')) b.click(); }
     if (action === 'kb' && window.__kbStart) window.__kbStart();
+    if (action === 'ty' && window.__tyStart) window.__tyStart();
+    if (action === 'we' && window.__weStart) window.__weStart();
     if (action === 'rec') { const rb = $('#recToggle'); if (rb && !rb.classList.contains('on')) rb.click(); }
     if (action === 'spk') { const btn = $('.spk-btn[data-pan="0"]'); if (btn) btn.click(); }
   });
@@ -1082,6 +1084,324 @@
     });
     fx.addEventListener('pointerup', () => { drag = null; });
     fx.addEventListener('pointercancel', () => { drag = null; });
+  }
+
+  /* ---------------- shared: segmented buttons, best scores ---------------- */
+  const segPick = (root, fn) => $$(root + ' .seg-b').forEach((b) => b.addEventListener('click', () => {
+    $$(root + ' .seg-b').forEach((x) => { x.classList.toggle('on', x === b); x.setAttribute('aria-pressed', x === b); });
+    fn(b.dataset);
+  }));
+  const best = (k, v, lower) => {
+    let cur = null; try { cur = JSON.parse(localStorage.getItem('mtp-best-' + k)); } catch (e) {}
+    if (v != null && (cur == null || (lower ? v < cur : v > cur))) { cur = v; try { localStorage.setItem('mtp-best-' + k, JSON.stringify(v)); } catch (e) {} }
+    return cur;
+  };
+  const fmt = (s, o) => String(s).replace(/\{(\w+)\}/g, (m, k) => (k in o ? o[k] : m));
+
+  /* ---------------- CONTROLLER TESTER ---------------- */
+  if ($('#gpad')) {
+    const G = { idx: null, seen: new Set(), raf: 0, rest: [[0, 0], [0, 0]], restT: [0, 0], drift: [0, 0], logged: false };
+    const pads = () => (navigator.getGamepads ? [...navigator.getGamepads()].filter(Boolean) : []);
+    const show = (on) => { $('#gpWait').hidden = on; $('#gpLive').hidden = !on; };
+    const stick = (i, x, y) => {
+      const el = $('#gpS' + i); el.querySelector('b').style.transform = `translate(${x * 40}px, ${y * 40}px)`;
+      const m = Math.min(1, Math.hypot(x, y)); setText(i ? '#gpRv' : '#gpLv', Math.round(m * 100) + '%');
+      // drift: the stick sits still off-centre (small, stable value) for over a second
+      const now = performance.now(), r = G.rest[i];
+      if (m > 0.08 && m < 0.6 && Math.hypot(x - r[0], y - r[1]) < 0.02) { if (now - G.restT[i] > 1200 && m > G.drift[i]) { G.drift[i] = m; renderDrift(); } }
+      else { G.rest[i] = [x, y]; G.restT[i] = now; }
+    };
+    const renderDrift = () => {
+      const d = G.drift.map((v) => Math.round(v * 100));
+      const bad = d[0] || d[1];
+      setText('#gpDrift', bad ? (d[0] ? 'L ' + d[0] + '%' : '') + (d[0] && d[1] ? ' · ' : '') + (d[1] ? 'R ' + d[1] + '%' : '') : t('gpDriftNone'));
+      $('#gpDriftBox').classList.toggle('bad', !!bad); $('#gpTip').hidden = !bad;
+    };
+    const loop = () => {
+      const list = pads(); const p = list.find((x) => x.index === G.idx) || list[0];
+      if (!p) { show(false); G.raf = 0; return; }
+      if (G.idx !== p.index) { G.idx = p.index; setText('#gpName', p.id.replace(/\s*\(.*?Vendor.*?\)\s*/i, ' ').trim() || 'Gamepad'); $('#gpVib').disabled = !(p.vibrationActuator && p.vibrationActuator.playEffect); }
+      show(true);
+      p.buttons.forEach((b, i) => {
+        const el = $('#gpB' + i); if (!el) return;
+        const v = typeof b === 'object' ? b.value : b, pr = typeof b === 'object' ? b.pressed : b > 0.5;
+        el.classList.toggle('on', pr); el.style.setProperty('--v', v);
+        if (pr && !G.seen.has(i)) { G.seen.add(i); el.classList.add('done'); setText('#gpCount', G.seen.size); if (!G.logged) { G.logged = true; logEvent('gamepad_test'); } }
+        if (i === 6 || i === 7) { const bar = $('#gpT' + i); if (bar) bar.style.width = Math.round(v * 100) + '%'; }
+      });
+      const a = p.axes;
+      if (a.length >= 2) stick(0, a[0], a[1]);
+      if (a.length >= 4) stick(1, a[2], a[3]);
+      $('#gpS0').classList.toggle('on', !!(p.buttons[10] && p.buttons[10].pressed));
+      $('#gpS1').classList.toggle('on', !!(p.buttons[11] && p.buttons[11].pressed));
+      G.raf = requestAnimationFrame(loop);
+    };
+    const kick = () => { if (!G.raf) G.raf = requestAnimationFrame(loop); };
+    window.addEventListener('gamepadconnected', kick);
+    window.addEventListener('gamepaddisconnected', () => { G.idx = null; });
+    if (pads().length) kick();
+    setInterval(() => { if (!G.raf && pads().length) kick(); }, 1000);
+    on('#gpVib', 'click', () => {
+      const p = pads().find((x) => x.index === G.idx);
+      try { p.vibrationActuator.playEffect('dual-rumble', { duration: 600, strongMagnitude: 1, weakMagnitude: 1 }); } catch (e) { toast(t('gpNoVibrate')); }
+    });
+    on('#gpReset', 'click', () => { G.seen.clear(); G.drift = [0, 0]; $$('#gpad .gp-b.done').forEach((x) => x.classList.remove('done')); setText('#gpCount', 0); renderDrift(); });
+  }
+
+  /* ---------------- TYPING TEST ---------------- */
+  if ($('#typing')) {
+    const POOL = t('tyWords').split(/\s+/).filter(Boolean);
+    const box = $('#tyWords'), inp = $('#tyIn');
+    const T = { dur: 60, left: 60, words: [], i: 0, t0: 0, timer: 0, done: false, okChars: 0, keys: 0, badKeys: 0, wrong: 0 };
+    const shuffle = () => { const a = []; while (a.length < 260) a.push(POOL[(Math.random() * POOL.length) | 0]); return a; };
+    const render = () => {
+      box.innerHTML = ''; const f = document.createDocumentFragment();
+      T.words.forEach((w, i) => { const s = document.createElement('span'); s.textContent = w; s.className = 'tw' + (i === 0 ? ' cur' : ''); f.append(s, ' '); });
+      box.append(f); box.style.transform = '';
+    };
+    const reset = () => {
+      clearInterval(T.timer); Object.assign(T, { left: T.dur, words: shuffle(), i: 0, t0: 0, done: false, okChars: 0, keys: 0, badKeys: 0, wrong: 0 });
+      render(); inp.value = ''; inp.disabled = false; $('#tyResult').hidden = true;
+      setText('#tyTime', T.dur); setText('#tyWpm', 0); setText('#tyAcc', '–'); setText('#tyWrong', 0); setText('#tyBest', best('wpm' + T.dur) ?? '–');
+    };
+    const wpm = () => { const min = ((T.done ? T.dur * 1000 : performance.now() - T.t0) / 60000) || 1e-9; return Math.max(0, Math.round(T.okChars / 5 / min)); };
+    const acc = () => (T.keys ? Math.max(0, Math.round(100 * (T.keys - T.badKeys) / T.keys)) : 100);
+    const stats = () => { setText('#tyWpm', wpm()); setText('#tyAcc', acc() + '%'); setText('#tyWrong', T.wrong); };
+    const finish = () => {
+      clearInterval(T.timer); T.done = true; inp.disabled = true; stats();
+      const w = wpm(), a = acc(); const b = best('wpm' + T.dur, w); setText('#tyBest', b);
+      const r = $('#tyResult'); r.hidden = false; r.textContent = t('tyDone') + ' ' + fmt(t('tyResult'), { wpm: w, acc: a + '%' });
+      logEvent('typing_test', { wpm: w });
+    };
+    const scroll = () => {
+      const cur = box.children[T.i]; if (!cur) return;
+      const first = box.children[0]; const line = cur.offsetTop - first.offsetTop;
+      const lh = parseFloat(getComputedStyle(box).lineHeight) || cur.offsetHeight; const shift = Math.max(0, Math.round(line / lh) - 1) * lh;
+      box.style.transform = shift ? `translateY(${-shift}px)` : '';
+    };
+    const check = () => {
+      const cur = box.children[T.i]; if (!cur) return;
+      const v = inp.value, w = T.words[T.i];
+      cur.classList.toggle('err', !w.startsWith(v.trim()));
+    };
+    inp.addEventListener('keydown', (e) => {
+      if (T.done) return;
+      if (!T.t0 && e.key.length === 1) {
+        T.t0 = performance.now();
+        T.timer = setInterval(() => { T.left = Math.max(0, T.dur - Math.floor((performance.now() - T.t0) / 1000)); setText('#tyTime', T.left); stats(); if (T.left <= 0) finish(); }, 200);
+      }
+      if (e.key === ' ' || e.key === 'Enter') {
+        e.preventDefault(); if (e.isComposing) return;
+        const v = inp.value.trim(); if (!v) return;
+        const cur = box.children[T.i], w = T.words[T.i], ok = v === w;
+        cur.classList.remove('cur', 'err'); cur.classList.add(ok ? 'ok' : 'bad');
+        if (ok) T.okChars += w.length + 1; else T.wrong++;
+        T.i++; inp.value = ''; const nx = box.children[T.i]; if (nx) nx.classList.add('cur');
+        scroll(); stats();
+      }
+    });
+    inp.addEventListener('input', (e) => {
+      if (T.done) return;
+      const v = inp.value;
+      if (/\s$/.test(v) && !e.isComposing) { inp.value = v.trimEnd(); inp.dispatchEvent(new KeyboardEvent('keydown', { key: ' ' })); return; } // mobile keyboards
+      if (e.inputType && e.inputType.startsWith('insert')) { T.keys++; const w = T.words[T.i] || ''; if (!w.startsWith(v)) T.badKeys++; }
+      check();
+    });
+    inp.addEventListener('beforeinput', (e) => { if (!T.t0 && !T.done && e.data) inp.dispatchEvent(new KeyboardEvent('keydown', { key: 'x' })); });
+    segPick('#typing', (d) => { T.dur = +d.s; reset(); inp.focus(); });
+    on('#tyRestart', 'click', () => { reset(); inp.focus(); });
+    window.__tyStart = () => inp.focus({ preventScroll: true });
+    reset();
+  }
+
+  /* ---------------- CLICK SPEED (CPS) TEST ---------------- */
+  if ($('#cpst')) {
+    const area = $('#cpsArea'), rip = $('#cpsRip');
+    const C = { dur: 5, n: 0, t0: 0, timer: 0, lock: 0, done: false };
+    const showBest = () => setText('#cpsBest', best('cps' + C.dur) ?? '–');
+    const reset = () => { clearInterval(C.timer); Object.assign(C, { n: 0, t0: 0, done: false }); setText('#cpsTime', C.dur.toFixed(1)); setText('#cpsN', 0); setText('#cpsV', 0); setText('#cpsMsg', t('cpsArea')); area.classList.remove('run', 'end'); $('#cpsResult').hidden = true; showBest(); };
+    const rank = (v) => t(v < 5 ? 'cpsR1' : v < 7 ? 'cpsR2' : v < 10 ? 'cpsR3' : 'cpsR4');
+    const end = () => {
+      clearInterval(C.timer); C.done = true; C.lock = performance.now() + 900; area.classList.remove('run'); area.classList.add('end');
+      const v = Math.round((C.n / C.dur) * 10) / 10; setText('#cpsV', v); setText('#cpsTime', '0.0');
+      best('cps' + C.dur, v); showBest(); setText('#cpsMsg', t('cpsAgain'));
+      const r = $('#cpsResult'); r.hidden = false; r.textContent = rank(v) + ': ' + fmt(t('cpsResult'), { cps: v, n: C.n, s: C.dur });
+      logEvent('cps_test', { cps: v, seconds: C.dur });
+    };
+    area.addEventListener('pointerdown', (e) => {
+      e.preventDefault(); const now = performance.now();
+      if (now < C.lock) return;
+      if (C.done) { reset(); return; }
+      if (!C.t0) {
+        C.t0 = now; area.classList.add('run');
+        C.timer = setInterval(() => {
+          const el = (performance.now() - C.t0) / 1000, left = Math.max(0, C.dur - el);
+          setText('#cpsTime', left.toFixed(1)); setText('#cpsV', Math.round((C.n / Math.max(el, 0.2)) * 10) / 10);
+          if (left <= 0) end();
+        }, 50);
+      }
+      C.n++; setText('#cpsN', C.n); setText('#cpsMsg', C.n);
+      const r = area.getBoundingClientRect(), d = document.createElement('i');
+      d.className = 'b0'; d.style.left = (e.clientX - r.left) + 'px'; d.style.top = (e.clientY - r.top) + 'px';
+      rip.append(d); setTimeout(() => d.remove(), 600);
+    });
+    area.addEventListener('contextmenu', (e) => e.preventDefault());
+    segPick('#cpst', (d) => { C.dur = +d.s; reset(); });
+    reset();
+  }
+
+  /* ---------------- REACTION TIME TEST ---------------- */
+  if ($('#react')) {
+    const area = $('#rtArea'), list = $('#rtList');
+    const R = { st: 'idle', t: [], go: 0, timer: 0 };
+    const set = (st, msg) => { R.st = st; area.dataset.state = st; setText('#rtMsg', msg); };
+    const stats = () => {
+      setText('#rtN', R.t.length);
+      setText('#rtAvg', R.t.length ? Math.round(R.t.reduce((a, b) => a + b, 0) / R.t.length) : '–');
+      setText('#rtBest', R.t.length ? Math.min(...R.t) : '–');
+      list.innerHTML = R.t.map((v) => `<li>${v}</li>`).join('');
+      setText('#rtRecord', best('rt', null, true) ?? '–');
+    };
+    const arm = () => {
+      set('wait', t('rtWait'));
+      R.timer = setTimeout(() => { set('go', t('rtGo')); requestAnimationFrame(() => { R.go = performance.now(); }); }, 1500 + Math.random() * 3000);
+    };
+    const hit = () => {
+      if (R.st === 'idle' || R.st === 'shot' || R.st === 'early') { if (R.t.length >= 5) { R.t = []; stats(); } arm(); return; }
+      if (R.st === 'wait') { clearTimeout(R.timer); set('early', t('rtEarly')); return; }
+      if (R.st === 'go') {
+        const ms = Math.round(performance.now() - (R.go || performance.now())); R.t.push(ms);
+        if (R.t.length >= 5) {
+          const avg = Math.round(R.t.reduce((a, b) => a + b, 0) / R.t.length); best('rt', avg, true);
+          set('shot', fmt(t('rtDone'), { ms: avg })); logEvent('reaction_test', { ms: avg });
+        } else set('shot', fmt(t('rtShot'), { ms }));
+        stats();
+      }
+    };
+    area.addEventListener('pointerdown', (e) => { e.preventDefault(); hit(); });
+    area.addEventListener('keydown', (e) => { if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); if (!e.repeat) hit(); } });
+    area.addEventListener('click', (e) => e.preventDefault());
+    on('#rtReset', 'click', () => { clearTimeout(R.timer); R.t = []; set('idle', t('rtStart')); stats(); });
+    stats();
+  }
+
+  /* ---------------- REFRESH RATE TEST ---------------- */
+  if ($('#hzt')) {
+    const cvs = [0, 1, 2].map((i) => $('#hzC' + i));
+    const H = { ts: [], last: 0, hz: 0, drop: 0, x: 0, logged: false, tipShown: false };
+    const STD = [24, 30, 48, 50, 60, 72, 75, 90, 100, 120, 144, 160, 165, 170, 180, 200, 240, 280, 360, 480, 500];
+    const snap = (hz) => { const n = STD.reduce((a, b) => (Math.abs(b - hz) < Math.abs(a - hz) ? b : a)); return Math.abs(n - hz) / hz < 0.04 ? n : Math.round(hz); };
+    const res = () => { const d = window.devicePixelRatio || 1; setText('#hzRes', Math.round(screen.width * d) + ' × ' + Math.round(screen.height * d)); };
+    res(); window.addEventListener('resize', res);
+    const draw = (c, x, w, h, dpr) => {
+      const g = c.getContext('2d'); g.clearRect(0, 0, w, h);
+      g.fillStyle = css('--line'); for (let i = 0; i < w; i += 40 * dpr) g.fillRect(i, 0, 1, h);
+      const s = h * 0.62, y = (h - s) / 2; g.fillStyle = css('--brand');
+      const px = x % (w + s) - s;
+      g.beginPath(); if (g.roundRect) g.roundRect(px, y, s, s, s * 0.22); else g.rect(px, y, s, s); g.fill();
+      g.fillStyle = css('--brand-ink'); g.fillRect(px + s * 0.28, y + s * 0.32, s * 0.12, s * 0.12); g.fillRect(px + s * 0.6, y + s * 0.32, s * 0.12, s * 0.12);
+    };
+    const frame = (now) => {
+      if (H.last) {
+        const dt = now - H.last; H.ts.push(dt); if (H.ts.length > 120) H.ts.shift();
+        const sorted = [...H.ts].sort((a, b) => a - b), med = sorted[sorted.length >> 1];
+        if (H.ts.length > 20 && med > 0) {
+          if (dt > med * 1.7 && dt < 1000) { H.drop++; setText('#hzDrop', H.drop); }
+          const hz = snap(1000 / med);
+          if (hz !== H.hz) { H.hz = hz; setText('#hzVal', hz); setText('#hzLab0', t('hzYour') + ' · ' + hz + ' fps'); }
+          setText('#hzFrame', (Math.round(med * 100) / 100) + ' ms');
+          if (!H.logged && H.ts.length > 100) { H.logged = true; logEvent('refresh_test', { hz }); if (hz <= 60 && !H.tipShown) { H.tipShown = true; const tp = $('#hzTip'); tp.textContent = fmt(t('hzTip'), { hz }); tp.hidden = false; } }
+        }
+        if (dt < 250) H.x += dt * 0.6; // 600 css px per second
+      }
+      H.last = now;
+      const visible = cvs[0].getBoundingClientRect(); const onScreen = visible.bottom > 0 && visible.top < innerHeight;
+      if (onScreen) cvs.forEach((c, i) => {
+        const { w, h, dpr } = fitCanvas(c);
+        const fps = i === 0 ? 0 : i === 1 ? 60 : 30; const step = fps ? 600 / fps : 0;
+        const x = (step ? Math.floor(H.x / step) * step : H.x) * dpr;
+        draw(c, x, w, h, dpr);
+      });
+      requestAnimationFrame(frame);
+    };
+    const go = () => requestAnimationFrame(frame);
+    if (document.visibilityState === 'visible') go(); else document.addEventListener('visibilitychange', function f() { if (!document.hidden) { document.removeEventListener('visibilitychange', f); go(); } });
+    document.addEventListener('visibilitychange', () => { H.last = 0; });
+  }
+
+  /* ---------------- HEARING TEST ---------------- */
+  if ($('#hearing')) {
+    const HR = { osc: null, gain: null, pan: 0, t0: 0, raf: 0, sweep: false, max: 0, single: null };
+    const F0 = 8000, F1 = 20000, DUR = 36;
+    const vol = () => +$('#hrVol').value;
+    const btn = $('#hrGo');
+    const stopTone = () => {
+      cancelAnimationFrame(HR.raf);
+      if (HR.osc) { const c = getCtx(), o = HR.osc, g = HR.gain; g.gain.setTargetAtTime(0, c.currentTime, 0.02); setTimeout(() => { try { o.stop(); } catch (e) {} }, 150); }
+      HR.osc = null; HR.sweep = false; HR.single = null; btn.textContent = btn.dataset.off; btn.classList.remove('on');
+      $$('#hearing .hr-t.on').forEach((x) => x.classList.remove('on'));
+    };
+    const tone = (f) => {
+      const c = getCtx(), o = c.createOscillator(), g = c.createGain(); o.type = 'sine'; o.frequency.value = f;
+      g.gain.value = 0; g.gain.setTargetAtTime(vol(), c.currentTime, 0.03);
+      let node = o.connect(g);
+      if (c.createStereoPanner) { const p = c.createStereoPanner(); p.pan.value = HR.pan; node = g.connect(p); p.connect(c.destination); } else g.connect(c.destination);
+      o.start(); HR.osc = o; HR.gain = g; return o;
+    };
+    const show = (f) => { setText('#hrF', Math.round(f).toLocaleString('en-US')); $('#hrBar').style.width = Math.round(((f - F0) / (F1 - F0)) * 100) + '%'; };
+    const ageText = (f) => {
+      const tb = [[19000, 'hrUnder', 20], [17400, 'hrUnder', 25], [16000, 'hrUnder', 30], [15000, 'hrUnder', 40], [14000, 'hrUnder', 50], [12000, 'hrUnder', 60]];
+      const r = tb.find(([lim]) => f >= lim); return r ? fmt(t(r[1]), { n: r[2] }) : fmt(t('hrOver'), { n: 60 });
+    };
+    const result = (f) => {
+      HR.max = Math.round(f / 100) * 100; $('#hrRes').hidden = false; setText('#hrMax', HR.max.toLocaleString('en-US') + ' Hz');
+      setText('#hrAge', fmt(t('hrResult'), { f: HR.max.toLocaleString('en-US') + ' Hz', age: ageText(HR.max) }));
+      logEvent('hearing_test', { hz: HR.max });
+    };
+    btn.addEventListener('click', () => {
+      if (HR.sweep) { const c = getCtx(); const f = HR.osc ? HR.osc.frequency.value : F1; stopTone(); result(f); return; }
+      stopTone(); const c = getCtx(); const o = tone(F0); const now = c.currentTime;
+      o.frequency.setValueAtTime(F0, now); o.frequency.exponentialRampToValueAtTime(F1, now + DUR);
+      HR.sweep = true; HR.t0 = now; btn.textContent = btn.dataset.on; btn.classList.add('on');
+      const tick = () => { if (!HR.sweep) return; const el = c.currentTime - HR.t0; const f = F0 * Math.pow(F1 / F0, Math.min(1, el / DUR)); show(f); if (el >= DUR) { stopTone(); result(F1); return; } HR.raf = requestAnimationFrame(tick); };
+      tick();
+    });
+    $$('#hearing .hr-t').forEach((b) => b.addEventListener('click', () => {
+      const same = HR.single === b; stopTone(); if (same) return;
+      tone(+b.dataset.f); HR.single = b; b.classList.add('on'); show(+b.dataset.f);
+    }));
+    $('#hrVol').addEventListener('input', () => { if (HR.gain) HR.gain.gain.setTargetAtTime(vol(), getCtx().currentTime, 0.03); });
+    segPick('#hearing', (d) => { HR.pan = +d.pan; if (HR.osc && !HR.sweep && HR.single) { const b = HR.single; stopTone(); b.click(); } });
+    document.addEventListener('visibilitychange', () => { if (document.hidden) stopTone(); });
+  }
+
+  /* ---------------- WATER EJECT ---------------- */
+  if ($('#water')) {
+    const W = { on: false, o: null, g: null, lfo: null, t0: 0, raf: 0, mode: 'tone' }, DUR = 30;
+    const b = $('#weGo');
+    const stop = () => {
+      cancelAnimationFrame(W.raf); if (!W.on) return; W.on = false;
+      const c = getCtx(); try { W.g.gain.setTargetAtTime(0, c.currentTime, 0.03); const o = W.o, l = W.lfo; setTimeout(() => { try { o.stop(); l.stop(); } catch (e) {} }, 200); } catch (e) {}
+      b.classList.remove('on'); setText('#weLab', b.dataset.off); setText('#weLeft', ''); b.style.setProperty('--p', 0);
+    };
+    const start = () => {
+      if (W.on) return stop();
+      const c = getCtx(), o = c.createOscillator(), g = c.createGain(), lfo = c.createOscillator(), lg = c.createGain();
+      o.type = 'sine'; const now = c.currentTime;
+      if (W.mode === 'tone') o.frequency.value = 165;
+      else { for (let k = 0; k < DUR; k += 3) { o.frequency.setValueAtTime(110, now + k); o.frequency.exponentialRampToValueAtTime(300, now + k + 3); } }
+      // pulse the level a few times per second: the cone moves harder and shakes droplets loose
+      g.gain.value = 0.55; lfo.frequency.value = 2.5; lg.gain.value = 0.4; lfo.connect(lg); lg.connect(g.gain);
+      o.connect(g); g.connect(c.destination); o.start(); lfo.start();
+      Object.assign(W, { on: true, o, g, lfo, t0: now });
+      b.classList.add('on'); setText('#weLab', b.dataset.on); logEvent('water_eject', { mode: W.mode });
+      const tick = () => { if (!W.on) return; const el = c.currentTime - W.t0; b.style.setProperty('--p', Math.min(1, el / DUR)); setText('#weLeft', Math.max(0, Math.ceil(DUR - el)) + ' ' + t('unitSec')); if (el >= DUR) { stop(); return; } W.raf = requestAnimationFrame(tick); };
+      tick();
+    };
+    b.addEventListener('click', start);
+    segPick('#water', (d) => { const was = W.on; stop(); W.mode = d.m; if (was) start(); });
+    document.addEventListener('visibilitychange', () => { if (document.hidden) stop(); });
+    window.__weStart = start;
   }
 
   /* ---------------- language hint (no auto-redirect: better for SEO and users) ---------------- */

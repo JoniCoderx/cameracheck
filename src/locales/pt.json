@@ -211,7 +211,102 @@
     "colRed": "Vermelho",
     "colGreen": "Verde",
     "colBlue": "Azul",
-    "colGray": "Cinza"
+    "colGray": "Cinza",
+    "unitSec": "s",
+    "gpTool": "Testador de controle",
+    "gpHint": "Conecte um controle por USB ou Bluetooth e aperte qualquer botão.",
+    "gpWaiting": "Nenhum controle encontrado. Conecte um e aperte qualquer botão para ativá-lo.",
+    "gpName": "Controle",
+    "gpButtons": "Botões testados",
+    "gpLeft": "Analógico esquerdo",
+    "gpRight": "Analógico direito",
+    "gpDrift": "Drift do analógico",
+    "gpDriftNone": "Nenhum",
+    "gpDriftTip": "Um analógico registra movimento mesmo sem você tocar nele. Isso é drift. Limpe em volta do analógico com ar comprimido ou confira a garantia.",
+    "gpVibrate": "Testar vibração",
+    "gpNoVibrate": "A vibração deste controle não é suportada neste navegador.",
+    "gpNote": "Funciona com controles de Xbox, PlayStation, Switch Pro e a maioria dos controles USB no Chrome, Edge e Firefox. Para checar o drift, solte os dois analógicos: o valor deve voltar para perto de 0%.",
+    "startGp": "Testar controle",
+    "tyTool": "Teste de digitação",
+    "tyHint": "Digite as palavras abaixo. O tempo começa na primeira tecla. Aperte espaço depois de cada palavra.",
+    "tyWpm": "PPM",
+    "tyAcc": "Precisão",
+    "tyTime": "Tempo",
+    "tyWrong": "Erros",
+    "tyBest": "Recorde",
+    "tyRestart": "Recomeçar",
+    "tyInput": "Comece a digitar aqui",
+    "tyDone": "Acabou o tempo!",
+    "tyResult": "{wpm} palavras por minuto com {acc} de precisão.",
+    "tyNote": "O PPM conta os caracteres digitados corretamente divididos por 5, por minuto. A maioria dos adultos digita de 35 a 45 PPM.",
+    "startTy": "Começar teste de digitação",
+    "tyWords": "de a o que e do da em um para é com não uma os no se na por mais as dos como mas foi ao ele das tem à seu sua ou ser quando muito há nos já está eu também só pelo pela até isso ela entre era depois sem mesmo aos ter seus quem nas me esse eles estão você tinha foram essa num nem suas meu às minha têm numa pelos elas havia seja qual será nós tenho lhe deles essas esses pelas este fosse dele tu te vocês vos lhes meus minhas teu tua nosso nossa casa dia vida tempo ano mundo país homem mulher filho filha pai mãe amigo rua mesa livro porta cachorro gato carro trem mar sol luz céu terra fogo campo flor árvore pão leite café comida hora semana mês nome ideia verdade história guerra paz amor jogo música cor vermelho azul verde branco preto grande pequeno novo velho bom mau longo curto alto baixo fácil difícil feliz triste rápido lento claro doce forte fazer dizer poder ir ver dar saber querer chegar passar dever pôr parecer ficar crer falar levar deixar seguir achar chamar vir pensar sair voltar tomar conhecer viver sentir olhar contar começar esperar buscar entrar trabalhar escrever perder comer beber ler abrir correr jogar dormir cantar hoje ontem amanhã sempre nunca agora logo bem mal aqui ali perto longe dentro fora cima cedo tarde melhor pior menos cada outro tal vez dois três quatro cinco seis sete oito nove dez cem mil escola cidade noite coisa parte forma lugar trabalho gente água mão caso",
+    "cpsTool": "Teste de cliques",
+    "cpsHint": "Clique o mais rápido que puder dentro da caixa. O tempo começa no primeiro clique.",
+    "cpsArea": "Clique aqui para começar",
+    "cpsClicks": "Cliques",
+    "cpsCps": "CPS",
+    "cpsAgain": "Clique para tentar de novo",
+    "cpsResult": "{cps} cliques por segundo ({n} cliques em {s} segundos).",
+    "cpsR1": "Tranquilo",
+    "cpsR2": "Na média",
+    "cpsR3": "Rápido",
+    "cpsR4": "Muito rápido",
+    "cpsNote": "A maioria das pessoas clica de 6 a 8 vezes por segundo. Acima de 10 é muito rápido. Toques na tela também contam.",
+    "startCps": "Começar teste de cliques",
+    "rtTool": "Teste de tempo de reação",
+    "rtHint": "Clique ou toque assim que a caixa ficar verde. Cinco tentativas.",
+    "rtStart": "Clique aqui para começar",
+    "rtWait": "Espere o verde…",
+    "rtGo": "Clique!",
+    "rtEarly": "Cedo demais! Clique para tentar de novo.",
+    "rtShot": "{ms} ms. Clique para continuar.",
+    "rtDone": "Sua média: {ms} ms. Clique para tentar de novo.",
+    "rtAvg": "Média",
+    "rtBest": "Melhor",
+    "rtTries": "Tentativas",
+    "rtMs": "ms",
+    "rtNote": "A maioria das pessoas reage em 200 a 300 ms. Sua tela, seu mouse e o navegador somam alguns milissegundos.",
+    "startRt": "Começar teste de reação",
+    "hzTool": "Teste de taxa de atualização",
+    "hzHint": "A taxa de atualização real da sua tela, medida ao vivo no navegador.",
+    "hzFrame": "Tempo de quadro",
+    "hzDropped": "Quadros perdidos",
+    "hzMotion": "Comparação de movimento",
+    "hzYour": "Sua tela",
+    "hzTip": "Medido: {hz} Hz. Se o seu monitor suporta mais, ajuste no Windows em Configurações → Sistema → Tela → Tela avançada e use um cabo DisplayPort ou HDMI rápido.",
+    "hzNote": "Feche outras abas para uma leitura mais estável. Em notebooks, ligue o carregador: a economia de bateria pode baixar a taxa para 60 Hz.",
+    "startHz": "Começar teste de Hz",
+    "hrTool": "Teste de audição",
+    "hrHint": "Use fones de ouvido. Inicie a varredura e aperte o botão assim que deixar de ouvir o tom.",
+    "hrWarn": "Comece com volume baixo e aumente aos poucos. Tons agudos podem soar bem mais altos do que você espera.",
+    "hrStart": "Iniciar varredura",
+    "hrStop": "Não ouço mais",
+    "hrFreq": "Frequência",
+    "hrVolume": "Volume",
+    "hrEar": "Ouvido",
+    "hrLeft": "Esquerdo",
+    "hrBoth": "Ambos",
+    "hrRight": "Direito",
+    "hrHighest": "Tom mais agudo que você ouviu",
+    "hrTones": "Tocar um tom",
+    "hrResult": "Você ouviu até {f}. Isso é típico de pessoas {age}.",
+    "hrUnder": "com menos de {n} anos",
+    "hrOver": "com mais de {n} anos",
+    "hrNote": "Este não é um exame médico. Seus fones ou alto-falantes podem não tocar os tons mais agudos. Se notar perda auditiva, procure um médico.",
+    "startHr": "Começar teste de audição",
+    "weTool": "Tirar água",
+    "weHint": "Toca um tom grave e pulsante que faz o alto-falante vibrar e empurrar a água para fora.",
+    "weStart": "Tirar água",
+    "weStop": "Parar",
+    "weMode": "Som",
+    "weTone": "Tom de 165 Hz",
+    "weSweep": "Varredura grave",
+    "we1": "Tire os fones e coloque o volume no máximo.",
+    "we2": "Segure o celular com o alto-falante virado para baixo.",
+    "we3": "Aperte o botão e deixe tocar. Repita 2 ou 3 vezes se o som continuar abafado.",
+    "weNote": "Isso pode ajudar a tirar a água, mas não conserta um alto-falante danificado. Se o som continuar abafado depois de algumas tentativas, deixe o celular secar por algumas horas.",
+    "startWe": "Tirar água agora"
   },
   "pages": {
     "home": {
@@ -1074,6 +1169,375 @@
         {
           "q": "Quantos pixels mortos são aceitáveis?",
           "a": "Depende da marca. Muitas aceitam alguns, mas outras garantem zero pixels acesos. Confira a garantia do seu modelo."
+        }
+      ]
+    },
+    "gamepad": {
+      "card": {
+        "name": "Teste de controle",
+        "desc": "Botões, analógicos e drift."
+      },
+      "title": "Teste de controle online: botões, analógicos e drift",
+      "description": "Teste de controle online e grátis para Xbox, PlayStation e Switch. Confira cada botão, os gatilhos, os analógicos, o drift e a vibração no navegador.",
+      "h1Html": "<span class=\"grad\">Teste de controle</span> online",
+      "lead": "Conecte ou pareie seu controle e aperte qualquer botão. Veja ao vivo cada botão, gatilho e analógico, e descubra o drift em segundos.",
+      "article": [
+        {
+          "h": "Como testar seu controle",
+          "ol": [
+            "Conecte o controle por cabo USB ou Bluetooth.",
+            "Aperte qualquer botão para o navegador reconhecer o controle.",
+            "Aperte cada botão uma vez. Ele fica verde quando funciona.",
+            "Gire os dois analógicos em círculos completos, solte e observe o valor de drift."
+          ]
+        },
+        {
+          "h": "O que é drift do analógico?",
+          "p": [
+            "Drift é quando um analógico registra movimento sem você tocar nele, e o personagem anda ou a câmera gira sozinha. A causa é desgaste ou sujeira dentro do analógico. Solte os dois analógicos: o valor deve cair para 0% ou perto disso. Se ficar em 8% ou mais, o teste aponta drift."
+          ]
+        },
+        {
+          "h": "Quais controles funcionam?",
+          "p": [
+            "Controles de Xbox One e Series, PlayStation 4 e 5 (DualShock 4 e DualSense), Nintendo Switch Pro, 8BitDo e a maioria dos controles USB funcionam no Chrome, Edge e Firefox. O Safari também aceita quase todos. A vibração funciona no Chrome e no Edge com controles de Xbox e PlayStation."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Este teste de controle é grátis?",
+          "a": "Sim. É grátis e roda no seu navegador, sem instalar nada."
+        },
+        {
+          "q": "Por que meu controle não aparece?",
+          "a": "Aperte um botão depois de conectar. Os navegadores só mostram o controle depois do primeiro toque num botão. Se ainda não aparecer, tente outro cabo ou porta USB."
+        },
+        {
+          "q": "Como resolver o drift do analógico?",
+          "a": "Sopre ar comprimido em volta da base do analógico enquanto gira ele em círculos, e recalibre o controle nas configurações do console ou do Windows. Se o drift continuar, o módulo do analógico precisa de reparo ou o controle pode estar na garantia."
+        },
+        {
+          "q": "Dá para testar um controle de PS5 no PC?",
+          "a": "Sim. Conecte o DualSense por USB-C ou Bluetooth e aperte qualquer botão. Todos os botões, gatilhos e analógicos aparecem."
+        }
+      ]
+    },
+    "typing": {
+      "card": {
+        "name": "Teste de digitação",
+        "desc": "Palavras por minuto e precisão."
+      },
+      "title": "Teste de digitação online: velocidade em PPM grátis",
+      "description": "Teste de velocidade de digitação grátis. Digite por 15, 30 ou 60 segundos e veja suas palavras por minuto (PPM) e sua precisão. Sem cadastro.",
+      "h1Html": "<span class=\"grad\">Teste de digitação</span> online",
+      "lead": "Qual é a sua velocidade de digitação? Faça um teste de um minuto e veja na hora suas palavras por minuto e sua precisão.",
+      "article": [
+        {
+          "h": "Como funciona o teste de digitação",
+          "ol": [
+            "Escolha 15, 30 ou 60 segundos.",
+            "Comece a digitar as palavras. O tempo começa na primeira tecla.",
+            "Aperte espaço depois de cada palavra. As certas ficam verdes e os erros ficam vermelhos.",
+            "Quando o tempo acabar, você vê seu PPM, sua precisão e seu recorde."
+          ]
+        },
+        {
+          "h": "Qual é uma boa velocidade de digitação?",
+          "p": [
+            "A maioria dos adultos digita de 35 a 45 palavras por minuto. 60 PPM é rápido para trabalho de escritório, e digitadores profissionais costumam chegar a 70 a 90 PPM. A precisão importa tanto quanto a velocidade: acima de 95% é bom."
+          ]
+        },
+        {
+          "h": "Como digitar mais rápido",
+          "ul": [
+            "Mantenha os dedos na linha base (ASDF e JKLÇ) e use os dez dedos.",
+            "Olhe para a tela, não para o teclado.",
+            "Pratique alguns minutos todo dia em vez de uma vez por semana.",
+            "Vá mais devagar até errar menos. A velocidade vem com a precisão."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Como o PPM é calculado?",
+          "a": "Os caracteres digitados corretamente, incluindo espaços, são divididos por 5 para virar palavras e depois divididos pelos minutos do teste."
+        },
+        {
+          "q": "Este teste de digitação é grátis?",
+          "a": "Sim. É grátis, sem cadastro e sem limite de tentativas."
+        },
+        {
+          "q": "Funciona no celular?",
+          "a": "Sim, mas o teclado do celular é mais lento que um teclado físico, então sua pontuação vai ser menor."
+        },
+        {
+          "q": "Meu recorde fica salvo?",
+          "a": "Sim. Seu melhor resultado para cada duração fica salvo apenas neste navegador."
+        }
+      ]
+    },
+    "cps": {
+      "card": {
+        "name": "Teste de cliques",
+        "desc": "Cliques por segundo (CPS)."
+      },
+      "title": "Teste de CPS: quantos cliques por segundo você dá?",
+      "description": "Teste de cliques grátis. Clique o mais rápido possível por 1, 5, 10, 30 ou 60 segundos e veja seus cliques por segundo (CPS). Com mouse, touchpad ou toque.",
+      "h1Html": "<span class=\"grad\">Teste de cliques</span> online",
+      "lead": "Quão rápido você clica? Escolha um tempo, clique dentro da caixa e veja seus cliques por segundo.",
+      "article": [
+        {
+          "h": "Como funciona o teste de CPS",
+          "ol": [
+            "Escolha 1, 5, 10, 30 ou 60 segundos.",
+            "Clique dentro da caixa o mais rápido que puder. O tempo começa no primeiro clique.",
+            "Quando o tempo acabar, você vê seus cliques por segundo e seu recorde."
+          ]
+        },
+        {
+          "h": "Qual é um bom CPS?",
+          "p": [
+            "A maioria das pessoas clica de 6 a 8 vezes por segundo. 10 ou mais é muito rápido. Jogadores que usam técnicas como jitter click ou butterfly click chegam a 12 a 20 CPS em rajadas curtas."
+          ]
+        },
+        {
+          "h": "Técnicas de clique",
+          "ul": [
+            "Clique normal: um dedo, confortável para a mão, normalmente 6 a 8 CPS.",
+            "Jitter click: tensionar o braço para o dedo vibrar sobre o botão, muitas vezes 10 a 14 CPS.",
+            "Butterfly click: dois dedos alternando no mesmo botão, muitas vezes 15 CPS ou mais. Alguns mouses registram isso como clique duplo."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "O que significa CPS?",
+          "a": "CPS significa cliques por segundo: quantas vezes você aperta o botão do mouse em um segundo."
+        },
+        {
+          "q": "O teste de CPS é grátis?",
+          "a": "Sim. É grátis, sem cadastro e com tentativas ilimitadas."
+        },
+        {
+          "q": "Posso usar touchpad ou celular?",
+          "a": "Sim. Toques no touchpad ou na tela contam como cliques."
+        },
+        {
+          "q": "Por que meu mouse registra cliques a mais?",
+          "a": "Um switch gasto pode enviar dois cliques num só toque. Confira com o teste de mouse deste site, que aponta cliques duplos sem querer."
+        }
+      ]
+    },
+    "reaction": {
+      "card": {
+        "name": "Tempo de reação",
+        "desc": "Quão rápido você reage?"
+      },
+      "title": "Teste de tempo de reação: meça seus reflexos em ms",
+      "description": "Teste de tempo de reação grátis. Clique quando a caixa ficar verde e veja seu tempo de reação em milissegundos. Cinco tentativas, média e recorde.",
+      "h1Html": "<span class=\"grad\">Teste de tempo de reação</span> online",
+      "lead": "Clique assim que a caixa ficar verde. Cinco tentativas mostram seu tempo de reação médio em milissegundos.",
+      "article": [
+        {
+          "h": "Como funciona o teste de reação",
+          "ol": [
+            "Clique na caixa para começar. Ela fica vermelha.",
+            "Espere. Depois de um tempo aleatório ela fica verde.",
+            "Clique ou toque o mais rápido que puder. Clicar no vermelho conta como cedo demais.",
+            "Depois de cinco tentativas você vê sua média e seu melhor tempo."
+          ]
+        },
+        {
+          "h": "Qual é um bom tempo de reação?",
+          "p": [
+            "O tempo médio de reação visual é de cerca de 250 ms. Abaixo de 200 ms é rápido, e muitos gamers ficam entre 150 e 200 ms. Resultados acima de 300 ms são comuns com cansaço ou distração."
+          ]
+        },
+        {
+          "h": "Por que o resultado inclui seu equipamento",
+          "p": [
+            "Todo resultado inclui alguns milissegundos da sua tela, do mouse e do navegador. Uma tela de 60 Hz mostra um quadro novo a cada 16,7 ms, enquanto uma de 144 Hz mostra a cada 7 ms, então telas mais rápidas podem dar resultados um pouco melhores."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Qual é o tempo de reação médio de uma pessoa?",
+          "a": "Cerca de 250 milissegundos para um sinal visual como o deste teste."
+        },
+        {
+          "q": "Dá para melhorar o tempo de reação?",
+          "a": "Sim, um pouco. Dormir bem, treinar e ter uma tela e um mouse rápidos ajudam. Cafeína e aquecimento podem ajudar no curto prazo."
+        },
+        {
+          "q": "Funciona no celular?",
+          "a": "Sim. Toque na caixa. Telas sensíveis ao toque podem adicionar um pouco de atraso em relação ao mouse."
+        },
+        {
+          "q": "Posso usar o teclado?",
+          "a": "Sim. Selecione a caixa e aperte espaço ou Enter em vez de clicar."
+        }
+      ]
+    },
+    "refresh": {
+      "card": {
+        "name": "Teste de Hz",
+        "desc": "Os Hz reais da sua tela."
+      },
+      "title": "Teste de taxa de atualização: veja os Hz do monitor",
+      "description": "Teste de taxa de atualização online e grátis. Veja os Hz reais do seu monitor, o tempo de quadro, os quadros perdidos e uma comparação a 60 e 30 fps.",
+      "h1Html": "<span class=\"grad\">Teste de taxa de atualização</span> online",
+      "lead": "Confira se sua tela de 120, 144 ou 240 Hz está mesmo rodando na velocidade máxima. O resultado aparece na hora.",
+      "article": [
+        {
+          "h": "Como o teste funciona",
+          "p": [
+            "O navegador desenha um quadro novo cada vez que a tela atualiza. O teste cronometra centenas de quadros e mostra o resultado em Hz, junto com o tempo de quadro e os quadros perdidos. Os blocos em movimento comparam o movimento da sua tela com 60 e 30 quadros por segundo."
+          ]
+        },
+        {
+          "h": "Por que meu monitor de 144 Hz mostra 60 Hz?",
+          "ul": [
+            "A taxa está em 60 Hz no Windows: vá em Configurações → Sistema → Tela → Tela avançada e escolha a maior taxa.",
+            "O cabo não aguenta: use DisplayPort ou um cabo HDMI 2.0 ou mais novo.",
+            "O notebook está em economia de bateria: ligue o carregador.",
+            "A janela do navegador está num segundo monitor mais lento."
+          ]
+        },
+        {
+          "h": "De qual taxa de atualização eu preciso?",
+          "p": [
+            "60 Hz basta para trabalho de escritório e vídeos. Em jogos, 120 a 165 Hz é bem mais fluido, e 240 Hz ou mais ajuda principalmente jogadores competitivos."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "O resultado é preciso?",
+          "a": "Sim, geralmente com margem de um ou dois Hz. Feche outras abas para uma leitura mais estável."
+        },
+        {
+          "q": "Funciona no celular?",
+          "a": "Sim. Celulares com tela de 90 ou 120 Hz mostram sua taxa, mas muitos baixam a taxa para economizar bateria quando nada se mexe."
+        },
+        {
+          "q": "O que são quadros perdidos?",
+          "a": "Quadros que o navegador não desenhou a tempo. Alguns são normais. Muitos deixam o movimento travado."
+        },
+        {
+          "q": "Por que o número muda?",
+          "a": "Algumas telas com taxa variável (VRR, G-SYNC, FreeSync ou ProMotion) mudam a taxa conforme o que aparece na tela."
+        }
+      ]
+    },
+    "hearing": {
+      "card": {
+        "name": "Teste de audição",
+        "desc": "A frequência mais aguda que você ouve."
+      },
+      "title": "Teste de audição online: confira sua faixa em Hz",
+      "description": "Teste de audição online e grátis. Descubra a frequência mais aguda que você ouve com uma varredura de tom, teste cada ouvido e veja o típico da sua idade.",
+      "h1Html": "<span class=\"grad\">Teste de audição</span> online",
+      "lead": "Descubra o tom mais agudo que você ainda ouve, teste cada ouvido separadamente e veja o que é típico da sua idade.",
+      "article": [
+        {
+          "h": "Como fazer o teste de audição",
+          "ol": [
+            "Coloque fones de ouvido e deixe o volume baixo.",
+            "Aperte Iniciar: um tom sobe a partir de 8.000 Hz.",
+            "Aperte o botão assim que deixar de ouvir.",
+            "Repita para cada ouvido com os botões Esquerdo e Direito."
+          ]
+        },
+        {
+          "h": "Faixa auditiva por idade",
+          "ul": [
+            "Menos de 20 anos: até cerca de 19.000 Hz ou mais.",
+            "Menos de 25 anos: até cerca de 17.400 Hz (o chamado som de mosquito).",
+            "Menos de 30 anos: até cerca de 16.000 Hz.",
+            "Menos de 40 anos: cerca de 15.000 Hz.",
+            "Menos de 50 anos: cerca de 14.000 Hz.",
+            "Menos de 60 anos: cerca de 12.000 Hz."
+          ]
+        },
+        {
+          "h": "O que afeta o resultado",
+          "p": [
+            "Fones baratos e alto-falantes de notebook muitas vezes não tocam tons acima de 16.000 Hz, então você pode não ouvi-los mesmo com audição perfeita. Barulho ao redor e volume muito baixo também pioram o resultado. Este teste só verifica as frequências agudas e não é um exame médico de audição."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Este é um exame médico de audição?",
+          "a": "Não. É uma checagem rápida da sua faixa de frequências agudas. Para um exame de verdade, procure um médico ou fonoaudiólogo."
+        },
+        {
+          "q": "O que é o som de mosquito?",
+          "a": "Um tom de cerca de 17.400 Hz que a maioria dos jovens ouve, mas muitos adultos com mais de 25 anos não."
+        },
+        {
+          "q": "Por que não ouço os tons mais agudos?",
+          "a": "A audição das frequências agudas cai naturalmente com a idade. Seus fones ou alto-falantes também podem não tocá-las."
+        },
+        {
+          "q": "É seguro?",
+          "a": "Sim, se você começar com volume baixo. Nunca toque tons agudos alto, principalmente com fones de ouvido."
+        }
+      ]
+    },
+    "water": {
+      "card": {
+        "name": "Tirar água",
+        "desc": "Expulse a água do alto-falante."
+      },
+      "title": "Tirar água do alto-falante do celular: som de 165 Hz",
+      "description": "Entrou água no alto-falante do celular? Toque um som de 165 Hz para expulsar a água. Funciona no iPhone e no Android pelo navegador, sem app.",
+      "h1Html": "Som para <span class=\"grad\">tirar água</span> do celular",
+      "lead": "Entrou água no alto-falante do celular? Toque um tom grave e pulsante que chacoalha a água para fora, direto no navegador.",
+      "article": [
+        {
+          "h": "Como tirar água do alto-falante",
+          "ol": [
+            "Tire os fones e coloque o volume no máximo.",
+            "Segure o celular com o alto-falante virado para baixo.",
+            "Aperte o botão e deixe o som tocar por 30 segundos.",
+            "Repita 2 ou 3 vezes se o som continuar abafado."
+          ]
+        },
+        {
+          "h": "Como funciona?",
+          "p": [
+            "Um tom grave faz a membrana do alto-falante ir e voltar com força. Esse movimento empurra as gotas de água para fora da grade do alto-falante, a mesma ideia que a Apple usa no bloqueio de água do Apple Watch. Os pulsos deixam o movimento mais forte."
+          ]
+        },
+        {
+          "h": "Se o som continuar abafado",
+          "ul": [
+            "Deixe o celular secar com o alto-falante para baixo por algumas horas.",
+            "Não coloque o celular no arroz: não seca mais rápido e o pó pode entrar.",
+            "Não use secador de cabelo nem enfie nada no alto-falante.",
+            "Se o alto-falante continuar ruim depois de um dia, ele pode estar danificado e precisar de reparo."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Tirar água com som funciona mesmo?",
+          "a": "Pode ajudar a expulsar a água da grade do alto-falante, e muita gente nota o som voltar ao normal. Não conserta um alto-falante que já está danificado."
+        },
+        {
+          "q": "Qual frequência é usada para tirar água?",
+          "a": "Normalmente um tom grave de cerca de 165 Hz. A opção de varredura grave vai de 110 a 300 Hz."
+        },
+        {
+          "q": "Funciona no iPhone e no Android?",
+          "a": "Sim. Funciona no Safari, no Chrome e em outros navegadores em qualquer celular. Se não ouvir nada no iPhone, desative o modo silencioso."
+        },
+        {
+          "q": "É seguro para o alto-falante?",
+          "a": "Sim. Toca um tom normal no volume do celular, como uma música. Pare se o alto-falante chiar muito."
         }
       ]
     }

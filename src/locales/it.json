@@ -211,7 +211,102 @@
     "colRed": "Rosso",
     "colGreen": "Verde",
     "colBlue": "Blu",
-    "colGray": "Grigio"
+    "colGray": "Grigio",
+    "unitSec": "s",
+    "gpTool": "Tester controller",
+    "gpHint": "Collega un controller via USB o Bluetooth e premi un tasto qualsiasi.",
+    "gpWaiting": "Nessun controller trovato. Collegane uno e premi un tasto per attivarlo.",
+    "gpName": "Controller",
+    "gpButtons": "Tasti testati",
+    "gpLeft": "Stick sinistro",
+    "gpRight": "Stick destro",
+    "gpDrift": "Drift dello stick",
+    "gpDriftNone": "Nessuno",
+    "gpDriftTip": "Uno stick segnala movimento anche se non lo tocchi. È il drift dello stick. Pulisci intorno allo stick con aria compressa o verifica la garanzia.",
+    "gpVibrate": "Prova vibrazione",
+    "gpNoVibrate": "La vibrazione non è supportata per questo controller in questo browser.",
+    "gpNote": "Funziona con Xbox, PlayStation, Switch Pro e quasi tutti i controller USB in Chrome, Edge e Firefox. Per controllare il drift, lascia entrambi gli stick: il valore dovrebbe tornare vicino allo 0%.",
+    "startGp": "Avvia test controller",
+    "tyTool": "Test di velocità di scrittura",
+    "tyHint": "Scrivi le parole qui sotto. Il timer parte al primo tasto. Premi spazio dopo ogni parola.",
+    "tyWpm": "WPM",
+    "tyAcc": "Precisione",
+    "tyTime": "Tempo",
+    "tyWrong": "Errori",
+    "tyBest": "Record",
+    "tyRestart": "Ricomincia",
+    "tyInput": "Inizia a scrivere qui",
+    "tyDone": "Tempo scaduto!",
+    "tyResult": "{wpm} parole al minuto con precisione del {acc}.",
+    "tyNote": "Le WPM contano i caratteri scritti correttamente divisi per 5, al minuto. La maggior parte degli adulti scrive tra 35 e 45 WPM.",
+    "startTy": "Avvia test di scrittura",
+    "tyWords": "il lo la le gli un una uno di da in con su per tra fra che non come anche più ma se perché quando dove chi cosa casa cane gatto auto tempo giorno notte anno mese settimana oggi domani ieri sempre mai spesso già ancora adesso ora qui qua lì poi bene male bello brutto grande piccolo vecchio nuovo giovane lungo corto alto basso caldo freddo veloce lento presto tardi molto poco tutto tutti niente qualcosa fare andare venire vedere dire dare prendere trovare pensare sapere avere essere potere dovere volere leggere scrivere giocare imparare lavorare vivere mangiare bere dormire correre guidare volare comprare aiutare chiedere rispondere sentire parlare chiamare portare mettere stare aprire chiudere acqua pane latte caffè tè mela frutta pesce carne formaggio burro zucchero sale città paese strada via piazza scuola libro penna tavolo sedia porta finestra stanza cucina giardino albero fiore bosco monte lago mare fiume sole luna stella cielo pioggia neve vento colore rosso blu verde giallo bianco nero uomo donna bambino padre madre fratello sorella amico famiglia nome domanda risposta gioco musica foto film soldi lavoro mano testa occhio orecchio bocca piede cuore mondo vita amore fine inizio grazie prego ciao sì no stanco felice triste mezzo primo secondo tre quattro cinque dieci cento treno bici lettera carta luce fuoco aria terra animale uccello cavallo mucca topo palla canzone parola frase pagina punto parte modo forma sera mattina pranzo cena festa viaggio estate inverno primavera autunno caro buono università però così",
+    "cpsTool": "Test velocità di clic",
+    "cpsHint": "Clicca più veloce che puoi dentro il riquadro. Il timer parte al primo clic.",
+    "cpsArea": "Clicca qui per iniziare",
+    "cpsClicks": "Clic",
+    "cpsCps": "CPS",
+    "cpsAgain": "Clicca per riprovare",
+    "cpsResult": "{cps} clic al secondo ({n} clic in {s} secondi).",
+    "cpsR1": "Rilassato",
+    "cpsR2": "Nella media",
+    "cpsR3": "Veloce",
+    "cpsR4": "Velocissimo",
+    "cpsNote": "La maggior parte delle persone fa da 6 a 8 clic al secondo. Oltre 10 è molto veloce. Valgono anche i tocchi sul touchscreen.",
+    "startCps": "Avvia test clic",
+    "rtTool": "Test dei riflessi",
+    "rtHint": "Clicca o tocca appena il riquadro diventa verde. Cinque tentativi.",
+    "rtStart": "Clicca qui per iniziare",
+    "rtWait": "Aspetta il verde…",
+    "rtGo": "Clicca!",
+    "rtEarly": "Troppo presto! Clicca per riprovare.",
+    "rtShot": "{ms} ms. Clicca per continuare.",
+    "rtDone": "La tua media: {ms} ms. Clicca per riprovare.",
+    "rtAvg": "Media",
+    "rtBest": "Record",
+    "rtTries": "Tentativi",
+    "rtMs": "ms",
+    "rtNote": "La maggior parte delle persone reagisce in 200-300 ms. Schermo, mouse e browser aggiungono qualche millisecondo.",
+    "startRt": "Avvia test dei riflessi",
+    "hzTool": "Test frequenza di aggiornamento",
+    "hzHint": "La frequenza di aggiornamento reale del tuo schermo, misurata dal vivo nel browser.",
+    "hzFrame": "Tempo per frame",
+    "hzDropped": "Frame saltati",
+    "hzMotion": "Confronto movimento",
+    "hzYour": "Il tuo schermo",
+    "hzTip": "Misurati {hz} Hz. Se il monitor supporta di più, impostalo in Windows da Impostazioni → Sistema → Schermo → Schermo avanzato e usa un cavo DisplayPort o HDMI veloce.",
+    "hzNote": "Chiudi le altre schede per una lettura più stabile. Sui portatili collega il caricatore: il risparmio energia può abbassare la frequenza a 60 Hz.",
+    "startHz": "Avvia test Hz",
+    "hrTool": "Test dell'udito",
+    "hrHint": "Usa le cuffie. Avvia la scansione e premi il pulsante appena non senti più il tono.",
+    "hrWarn": "Parti con un volume basso e alzalo piano. I toni acuti possono sembrare molto più forti di quanto pensi.",
+    "hrStart": "Avvia la scansione",
+    "hrStop": "Non lo sento più",
+    "hrFreq": "Frequenza",
+    "hrVolume": "Volume",
+    "hrEar": "Orecchio",
+    "hrLeft": "Sinistro",
+    "hrBoth": "Entrambi",
+    "hrRight": "Destro",
+    "hrHighest": "Tono più alto sentito",
+    "hrTones": "Riproduci un singolo tono",
+    "hrResult": "Hai sentito fino a {f}. È tipico di chi ha {age}.",
+    "hrUnder": "meno di {n} anni",
+    "hrOver": "più di {n} anni",
+    "hrNote": "Questo non è un test medico. Cuffie o altoparlanti potrebbero non riprodurre i toni più alti. Se noti un calo dell'udito, rivolgiti a un medico.",
+    "startHr": "Avvia test dell'udito",
+    "weTool": "Espelli acqua",
+    "weHint": "Riproduce un tono basso e pulsante che fa vibrare l'altoparlante e spinge fuori l'acqua.",
+    "weStart": "Espelli acqua",
+    "weStop": "Ferma",
+    "weMode": "Suono",
+    "weTone": "Tono a 165 Hz",
+    "weSweep": "Sweep basso",
+    "we1": "Scollega le cuffie e alza il volume al massimo.",
+    "we2": "Tieni il telefono con l'altoparlante rivolto verso il basso.",
+    "we3": "Premi il pulsante e lascialo suonare. Ripeti 2 o 3 volte se il suono è ancora ovattato.",
+    "weNote": "Può aiutare a spingere fuori l'acqua, ma non ripara un altoparlante danneggiato. Se il suono resta ovattato dopo qualche tentativo, lascia asciugare il telefono per qualche ora.",
+    "startWe": "Espelli l'acqua ora"
   },
   "pages": {
     "home": {
@@ -1074,6 +1169,375 @@
         {
           "q": "Quanti pixel morti sono accettabili?",
           "a": "Dipende dal marchio. Molti ne tollerano qualcuno, ma alcuni garantiscono zero pixel accesi. Controlla la garanzia del tuo modello."
+        }
+      ]
+    },
+    "gamepad": {
+      "card": {
+        "name": "Test controller",
+        "desc": "Tasti, stick e drift."
+      },
+      "title": "Test controller online: prova gamepad e drift degli stick",
+      "description": "Tester gamepad online gratuito per controller Xbox, PlayStation e Switch. Controlla tasti, grilletti, stick analogici, drift e vibrazione nel browser.",
+      "h1Html": "<span class=\"grad\">Test controller</span> online",
+      "lead": "Collega o abbina il controller e premi un tasto. Guarda ogni tasto, grilletto e stick muoversi in tempo reale e scopri il drift in pochi secondi.",
+      "article": [
+        {
+          "h": "Come testare il controller",
+          "ol": [
+            "Collega il controller con un cavo USB o via Bluetooth.",
+            "Premi un tasto qualsiasi così il browser lo rileva.",
+            "Premi ogni tasto una volta. Quelli che funzionano diventano verdi.",
+            "Muovi entrambi gli stick in cerchi completi, poi lasciali e guarda il valore del drift."
+          ]
+        },
+        {
+          "h": "Cos'è il drift degli stick?",
+          "p": [
+            "Il drift si ha quando uno stick analogico segnala un movimento anche se non lo tocchi, così il personaggio cammina o la visuale gira da sola. È causato da usura o sporco all'interno dello stick. Lascia entrambi gli stick: il valore dovrebbe scendere a 0% o quasi. Se resta all'8% o più, il test lo segnala come drift."
+          ]
+        },
+        {
+          "h": "Quali controller funzionano?",
+          "p": [
+            "I controller Xbox One e Series, PlayStation 4 e 5 (DualShock 4 e DualSense), Nintendo Switch Pro, 8BitDo e la maggior parte dei gamepad USB funzionano in Chrome, Edge e Firefox. Anche Safari ne supporta la maggior parte. La vibrazione funziona in Chrome ed Edge con i controller Xbox e PlayStation."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Questo tester per gamepad è gratuito?",
+          "a": "Sì. È gratuito e funziona nel browser, senza installare nulla."
+        },
+        {
+          "q": "Perché il mio controller non compare?",
+          "a": "Premi un tasto dopo averlo collegato. I browser mostrano il controller solo dopo la prima pressione. Se ancora non appare, prova un altro cavo o un'altra porta USB."
+        },
+        {
+          "q": "Come si risolve il drift degli stick?",
+          "a": "Soffia aria compressa intorno alla base dello stick mentre lo ruoti e ricalibra il controller dalle impostazioni della console o di Windows. Se il drift resta, il modulo dello stick va riparato oppure il controller potrebbe essere ancora in garanzia."
+        },
+        {
+          "q": "Posso testare un controller PS5 sul PC?",
+          "a": "Sì. Collega il DualSense via USB-C o Bluetooth e premi un tasto. Vengono mostrati tutti i tasti, i grilletti e gli stick."
+        }
+      ]
+    },
+    "typing": {
+      "card": {
+        "name": "Test di scrittura",
+        "desc": "Parole al minuto e precisione."
+      },
+      "title": "Test velocità di scrittura online gratis (WPM)",
+      "description": "Test di velocità di scrittura gratuito. Scrivi per 15, 30 o 60 secondi e scopri parole al minuto (WPM) e precisione. Senza registrazione, con ogni tastiera.",
+      "h1Html": "<span class=\"grad\">Test di scrittura</span> online",
+      "lead": "Quanto scrivi veloce? Fai un test di un minuto e scopri subito le tue parole al minuto e la precisione.",
+      "article": [
+        {
+          "h": "Come funziona il test di scrittura",
+          "ol": [
+            "Scegli 15, 30 o 60 secondi.",
+            "Inizia a scrivere le parole. Il timer parte al primo tasto.",
+            "Premi spazio dopo ogni parola. Le parole giuste diventano verdi, gli errori rossi.",
+            "Allo scadere del tempo vedrai WPM, precisione e record."
+          ]
+        },
+        {
+          "h": "Qual è una buona velocità di scrittura?",
+          "p": [
+            "La maggior parte degli adulti scrive tra 35 e 45 parole al minuto. 60 WPM sono tanti per il lavoro d'ufficio, e i dattilografi professionisti arrivano di solito a 70-90 WPM. La precisione conta quanto la velocità: sopra il 95% è un buon risultato."
+          ]
+        },
+        {
+          "h": "Come scrivere più veloce",
+          "ul": [
+            "Tieni le dita sulla riga centrale (ASDF e JKLÒ) e usa tutte e dieci le dita.",
+            "Guarda lo schermo, non la tastiera.",
+            "Esercitati qualche minuto ogni giorno invece che una volta a settimana.",
+            "Rallenta finché non fai meno errori. La velocità arriva con la precisione."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Come si calcolano le WPM?",
+          "a": "I caratteri scritti correttamente, spazi inclusi, vengono divisi per 5 per ottenere le parole, poi divisi per i minuti del test."
+        },
+        {
+          "q": "Questo test di scrittura è gratuito?",
+          "a": "Sì. È gratuito, senza registrazione e senza limiti di tentativi."
+        },
+        {
+          "q": "Funziona sul telefono?",
+          "a": "Sì, ma le tastiere del telefono sono più lente di una tastiera fisica, quindi il punteggio sarà più basso."
+        },
+        {
+          "q": "Il mio record viene salvato?",
+          "a": "Sì. Il record per ogni durata del test viene salvato solo in questo browser."
+        }
+      ]
+    },
+    "cps": {
+      "card": {
+        "name": "Test CPS",
+        "desc": "Clic al secondo (CPS)."
+      },
+      "title": "CPS Test: misura i clic al secondo (test velocità clic)",
+      "description": "Test velocità di clic gratuito. Clicca più veloce che puoi per 1, 5, 10, 30 o 60 secondi e scopri i tuoi clic al secondo (CPS). Con mouse, touchpad e touch.",
+      "h1Html": "<span class=\"grad\">Test velocità di clic</span> online",
+      "lead": "Quanto clicchi veloce? Scegli un tempo, clicca nel riquadro e scopri i tuoi clic al secondo.",
+      "article": [
+        {
+          "h": "Come funziona il CPS test",
+          "ol": [
+            "Scegli 1, 5, 10, 30 o 60 secondi.",
+            "Clicca nel riquadro più veloce che puoi. Il timer parte al primo clic.",
+            "Allo scadere del tempo vedrai i tuoi clic al secondo e il tuo record."
+          ]
+        },
+        {
+          "h": "Qual è un buon CPS?",
+          "p": [
+            "La maggior parte delle persone fa da 6 a 8 clic al secondo. 10 o più è molto veloce. I gamer che usano tecniche come il jitter clicking o il butterfly clicking arrivano a 12-20 CPS per brevi raffiche."
+          ]
+        },
+        {
+          "h": "Tecniche di clic",
+          "ul": [
+            "Clic normale: un dito, non affatica la mano, di solito 6-8 CPS.",
+            "Jitter clicking: si tende il braccio così il dito vibra sul tasto, spesso 10-14 CPS.",
+            "Butterfly clicking: due dita alternate sullo stesso tasto, spesso 15 CPS o più. Alcuni mouse lo registrano come doppio clic."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Cosa significa CPS?",
+          "a": "CPS significa clic al secondo (clicks per second): quante volte premi il tasto del mouse in un secondo."
+        },
+        {
+          "q": "Il CPS test è gratuito?",
+          "a": "Sì. È gratuito, senza registrazione e con tentativi illimitati."
+        },
+        {
+          "q": "Posso usare un touchpad o il telefono?",
+          "a": "Sì. I tocchi su touchpad o touchscreen contano come clic."
+        },
+        {
+          "q": "Perché il mio mouse registra clic in più?",
+          "a": "Un microswitch usurato può inviare due clic con una sola pressione. Verificalo con il test del mouse di questo sito, che segnala i doppi clic involontari."
+        }
+      ]
+    },
+    "reaction": {
+      "card": {
+        "name": "Test dei riflessi",
+        "desc": "Quanto sei reattivo?"
+      },
+      "title": "Test dei riflessi: misura il tempo di reazione in ms",
+      "description": "Test dei riflessi gratuito. Clicca quando il riquadro diventa verde e scopri il tuo tempo di reazione in millisecondi. Cinque tentativi, media e record.",
+      "h1Html": "<span class=\"grad\">Test dei riflessi</span> online",
+      "lead": "Clicca appena il riquadro diventa verde. Cinque tentativi ti danno il tempo di reazione medio in millisecondi.",
+      "article": [
+        {
+          "h": "Come funziona il test dei riflessi",
+          "ol": [
+            "Clicca sul riquadro per iniziare. Diventa rosso.",
+            "Aspetta. Dopo un intervallo casuale diventa verde.",
+            "Clicca o tocca più veloce che puoi. Cliccare sul rosso conta come troppo presto.",
+            "Dopo cinque tentativi vedrai la media e il tempo migliore."
+          ]
+        },
+        {
+          "h": "Qual è un buon tempo di reazione?",
+          "p": [
+            "Il tempo medio di reazione visiva è di circa 250 ms. Sotto i 200 ms è veloce, e molti gamer stanno tra 150 e 200 ms. Risultati sopra i 300 ms sono comuni quando si è stanchi o distratti."
+          ]
+        },
+        {
+          "h": "Perché il risultato dipende dalla tua postazione",
+          "p": [
+            "Ogni risultato include qualche millisecondo dovuto a schermo, mouse e browser. Uno schermo a 60 Hz mostra un nuovo frame ogni 16,7 ms, uno a 144 Hz ogni 7 ms, quindi gli schermi più veloci possono dare punteggi un po' migliori."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Qual è il tempo di reazione medio umano?",
+          "a": "Circa 250 millisecondi per un segnale visivo come quello di questo test."
+        },
+        {
+          "q": "Posso migliorare il mio tempo di reazione?",
+          "a": "Sì, un po'. Aiutano il sonno, l'allenamento e uno schermo e un mouse veloci. Caffeina e riscaldamento possono aiutare nel breve periodo."
+        },
+        {
+          "q": "Funziona sul telefono?",
+          "a": "Sì. Tocca il riquadro. I touchscreen possono aggiungere un po' di ritardo rispetto al mouse."
+        },
+        {
+          "q": "Posso usare la tastiera?",
+          "a": "Sì. Seleziona il riquadro e premi spazio o Invio invece di cliccare."
+        }
+      ]
+    },
+    "refresh": {
+      "card": {
+        "name": "Test Hz",
+        "desc": "Gli Hz reali dello schermo."
+      },
+      "title": "Test refresh rate: verifica gli Hz del monitor (144 Hz)",
+      "description": "Test della frequenza di aggiornamento gratuito. Scopri gli Hz reali del monitor, il tempo per frame e i frame saltati, con un confronto a 60 e 30 fps.",
+      "h1Html": "<span class=\"grad\">Test refresh rate</span> online",
+      "lead": "Verifica se il tuo schermo a 120, 144 o 240 Hz va davvero alla massima velocità. Il risultato appare subito.",
+      "article": [
+        {
+          "h": "Come funziona il test",
+          "p": [
+            "Il browser disegna un nuovo frame ogni volta che lo schermo si aggiorna. Il test cronometra centinaia di frame e mostra il risultato in Hz, insieme al tempo per frame e agli eventuali frame saltati. I blocchi in movimento confrontano il movimento del tuo schermo con 60 e 30 frame al secondo."
+          ]
+        },
+        {
+          "h": "Perché il mio monitor a 144 Hz va a 60 Hz?",
+          "ul": [
+            "In Windows la frequenza è impostata a 60 Hz: vai in Impostazioni → Sistema → Schermo → Schermo avanzato e scegli il valore più alto.",
+            "Il cavo non regge: usa DisplayPort o un cavo HDMI 2.0 o più recente.",
+            "Il portatile è in risparmio energia: collega il caricatore.",
+            "La finestra del browser è su un secondo monitor più lento."
+          ]
+        },
+        {
+          "h": "Di quale frequenza ho bisogno?",
+          "p": [
+            "60 Hz vanno bene per l'ufficio e i video. Nei giochi, 120-165 Hz sono molto più fluidi, e 240 Hz o più servono soprattutto ai giocatori competitivi."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Il risultato è preciso?",
+          "a": "Sì, di solito entro uno o due Hz. Chiudi le altre schede per una lettura più stabile."
+        },
+        {
+          "q": "Funziona sui telefoni?",
+          "a": "Sì. I telefoni con schermo a 90 o 120 Hz mostrano la loro frequenza, ma molti la abbassano per risparmiare batteria quando nulla si muove."
+        },
+        {
+          "q": "Cosa sono i frame saltati?",
+          "a": "Frame che il browser non è riuscito a disegnare in tempo. Qualcuno è normale. Se sono tanti, il movimento appare a scatti."
+        },
+        {
+          "q": "Perché il numero cambia?",
+          "a": "Alcuni schermi con refresh variabile (VRR, G-SYNC, FreeSync o ProMotion) cambiano frequenza in base a ciò che mostrano."
+        }
+      ]
+    },
+    "hearing": {
+      "card": {
+        "name": "Test dell'udito",
+        "desc": "La frequenza più alta che senti."
+      },
+      "title": "Test dell'udito online: misura la gamma udibile in Hz",
+      "description": "Test dell'udito online gratuito. Trova la frequenza più alta che riesci a sentire, prova ogni orecchio e scopri cosa è tipico per la tua età.",
+      "h1Html": "<span class=\"grad\">Test dell'udito</span> online",
+      "lead": "Trova il tono più alto che riesci ancora a sentire, prova ogni orecchio separatamente e scopri cosa è tipico per la tua età.",
+      "article": [
+        {
+          "h": "Come fare il test dell'udito",
+          "ol": [
+            "Indossa le cuffie e tieni il volume basso.",
+            "Premi Avvia: un tono sale a partire da 8.000 Hz.",
+            "Premi il pulsante appena non lo senti più.",
+            "Ripeti per ogni orecchio con i pulsanti Sinistro e Destro."
+          ]
+        },
+        {
+          "h": "Gamma udibile per età",
+          "ul": [
+            "Sotto i 20 anni: fino a circa 19.000 Hz o più.",
+            "Sotto i 25 anni: fino a circa 17.400 Hz (il cosiddetto suono zanzara).",
+            "Sotto i 30 anni: fino a circa 16.000 Hz.",
+            "Sotto i 40 anni: circa 15.000 Hz.",
+            "Sotto i 50 anni: circa 14.000 Hz.",
+            "Sotto i 60 anni: circa 12.000 Hz."
+          ]
+        },
+        {
+          "h": "Cosa influisce sul risultato",
+          "p": [
+            "Cuffie economiche e altoparlanti dei portatili spesso non riproducono toni sopra i 16.000 Hz, quindi potresti non sentirli anche con un udito perfetto. Anche il rumore di fondo e un volume molto basso abbassano il risultato. Questo test controlla solo le alte frequenze e non è un esame audiometrico."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "È un test dell'udito medico?",
+          "a": "No. È un controllo rapido della tua gamma di alte frequenze. Per un vero esame dell'udito rivolgiti a un medico o a un audioprotesista."
+        },
+        {
+          "q": "Cos'è il suono zanzara?",
+          "a": "Un tono intorno ai 17.400 Hz che la maggior parte dei giovani sente, ma molti adulti sopra i 25 anni no."
+        },
+        {
+          "q": "Perché non sento i toni più alti?",
+          "a": "La capacità di sentire le alte frequenze cala naturalmente con l'età. Inoltre le cuffie o gli altoparlanti potrebbero non riprodurle."
+        },
+        {
+          "q": "È sicuro?",
+          "a": "Sì, se parti con un volume basso. Non riprodurre mai toni acuti ad alto volume, soprattutto in cuffia."
+        }
+      ]
+    },
+    "water": {
+      "card": {
+        "name": "Espelli acqua",
+        "desc": "Togli l'acqua dall'altoparlante."
+      },
+      "title": "Espellere acqua dall'altoparlante del telefono (165 Hz)",
+      "description": "Acqua nell'altoparlante del telefono? Riproduci un suono a 165 Hz per espellere l'acqua. Funziona su iPhone e Android dal browser, senza app.",
+      "h1Html": "Suono per <span class=\"grad\">espellere l'acqua</span>",
+      "lead": "Ti è entrata acqua nell'altoparlante del telefono? Riproduci un tono basso e pulsante che la scuote fuori, direttamente nel browser.",
+      "article": [
+        {
+          "h": "Come espellere l'acqua dall'altoparlante",
+          "ol": [
+            "Scollega le cuffie e alza il volume al massimo.",
+            "Tieni il telefono con l'altoparlante rivolto verso il basso.",
+            "Premi il pulsante e lascia suonare per 30 secondi.",
+            "Ripeti 2 o 3 volte se il suono è ancora ovattato."
+          ]
+        },
+        {
+          "h": "Come funziona?",
+          "p": [
+            "Un tono basso fa muovere molto avanti e indietro la membrana dell'altoparlante. Questo movimento spinge le gocce d'acqua fuori dalla griglia, la stessa idea che Apple usa per il blocco acqua di Apple Watch. La pulsazione rende il movimento più forte."
+          ]
+        },
+        {
+          "h": "Se il suono è ancora ovattato",
+          "ul": [
+            "Lascia asciugare il telefono per qualche ora con l'altoparlante verso il basso.",
+            "Non mettere il telefono nel riso: non asciuga prima e la polvere può entrare.",
+            "Non usare il phon e non infilare nulla nell'altoparlante.",
+            "Se dopo un giorno l'altoparlante suona ancora male, potrebbe essere danneggiato e va riparato."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Espellere l'acqua con il suono funziona davvero?",
+          "a": "Può aiutare a spingere l'acqua fuori dalla griglia, e a molti il suono torna pulito. Non può riparare un altoparlante già danneggiato."
+        },
+        {
+          "q": "Che frequenza si usa per espellere l'acqua?",
+          "a": "Di solito si usa un tono basso intorno ai 165 Hz. L'opzione sweep basso varia tra 110 e 300 Hz."
+        },
+        {
+          "q": "Funziona su iPhone e Android?",
+          "a": "Sì. Funziona in Safari, Chrome e altri browser su qualsiasi telefono. Su iPhone disattiva la modalità silenziosa se non senti nulla."
+        },
+        {
+          "q": "È sicuro per l'altoparlante?",
+          "a": "Sì. Riproduce un tono normale al volume del telefono, come la musica. Fermati se l'altoparlante gracchia molto."
         }
       ]
     }
