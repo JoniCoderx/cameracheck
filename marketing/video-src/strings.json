@@ -1,0 +1,194 @@
+{
+ "en": {
+  "h0parts": [
+   "Is your",
+   "mic",
+   "working?"
+  ],
+  "h": [
+   "mic",
+   "camera",
+   "speaker",
+   "keyboard",
+   "mouse"
+  ],
+  "tag": "Test every device in seconds.|100% free.",
+  "tools": [
+   [
+    "Mic test",
+    "Live level, waveform, playback"
+   ],
+   [
+    "Webcam test",
+    "Real resolution and FPS"
+   ],
+   [
+    "Speaker test",
+    "Left, right and full sweep"
+   ],
+   [
+    "Keyboard test",
+    "Every key, chatter, rollover"
+   ],
+   [
+    "Mouse test",
+    "Buttons, double clicks, Hz"
+   ],
+   [
+    "Dead pixel test",
+    "Full-screen colors and a fixer"
+   ],
+   [
+    "Controller test",
+    "Buttons, sticks and drift"
+   ],
+   [
+    "Typing test",
+    "Words per minute"
+   ],
+   [
+    "Click speed test",
+    "Clicks per second"
+   ],
+   [
+    "Reaction time",
+    "How fast are you?"
+   ],
+   [
+    "Refresh rate",
+    "Is your 144 Hz real?"
+   ],
+   [
+    "Hearing test",
+    "Up to 20,000 Hz"
+   ],
+   [
+    "Water eject",
+    "Shake water out of your speaker"
+   ]
+  ],
+  "p1": "100% private",
+  "p2": "Nothing ever leaves your device.",
+  "p3": "No app. No sign-up.",
+  "langs": [
+   "English",
+   "עברית",
+   "Español",
+   "日本語",
+   "العربية",
+   "Deutsch",
+   "Français",
+   "Português",
+   "Русский",
+   "Türkçe",
+   "Italiano",
+   "हिन्दी",
+   "Indonesia"
+  ],
+  "l1": "13 languages",
+  "l2": "One site. Everyone.",
+  "f": [
+   "Free.",
+   "Fast.",
+   "Forever."
+  ],
+  "c1": "Test yours now",
+  "c2": "Works on phone and computer"
+ },
+ "he": {
+  "h0parts": [
+   "בדיקת",
+   "מיקרופון",
+   "תוך 5 שניות"
+  ],
+  "h": [
+   "מיקרופון",
+   "מצלמה",
+   "רמקולים",
+   "מקלדת",
+   "עכבר"
+  ],
+  "tag": "בדיקה לכל מכשיר תוך שניות.|100% חינם.",
+  "tools": [
+   [
+    "בדיקת מיקרופון",
+    "עוצמה חיה, גל קול והשמעה"
+   ],
+   [
+    "בדיקת מצלמה",
+    "רזולוציה ו־FPS אמיתיים"
+   ],
+   [
+    "בדיקת רמקולים",
+    "שמאל, ימין וסריקת תדרים"
+   ],
+   [
+    "בדיקת מקלדת",
+    "כל מקש, כפילויות, לחיצות יחד"
+   ],
+   [
+    "בדיקת עכבר",
+    "כפתורים, דאבל קליק, Hz"
+   ],
+   [
+    "פיקסלים מתים",
+    "צבעים במסך מלא ומתקן"
+   ],
+   [
+    "בדיקת שלט",
+    "כפתורים, סטיקים ו־Drift"
+   ],
+   [
+    "מהירות הקלדה",
+    "מילים לדקה"
+   ],
+   [
+    "מהירות קליקים",
+    "קליקים לשנייה"
+   ],
+   [
+    "זמן תגובה",
+    "כמה אתם מהירים?"
+   ],
+   [
+    "קצב רענון",
+    "ה־144Hz שלכם אמיתי?"
+   ],
+   [
+    "בדיקת שמיעה",
+    "עד 20,000 הרץ"
+   ],
+   [
+    "הוצאת מים",
+    "מנערים מים מהרמקול"
+   ]
+  ],
+  "p1": "100% פרטי",
+  "p2": "שום דבר לא יוצא מהמכשיר שלכם.",
+  "p3": "בלי אפליקציה. בלי הרשמה.",
+  "langs": [
+   "English",
+   "עברית",
+   "Español",
+   "日本語",
+   "العربية",
+   "Deutsch",
+   "Français",
+   "Português",
+   "Русский",
+   "Türkçe",
+   "Italiano",
+   "हिन्दी",
+   "Indonesia"
+  ],
+  "l1": "13 שפות",
+  "l2": "אתר אחד. לכולם.",
+  "f": [
+   "חינם.",
+   "מהיר.",
+   "לתמיד."
+  ],
+  "c1": "בדקו עכשיו",
+  "c2": "עובד בטלפון ובמחשב"
+ }
+}
